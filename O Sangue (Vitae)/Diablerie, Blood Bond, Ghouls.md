@@ -20,7 +20,7 @@
 ---
 # Estados de Condenação
 
-O sangue vampírico pode provocar mudanças profundas em quem o consome, seja o bebedor mortal ou não-morto. Se essas mudanças são para melhor ou pior depende, como diriam os [[Anarquistas]] Leninistas, de "quem está bebendo quem".
+O sangue vampírico pode provocar mudanças profundas em quem o consome, seja o bebedor mortal ou não-morto. Se essas mudanças são para melhor ou pior depende, como diriam os [[Anarquistas]] Leninistas, de "quem está bebendo quem"
 
 ---
 # Blood Bond
@@ -148,7 +148,7 @@ Um ato repudiado pela maioria dos vampiros que reivindicam qualquer forma de civ
 
 Para realizar o ato de **diablerie**, o perpetrador deve geralmente **imobilizar sua vítima**. (Sacrifício voluntário para diableria é raro, mas não inédito ópera distorcida que é o Jyhad). Cadeias pesadas, uma estaca, torpor ou muitos parceiros segurando a vítima já foram métodos utilizados no passado.
 
-Então, o diablerista deve beber o Sangue da vítima, uma alimentação semelhante a outras, exceto que, devido à viscosidade da vitae, geralmente requer uma [[Regras Fundamentais#Scene|cena]] inteira para ser concluída (veja [[Fome#Alimentando-se de Outros Vampiros|Alimentando-se de Outros Vampiros]] para o efeito do Sangue Vampírico na [[Fome]].) 
+Então, o diablerista deve beber o Sangue da vítima, uma alimentação semelhante a outras, exceto que, devido à viscosidade da vitae, geralmente requer uma [[Regras Fundamentais#Scene|cena]] inteira para ser concluída (veja [[Fome#Alimentando-se de Outros Vampiros|Alimentando-se de Outros Vampiros]] para o efeito do Sangue Vampírico na [[Fome]]). 
 
 >Parceiros podem ajudar a consumir a vítima, mas apenas um bebedor pode tentar obter o poder total da diablerie.
 

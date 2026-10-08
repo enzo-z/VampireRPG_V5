@@ -76,7 +76,7 @@ Diferentes estímulos provocam diferentes tipos de frenesi, aproximadamente clas
 
 Exemplos de gatilhos para Frenesi de Fúria:
 
-![[Pasted image 20241213144931.png]]
+
 
 >- **Provocou, Tomou**: 
 >  O que trigga um frenesi de fúria é a **provocação**. Basicamente, a Besta entra em fúria. Insultos, humilhação ou agressão podem desencadear violência bestial. 

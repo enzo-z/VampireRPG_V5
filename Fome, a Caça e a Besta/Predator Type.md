@@ -40,7 +40,7 @@ Sempre que puder. Você pode ou não tentar ameaçar ou [[Disciplinas#Dominate|D
 Você pode ter sido uma pessoa sem-teto, um soldado das Forças Especiais, um assassino de cartel ou um caçador de grandes presas.
 
 - **Adicione uma especialidade:** Intimidation (Stickups) ou Brawl (Grappling).
-- **Ganhe um ponto em:** [[Disciplinas#Celerity|Celeridade]] ou [[Disciplinas#Potence||Potência]].
+- **Ganhe um ponto em:** [[Disciplinas#Celerity|Celeridade]] ou [[Disciplinas#Potence|Potência]].
 - **Perda:** Perde um ponto de [[Humanidade]].
 - **[[Advantages#Backgrounds|Contatos]]:** Ganha três pontos de Contatos (criminosos). 
 

@@ -139,7 +139,6 @@ As preferências variam amplamente, indo de **Ventrue** que só podem se aliment
 
 
 ---
-
 # Compulsões de Clã
 
 >**Atenção:** Leia sobre [[Fome]], [[Fome#A Besta Bestial Failure|Bestial Failure]], [[Fome#Compulsões|Compulsões]], e saiba [[Entendendo Dados e Ficha#Bestial Failure|reconhecer Bestial Failure em rolagens]] para uma melhor compreensão. 

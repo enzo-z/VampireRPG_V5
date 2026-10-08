@@ -1,4 +1,3 @@
-#concept #character #rules
 
 ![[Pasted image 20241213175019.png]]
 
@@ -119,7 +118,6 @@ No final, o Narrador determina o que a Disciplina pode realizar, mas deve garant
 >- **System (Regras)**:
 >    O vampiro pode emitir à vítima uma ordem de ação única, com duração de uma frase curta, que deve ser obedecida à risca. A ordem deve ser possível de ser cumprida em um único turno. O Narrador decide como interpretar comandos ambíguos de forma inesperada ou desfavorável; alternativamente, o comando simplesmente confunde a vítima e falha.
 >	- **Contra Mortais Despreparados**: Nenhum teste é necessário contra uma vítima mortal despreparada.
->	- **Contra Vítimas Resistentes ou Vampiros**: Ordenar uma vítima resistente, uma vítima previamente Dominada na mesma [[Regras Fundamentais#Scene|cena]], ou outro vampiro exige um teste contestado de (Charisma + Domination) vs (Intelligence + Resolve). Comandos que vão contra a natureza da vítima também requerem tal teste.
 
 ---
 ## Dominate - Poderes Nível 2
@@ -436,7 +434,6 @@ Ao tocar um objeto inanimado ou o solo em um local, o vampiro pode perceber o re
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 >  
 >- **Dice Pools:** (Intelligence + Auspex)
->  Potencialmente contest de (Wits + Resolve) vs (Wits + Resolve) - Ler System
 >   
 >- **System (Regras)**: 
 >	Faça um teste de (Intelligence + Auspex) contra uma Dificuldade que depende das informações buscadas. Perceber o estado emocional de quem usou uma arma de assassinato há poucos dias tem Dificuldade 3, mas sentir o ambiente onde uma carta de 300 anos foi escrita pode ter Dificuldade 6 ou superior. 
@@ -490,7 +487,7 @@ Eficaz tanto como isca quanto como defesa, vampiros com Presence desfrutam de um
 >- **Custo**: Free
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]] ou até encerrado intencionalmente.
 >- **Dice Pools:** Possivel [[Dificuldade, Contests e Conflitos#Contests|contest]] de (Manipulation + Presence) vs (Composure + Intelligence)
->   
+> 
 >- **System (Regras)**: 
 >  
 >	Qualquer pessoa na presença do vampiro sente sua atenção inexplicavelmente atraída por ele. Aqueles que ouvem o vampiro falar podem, de repente, concordar em assuntos nos quais anteriormente tinham opiniões divergentes. Embora esse poder não cause uma fascinação arrebatadora, ele é forte o suficiente para influenciar a mente da maioria dos mortais.
@@ -792,6 +789,64 @@ Popular entre os Banu Haqim, este poder silencia completamente o usuário, anula
 
 ---
 # Protean
+
+- **Nicknames**: Morphing, Shapeshifting, Mentis Imperium
+- **Tipo**: Físico
+- **Ameaça à [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]**: Alta. 
+	*Uma das Disciplinas mais evidentes disponíveis para os vampiros, praticamente todos os poderes de Protean podem violar a Máscara por conta própria.*
+- [[Resonance]]: [[Resonance#Os Quatro Humores|]] **Animal Blood**
+    Sangue de animais, especialmente animais que correspondem às formas transformadas; o sangue de lobisomens, changelings e outras quimeras sobrenaturais do homem e da besta.
+
+Lobisomens desprezam os vampiros por possuírem essa habilidade. Eles consideram isso uma zombaria de sua própria natureza, já que seres mortos-vivos se tornam lobos ou morcegos, com garras e presas afiadas como um de seus próprios.
+No entanto, o Protean flui pelo Sangue dos vampiros quase desde o momento em que os Kindred existiram. O poder de se mutar, mudar de forma e se tornar predadores ainda mais mortais é tão natural para o vampiro quanto é para o lupino. 
+
+Os praticantes do Protean utilizam a Disciplina por sua utilidade. O poder permite que um vampiro se torne uma fera, transforme seus membros em armas, ou mude sua forma para nuvens de névoa para escapar da captura, deslizar por fechaduras ou passar por rachaduras nas janelas.
+
+## Regras Gerais de Protean
+
+ >- **Transformação Realista:**
+>   Os poderes de Protean que alteram a forma ou de outras maneiras transformam o corpo do vampiro também afetam roupas, itens engolidos e outros acessórios pequenos (com menos de alguns gramas). 
+ >- Protean não afeta itens maiores carregados, incluindo mochilas, bolsas de viagem e bolsas esportivas. Por essa razão, os usuários de Protean geralmente viajam leves.
+
+## Protean - Poderes Nível 1
+
+>⚠️ **Nota Importante**: Leia sempre a parte em negrito, sobretudo o **Custo** e o **System**, visto que eles explicam as regras mecânicas do poder.
+
+### Eyes of the Beast
+
+>- **Custo**: Free
+>- **Duração**: Quanto tempo você desejar.
+>- **Dice Pools:** Não possui
+>   
+>- **System (Regras)**: 
+>	Não é necessário rolar para ativar os Olhos da Besta. Enquanto estiver ativo, o usuário ignora qualquer penalidade de visão imposta pela escuridão, incluindo a sobrenatural. 
+>	
+>	- **Intimidação**:
+>		Enquanto ativo, a aparência inumana dos olhos confere +2 dados bônus nas piscinas de Intimidação contra mortais.
+
+## Weight Of The Feather
+
+O vampiro pode reduzir sua massa e densidade efetiva, tornando-se quase sem peso. Isso permite que ele evite acionar sensores de pressão, assim como evitar danos graves de quedas, colisões ou ser arremessado. O poder não pode ser usado para saltos mais longos, pois a força do vampiro é proporcionalmente reduzida.
+
+>- **Custo**: Free
+>- **Duração**: Quanto tempo você desejar.
+>- **Dice Pools:** Wits + Survival
+>   
+>- **System (Regras)**: 
+>	- **Se Você Tem Tempo de Preparação:**
+>		Se o vampiro tiver tempo para se preparar, não é necessário rolar.
+>	
+>	- **Se É Reação:** 
+>		Como uma reação, como durante uma queda repentina, ativar o poder requer um teste de Astúcia + Sobrevivência com dificuldade 3. 
+>
+>	- **Efeito**:
+>		Enquanto o poder estiver em efeito, o vampiro é imune a danos causados por quedas, colisões e ser arremessado. O usuário também evita acionar dispositivos que dependem de pressão, a critério do Narrador.
+
+---
+## Protean - Poderes Nível 2
+
+
+
 
 ---
 # Animalism

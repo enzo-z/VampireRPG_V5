@@ -1,9 +1,6 @@
 /* src/styles.css */
-.cm-highlight {
-  background-color: transparent !important;
-}
-.cm-highlight-default {
-  background-color: var(--text-highlight-bg);
+.enhanced-annotations__enable-decoration {
+  .cm-highlight { background-color: transparent !important; } .cm-highlight-default { background-color: var(--text-highlight-bg); };
 }
 .enhanced-annotations__sidebar-outline {
   padding: 8px 0 0 !important;
@@ -28,4 +25,7 @@
 }
 .enhanced-annotations__settings-header {
   margin-top: 40px;
+}
+.enhanced-annotations__empty-comment {
+  color: #666;
 }

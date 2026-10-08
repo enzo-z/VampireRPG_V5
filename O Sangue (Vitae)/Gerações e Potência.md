@@ -249,7 +249,7 @@ Como um vampiro mais conservador e respeitado entre os anciões, seu sangue espe
 - **Rouse Check para Disciplinas**:
     - Lance **2 dados** e escolha o maior ao fazer um [[Kindred#Quando Realizar um Rouse Check|Rouse Check]] para [[Disciplinas]] de nível **2 ou inferior**.
 
-- **Consumo de Sangue Animal ou Bolsas de Sangue:
+- **Consumo de Sangue Animal ou Bolsas de Sangue**:
     - Sangue animal ou ensacado [[Fome#Reduzindo a Fome|não reduz mais a sua Fome.]]
 
 - **Severidade da Fraqueza do Clã (_Bane Severity_)**:

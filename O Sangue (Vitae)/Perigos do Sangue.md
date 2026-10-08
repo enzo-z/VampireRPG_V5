@@ -12,7 +12,6 @@
     - [[#Estacas|Estacas]]
 
 ---
-
 # Introdução
 
 Balas apenas causam hematomas nos Kindred; espadas apenas arranham sua carne. Mesmo que contraiam uma doença a partir de sangue humano infectado, eles a passam para os mortais de quem se alimentam, enquanto os germes morrem em seu próprio sistema. 

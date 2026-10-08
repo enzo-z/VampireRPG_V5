@@ -30,7 +30,6 @@
         - [[#Despertar no Amanhecer|Despertando ao Amanhecer (Anormal)]]
     - [[#Frenesi|Frenesi]]
 
-
 ---
 # Mitos e Fatos
 
@@ -45,7 +44,7 @@ Mesmo as supostas verdades atemporais sobre vampiros admitem exceções ou mudam
 
 - **Torpor:** Trauma suficiente pode reduzir um vampiro a um estado de sono profundo chamado **[[Perigos do Sangue#Torpor|torpor]]**, do qual podem se recuperar com tempo e sangue suficientes.
 
-O corpo de um vampiro não possui batimentos cardíacos ou pulso, não mantém calor e não produz suor ou hormônios.****
+O corpo de um vampiro não possui batimentos cardíacos ou pulso, não mantém calor e não produz suor ou hormônios.
 
 #### Como Funciona a Mordida
 

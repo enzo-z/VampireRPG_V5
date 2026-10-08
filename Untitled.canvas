@@ -6,9 +6,9 @@
 		{"id":"fca209bae4206f34","type":"file","file":"Regras/Dificuldade, Contests e Conflitos.md","x":-525,"y":-800,"width":400,"height":400},
 		{"id":"c3ae7e7b45d1bff1","type":"file","file":"Fome, a Caça e a Besta/Predator Type.md","x":-1080,"y":1160,"width":400,"height":400},
 		{"id":"b5c9d1b4b1d27ae5","type":"file","file":"Regras/Regras Fundamentais.md","x":-1280,"y":20,"width":400,"height":400,"color":"5"},
-		{"id":"d9cd18f1f1ea79b9","x":-1074,"y":180,"width":250,"height":60,"type":"text","text":""},
 		{"id":"5eca99dc9775bfc0","type":"file","file":"Kindred.md","x":200,"y":20,"width":400,"height":400,"color":"5"},
-		{"id":"3d9bb820929255d0","type":"file","file":"O Sangue (Vitae)/Disciplinas.md","x":960,"y":20,"width":400,"height":400}
+		{"id":"3d9bb820929255d0","type":"file","file":"O Sangue (Vitae)/Disciplinas.md","x":960,"y":20,"width":400,"height":400},
+		{"id":"d9cd18f1f1ea79b9","type":"text","text":"","x":-1240,"y":-80,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"4304c0d2c2fbf91a","fromNode":"b5c9d1b4b1d27ae5","fromSide":"right","toNode":"f8669a19ea1a6f03","toSide":"left","fromEnd":"arrow"},

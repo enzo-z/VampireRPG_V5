@@ -3,5 +3,6 @@
   "enhanced-annotations",
   "table-editor-obsidian",
   "obsidian-git",
-  "automatic-table-of-contents"
+  "automatic-table-of-contents",
+  "obsidian-local-rest-api"
 ]
