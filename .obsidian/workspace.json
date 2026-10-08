@@ -137,12 +137,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Regras/Entendendo Dados e Ficha.md",
-                "bFile": "Regras/Entendendo Dados e Ficha.md",
+                "aFile": "Dante (Player)/Abraço de Dante.md",
+                "bFile": "Dante (Player)/Abraço de Dante.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Entendendo Dados e Ficha  (Working Tree)"
+              "title": "Diff: Abraço de Dante  (Working Tree)"
             }
           }
         ],
@@ -308,7 +308,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 829.1666564941406
+    "width": 408.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -325,9 +325,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "470549ccbcfecec1",
+  "active": "01fa8e1c36c1c7bb",
   "lastOpenFiles": [
     "Dante (Player)/Images/Concept_Arts/DALL·E 2024-11-26 20.28.02 .webp",
+    "Dante (Player)/Images/Mapa_de_Relacionamento_Dante.png",
     "External Documents/Vampire the Masquerade.pdf",
     "O Sangue (Vitae)/Clãs.md",
     "External Documents/Quaternario.pdf",
@@ -364,7 +365,6 @@
     "Dante (Player)/Images/Concept_Arts/Pasted image 20241126063200.png",
     "Dante (Player)/Images/Itens/Pasted image 20241203130103.png",
     "Dante (Player)/Images/Style/Pasted image 20241126064048.png",
-    "Dante (Player)/Images/Mapa_de_Relacionamento_Dante.png",
     "Dante (Player)/Images/Style/Pasted image 20241126061556.png"
   ]
 }
