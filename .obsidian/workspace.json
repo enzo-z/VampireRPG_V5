@@ -137,12 +137,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Dante (Player)/Abraço de Dante.md",
-                "bFile": "Dante (Player)/Abraço de Dante.md",
+                "aFile": "Narrador/Balanceamento de Encontros.md",
+                "bFile": "Narrador/Balanceamento de Encontros.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Abraço de Dante  (Working Tree)"
+              "title": "Diff: Balanceamento de Encontros  (Working Tree)"
             }
           }
         ],
@@ -180,7 +180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "david morgan",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,11 +201,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 323.8333435058594
+    "width": 424.5
   },
   "right": {
     "id": "d00f93c3473b120b",
@@ -325,38 +326,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "01fa8e1c36c1c7bb",
+  "active": "9c8ff3001201e5d4",
   "lastOpenFiles": [
-    "Dante (Player)/Images/Concept_Arts/DALL·E 2024-11-26 20.28.02 .webp",
-    "Dante (Player)/Images/Mapa_de_Relacionamento_Dante.png",
-    "External Documents/Vampire the Masquerade.pdf",
+    "Narrador/Nova York/Personagens da Camarilla de NY.md",
     "O Sangue (Vitae)/Clãs.md",
-    "External Documents/Quaternario.pdf",
+    "Narrador/Mestrar",
+    "Sem título",
+    "Narrador/Nova York/Camarilla em Nova York.md",
+    "Lore/Camarilla.md",
+    "Lore/Segunda Inquisição.md",
+    "Lore/Sabbat.md",
+    "Lore/Jyhad.md",
+    "Narrador/Balanceamento de Encontros.md",
+    "Narrador/Nova York",
+    "Narrador/Auld Sanguine - Balanceamento.md",
+    "Lore/Abraço.md",
+    "Fome, a Caça e a Besta/Frenzy.md",
     "Fome, a Caça e a Besta/Fome.md",
-    "Untitled.canvas",
-    "Session.md",
-    "Kindred.md",
-    "O Sangue (Vitae)/Diablerie, Blood Bond, Ghouls.md",
     "Regras/Entendendo Dados e Ficha.md",
-    "Regras/Regras Fundamentais.md",
-    "Character.md",
-    "Advantages.md",
-    "Regras/Regras Avançadas.md",
+    "Regras/Exemplos de Testes.md",
     "Regras/Dificuldade, Contests e Conflitos.md",
     "Regras/Dano.md",
-    "Regras/Exemplos de Testes.md",
-    "O Sangue (Vitae)/Perigos do Sangue.md",
-    "O Sangue (Vitae)/Dyscrasias.md",
-    "O Sangue (Vitae)/Disciplinas.md",
-    "Lore/Abraço.md",
-    "Dante (Player)/Sessions/Session 1.md",
-    "Dante (Player)/Sessions/Session 2.md",
-    "Dante (Player)/Sessions/Session 3.md",
-    "Dante (Player)/Sessions/Session 4.md",
-    "Dante (Player)/Sessions/Session 5.md",
-    "Dante (Player)/Sessions/Session 6.md",
-    "Dante (Player)/Sessions/Session 7.md",
-    "Dante (Player)/Sessions/Session_0.md",
+    "Kindred.md",
+    "Narrador",
+    "Humanidade.md",
+    "Dante (Player)/Mapa de Relacionamentos.md",
+    "Mapa de Relacionamentos.md",
+    "Dante (Player)/Sessions/NPCs/Hannah_Soares.md",
+    "Dante (Player)/Images/Mapa_de_Relacionamento_Dante.png",
+    "External Documents/Vampire the Masquerade.pdf",
+    "Dante (Player)/Images/Concept_Arts/DALL·E 2024-11-26 20.28.02 .webp",
+    "External Documents/Quaternario.pdf",
+    "Untitled.canvas",
+    "Session.md",
+    "O Sangue (Vitae)/Diablerie, Blood Bond, Ghouls.md",
+    "Regras/Regras Fundamentais.md",
+    "Character.md",
     "Untitled 1.base",
     "Untitled.base",
     "Dante (Player)/Sessions/Season2",

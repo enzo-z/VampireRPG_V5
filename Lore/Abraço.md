@@ -15,7 +15,7 @@ A primeira reação da maioria dos childer após o Abraço é a fome avassalador
 
 Após este momento inicial, o childe enfrentará horas de dores intensas e sensações de queimação enquanto seu corpo completa o processo de morte, eliminando os resíduos desnecessários para sua nova existência.
 
-Pode levar vários dias para que o impacto completo da maldição se manifeste no fledgling. Algumas características específicas de clãs também demoram a se desenvolver; por exemplo:
+Pode levar vários dias para que o impacto completo da maldição se manifeste no fledgling (*iniciante*). Algumas características específicas de clãs também demoram a se desenvolver; por exemplo:
 
 - **Ventrue**: As preferências alimentares levam várias semanas para se definirem.
 - **Nosferatu**: A transformação física pode levar até um mês, conforme o corpo se adapta e se remodela para aceitar a maldição.

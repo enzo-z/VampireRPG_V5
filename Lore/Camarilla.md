@@ -34,7 +34,7 @@ Apesar de sua criação para proteger os vampiros, a Camarilla nunca conseguiu a
 A Camarilla opera como uma sociedade hierárquica altamente centralizada. Alguns dos cargos e conceitos incluem:
 
 - **Príncipe (Prince):** Governante de uma cidade, com autoridade quase absoluta sobre os Kindred locais.
-- **Primógeno (Primogen):** Conselho de anciões que aconselha o [[#Estrutura e Organização|Príncipe]] e representa os interesses dos clãs.
+- **Primogênito (Primogen):** Conselho de anciões que aconselha o [[#Estrutura e Organização|Príncipe]] e representa os interesses dos clãs.
 - **Senescal (Seneschal):** Braço direito do [[#Estrutura e Organização|Príncipe]], geralmente um potencial sucessor.
 - **Xerife (Sheriff):** Responsável por manter a ordem e aplicar as leis da Camarilla.
 - **Harpia (Harpy):** Administradores da reputação social e política entre os vampiros.
