@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./External Documents/**)",
+      "Read(./Audio/**)",
+      "Read(./vault/bibliografia/**)",
+      "Read(./vampire-pages/node_modules/**)"
+    ]
+  }
+}
