@@ -9,14 +9,14 @@ Estado das pranchas do canvas "Vampire Pages: protótipos da ficha" (artefato De
 - `canvas.json` — índice do canvas (A, B, C).
 
 ## Decisões vigentes
-- Trackers: círculos definem o máximo, caixas só até o máximo (B e C); caixa: 0 vazia, 1 superficial (barra), 2 agravada (cheia). Fome 5, Humanidade 10 em dois grupos de 5. Na B/C, Saúde cap 20 e Willpower cap 15 (A usa 12/12); lápis carmesim edita o máximo, ícone de salvar confirma e preserva o dano.
+- Trackers: círculos definem o máximo, caixas só até o máximo (B e C); caixa: 0 vazia, 1 superficial (barra), 2 agravada (cheia). Fome 5, Humanidade 10 em dois grupos de 5. Nos protótipos B/C, Saúde cap 20 e Willpower cap 15 (A usa 12/12); **no app o cap é 12/12 em todo lugar** (decisão de 2026-10-14). Lápis carmesim edita o máximo, ícone de salvar confirma e preserva o dano. Fome é guardada como número 0–5 no app (A desenha posições independentes).
 - Rótulos: Saúde, Willpower, Fome, Humanidade; identidade: Nome, Clã, Facção, Predator Type, Geração, Crônica, Ambição, Desejo; perícias Animal Handling e Ocultismo; "Compulsão de Clã" na A. Mistura pt/en é intencional.
 - JSON de import/export: `{ "schemaVersion": 1, "fichas": [...] }` (ficha única = array de 1; formato legado do fork do Pedro é embrulhado automaticamente).
 - A sincronização entre Mesa e ficha existe só dentro da C (estado por personagem). A, B e C são protótipos independentes.
 - "Narrativa" fica reservada para uma futura área de história/notas.
 
 ## Pendências conhecidas
-- Padronizar caps (12/12) na B e na C se desejado; "Clan Bane" e "Player" ainda em inglês.
+- ~~Padronizar caps (12/12) na B e na C~~: decidido, 12/12 no app. "Clan Bane" e "Player" ainda em inglês.
 - A página 2 da ficha A não existe ainda (Raw PDF deve mostrar as duas quando existir).
 - B: exportar PDF apenas chama `window.print()`; no app o PDF deve usar o layout da A.
 - Próximo passo: transformar a C em tarefas para o Claude Code (shell React, store/schema, validação de import/export, Mesa, página 2).

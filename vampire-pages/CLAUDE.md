@@ -26,8 +26,8 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 
 ## Modelo dos trackers (regra de domínio, com testes)
 - **Saúde / Willpower**: lista de caixas com estado 0 vazio, 1 superficial (barra, carmesim), 2 agravado (preenchido). Os **círculos definem o máximo**: clicar no N-ésimo define max = N; clicar no último preenchido remove um (mínimo 1). Reduzir o máximo **não apaga** o dano guardado no array, apenas oculta.
-- Limites: A usa 12/12 com tudo visível; B e C usam 20 (Saúde) / 15 (Willpower), com lápis (editar máximo, estado em rascunho) e ícone salvar. Visão natural mostra só os círculos preenchidos e as caixas até o máximo.
-- **Fome**: 5 posições, binárias. **Humanidade**: 10 em dois grupos de 5, ciclo 0 → 1 → 2.
+- Limites: Saúde e Willpower têm cap **12/12 em A, B e C** (decisão de 2026-10-14). A mostra tudo visível; B e C têm lápis (editar máximo, estado em rascunho) e ícone salvar. Visão natural mostra só os círculos preenchidos e as caixas até o máximo.
+- **Fome**: guardada como número 0–5, exibida como 5 quadrados binários (clicar no N-ésimo define N; clicar no último cheio reduz um). **Humanidade**: 10 em dois grupos de 5, ciclo 0 → 1 → 2.
 - Padrão inicial: Saúde max 7, Willpower max 5.
 
 ## Schema de dados
