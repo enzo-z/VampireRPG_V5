@@ -77,6 +77,7 @@ button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1p
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; padding: 1.5rem">
 
 <div style="flex: 999 1 640px; min-width: 0">
+<div style="display: {{p1Display}}">
 
 <h2 style="margin: 0 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Attributes</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem 1.5rem">
@@ -137,6 +138,51 @@ button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1p
 </sc-for>
 </div>
 
+<div style="display: flex; justify-content: flex-end; margin-top: 2rem"><button type="button" onClick="{goPage2}" style="padding: 0.625rem 1.25rem; border: 1px solid var(--color-accent); background: transparent; color: var(--color-accent); font: 600 1rem/1.2 var(--font-serif); letter-spacing: 0.04em; cursor: pointer">Página 2 · Perfil e Vantagens →</button></div>
+</div>
+
+<div style="display: {{p2Display}}">
+
+<h2 style="margin: 0 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Beliefs</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem 1.5rem">
+<sc-for list="{{beliefs}}" as="b" hint-placeholder-count="3">
+<label style="display: flex; flex-direction: column; gap: 0.25rem">
+<span style="font-style: italic">{{b.label}}</span>
+<textarea value="{{b.value}}" onInput="{{b.set}}" aria-label="{{b.aria}}" rows="5" style="display: block; inline-size: 100%; resize: vertical; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 1px solid var(--color-border); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)"></textarea>
+</label>
+</sc-for>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0 1.5rem; margin-top: 1.75rem">
+<sc-for list="{{meritGroups}}" as="g" hint-placeholder-count="2">
+<div>
+<h2 style="margin: 0 0 0.25rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">{{g.title}}</h2>
+<sc-for list="{{g.rows}}" as="r" hint-placeholder-count="3">
+<button type="button" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}" style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.75rem; padding: 0 0.5rem; border: 0; border-bottom: 1px solid var(--color-border); background: {{r.bg}}; color: inherit; font: inherit; text-align: start; cursor: pointer">
+<span style="display: inline-flex; flex-direction: column"><span style="font-weight: 600">{{r.label}}</span><span style="display: {{r.hintDisplay}}; font-family: var(--font-sans); font-size: 0.6875rem; color: var(--color-text-muted)">sem correspondência no catálogo</span></span>
+<span role="img" aria-label="{{r.aria}}" style="display: inline-flex; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}"></span></sc-for>
+</span>
+</button>
+</sc-for>
+<div style="display: {{g.emptyDisplay}}; padding: 0.75rem 0.5rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border)">Nenhum item.</div>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 1.75rem 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Profile</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem 1.5rem">
+<sc-for list="{{profileFields}}" as="f" hint-placeholder-count="4">
+<label style="display: flex; flex-direction: column; gap: 0.25rem">
+<span style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted)">{{f.label}}</span>
+<input type="text" value="{{f.value}}" onInput="{{f.set}}" aria-label="{{f.aria}}" style="inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 1px solid var(--color-border); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)">
+</label>
+</sc-for>
+</div>
+
+<div style="display: flex; justify-content: flex-start; margin-top: 2rem"><button type="button" onClick="{goPage1}" style="padding: 0.625rem 1.25rem; border: 1px solid var(--color-accent); background: transparent; color: var(--color-accent); font: 600 1rem/1.2 var(--font-serif); letter-spacing: 0.04em; cursor: pointer">← Página 1 · Mecânica</button></div>
+</div>
+
 </div>
 
 <aside aria-label="Referência" style="flex: 1 1 320px; min-width: 0; border: 2px solid var(--color-rule); padding: 1.25rem 1.5rem">
@@ -157,7 +203,7 @@ button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1p
 <span style="flex: 1; min-width: 0; font-size: 1rem">[descrição do nível {{l.n}}]</span>
 </div>
 </sc-for>
-<p style="margin: 1rem 0 0; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Clique em outro atributo, perícia ou disciplina para trocar o painel. Os quadrados de Health e Hunger no topo também respondem ao clique.</p>
+<p style="margin: 1rem 0 0; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Clique em outro atributo, perícia, disciplina, vantagem ou desvantagem para trocar o painel. Os quadrados de Health e Hunger no topo também respondem ao clique.</p>
 </aside>
 
 </div>
@@ -180,11 +226,16 @@ class Component extends DCLogic {
       Presence: [['Awe', 1, 'sem custo'], ['Lingering Kiss', 2, '1 Rouse'], ['Entrancement', 3, '1 Rouse']],
       Auspex: [['Heightened Senses', 1, 'sem custo']]
     },
-    specs: { Performance: 'Canto', Academics: 'Química', Subterfuge: 'Fingir fraqueza' }
+    specs: { Performance: 'Canto', Academics: 'Química', Subterfuge: 'Fingir fraqueza' },
+    // Page 2 (profile): free text, merits/flaws as [name, dots]. Names are mapped to a catalog (sample catalog below).
+    page: 1,
+    profile: { tenets: 'Preservar a Máscara.', convictions: 'Nunca abandonar a coterie.', touchstones: 'Marta, irmã mais nova.', sire: 'Alessandra', birthday: '12/03/1994', age: '32', apparentAge: '28' },
+    merits: [['Contacts', 2], ['Resources', 3], ['Fame', 1]],
+    flaws: [['Enemies', 2], ['Prey Exclusion', 1]]
   };
 
   renderVals() {
-    const { readOnly, expOpen, toast, hum, sel, hunger, hMax, wMax, editH, editW, health, will, openSpec, specs, openDisc, powersByDisc, ident } = this.state;
+    const { readOnly, expOpen, toast, hum, sel, hunger, hMax, wMax, editH, editW, health, will, openSpec, specs, openDisc, powersByDisc, ident, page, profile, merits, flaws } = this.state;
 
     // --- Identity mapping layer: free text -> canonical entry (accent/case/spacing-insensitive, with aliases) ---
     const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -205,6 +256,15 @@ class Component extends DCLogic {
         ['Graverobber'], ['Montero'], ['Osiris'], ['Pursuer'], ['Roadside Killer'], ['Sandman'], ['Scene Queen'], ['Siren', 'Sereia'], ['Trapdoor']
       ])
     };
+    // Sample catalogs for merits and flaws; the real list will come from the vault.
+    const meritCat = makeCatalog([
+      ['Allies', 'Aliados'], ['Contacts', 'Contact', 'Contatos'], ['Fame', 'Fama'], ['Haven', 'Refúgio'], ['Herd', 'Rebanho'],
+      ['Influence', 'Influência'], ['Mask', 'Máscara'], ['Resources', 'Resource', 'Recursos'], ['Retainers', 'Retainer', 'Servos'], ['Status']
+    ]);
+    const flawCat = makeCatalog([
+      ['Enemies', 'Enemy', 'Inimigo', 'Inimigos'], ['Dark Secret', 'Segredo Sombrio'], ['Prey Exclusion', 'Exclusão de Presa'],
+      ['Obvious Predator', 'Predador Óbvio'], ['Mythic', 'Lenda Mítica']
+    ]);
     const resolveIdent = (field, text) => {
       if (field === 'generation') {
         const m = String(text || '').match(/\d+/);
@@ -347,10 +407,37 @@ class Component extends DCLogic {
       pick: () => !readOnly && this.setState({ hum: hum.map((x, j) => (j === i ? (x + 1) % 3 : x)) })
     }));
 
+    // Page 2: merits and flaws open the same reference panel as page 1.
+    const advRow = (kind, cat, [name, dots]) => {
+      const canon = cat.find(name);
+      const label = canon || name;
+      const on = sel.kind === kind && sel.label === label;
+      return {
+        label, hintDisplay: canon ? 'none' : 'block', cells: cells(5, dots),
+        aria: label + ' ' + dots + ' de 5', pressed: on ? 'true' : 'false', bg: on ? 'var(--color-accent-subtle)' : 'transparent',
+        pick: () => this.setState({ sel: { kind, label, value: dots, matched: !!canon, raw: name } })
+      };
+    };
+    const meritGroups = [
+      { title: 'Vantagens (Merits)', rows: merits.map((m) => advRow('Merit', meritCat, m)), emptyDisplay: merits.length ? 'none' : 'block' },
+      { title: 'Desvantagens (Flaws)', rows: flaws.map((m) => advRow('Flaw', flawCat, m)), emptyDisplay: flaws.length ? 'none' : 'block' }
+    ];
+    const pField = (key, label) => ({
+      label, aria: label, value: profile[key],
+      set: (e) => { if (this.state.readOnly) { e.target.value = this.state.profile[key]; return; } this.setState({ profile: { ...this.state.profile, [key]: e.target.value } }); }
+    });
+    const beliefs = [pField('tenets', 'Chronicle Tenets'), pField('convictions', 'Convictions'), pField('touchstones', 'Touchstones')];
+    const profileFields = [pField('sire', 'Sire'), pField('birthday', 'Birthday'), pField('age', 'Age'), pField('apparentAge', 'Apparent Age')];
+    const isAdv = sel.kind === 'Merit' || sel.kind === 'Flaw';
+
     const flash = (text) => { this.setState({ toast: text }); setTimeout(() => { if (this.state.toast === text) this.setState({ toast: '' }); }, 3500); };
     const snapshot = () => ({
       schemaVersion: 1,
-      fichas: [{ name: 'Personagem Exemplo', identity: this.state.ident, trackers: { health: { max: hMax, boxes: health.slice(0, 20) }, willpower: { max: wMax, boxes: will.slice(0, 15) }, hunger, humanity: hum }, specs: this.state.specs }]
+      fichas: [{ name: 'Personagem Exemplo', identity: this.state.ident, trackers: { health: { max: hMax, boxes: health.slice(0, 20) }, willpower: { max: wMax, boxes: will.slice(0, 15) }, hunger, humanity: hum }, specs: this.state.specs,
+        beliefs: { tenets: profile.tenets, convictions: profile.convictions, touchstones: profile.touchstones },
+        merits: merits.map(([name, dots]) => ({ name: meritCat.find(name) || name, dots })),
+        flaws: flaws.map(([name, dots]) => ({ name: flawCat.find(name) || name, dots })),
+        profile: { sire: profile.sire, birthday: profile.birthday, age: profile.age, apparentAge: profile.apparentAge } }]
     });
     const exportJson = () => {
       this.setState({ expOpen: false });
@@ -362,7 +449,7 @@ class Component extends DCLogic {
     };
     const exportPdf = () => {
       this.setState({ expOpen: false });
-      try { window.print(); flash('Prévia: no app, o PDF usa o layout da ficha A (impressão).'); } catch (err) { flash('Impressão indisponível neste ambiente.'); }
+      try { window.print(); flash('Prévia: no app, o PDF usa o layout da ficha A (páginas 1 e 2).'); } catch (err) { flash('Impressão indisponível neste ambiente.'); }
     };
     return {
       toggleRO: () => this.setState({ readOnly: !readOnly, expOpen: false }),
@@ -376,11 +463,14 @@ class Component extends DCLogic {
       attrGroups, skillGroups, disciplines, healthCells, healthCircles, willCells, willCircles, hungerCells,
       hToggle: hT.toggle, hEditAria: hT.editAria, hPenD: hT.penD, hSaveD: hT.saveD, wToggle: wT.toggle, wEditAria: wT.editAria, wPenD: wT.penD, wSaveD: wT.saveD, humanityCells,
       identFields, ...trackerProps,
-      selKind: isIdent ? identInfo.kind : (isTracker ? 'Trilha' : (sel.kind === 'Power' ? 'Poder · ' + sel.discipline : sel.kind)),
+      p1Display: page === 1 ? 'block' : 'none', p2Display: page === 2 ? 'block' : 'none',
+      goPage1: () => this.setState({ page: 1 }), goPage2: () => this.setState({ page: 2 }),
+      beliefs, profileFields, meritGroups,
+      selKind: isIdent ? identInfo.kind : (isTracker ? 'Trilha' : (sel.kind === 'Power' ? 'Poder · ' + sel.discipline : (sel.kind === 'Merit' ? 'Vantagem' : (sel.kind === 'Flaw' ? 'Desvantagem' : sel.kind)))),
       selLabel: isIdent ? identInfo.label : ({ Health: 'Saúde', Hunger: 'Fome', Humanity: 'Humanidade' }[sel.label] || sel.label),
-      selBody: isIdent ? identInfo.body : (isTracker ? '[Texto de referência de ' + sel.label + ': regras da trilha, vindas de uma nota publicada do vault ou de um texto seu.]' : '[Texto de referência: resumo escrito por você ou vindo de uma nota publicada do vault.]'),
+      selBody: isAdv ? (sel.matched ? '[Texto de referência: ' + sel.label + '. Virá de uma nota publicada do vault ou de um texto seu.]' : 'Sem correspondência para "' + sel.raw + '". Confira a grafia ou adicione o item ao catálogo.') : isIdent ? identInfo.body : (isTracker ? '[Texto de referência de ' + sel.label + ': regras da trilha, vindas de uma nota publicada do vault ou de um texto seu.]' : '[Texto de referência: resumo escrito por você ou vindo de uma nota publicada do vault.]'),
       selCost: sel.cost || '', selCostDisplay: sel.kind === 'Power' ? 'block' : 'none',
-      selLevelsDisplay: (sel.kind === 'Power' || isIdent || isTracker) ? 'none' : 'flex',
+      selLevelsDisplay: (sel.kind === 'Power' || isIdent || isTracker || isAdv) ? 'none' : 'flex',
       selDotsDisplay: (isIdent || isTracker) ? 'none' : 'inline-flex',
       selCells: cells(5, sel.value), selAria: sel.label + ' ' + sel.value + ' de 5',
       selLevels: [1, 2, 3, 4, 5].map((n) => ({ n, bg: n === sel.value ? 'var(--color-accent-subtle)' : 'transparent' }))

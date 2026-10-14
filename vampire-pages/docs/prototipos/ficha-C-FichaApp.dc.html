@@ -76,7 +76,7 @@ button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1p
 </header>
 
 <div style="display: {{rawDisplay}}; padding: 2rem 1.5rem 3rem; background: var(--color-surface); font-family: var(--font-serif); font-weight: 500; font-size: 1.125rem; line-height: 1.5">
-<div style="max-width: 1180px; margin: 0 auto 1rem; padding: 0.5rem 0.75rem; border: 1px dashed var(--color-leader); font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)">Raw PDF · layout de impressão da ficha A (exemplo independente dos personagens da Mesa). A página 2 será adicionada aqui quando existir na ficha A.</div>
+<div style="max-width: 1180px; margin: 0 auto 1rem; padding: 0.5rem 0.75rem; border: 1px dashed var(--color-leader); font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)">Raw PDF · layout de impressão da ficha A, páginas 1 e 2 (exemplo independente dos personagens da Mesa).</div>
 <div style="max-width: 1180px; margin: 0 auto">
 
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-rule)">
@@ -189,6 +189,77 @@ button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1p
 <div style="flex: 1 1 0; min-block-size: 0; display: flex; flex-direction: column; margin-top: 0.25rem"><span style="flex: none; font-style: italic">{{rawNoteComp.label}}</span><textarea value="{{rawNoteComp.value}}" onInput="{{rawNoteComp.set}}" aria-label="{{rawNoteComp.aria}}" rows="1" style="flex: 1 1 0; min-block-size: 2.5rem; display: block; inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea></div>
 </div>
 </div>
+</div>
+
+</div>
+<div style="max-width: 1180px; margin: 2.5rem auto 0; padding-top: 2rem; border-top: 1px dashed var(--color-leader); break-before: page; page-break-before: always">
+
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-rule)">
+<div style="font-family: var(--font-display); font-size: 2.5rem; line-height: 1.1">Personagem Exemplo</div>
+<div style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-text-accent)">Ficha · página 2 de 2 · perfil</div>
+</div>
+
+<h2 style="margin: 1.5rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Beliefs</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.5rem">
+<sc-for list="{{rawBeliefs}}" as="a" hint-placeholder-count="3">
+<div style="display: flex; flex-direction: column">
+<span style="flex: none; font-style: italic">{{a.label}}</span>
+<textarea value="{{a.value}}" onInput="{{a.set}}" aria-label="{{a.aria}}" rows="1" style="display: block; inline-size: 100%; block-size: 8rem; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea>
+</div>
+</sc-for>
+</div>
+
+<div style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 1.5rem; margin-top: 1.5rem; block-size: 1230px">
+
+<div style="display: flex; flex-direction: column; min-block-size: 0">
+<sc-for list="{{rawMeritGroups}}" as="g" hint-placeholder-count="2">
+<div style="flex: 1 1 0; min-block-size: 0; display: flex; flex-direction: column; padding-top: {{g.pt}}">
+<h2 style="flex: none; margin: 0 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">{{g.title}}</h2>
+<div style="flex: 1 1 0; min-block-size: 0; display: flex; flex-direction: column">
+<sc-for list="{{g.rows}}" as="m" hint-placeholder-count="11">
+<div style="flex: 1 1 0; min-block-size: 1.75rem; display: flex; align-items: flex-end; gap: 0.5rem; padding-bottom: 0.25rem">
+<input type="text" value="{{m.name}}" onInput="{{m.setName}}" aria-label="{{m.nameAria}}" style="flex: 1; min-width: 0; box-sizing: border-box; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; outline-offset: 2px; padding: 0 0.25rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">
+<span role="group" aria-label="{{m.aria}}" style="flex: none; display: inline-flex; align-items: center; margin-bottom: 0.1875rem"><sc-for list="{{m.cells}}" as="d" hint-placeholder-count="5"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 0.8rem; block-size: 0.8rem; padding: 0; cursor: pointer; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></button></sc-for></span>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; flex-direction: column; min-block-size: 0; padding-inline-start: 1.5rem; border-inline-start: 1px solid; border-image: linear-gradient(to bottom, transparent, var(--color-rule) 6%, var(--color-rule) 94%, transparent) 1; -webkit-print-color-adjust: exact; print-color-adjust: exact">
+<h2 style="flex: none; margin: 0 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Profile</h2>
+
+<div style="flex: none; display: flex; gap: 1.5rem; align-items: stretch">
+<label style="position: relative; flex: none; inline-size: 7rem; block-size: 9.333rem; box-sizing: border-box; border: 1px solid var(--color-rule); display: flex; align-items: center; justify-content: center; text-align: center; cursor: pointer; overflow: hidden">
+<img src="{{rawPhotoSrc}}" alt="Foto do personagem" style="display: {{rawPhotoImgD}}; position: absolute; inset: 0; inline-size: 100%; block-size: 100%; object-fit: cover">
+<span style="display: {{rawPhotoPhD}}; padding: 0.5rem; font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1.5; color: var(--color-text-muted)">Foto<br>3 × 4 cm<br><span style="letter-spacing: 0; text-transform: none; color: var(--color-leader)">clique para escolher</span></span>
+<input type="file" accept="image/*" onChange="{{rawPickPhoto}}" aria-label="Escolher foto do personagem" style="position: absolute; inset: 0; inline-size: 100%; block-size: 100%; opacity: 0; cursor: pointer">
+</label>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-between">
+<sc-for list="{{rawProfileFields}}" as="f" hint-placeholder-count="5">
+<div style="display: flex; align-items: baseline; gap: 0.5rem"><span style="flex: none">{{f.label}}</span><input type="text" value="{{f.value}}" onInput="{{f.set}}" aria-label="{{f.aria}}" style="flex: 1; min-width: 0; box-sizing: border-box; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; outline-offset: 2px; padding: 0 0.25rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></div>
+</sc-for>
+</div>
+</div>
+
+<div style="flex: 5 1 0; min-block-size: 0; display: flex; flex-direction: column; margin-top: 1rem">
+<sc-for list="{{rawAreasTop}}" as="a" hint-placeholder-count="1">
+<span style="flex: none; font-style: italic">{{a.label}}</span>
+<textarea value="{{a.value}}" onInput="{{a.set}}" aria-label="{{a.aria}}" rows="1" style="flex: 1 1 0; min-block-size: 2.5rem; display: block; inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea>
+</sc-for>
+</div>
+
+<div style="flex: 7 1 0; min-block-size: 0; display: flex; gap: 1.5rem; margin-top: 1rem">
+<sc-for list="{{rawAreasBottom}}" as="a" hint-placeholder-count="2">
+<div style="flex: {{a.grow}} 1 0; min-inline-size: 0; display: flex; flex-direction: column">
+<span style="flex: none; font-style: italic">{{a.label}}</span>
+<textarea value="{{a.value}}" onInput="{{a.set}}" aria-label="{{a.aria}}" rows="1" style="flex: 1 1 0; min-block-size: 2.5rem; display: block; inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea>
+</div>
+</sc-for>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -458,7 +529,9 @@ class Component extends DCLogic {
       // The Blood: Blood Potency (0-10), free-text fields and the clan bane / compulsion notes.
       bp: 1, bf: {}, bn: {},
       hum: [2, 2, 2, 2, 2, 2, 2, 1, 0, 0],
-      hunger: [2, 2, 0, 0, 0]
+      hunger: [2, 2, 0, 0, 0],
+      // Sheet A, page 2: free text, merits/flaws (names and dots by slot), profile fields and photo.
+      tx: {}, mn: {}, md: {}, pf: {}, photo: ''
     },
     sel: { kind: 'Attribute', label: 'Manipulation', value: 4 }, openSpec: null,
     ident: { clan: 'Toreador', sect: 'Camarilla', predator: 'Sereia', generation: '13ª' },
@@ -852,6 +925,55 @@ class Component extends DCLogic {
       return { rawIdentity: identity, rawAttrGroups: attrGroups, rawSkillGroups: skillGroups, rawDisciplines: disciplines, rawTrackersLeft: trackersLeft, rawTrackersRight: trackersRight, rawBloodPotency: bloodPotency, rawBloodFieldsA: bloodFieldsA, rawBloodFieldsB: bloodFieldsB, rawNoteBane: noteBane, rawNoteComp: noteComp, rawBpAria: 'Blood Potency ' + st.bp + ' de 10' };
     })();
 
+    const rawVals2 = (() => {
+    const st = this.state.raw;
+    const area = (label, grow, seed) => ({
+      label, grow, aria: label,
+      value: st.tx[label] !== undefined ? st.tx[label] : (seed || ''),
+      set: (e) => setRaw({ tx: { ...this.state.raw.tx, [label]: e.target.value } })
+    });
+    const beliefs = [
+      area('Chronicle Tenets', 1),
+      area('Convictions', 1, 'Nunca abandonar a coterie.'),
+      area('Touchstones', 1, 'Marta, irmã mais nova.')
+    ];
+    const areasTop = [area('Description & Features', 1)];
+    const areasBottom = [area('Notes', 2), area('Concept', 1)];
+    const field = (label, seed) => ({
+      label, aria: label,
+      value: st.pf[label] !== undefined ? st.pf[label] : (seed || ''),
+      set: (e) => setRaw({ pf: { ...this.state.raw.pf, [label]: e.target.value } })
+    });
+    const profileFields = [field('Sire'), field('Birthday'), field('Age'), field('Embraced'), field('Apparent Age')];
+    // Merits (Vantagens, rows 1-11) and Flaws (Desvantagens, rows 12-22): name + 5 clickable dots. Click dot N sets N; click the last filled dot clears one.
+    const seedMerits = { 0: ['Contacts', 2], 1: ['Resources', 3], 2: ['Fame', 1] };
+    const merits = Array.from({ length: 22 }, (_, slot) => {
+      const seed = seedMerits[slot] || ['', 0];
+      const name = st.mn[slot] !== undefined ? st.mn[slot] : seed[0];
+      const v = st.md[slot] !== undefined ? st.md[slot] : seed[1];
+      return {
+        name, nameAria: (slot < 11 ? 'Nome da vantagem ' + (slot + 1) : 'Nome da desvantagem ' + (slot - 10)), aria: (name || (slot < 11 ? 'Vantagem vazia' : 'Desvantagem vazia')) + ' ' + v + ' de 5',
+        setName: (e) => setRaw({ mn: { ...this.state.raw.mn, [slot]: e.target.value } }),
+        cells: Array.from({ length: 5 }, (_, i) => ({
+          bg: i < v ? 'var(--color-trait-filled)' : 'var(--color-trait-empty)',
+          ml: i === 0 ? '0' : '2px',
+          aria: (slot < 11 ? 'Vantagem ' + (slot + 1) : 'Desvantagem ' + (slot - 10)) + ': ' + (i + 1),
+          pick: () => setRaw({ md: { ...this.state.raw.md, [slot]: v === i + 1 ? i : i + 1 } })
+        }))
+      };
+    });
+    const meritGroups = [
+      { title: 'Vantagens (Merits)', pt: '0', rows: merits.slice(0, 11) },
+      { title: 'Desvantagens (Flaws)', pt: '1.5rem', rows: merits.slice(11) }
+    ];
+    const pickPhoto = (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      try { setRaw({ photo: URL.createObjectURL(file) }); } catch (err) { /* sandbox without blob URLs */ }
+    };
+    return { rawBeliefs: beliefs, rawAreasTop: areasTop, rawAreasBottom: areasBottom, rawProfileFields: profileFields, rawMeritGroups: meritGroups, rawPickPhoto: pickPhoto, rawPhotoSrc: st.photo, rawPhotoImgD: st.photo ? 'block' : 'none', rawPhotoPhD: st.photo ? 'none' : 'block' };
+    })();
+
     const onFicha = view === 'ficha';
     const onRaw = view === 'raw';
     const modalKind = modal;
@@ -963,7 +1085,7 @@ class Component extends DCLogic {
 
     return {
       attrGroups, skillGroups, disciplines, healthCells, hungerCells, humanityCells,
-      identFields, ...trackerProps, ...shell, ...rawVals,
+      identFields, ...trackerProps, ...shell, ...rawVals, ...rawVals2,
       selKind: isIdent ? identInfo.kind : (isTracker ? (sel.group || 'Trilha') : (sel.kind === 'Power' ? 'Poder · ' + sel.discipline : sel.kind)),
       selLabel: isIdent ? identInfo.label : ({ Health: 'Saúde', Hunger: 'Fome', Humanity: 'Humanidade' }[sel.label] || sel.label),
       selBody: isIdent ? identInfo.body : (isTracker ? '[Texto de referência de ' + sel.label + ': ' + (sel.group ? 'virá' : 'regras da trilha, vindas') + ' de uma nota publicada do vault ou de um texto seu.]' : '[Texto de referência: resumo escrito por você ou vindo de uma nota publicada do vault.]'),

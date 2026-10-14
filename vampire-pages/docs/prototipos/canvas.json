@@ -8,7 +8,7 @@
       "is_interactive": true,
       "title": "C · Aplicação completa: menu lateral, Mesa e ficha em 2 páginas",
       "w": 1280,
-      "x": 2720,
+      "x": 4080,
       "y": 0
     },
     "FichaPainel.dc.html": {
@@ -17,7 +17,7 @@
       "is_interactive": true,
       "title": "B · Ficha de mesa com painel de referência",
       "w": 1280,
-      "x": 1360,
+      "x": 2720,
       "y": 0
     },
     "Main.dc.html": {
@@ -27,6 +27,15 @@
       "title": "A · Ficha fiel (página 1, mecânica)",
       "w": 1280,
       "x": 0,
+      "y": 0
+    },
+    "Pagina2.dc.html": {
+      "expand": "fill",
+      "h": 1630,
+      "is_interactive": true,
+      "title": "A2 · Ficha fiel (página 2, perfil)",
+      "w": 1280,
+      "x": 1360,
       "y": 0
     }
   },
@@ -41,8 +50,8 @@
   "notes": {
     "titulo": {
       "kind": "title1",
-      "maxW": 3960,
-      "text": "Direções de ficha (A, B) e shell da aplicação (C) · tema claro · tokens do design-spec",
+      "maxW": 5320,
+      "text": "Direções de ficha (A e A2 impressão, B painel) e shell da aplicação (C) · tema claro · tokens do design-spec",
       "w": 240,
       "x": 0,
       "y": -260
@@ -50,6 +59,7 @@
   },
   "order": [
     "Main.dc.html",
+    "Pagina2.dc.html",
     "FichaPainel.dc.html",
     "FichaApp.dc.html"
   ],
