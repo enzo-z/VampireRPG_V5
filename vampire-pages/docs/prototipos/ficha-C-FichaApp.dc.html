@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Aplicação completa</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400&family=Cabin:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap">
+<style>
+:root{
+  --palette-paper:#ffffff;--palette-paper-tint:#f0e2df;--palette-ink:#231f20;--palette-ink-muted:#5e5a5b;
+  --palette-graphite:#9d9d9d;--palette-mist:#c8c7c7;--palette-crimson:#790914;--palette-crimson-deep:#5c0610;
+  --color-surface:var(--palette-paper);--color-surface-tint:var(--palette-paper-tint);
+  --color-text:var(--palette-ink);--color-text-muted:var(--palette-ink-muted);--color-text-accent:var(--palette-crimson);
+  --color-border:var(--palette-mist);--color-rule:var(--palette-crimson);--color-divider:var(--palette-ink);--color-leader:var(--palette-graphite);
+  --color-accent:var(--palette-crimson);--color-accent-subtle:var(--palette-paper-tint);--color-focus-ring:var(--palette-crimson);
+  --color-trait-border:var(--palette-ink);--color-trait-empty:var(--palette-paper);--color-trait-filled:var(--palette-ink);--color-trait-marked:var(--palette-crimson);
+  --font-serif:"Cormorant Garamond","EB Garamond",Garamond,Georgia,serif;
+  --font-display:"Bodoni Moda","Bodoni 72",Didot,Georgia,serif;
+  --font-sans:"Cabin","Gill Sans",Calibri,system-ui,sans-serif;
+}
+body{margin:0;background:#ffffff}
+button:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:1px}
+.hv{position:relative;display:inline-block}
+.hv .pop{display:none}
+.hv:hover .pop,.hv:focus-within .pop{display:block}
+</style>
+</helmet>
+<div style="position: relative; display: flex; min-height: 1320px; box-sizing: border-box; background: var(--color-surface); color: var(--color-text); font-family: var(--font-serif); font-weight: 500; font-size: 1.125rem; line-height: 1.5">
+
+<nav aria-label="Principal" style="flex: none; inline-size: {{sideW}}; box-sizing: border-box; background: var(--color-surface-tint); border-inline-end: 1px solid var(--color-border); padding: 0.75rem 0; display: flex; flex-direction: column; gap: 0.25rem">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0 0.75rem 0.75rem">
+<span style="display: {{labelDisplay}}; font-family: var(--font-display); font-size: 1.25rem; line-height: 1.1">Vampire Pages</span>
+<button type="button" onClick="{{toggleSide}}" aria-label="{{sideToggleAria}}" aria-expanded="{{sideExpanded}}" style="flex: none; inline-size: 2rem; block-size: 2rem; padding: 0; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-accent); font: 600 1rem/1 var(--font-sans); cursor: pointer">{{sideToggleGlyph}}</button>
+</div>
+<button type="button" onClick="{{goMesa}}" aria-current="page" style="display: flex; align-items: center; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.5rem; padding: 0 0.75rem; border: 0; background: {{bgFichas}}; color: inherit; font: 600 1rem/1.2 var(--font-serif); text-align: start; cursor: pointer"><span aria-hidden="true" style="flex: none; inline-size: 1.5rem; text-align: center; font-family: var(--font-sans); color: var(--color-text-accent)">F</span><span style="display: {{labelDisplay}}">Fichas</span></button>
+<div style="display: {{labelDisplay}}; padding-inline-start: 2.75rem">
+<button type="button" onClick="{{goMesa}}" style="display: flex; align-items: center; gap: 0.5rem; inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.75rem; border: 0; background: {{subMesaBg}}; color: inherit; font: 500 1rem/1.3 var(--font-serif); text-align: start; cursor: pointer"><svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" fill="var(--color-accent)" style="flex: none; margin-inline: 3px"><path d="M5 0.5 L9.5 5 L5 9.5 L0.5 5 Z"/></svg>Mesa</button>
+<button type="button" onClick="{{goFicha}}" style="display: block; inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.75rem 0.375rem 2.25rem; border: 0; background: {{subFichaBg}}; color: inherit; font: 500 1rem/1.3 var(--font-serif); text-align: start; cursor: pointer">{{charName}}</button>
+</div>
+<button type="button" disabled aria-disabled="true" style="display: flex; align-items: center; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.5rem; padding: 0 0.75rem; border: 0; background: {{bgOff}}; color: inherit; font: 600 1rem/1.2 var(--font-serif); text-align: start; cursor: pointer; opacity: 0.55; cursor: not-allowed"><span aria-hidden="true" style="flex: none; inline-size: 1.5rem; text-align: center; font-family: var(--font-sans)">V</span><span style="display: {{labelDisplay}}">Vault <span style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase">em breve</span></span></button>
+<button type="button" disabled aria-disabled="true" style="display: flex; align-items: center; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.5rem; padding: 0 0.75rem; border: 0; background: {{bgOff}}; color: inherit; font: 600 1rem/1.2 var(--font-serif); text-align: start; cursor: pointer; opacity: 0.55; cursor: not-allowed"><span aria-hidden="true" style="flex: none; inline-size: 1.5rem; text-align: center; font-family: var(--font-sans)">B</span><span style="display: {{labelDisplay}}">Backlog <span style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase">em breve</span></span></button>
+<button type="button" onClick="{{goRaw}}" aria-current="{{rawCurrent}}" style="display: flex; align-items: center; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.5rem; padding: 0 0.75rem; border: 0; background: {{bgRaw}}; color: inherit; font: 600 1rem/1.2 var(--font-serif); text-align: start; cursor: pointer"><span aria-hidden="true" style="flex: none; inline-size: 1.5rem; text-align: center; font-family: var(--font-sans); color: var(--color-text-accent)">R</span><span style="display: {{labelDisplay}}">Raw PDF</span></button>
+</nav>
+
+<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column">
+
+<header style="position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; padding: 0.75rem 1.5rem; border-bottom: 1px solid var(--color-border); background: var(--color-surface)">
+<div style="position: relative">
+<button type="button" onClick="{{toggleCombo}}" aria-haspopup="listbox" aria-expanded="{{comboExpanded}}" style="display: inline-flex; align-items: center; justify-content: space-between; gap: 0.75rem; inline-size: 17rem; min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer"><span><span style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); margin-inline-end: 0.5rem">Ficha</span><span style="font-family: var(--font-serif); font-weight: 600; font-size: 1.0625rem">{{charName}}</span></span><span aria-hidden="true" style="color: var(--color-text-accent)">▾</span></button>
+<div style="display: {{comboDisplay}}; position: absolute; inset-block-start: calc(100% + 4px); inset-inline-start: 0; z-index: 20; inline-size: 20rem; box-sizing: border-box; border: 1px solid var(--color-accent); background: var(--color-surface); box-shadow: 0 6px 18px rgba(35, 31, 32, 0.22)">
+<input type="text" value="{{comboQuery}}" onInput="{{setComboQuery}}" placeholder="Buscar personagem, clã ou jogador" aria-label="Buscar ficha" style="inline-size: 100%; box-sizing: border-box; padding: 0.625rem 0.75rem; border: 0; border-bottom: 1px solid var(--color-border); background: transparent; color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans)">
+<div role="listbox" style="max-block-size: 18rem; overflow-y: auto">
+<sc-for list="{{comboItems}}" as="c" hint-placeholder-count="8">
+<button type="button" role="option" onClick="{{c.pick}}" style="display: flex; flex-direction: column; align-items: flex-start; inline-size: 100%; box-sizing: border-box; padding: 0.5rem 0.75rem; border: 0; border-bottom: 1px solid var(--color-border); background: {{c.bg}}; color: inherit; text-align: start; cursor: pointer"><span style="font-weight: 600; font-size: 1.0625rem">{{c.name}}</span><span style="font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)">{{c.sub}}</span></button>
+</sc-for>
+<div style="display: {{comboEmptyDisplay}}; padding: 0.75rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Nenhum personagem encontrado.</div>
+</div>
+</div>
+</div>
+<button type="button" onClick="{{openNew}}" aria-label="Novo personagem" title="Novo personagem" style="inline-size: 2.5rem; padding: 0; min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer; color: var(--color-accent); font-size: 1.25rem">+</button>
+<button type="button" onClick="{{openImport}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Importar</button>
+<button type="button" onClick="{{exportAll}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Exportar tudo</button>
+<div style="position: relative; margin-inline-start: auto">
+<button type="button" onClick="{{toggleMenu}}" aria-haspopup="menu" aria-expanded="{{menuExpanded}}" aria-label="Ações da ficha" style="inline-size: 2.5rem; padding: 0; min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">⋯</button>
+<div role="menu" style="display: {{menuDisplay}}; position: absolute; inset-block-start: calc(100% + 4px); inset-inline-end: 0; z-index: 20; inline-size: 13rem; border: 1px solid var(--color-accent); background: var(--color-surface); box-shadow: 0 6px 18px rgba(35, 31, 32, 0.22)">
+<button type="button" role="menuitem" onClick="{{openRename}}" style="display: block; inline-size: 100%; padding: 0.625rem 0.875rem; border: 0; border-bottom: 1px solid var(--color-border); background: transparent; color: inherit; font: 500 0.9375rem/1.2 var(--font-sans); text-align: start; cursor: pointer">Renomear</button>
+<button type="button" role="menuitem" onClick="{{duplicateChar}}" style="display: block; inline-size: 100%; padding: 0.625rem 0.875rem; border: 0; border-bottom: 1px solid var(--color-border); background: transparent; color: inherit; font: 500 0.9375rem/1.2 var(--font-sans); text-align: start; cursor: pointer">Duplicar</button>
+<button type="button" role="menuitem" onClick="{{exportChar}}" style="display: block; inline-size: 100%; padding: 0.625rem 0.875rem; border: 0; border-bottom: 1px solid var(--color-border); background: transparent; color: inherit; font: 500 0.9375rem/1.2 var(--font-sans); text-align: start; cursor: pointer">Exportar JSON</button>
+<button type="button" role="menuitem" onClick="{{deleteChar}}" style="display: block; inline-size: 100%; padding: 0.625rem 0.875rem; border: 0; background: transparent; color: var(--color-accent); font: 600 0.9375rem/1.2 var(--font-sans); text-align: start; cursor: pointer">Excluir</button>
+</div>
+</div>
+</header>
+
+<div style="display: {{rawDisplay}}; padding: 2rem 1.5rem 3rem; background: var(--color-surface); font-family: var(--font-serif); font-weight: 500; font-size: 1.125rem; line-height: 1.5">
+<div style="max-width: 1180px; margin: 0 auto 1rem; padding: 0.5rem 0.75rem; border: 1px dashed var(--color-leader); font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)">Raw PDF · layout de impressão da ficha A (exemplo independente dos personagens da Mesa). A página 2 será adicionada aqui quando existir na ficha A.</div>
+<div style="max-width: 1180px; margin: 0 auto">
+
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--color-rule)">
+<div style="font-family: var(--font-display); font-size: 2.5rem; line-height: 1.1">Personagem Exemplo</div>
+<div style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-text-accent)">Ficha · página 1 de 2 · mecânica</div>
+</div>
+
+<h2 style="margin: 2rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Identidade</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.5rem 2rem">
+<sc-for list="{{rawIdentity}}" as="f" hint-placeholder-count="9">
+<div style="display: flex; align-items: baseline; gap: 0.5rem">
+<span style="flex: none">{{f.label}}</span>
+<span style="flex: 1; min-width: 0; border-bottom: 1px dotted var(--color-leader); padding-inline: 0.25rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">{{f.value}}</span>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 1rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Attributes</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem 2rem">
+<sc-for list="{{rawAttrGroups}}" as="g" hint-placeholder-count="3">
+<div>
+<div style="font-style: italic; text-align: center; margin-bottom: 0.25rem">{{g.name}}</div>
+<sc-for list="{{g.items}}" as="r" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding-block: 0.125rem">
+<span>{{r.label}}</span>
+<span role="img" aria-label="{{r.aria}}" style="display: inline-flex; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: {{d.br}}; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></span></sc-for>
+</span>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 2rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Skills</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem 2rem">
+<sc-for list="{{rawSkillGroups}}" as="g" hint-placeholder-count="3">
+<div>
+<sc-for list="{{g.items}}" as="r" hint-placeholder-count="9">
+<div style="display: flex; align-items: baseline; gap: 0.5rem; padding-block: 0.0625rem">
+<span style="flex: none">{{r.label}}</span>
+<input type="text" value="{{r.spec}}" onInput="{{r.setSpec}}" aria-label="{{r.specAria}}" style="flex: 1; min-width: 0; box-sizing: border-box; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; outline-offset: 2px; text-align: center; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted); padding: 0 0.25rem">
+<span role="img" aria-label="{{r.aria}}" style="display: inline-flex; align-items: center; align-self: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: {{d.br}}; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></span></sc-for>
+</span>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 2rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Disciplines</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem 2rem">
+<sc-for list="{{rawDisciplines}}" as="b" hint-placeholder-count="6">
+<div>
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; border-bottom: 1px solid var(--color-divider); padding-bottom: 0.125rem">
+<input type="text" value="{{b.name}}" onInput="{{b.setName}}" aria-label="{{b.nameAria}}" style="flex: 1; min-width: 0; box-sizing: border-box; border: 0; border-radius: 0; background: transparent; outline-offset: 2px; padding: 0; font-family: var(--font-serif); font-size: 1.125rem; font-weight: 600; line-height: inherit; color: inherit">
+<span role="img" aria-label="{{b.aria}}" style="display: inline-flex; align-items: center; align-self: center">
+<sc-for list="{{b.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: {{d.br}}; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></span></sc-for>
+</span>
+</div>
+<sc-for list="{{b.powers}}" as="p" hint-placeholder-count="5">
+<div style="display: flex; align-items: baseline; gap: 0.5rem; padding-top: 0.875rem">
+<span aria-hidden="true" style="inline-size: 0.5rem; block-size: 0.5rem; flex: none; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px"></span>
+<span style="flex: 2; min-width: 0; border-bottom: 1px dotted var(--color-leader); font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">{{p.name}}</span>
+<span style="flex: 1; min-width: 0; border-bottom: 1px dotted var(--color-leader); font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">{{p.note}}</span>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 1.75rem 0 0.75rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Trackers &amp; The Blood</h2>
+<div style="-webkit-print-color-adjust: exact; print-color-adjust: exact; background: var(--color-rule); padding: 2px; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px)">
+<div style="background: var(--color-surface); padding: 1.25rem 1.5rem; display: grid; grid-template-columns: max-content max-content minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem 1rem; box-sizing: border-box; min-block-size: 16rem; clip-path: polygon(17.2px 0, calc(100% - 17.2px) 0, 100% 17.2px, 100% calc(100% - 17.2px), calc(100% - 17.2px) 100%, 17.2px 100%, 0 calc(100% - 17.2px), 0 17.2px)">
+<div style="display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 1rem">
+<sc-for list="{{rawTrackersLeft}}" as="t" hint-placeholder-count="2">
+<div style="min-block-size: 4.25rem">
+<div style="font-style: normal; font-weight: 500; font-size: 1.125rem; line-height: 1.75rem; margin-bottom: 0.25rem">{{t.label}}</div>
+<div role="group" aria-label="{{t.aria}}" style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 2px; margin-bottom: 0.25rem">
+<sc-for list="{{t.max}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 0.8rem; block-size: 0.8rem; padding: 0; cursor: pointer; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></button></sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 2px">
+<sc-for list="{{t.damage}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1rem; block-size: 1rem; padding: 0; cursor: pointer; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}"></button></sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 1rem; border-inline-start: 1px solid; border-image: linear-gradient(to bottom, transparent, var(--color-rule) 12%, var(--color-rule) 88%, transparent) 1; padding-inline-start: 1rem; -webkit-print-color-adjust: exact; print-color-adjust: exact">
+<sc-for list="{{rawTrackersRight}}" as="t" hint-placeholder-count="2">
+<div style="min-block-size: 4.25rem">
+<div style="font-style: normal; font-weight: 500; font-size: 1.125rem; line-height: 1.75rem; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.375rem"><span>{{t.label}}</span><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" style="flex: none; display: {{t.dropD}}; color: var(--color-trait-marked)"><path fill="currentColor" d="M12 2.5c3.3 4.3 6.2 7.5 6.2 11.2a6.2 6.2 0 0 1-12.4 0C5.8 10 8.7 6.8 12 2.5z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" style="flex: none; display: {{t.ankhD}}; color: var(--color-trait-filled)"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="7" rx="3.8" ry="4.5"/><path d="M12 11.5V22"/><path d="M6 14.5h12"/></g></svg></div>
+<div role="group" aria-label="{{t.aria}}" style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 2px; margin-top: calc(0.8rem + 0.25rem)">
+<sc-for list="{{t.cells}}" as="d" hint-placeholder-count="10"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1rem; block-size: 1rem; padding: 0; cursor: pointer; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}"></button></sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; padding-bottom: 1rem; border-inline-start: 1px solid; border-image: linear-gradient(to bottom, transparent, var(--color-rule) 12%, var(--color-rule) 88%, transparent) 1; padding-inline-start: 1rem; -webkit-print-color-adjust: exact; print-color-adjust: exact">
+<div style="display: flex; align-items: center; gap: 0.5rem; min-block-size: 1.75rem; flex-wrap: wrap"><span>Blood Potency</span><span role="group" aria-label="{{rawBpAria}}" style="display: inline-flex; align-items: center"><sc-for list="{{rawBloodPotency}}" as="d" hint-placeholder-count="10"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 0.8rem; block-size: 0.8rem; padding: 0; cursor: pointer; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></button></sc-for></span></div>
+<sc-for list="{{rawBloodFieldsA}}" as="f" hint-placeholder-count="1">
+<div style="display: flex; align-items: center; gap: 0.5rem; min-block-size: 1.75rem"><span style="flex: none">{{f.label}}</span><input type="text" value="{{f.value}}" onInput="{{f.set}}" aria-label="{{f.aria}}" style="flex: 1; min-width: 0; max-inline-size: 7rem; box-sizing: border-box; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; outline-offset: 2px; text-align: center; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted); padding: 0 0.25rem"></div>
+</sc-for>
+<div style="flex: 1 1 0; min-block-size: 0; display: flex; flex-direction: column; margin-top: 0.25rem"><span style="flex: none; font-style: italic">{{rawNoteBane.label}}</span><textarea value="{{rawNoteBane.value}}" onInput="{{rawNoteBane.set}}" aria-label="{{rawNoteBane.aria}}" rows="1" style="flex: 1 1 0; min-block-size: 2.5rem; display: block; inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea></div>
+</div>
+<div style="display: flex; flex-direction: column; padding-bottom: 1rem; padding-inline-start: 1rem">
+<sc-for list="{{rawBloodFieldsB}}" as="f" hint-placeholder-count="1">
+<div style="display: flex; align-items: center; gap: 0.5rem; min-block-size: 1.75rem"><span style="flex: none">{{f.label}}</span><input type="text" value="{{f.value}}" onInput="{{f.set}}" aria-label="{{f.aria}}" style="flex: 1; min-width: 0; max-inline-size: 7rem; box-sizing: border-box; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; outline-offset: 2px; text-align: center; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted); padding: 0 0.25rem"></div>
+</sc-for>
+<div style="flex: 1 1 0; min-block-size: 0; display: flex; flex-direction: column; margin-top: 0.25rem"><span style="flex: none; font-style: italic">{{rawNoteComp.label}}</span><textarea value="{{rawNoteComp.value}}" onInput="{{rawNoteComp.set}}" aria-label="{{rawNoteComp.aria}}" rows="1" style="flex: 1 1 0; min-block-size: 2.5rem; display: block; inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.375rem 0.5rem; border: 1px dotted var(--color-leader); border-radius: 0; background: transparent; resize: none; outline-offset: 2px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)"></textarea></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div style="display: {{mesaDisplay}}; padding: 1.5rem">
+<h2 style="margin: 0 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Mesa</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem">
+<sc-for list="{{mesaCards}}" as="c" hint-placeholder-count="8">
+<div style="display: flex; flex-direction: column; gap: 0.625rem; box-sizing: border-box; padding: 1rem; border: 1px solid var(--color-border); border-top: 3px solid var(--color-accent); background: {{c.bg}}">
+<button type="button" onClick="{{c.pick}}" style="padding: 0; border: 0; background: transparent; color: inherit; text-align: start; cursor: pointer"><span style="display: block; font-family: var(--font-display); font-size: 1.5rem; line-height: 1.1">{{c.name}}</span><span style="display: block; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">{{c.sub}}</span></button>
+<div style="display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)"><span style="inline-size: 3.5rem">Fome</span><span role="group" aria-label="{{c.hungerAria}}" style="display: inline-flex"><sc-for list="{{c.hunger}}" as="d" hint-placeholder-count="5"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.125rem; block-size: 1.125rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background: {{d.bg}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for></span></div>
+<div style="display: flex; align-items: flex-start; gap: 0.5rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)"><button type="button" onClick="{{c.openHealth}}" aria-label="{{c.healthAria}}" title="Abrir tracker completo" style="flex: none; inline-size: 3.5rem; padding: 0; border: 0; background: transparent; color: var(--color-text-muted); font: 500 0.75rem/1.2 var(--font-sans); text-align: start; text-decoration: underline dotted; cursor: pointer">Saúde</button><span role="group" aria-label="{{c.healthAriaGroup}}" style="display: flex; flex: 1; flex-wrap: wrap; align-items: center; row-gap: 2px"><sc-for list="{{c.hBoxes}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1rem; block-size: 1rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for></span></div>
+<div style="display: flex; align-items: flex-start; gap: 0.5rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)"><button type="button" onClick="{{c.openWill}}" aria-label="{{c.willAria}}" title="Abrir tracker completo" style="flex: none; inline-size: 3.5rem; padding: 0; border: 0; background: transparent; color: var(--color-text-muted); font: 500 0.75rem/1.2 var(--font-sans); text-align: start; text-decoration: underline dotted; cursor: pointer">Willpower</button><span role="group" aria-label="{{c.willAriaGroup}}" style="display: flex; flex: 1; flex-wrap: wrap; align-items: center; row-gap: 2px"><sc-for list="{{c.wBoxes}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1rem; block-size: 1rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for></span></div>
+<div style="display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)"><span style="inline-size: 3.5rem">Humanid.</span><span role="img" aria-label="{{c.humAria}}" style="display: inline-flex; align-items: center; justify-content: center; min-inline-size: 1.5rem; padding: 0 0.375rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); color: var(--color-text); font-weight: 600">{{c.humTxt}}</span></div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="display: {{fichaDisplay}}">
+
+
+<div style="border-bottom: 2px solid var(--color-rule); padding: 1rem 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem">
+<div>
+<div style="font-family: var(--font-display); font-size: 2rem; line-height: 1.1">{{charName}}</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin-top: 0.75rem">
+<sc-for list="{{identFields}}" as="f" hint-placeholder-count="4">
+<label style="display: flex; flex-direction: column; gap: 0.125rem">
+<span style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted)">{{f.label}}</span>
+<input type="text" value="{{f.value}}" onInput="{{f.setValue}}" onFocus="{{f.select}}" onClick="{{f.select}}" aria-label="{{f.aria}}" style="inline-size: {{f.width}}; box-sizing: border-box; padding: 0.125rem 0.25rem; border: 0; border-bottom: 2px {{f.lineStyle}} {{f.lineColor}}; border-radius: 0; background: {{f.bg}}; color: var(--color-text-accent); font: 600 1.25rem/1.3 var(--font-serif); cursor: pointer">
+</label>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.75rem">
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; align-items: center">
+<div>
+<button type="button" onClick="{{pickHunger}}" aria-pressed="{{pressedHunger}}" style="padding: 0.125rem 0.25rem; border: 0; border-bottom: 1px solid var(--color-leader); background: {{bgHunger}}; font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); cursor: pointer">Fome</button>
+<div role="group" aria-label="Fome" style="display: flex; align-items: center">
+<sc-for list="{{hungerCells}}" as="d" hint-placeholder-count="5"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.125rem; block-size: 1.125rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background: {{d.bg}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for>
+</div>
+</div>
+<div>
+<button type="button" onClick="{{pickHumanity}}" aria-pressed="{{pressedHumanity}}" style="padding: 0.125rem 0.25rem; border: 0; border-bottom: 1px solid var(--color-leader); background: {{bgHumanity}}; font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); cursor: pointer">Humanidade</button>
+<div role="img" aria-label="Humanidade 7 de 10" style="display: flex; align-items: center">
+<sc-for list="{{humanityCells}}" as="d" hint-placeholder-count="10"><span aria-hidden="true" style="inline-size: 1rem; block-size: 1rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); background: {{d.bg}}; margin-inline-start: {{d.ml}}"></span></sc-for>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; align-items: center">
+<div>
+<button type="button" onClick="{{pickHealth}}" aria-pressed="{{pressedHealth}}" style="padding: 0.125rem 0.25rem; border: 0; border-bottom: 1px solid var(--color-leader); background: {{bgHealth}}; font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); cursor: pointer">Saúde</button><button type="button" onClick="{{hToggle}}" aria-label="{{hEditAria}}" title="{{hEditAria}}" style="display: inline-flex; vertical-align: middle; margin-inline-start: 0.375rem; padding: 0.125rem; border: 0; background: transparent; color: var(--color-accent); cursor: pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: {{hPenD}}"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: {{hSaveD}}"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg></button>
+<div role="group" aria-label="Máximo de Saúde" style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 2px; max-inline-size: 28rem; margin-bottom: 4px"><sc-for list="{{healthCircles}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 0.875rem; block-size: 0.875rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}; cursor: {{d.cur}}"></button></sc-for></div>
+<div role="group" aria-label="Dano em Saúde" style="display: flex; flex-wrap: wrap; align-items: center; max-inline-size: 28rem">
+<sc-for list="{{healthCells}}" as="d" hint-placeholder-count="7"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.125rem; block-size: 1.125rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for>
+</div>
+</div>
+<div>
+<button type="button" onClick="{{pickWillpower}}" aria-pressed="{{pressedWillpower}}" style="padding: 0.125rem 0.25rem; border: 0; border-bottom: 1px solid var(--color-leader); background: {{bgWillpower}}; font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); cursor: pointer">Willpower</button><button type="button" onClick="{{wToggle}}" aria-label="{{wEditAria}}" title="{{wEditAria}}" style="display: inline-flex; vertical-align: middle; margin-inline-start: 0.375rem; padding: 0.125rem; border: 0; background: transparent; color: var(--color-accent); cursor: pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: {{wPenD}}"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: {{wSaveD}}"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg></button>
+<div role="group" aria-label="Máximo de Willpower" style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 2px; max-inline-size: 28rem; margin-bottom: 4px"><sc-for list="{{willCircles}}" as="d" hint-placeholder-count="5"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 0.875rem; block-size: 0.875rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}; cursor: {{d.cur}}"></button></sc-for></div>
+<div role="group" aria-label="Dano em Willpower" style="display: flex; flex-wrap: wrap; align-items: center; max-inline-size: 28rem">
+<sc-for list="{{willCells}}" as="d" hint-placeholder-count="5"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.125rem; block-size: 1.125rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div role="tablist" aria-label="Páginas da ficha" style="display: flex; gap: 0.25rem; padding: 0 1.5rem; border-bottom: 1px solid var(--color-border)">
+<button type="button" role="tab" aria-selected="{{tab1Sel}}" onClick="{{goPage1}}" style="padding: 0.625rem 1rem; border: 0; border-bottom: 3px solid {{tab1Line}}; background: transparent; color: {{tab1Color}}; font: 600 1.0625rem/1.2 var(--font-serif); cursor: pointer"><span style="font-family: var(--font-sans); font-size: 0.75rem; margin-inline-end: 0.5rem">1</span>Capacidades</button>
+<button type="button" role="tab" aria-selected="{{tab2Sel}}" onClick="{{goPage2}}" style="padding: 0.625rem 1rem; border: 0; border-bottom: 3px solid {{tab2Line}}; background: transparent; color: {{tab2Color}}; font: 600 1.0625rem/1.2 var(--font-serif); cursor: pointer"><span style="font-family: var(--font-sans); font-size: 0.75rem; margin-inline-end: 0.5rem">2</span>Sangue e Crença</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; padding: 1.5rem">
+
+<div style="flex: 999 1 640px; min-width: 0">
+<div style="display: {{p1Display}}">
+
+<h2 style="margin: 0 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Attributes</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem 1.5rem">
+<sc-for list="{{attrGroups}}" as="g" hint-placeholder-count="3">
+<div>
+<div style="font-style: italic; text-align: center">{{g.name}}</div>
+<sc-for list="{{g.items}}" as="r" hint-placeholder-count="3">
+<button type="button" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.75rem; padding: 0 0.5rem; border: 0; border-bottom: 1px solid var(--color-border); background: {{r.bg}}; color: inherit; font: inherit; text-align: start; cursor: pointer">
+<span>{{r.label}}</span>
+<span style="display: inline-flex; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}"></span></sc-for>
+</span>
+</button>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 1.75rem 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Skills</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 1.5rem">
+<sc-for list="{{skillGroups}}" as="g" hint-placeholder-count="3">
+<div>
+<sc-for list="{{g.items}}" as="r" hint-placeholder-count="9">
+<div style="position: relative; display: flex; align-items: center; gap: 0.5rem; box-sizing: border-box; min-block-size: 2.75rem; padding: 0 0.5rem; border-bottom: 1px solid var(--color-border); background: {{r.bg}}">
+<button type="button" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}" style="flex: none; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: start; cursor: pointer; min-block-size: 2.75rem">{{r.label}}</button>
+<button type="button" onClick="{{r.toggleSpec}}" aria-expanded="{{r.specOpen}}" aria-label="{{r.specAria}}" style="display: {{r.specDisplay}}; flex: none; align-items: center; justify-content: center; inline-size: 1.125rem; block-size: 1.125rem; padding: 0; box-sizing: border-box; border: 1.5px solid var(--color-accent); border-radius: 9999px; background: transparent; color: var(--color-accent); font: 700 0.6875rem/1 var(--font-sans); cursor: pointer">S</button>
+<button type="button" tabindex="-1" aria-hidden="true" onClick="{{r.pick}}" style="flex: 1; display: flex; align-items: center; justify-content: flex-end; padding: 0; border: 0; background: transparent; cursor: pointer; align-self: stretch">
+<span style="display: inline-flex; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}"></span></sc-for>
+</span>
+</button>
+<div role="status" style="display: {{r.popDisplay}}; position: absolute; inset-inline-start: 0.5rem; inset-block-start: calc(100% - 0.25rem); z-index: 2; box-sizing: border-box; padding: 0.375rem 0.625rem; border: 1px solid var(--color-accent); background: var(--color-surface); box-shadow: 0 2px 6px rgba(35, 31, 32, 0.2); font-family: var(--font-sans); font-size: 0.8125rem; line-height: 1.3; white-space: nowrap"><span style="color: var(--color-text-muted)">Especialização:</span> {{r.spec}}</div>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<h2 style="margin: 1.75rem 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Disciplines</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.25rem 1.5rem">
+<sc-for list="{{disciplines}}" as="r" hint-placeholder-count="3">
+<div>
+<button type="button" onClick="{{r.toggleDisc}}" aria-expanded="{{r.expanded}}" aria-pressed="{{r.pressed}}" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.75rem; padding: 0 0.5rem; border: 0; border-bottom: 1px solid var(--color-border); background: {{r.bg}}; color: inherit; font: inherit; text-align: start; cursor: pointer">
+<span style="display: inline-flex; align-items: center; gap: 0.5rem"><span aria-hidden="true" style="inline-size: 0.75rem; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-accent)">{{r.chevron}}</span><span style="font-weight: 600">{{r.label}}</span></span>
+<span style="display: inline-flex; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}"></span></sc-for>
+</span>
+</button>
+<div style="display: {{r.powersDisplay}}; padding-inline-start: 1.5rem">
+<sc-for list="{{r.powers}}" as="p" hint-placeholder-count="3">
+<button type="button" onClick="{{p.pick}}" aria-pressed="{{p.pressed}}" style="display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.5rem; padding: 0 0.5rem; border: 0; border-bottom: 1px dotted var(--color-leader); background: {{p.bg}}; color: inherit; font: inherit; text-align: start; cursor: pointer; align-items: center">
+<span style="display: inline-flex; align-items: center; gap: 0.5rem"><span aria-hidden="true" style="inline-size: 0.5rem; block-size: 0.5rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: var(--color-trait-filled)"></span><span>{{p.name}}</span></span>
+<span style="font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted); white-space: nowrap">Nv {{p.level}} · {{p.cost}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+
+</div>
+<div style="display: {{p2Display}}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.75rem 2rem">
+<sc-for list="{{p2Sections}}" as="s" hint-placeholder-count="4">
+<section>
+<h2 style="margin: 0 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">{{s.title}}</h2>
+<sc-for list="{{s.rows}}" as="r" hint-placeholder-count="3">
+<button type="button" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}" style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; inline-size: 100%; box-sizing: border-box; min-block-size: 2.75rem; padding: 0 0.5rem; border: 0; border-bottom: 1px solid var(--color-border); background: {{r.bg}}; color: inherit; font: inherit; text-align: start; cursor: pointer">
+<span style="min-width: 0">{{r.label}}</span>
+<span style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">
+<span>{{r.sub}}</span>
+<span style="display: {{r.dotsDisplay}}; align-items: center">
+<sc-for list="{{r.cells}}" as="d" hint-placeholder-count="10"><span aria-hidden="true" style="inline-size: 0.8rem; block-size: 0.8rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}"></span></sc-for>
+</span>
+</span>
+</button>
+</sc-for>
+</section>
+</sc-for>
+</div>
+<h2 style="margin: 1.75rem 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--color-rule); text-align: center; font: 600 1.375rem/1.1 var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase">Profile</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.5rem 2rem">
+<label style="display: block"><span style="font-style: italic">Aparência</span><input type="text" placeholder="[descrição]" style="inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)"></label>
+<label style="display: block"><span style="font-style: italic">Traços marcantes</span><input type="text" placeholder="[cicatrizes, tiques, voz]" style="inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)"></label>
+<label style="display: block"><span style="font-style: italic">História</span><input type="text" placeholder="[resumo da vida mortal e do Abraço]" style="inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)"></label>
+<label style="display: block"><span style="font-style: italic">Notas</span><input type="text" placeholder="[anotações livres]" style="inline-size: 100%; box-sizing: border-box; padding: 0.375rem 0.5rem; border: 0; border-bottom: 1px dotted var(--color-leader); border-radius: 0; background: transparent; color: var(--color-text); font: 500 1rem/1.4 var(--font-sans)"></label>
+</div>
+</div>
+
+<div style="display: flex; justify-content: {{pagerJustify}}; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--color-border)">
+<button type="button" onClick="{{pagerGo}}" style="display: inline-flex; align-items: center; gap: 0.625rem; min-block-size: 2.75rem; padding: 0 1.25rem; border: 1px solid var(--color-accent); background: transparent; color: var(--color-accent); font: 600 1.0625rem/1.2 var(--font-serif); cursor: pointer">{{pagerLabel}}</button>
+</div>
+</div>
+
+<aside aria-label="Referência" style="flex: 1 1 320px; min-width: 0; border: 2px solid var(--color-rule); padding: 1.25rem 1.5rem">
+<div style="font-family: var(--font-sans); font-size: 0.6875rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-text-accent)">{{selKind}}</div>
+<div style="font-family: var(--font-display); font-size: 2rem; line-height: 1.1; margin-block: 0.25rem 0.5rem">{{selLabel}}</div>
+<div style="display: flex; align-items: center; gap: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-rule)">
+<span role="img" aria-label="{{selAria}}" style="display: {{selDotsDisplay}}; align-items: center">
+<sc-for list="{{selCells}}" as="d" hint-placeholder-count="5"><span aria-hidden="true" style="inline-size: 0.9rem; block-size: 0.9rem; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-end: 0.15rem"></span></sc-for>
+</span>
+<span style="margin-inline-start: auto; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">[Fonte · página]</span>
+</div>
+<div style="display: {{selCostDisplay}}; margin-top: 0.5rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Custo: {{selCost}}</div>
+<p style="margin: 0.75rem 0 1rem">{{selBody}}</p>
+<div style="display: {{selLevelsDisplay}}; font-style: italic; margin-bottom: 0.25rem">Níveis</div>
+<sc-for list="{{selLevels}}" as="l" hint-placeholder-count="5">
+<div style="display: {{selLevelsDisplay}}; gap: 0.75rem; padding: 0.375rem 0.5rem; background: {{l.bg}}; border-bottom: 1px solid var(--color-border)">
+<span style="flex: none; inline-size: 1.25rem; font-family: var(--font-sans); font-weight: 600; font-size: 0.8125rem">{{l.n}}</span>
+<span style="flex: 1; min-width: 0; font-size: 1rem">[descrição do nível {{l.n}}]</span>
+</div>
+</sc-for>
+<p style="margin: 1rem 0 0; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Clique em outro atributo, perícia ou disciplina para trocar o painel. Os quadrados de Health e Hunger no topo também respondem ao clique.</p>
+</aside>
+
+</div>
+
+</div>
+</div>
+
+<div onClick="{{closeModal}}" role="presentation" style="display: {{modalDisplay}}; position: absolute; inset: 0; z-index: 40; align-items: center; justify-content: center; background: rgba(35, 31, 32, 0.45)">
+<div role="dialog" aria-modal="true" aria-label="{{modalTitle}}" onClick="{{stop}}" onKeyDown="{{modalKey}}" style="inline-size: min(30rem, calc(100% - 2rem)); box-sizing: border-box; padding: 1.5rem; border: 2px solid var(--color-rule); background: var(--color-surface); box-shadow: 0 12px 32px rgba(35, 31, 32, 0.3)">
+<div style="font-family: var(--font-display); font-size: 1.5rem; line-height: 1.1; margin-bottom: 1rem">{{modalTitle}}</div>
+<div style="display: {{formDisplay}}">
+<label style="display: block; font-style: italic">Nome do personagem<input type="text" value="{{modalName}}" onInput="{{setModalName}}" placeholder="Ex.: Nina Volkov" autofocus style="inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.625rem 0.75rem; border: 1px solid var(--color-border); border-radius: 0; background: var(--color-surface); color: var(--color-text); font: 500 1rem/1.2 var(--font-sans)"></label>
+<label style="display: {{playerDisplay}}; margin-top: 0.75rem; font-style: italic">Jogador (opcional)<input type="text" value="{{modalPlayer}}" onInput="{{setModalPlayer}}" placeholder="Ex.: Marcelle" style="inline-size: 100%; box-sizing: border-box; margin-top: 0.25rem; padding: 0.625rem 0.75rem; border: 1px solid var(--color-border); border-radius: 0; background: var(--color-surface); color: var(--color-text); font: 500 1rem/1.2 var(--font-sans)"></label>
+<div style="display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.25rem">
+<button type="button" onClick="{{closeModal}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Cancelar</button>
+<button type="button" onClick="{{confirmModal}}" style="min-block-size: 2.5rem; padding: 0 1rem; border: 1px solid var(--color-accent); background: var(--color-accent); color: var(--color-surface); font: 600 0.9375rem/1.2 var(--font-sans); cursor: pointer">{{modalConfirm}}</button>
+</div>
+</div>
+<div style="display: {{importDisplay}}">
+<div style="display: {{importPickDisplay}}">
+<div style="padding: 1.5rem 1rem; border: 2px dashed var(--color-leader); text-align: center">Arraste um arquivo .json aqui<div style="margin: 0.5rem 0; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">ou</div><button type="button" onClick="{{fakeImport}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Escolher arquivo</button></div>
+<p style="margin: 0.75rem 0 0.5rem; font-family: var(--font-sans); font-size: 0.8125rem; line-height: 1.45; color: var(--color-text-muted)">Um único botão serve para uma ficha ou para várias. O arquivo tem sempre a mesma forma, e uma ficha avulsa é só uma lista com um item:</p>
+<pre style="margin: 0; padding: 0.625rem 0.75rem; background: var(--color-surface-tint); font: 400 0.75rem/1.5 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap">{ "schemaVersion": 1,
+  "fichas": [ { "nome": "…", … }, … ] }</pre>
+<p style="margin: 0.5rem 0 0; font-family: var(--font-sans); font-size: 0.8125rem; line-height: 1.45; color: var(--color-text-muted)">O formato antigo do app do Pedro (uma ficha só, sem lista) é reconhecido e embrulhado automaticamente. O arquivo é validado antes de entrar.</p>
+</div>
+<div style="display: {{importReviewDisplay}}">
+<p style="margin: 0 0 0.5rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">Arquivo de exemplo: <strong>mesa-auld-sanguine.json</strong>, com {{importCount}} fichas. Escolha o que entra.</p>
+<sc-for list="{{importRows}}" as="r" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--color-border)">
+<button type="button" role="checkbox" aria-checked="{{r.checked}}" aria-label="{{r.aria}}" onClick="{{r.toggle}}" style="flex: none; inline-size: 1.25rem; block-size: 1.25rem; padding: 0; border: 1px solid var(--color-trait-border); background: {{r.boxBg}}; color: var(--color-surface); font: 700 0.8125rem/1 var(--font-sans); cursor: pointer">{{r.mark}}</button>
+<span style="flex: 1; min-width: 0"><span style="font-weight: 600">{{r.name}}</span><span style="display: block; font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-text-muted)">{{r.sub}}</span></span>
+<button type="button" onClick="{{r.cycle}}" style="display: {{r.modeDisplay}}; padding: 0.25rem 0.5rem; border: 1px solid var(--color-accent); background: transparent; color: var(--color-accent); font: 600 0.75rem/1.2 var(--font-sans); cursor: pointer">{{r.mode}}</button>
+</div>
+</sc-for>
+<div style="display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem">
+<button type="button" onClick="{{backToPick}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Voltar</button>
+<button type="button" onClick="{{confirmImport}}" style="min-block-size: 2.5rem; padding: 0 1rem; border: 1px solid var(--color-accent); background: var(--color-accent); color: var(--color-surface); font: 600 0.9375rem/1.2 var(--font-sans); cursor: pointer">{{importConfirmLabel}}</button>
+</div>
+</div>
+<div style="display: {{importPickDisplay}}; justify-content: flex-end; margin-top: 1rem"><button type="button" onClick="{{closeModal}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Fechar</button></div>
+</div>
+</div>
+</div>
+
+<div onClick="{{closeTracker}}" role="presentation" style="display: {{trkDisplay}}; position: absolute; inset: 0; z-index: 45; align-items: center; justify-content: center; background: rgba(35, 31, 32, 0.45)">
+<div role="dialog" aria-modal="true" aria-label="{{trkTitle}}" onClick="{{stop}}" onKeyDown="{{trkKey}}" style="inline-size: min(34rem, calc(100% - 2rem)); box-sizing: border-box; padding: 1.5rem; border: 2px solid var(--color-rule); background: var(--color-surface); box-shadow: 0 12px 32px rgba(35, 31, 32, 0.3)">
+<div style="font-family: var(--font-display); font-size: 1.5rem; line-height: 1.1">{{trkTitle}}</div>
+<div style="margin: 1rem 0 0.375rem; font-style: italic">Máximo: {{trkMax}} <span style="font-family: var(--font-sans); font-size: 0.8125rem; font-style: normal; color: var(--color-text-muted)">(clique num círculo para mudar)</span></div>
+<div role="group" aria-label="Círculos do máximo" style="display: flex; flex-wrap: wrap; align-items: center"><sc-for list="{{trkCircles}}" as="d" hint-placeholder-count="12"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.25rem; block-size: 1.25rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 9999px; background: {{d.bg}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for></div>
+<div style="margin: 1.25rem 0 0.375rem; font-style: italic">Dano <span style="font-family: var(--font-sans); font-size: 0.8125rem; font-style: normal; color: var(--color-text-muted)">(um clique: / superficial · dois: preenchida, agravado · três: limpa)</span></div>
+<div role="group" aria-label="Caixas de dano" style="display: flex; flex-wrap: wrap; align-items: center; row-gap: 4px"><sc-for list="{{trkBoxes}}" as="d" hint-placeholder-count="12"><button type="button" aria-label="{{d.aria}}" onClick="{{d.pick}}" style="inline-size: 1.75rem; block-size: 1.75rem; padding: 0; box-sizing: border-box; border: 1px solid var(--color-trait-border); border-radius: 0; background-color: {{d.bgc}}; background-image: {{d.bgi}}; margin-inline-start: {{d.ml}}; cursor: pointer"></button></sc-for></div>
+<div style="margin-top: 0.75rem; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--color-text-muted)">{{trkSummary}}</div>
+<div style="display: flex; justify-content: flex-end; margin-top: 1.25rem"><button type="button" onClick="{{closeTracker}}" style="min-block-size: 2.5rem; padding: 0 0.875rem; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font: 500 0.9375rem/1.2 var(--font-sans); cursor: pointer">Fechar</button></div>
+</div>
+</div>
+
+<div role="status" style="display: {{toastDisplay}}; position: absolute; inset-block-end: 1.25rem; inset-inline-start: 50%; transform: translateX(-50%); z-index: 50; align-items: center; gap: 1rem; padding: 0.75rem 1rem; background: var(--color-text); color: var(--color-surface); font: 500 0.9375rem/1.3 var(--font-sans); box-shadow: 0 6px 18px rgba(35, 31, 32, 0.35)">
+<span>{{toastText}}</span>
+<button type="button" onClick="{{undoToast}}" style="display: {{undoDisplay}}; padding: 0.25rem 0.5rem; border: 1px solid var(--color-surface); background: transparent; color: var(--color-surface); font: 600 0.875rem/1.2 var(--font-sans); cursor: pointer">Desfazer</button>
+</div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1320}}'>
+class Component extends DCLogic {
+  state = {
+    edit: {},
+    raw: {
+      spec: {},
+      dn: {},
+      // hMax / wMax = filled circles (the maximum). Only that many boxes are usable. Saúde (Health) and Willpower cap 12 each (print sheet).
+      hMax: 7, wMax: 5,
+      health: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      will: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      // The Blood: Blood Potency (0-10), free-text fields and the clan bane / compulsion notes.
+      bp: 1, bf: {}, bn: {},
+      hum: [2, 2, 2, 2, 2, 2, 2, 1, 0, 0],
+      hunger: [2, 2, 0, 0, 0]
+    },
+    sel: { kind: 'Attribute', label: 'Manipulation', value: 4 }, openSpec: null,
+    ident: { clan: 'Toreador', sect: 'Camarilla', predator: 'Sereia', generation: '13ª' },
+    openDisc: {},
+    view: 'mesa', page: 1, sideOpen: true, cur: 'nina', comboOpen: false, comboQuery: '', menuOpen: false,
+    modal: null, modalName: '', modalPlayer: '', toast: null,
+    importStage: 'pick', importRows: [], trk: null,
+    // Sample table of 8 characters (placeholder data, not real players)
+    chars: [
+      { id: 'nina', name: 'Nina', player: 'Jogador 1', hMax: 7, hBox: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 5, wBox: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 2, hum: 7 },
+      { id: 'vincent', name: 'Vincent', player: 'Jogador 2', hMax: 6, hBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 4, wBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 1, hum: 6 },
+      { id: 'khalid', name: 'Khalid', player: 'Jogador 3', hMax: 8, hBox: [1, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 6, wBox: [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 3, hum: 7 },
+      { id: 'gideon', name: 'Gideon', player: 'Jogador 4', hMax: 6, hBox: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 5, wBox: [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 2, hum: 5 },
+      { id: 'p5', name: 'Personagem 5', player: 'Jogador 5', hMax: 7, hBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 4, wBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 2, hum: 8 },
+      { id: 'p6', name: 'Personagem 6', player: 'Jogador 6', hMax: 6, hBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 5, wBox: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 4, hum: 6 },
+      { id: 'p7', name: 'Personagem 7', player: 'Jogador 7', hMax: 5, hBox: [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 5, wBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 1, hum: 7 },
+      { id: 'p8', name: 'Personagem 8', player: 'Jogador 8', hMax: 7, hBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], wMax: 6, wBox: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], hunger: 0, hum: 7 }
+    ],
+    idents: {
+      nina: { clan: 'Toreador', sect: 'Camarilla', predator: 'Sereia', generation: '13ª' },
+      vincent: { clan: 'Ventrue', sect: 'Camarilla', predator: 'Consensualist', generation: '12ª' },
+      khalid: { clan: 'Banu Haqim', sect: 'Independente', predator: 'Alleycat', generation: '13ª' },
+      gideon: { clan: 'Gangrel', sect: 'Anarquista', predator: 'Pursuer', generation: '13ª' },
+      p5: { clan: 'Nosferatu', sect: 'Camarilla', predator: 'Bagger', generation: '13ª' },
+      p6: { clan: 'Brujah', sect: 'Anarquista', predator: 'Scene Queen', generation: '14ª' },
+      p7: { clan: 'Malkavian', sect: 'Camarilla', predator: 'Sandman', generation: '13ª' },
+      p8: { clan: 'Lasombra', sect: 'Independente', predator: 'Osiris', generation: '13ª' }
+    },
+    // Example powers per discipline: [name, level, cost]. Names/costs are sample data; real text comes from the vault.
+    powersByDisc: {
+      Celerity: [['Cat\'s Grace', 1, 'sem custo'], ['Rapid Reflexes', 2, '1 Rouse']],
+      Presence: [['Awe', 1, 'sem custo'], ['Lingering Kiss', 2, '1 Rouse'], ['Entrancement', 3, '1 Rouse']],
+      Auspex: [['Heightened Senses', 1, 'sem custo']]
+    },
+    specs: { Performance: 'Canto', Academics: 'Química', Subterfuge: 'Fingir fraqueza' }
+  };
+
+  renderVals() {
+    const { sel, hunger, damage, openSpec, specs, openDisc, powersByDisc, view, page, sideOpen, cur, comboOpen, comboQuery, menuOpen, modal, modalName, modalPlayer, toast, chars, idents, importStage, importRows, trk } = this.state;
+    const ident = idents[cur];
+
+    // --- Identity mapping layer: free text -> canonical entry (accent/case/spacing-insensitive, with aliases) ---
+    const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+    const makeCatalog = (entries) => {
+      const index = {};
+      entries.forEach(([canon, ...aliases]) => [canon, ...aliases].forEach((a) => { index[norm(a)] = canon; }));
+      return { options: entries.map((e) => e[0]), find: (text) => index[norm(text)] || null };
+    };
+    const catalogs = {
+      clan: makeCatalog([
+        ['Banu Haqim', 'Haqim', 'Assamita'], ['Brujah'], ['Gangrel'], ['Hecata', 'Giovanni'], ['Lasombra'], ['Malkavian'],
+        ['The Ministry', 'Ministry', 'Ministério', 'Seguidores de Set'], ['Nosferatu'], ['Ravnos'], ['Salubri'],
+        ['Toreador'], ['Tremere'], ['Tzimisce'], ['Ventrue'], ['Caitiff', 'Sem clã'], ['Thin-Blood', 'Sangue-Fraco', 'Sangue Ralo']
+      ]),
+      sect: makeCatalog([['Camarilla'], ['Anarch', 'Anarquista', 'Anarquistas', 'Anarcas'], ['Sabbat'], ['Independent', 'Independente', 'Independentes']]),
+      predator: makeCatalog([
+        ['Alleycat'], ['Bagger'], ['Blood Leech'], ['Cleaner'], ['Consensualist'], ['Extortionist'], ['Farmer'], ['Grim Reaper'],
+        ['Graverobber'], ['Montero'], ['Osiris'], ['Pursuer'], ['Roadside Killer'], ['Sandman'], ['Scene Queen'], ['Siren', 'Sereia'], ['Trapdoor']
+      ])
+    };
+    const resolveIdent = (field, text) => {
+      if (field === 'generation') {
+        const m = String(text || '').match(/\d+/);
+        const n = m ? parseInt(m[0], 10) : NaN;
+        const ok = n >= 4 && n <= 16;
+        return { matched: ok, canon: ok ? n + 'ª geração' : null, options: ['4ª a 16ª'] };
+      }
+      const c = catalogs[field];
+      const canon = c.find(text);
+      return { matched: !!canon, canon, options: c.options };
+    };
+    const fieldMeta = [
+      ['clan', 'Clã', '11rem', 'Clã'], ['sect', 'Facção', '10rem', 'Facção'],
+      ['predator', 'Predator Type', '11rem', 'Predator Type'], ['generation', 'Geração', '6rem', 'Geração']
+    ];
+    const identFields = fieldMeta.map(([key, label, width, panelKind]) => {
+      const r = resolveIdent(key, ident[key]);
+      const active = sel.kind === 'Identity' && sel.field === key;
+      return {
+        label, width, aria: label + ' (clique para ver detalhes)', value: ident[key],
+        lineStyle: r.matched ? 'solid' : 'dashed',
+        lineColor: r.matched ? 'var(--color-accent)' : 'var(--color-leader)',
+        bg: active ? 'var(--color-accent-subtle)' : 'transparent',
+        setValue: (e) => this.setState({ idents: { ...this.state.idents, [cur]: { ...this.state.idents[cur], [key]: e.target.value } } }),
+        select: () => { if (!(this.state.sel.kind === 'Identity' && this.state.sel.field === key)) this.setState({ sel: { kind: 'Identity', field: key, label: '', value: 0 } }); }
+      };
+    });
+    const isIdent = sel.kind === 'Identity';
+    const isTracker = sel.kind === 'Tracker';
+    const trackerBtn = (name) => {
+      const on = isTracker && sel.label === name;
+      return {
+        ['pick' + name]: () => this.setState({ sel: { kind: 'Tracker', label: name, value: 0 } }),
+        ['pressed' + name]: on ? 'true' : 'false',
+        ['bg' + name]: on ? 'var(--color-accent-subtle)' : 'transparent'
+      };
+    };
+    const trackerProps = { ...trackerBtn('Health'), ...trackerBtn('Willpower'), ...trackerBtn('Hunger'), ...trackerBtn('Humanity') };
+    const identInfo = isIdent ? (() => {
+      const meta = fieldMeta.find((m) => m[0] === sel.field);
+      const text = ident[sel.field];
+      const r = resolveIdent(sel.field, text);
+      return {
+        kind: meta[3],
+        label: r.matched ? r.canon : (text || '—'),
+        body: r.matched
+          ? '[Texto de referência: ' + r.canon + '. Virá de uma nota publicada do vault ou de um texto seu.]'
+          : 'Sem correspondência para "' + (text || '') + '". Confira a grafia. Opções: ' + r.options.join(', ') + '.'
+      };
+    })() : null;
+    const cells = (n, f, marked) => Array.from({ length: n }, (_, i) => ({
+      bg: i < f ? (marked ? 'var(--color-trait-marked)' : 'var(--color-trait-filled)') : 'var(--color-trait-empty)',
+      ml: i > 0 && i % 5 === 0 ? '0.5rem' : '0'
+    }));
+    const row = (kind, label, value) => {
+      const on = sel.label === label;
+      // Example specializations (placeholders); only skills can have one.
+      const spec = kind === 'Skill' ? (specs[label] || '') : '';
+      const open = openSpec === label && !!spec;
+      return {
+        label, cells: cells(5, value), pressed: on ? 'true' : 'false',
+        spec, specDisplay: spec ? 'inline-flex' : 'none', popDisplay: open ? 'block' : 'none',
+        specOpen: open ? 'true' : 'false', specAria: 'Especialização de ' + label + ': ' + spec,
+        toggleSpec: () => this.setState({ openSpec: open ? null : label }),
+        bg: on ? 'var(--color-accent-subtle)' : 'transparent',
+        pick: () => this.setState({ sel: { kind, label, value } })
+      };
+    };
+    const attrGroups = [
+      { name: 'Physical', items: [['Strength', 2], ['Dexterity', 3], ['Stamina', 2]].map(([l, v]) => row('Attribute', l, v)) },
+      { name: 'Social', items: [['Charisma', 3], ['Manipulation', 4], ['Composure', 2]].map(([l, v]) => row('Attribute', l, v)) },
+      { name: 'Mental', items: [['Intelligence', 2], ['Wits', 3], ['Resolve', 3]].map(([l, v]) => row('Attribute', l, v)) }
+    ];
+    const skillGroups = [
+      { items: [['Athletics', 1], ['Brawl', 0], ['Craft', 0], ['Drive', 2], ['Firearms', 0], ['Larceny', 1], ['Melee', 0], ['Stealth', 2], ['Survival', 0]].map(([l, v]) => row('Skill', l, v)) },
+      { items: [['Animal Handling', 0], ['Etiquette', 2], ['Insight', 1], ['Intimidation', 0], ['Leadership', 1], ['Performance', 3], ['Persuasion', 2], ['Streetwise', 1], ['Subterfuge', 3]].map(([l, v]) => row('Skill', l, v)) },
+      { items: [['Academics', 1], ['Awareness', 2], ['Finance', 0], ['Investigation', 1], ['Medicine', 0], ['Ocultismo', 1], ['Politics', 2], ['Science', 0], ['Technology', 1]].map(([l, v]) => row('Skill', l, v)) }
+    ];
+    const disciplines = [['Celerity', 2], ['Presence', 3], ['Auspex', 1]].map(([l, v]) => {
+      const base = row('Discipline', l, v);
+      const isOpen = !!openDisc[l];
+      return {
+        ...base,
+        expanded: isOpen ? 'true' : 'false',
+        chevron: isOpen ? '▾' : '▸',
+        powersDisplay: isOpen ? 'block' : 'none',
+        // Header click expands/collapses the powers and also shows the discipline in the reference panel.
+        toggleDisc: () => this.setState({ openDisc: { ...openDisc, [l]: !isOpen }, sel: { kind: 'Discipline', label: l, value: v } }),
+        powers: (powersByDisc[l] || []).map(([name, level, cost]) => {
+          const on = sel.kind === 'Power' && sel.label === name;
+          return {
+            name, level, cost, pressed: on ? 'true' : 'false',
+            bg: on ? 'var(--color-accent-subtle)' : 'transparent',
+            pick: () => this.setState({ sel: { kind: 'Power', label: name, value: level, discipline: l, cost } })
+          };
+        })
+      };
+    });
+
+    // ---- Per-character trackers (shared by the sheet header, Mesa cards and the tracker modal) ----
+    // Health: up to 20 circles (max) and boxes; Willpower: up to 15. Only as many boxes as filled circles are usable.
+    // Box state: 0 empty, 1 superficial damage [/], 2 aggravated damage (filled).
+    const capOf = { h: 20, w: 15 };
+    const dmgColor = 'var(--color-trait-marked)';
+    const slashImg = 'linear-gradient(to top right, transparent calc(50% - 1px), ' + dmgColor + ' calc(50% - 1px), ' + dmgColor + ' calc(50% + 1px), transparent calc(50% + 1px))';
+    const patchChar = (id, patch) => this.setState({ chars: this.state.chars.map((c) => (c.id === id ? { ...c, ...patch } : c)) });
+    const gapAt = (i) => (i === 0 ? '0' : (i % 5 === 0 ? '0.5rem' : '2px'));
+    const stateName = ['vazia', 'dano superficial', 'dano agravado'];
+    const boxCells = (c, k, label) => c[k + 'Box'].slice(0, c[k + 'Max']).map((v, i) => ({
+      bgc: v === 2 ? dmgColor : 'var(--color-trait-empty)', bgi: v === 1 ? slashImg : 'none', ml: gapAt(i),
+      aria: label + ' ' + (i + 1) + ': ' + stateName[v],
+      pick: () => patchChar(c.id, { [k + 'Box']: c[k + 'Box'].map((x, j) => (j === i ? (x + 1) % 3 : x)) })
+    }));
+    const circleCells = (c, k, label) => Array.from({ length: capOf[k] }, (_, i) => ({
+      bg: i < c[k + 'Max'] ? 'var(--color-trait-filled)' : 'var(--color-trait-empty)', ml: gapAt(i),
+      aria: label + ': máximo ' + (i + 1),
+      pick: () => patchChar(c.id, { [k + 'Max']: c[k + 'Max'] === i + 1 ? Math.max(1, i) : i + 1 })
+    }));
+    // Header circles: natural state shows only the filled ones; the pencil reveals up to the cap for editing,
+    // the save icon commits the draft (boxes are recalculated; stored damage is kept in the 20/15-slot arrays).
+    const hdr = (c, k, label, pfx) => {
+      const key = k + ':' + c.id; const draft = (this.state.edit || {})[key];
+      const editing = draft !== undefined; const cur = editing ? draft : c[k + 'Max'];
+      const setEdit = (v) => { const e = { ...(this.state.edit || {}) }; if (v === undefined) delete e[key]; else e[key] = v; this.setState({ edit: e }); };
+      return {
+        [pfx + 'Circles']: Array.from({ length: editing ? capOf[k] : c[k + 'Max'] }, (_, i) => ({
+          bg: i < cur ? 'var(--color-trait-filled)' : 'var(--color-trait-empty)', ml: gapAt(i), cur: editing ? 'pointer' : 'default',
+          aria: label + (editing ? ': máximo ' : ' círculo ') + (i + 1),
+          pick: () => { if (editing) setEdit(draft === i + 1 ? Math.max(1, i) : i + 1); }
+        })),
+        [pfx + 'Toggle']: () => { if (editing) { patchChar(c.id, { [k + 'Max']: draft }); setEdit(undefined); } else setEdit(c[k + 'Max']); },
+        [pfx + 'EditAria']: (editing ? 'Salvar máximo de ' : 'Editar máximo de ') + label,
+        [pfx + 'PenD']: editing ? 'none' : 'inline', [pfx + 'SaveD']: editing ? 'inline' : 'none'
+      };
+    };
+    const hungerOf = (c) => cells(5, c.hunger, true).map((d, i) => ({
+      ...d, ml: i === 0 ? '0' : '0.375rem', aria: 'Fome ' + (i + 1),
+      pick: () => patchChar(c.id, { hunger: c.hunger === i + 1 ? i : i + 1 })
+    }));
+    const dmgCount = (c, k) => c[k + 'Box'].slice(0, c[k + 'Max']).filter((v) => v > 0).length;
+    const chNow = chars.find((c) => c.id === cur) || chars[0];
+    const hdrEdit = { ...hdr(chNow, 'h', 'Saúde', 'health'), ...hdr(chNow, 'w', 'Willpower', 'will') };
+    const healthCells = boxCells(chNow, 'h', 'Saúde');
+    const willCells = boxCells(chNow, 'w', 'Willpower');
+    const hungerCells = hungerOf(chNow);
+    // 2px gap inside a group of 5, larger gap between the two groups
+    const humanityCells = cells(10, 7).map((c, i) => ({ ...c, ml: i === 0 ? '0' : (i === 5 ? '0.5rem' : '2px') }));
+
+    // ---------------- App shell: sidebar, top bar, Mesa, modals, paging ----------------
+    const ch = chars.find((c) => c.id === cur) || chars[0];
+    const accentBg = 'var(--color-accent-subtle)';
+    const goChar = (id) => {
+      const c = this.state.chars.find((x) => x.id === id);
+      this.setState({ cur: id, view: 'ficha', page: 1, comboOpen: false, comboQuery: '', menuOpen: false, sel: { kind: 'Attribute', label: 'Manipulation', value: 4 } });
+    };
+    const flash = (text, undo) => {
+      this.setState({ toast: { text, undo: undo || null } });
+      setTimeout(() => { if (this.state.toast && this.state.toast.text === text) this.setState({ toast: null }); }, 6000);
+    };
+    const closeModal = () => this.setState({ modal: null });
+    const confirmModal = () => {
+      const name = (this.state.modalName || '').trim();
+      if (!name) return;
+      if (this.state.modal === 'new') {
+        const id = 'c' + Date.now();
+        const player = (this.state.modalPlayer || '').trim() || 'Sem jogador';
+        this.setState({
+          chars: [...this.state.chars, { id, name, player, hMax: 5, hBox: Array(20).fill(0), wMax: 4, wBox: Array(15).fill(0), hunger: 1 }],
+          idents: { ...this.state.idents, [id]: { clan: '', sect: '', predator: '', generation: '' } },
+          modal: null, cur: id, view: 'ficha', page: 1
+        });
+        flash('Ficha "' + name + '" criada.');
+      } else if (this.state.modal === 'rename') {
+        this.setState({ chars: this.state.chars.map((c) => (c.id === this.state.cur ? { ...c, name } : c)), modal: null });
+      }
+    };
+    const mesaCards = chars.map((c) => ({
+      name: c.name, sub: [idents[c.id].clan || 'Sem clã', c.player].join(' · '),
+      hunger: hungerOf(c), hungerAria: 'Fome de ' + c.name + ': ' + c.hunger + ' de 5',
+      healthAria: 'Saúde de ' + c.name + ': máximo ' + c.hMax + ', ' + dmgCount(c, 'h') + ' com dano. Abrir o tracker completo.',
+      willAria: 'Willpower de ' + c.name + ': máximo ' + c.wMax + ', ' + dmgCount(c, 'w') + ' com dano. Abrir o tracker completo.',
+      healthAriaGroup: 'Caixas de saúde de ' + c.name, willAriaGroup: 'Caixas de vontade de ' + c.name,
+      hBoxes: boxCells(c, 'h', 'Saúde de ' + c.name), wBoxes: boxCells(c, 'w', 'Willpower de ' + c.name),
+      humTxt: String(c.hum || 7), humAria: 'Humanidade de ' + c.name + ': ' + (c.hum || 7),
+      openHealth: () => this.setState({ trk: { id: c.id, kind: 'h' } }),
+      openWill: () => this.setState({ trk: { id: c.id, kind: 'w' } }),
+      bg: c.id === cur ? accentBg : 'transparent', pick: () => goChar(c.id)
+    }));
+    // Tracker modal (opened from the Mesa chips)
+    const trkChar = trk ? chars.find((c) => c.id === trk.id) : null;
+    const trkK = trk ? trk.kind : 'h';
+    const trkName = trkK === 'h' ? 'Saúde' : 'Willpower';
+    const trkProps = trkChar ? {
+      trkTitle: trkName + ' · ' + trkChar.name,
+      trkMax: trkChar[trkK + 'Max'],
+      trkCircles: circleCells(trkChar, trkK, trkName),
+      trkBoxes: boxCells(trkChar, trkK, trkName),
+      trkSummary: dmgCount(trkChar, trkK) + ' de ' + trkChar[trkK + 'Max'] + ' caixas com dano · ' +
+        trkChar[trkK + 'Box'].slice(0, trkChar[trkK + 'Max']).filter((v) => v === 1).length + ' superficial, ' +
+        trkChar[trkK + 'Box'].slice(0, trkChar[trkK + 'Max']).filter((v) => v === 2).length + ' agravado'
+    } : { trkTitle: '', trkMax: 0, trkCircles: [], trkBoxes: [], trkSummary: '' };
+    const q = norm(comboQuery);
+    const comboItems = chars
+      .filter((c) => !q || norm(c.name + ' ' + (idents[c.id].clan || '') + ' ' + c.player).includes(q))
+      .map((c) => ({ name: c.name, sub: (idents[c.id].clan || 'Sem clã') + ' · ' + c.player, bg: c.id === cur ? accentBg : 'transparent', pick: () => goChar(c.id) }));
+
+    // Page 2 (Sangue e Crença): rows open the same reference panel as page 1
+    const info = (group, label, sub, dotsN, dotsF) => {
+      const on = sel.kind === 'Tracker' && sel.group === group && sel.label === label;
+      return {
+        label, sub, cells: dotsN ? cells(dotsN, dotsF) : [], dotsDisplay: dotsN ? 'inline-flex' : 'none',
+        pressed: on ? 'true' : 'false', bg: on ? accentBg : 'transparent',
+        pick: () => this.setState({ sel: { kind: 'Tracker', group, label, value: 0 } })
+      };
+    };
+    const p2Sections = [
+      { title: 'Beliefs', rows: [
+        info('Crença', 'Chronicle Tenet 1', '[tenet]'), info('Crença', 'Chronicle Tenet 2', '[tenet]'), info('Crença', 'Chronicle Tenet 3', '[tenet]'),
+        info('Crença', 'Touchstone 1', '[nome] · [convicção]'), info('Crença', 'Touchstone 2', '[nome] · [convicção]'), info('Crença', 'Touchstone 3', '[nome] · [convicção]')
+      ] },
+      { title: 'Merits & Flaws', rows: [
+        info('Mérito', 'Mérito 1', '[nome]', 5, 2), info('Mérito', 'Mérito 2', '[nome]', 5, 1), info('Defeito', 'Defeito 1', '[nome]', 5, 1)
+      ] },
+      { title: 'The Blood', rows: [
+        info('Sangue', 'Blood Potency', '', 10, 2), info('Sangue', 'Resonance', '[resonância]'), info('Sangue', 'Dyscrasia', '[dyscrasia]')
+      ] },
+      { title: 'Experience', rows: [
+        info('Experiência', 'Total', '[xp]'), info('Experiência', 'Gasto', '[xp]'), info('Experiência', 'Restante', '[xp]')
+      ] }
+    ];
+
+    // ---- Raw PDF: print layout of sheet A, with its own sample state (state.raw) ----
+    const setRaw = (p) => this.setState({ raw: { ...this.state.raw, ...p } });
+    const rawVals = (() => {
+    const cells = (n, f, kind, marked) => Array.from({ length: n }, (_, i) => ({
+      bg: i < f ? (marked ? 'var(--color-trait-marked)' : 'var(--color-trait-filled)') : 'var(--color-trait-empty)',
+      ml: i > 0 && i % 5 === 0 ? '0.5rem' : '0',
+      br: kind === 'sq' ? '0' : '9999px'
+    }));
+    // Skill specialization text lives in state.spec (keyed by skill label), seeded with the sample values.
+    const specs = this.state.raw.spec;
+    const trait = (label, v, spec) => ({
+      label, spec: specs[label] !== undefined ? specs[label] : (spec || ''), cells: cells(5, v, 'dot'), aria: label + ' ' + v + ' de 5',
+      specAria: 'Especialização de ' + label,
+      setSpec: (e) => setRaw({ spec: { ...this.state.raw.spec, [label]: e.target.value } })
+    });
+    const attrGroups = [
+      { name: 'Physical', items: [['Strength', 2], ['Dexterity', 3], ['Stamina', 2]].map(([l, v]) => trait(l, v)) },
+      { name: 'Social', items: [['Charisma', 3], ['Manipulation', 4], ['Composure', 2]].map(([l, v]) => trait(l, v)) },
+      { name: 'Mental', items: [['Intelligence', 2], ['Wits', 3], ['Resolve', 3]].map(([l, v]) => trait(l, v)) }
+    ];
+    const skillGroups = [
+      { items: [['Athletics', 1, ''], ['Brawl', 0, ''], ['Craft', 0, ''], ['Drive', 2, ''], ['Firearms', 0, ''], ['Larceny', 1, ''], ['Melee', 0, ''], ['Stealth', 2, ''], ['Survival', 0, '']].map(([l, v, s]) => trait(l, v, s)) },
+      { items: [['Animal Handling', 0, ''], ['Etiquette', 2, ''], ['Insight', 1, ''], ['Intimidation', 0, ''], ['Leadership', 1, ''], ['Performance', 3, 'Canto'], ['Persuasion', 2, ''], ['Streetwise', 1, ''], ['Subterfuge', 3, '']].map(([l, v, s]) => trait(l, v, s)) },
+      { items: [['Academics', 1, ''], ['Awareness', 2, ''], ['Finance', 0, ''], ['Investigation', 1, ''], ['Medicine', 0, ''], ['Ocultismo', 1, ''], ['Politics', 2, ''], ['Science', 0, ''], ['Technology', 1, '']].map(([l, v, s]) => trait(l, v, s)) }
+    ];
+    // Discipline names are editable text (state.dn, keyed by slot); the printed sheet has 6 slots.
+    const disc = (name0, v, powers, slot) => {
+      const name = this.state.raw.dn[slot] !== undefined ? this.state.raw.dn[slot] : name0;
+      return {
+      name, nameAria: 'Nome da disciplina ' + (slot + 1),
+      setName: (e) => setRaw({ dn: { ...this.state.raw.dn, [slot]: e.target.value } }),
+      cells: cells(5, v, 'dot'), aria: (name || 'Disciplina vazia') + ' ' + v + ' de 5',
+      powers: Array.from({ length: 5 }, (_, i) => ({ name: powers[i] ? powers[i][0] : '', note: powers[i] ? powers[i][1] : '' }))
+      };
+    };
+    const disciplines = [
+      disc('Celerity', 2, [['[Poder nível 1]', '[custo]'], ['[Poder nível 2]', '[custo]']], 0),
+      disc('Presence', 3, [['[Poder nível 1]', '[custo]'], ['[Poder nível 2]', '[custo]'], ['[Poder nível 3]', '[custo]']], 1),
+      disc('Auspex', 1, [['[Poder nível 1]', '[custo]']], 2),
+      disc('', 0, [], 3), disc('', 0, [], 4), disc('', 0, [], 5)
+    ];
+    const identity = [
+      ['Nome', 'Personagem Exemplo'], ['Player', '[Jogador]'], ['Crônica', 'Auld Sanguine'],
+      ['Clã', 'Toreador'], ['Predator Type', 'Sereia'], ['Ambição', '[Ambição]'],
+      ['Facção', 'Camarilla'], ['Geração', '13ª'], ['Desejo', '[Desejo]']
+    ].map(([label, value]) => ({ label, value }));
+    // Box states: 0 = empty, 1 = slash [/], 2 = filled. Click cycles 0 -> 1 -> 2 -> 0.
+    // Hunger is binary: 0 <-> 2.
+    const st = this.state.raw;
+    const names = { 0: 'vazio', 1: 'riscado', 2: 'preenchido' };
+    // Spacing: small gap (2px) inside a group of 5, larger gap (0.5rem) between groups.
+    const gapAt = (i, groups) => (i === 0 ? '0' : (groups && i % 5 === 0 ? '0.5rem' : '2px'));
+    // Print sheet: every circle and every box (Saúde 12, Willpower 12) is always visible; nothing is hidden by the maximum.
+    const limitOf = (key) => st[key].length;
+    const boxes = (key, label, binary, color, groups) => st[key].slice(0, limitOf(key)).map((v, i) => {
+      const slash = 'linear-gradient(to top right, transparent calc(50% - 1px), ' + color + ' calc(50% - 1px), ' + color + ' calc(50% + 1px), transparent calc(50% + 1px))';
+      return {
+        bgc: v === 2 ? color : 'var(--color-trait-empty)',
+        bgi: v === 1 ? slash : 'none',
+        ml: binary ? (i === 0 ? '0' : '0.5rem') : gapAt(i, groups),
+        aria: label + ' ' + (i + 1) + ': ' + names[v],
+        pick: () => {
+          const next = binary ? (v === 2 ? 0 : 2) : (v + 1) % 3;
+          setRaw({ [key]: st[key].map((x, j) => (j === i ? next : x)) });
+        }
+      };
+    });
+    const count = (key, n) => st[key].slice(0, limitOf(key)).filter((x) => x === n).length;
+    // Circles set the maximum: click circle N to make the maximum N; click the last filled one to remove it (minimum 1).
+    const circles = (maxKey, cap, label) => Array.from({ length: cap }, (_, i) => ({
+      bg: i < st[maxKey] ? 'var(--color-trait-filled)' : 'var(--color-trait-empty)', ml: gapAt(i, true),
+      aria: label + ': máximo ' + (i + 1),
+      pick: () => setRaw({ [maxKey]: st[maxKey] === i + 1 ? Math.max(1, i) : i + 1 })
+    }));
+    const trackersLeft = [
+      { label: 'Saúde', aria: 'Saúde máximo ' + st.hMax + ', dano superficial ' + count('health', 1) + ', agravado ' + count('health', 2), max: circles('hMax', 12, 'Saúde'), damage: boxes('health', 'Saúde', false, 'var(--color-trait-marked)', true) },
+      { label: 'Willpower', aria: 'Willpower máximo ' + st.wMax + ', dano superficial ' + count('will', 1) + ', agravado ' + count('will', 2), max: circles('wMax', 12, 'Willpower'), damage: boxes('will', 'Willpower', false, 'var(--color-trait-marked)', true) }
+    ];
+    const trackersRight = [
+      { label: 'Humanidade', ankhD: 'block', dropD: 'none', aria: 'Humanidade ' + count('hum', 2) + ' de 10, manchas ' + count('hum', 1), cells: boxes('hum', 'Humanidade', false, 'var(--color-trait-filled)', true) },
+      { label: 'Fome', dropD: 'block', ankhD: 'none', aria: 'Fome ' + count('hunger', 2) + ' de 5', cells: boxes('hunger', 'Fome', true, 'var(--color-trait-marked)', false) }
+    ];
+    // ---- The Blood (inside Trackers): two extra columns ----
+    const bloodPotency = Array.from({ length: 10 }, (_, i) => ({
+      bg: i < st.bp ? 'var(--color-trait-filled)' : 'var(--color-trait-empty)', ml: gapAt(i, true),
+      aria: 'Blood Potency ' + (i + 1),
+      pick: () => setRaw({ bp: st.bp === i + 1 ? i : i + 1 })
+    }));
+    const field = (label) => ({
+      label, value: st.bf[label] || '', aria: label,
+      set: (e) => setRaw({ bf: { ...this.state.raw.bf, [label]: e.target.value } })
+    });
+    const note = (label) => ({
+      label, value: st.bn[label] || '', aria: label,
+      set: (e) => setRaw({ bn: { ...this.state.raw.bn, [label]: e.target.value } })
+    });
+    const bloodFieldsA = [field('Bane Severity')];
+    const bloodFieldsB = [field('Blood Surge'), field('Mend Amount'), field('Rouse Re-Roll')];
+    const noteBane = note('Clan Bane'), noteComp = note('Compulsão de Clã');
+      return { rawIdentity: identity, rawAttrGroups: attrGroups, rawSkillGroups: skillGroups, rawDisciplines: disciplines, rawTrackersLeft: trackersLeft, rawTrackersRight: trackersRight, rawBloodPotency: bloodPotency, rawBloodFieldsA: bloodFieldsA, rawBloodFieldsB: bloodFieldsB, rawNoteBane: noteBane, rawNoteComp: noteComp, rawBpAria: 'Blood Potency ' + st.bp + ' de 10' };
+    })();
+
+    const onFicha = view === 'ficha';
+    const onRaw = view === 'raw';
+    const modalKind = modal;
+    const shell = {
+      charName: ch.name,
+      sideW: sideOpen ? '14rem' : '3.5rem', labelDisplay: sideOpen ? 'inline' : 'none',
+      sideExpanded: sideOpen ? 'true' : 'false', sideToggleGlyph: sideOpen ? '‹' : '›',
+      sideToggleAria: sideOpen ? 'Recolher menu' : 'Expandir menu',
+      toggleSide: () => this.setState({ sideOpen: !sideOpen }),
+      bgFichas: onRaw ? 'transparent' : accentBg, bgOff: 'transparent', bgRaw: onRaw ? accentBg : 'transparent', rawCurrent: onRaw ? 'page' : 'false', goRaw: () => this.setState({ view: 'raw', menuOpen: false, comboOpen: false }),
+      subMesaBg: view === 'mesa' ? accentBg : 'transparent', subFichaBg: onFicha ? accentBg : 'transparent',
+      goMesa: () => this.setState({ view: 'mesa', menuOpen: false, comboOpen: false }),
+      goFicha: () => this.setState({ view: 'ficha', menuOpen: false, comboOpen: false }),
+      mesaDisplay: view === 'mesa' ? 'block' : 'none', fichaDisplay: onFicha ? 'block' : 'none', rawDisplay: onRaw ? 'block' : 'none',
+      mesaCards, willCells, healthCircles: hdrEdit.healthCircles, willCircles: hdrEdit.willCircles, hToggle: hdrEdit.healthToggle, hEditAria: hdrEdit.healthEditAria, hPenD: hdrEdit.healthPenD, hSaveD: hdrEdit.healthSaveD, wToggle: hdrEdit.willToggle, wEditAria: hdrEdit.willEditAria, wPenD: hdrEdit.willPenD, wSaveD: hdrEdit.willSaveD, ...trkProps,
+      trkDisplay: trk ? 'flex' : 'none', closeTracker: () => this.setState({ trk: null }),
+      trkKey: (e) => { if (e.key === 'Escape') this.setState({ trk: null }); },
+      comboItems, comboEmptyDisplay: comboItems.length ? 'none' : 'block',
+      comboDisplay: comboOpen ? 'block' : 'none', comboExpanded: comboOpen ? 'true' : 'false', comboQuery,
+      toggleCombo: () => this.setState({ comboOpen: !comboOpen, menuOpen: false, comboQuery: '' }),
+      setComboQuery: (e) => this.setState({ comboQuery: e.target.value }),
+      menuDisplay: menuOpen ? 'block' : 'none', menuExpanded: menuOpen ? 'true' : 'false',
+      toggleMenu: () => this.setState({ menuOpen: !menuOpen, comboOpen: false }),
+      openNew: () => this.setState({ modal: 'new', modalName: '', modalPlayer: '', comboOpen: false, menuOpen: false }),
+      openRename: () => this.setState({ modal: 'rename', modalName: ch.name, menuOpen: false }),
+      openImport: () => this.setState({ modal: 'import', importStage: 'pick', importRows: [], comboOpen: false, menuOpen: false }),
+      exportAll: () => flash('Backup exportado: todas as fichas em um .json (protótipo).'),
+      exportChar: () => { this.setState({ menuOpen: false }); flash('Ficha de ' + ch.name + ' exportada (protótipo).'); },
+      duplicateChar: () => {
+        const id = 'c' + Date.now();
+        this.setState({
+          chars: [...chars, { ...ch, id, name: ch.name + ' (cópia)' }],
+          idents: { ...idents, [id]: { ...idents[cur] } }, menuOpen: false, cur: id, view: 'ficha', page: 1
+        });
+      },
+      deleteChar: () => {
+        if (chars.length < 2) { flash('Não é possível excluir a última ficha.'); this.setState({ menuOpen: false }); return; }
+        const idx = chars.findIndex((c) => c.id === cur);
+        const removed = ch;
+        const left = chars.filter((c) => c.id !== cur);
+        this.setState({ chars: left, cur: left[Math.max(0, idx - 1)].id, menuOpen: false, view: 'mesa' });
+        flash('Ficha "' + removed.name + '" excluída.', () => {
+          const list = [...this.state.chars];
+          list.splice(idx, 0, removed);
+          this.setState({ chars: list, toast: null });
+        });
+      },
+      // modal
+      modalDisplay: modal ? 'flex' : 'none',
+      formDisplay: (modal === 'new' || modal === 'rename') ? 'block' : 'none', importDisplay: modal === 'import' ? 'block' : 'none',
+      playerDisplay: modal === 'new' ? 'block' : 'none',
+      modalTitle: modal === 'new' ? 'Novo personagem' : (modal === 'rename' ? 'Renomear ficha' : 'Importar fichas'),
+      modalConfirm: modal === 'new' ? 'Criar ficha' : 'Salvar nome',
+      modalName, modalPlayer,
+      setModalName: (e) => this.setState({ modalName: e.target.value }),
+      setModalPlayer: (e) => this.setState({ modalPlayer: e.target.value }),
+      closeModal, confirmModal, stop: (e) => { if (e && e.stopPropagation) e.stopPropagation(); },
+      modalKey: (e) => { if (e.key === 'Enter' && modalKind !== 'import') confirmModal(); if (e.key === 'Escape') closeModal(); },
+      // Simulated file with a "fichas" array: new sheets and one name collision (Nina)
+      fakeImport: () => this.setState({
+        importStage: 'review',
+        importRows: [
+          { name: 'Elena', sub: 'Ventrue · nova ficha', exists: false, include: true, mode: 'Substituir' },
+          { name: 'Nina', sub: 'Toreador · já existe na mesa', exists: true, include: true, mode: 'Duplicar' },
+          { name: 'Marcus', sub: 'Brujah · nova ficha', exists: false, include: true, mode: 'Substituir' }
+        ]
+      }),
+      importStagePick: importStage === 'pick',
+      importPickDisplay: importStage === 'pick' ? 'block' : 'none',
+      importReviewDisplay: importStage === 'review' ? 'block' : 'none',
+      importCount: importRows.length,
+      importConfirmLabel: 'Importar ' + importRows.filter((r) => r.include).length + ' ficha(s)',
+      importRows: importRows.map((r, i) => ({
+        name: r.name, sub: r.sub, aria: 'Incluir ' + r.name, checked: r.include ? 'true' : 'false', mark: r.include ? '✓' : '',
+        boxBg: r.include ? 'var(--color-trait-filled)' : 'var(--color-surface)',
+        modeDisplay: r.exists && r.include ? 'inline-block' : 'none', mode: r.mode,
+        toggle: () => this.setState({ importRows: importRows.map((x, j) => (j === i ? { ...x, include: !x.include } : x)) }),
+        cycle: () => this.setState({ importRows: importRows.map((x, j) => (j === i ? { ...x, mode: x.mode === 'Duplicar' ? 'Substituir' : 'Duplicar' } : x)) })
+      })),
+      backToPick: () => this.setState({ importStage: 'pick', importRows: [] }),
+      confirmImport: () => {
+        let list = [...this.state.chars];
+        const ids = { ...this.state.idents };
+        let added = 0;
+        importRows.filter((r) => r.include).forEach((r) => {
+          const hit = list.find((c) => c.name === r.name);
+          if (hit && r.mode === 'Substituir') { added += 1; return; }
+          const id = 'i' + Date.now() + added;
+          list.push({ id, name: hit ? r.name + ' (importada)' : r.name, player: 'Importado', hMax: 5, hBox: Array(20).fill(0), wMax: 4, wBox: Array(15).fill(0), hunger: 1 });
+          ids[id] = { clan: (r.sub.split(' · ')[0] || ''), sect: '', predator: '', generation: '' };
+          added += 1;
+        });
+        this.setState({ chars: list, idents: ids, modal: null, importStage: 'pick', importRows: [] });
+        flash(added + ' ficha(s) importada(s).');
+      },
+      toastDisplay: toast ? 'flex' : 'none', toastText: toast ? toast.text : '',
+      undoDisplay: toast && toast.undo ? 'inline-block' : 'none', undoToast: () => { if (toast && toast.undo) toast.undo(); },
+      // paging
+      p1Display: page === 1 ? 'block' : 'none', p2Display: page === 2 ? 'block' : 'none',
+      tab1Sel: page === 1 ? 'true' : 'false', tab2Sel: page === 2 ? 'true' : 'false',
+      tab1Line: page === 1 ? 'var(--color-accent)' : 'transparent', tab2Line: page === 2 ? 'var(--color-accent)' : 'transparent',
+      tab1Color: page === 1 ? 'var(--color-text-accent)' : 'var(--color-text-muted)', tab2Color: page === 2 ? 'var(--color-text-accent)' : 'var(--color-text-muted)',
+      goPage1: () => this.setState({ page: 1 }), goPage2: () => this.setState({ page: 2 }),
+      pagerJustify: page === 1 ? 'flex-end' : 'flex-start',
+      pagerLabel: page === 1 ? 'Próxima página · 2 · Sangue e Crença  →' : '←  Página anterior · 1 · Capacidades',
+      pagerGo: () => { this.setState({ page: page === 1 ? 2 : 1 }); },
+      p2Sections
+    };
+
+    return {
+      attrGroups, skillGroups, disciplines, healthCells, hungerCells, humanityCells,
+      identFields, ...trackerProps, ...shell, ...rawVals,
+      selKind: isIdent ? identInfo.kind : (isTracker ? (sel.group || 'Trilha') : (sel.kind === 'Power' ? 'Poder · ' + sel.discipline : sel.kind)),
+      selLabel: isIdent ? identInfo.label : ({ Health: 'Saúde', Hunger: 'Fome', Humanity: 'Humanidade' }[sel.label] || sel.label),
+      selBody: isIdent ? identInfo.body : (isTracker ? '[Texto de referência de ' + sel.label + ': ' + (sel.group ? 'virá' : 'regras da trilha, vindas') + ' de uma nota publicada do vault ou de um texto seu.]' : '[Texto de referência: resumo escrito por você ou vindo de uma nota publicada do vault.]'),
+      selCost: sel.cost || '', selCostDisplay: sel.kind === 'Power' ? 'block' : 'none',
+      selLevelsDisplay: (sel.kind === 'Power' || isIdent || isTracker) ? 'none' : 'flex',
+      selDotsDisplay: (isIdent || isTracker) ? 'none' : 'inline-flex',
+      selCells: cells(5, sel.value), selAria: sel.label + ' ' + sel.value + ' de 5',
+      selLevels: [1, 2, 3, 4, 5].map((n) => ({ n, bg: n === sel.value ? 'var(--color-accent-subtle)' : 'transparent' }))
+    };
+  }
+}
+</script>
+</body>
+</html>

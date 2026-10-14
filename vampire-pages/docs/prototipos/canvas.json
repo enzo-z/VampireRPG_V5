@@ -1,0 +1,58 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "FichaApp.dc.html": {
+      "expand": "fill",
+      "h": 1320,
+      "is_interactive": true,
+      "title": "C · Aplicação completa: menu lateral, Mesa e ficha em 2 páginas",
+      "w": 1280,
+      "x": 2720,
+      "y": 0
+    },
+    "FichaPainel.dc.html": {
+      "expand": "fill",
+      "h": 1320,
+      "is_interactive": true,
+      "title": "B · Ficha de mesa com painel de referência",
+      "w": 1280,
+      "x": 1360,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 1570,
+      "is_interactive": true,
+      "title": "A · Ficha fiel (página 1, mecânica)",
+      "w": 1280,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-14T18:10:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "titulo": {
+      "kind": "title1",
+      "maxW": 3960,
+      "text": "Direções de ficha (A, B) e shell da aplicação (C) · tema claro · tokens do design-spec",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "FichaPainel.dc.html",
+    "FichaApp.dc.html"
+  ],
+  "pages": [],
+  "title": "Vampire Pages: protótipos da ficha"
+}
