@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
+import { PrintView } from '../features/print/PrintView.tsx';
 import { SheetPage } from '../features/sheet/SheetPage.tsx';
 import { SheetsProvider, useSheets } from '../store/SheetsProvider.tsx';
 import { ToastProvider, useToast } from '../ui/Toast.tsx';
 import { AppBar } from './AppBar.tsx';
 import styles from './App.module.css';
 
+type View = { name: 'sheet' } | { name: 'print'; autoPrint: boolean };
+
 function AppContent() {
-  const { state, storageNotice, dismissStorageNotice } = useSheets();
+  const { state, dispatch, storageNotice, dismissStorageNotice } = useSheets();
   const { notify } = useToast();
   const [readOnly, setReadOnly] = useState(false);
+  const [view, setView] = useState<View>({ name: 'sheet' });
   const active = state.fichas.find((ficha) => ficha.id === state.activeId) ?? null;
 
   useEffect(() => {
@@ -16,6 +20,20 @@ function AppContent() {
     notify(storageNotice);
     dismissStorageNotice();
   }, [storageNotice, notify, dismissStorageNotice]);
+
+  if (active !== null && view.name === 'print') {
+    return (
+      <main>
+        <PrintView
+          key={active.id}
+          ficha={active}
+          edit={readOnly ? null : dispatch}
+          autoPrint={view.autoPrint}
+          onBack={() => setView({ name: 'sheet' })}
+        />
+      </main>
+    );
+  }
 
   return (
     <>
@@ -32,7 +50,7 @@ function AppContent() {
             ficha={active}
             readOnly={readOnly}
             onToggleReadOnly={() => setReadOnly((value) => !value)}
-            onPrint={() => window.print()}
+            onPrint={() => setView({ name: 'print', autoPrint: true })}
           />
         )}
       </main>

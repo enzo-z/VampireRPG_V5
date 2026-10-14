@@ -1,0 +1,293 @@
+/* Ficha A, laid out at --print-layout-width and zoomed to A4 when printing. */
+
+.page {
+  position: relative;
+  inline-size: var(--print-layout-width);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-snug);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+  .page {
+    zoom: var(--print-zoom);
+    padding: 0;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block-end: var(--space-2);
+  border-block-end: var(--border-width-thick) solid var(--color-rule);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+}
+
+.runningHead {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.sectionTitle {
+  margin-block: var(--space-5) var(--space-2);
+  padding-block-end: var(--space-1);
+  border-block-end: var(--border-width-hairline) solid var(--color-rule);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+}
+
+/* ---------- Identity ---------- */
+
+.identity {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-1) var(--space-6);
+}
+
+.identityRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.identityValue {
+  flex: 1;
+  min-inline-size: 0;
+  min-block-size: 1.4em;
+  padding-inline: var(--space-1);
+  border-block-end: var(--border-width-hairline) dotted var(--color-leader);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* ---------- Attributes and skills ---------- */
+
+.threeColumns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-1) var(--space-6);
+}
+
+.groupName {
+  font-style: italic;
+  text-align: center;
+}
+
+.traitRow,
+.skillRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: calc(var(--space-1) / 2);
+}
+
+.traitRow {
+  justify-content: space-between;
+}
+
+.noShrink {
+  flex: none;
+}
+
+.specInput,
+.lineInput {
+  flex: 1;
+  min-inline-size: 0;
+  padding: 0 var(--space-1);
+  border: 0;
+  border-block-end: var(--border-width-hairline) dotted var(--color-leader);
+  border-radius: var(--radius-none);
+  background: transparent;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-muted);
+}
+
+/* ---------- Disciplines ---------- */
+
+.disciplines {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-6);
+}
+
+.disciplineHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block-end: calc(var(--space-1) / 2);
+  border-block-end: var(--border-width-hairline) solid var(--color-divider);
+}
+
+.disciplineName {
+  flex: 1;
+  min-inline-size: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-md);
+}
+
+.powerRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding-block-start: var(--space-3);
+}
+
+.powerBullet {
+  flex: none;
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border: var(--border-width-hairline) solid var(--color-trait-border);
+  border-radius: var(--radius-full);
+}
+
+.powerName,
+.powerNote {
+  min-inline-size: 0;
+  min-block-size: 1.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-block-end: var(--border-width-hairline) dotted var(--color-leader);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.powerName {
+  flex: 2;
+}
+
+.powerNote {
+  flex: 1;
+}
+
+/* ---------- Trackers & The Blood frame (cut corners) ---------- */
+
+.frame {
+  --frame-cut: 18px;
+  padding: var(--border-width-thick);
+  background: var(--color-rule);
+  clip-path: polygon(
+    var(--frame-cut) 0, calc(100% - var(--frame-cut)) 0, 100% var(--frame-cut), 100% calc(100% - var(--frame-cut)),
+    calc(100% - var(--frame-cut)) 100%, var(--frame-cut) 100%, 0 calc(100% - var(--frame-cut)), 0 var(--frame-cut)
+  );
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.frameInner {
+  --inner-cut: calc(var(--frame-cut) - 0.8px);
+  display: grid;
+  grid-template-columns: max-content max-content minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface);
+  clip-path: polygon(
+    var(--inner-cut) 0, calc(100% - var(--inner-cut)) 0, 100% var(--inner-cut), 100% calc(100% - var(--inner-cut)),
+    calc(100% - var(--inner-cut)) 100%, var(--inner-cut) 100%, 0 calc(100% - var(--inner-cut)), 0 var(--inner-cut)
+  );
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-inline-size: 0;
+}
+
+.separated {
+  padding-inline-start: var(--space-4);
+  border-inline-start: var(--border-width-hairline) solid;
+  border-image: linear-gradient(to bottom, transparent, var(--color-rule) 12%, var(--color-rule) 88%, transparent) 1;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.trackerBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.trackerLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.inkIcon {
+  display: inline-flex;
+  color: var(--color-trait-filled);
+}
+
+.markedIcon {
+  display: inline-flex;
+  color: var(--color-trait-marked);
+}
+
+.bloodLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  min-block-size: 1.75rem;
+}
+
+.bloodLine .lineInput {
+  max-inline-size: 7rem;
+}
+
+.bloodNote {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.noteArea {
+  flex: 1;
+  min-block-size: 3.5rem;
+  inline-size: 100%;
+  field-sizing: content;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width-hairline) dotted var(--color-leader);
+  border-radius: var(--radius-none);
+  background: transparent;
+  resize: none;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-snug);
+  color: var(--color-text-muted);
+}

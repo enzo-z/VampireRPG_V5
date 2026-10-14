@@ -1,0 +1,17 @@
+/* Global print rules. Margins must match PAGE_MARGIN_MM in features/print/printLayout.ts. */
+
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  html,
+  body {
+    background: var(--color-surface);
+  }
+
+  [data-print="hide"] {
+    display: none !important;
+  }
+}

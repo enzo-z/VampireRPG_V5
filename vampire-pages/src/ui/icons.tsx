@@ -80,6 +80,20 @@ export const CloseIcon = () => (
   </Icon>
 );
 
+export const DropIcon = () => (
+  <svg width={15} height={15} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M12 2.5c3.3 4.3 6.2 7.5 6.2 11.2a6.2 6.2 0 0 1-12.4 0C5.8 10 8.7 6.8 12 2.5z" />
+  </svg>
+);
+
+export const AnkhIcon = () => (
+  <Icon size={15}>
+    <ellipse cx="12" cy="7" rx="3.8" ry="4.5" />
+    <path d="M12 11.5V22" />
+    <path d="M6 14.5h12" />
+  </Icon>
+);
+
 export const MoreIcon = () => (
   <Icon>
     <circle cx="5" cy="12" r="1" />

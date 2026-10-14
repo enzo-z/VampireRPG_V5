@@ -200,7 +200,7 @@ Ressalvas:
 | Campo editável vazio | Linha pontilhada cinza (decorativa). Controles de entrada usam `--color-border-strong` para cumprir 3:1. |
 | Seleção, linha ativa, hover | Tinta rosada `#f0e2df`, como a zebra do livro. |
 | Destaque | Crimson em texto ou régua. Fundo crimson só em botão primário. |
-| Cantos | Retos. Raio só onde a forma é a informação (bolinhas). |
+| Cantos | Retos. Raio só onde a forma é a informação (bolinhas). Exceção decidida depois (`vampire-pages/CLAUDE.md`, protótipo A): a moldura "Trackers & The Blood" da ficha de impressão usa cantos cortados com `clip-path`, um desenho próprio e não a moldura do livro. |
 | Sombra | Nenhuma no fluxo. No máximo uma sombra discreta em janelas flutuantes, a definir com o tema escuro. |
 
 ---
