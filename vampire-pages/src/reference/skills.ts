@@ -1,0 +1,337 @@
+// Reference text ported from Pedro's app (vampire-5e-referencia @ 40b41bf,
+// src/app/ankh/coreSkills.ts). Personal, local-only use (decision of 2026-10-14).
+import type { SkillKey } from '../domain/traits.ts';
+
+export interface SkillText {
+  source: string;
+  body: string;
+  levels: string[];
+  specialties: string;
+}
+
+export const CORE_SKILLS: Readonly<Record<SkillKey, SkillText>> = {
+  athletics: {
+    source: 'CORE · P. 159',
+    body: 'Athletics permite que você supere alguém em uma perseguição, salte para fora do caminho de um carro em alta velocidade e escale e nade como uma pessoa viva saudável e robusta. Um personagem pode usar Athletics no lugar de qualquer Perícia física de combate em um teste de conflito, mas nesse caso nunca causa nenhum acerto no oponente, não importa quantos sucessos role.',
+    levels: [
+      'Você sempre foi atento nas aulas de educação física e ainda tem molas nos pés.',
+      'Apesar de morto, você continua tão em forma quanto um mortal que se exercita regularmente.',
+      'Você está em plena forma e poderia jogar esportes profissionais. Jogos noturnos, pelo menos.',
+      'Com suas habilidades de parkour, por que precisaria se transformar em morcego?',
+      'Recordes olímpicos o aguardam; pouquíssimos humanos no auge conseguem o que você consegue. Vampiros confundem sua habilidade com Disciplinas físicas.',
+    ],
+    specialties: 'Acrobatics, Archery, Climbing, Endurance, Jumping, Parkour, Swimming, Throwing',
+  },
+  brawl: {
+    source: 'CORE · P. 160',
+    body: 'Brawl permite que os personagens acertem o alvo quando golpeiam com punho, bota ou garra. Enquanto você não tiver arma em mãos, o ataque constitui uma briga, do elegante aikijutsu à luta suja de rua.',
+    levels: [
+      'Você teve uma criação dura e precisou brigar para justificar seu lugar. Ainda conhece alguns golpes.',
+      'Você recebeu algum treinamento para bater forte e com precisão.',
+      'Você se vira mais do que bem numa briga.',
+      'Você recebeu treinamento de nível Spetsnaz, ou passou décadas de pós-vida em brigas.',
+      'Você poderia ganhar campeonatos de MMA mesmo sem usar seus poderes vampíricos.',
+    ],
+    specialties: 'Animals, Armed Mortals, Bar Fights, Grappling, Kindred, Sporting Combat, Unarmed Mortals, Werewolves, While in Protean Beast Form',
+  },
+  craft: {
+    source: 'CORE · P. 160',
+    body: 'Craft abrange de forma ampla a arte, a criação de itens e utilidades do belo ao funcional, e o artesanato, de modelar cerâmica até construir e reforçar seu próprio haven. Quando você adquire esta Perícia, ganha uma especialidade gratuita. Ao contrário da maioria das Perícias, você pode ter mais especialidades em Craft do que pontos.',
+    levels: [
+      'Você é um amador, mas sabe o que está fazendo.',
+      'Sua habilidade manual é admirada por sua funcionalidade.',
+      'Suas criações podem ser belas ou horripilantes, mas a intenção delas é sempre clara.',
+      'Sua habilidade é muito respeitada entre os kine e os Kindred que tomam conhecimento dela.',
+      'Você é frequentemente escolhido para criar a peça central das festas no Elysium.',
+    ],
+    specialties: 'Carpentry, Carving, Design, Painting, Sculpting, Sewing, Weaponsmithing',
+  },
+  drive: {
+    source: 'CORE · P. 160',
+    body: 'Qualquer um (exceto talvez vampiros de 500 anos) consegue aprender a dirigir um carro. A Perícia Drive denota a capacidade de dirigir rápido e com segurança em condições adversas ou situações de estresse: dirigir fora de estrada, fugir de emboscadas em alta velocidade, vencer rachas e escapar de perseguições da Segunda Inquisição.',
+    levels: [
+      'Você é um motorista cauteloso, improvável de cometer erros.',
+      'Você consegue pisar fundo sem muito medo de acidente, desde que a visibilidade seja boa.',
+      'Você já venceu perseguições de carro, ganhando uma reputação descolada entre os Anarquistas.',
+      'Você poderia ser dublê de automóveis ou o chofer pessoal de um Príncipe ou Barão.',
+      'Você conhece carros por dentro e por fora. Poucos igualam sua habilidade e conhecimento.',
+    ],
+    specialties: 'All-Terrain Vehicles, Evasion, Motorcycles, Street Racing, Stunts, Tailing, Trucks, Vintage Models',
+  },
+  firearms: {
+    source: 'CORE · P. 160',
+    body: 'Deixar uma vítima com buracos na garganta: investigação completa da Segunda Inquisição. Deixar uma vítima com buracos na cabeça: só mais um sábado à noite em Baltimore. Os Cainitas usam Firearms não só pelos motivos humanos (eficiência e emoção) mas para preservar a Máscara. Esta Perícia compreende familiaridade com armas leves, de pistolas de bolso a fuzis de assalto. Inclui também outras armas acionadas por gatilho, como bestas e lança-granadas propelidas por foguete disparadas do ombro. Por fim, inclui limpar, desemperrar e recarregar rapidamente essas armas.',
+    levels: [
+      'Você já disparou uma arma algumas vezes, no estande ou em circunstâncias menos formais.',
+      'Você sabe (e sabe como) manter sua arma limpa, desmontá-la e remontá-la.',
+      'Você já esteve na merda (“viu o elefante”, se tiver mais de um século) e saiu do outro lado.',
+      'Você manda bem em tiros acrobáticos, tiros mirados, tiros em movimento – qualquer coisa que termine em um disparo.',
+      'Você pratica desde a estreia da Winchester.',
+    ],
+    specialties: 'Crossbows, Gun Dealing, Gunsmithing, Handloading Ammunition, Quick-Draw, Sniper, Trick Shooting',
+  },
+  larceny: {
+    source: 'CORE · P. 163',
+    body: 'Esta Perícia envolve familiaridade com as ferramentas e técnicas para arrombar fechaduras, plantar escutas, desativar alarmes comuns de ladrões e de carros, falsificação manual, ligação direta de automóveis ou até arrombamento de cofres, além de inúmeras formas de arrombamento e invasão. Os personagens também a usam para montar sistemas de segurança “imbatíveis” ou deduzir como e onde os sistemas falharam em uma invasão. Os Ventrue provavelmente chamam a perícia de “Security”. Hoje em dia, a maioria dos sistemas de segurança de alto nível tem controles computadorizados, vigilância por vídeo ou alarmes eletrônicos, então também podem envolver a Perícia Technology para serem derrotados.',
+    levels: [
+      'Você consegue abrir uma fechadura simples ou um bolso descuidado.',
+      'Você consegue fazer ligação direta em um carro ou furtar em lojas com facilidade.',
+      'Você consegue identificar a localização de câmeras de segurança e alarmes para contorná-los da melhor forma.',
+      'Você consegue derrotar um teclado numérico, reprogramar um cartão de identificação ou abrir um cofre.',
+      'Você consegue entrar – ou sair – do cofre de um banco multinacional.',
+    ],
+    specialties: 'Alarms, Forgery, Grand Theft Auto, Housebreaking, Lockpicking, Pickpocket, Safecracking, Security Analysis',
+  },
+  melee: {
+    source: 'CORE · P. 163',
+    body: 'Use Melee para empunhar com perícia armas de mão como facas, correntes e tacos de beisebol. Uma estaca é uma arma corpo a corpo, muitas vezes encontrada nas mãos de supostos caçadores.',
+    levels: [
+      'Você consegue balançar um taco ou lâmina e, na maioria das vezes, acertar as pessoas que pretende.',
+      'Sua clara competência com uma arma em mãos deveria fazer os atacantes pensarem duas vezes.',
+      'Sua habilidade com uma arma corpo a corpo é conhecida em todo o domínio.',
+      'Os tolos trouxeram uma arma de fogo para uma luta de facas com você.',
+      'Você é o mestre de armas do domínio, procurado por Kindred de longe e de perto por sua habilidade.',
+    ],
+    specialties: 'Axes, Chains, Clubs, Fencing, Disarming Blows, Garrotes, Improvised Weapons, Knives, Stakes, Swords',
+  },
+  stealth: {
+    source: 'CORE · P. 164',
+    body: 'Stealth permite que um personagem siga um alvo à sombra, tornando vampiros com esta habilidade caçadores superlativos. Eles se beneficiam da capacidade de espionar, esgueirar-se e se misturar a multidões quando necessário.',
+    levels: [
+      'Avistar você sob a cobertura da escuridão ou camuflado é difícil.',
+      'Você consegue passar por observadores casuais e perseguir vítimas desavisadas sem levantar suspeitas.',
+      'Você evita guardas em patrulha, movendo-se suavemente e se escondendo com facilidade.',
+      'Sua passagem sutil e silenciosa poderia fazer de você um ninja digno – ou um adversário digno de ninjas.',
+      'Os Filhos de Haqim vêm a você em busca de conselhos sobre perseguir e se esconder, se conseguirem encontrá-lo.',
+    ],
+    specialties: 'Ambushes, Crowds, Disguise, Hiding, Shadowing, Silent Movement, Urban, Wilderness',
+  },
+  survival: {
+    source: 'CORE · P. 164',
+    body: 'Survival transmite a capacidade de existir na natureza e em outras condições adversas, e de voltar à civilização: navegar pelas estrelas, estabelecer um haven improvisado e notar sinais de lobisomens antes que seja tarde demais. Algumas de suas funções correlatas se aplicam em parques, terrenos industriais abandonados e outros ermos da selva urbana.',
+    levels: [
+      'Você conhece as trilhas e a natureza ao redor do seu domínio.',
+      'Você passa mais tempo ao ar livre do que dentro de casa e consegue rastrear qualquer um que não possua conhecimento de mata.',
+      'Você consegue subsistir fora da cidade, montando armadilhas para mortais e um abrigo para si.',
+      'Você consegue prosperar fora da cidade como o verdadeiro predador que é.',
+      'Os Gangrel correm em matilha com você – se conseguirem acompanhar.',
+    ],
+    specialties: 'Desert, Hunting, Jungle, Tracking, Traps, Shelters, Urban Exploration, Woodlands',
+  },
+  animalKen: {
+    source: 'CORE · P. 164',
+    body: 'Animal Ken permite que você intimide, pacifique e até faça amizade com animais. Esta Perícia permite prever como um animal pode reagir em determinada situação, treinar uma criatura domesticada, ou até tentar acalmar ou enfurecer animais. Sem esta Perícia, a maioria das criaturas evita vampiros de forma óbvia ou se torna agressiva perto deles.',
+    levels: [
+      'Os animais se esquivam de você, mas não disparam em fuga nem avançam para morder.',
+      'Os animais ficam dóceis perto de você, agindo como se você não estivesse ali, a menos que você crie um vínculo com eles.',
+      'Os animais o tratam como a um dono caloroso e amigável, a menos que sejam provocados a agir de outra forma.',
+      'Você atrai animais para a sua órbita. Poucas criaturas atacantes mantêm a agressividade.',
+      'Você consegue sentir os sentimentos e pensamentos de um animal, e eles conseguem sentir e agir com base nos seus.',
+    ],
+    specialties: 'Attack Training, Cats, Dogs, Falconry, Horses, Pacification, Rats, Snakes, Stunt Training, Wolves',
+  },
+  etiquette: {
+    source: 'CORE · P. 164',
+    body: 'Etiquette é a capacidade de identificar e responder às convenções sociais da cena atual, estabelecer novos protocolos e agradar a todos ao redor com suas boas maneiras. Use esta Perícia tanto na alta sociedade Kindred quanto na mortal.',
+    levels: [
+      'Você sabe como se dirigir ao governante local sem cometer uma gafe.',
+      'Você conhece as regras de etiqueta em cada um dos pontos noturnos populares do domínio.',
+      'Você impressiona os outros com seu domínio da polidez, da deferência e da elegância.',
+      'Seu comportamento dita tendências, especialmente se você fizer algo para quebrar a norma da etiqueta.',
+      'O Keeper of Elysium e as Harpies recorrem a você para estabelecer o protocolo do domínio.',
+    ],
+    specialties: 'Anarch, Camarilla, Celebrities, Corporate, Elysium, Feudal, One-Percenter, Secret Society',
+  },
+  insight: {
+    source: 'CORE · P. 165',
+    body: 'Insight concede a capacidade de interpretar linguagem corporal, notar sinais sutis de expressão e tom e distinguir a verdade da mentira. Também permite perceber e compreender os motivos por trás das ações de outra pessoa.',
+    levels: [
+      'Você enxerga através de bravatas vazias.',
+      'Você capta a emoção oculta entre humanos e, às vezes, até entre Kindred.',
+      'Você consegue fazer psicoterapia com mais eficácia do que alguém que não quer devorar o paciente.',
+      'Você é um detector de mentiras morto-vivo. Só os melhores golpistas conseguem enganá-lo.',
+      'As pessoas podem ser livros de sangue, mas são impressas em letras bem grandes – fáceis de ler.',
+    ],
+    specialties: 'Ambitions, Desires, Detect Lies, Emotions, Empathy, Interrogation, Motives, Phobias, Vices',
+  },
+  intimidation: {
+    source: 'CORE · P. 165',
+    body: 'Intimidation é o poder de intimidar, coagir, ameaçar e abrir caminho à força rumo a uma vitória social. Vampiros que dependem de Intimidation não hesitam em esmagar a vontade – e, ocasionalmente, os ossos dos dedos – de seus inimigos.',
+    levels: [
+      'Você consegue lançar um insulto cortante com eficácia.',
+      'Você consegue abrir caminho à força entre a maioria dos humanos sem dificuldade.',
+      'Sua pose e seu comportamento cruel lhe renderam sua reputação.',
+      'Você está muito além de meras ameaças físicas.',
+      'Até outros Kindred podem recuar se você avançar.',
+    ],
+    specialties: 'Extortion, Insults, Interrogation, Physical Coercion, Staredowns, Veiled Threats',
+  },
+  leadership: {
+    source: 'CORE · P. 165',
+    body: 'Leadership concede a capacidade de liderar uma multidão, comandar um destacamento, elevar o moral de seus apoiadores ou conter um motim. Um Príncipe ou Barão forte precisa possuir Leadership ou arrisca perder o trono.',
+    levels: [
+      'Você já liderou clubes informais e consegue organizar Kindred de mentalidade semelhante.',
+      'Sua voz se faz ouvir no conselho, e até seus superiores às vezes escutam.',
+      'Você consegue comandar no campo de batalha e levar seus soldados à morte.',
+      'Você consegue inspirar feridos e moribundos a agir, desde que esteja lá para liderá-los.',
+      'Suas palavras enchem o coração de um vampiro de força suficiente para fazê-lo se sentir vivo e batendo.',
+    ],
+    specialties: 'Command, Inspiration, Oratory, Praxis, Team Dynamics, War Pack',
+  },
+  performance: {
+    source: 'CORE · P. 166',
+    body: 'Performance cobre uma gama de artes, da dança à poesia e da comédia à narração de histórias. Você pode ser um artista inspirado por mérito próprio ou simplesmente um estudante entusiasmado das artes. Quando você adquire esta Perícia, ganha uma especialidade gratuita.',
+    levels: [
+      'Você é a alma da festa, mas não levaria seu número a um palco.',
+      'Você já se apresentou para outros, com críticas variadas. Alguns o amam, outros o odeiam.',
+      'Você é um estudante especialista da arte performática que escolheu.',
+      'Você executa sua arte praticada de forma deslumbrante, conquistando até Toreador de longe e de perto.',
+      'A improvisação não tem terrores para você: toda noite uma plateia diferente, toda noite um show diferente.',
+    ],
+    specialties: 'Comedy, Dance, Drama, Drums, Guitar, Keyboards, Poetry, Public Speaking, Rap, Singing, Violin, Wind Instruments',
+  },
+  persuasion: {
+    source: 'CORE · P. 166',
+    body: 'Use Persuasion ao tentar convencer os outros de que você sabe o que é melhor para eles, e de que uma mordida não vai doer nada. Persuasores habilidosos conseguem brincar com as emoções das vítimas e apelar à razão dos pares. Persuasion se aplica em tribunais e em cortes principescas, em salas de reunião, bares e quartos.',
+    levels: [
+      'Você consegue vender a um comprador motivado.',
+      'Você sempre consegue arranjar um desconto ou entrar por dentro nas últimas fofocas.',
+      'Você sempre consegue achar um meio-termo em um dado conflito.',
+      'O outro lado começa a procurar um acordo quando vê você no tribunal, humano ou Kindred.',
+      'Você pode ser o diabo de língua de prata original.',
+    ],
+    specialties: 'Bargaining, Fast Talk, Interrogation, Legal Argument, Negotiation, Rhetoric',
+  },
+  streetwise: {
+    source: 'CORE · P. 166',
+    body: 'Streetwise permite que os personagens falem a língua e negociem pelas sociedades das ruas e do submundo. Você consegue entender códigos e gírias, interpretar assinaturas de pichação e imitar sinais de gangues.',
+    levels: [
+      'Você sabe onde conseguir drogas e sexo no seu domínio.',
+      'Você sabe quais gangues operam na região, incluindo suas cores e rivalidades. Pode ter sua própria assinatura de pichação.',
+      'Você distingue a coisa boa da ruim, consegue armas e se mistura perfeitamente com gente de rua ou gangsters.',
+      'Quando gangsters dizem “conheço um cara”, você é o cara que eles conhecem.',
+      'Você consegue contratar, orquestrar ou arranjar quase qualquer atividade criminosa em qualquer lugar da sua cidade.',
+    ],
+    specialties: 'Arms Dealing, Black Market, Bribery, Drugs, Fence Stolen Goods, Gangs, Graffiti, Personal Rep, Sex Trade, Urban Survival',
+  },
+  subterfuge: {
+    source: 'CORE · P. 166',
+    body: 'Subterfuge é a arte de mentir de forma convincente, tecer uma história e dar boas desculpas para más ações. Esta Perícia define seu talento para intriga, segredos e jogo duplo. Subterfuge também pode ser usado para sedução e para imitar o comportamento mortal.',
+    levels: [
+      'Você consegue contar mentiras simples e críveis.',
+      'Você consegue enganar pessoas ingênuas, velhas e jovens, fazendo-as lhe entregar seus pertences.',
+      'Você consegue operar em múltiplos níveis, contando mentiras feitas para serem descobertas a fim de reforçar outras mentiras.',
+      'Você consegue operar indefinidamente sob disfarce profundo: um agente duplo perfeito. Talvez você seja!',
+      'Ninguém acredita que você tenha sequer um único ponto em Subterfuge.',
+    ],
+    specialties: 'Bluff, Feign Mortality, Impeccable Lies, Innocence, The Long Con, Seduction',
+  },
+  academics: {
+    source: 'CORE · P. 168',
+    body: 'Academics reflete compreensão, educação superior e capacidade de pesquisar áreas das humanidades e das artes liberais. O estudo histórico, por exemplo, está longe de ser “só acadêmico” se seus inimigos imortais viveram – e deixaram vestígios – naquele período. Quando você adquire esta Perícia, ganha uma especialidade gratuita. Para idiomas estrangeiros, use o Mérito Linguistics (p. 179).',
+    levels: [
+      'Educação básica primária e secundária; um curso noturno em faculdade comunitária',
+      'Educação universitária básica ou tutela de um mentor medíocre; uma graduação de quatro anos',
+      'Educação universitária avançada ou aulas particulares dedicadas; uma excelente graduação de quatro anos, um doutorado',
+      'Estudo especializado avançado além da universidade, aprofundando-se em assuntos que poucos entendem',
+      'Erudição refinada e avançada, provavelmente procurada para conselhos e tutela',
+    ],
+    specialties: 'Architecture, English Literature, History of Art, History (specific Field or Period), Journalism, Philosophy, Research, Teaching, Theology',
+  },
+  awareness: {
+    source: 'CORE · P. 168',
+    body: 'Awareness cuida das suas percepções. Você pode avistar um Filho de Haqim antes que um ataque aconteça, notar uma chave jogada no lixo ou sentir um perfume que persiste no ar.',
+    levels: [
+      'Você tem o histórico de saber quando algo está fora do lugar.',
+      'Você consegue notar comportamento errático ou padronizado em um indivíduo.',
+      'Você enxerga através da maioria dos disfarces e sente perigos ocultos ou pistas escondidas.',
+      'Mesmo distraído, poucas coisas escapam à sua atenção.',
+      'Seus sentidos são os de um animal selvagem.',
+    ],
+    specialties: 'Ambushes, Camouflage, Concealed Objects, Hearing, Instincts, Smell, Sight, Traps, Wilderness',
+  },
+  finance: {
+    source: 'CORE · P. 168',
+    body: 'Finance permite identificar tendências do mercado, investir bem, manipular ações e saber quando uma queda está por vir. Também permite avaliar – e rastrear – a riqueza dos outros e intermediar negócios financeiros. Em geral você consegue avaliar arte, imóveis ou qualquer outro bem não criminoso. Os Ventrue valorizam esta Perícia mais do que algumas Disciplinas.',
+    levels: [
+      'Você consegue gerir um negócio e manter a contabilidade.',
+      'Você consegue gerenciar uma divisão corporativa ou uma agência bancária; entrega declarações de imposto impecavelmente plausíveis.',
+      'Graças ao comércio internacional, você é um ótimo corretor em bolsas de valores estrangeiras.',
+      'Bancos de investimento seguem sua liderança financeira. Você não tem dificuldade em ocultar fraudes.',
+      'Você consegue fazer o dinheiro fazer qualquer coisa, inclusive grudar nos seus bolsos – ou quebrar países.',
+    ],
+    specialties: 'Appraisal, Banking, Black Markets, Corporate Finance, Currency Manipulation, Fine Art, Forensic Accounting, Money Laundering, Stock Market',
+  },
+  investigation: {
+    source: 'CORE · P. 169',
+    body: 'Investigation permite desvendar casos de meios mundanos e misteriosos, notar pistas, interpretá-las e rastrear pessoas desaparecidas. Vampiros acham esta Perícia especialmente útil quando uma vítima escapa.',
+    levels: [
+      'Você adora um bom romance de mistério e se considera um detetive amador.',
+      'Você tem conhecimento sólido de criminologia e dos atos característicos dos malandros locais.',
+      'Você é, ou poderia ser, detetive de profissão. Nada em uma cena de crime lhe escapa.',
+      'O Sheriff recorre a você quando partes desconhecidas sabotam a segurança do domínio.',
+      'Você propõe enigmas aos outros e leva uma existência enigmática que poucos conseguem penetrar.',
+    ],
+    specialties: 'Criminology, Deduction, Forensics, Missing Persons, Murder, Paranormal Mysteries, Traffic Analysis',
+  },
+  medicine: {
+    source: 'CORE · P. 169',
+    body: 'Medicine permite consertar pessoas quebradas e diagnosticar as causas de morte ou doença em uma vítima. Também permite usar equipamento médico, prescrever drogas e estancar (ou estimular) o fluxo rápido de sangue. Os personagens usam Medicine para curar dano Agravado de Health em mortais (veja p. 127).',
+    levels: [
+      'Você conhece anatomia básica e a diferença no fluxo sanguíneo de uma veia e de uma artéria. Consegue fazer RCP e outros primeiros socorros. Pode ter sido estudante de medicina em vida.',
+      'Você consegue tratar com tranquilidade traumas e doenças menores e restringir um diagnóstico. Pode ter sido enfermeiro ou socorrista em vida.',
+      'Seu treinamento permite realizar grandes cirurgias e tratar ferimentos graves. Pode ter sido internista, pediatra ou clínico geral em vida.',
+      'Você consegue diagnosticar e tratar todas as doenças, exceto as mais raras. Pode ter sido cirurgião ou especialista em vida.',
+      'Você é um renomado especialista médico, procurado por mortais e imortais.',
+    ],
+    specialties: 'First Aid, Haematology, Pathology, Pharmacy, Phlebotomy, Surgery, Trauma Care, Veterinary',
+  },
+  occult: {
+    source: 'CORE · P. 170',
+    body: 'Occult representa o conhecimento do mundo místico, indo dos ritos e práticas dos maçons e rosacruzes até estudiosos Noddistas e magos de verdade. Você consegue reconhecer sigilos ocultos e práticas de magia popular, eficazes ou não.',
+    levels: [
+      'Você conhece as lendas de Caim e dos Antediluvianos, e pode ter lido o Book of Nod.',
+      'Você consegue separar a verdade das bobagens ocultistas populares.',
+      'Você tem experiência direta de algo inexplicável, mesmo pelos padrões Kindred.',
+      'Você consegue nomear a maioria dos Antediluvianos e até compreender um ritual Tremere.',
+      'Tremere e Filhos de Haqim o consultam sobre conhecimentos obscuros.',
+    ],
+    specialties: 'Alchemy, Blood Magic, Faeries, Ghosts, Grimoires, Infernalism, Magi, Necromancy, Noddism, Parapsychology, Voudun, Werewolves',
+  },
+  politics: {
+    source: 'CORE · P. 170',
+    body: 'Politics cobre diplomacia e burocracia: tanto humana quanto Kindred. Você consegue trabalhar com o governo da cidade, e possivelmente pressioná-lo, e talvez níveis mais altos. Entre os Kindred, você sabe os bastidores de quais seitas dominam onde, quem está em guerra com quem e onde os corpos estão enterrados. Literalmente.',
+    levels: [
+      'Você acompanha os assuntos políticos mortais em seu regnum e sabe pelo menos o que os anciões revelam sobre a política Kindred.',
+      'Você consegue exercer influência em nível local, ou sabe quem consegue.',
+      'Você poderia conduzir campanhas políticas ou máquinas políticas, ou fazer ondas em sua seita como um novato promissor.',
+      'Você conhece as verdadeiras personalidades dos reais articuladores, vivos e mortos-vivos, em sua região.',
+      'Você poderia adivinhar os membros desconhecidos do Círculo Interno da Camarilla.',
+    ],
+    specialties: 'Anarchs, Camarilla, City Government, Clan (specific), Diplomacy, Media, National Politics, State/Provincial Politics',
+  },
+  science: {
+    source: 'CORE · P. 171',
+    body: 'Science é uma igreja ampla, cobrindo de tudo, dos princípios básicos da vida à compreensão da entropia universal. As leis da ciência governam o mundo mortal, e vampiros que desejam governar esse mundo as estudam. Os níveis da Perícia Science correspondem aproximadamente aos de Academics, de “alguma faculdade” a “estudioso mundialmente famoso”. Também como em Academics, personagens com pontuação em Science ganham uma especialidade gratuita.',
+    levels: [
+      'Você se aventura pelas ciências e entende os princípios por trás dos blocos construtores da vida.',
+      'Você consegue explicar com precisão a outro vampiro as teorias científicas concorrentes sobre o Abraço.',
+      'Você é um excelente gerente científico; consegue dirigir um laboratório, interpretar resultados científicos e se atualizar em pesquisas científicas na maioria das áreas. Consegue consertar equipamento científico.',
+      'Você é um especialista em sua área e nas afins.',
+      'Poucos pares igualam seu entendimento, e outros recorrem a você em busca de orientação.',
+    ],
+    specialties: 'Astronomy, Biology, Chemistry, Demolitions, Engineering, Genetics, Geology, Mathematics, Physics',
+  },
+  technology: {
+    source: 'CORE · P. 171',
+    body: 'Como Perícia, Technology funciona como um alvo em movimento; governa a operação e a compreensão dos “avanços técnicos que a maioria dos vampiros acha misteriosos”. Em 1870, poderia governar máquinas a vapor e eletricidade; nestas noites, governa computadores e sistemas computacionais. Claro, agora os computadores governam quase tudo – inclusive turbinas a vapor em usinas de energia e sistemas elétricos em prédios comerciais.',
+    levels: [
+      'Você sabe como fazer o upgrade de um PC doméstico e mantê-lo protegido contra vírus.',
+      'Você consegue ocultar seu IP, operar drones e forjar uma fotografia digital.',
+      'Você consegue criar e liberar seus próprios vírus sem medo de ser detectado.',
+      'O Príncipe pode chamá-lo pessoalmente para gerir a cibersegurança do domínio dele.',
+      'Na internet, ninguém sabe que você é um vampiro – ou que você está lá.',
+    ],
+    specialties: 'Artillery, Coding, Computer Building, Data Mining, Hacking, Networks, Phones, Surveillance Systems',
+  },
+};
