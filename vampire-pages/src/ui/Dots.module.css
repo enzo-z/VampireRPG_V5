@@ -1,0 +1,39 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--space-1) / 2);
+}
+
+.dot {
+  flex: none;
+  padding: 0;
+  border: var(--border-width-hairline) solid var(--color-trait-border);
+  border-radius: var(--radius-full);
+  background: var(--color-trait-empty);
+}
+
+.sm {
+  inline-size: 0.8rem;
+  block-size: 0.8rem;
+}
+
+.md {
+  inline-size: 0.95rem;
+  block-size: 0.95rem;
+}
+
+.filled {
+  background: var(--color-trait-filled);
+}
+
+.groupStart {
+  margin-inline-start: var(--space-2);
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.interactive:hover {
+  border-color: var(--color-accent);
+}

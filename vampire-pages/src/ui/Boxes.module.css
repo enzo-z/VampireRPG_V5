@@ -1,0 +1,60 @@
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--space-1) / 2);
+}
+
+.toneMarked {
+  --box-tone: var(--color-trait-marked);
+}
+
+.toneInk {
+  --box-tone: var(--color-trait-filled);
+}
+
+.box {
+  flex: none;
+  padding: 0;
+  border: var(--border-width-hairline) solid var(--color-trait-border);
+  border-radius: var(--radius-none);
+  background-color: var(--color-trait-empty);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.sm {
+  inline-size: 1rem;
+  block-size: 1rem;
+}
+
+.md {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+}
+
+.slash {
+  background-image: linear-gradient(
+    to top right,
+    transparent calc(50% - 1px),
+    var(--box-tone) calc(50% - 1px),
+    var(--box-tone) calc(50% + 1px),
+    transparent calc(50% + 1px)
+  );
+}
+
+.full {
+  background-color: var(--box-tone);
+}
+
+.groupStart {
+  margin-inline-start: var(--space-2);
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.interactive:hover {
+  border-color: var(--color-accent);
+}

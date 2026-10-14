@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Blood drop; fill matches --palette-crimson in src/styles/tokens.css. -->
+  <path fill="#790914" d="M12 2.5c3.3 4.3 6.2 7.5 6.2 11.2a6.2 6.2 0 0 1-12.4 0C5.8 10 8.7 6.8 12 2.5z"/>
+</svg>

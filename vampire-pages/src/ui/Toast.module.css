@@ -1,0 +1,44 @@
+.region {
+  position: fixed;
+  inset-block-end: var(--space-4);
+  inset-inline: var(--space-4);
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: var(--layer-toast);
+}
+
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  max-inline-size: 36rem;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-text);
+  color: var(--color-surface);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-snug);
+  pointer-events: auto;
+}
+
+.text {
+  white-space: pre-line;
+}
+
+.close {
+  flex: none;
+  padding: 0 var(--space-1);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: var(--font-size-md);
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media print {
+  .region {
+    display: none;
+  }
+}

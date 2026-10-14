@@ -94,6 +94,11 @@
   --border-width-hairline: 1px;
   --border-width-thick: 2px;
   --border-width-focus: 2px;
+
+  /* ---------- Layers (z-index) ---------- */
+  --layer-sticky: 10;
+  --layer-popover: 20;
+  --layer-toast: 50;
 }
 
 /* Future dark theme: override the SAME semantic names here (and add
