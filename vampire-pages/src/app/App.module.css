@@ -1,0 +1,92 @@
+.page {
+  max-inline-size: 48rem;
+  margin-inline: auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block-end: var(--space-2);
+  border-block-end: var(--border-width-thick) solid var(--color-rule);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+}
+
+.runningHead {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.sectionTitle {
+  margin-block: var(--space-6) var(--space-3);
+  padding-block-end: var(--space-1);
+  border-block-end: var(--border-width-hairline) solid var(--color-rule);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+}
+
+.traitRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  min-block-size: 2.75rem;
+  padding-inline: var(--space-2);
+  border-block-end: var(--border-width-hairline) solid var(--color-border);
+}
+
+.traitRowSelected {
+  background: var(--color-accent-subtle);
+}
+
+.dots {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.dot {
+  inline-size: 0.8rem;
+  block-size: 0.8rem;
+  border: var(--border-width-hairline) solid var(--color-trait-border);
+  border-radius: var(--radius-full);
+  background: var(--color-trait-empty);
+}
+
+.dotFilled {
+  background: var(--color-trait-filled);
+}
+
+.body {
+  margin-block-end: var(--space-3);
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-smallcaps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.accentText {
+  margin-block-start: var(--space-3);
+  color: var(--color-text-accent);
+}

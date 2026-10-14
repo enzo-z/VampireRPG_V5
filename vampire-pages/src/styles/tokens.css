@@ -1,0 +1,106 @@
+/* Design tokens (docs/design-spec.md §5).
+   Palette primitives are the ONLY place with raw color values.
+   Components read semantic tokens only; never --palette-*. */
+
+:root {
+  color-scheme: light;
+
+  /* ---------- Palette primitives ---------- */
+  --palette-paper: #ffffff;        /* sheet + book background */
+  --palette-paper-tint: #f0e2df;   /* book table zebra */
+  --palette-ink: #231f20;          /* sheet ink, warm black */
+  --palette-ink-muted: #5e5a5b;    /* derived from ink hue, 6.8:1 on paper */
+  --palette-ink-subtle: #757172;   /* derived from ink hue, 4.8:1 on paper */
+  --palette-graphite: #9d9d9d;     /* sheet dotted leaders, decorative only */
+  --palette-mist: #c8c7c7;         /* sheet dotted boxes, decorative only */
+  --palette-rose: #dcc3c7;         /* sheet frame edge, decorative only */
+  --palette-crimson: #790914;      /* book accent (sheet: #730e1e) */
+  --palette-crimson-deep: #5c0610; /* derived, hover/pressed, 14.1:1 on paper */
+
+  /* ---------- Semantic colors ---------- */
+  --color-surface: var(--palette-paper);
+  --color-surface-raised: var(--palette-paper);
+  --color-surface-tint: var(--palette-paper-tint);
+
+  --color-text: var(--palette-ink);
+  --color-text-muted: var(--palette-ink-muted);
+  --color-text-subtle: var(--palette-ink-subtle);
+  --color-text-accent: var(--palette-crimson);
+  --color-text-on-accent: var(--palette-paper);
+
+  --color-border: var(--palette-mist);          /* decorative boxes */
+  --color-border-strong: var(--palette-ink);    /* inputs, controls, dots */
+  --color-border-accent: var(--palette-rose);   /* edge of tinted/selected areas */
+  --color-rule: var(--palette-crimson);         /* section rules */
+  --color-divider: var(--palette-ink);          /* thin column/row rules */
+  --color-leader: var(--palette-graphite);      /* dotted write-in lines */
+
+  --color-accent: var(--palette-crimson);
+  --color-accent-hover: var(--palette-crimson-deep);
+  --color-accent-subtle: var(--palette-paper-tint);
+  --color-focus-ring: var(--palette-crimson);
+
+  --color-trait-border: var(--palette-ink);
+  --color-trait-empty: var(--palette-paper);
+  --color-trait-filled: var(--palette-ink);
+  --color-trait-marked: var(--palette-crimson); /* hunger, damage */
+
+  /* ---------- Space: 4px base ---------- */
+  --space-0: 0;
+  --space-1: 0.25rem;  /*  4px */
+  --space-2: 0.5rem;   /*  8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+
+  /* ---------- Typography ---------- */
+  --font-serif: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
+  --font-display: "Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
+  --font-sans: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, system-ui, sans-serif;
+
+  --font-size-2xs: 0.6875rem; /* 11px running heads, tracked caps */
+  --font-size-xs: 0.8125rem;  /* 13px sans table cells, captions */
+  --font-size-sm: 1rem;       /* 16px sans UI, serif labels */
+  --font-size-md: 1.125rem;   /* 18px serif body (Cormorant needs it) */
+  --font-size-lg: 1.375rem;   /* 22px section titles in caps */
+  --font-size-xl: 1.75rem;    /* 28px crimson section headings */
+  --font-size-2xl: 2.5rem;    /* 40px display */
+  --font-size-3xl: 3.25rem;   /* 52px display, large screens */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+
+  --letter-spacing-normal: 0;
+  --letter-spacing-caps: 0.12em;      /* section titles */
+  --letter-spacing-smallcaps: 0.08em; /* table headers */
+  --letter-spacing-wide: 0.28em;      /* running heads, page numbers */
+
+  /* ---------- Radius ---------- */
+  --radius-none: 0;
+  --radius-sm: 2px;      /* inputs, buttons: barely softened */
+  --radius-md: 4px;      /* floating windows, if ever needed */
+  --radius-full: 9999px; /* trait dots */
+
+  /* ---------- Borders ---------- */
+  --border-width-hairline: 1px;
+  --border-width-thick: 2px;
+  --border-width-focus: 2px;
+}
+
+/* Future dark theme: override the SAME semantic names here (and add
+   dark --palette-* primitives if needed). Components stay untouched.
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-surface: ...;
+  --color-text: ...;
+}
+*/

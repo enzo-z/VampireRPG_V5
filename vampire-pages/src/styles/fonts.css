@@ -1,0 +1,14 @@
+/* Self-hosted OFL fonts (no network dependency). Each file declares every
+   subset with unicode-range, so the browser only downloads what a page uses. */
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/500-italic.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+
+@import "@fontsource/cabin/400.css";
+@import "@fontsource/cabin/500.css";
+@import "@fontsource/cabin/600.css";
+@import "@fontsource/cabin/700.css";
+
+@import "@fontsource/bodoni-moda/400.css";
