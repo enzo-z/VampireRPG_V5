@@ -1,0 +1,21 @@
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-6);
+  padding: var(--space-5);
+}
+
+.main {
+  flex: 999 1 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  min-inline-size: 0;
+}
+
+.aside {
+  flex: 1 1 20rem;
+  min-inline-size: 0;
+  align-self: stretch;
+}
