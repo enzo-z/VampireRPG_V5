@@ -1,12 +1,12 @@
-#concept #character #hunting 
+#concept #character #hunting
 
 ![[Pasted image 20241122150750.png]]
 
 Predator Type é um dos features do seu personagem, e é uma coisa que você escolhe no momento da criação. Suas preferências de caça alimentam seu Sangue, e seu Sangue molda quais Habilidades e até [[Disciplinas]] que você desenvolve como vampiro.
 
-Este _modus predationis_ é como você geralmente caça. Seu tipo de Predador mostra seu reflexo ou hábito; 
+Este _modus predationis_ é como você geralmente caça. Seu tipo de Predador mostra seu reflexo ou hábito de caça.
 
-**⚠️ Nota Importante:** Predator Type não dita seu comportamento no jogo. Você pode caçar de outras formas durante uma sessão, já que pode ser necessário cooperar com outros vampiros com Predator Types diferentes, e aproveitar oportunidades de alimentação que surjam durante a história. 
+**⚠️ Nota Importante:** Predator Type não dita seu comportamento no jogo. Você pode caçar de outras formas durante uma sessão, já que pode ser necessário cooperar com outros vampiros com Predator Types diferentes, e aproveitar oportunidades de alimentação que surjam durante a história.
 ==**Para mais informações**, veja como funcionam as [[Hunting and Feeding|mecânicas de alimentação]].==
 
 # Sumário
@@ -37,7 +37,7 @@ Você pode ter sido uma pessoa sem-teto, um soldado das Forças Especiais, um as
 ---
 # Bagger
 
-Você rouba, compra ou de outra forma adquire sangue frio, em vez de caçar, dependendo do mercado negro ou de suas habilidades como ladrão ou oportunista em ambulâncias. Talvez você ainda trabalhe no turno da noite em um hospital. 
+Você rouba, compra ou de outra forma adquire sangue frio, em vez de caçar, dependendo do mercado negro ou de suas habilidades como ladrão ou oportunista em ambulâncias. Talvez você ainda trabalhe no turno da noite em um hospital.
 
 **Nota:** Ventrues não podem escolher este Predator Type.
 
@@ -48,34 +48,34 @@ Você rouba, compra ou de outra forma adquire sangue frio, em vez de caçar, dep
 ---
 # Cleaver
 
-Você se alimenta secretamente de sua família mortal ou de amigos próximos com quem ainda mantém laços. Alguns _Cleavers_ mais extremos adotam crianças, casam-se com humanos e tentam levar uma vida familiar pelo maior tempo possível. 
+Você se alimenta secretamente de sua família mortal ou de amigos próximos com quem ainda mantém laços. Alguns _Cleavers_ mais extremos adotam crianças, casam-se com humanos e tentam levar uma vida familiar pelo maior tempo possível.
 Adicione sua família ao [[Mapa de Relacionamentos]].
 
-_Cleavers_ frequentemente fazem grandes esforços para esconder a verdade de sua condição de suas famílias, mas alguns mantêm relacionamentos nada saudáveis com seus próprios parentes. 
+_Cleavers_ frequentemente fazem grandes esforços para esconder a verdade de sua condição de suas famílias, mas alguns mantêm relacionamentos nada saudáveis com seus próprios parentes.
 
-A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]]. Kindred mais prudentes podem até massacrar sua família "para o seu próprio bem" se descobrirem seu segredo e se importarem com o que acontece com você.
+A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [[Camarilla#Regras Fundamentais da Camarilla|Máscara]]. Kindred mais prudentes podem até massacrar sua família "para o seu próprio bem" se descobrirem seu segredo e se importarem com o que acontece com você.
 
 - **Adicione uma especialidade:** Persuasion (Gaslighting) ou Subterfuge (Coverups).
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominate]] ou [[Disciplinas#Animalism|Animalism]];
-- **Ganhe o [[Advantages#Flaws|Defeito]]:**  Dark Secret (•) - Cleaver.
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** Dark Secret (•) - Cleaver.
 - **Ganhe o [[Advantages#Backgrounds|Antecedente]]:** Herd (••).
 ---
 # Consensualist
 
-Você nunca se alimenta contra a vontade de sua vítima. Você pode se passar por um representante de uma campanha de doação de sangue beneficente, um entusiasta de fetiches vampíricos na “comunidade de vampiros reais” ou até mesmo revelar o que você realmente é, obtendo permissão para se alimentar. 
+Você nunca se alimenta contra a vontade de sua vítima. Você pode se passar por um representante de uma campanha de doação de sangue beneficente, um entusiasta de fetiches vampíricos na “comunidade de vampiros reais” ou até mesmo revelar o que você realmente é, obtendo permissão para se alimentar.
 
-A [[Camarilla]] considera este último método uma violação da [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]], mas muitos filósofos [[Anarquistas]] o veem como um risco aceitável. Você poderia ter sido qualquer coisa em vida, mas trabalhadores sexuais, organizadores políticos ou advogados podem estar mais atentos aos perigos de se alimentar sem consentimento. 
+A [[Camarilla]] considera este último método uma violação da [[Camarilla#Regras Fundamentais da Camarilla|Máscara]], mas muitos filósofos [[Anarquistas]] o veem como um risco aceitável. Você poderia ter sido qualquer coisa em vida, mas trabalhadores sexuais, organizadores políticos ou advogados podem estar mais atentos aos perigos de se alimentar sem consentimento.
 
-- **Adicione uma especialidade:** Medicine (Phlebotomy) ou Persuasion (Victims). 
+- **Adicione uma especialidade:** Medicine (Phlebotomy) ou Persuasion (Victims).
 - **Ganhe um ponto em:** [[Disciplinas#Auspex|Auspícios]] ou [[Disciplinas#Fortitude|Fortitude]].
-- **Ganhe um ponto de:** [[Humanidade]]. 
-- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*). 
+- **Ganhe um ponto de:** [[Humanidade]].
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*).
 - **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Prey Exclusion* (não-consentidos) (•).
 ---
 # Farmer
 
 Você se alimenta apenas de animais. Sua [[Fome]] constantemente o atormenta, mas você não matou um único ser humano até agora (exceto, talvez, naquela vez), e pretende continuar assim.
-Esta escolha reflete uma obsessão com a moralidade. Talvez você tenha sido um ativista, sacerdote, trabalhador humanitário ou vegano em vida, mas a decisão de nunca colocar a vida humana em risco é algo que qualquer pessoa poderia tomar e lutar para manter. 
+Esta escolha reflete uma obsessão com a moralidade. Talvez você tenha sido um ativista, sacerdote, trabalhador humanitário ou vegano em vida, mas a decisão de nunca colocar a vida humana em risco é algo que qualquer pessoa poderia tomar e lutar para manter.
 
 **Nota:** Vampiros do clã [[Clãs#Maldição dos Ventrue|Ventrue]] não podem escolher este tipo de Predador. Este tipo de Predador também não está disponível para aqueles com [[Gerações e Potência#Blood Potency|Blood Potency ("Potência de Sangue")]] 3 ou superior.
 
@@ -86,18 +86,18 @@ Esta escolha reflete uma obsessão com a moralidade. Talvez você tenha sido um 
 ---
 # Osiris
 
-Você é uma celebridade entre os mortais ou lidera um culto, uma igreja ou algo similar. Você se alimenta de seus fãs ou adoradores, que o tratam como uma divindade. Embora sempre tenha acesso fácil ao sangue, seguidores frequentemente trazem problemas com as autoridades, religiões organizadas e, claro, com a [[Camarilla]]. 
+Você é uma celebridade entre os mortais ou lidera um culto, uma igreja ou algo similar. Você se alimenta de seus fãs ou adoradores, que o tratam como uma divindade. Embora sempre tenha acesso fácil ao sangue, seguidores frequentemente trazem problemas com as autoridades, religiões organizadas e, claro, com a [[Camarilla]].
 
 Em vida, você pode ter sido um DJ, escritor, cultista, pregador ou organizador de LARP.
 
 - **Adicione uma especialidade:** Occult (specific tradition) ou Performance (specific entertainment field).
-- **Ganhe um ponto em:** [[Disciplinas#Blood Sorcery|Feitiçaria de Sangue]] (apenas Tremere) ou [[Disciplinas#Presence|Presença]]. 
-- **Gaste três pontos entre os [[Advantages#Backgrounds|Antecedentes]]:** Fama (*Fame*) e Rebanho (*Herd*). 
+- **Ganhe um ponto em:** [[Disciplinas#Blood Sorcery|Feitiçaria de Sangue]] (apenas Tremere) ou [[Disciplinas#Presence|Presença]].
+- **Gaste três pontos entre os [[Advantages#Backgrounds|Antecedentes]]:** Fama (*Fame*) e Rebanho (*Herd*).
 - **Gaste dois pontos entre os [[Advantages#Flaws|Defeitos]]:** Inimigos (*Enemies*) e Lenda Mítica (*Mythic*).
 ---
 # Headhunter/Blood Leech
 
-Você se alimenta de outros vampiros, seja caçando, coagindo ou aceitando Sangue como pagamento — a única maneira que você considera verdadeiramente moral de se alimentar. Infelizmente, essa prática é geralmente proibida na sociedade dos Kindred. 
+Você se alimenta de outros vampiros, seja caçando, coagindo ou aceitando Sangue como pagamento — a única maneira que você considera verdadeiramente moral de se alimentar. Infelizmente, essa prática é geralmente proibida na sociedade dos Kindred.
 Alimentar-se assim é incrivelmente arriscado ou exige uma posição de poder invejável.
 
 - **Adicione uma especialidade:** Brawl (Kindred) ou Stealth (against Kindred).
@@ -109,7 +109,7 @@ Alimentar-se assim é incrivelmente arriscado ou exige uma posição de poder in
 ---
 # Sandman
 
-Você usa sua furtividade ou [[Disciplinas]] para se alimentar de vítimas adormecidas. Se elas nunca acordarem durante a alimentação, jamais saberão da sua existência. 
+Você usa sua furtividade ou [[Disciplinas]] para se alimentar de vítimas adormecidas. Se elas nunca acordarem durante a alimentação, jamais saberão da sua existência.
 
 Talvez você tenha sido muito antissocial em vida e não se sinta preparado para a intensa vida noturna ou a violência física de caçadores mais extrovertidos.
 
@@ -119,11 +119,11 @@ Talvez você tenha sido muito antissocial em vida e não se sinta preparado para
 ---
 # Scene-Queen
 
-Você se alimenta explorando sua familiaridade com uma subcultura específica e mantendo uma pose cuidadosamente construída. Você se alimenta de uma subcultura exclusiva que acredita que você faz parte dela. Suas vítimas o adoram por seu status na cena, e aqueles que entendem o que você realmente é são desacreditados. Você pode pertencer às ruas ou à alta classe, abusando dos mais fracos com falsas esperanças e promessas de levá-los ao próximo nível. 
+Você se alimenta explorando sua familiaridade com uma subcultura específica e mantendo uma pose cuidadosamente construída. Você se alimenta de uma subcultura exclusiva que acredita que você faz parte dela. Suas vítimas o adoram por seu status na cena, e aqueles que entendem o que você realmente é são desacreditados. Você pode pertencer às ruas ou à alta classe, abusando dos mais fracos com falsas esperanças e promessas de levá-los ao próximo nível.
 
 Em vida, é quase certo que você fazia parte de uma cena semelhante à que agora caça.
 
-- **Adicione uma especialidade:** Etiquette (specific scene), Leadership (specific [[Regras Fundamentais#scene|scene]]), ou Streetwise (specific [[Regras Fundamentais#scene|scene]]).
+- **Adicione uma especialidade:** Etiquette (specific scene), Leadership (specific [[Regras Fundamentais#Scene|scene]]), ou Streetwise (specific [[Regras Fundamentais#Scene|scene]]).
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominação]] ou [[Disciplinas#Potence|Potência]].
 - **Ganhe a [[Advantages|Vantagem]]:** *Fama (Fame)* (•).
 - **Ganhe a [[Advantages|Vantagem]]:** *Contatos (Contacts)* (•).

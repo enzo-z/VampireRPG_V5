@@ -93,7 +93,7 @@ mas também não são simples o suficiente para serem realizadas gratuitamente.
 
 ---
 
-## Scene 
+## Scene
 
 Uma **scene** (cena) é o componente narrativo principal de _Vampiro: A Máscara_ (V5). Ela representa uma **série compacta de ações e interações** que acontecem em um único local ou entre um único conjunto de personagens, encapsulando um momento significativo da história.
  
