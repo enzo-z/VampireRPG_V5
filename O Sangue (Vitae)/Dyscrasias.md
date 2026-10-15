@@ -31,7 +31,7 @@
 
 Para transformar uma vítima em portadora de uma Dyscrasia, PRIMEIRAMENTE o vampiro deve intensificar  sua *[[Resonance]]* até o nível agudo (*acute*). E essa intensificação pode ser feita através de duas maneiras:
 1. **Testes Sociais bem-sucedidos:** Elevar a Resonance da vítima de ***"fleeting"*** para ***"intense"***, ou de ***"intense"*** para ***"acute"**.*
-2. **Interpretação narrativa:** Uma [[Regras Fundamentais#scene|cena]] bem interpretada pode justificar a intensificação do temperamento da vítima.
+2. **Interpretação narrativa:** Uma [[Regras Fundamentais#Scene|cena]] bem interpretada pode justificar a intensificação do temperamento da vítima.
 
 ### Criando Dyscrasias
 Uma vez que a vítima atinja uma [[Resonance]] aguda, o vampiro pode manipulá-la em longo prazo para formar uma Dyscrasia:
@@ -40,7 +40,7 @@ Uma vez que a vítima atinja uma [[Resonance]] aguda, o vampiro pode manipulá-l
 
 Vampiros mais **humanos** consideram tudo isso repulsivo.
 
-> **Nota:** Esse processo não é científico e pode causar **[[Humanidade#Stains|Stains]]** na [[Humanidade]] do vampiro, especialmente se envolver abuso prolongado. O Narrador deve decidir como o *[[Humanidade#Tenet|Tenet]]* da crônica lida com tais ações.
+> **Nota:** Esse processo não é científico e pode causar **[[Humanidade#Stains (Manchas)|Stains]]** na [[Humanidade]] do vampiro, especialmente se envolver abuso prolongado. O Narrador deve decidir como o *[[Humanidade#Tenet|Tenet]]* da crônica lida com tais ações.
 
 Source: pg. 229
 

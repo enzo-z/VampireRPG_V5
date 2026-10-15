@@ -35,7 +35,7 @@ A **Segunda Inquisição** é um evento devastador para a sociedade Kindred, ini
 
 ### **Contexto e Prelúdio**
 - Durante a **Guerra ao Terror**, a [[Camarilla]] tentou manipular o aparato de segurança dos Estados Unidos contra o [[Sabbat]] e os [[Anarquistas]]. Contudo, isso expôs os vampiros ao alcance crescente da vigilância tecnológica.
-- Em 2004, a NSA penetrou no **SchreckNET**, a rede secreta dos Nosferatu, marcando o início do colapso da [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]] em larga escala.
+- Em 2004, a NSA penetrou no **SchreckNET**, a rede secreta dos Nosferatu, marcando o início do colapso da [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]] em larga escala.
 
 ### **Operações Iniciais**
 - Em 2007, a "Protect America Act" e o "Project PRIS" deram início a uma campanha global coordenada pelas principais agências de inteligência.
@@ -52,20 +52,20 @@ A **Segunda Inquisição** é um evento devastador para a sociedade Kindred, ini
 ## A Expulsão dos Anarquistas
 
 ### **O Contexto**
-- Durante o **Conclave de Praga (2008)**, a [[Camarilla]] culpou os [[Anarquistas]] pelo comprometimento da [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]] com o uso de tecnologia imprudente. Os Anarquistas, por sua vez, acusaram a [[Camarilla]] de sacrificar [[Gerações e Potência|neonatos]] para proteger [[Kindred#Gerações|anciões]].
-- O ponto crítico foi a execução de um [[Kindred#Gerações|ancião]] pela Arconte Brujah Theo Bell, marcando a separação definitiva entre as seitas.
+- Durante o **Conclave de Praga (2008)**, a [[Camarilla]] culpou os [[Anarquistas]] pelo comprometimento da [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]] com o uso de tecnologia imprudente. Os Anarquistas, por sua vez, acusaram a [[Camarilla]] de sacrificar [[Gerações e Potência|neonatos]] para proteger [[Gerações e Potência|anciões]].
+- O ponto crítico foi a execução de um [[Gerações e Potência|ancião]] pela Arconte Brujah Theo Bell, marcando a separação definitiva entre as seitas.
 
 ### **Consequências**
 1. **Redefinição da Camarilla:**
-	A partir desse momento, a [[Camarilla]] declarou que todos os [[Anarquistas]], *thin-bloods*, Caitiffs e qualquer Kindred não alinhado com suas tradições seriam considerados **exilados**. Nenhum vampiro de 13ª [[Kindred#Gerações|geração]] ou inferior seria aceito na seita.
+	A partir desse momento, a [[Camarilla]] declarou que todos os [[Anarquistas]], *thin-bloods*, Caitiffs e qualquer Kindred não alinhado com suas tradições seriam considerados **exilados**. Nenhum vampiro de 13ª [[Gerações e Potência|geração]] ou inferior seria aceito na seita.
 	  
-	A [[Camarilla]] adotou uma política de isolamento extremo, instituindo uma "segunda [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]]", proibindo contato com vampiros não iniciados.
+	A [[Camarilla]] adotou uma política de isolamento extremo, instituindo uma "segunda [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]", proibindo contato com vampiros não iniciados.
    
 2. **Anarquistas como "Inimigos Oficiais":** 
    Para a [[Camarilla]], os [[Anarquistas]] passaram de meros dissidentes para **potenciais ameaças existenciais**. Eles eram vistos como agentes do caos, cuja imprudência colocava em risco toda a sociedade Kindred.
    
 3. **Concessão de uma Tradição:** 
-	Após intensos conflitos, os [[Anarquistas]] concordaram em respeitar **apenas uma Tradição**: a [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]]. Essa decisão visava proteger a existência dos Kindred, mesmo entre aqueles que rejeitavam a autoridade central da [[Camarilla]].
+	Após intensos conflitos, os [[Anarquistas]] concordaram em respeitar **apenas uma Tradição**: a [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]. Essa decisão visava proteger a existência dos Kindred, mesmo entre aqueles que rejeitavam a autoridade central da [[Camarilla]].
 
 ---
 
@@ -98,7 +98,7 @@ Cidades divididas entre [[Camarilla]] e [[Anarquistas]] se tornaram campos de ba
 - **Anarquistas:** Expandem seu controle em áreas negligenciadas, como bairros periféricos e centros urbanos caóticos, onde podem se misturar com os mortais.
 
 ### Inimigos em Comum
-Ambas as seitas reconhecem que a Segunda Inquisição representa um perigo existencial para todos os Kindred. Apesar de sua animosidade mútua, a necessidade de proteger a [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]] pode forçar alianças temporárias em casos extremos.
+Ambas as seitas reconhecem que a Segunda Inquisição representa um perigo existencial para todos os Kindred. Apesar de sua animosidade mútua, a necessidade de proteger a [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]] pode forçar alianças temporárias em casos extremos.
 
 ### O Risco da Guerra Aberta
 Os eventos em Berlim e Praga são vistos como prenúncios de uma possível **Guerra das Eras**. Com a tensão crescendo, muitos acreditam que um confronto direto entre as duas seitas é inevitável.

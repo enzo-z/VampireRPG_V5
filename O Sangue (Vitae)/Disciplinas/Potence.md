@@ -71,7 +71,7 @@ Vampiros com Potência ganham uma força muito maior de seu Sangue do que aquele
 
 > - **Fonte**: Core, p. 264
 > - **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]].
-> - **Duração**: Uma [[Regras Fundamentais#scene|cena]].
+> - **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 > - **Dice Pool**: Não possui (ler abaixo)
 >
 > - **Sistema**:
@@ -121,7 +121,7 @@ O aperto do vampiro se torna impossivelmente forte e, uma vez que ele agarre alg
 >- **Fonte**: Core, p. 265
 >- **Amálgama**: [[Presence]] 3 (requer 3 pontos em Presence para obter este poder)
 > - **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]].
-> - **Duração**: Uma [[Regras Fundamentais#scene|cena]].
+> - **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 > - **Dice Pool**: (Manipulation + Potence) - possível [[Dificuldade, Contests e Conflitos#Contests|Contest Roll]] (ler abaixo)
 >
 > - **Sistema**:

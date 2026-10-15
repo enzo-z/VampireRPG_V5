@@ -58,7 +58,7 @@ O Narrador e o jogador trabalham juntos para decidir o nível do sucesso, e o n�
 Exemplos de ações selvagens: 
 - **Larceny**: ao tentar arrombar uma porta com lockpicking, o vampiro usa uma força descomunal que acaba quebrando a tranca de uma forma que abre a porta, mas causa um barulho alto que pode prejudicar sua furtividade.
 - **Social**: ao tentar manipular ou convencer alguém, o vampiro pode elevar o tom de voz, aparecer mais ameaçador do que pretendia ou mesmo ativar uma [[Disciplinas|Disciplina]] de Dominação ou Presença instintivamente.
-- **Combate**:  o vampiro é mais letal do que planeja; talvez até use uma força sobrenatural que resulte em possível **quebra da** [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]].
+- **Combate**:  o vampiro é mais letal do que planeja; talvez até use uma força sobrenatural que resulte em possível **quebra da** [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]].
 - **Alimentando-se**: o vampiro foi descuidado durante sua [[Hunting and Feeding#Hunting Roll|caça]], gerando possíveis evidências, talvez até matando a vítima. 
 
 Essas ações mais selvagens podem gerar consequências interessantes, como:
@@ -134,7 +134,7 @@ O Sangue impele o vampiro a buscar superioridade e controle, transformando cada 
 
 #### Efeitos da Dominância (Regras):
 > - O vampiro sofre uma **penalidade de 2 dados** em ações que evitem estabelecer dominância ou desafiar uma autoridade.
-> - **[[Regras Fundamentais#Teamwork (Before Roll)]|Trabalho em Equipe]] não é permitido.**
+> - **[[Regras Fundamentais#Teamwork (Before Roll)|Trabalho em Equipe]] não é permitido.**
 > - A compulsão termina quando o vampiro "vence" e se vangloria de sua superioridade. 
 
 #### Exemplos de Interpretação:
@@ -202,9 +202,9 @@ Beber sangue reduz o nível de **Fome** do vampiro, mas apenas drenar completame
   
 - **Cuidados ao Beber**: Morder corretamente uma veia ou artéria e [[Kindred#Lendas Populares (Estacas, Alhos, etc.)|lamber a ferida]] para fechá-la ajuda a preservar a vida e a memória da vítima, evitando problemas como anemia severa ou embolias.
   
-- **Preservar a Máscara**: Beber cuidadosamente preserva a saúde da vítima e ajuda a manter a [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]], mas consome mais tempo.
+- **Preservar a Máscara**: Beber cuidadosamente preserva a saúde da vítima e ajuda a manter a [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]], mas consome mais tempo.
   
-- **Drenar a Vítima**: Um humano indefeso ou que não resista pode ser drenado e morto em **cerca de cinco turnos**, embora isso comprometa a [[Camarilla#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]] em situações não controladas.
+- **Drenar a Vítima**: Um humano indefeso ou que não resista pode ser drenado e morto em **cerca de cinco turnos**, embora isso comprometa a [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]] em situações não controladas.
 
 ---
 ### Alimentando-se de Outros Vampiros

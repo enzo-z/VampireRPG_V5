@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #concept #character #hunting
 
 ![[Pasted image 20241122150750.png]]
@@ -53,7 +56,7 @@ Adicione sua família ao [[Mapa de Relacionamentos]].
 
 _Cleavers_ frequentemente fazem grandes esforços para esconder a verdade de sua condição de suas famílias, mas alguns mantêm relacionamentos nada saudáveis com seus próprios parentes.
 
-A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [[Camarilla#Regras Fundamentais da Camarilla|Máscara]]. Kindred mais prudentes podem até massacrar sua família "para o seu próprio bem" se descobrirem seu segredo e se importarem com o que acontece com você.
+A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]. Kindred mais prudentes podem até massacrar sua família "para o seu próprio bem" se descobrirem seu segredo e se importarem com o que acontece com você.
 
 - **Adicione uma especialidade:** Persuasion (Gaslighting) ou Subterfuge (Coverups).
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominate]] ou [[Disciplinas#Animalism|Animalism]];
@@ -64,7 +67,7 @@ A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [
 
 Você nunca se alimenta contra a vontade de sua vítima. Você pode se passar por um representante de uma campanha de doação de sangue beneficente, um entusiasta de fetiches vampíricos na “comunidade de vampiros reais” ou até mesmo revelar o que você realmente é, obtendo permissão para se alimentar.
 
-A [[Camarilla]] considera este último método uma violação da [[Camarilla#Regras Fundamentais da Camarilla|Máscara]], mas muitos filósofos [[Anarquistas]] o veem como um risco aceitável. Você poderia ter sido qualquer coisa em vida, mas trabalhadores sexuais, organizadores políticos ou advogados podem estar mais atentos aos perigos de se alimentar sem consentimento.
+A [[Camarilla]] considera este último método uma violação da [[Camarilla#1ª Tradição A Máscara *(The Masquerade)*|Máscara]], mas muitos filósofos [[Anarquistas]] o veem como um risco aceitável. Você poderia ter sido qualquer coisa em vida, mas trabalhadores sexuais, organizadores políticos ou advogados podem estar mais atentos aos perigos de se alimentar sem consentimento.
 
 - **Adicione uma especialidade:** Medicine (Phlebotomy) ou Persuasion (Victims).
 - **Ganhe um ponto em:** [[Disciplinas#Auspex|Auspícios]] ou [[Disciplinas#Fortitude|Fortitude]].

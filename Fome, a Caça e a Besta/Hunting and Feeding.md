@@ -54,7 +54,7 @@ Isso é o que os Kindred chamam de _Dyscrasia_, e os jogadores chamam de "um NPC
 
 ## Hunting and Humors (Resonance)
 
-O roleplay dá uma boa ideia de qual a [[Resonance]] que o sangue da vítima carrega, mas depois de *stalkear ou falar por uma [[Regras Fundamentais#scene|scene]], o ST pode permitir um teste de **Resolve + Insight*** para ajudar a identificar. 
+O roleplay dá uma boa ideia de qual a [[Resonance]] que o sangue da vítima carrega, mas depois de *stalkear ou falar por uma [[Regras Fundamentais#Scene|scene]], o ST pode permitir um teste de **Resolve + Insight*** para ajudar a identificar. 
 
 Dito isto, provar o sangue da vítima revela qualquer dúvida.
 
@@ -66,7 +66,7 @@ Para determinar o temperamento de uma vítima, role um d10. Caso tire 6 ou +, si
 
 - Caso o temperamento seja *Fleeting*, será possível [[Dyscrasias#Intensificando Resonance|manipular o temperamento]] até chegar a um temperamento *Intense*, o que fornece um *[[Resonance#Disciplinas e Resonance|bônus no uso de alguns poderes vampíricos]]*.
 
-- Caso seja *Intense*, o mesmo vale para chegar a *Acute.* E em temperamentos agudos, a vítima estará sujeita a um longo processo de [[Dyscrasias#**Criando Dyscrasias**|criação de uma Dyscrasia]], que resulta em ***ganhos maiores e mais poderosos***. 
+- Caso seja *Intense*, o mesmo vale para chegar a *Acute.* E em temperamentos agudos, a vítima estará sujeita a um longo processo de [[Dyscrasias#Criando Dyscrasias|criação de uma Dyscrasia]], que resulta em ***ganhos maiores e mais poderosos***. 
 
 >**⚠️ Nota Importante**: Personagens podem mudar o [[Resonance]] da vítima através de roleplay ou através dos vários social systems do jogo (testes, disciplinas sociais, etc), e o ST (*Storyteller*) pode alterar conforme achar necessário e coerente.
 

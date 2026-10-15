@@ -5,26 +5,26 @@
 ## Sumário
 - [[#Formação da Camarilla|Formação da Camarilla]]
 - [[#Estrutura e Organização|Estrutura e Organização]]
-- [[#Segunda Inquisição|Segunda Inquisição]]
-- [[#1ª Tradição: **A Máscara** (*The Masquerade*)|1ª Tradição: A Máscara (The Masquerade)]]
-- [[#2ª Tradição: **O Domínio** (*The Domain*)|2ª Tradição: O Domínio (The Domain)]]
-- [[#3ª Tradição: **A Prole** (*The Progeny*)|3ª Tradição: A Prole (The Progeny)]]
+- [[Segunda Inquisição|Segunda Inquisição]]
+- [[#1ª Tradição A Máscara *(The Masquerade)*|1ª Tradição: A Máscara (The Masquerade)]]
+- [[#2ª Tradição **O Domínio** (***The Domain***)|2ª Tradição: O Domínio (The Domain)]]
+- [[#3ª Tradição **A Prole** (***The Progeny***)|3ª Tradição: A Prole (The Progeny)]]
 - [[#4ª Tradição A Responsabilidade (*The Accounting*)|4ª Tradição: A Responsabilidade (The Accounting)]]
-- [[#5ª Tradição: **A Hospitalidade** (*Hospitality*)|5ª Tradição: A Hospitalidade (Hospitality)]]
-- [[#6ª Tradição: **A Destruição** (*Destruction*)|6ª Tradição: A Destruição (Destruction)]]
-- [[#Contexto Narrativo das Leis|Contexto Narrativo das Leis]]
-- [[#Contextualização: Camarilla no Rio de Janeiro (2019)|Contextualização: Camarilla no Rio de Janeiro (2019)]]
-	- [[#Contextualização: Camarilla no Rio de Janeiro (2019)#Cenário Político e Social|Cenário Político e Social]]
-	- [[#Contextualização: Camarilla no Rio de Janeiro (2019)#Influência na Crônica|Influência na Crônica]]
+- [[#5ª Tradição **A Hospitalidade** (*Hospitality*)|5ª Tradição: A Hospitalidade (Hospitality)]]
+- [[#6ª Tradição **A Destruição** (*Destruction*)|6ª Tradição: A Destruição (Destruction)]]
+- [[#Contexto Narrativo das Tradições|Contexto Narrativo das Tradições]]
+- [[#Contextualização Camarilla no Rio de Janeiro (2019)|Contextualização: Camarilla no Rio de Janeiro (2019)]]
+	- [[#Cenário Político e Social|Cenário Político e Social]]
+	- [[#Influência na Crônica|Influência na Crônica]]
 
 # A Camarilla
 
-A **Camarilla** é uma das principais seitas vampíricas no universo de *Vampire: The Masquerade*, funcionando como uma sociedade oculta que regula e protege a existência dos vampiros. Fundamentada na preservação da *[[#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]]* (*Masquerade*), sua principal lei, a Camarilla busca esconder a existência dos vampiros da humanidade, impondo normas rígidas sobre o comportamento e as interações entre vampiros e mortais.
+A **Camarilla** é uma das principais seitas vampíricas no universo de *Vampire: The Masquerade*, funcionando como uma sociedade oculta que regula e protege a existência dos vampiros. Fundamentada na preservação da *[[#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]* (*Masquerade*), sua principal lei, a Camarilla busca esconder a existência dos vampiros da humanidade, impondo normas rígidas sobre o comportamento e as interações entre vampiros e mortais.
 
 ---
 ## Formação da Camarilla
 
-A Camarilla foi fundada no século XV, durante a Idade das Trevas, em resposta à crescente ameaça da *Inquisição* humana, que começou a revelar e exterminar vampiros. Clãs influentes perceberam que precisavam se unir para sobreviver e instituir regras que ocultassem sua existência dos mortais. O conceito de *[[#2ª Tradição **O Domínio** (*The Domain*)|Máscara]]* nasceu nesse contexto, impondo o anonimato como uma lei universal para todos os Kindred. Essa aliança transformou a sociedade vampírica, estabelecendo uma ordem rígida e centralizada em cidades governadas por [[#Estrutura e Organização|Príncipes]].
+A Camarilla foi fundada no século XV, durante a Idade das Trevas, em resposta à crescente ameaça da *Inquisição* humana, que começou a revelar e exterminar vampiros. Clãs influentes perceberam que precisavam se unir para sobreviver e instituir regras que ocultassem sua existência dos mortais. O conceito de *[[#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]* nasceu nesse contexto, impondo o anonimato como uma lei universal para todos os Kindred. Essa aliança transformou a sociedade vampírica, estabelecendo uma ordem rígida e centralizada em cidades governadas por [[#Estrutura e Organização|Príncipes]].
 
 Apesar de sua criação para proteger os vampiros, a Camarilla nunca conseguiu atrair todos os clãs, deixando de fora grupos como os Gangrel e os [[Anarquistas]], que rejeitaram sua estrutura autoritária.
 
@@ -55,7 +55,7 @@ A Máscara é a tradição mais respeitada, mas também a mais quebrada. Vampiro
 - Demonstrações óbvias de poder vampírico.
 - Confissões a humanos amados.
 
-A punição para uma quebra da Máscara pode ser severa, até mesmo resultando em execução. Na era digital, com redes sociais, vídeos virais e vigilância constante, manter a Máscara é mais desafiador do que nunca. Uma transgressão pode atrair a atenção da *[[Segunda Inquisição]]* ou levar a uma [[#5ª Tradição **A Hospitalidade** (*Hospitality*)|Caçada de Sangue (Blood Hunt).]]
+A punição para uma quebra da Máscara pode ser severa, até mesmo resultando em execução. Na era digital, com redes sociais, vídeos virais e vigilância constante, manter a Máscara é mais desafiador do que nunca. Uma transgressão pode atrair a atenção da *[[Segunda Inquisição]]* ou levar a uma [[#6ª Tradição **A Destruição** (*Destruction*)|Caçada de Sangue (Blood Hunt).]]
 
 ---
 ## 2ª Tradição: **O Domínio** (***The Domain***)
@@ -109,7 +109,7 @@ O Rio de Janeiro em 2019 é um ambiente perfeito para explorar as intrigas da Ca
 - **[[Segunda Inquisição]]:** A crescente vigilância governamental e redes sociais dificultam a manutenção da *Máscara*, especialmente em um cenário de crescente militarização no Brasil.
 
 ### Influência na Crônica
-- **Conflitos de Poder:** A luta pelo controle de territórios e pela manutenção da *[[#1ª Tradição **A Máscara** (*The Masquerade*)|Máscara]]* cria intrigas políticas intensas.
+- **Conflitos de Poder:** A luta pelo controle de territórios e pela manutenção da *[[#1ª Tradição A Máscara *(The Masquerade)*|Máscara]]* cria intrigas políticas intensas.
 - **Perigo Constante:** A ameaça da [[Segunda Inquisição]] e de inimigos internos mantém os personagens sob constante tensão.
 - **Moralidade e Lealdade:** Personagens podem enfrentar dilemas ao lidar com as regras rígidas da Camarilla e as realidades brutais do Rio de Janeiro.
 
