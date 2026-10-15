@@ -13,8 +13,8 @@
 }
 
 .sm {
-  inline-size: 0.8rem;
-  block-size: 0.8rem;
+  inline-size: var(--dots-sm-size, 0.8rem);
+  block-size: var(--dots-sm-size, 0.8rem);
 }
 
 .md {

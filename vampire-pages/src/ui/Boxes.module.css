@@ -24,8 +24,8 @@
 }
 
 .sm {
-  inline-size: 1rem;
-  block-size: 1rem;
+  inline-size: var(--boxes-sm-size, 1rem);
+  block-size: var(--boxes-sm-size, 1rem);
 }
 
 .md {
