@@ -116,6 +116,127 @@ tags: [vantagens]
 > - **Sistema**:
 >   Você consegue consumir comida sem esforço e até pode apreciá-la, embora ela não dê nutrição alguma e precise ser expelida antes de descansar durante o dia.
 
+## Haven
+
+### Hidden Armory
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Arsenal Oculto, Arsenal Escondido
+>
+> - **Sistema**:
+>   Cada dot neste Merit adiciona um conjunto de armas ao suprimento do seu haven: uma pistola e uma arma de fogo longa, com munição. Elas estão tão a salvo de descoberta quanto o seu local de descanso.
+
+### Cell
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Cela
+>
+> - **Sistema**:
+>   Seu haven tem um local próprio e trancado para guardar dois prisioneiros, com Difficulty base de fuga 5. Cada dot extra permite guardar o dobro de prisioneiros (até um máximo de 32, apenas em havens muito grandes) ou adiciona +1 à Difficulty de fuga. Este Merit não está disponível em havens pequenos.
+
+### Watchmen
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Vigias, Guardas
+>
+> - **Sistema**:
+>   Você tem seguranças particulares ou capangas criminosos guardando seu haven. Cada dot deste Merit fornece quatro guardas Average e um chefe Gifted (veja Mortal Templates, p. 185). Se guardas chamariam atenção ali, compre este Merit com cautela.
+
+### Laboratory
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Laboratório
+>
+> - **Sistema**:
+>   Seu haven tem um laboratório equipado, com pia industrial dedicada, bico de gás, piso reforçado etc. Cada dot deste Merit adiciona um à pool de dados de testes relacionados a uma especialização de Science ou Technology, ou às pools de Alchemy de thin-bloods que usam o método Fixatio (p. 284). Este Merit não está disponível em havens pequenos.
+
+### Library
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Biblioteca
+>
+> - **Sistema**:
+>   Seu Haven tem uma biblioteca dedicada ao oculto, a lendas Cainitas, à história da cidade, ao conhecimento vampírico ou algo do tipo. Cada dot deste Merit adiciona um à pool de dados de testes de pesquisa para uma especialização de Academics, Investigation ou Occult. Havens pequenos limitam este Merit a no máximo um dot.
+
+### Location
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Localização
+>
+> - **Sistema**:
+>   Seu haven se aninha em uma das áreas mais da moda ou de outro modo mais exclusivas da cidade, no Rack, em uma pequena ilha ou em outro ponto privilegiado. Some dois dados (ou +2 à Difficulty dos inimigos) aos bônus das rolagens relevantes de Chasse (p. 195) ou do seu rating base de Haven (escolha um). Se nenhum dos modificadores corresponder exatamente ao que você tem em mente, combine com seu Narrador quando você pode esperar um bônus de dois dados. Por exemplo, um Haven perto do Elysium pode conceder um bônus de dois dados em testes de Etiquette no Elysium e em testes para captar fofocas da corte.
+
+### Luxury
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Luxo
+>
+> - **Sistema**:
+>   Telas planas de alta definição, mobília de grife, objets d’art ou outros detalhes caros dão um bônus de dois dados em testes Sociais com convidados mortais no seu haven. Se você não tiver pelo menos três dots de Resources (●●●), sua decoração foi obtida ilegalmente.
+
+### Postern
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Saída Secreta, Postigo
+>
+> - **Sistema**:
+>   Seu Haven tem uma saída dos fundos, túnel secreto, grade no porão que leva ao esgoto ou outra saída discreta. Para cada dot deste Merit, adicione um dado às suas pools de dados para evitar ou escapar de vigilância perto do seu haven.
+
+### Security System
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Sistema de Segurança
+>
+> - **Sistema**:
+>   Seu haven tem um sistema de segurança melhor que a média. Para cada dot deste Merit, adicione um dado à sua pool de dados para resistir a (ou ser alertado de) entrada não autorizada no seu haven.
+
+### Surgery
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Cirurgia, Sala de Cirurgia
+>
+> - **Sistema**:
+>   Seu haven tem um cômodo equipado como cirurgia de campo ou melhor. Adicione dois dados às pools de dados relevantes, geralmente Medicine, de testes realizados no seu haven. Este Merit não está disponível em havens pequenos.
+
+### Warding
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Proteção Mística, Proteções
+>
+> - **Sistema**:
+>   Seu haven possui algum tipo de ward mágico que barra forças sobrenaturais. Você talvez não consiga desativá-lo, mas ele permite que você passe. Discuta os limites do seu ward com o Narrador. Cada dot deste Merit adiciona um à pool de dados para resistir a scrying sobrenatural, bem como a qualquer outra entrada que o Narrador permitir que ele impeça. O Narrador pode exigir que você possua Occult 3 ou mais, ou Blood Sorcery, para comprar este Merit.
+
+## Mask
+
+### Zeroed
+
+> - **Fonte**: Core, p. 192 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Zerado, Zerada
+>
+> - **Sistema**:
+>   Alguém em posição elevada apagou seus registros verdadeiros. Oficialmente, você não existe.
+
+### Cobbler
+
+> - **Fonte**: Core, p. 192 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Falsificador, Falsificadora
+>
+> - **Sistema**:
+>   Você pode fabricar ou obter Masks. Fabricar uma Mask leva três dias por dot e possivelmente o expõe online; obter Masks leva um dia por dot, mas custa algo em troca. Quanto depende da sua vantagem, da margem no teste Social ou de qualquer outra coisa que o Narrador decidir.
+
 ---
 # Backgrounds
 
@@ -336,6 +457,25 @@ tags: [vantagens]
 >   | ●●●● | Powerful: você ocupa um cargo no grupo, como Sheriff, Harpy ou Scourge. |
 >   | ●●●●● | Luminary: você se senta à mesa do poder do grupo, um membro respeitado do Primogen |
 
+### Retainer
+
+> - **Fonte**: Core, p. 194 · texto do app do Pedro
+> - **Pontos**: • a •••
+> - **Apelidos**: Retainers, Lacaio, Lacaios, Servo, Servos
+>
+> - **Sistema**:
+>   Você tem um ou mais servos ou assistentes leais e firmes. Retainers podem ser ghouls com Blood Bond com você, indivíduos que você Dominou ao longo dos anos a ponto de serem incapazes de ação independente, ou indivíduos que você sobrepujou com sua Presence a ponto de fazerem qualquer coisa por você.
+>
+>   Você deve sempre controlar os retainers de alguma forma: salário, doação de vitae ou mesmerismo direto. Embora tipicamente leais, retainers podem traí-lo se a recompensa superar o risco ou se você os tratou mal. O Narrador sempre pode pedir uma cena entre você e um retainer.
+>
+>   Retainers devem agir como personagens, não como marionetes. Mesmo retainers ghouls não são super-homens; os servos mais habilidosos nem sempre demonstram a maior lealdade. Tudo em Vampire é uma troca. Narradores podem usar Retainers para dar sabor à crônica; não deixe que eles nem o mau uso deles prejudiquem a história.
+>
+>   | Pontos | Efeito |
+>   |---|---|
+>   | ● | Retainer decepcionante: uma criança, um criminoso de baixo escalão ou um nerd de terror o segue e cumpre suas ordens sem Blood Bond. Construa-o como mortal Weak. |
+>   | ●● | Um ghoul, um servo da família, um amante humano ou um thrall dominado: dê-lhe um histórico. Construa-o como mortal Average ou como ghoul sem Advantages. Para mais sobre Ghouls, veja a p. 234. |
+>   | ●●● | Um retainer competente o bastante para agir de forma independente e fazer problemas menores desaparecerem. Provavelmente é um ghoul com traços equivalentes aos de mortais Gifted, além de suas habilidades sobrenaturais. |
+
 ---
 # Flaws
 
@@ -390,6 +530,15 @@ tags: [vantagens]
 > - **Sistema**:
 >   Subtraia um dado das pools de testes Sociais que envolvam qualquer grupo da cidade, exceto seus Contacts e Allies ou outros apoiadores explicitamente leais.
 
+### Despised
+
+> - **Fonte**: Core, p. 187 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Desprezado, Desprezada
+>
+> - **Sistema**:
+>   Um grupo ou região da cidade vive apenas para frustrar você e a sua facção. Subtraia dois dados das pools de dados que tentem convencer um agente neutro a apoiá-lo politicamente ou a lhe fazer um favor. O Narrador deve aproveitar qualquer oportunidade para envolver seus inimigos na história.
+
 ## Mask
 
 ### Known Corpse
@@ -400,6 +549,15 @@ tags: [vantagens]
 >
 > - **Sistema**:
 >   As pessoas sabem que você morreu recentemente e reagem com choque e horror se você aparece entre elas. Este Flaw também vale para qualquer consulta a bancos de dados sobre a sua identidade.
+
+### Known Blankbody
+
+> - **Fonte**: Core, p. 190 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Corpo em Branco Conhecido
+>
+> - **Sistema**:
+>   Sua biometria, nome, histórico, associados conhecidos e aliases aparecem em vários bancos de dados de agências de inteligência, marcados como potencial terrorista. Qualquer inquisidor consegue ler nas entrelinhas e reconhecê-lo como vampiro.
 
 ## Mawla
 
@@ -430,6 +588,15 @@ tags: [vantagens]
 >
 > - **Sistema**:
 >   Você não é bem visto de forma alguma por esta seita. Você escapou de um boon, quebrou um juramento ou fez algo semelhante. Você pode tentar ficar fora de vista e da memória, mas, a menos que de algum modo faça as pazes, sofre uma penalidade de dois dados em todos os testes Sociais que envolvam a facção ofendida.
+
+### Shunned
+
+> - **Fonte**: Core, p. 194 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Rejeitado, Rejeitada, Evitado
+>
+> - **Sistema**:
+>   Você é completamente detestado por esta seita. Você os traiu, contrariou um líder local ou lutou contra eles no passado. Membros deste grupo trabalharão ativamente contra você se puderem.
 
 ## Feeding
 
@@ -627,8 +794,87 @@ Apenas ancillae ou vampiros mais velhos podem escolher qualquer um destes Flaws.
 > - **Sistema**:
 >   Blood Bonds sobre você perdem força mais lentamente que o normal, diminuindo em um a cada três meses sem serem reforçados.
 
+## Haven
+
+### No Haven
+
+> - **Fonte**: Core, p. 188 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Sem Refúgio
+>
+> - **Sistema**:
+>   Você precisa se esforçar (pelo menos um teste básico) para encontrar um novo local de descanso toda manhã.
+
+### Compromised
+
+> - **Fonte**: Core, p. 188 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Comprometido, Refúgio Comprometido
+>
+> - **Sistema**:
+>   Seu haven já foi invadido uma vez, talvez antes de ser seu. Provavelmente consta na lista de vigilância de alguém. Invasores ou espiões podem adicionar dois dados à sua pool para penetrar ou vigiar seu haven. Se algum dia você entrar no radar da Inquisição, deveria pensar em se mudar.
+
+### Creepy
+
+> - **Fonte**: Core, p. 188 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Sinistro, Assustador
+>
+> - **Sistema**:
+>   Seu haven parece o covil de um serial killer, o que, para ser justo, provavelmente é exatamente o que ele é. Vizinhos desavisados podem ligar para a polícia com uma denúncia ou simplesmente comentar sobre o lugar sinistro que viram. Suas pools de dados em testes Sociais para seduzir ou de outro modo deixar convidados humanos à vontade sofrem penalidade de dois dados.
+
+### Haunted
+
+> - **Fonte**: Core, p. 188 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Assombrado
+>
+> - **Sistema**:
+>   Seu haven tem uma manifestação sobrenatural que você não controla nem realmente compreende. Pode ser apenas um fantasma, mas um haven Haunted pode abrigar um portal dimensional, um meteorito amaldiçoado ou qualquer outra coisa de que você não consiga se livrar. Obviamente, alguém que compreenda a manifestação poderia usá-la para violar a segurança do seu haven. O Narrador define qualquer outro efeito da assombração, impondo pelo menos uma penalidade de um dado às pools afetadas usadas no haven por dot de Haunted escolhido como Flaw.
+
+## Herd
+
+### Obvious Predator
+
+> - **Fonte**: Core, p. 189 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Predador Óbvio
+>
+> - **Sistema**:
+>   Você exala uma postura predatória, e humanos instintivamente o temem e desconfiam de você. Perca dois dados de qualquer pool de dados de caça, exceto expressões puramente Físicas de perseguir, caçar e matar. Perca um dado de qualquer pool de dados de teste Social destinado a deixar humanos à vontade. Você não pode manter um Herd.
+
+## Resources
+
+### Destitute
+
+> - **Fonte**: Core, p. 193 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Destituído, Miserável, Pobre
+>
+> - **Sistema**:
+>   Você não tem dinheiro nem lar.
+
+## Retainer
+
+### Stalkers
+
+> - **Fonte**: Core, p. 194 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Perseguidores, Stalker
+>
+> - **Sistema**:
+>   Você tem tendência a atrair pessoas que ficam um pouquinho apaixonadas demais por você, para o seu próprio bem. Um ex-retainer mantém a memória de você e o desejo de se reconectar. Pode estar faminto, enlouquecido de amor, desesperado, oportunista ou qualquer combinação ou variação disso. Se você se livrar dele, logo aparece outro.
+
 ---
 # Loresheets
+
+> - **Fonte**: Core, p. 190 · texto do app do Pedro
+
+Compre uma Advantage de uma Loresheet e integre a história desse lore à linhagem e às conexões do seu personagem. Algumas Loresheets (especialmente as “Descendant of …”) exigem que o personagem seja de um clã específico.
+
+Lembre-se de que, assim como outras Advantages, cada nível de uma Loresheet é autocontido e deve ser comprado separadamente. Ele não concede automaticamente os níveis “inferiores” daquela Loresheet.
+
+Veja Loresheets na p. 382 para mais.
 
 ### Sect War Veteran
 
