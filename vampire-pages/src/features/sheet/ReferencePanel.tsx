@@ -1,5 +1,6 @@
 import { ADVANTAGE_INDEX } from '../../catalog/advantagesCatalog.ts';
 import { BLOOD_CATALOG } from '../../catalog/bloodCatalog.ts';
+import { CLAN_INDEX } from '../../catalog/clansCatalog.ts';
 import { DISCIPLINE_INDEX } from '../../catalog/disciplines.ts';
 import { PREDATOR_TYPE_INDEX } from '../../catalog/predatorTypesCatalog.ts';
 import { highlightPlainText, highlightRolls } from '../../reference/highlightRolls.ts';
@@ -27,6 +28,7 @@ export function ReferencePanel() {
     advantages: ADVANTAGE_INDEX,
     predatorTypes: PREDATOR_TYPE_INDEX,
     blood: BLOOD_CATALOG,
+    clans: CLAN_INDEX,
   });
 
   return (

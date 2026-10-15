@@ -121,3 +121,28 @@ export interface BloodCatalog {
   potencyLevels: PotencyLevelEntry[];
   potencyTable: PotencyRowEntry[];
 }
+
+/** A bane or compulsion section of Clãs.md. */
+export interface ClanSectionEntry {
+  title: string;
+  html: string;
+}
+
+/** A "# Perfis dos Clãs" profile of Clãs.md, with its bane and compulsion. */
+export interface ClanEntry {
+  name: string;
+  aliases: string[];
+  source: string | null;
+  sect: string;
+  disciplines: string[];
+  /** Short enough for the Clan Bane / Compulsão boxes of the printed sheet. */
+  baneSummary: string;
+  compulsionSummary: string;
+  descriptionHtml: string;
+  bane: ClanSectionEntry | null;
+  compulsion: ClanSectionEntry | null;
+}
+
+export interface ClanCatalog {
+  entries: ClanEntry[];
+}

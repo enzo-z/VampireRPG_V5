@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { indexAdvantages } from '../catalog/advantages.ts';
 import { indexCatalog } from '../catalog/lookup.ts';
+import { indexClans } from '../catalog/clans.ts';
 import { indexPredatorTypes } from '../catalog/predatorTypes.ts';
 import type { AdvantageEntry, CatalogEntry, DisciplineCatalog } from '../catalog/types.ts';
 import { createFicha } from '../domain/defaults.ts';
@@ -72,6 +73,34 @@ const catalogs = {
       feeding: 'Sem efeito',
     })),
   },
+  clans: indexClans({
+    entries: [
+      {
+        name: 'Banu Haqim',
+        aliases: ['Assamita'],
+        source: "Player's Guide, p. 18",
+        sect: 'Camarilla',
+        disciplines: ['Celerity', 'Obfuscate', 'Blood Sorcery'],
+        baneSummary: 'Vício em vitae.',
+        compulsionSummary: 'Julgamento.',
+        descriptionHtml: '<p>Juízes.</p>',
+        bane: { title: 'Maldição dos Banu Haqim', html: '<p>Hunger frenzy.</p>' },
+        compulsion: { title: 'Julgamento', html: '<p>Punir.</p>' },
+      },
+      {
+        name: 'Caitiff',
+        aliases: ['Sem clã'],
+        source: 'Core, p. 107',
+        sect: 'Qualquer',
+        disciplines: ['Quaisquer três'],
+        baneSummary: 'Sem Bane de clã.',
+        compulsionSummary: 'Sem Compulsão de clã.',
+        descriptionHtml: '<p>Sem linhagem.</p>',
+        bane: null,
+        compulsion: null,
+      },
+    ],
+  }),
 };
 
 const base = createFicha('nina', 'Nina');
@@ -233,6 +262,35 @@ describe('referenceFor', () => {
     });
     const blank = referenceFor({ kind: 'identity', field: 'generation' }, ficha, catalogs);
     expect(blank?.paragraphs).toEqual(['Campo vazio.']);
+  });
+
+  it('shows the clan profile with its bane and compulsion', () => {
+    expect(referenceFor({ kind: 'identity', field: 'clan' }, ficha, catalogs)).toMatchObject({
+      kicker: 'Clã',
+      title: 'Banu Haqim',
+      source: "Player's Guide, p. 18",
+      paragraphs: [],
+      facts: [
+        { label: 'Disciplinas do clã', value: 'Celerity, Obfuscate, Blood Sorcery' },
+        { label: 'Seita', value: 'Camarilla' },
+      ],
+      blocks: [
+        { title: 'Maldição dos Banu Haqim', html: '<p>Hunger frenzy.</p>' },
+        { title: 'Compulsão: Julgamento', html: '<p>Punir.</p>' },
+        { title: 'Perfil', html: '<p>Juízes.</p>' },
+      ],
+    });
+  });
+
+  it('gives Caitiff their summaries instead of bane and compulsion sections', () => {
+    const caitiff = { ...ficha, identity: { ...ficha.identity, clan: 'Caitif' } };
+    const result = referenceFor({ kind: 'identity', field: 'clan' }, caitiff, catalogs);
+    expect(result?.paragraphs).toEqual(['"Caitif" lido como Caitiff.']);
+    expect(result?.facts.slice(-2)).toEqual([
+      { label: 'Maldição', value: 'Sem Bane de clã.' },
+      { label: 'Compulsão', value: 'Sem Compulsão de clã.' },
+    ]);
+    expect(result?.blocks.map((block) => block.title)).toEqual(['Perfil']);
   });
 
   it('summarizes trackers', () => {

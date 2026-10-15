@@ -1,7 +1,10 @@
 import { potencyRow } from '../../catalog/blood.ts';
 import { BLOOD_CATALOG } from '../../catalog/bloodCatalog.ts';
+import { findClan } from '../../catalog/clans.ts';
+import { CLAN_INDEX } from '../../catalog/clansCatalog.ts';
 import type { PotencyRowEntry } from '../../catalog/types.ts';
 import { BLOOD_POTENCY_RANGE } from '../../domain/character.ts';
+import { matchIdentity } from '../../domain/identityCatalog.ts';
 import { isSameSelection, type Selection } from '../../reference/lookup.ts';
 import type { BloodTextField } from '../../store/sheetsReducer.ts';
 import { Dots } from '../../ui/Dots.tsx';
@@ -39,6 +42,13 @@ export function BloodSection() {
   const bpSelected = isSameSelection(selection, BLOOD_POTENCY);
   const row = potencyRow(BLOOD_CATALOG, ficha.blood.potency);
   const differs = row !== null && FROM_TABLE.some(({ field, column }) => ficha.blood[field] !== String(row[column]));
+  const clan = findClan(CLAN_INDEX, matchIdentity('clan', ficha.identity.clan).canonical ?? ficha.identity.clan);
+  const clanDiffers = clan !== null && (ficha.blood.clanBane !== clan.baneSummary || ficha.blood.clanCompulsion !== clan.compulsionSummary);
+  const fillFromClan = () => {
+    if (clan === null) return;
+    edit({ type: 'blood/changed', id: ficha.id, field: 'clanBane', value: clan.baneSummary });
+    edit({ type: 'blood/changed', id: ficha.id, field: 'clanCompulsion', value: clan.compulsionSummary });
+  };
   const fillFromTable = () => {
     if (row === null) return;
     for (const { field, column } of FROM_TABLE) edit({ type: 'blood/changed', id: ficha.id, field, value: String(row[column]) });
@@ -82,6 +92,15 @@ export function BloodSection() {
           <TextField key={field} label={label} value={ficha.blood[field]} onChange={change(field)} readOnly={readOnly} />
         ))}
       </div>
+      {clan !== null && !readOnly && clanDiffers && (
+        <div className={styles.table}>
+          <span className={styles.tableTitle}>Pelo clã ({clan.name}):</span>
+          <span>resumos de Clan Bane e Compulsão, curtos para a ficha impressa</span>
+          <button type="button" className={styles.fill} onClick={fillFromClan}>
+            Preencher com o clã
+          </button>
+        </div>
+      )}
       <div className={styles.longFields}>
         {LONG_FIELDS.map(({ field, label }) => (
           <TextField key={field} label={label} value={ficha.blood[field]} onChange={change(field)} readOnly={readOnly} multiline />

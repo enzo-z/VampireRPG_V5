@@ -1,10 +1,11 @@
 import { findAdvantage, sideOf, suggestAdvantages, type AdvantageIndex } from '../catalog/advantages.ts';
 import { generationEntry, potencyLevelEntry, potencyRow } from '../catalog/blood.ts';
+import { findClan, type ClanIndex } from '../catalog/clans.ts';
 import { entriesOf, findDiscipline, findEntry, type CatalogIndex } from '../catalog/lookup.ts';
 import { findPredatorType, type PredatorTypeIndex } from '../catalog/predatorTypes.ts';
 import type { AdvantageCategory, BloodCatalog, CatalogEntry } from '../catalog/types.ts';
 import { ATTRIBUTE_RANGE, BLOOD_POTENCY_RANGE, DISCIPLINE_RANGE, HUNGER_MAX, SKILL_RANGE, type Ficha } from '../domain/character.ts';
-import { matchIdentity, type CatalogField } from '../domain/identityCatalog.ts';
+import { matchIdentity, normalizeText, type CatalogField } from '../domain/identityCatalog.ts';
 import { damageSummary, humanitySummary } from '../domain/trackers.ts';
 import {
   ATTRIBUTE_GROUPS,
@@ -38,6 +39,7 @@ export interface ReferenceCatalogs {
   advantages: AdvantageIndex;
   predatorTypes: PredatorTypeIndex;
   blood: BloodCatalog;
+  clans: ClanIndex;
 }
 
 /** A labeled value; `html` comes pre-rendered from the vault notes. */
@@ -291,8 +293,42 @@ function generationReference(ficha: Ficha, blood: BloodCatalog): ReferenceEntry 
   };
 }
 
+function clanReference(ficha: Ficha, clans: ClanIndex): ReferenceEntry | null {
+  const text = ficha.identity.clan;
+  const clan = findClan(clans, matchIdentity('clan', text).canonical ?? text);
+  if (clan === null) return null;
+  const readAs = matchIdentity('clan', text).matched || normalizeText(text) === normalizeText(clan.name) ? [] : [`"${text.trim()}" lido como ${clan.name}.`];
+  // Caitiff and Thin-Bloods have no bane/compulsion sections: their summaries say so.
+  const summaries: ReferenceFact[] = [
+    ...(clan.bane === null ? [{ label: 'Maldição', value: clan.baneSummary }] : []),
+    ...(clan.compulsion === null ? [{ label: 'Compulsão', value: clan.compulsionSummary }] : []),
+  ];
+  return {
+    ...EMPTY_ENTRY,
+    kicker: IDENTITY_FIELD_LABELS.clan,
+    title: clan.name,
+    source: clan.source,
+    paragraphs: readAs,
+    facts: [
+      { label: 'Disciplinas do clã', value: clan.disciplines.join(', ') },
+      ...(clan.sect === '' ? [] : [{ label: 'Seita', value: clan.sect }]),
+      ...(ficha.blood.baneSeverity.trim() === '' ? [] : [{ label: 'Bane Severity na ficha', value: ficha.blood.baneSeverity }]),
+      ...summaries,
+    ],
+    blocks: htmlBlocks(
+      ...(clan.bane === null ? [] : [{ title: clan.bane.title, html: clan.bane.html }]),
+      ...(clan.compulsion === null ? [] : [{ title: `Compulsão: ${clan.compulsion.title}`, html: clan.compulsion.html }]),
+      { title: 'Perfil', html: clan.descriptionHtml },
+    ),
+  };
+}
+
 function identityEntry(ficha: Ficha, field: CatalogField, catalogs: ReferenceCatalogs): ReferenceEntry {
   const text = ficha.identity[field];
+  if (field === 'clan' && text.trim() !== '') {
+    const entry = clanReference(ficha, catalogs.clans);
+    if (entry !== null) return entry;
+  }
   if (field === 'predatorType' && text.trim() !== '') {
     const entry = predatorTypeEntry(text, catalogs.predatorTypes);
     if (entry !== null) return entry;
