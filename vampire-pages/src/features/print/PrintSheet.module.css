@@ -3,12 +3,16 @@
    scaled up here: the smallest text lands at ~7 pt (agreed minimum). */
 
 .page {
-  /* Tuned on a full ficha (6 disciplines x 5 powers, long Clan Bane text): ~1,690 of 1,720 px. */
-  --print-type-scale: 1.15;  /* serif labels ~9.3 pt, titles ~11.4 pt */
+  /* Tuned on a full ficha (6 disciplines x 5 powers, 200-character Clan Bane and
+     Compulsão, the agreed worst case): ~1,700 of 1,720 px. */
+  --print-type-scale: 1.2;   /* serif labels ~9.75 pt, titles ~11.9 pt */
   --print-text-scale: 1.3;   /* sans values (xs): ~7.6 pt */
   --print-small-scale: 1.42; /* sans fields (2xs): ~7 pt */
-  --print-box-scale: 1.2;    /* dots, boxes, bullets */
+  --print-box-scale: 1.2;    /* dots, boxes, bullets outside the trackers */
   --print-gap-scale: 0.85;   /* vertical spacing, traded for larger type */
+  --print-write-line: 2.1rem;        /* skill and power lines: ~5.3 mm to write by hand */
+  --print-tracker-scale: 1.5;        /* trackers: boxes ~3.8 mm, dots ~3.1 mm */
+  --print-tracker-label-scale: 1.25; /* tracker and The Blood labels: ~10 pt */
   --dots-sm-size: calc(0.8rem * var(--print-box-scale));
   --boxes-sm-size: calc(1rem * var(--print-box-scale));
 
@@ -114,6 +118,10 @@
   padding-block: calc(var(--space-1) / 2 * var(--print-gap-scale));
 }
 
+.skillRow {
+  min-block-size: var(--print-write-line);
+}
+
 .traitRow {
   justify-content: space-between;
 }
@@ -166,13 +174,14 @@
 
 .powerRow {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   gap: var(--space-2);
-  padding-block-start: calc(var(--space-3) * var(--print-gap-scale));
+  min-block-size: var(--print-write-line);
 }
 
 .powerBullet {
   flex: none;
+  margin-block-end: var(--space-1);
   inline-size: calc(0.5rem * var(--print-box-scale));
   block-size: calc(0.5rem * var(--print-box-scale));
   border: var(--border-width-hairline) solid var(--color-trait-border);
@@ -204,6 +213,8 @@
 
 .frame {
   --frame-cut: 18px;
+  --dots-sm-size: calc(0.8rem * var(--print-tracker-scale));
+  --boxes-sm-size: calc(1rem * var(--print-tracker-scale));
   padding: var(--border-width-thick);
   background: var(--color-rule);
   clip-path: polygon(
@@ -252,6 +263,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  font-size: calc(var(--font-size-md) * var(--print-tracker-label-scale));
 }
 
 .inkIcon {
@@ -270,6 +282,7 @@
   align-items: center;
   gap: var(--space-2);
   min-block-size: calc(1.75rem * var(--print-type-scale));
+  font-size: calc(var(--font-size-md) * var(--print-tracker-label-scale));
 }
 
 .bloodLine .lineInput {
@@ -281,6 +294,7 @@
   flex: 1;
   flex-direction: column;
   gap: var(--space-1);
+  font-size: calc(var(--font-size-md) * var(--print-tracker-label-scale));
 }
 
 .italic {
