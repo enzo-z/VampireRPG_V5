@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #lore #rules #blood #important #character #concept
 
 ![[Pasted image 20241127014724.png]]
@@ -168,6 +171,22 @@ O "Chamado" lentamente convoca os anciões para a [[Guerra da Gehenna]], e eles 
 
 
 ![[Pasted image 20241126224215.png]]
+
+Tabela acima transcrita (Core). O app lê esta tabela; cada linha já traz o efeito completo daquele nível.
+
+| Blood Potency | Blood Surge | Mend (por Rouse Check) | Bônus de Disciplina | Re-roll do Rouse Check | Bane Severity | Alimentação |
+|---|---|---|---|---|---|---|
+| 0 | Nenhum | 1 Superficial | Nenhum | Nenhum | 0 | Sem efeito |
+| 1 | +1 dado | 1 Superficial | Nenhum | Nível 1 | 1 | Sem efeito |
+| 2 | +1 dado | 2 Superficial | +1 dado | Nível 1 | 1 | Sangue animal e de bolsa sacia metade da Fome |
+| 3 | +2 dados | 2 Superficial | +1 dado | Nível 2 ou menor | 2 | Sangue animal e de bolsa não sacia Fome |
+| 4 | +2 dados | 3 Superficial | +2 dados | Nível 2 ou menor | 2 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano |
+| 5 | +3 dados | 3 Superficial | +2 dados | Nível 3 ou menor | 3 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 6 | +3 dados | 3 Superficial | +3 dados | Nível 3 ou menor | 3 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 7 | +4 dados | 3 Superficial | +3 dados | Nível 4 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 8 | +4 dados | 4 Superficial | +4 dados | Nível 4 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
+| 9 | +5 dados | 4 Superficial | +4 dados | Nível 5 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
+| 10 | +5 dados | 5 Superficial | +5 dados | Nível 5 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 3 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
 
 Mesmo dentro de uma mesma Geração, a potência do Sangue varia. Com o passar dos anos, o Sangue se espessa e amadurece dentro dos limites da geração de um vampiro. Ser Abraçado por um sire poderoso ou enfrentar o repulsivo ***amaranth*** (ver [[Diablerie, Blood Bond, Ghouls#Diablerie|Diablerie]]) oferece atalhos para esse poder.
 
