@@ -36,6 +36,15 @@ tags: [vantagens]
 > - **Sistema**:
 >   Você adiciona um dado extra a todas as pools de dados Sociais apropriadas.
 
+### Stunning
+
+> - **Fonte**: Core, p. 179 · texto do app do Pedro
+> - **Pontos**: ••••
+> - **Apelidos**: Looks: Stunning, Deslumbrante, Estonteante
+>
+> - **Sistema**:
+>   Você adiciona dois dados extras a todas as pools de dados Sociais apropriadas, como acima.
+
 ## Feeding
 
 ### Bloodhound
@@ -55,6 +64,57 @@ tags: [vantagens]
 >
 > - **Sistema**:
 >   Você consegue se alimentar de sangue frio, sangue rançoso e plasma fracionado. Nenhum deles fornece Resonances. Ventrue não podem escolher este Merit.
+
+## Substance Use
+
+### High-Functioning Addict
+
+> - **Fonte**: Core, p. 180 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Viciado Funcional, Viciada Funcional
+>
+> - **Sistema**:
+>   Você adiciona um dado a uma categoria de pool (especifique ao escolher qual substância você usa) quando a última pessoa da qual você se alimentou estava sob a sua droga.
+
+## Bonding
+
+### Bond Resistance
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Resistência ao Laço, Resistência ao Vínculo
+>
+> - **Sistema**:
+>   Seu sangue se rebela contra o controle. Adicione um dado às suas pools de dados para resistir a um Blood Bond por nível que você tiver deste Merit (máximo de três).
+
+### Short Bond
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Laço Curto, Vínculo Curto
+>
+> - **Sistema**:
+>   Blood Bonds sobre você perdem força mais rapidamente que o normal, diminuindo tanto na lua cheia quanto na lua nova (ou seja, em dois por mês) se não forem reforçados.
+
+### Unbondable
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: •••••
+> - **Apelidos**: Imune a Laços, Sem Laço, Inquebrantável
+>
+> - **Sistema**:
+>   Você não pode sofrer Blood Bond. Se algum dia estiver sem dinheiro, provavelmente também pode vender sua vitae a alquimistas.
+
+## Mythic
+
+### Eat Food
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Comer Comida, Comer
+>
+> - **Sistema**:
+>   Você consegue consumir comida sem esforço e até pode apreciá-la, embora ela não dê nutrição alguma e precise ser expelida antes de descansar durante o dia.
 
 ---
 # Backgrounds
@@ -382,6 +442,33 @@ tags: [vantagens]
 > - **Sistema**:
 >   Você se recusa a caçar uma certa classe de presas: usuários de drogas, mulheres, crianças, policiais, inocentes, uma dada minoria ou grupo étnico etc. Se você se alimentar de tais presas, ganha Stains como se tivesse violado um Tenet da crônica. Presenciar outros Kindred se alimentando do objeto da sua exclusão sem interferir também pode dar Stains, a critério do Narrador. Ventrue com este Flaw ganham uma restrição adicional, tornando muito estreita a escolha de vessels.
 
+### Vegan
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Vegano, Vegana
+>
+> - **Sistema**:
+>   Você se alimenta apenas de sangue animal. Você deve gastar dois pontos de Willpower para beber sangue humano. Ventrue não podem escolher este Flaw.
+
+### Organovore
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Organívoro, Organívora
+>
+> - **Sistema**:
+>   Você só consegue saciar a Hunger comendo carne e órgãos humanos, especialmente os ricos em sangue, como coração, fígado, pulmões, placenta e baço. (A maioria dos Kindred organovoros hoje em dia faz primeiro um smoothie com os órgãos.) Apenas o coração fornece Resonance, se é que fornece.
+
+### Methuselah's Thirst
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Sede de Matusalém, Methuselah’s Thirst
+>
+> - **Sistema**:
+>   Sua Hunger só pode ser totalmente saciada pelo sangue de criaturas sobrenaturais. (Alquimistas talvez consigam engrossar o Sangue de thin-bloods o bastante para saciá-lo.) Caso contrário, ela permanece constantemente em no mínimo 1. (Ou mais, dependendo da Blood Potency (veja p. 215).
+
 ## Mythic
 
 ### Folkloric Bane
@@ -398,6 +485,43 @@ tags: [vantagens]
 >   | — | Luz ultravioleta (dano como luz solar direta) |
 >   | — | Armas de prata ou banhadas a prata (dano como o da arma: simplesmente tocar uma moeda ou talheres de prata causa um ponto de dano Aggravated) |
 >   | — | Água benta (dano como fogo) |
+
+### Stake Bait
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Isca de Estaca
+>
+> - **Sistema**:
+>   Você encontra a Final Death ao ser empalado no coração, em vez de entrar em torpor.
+
+### Folkloric Block
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Bloqueio Folclórico
+>
+> - **Sistema**:
+>   Diante de um bloqueio folclórico, você deve recuar ou gastar um ponto de Willpower para atravessá-lo. Cada bloqueio folclórico escolhido conta como um Flaw separado de um ponto. Bloqueios folclóricos incluem:
+>
+>   | Pontos | Efeito |
+>   |---|---|
+>   | — | Símbolos sagrados apresentados por qualquer fiel (mesmo sem True Faith) |
+>   | — | Atravessar água corrente visível (não recomendado em certas cidades, como Amsterdã, Estocolmo ou Veneza) |
+>   | — | Cruzar a soleira de uma casa sem ser convidado pelo dono |
+>   | — | Animal branco |
+>   | — | Alho |
+>   | — | Rosas silvestres |
+>   | — | Sementes derramadas que você não contou |
+
+### Stigmata
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Estigma, Estigmas
+>
+> - **Sistema**:
+>   Você começa a sangrar por feridas abertas nas mãos, nos pés e na testa quando chega a Hunger 4. Isso atrai atenção, deixa rastros e pode penalizar algumas pools de dados, a critério do Narrador.
 
 ## Archaic
 
@@ -420,6 +544,88 @@ Apenas ancillae ou vampiros mais velhos podem escolher qualquer um destes Flaws.
 >
 > - **Sistema**:
 >   você não compreendeu a mentalidade moderna, ou simplesmente não quer. Você tem uma ou mais Convictions seriamente ultrapassadas, por exemplo “A palavra do Papa é lei”, “Mulheres são flores delicadas”, “As classes baixas existem apenas para servir” ou “Queime a bagagem dos seus inimigos”. Essas moralidades arcaicas mantêm sua Humanity, mas são odiosas para muitos; você perde um dado das pools de testes Sociais que envolvam essas crenças arcaicas, exceto com vampiros da sua idade ou mais velhos, que podem admirar sua virtude inabalável.
+
+## Linguistics
+
+### Illiterate
+
+> - **Fonte**: Core, p. 179 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Analfabeto, Analfabeta
+>
+> - **Sistema**:
+>   Você não sabe ler nem escrever. Suas Perícias Academics e Science ficam limitadas a 1, e você não pode ter especialização nelas que incorpore conhecimento moderno.
+
+## Looks
+
+### Repulsive
+
+> - **Fonte**: Core, p. 179 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Looks: Repulsive, Repulsivo, Repulsiva
+>
+> - **Sistema**:
+>   Nem todos os vampiros parecem atores da CW. Alguns parecem ainda melhores. E alguns, claro, parecem muito piores.
+>
+>   Estes modificadores só se aplicam quando você pode ser visto. O Narrador decide se esses modificadores valem durante combates Sociais, conflito a conflito (ou até pool a pool).
+>
+>   Você perde dois dados de todas as pools de dados Sociais relevantes.
+
+### Ugly
+
+> - **Fonte**: Core, p. 179 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Looks: Ugly, Feio, Feia
+>
+> - **Sistema**:
+>   Você perde um dado de todas as pools de dados Sociais relevantes.
+
+## Substance Use
+
+### Addiction
+
+> - **Fonte**: Core, p. 179 · texto do app do Pedro
+> - **Pontos**: • ou ••
+> - **Apelidos**: Vício, Viciado, Viciada
+>
+> - **Sistema**:
+>   Você tem um vício em uma substância além do sangue. Kindred com este Merit ou Flaw procuram sangue que contenha essa substância, bebendo de usuários. Vício em um tipo específico de sangue ou recusa de beber sangue que contenha determinada substância contam ambos como Prey Exclusion (p. 181). Veja a p. 310 para os efeitos de substâncias específicas no sangue consumido; eles continuam valendo independentemente do Merit ou Flaw específico escolhido.
+>
+>   Lembre-se de especificar a substância que você usa.
+>
+>   | Pontos | Efeito |
+>   |---|---|
+>   | ● | Addiction: perca um dado de todas as pools quando a última pessoa da qual você se alimentou não estava sob a sua droga, exceto pools de ações que obtenham imediatamente a sua droga. |
+>   | ●● | Hopeless Addiction: perca dois dados de todas as pools quando a última pessoa da qual você se alimentou não estava sob a sua droga, exceto pools de ações que obtenham imediatamente a sua droga. |
+
+## Bonding
+
+### Bondslave
+
+> - **Fonte**: Core, p. 180 · texto do app do Pedro
+> - **Pontos**: ••
+> - **Apelidos**: Escravo do Laço, Escrava do Laço
+>
+> - **Sistema**:
+>   Você se vincula instantaneamente ao gosto da vitae de outro; basta um gole de sangue para vinculá-lo, não três. Ou você começa como thrall do seu sire, ou combine com o Narrador uma razão para esse primeiro vínculo ter se rompido. Talvez seu sire tenha sido empalado ou esteja em outra cidade há mais de seis meses?
+
+### Bond Junkie
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Viciado em Laço, Viciada em Laço
+>
+> - **Sistema**:
+>   O Bond parece mais doce para você depois que acontece. Subtraia um dado das suas pools de dados para agir contra um Blood Bond.
+
+### Long Bond
+
+> - **Fonte**: Core, p. 181 · texto do app do Pedro
+> - **Pontos**: •
+> - **Apelidos**: Laço Longo, Vínculo Longo
+>
+> - **Sistema**:
+>   Blood Bonds sobre você perdem força mais lentamente que o normal, diminuindo em um a cada três meses sem serem reforçados.
 
 ---
 # Loresheets
