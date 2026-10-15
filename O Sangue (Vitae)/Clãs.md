@@ -100,7 +100,7 @@ A linha, nesse caso, é bem colocada pelo livro, e a loucura só se manifesta qu
 
 Hediondos e repulsivos, todos os **Nosferatu** possuem automaticamente o defeito **Repulsivo (-2)** e nunca podem aumentar sua classificação no [[Advantages#Merits|Mérito]] **Aparência**. 
 
-Além disso, qualquer tentativa de se disfarçar como humano sofre uma penalidade em seu **dice pool** igual à **Bane Severity** do personagem (isso inclui os poderes de [[Disciplinas#Obsfucate|Obsfucate]] _Máscara de Mil Faces_ e _Disfarce do Impostor_).
+Além disso, qualquer tentativa de se disfarçar como humano sofre uma penalidade em seu **dice pool** igual à **Bane Severity** do personagem (isso inclui os poderes de [[Disciplinas#Obfuscate|Obsfucate]] _Máscara de Mil Faces_ e _Disfarce do Impostor_).
 
 
 ---

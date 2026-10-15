@@ -160,7 +160,7 @@ Conseguir surpreender um oponente geralmente requer um [[Regras Fundamentais#Rea
 - (***Dexterity*** + ***Stealth***) vs Melhor valor de (***Wits*** + ***Awareness***) do grupo oponente
 	Lembre-se que você pode [[Dificuldade, Contests e Conflitos#Pegar Metade|Pegar Metade]] para parties grandes de NPC's 
 
->Essa rolagem inclui ataques a partir de ocultação sobrenatural como [[Disciplinas#Obsfucate|Obsfucate]].
+>Essa rolagem inclui ataques a partir de ocultação sobrenatural como [[Disciplinas#Obfuscate|Obsfucate]].
 
 O ***primeiro ataque*** realizado com sucesso em uma situação de surpresa **d*eve ser resolvido contra uma Dificuldade estática de 1***, permitindo **golpes devastadores** e aumentando a chance significativa de causar maior [[Dano]] ao alvo.
 

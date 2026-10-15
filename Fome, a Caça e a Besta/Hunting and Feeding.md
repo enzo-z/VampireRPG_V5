@@ -49,7 +49,7 @@ A maneira mais simplória e rápida para determinar o resultado de uma caça é 
 ---
 # Feeding (Hunting and Humors) 
 
-Se alimentar é mais do que satisfazer sua [[Fome]]; é a forma como um Kindred se fortalece. Sem sangue, não há vampiro.  A corrente de sangue não é apenas uma sensação de euforia, é um estado em que o sangue altera um pouco a própria [[Resonance]] do vampiro. Sangue melancólico comum é ótimo para estar sob efeito enquanto se utiliza [[Disciplinas#Obsfucate|Obsfucação]], mas aquele passeador de cães submisso com profundos problemas maternos possui uma submissão única que torna _[[Disciplinas#Dominate|Dominação]]_ possível sem contato visual. 
+Se alimentar é mais do que satisfazer sua [[Fome]]; é a forma como um Kindred se fortalece. Sem sangue, não há vampiro.  A corrente de sangue não é apenas uma sensação de euforia, é um estado em que o sangue altera um pouco a própria [[Resonance]] do vampiro. Sangue melancólico comum é ótimo para estar sob efeito enquanto se utiliza [[Disciplinas#Obfuscate|Obsfucação]], mas aquele passeador de cães submisso com profundos problemas maternos possui uma submissão única que torna _[[Disciplinas#Dominate|Dominação]]_ possível sem contato visual. 
 Isso é o que os Kindred chamam de _Dyscrasia_, e os jogadores chamam de "um NPC obrigatório de se beber."
 
 ## Hunting and Humors (Resonance)
