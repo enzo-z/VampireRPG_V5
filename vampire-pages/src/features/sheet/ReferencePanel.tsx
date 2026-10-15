@@ -1,4 +1,5 @@
 import { ADVANTAGE_INDEX } from '../../catalog/advantagesCatalog.ts';
+import { BLOOD_CATALOG } from '../../catalog/bloodCatalog.ts';
 import { DISCIPLINE_INDEX } from '../../catalog/disciplines.ts';
 import { PREDATOR_TYPE_INDEX } from '../../catalog/predatorTypesCatalog.ts';
 import { referenceFor } from '../../reference/lookup.ts';
@@ -21,6 +22,7 @@ export function ReferencePanel() {
     disciplines: DISCIPLINE_INDEX,
     advantages: ADVANTAGE_INDEX,
     predatorTypes: PREDATOR_TYPE_INDEX,
+    blood: BLOOD_CATALOG,
   });
 
   return (

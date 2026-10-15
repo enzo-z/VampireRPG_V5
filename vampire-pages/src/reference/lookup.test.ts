@@ -56,6 +56,22 @@ const catalogs = {
       { title: 'Headhunter/Blood Leech', names: ['Headhunter', 'Blood Leech'], source: null, html: '<p>Sangue de vampiros.</p>' },
     ],
   }),
+  blood: {
+    generations: [{ title: 'Neonatos: 12ª e 13ª Gerações', generations: [12, 13], html: '<p>Recém-chegados.</p>' }],
+    potencyLevels: [
+      { level: 1, orMore: false, html: '<p>Vampiro verdadeiro.</p>' },
+      { level: 6, orMore: true, html: '<p>Alienígenas.</p>' },
+    ],
+    potencyTable: Array.from({ length: 11 }, (_, level) => ({
+      level,
+      surge: `+${level} dados`,
+      mend: `${level} Superficial`,
+      disciplineBonus: 'Nenhum',
+      rouseReRoll: `Nível ${level}`,
+      baneSeverity: String(level),
+      feeding: 'Sem efeito',
+    })),
+  },
 };
 
 const base = createFicha('nina', 'Nina');
@@ -183,6 +199,40 @@ describe('referenceFor', () => {
       title: 'Trapdoor',
       paragraphs: ['Reconhecido, mas ainda sem regras em Predator Type.md.'],
     });
+  });
+
+  it('shows the Blood Potency table row and the level section', () => {
+    expect(referenceFor({ kind: 'tracker', tracker: 'bloodPotency' }, ficha, catalogs)).toMatchObject({
+      kicker: 'The Blood',
+      title: 'Blood Potency 1',
+      dots: { value: 1, max: 10 },
+      blocks: [{ title: null, html: '<p>Vampiro verdadeiro.</p>' }],
+    });
+    expect(referenceFor({ kind: 'tracker', tracker: 'bloodPotency' }, ficha, catalogs)?.facts).toEqual([
+      { label: 'Blood Surge', value: '+1 dados' },
+      { label: 'Mend (por Rouse Check)', value: '1 Superficial' },
+      { label: 'Bônus de Disciplina', value: 'Nenhum' },
+      { label: 'Re-roll do Rouse Check', value: 'Nível 1' },
+      { label: 'Bane Severity', value: '1' },
+      { label: 'Alimentação', value: 'Sem efeito' },
+    ]);
+  });
+
+  it('uses "6 e Maior" for Blood Potency above 6, naming it', () => {
+    const elder = { ...ficha, blood: { ...ficha.blood, potency: 8 } };
+    expect(referenceFor({ kind: 'tracker', tracker: 'bloodPotency' }, elder, catalogs)?.blocks).toEqual([{ title: 'Blood Potency 6 e Maior', html: '<p>Alienígenas.</p>' }]);
+  });
+
+  it('shows the generation section that covers the generation on the sheet', () => {
+    const neonate = { ...ficha, identity: { ...ficha.identity, generation: '13ª' } };
+    expect(referenceFor({ kind: 'identity', field: 'generation' }, neonate, catalogs)).toMatchObject({
+      kicker: 'Geração',
+      title: '13ª geração',
+      facts: [{ label: 'Blood Potency na ficha', value: '1 de 10' }],
+      blocks: [{ title: 'Neonatos: 12ª e 13ª Gerações', html: '<p>Recém-chegados.</p>' }],
+    });
+    const blank = referenceFor({ kind: 'identity', field: 'generation' }, ficha, catalogs);
+    expect(blank?.paragraphs).toEqual(['Campo vazio.']);
   });
 
   it('summarizes trackers', () => {

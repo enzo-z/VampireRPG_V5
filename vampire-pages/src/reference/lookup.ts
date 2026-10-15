@@ -1,7 +1,8 @@
 import { findAdvantage, sideOf, suggestAdvantages, type AdvantageIndex } from '../catalog/advantages.ts';
+import { generationEntry, potencyLevelEntry, potencyRow } from '../catalog/blood.ts';
 import { entriesOf, findDiscipline, findEntry, type CatalogIndex } from '../catalog/lookup.ts';
 import { findPredatorType, type PredatorTypeIndex } from '../catalog/predatorTypes.ts';
-import type { AdvantageCategory, CatalogEntry } from '../catalog/types.ts';
+import type { AdvantageCategory, BloodCatalog, CatalogEntry } from '../catalog/types.ts';
 import { ATTRIBUTE_RANGE, BLOOD_POTENCY_RANGE, DISCIPLINE_RANGE, HUNGER_MAX, SKILL_RANGE, type Ficha } from '../domain/character.ts';
 import { matchIdentity, type CatalogField } from '../domain/identityCatalog.ts';
 import { damageSummary, humanitySummary } from '../domain/trackers.ts';
@@ -36,6 +37,7 @@ export interface ReferenceCatalogs {
   disciplines: CatalogIndex;
   advantages: AdvantageIndex;
   predatorTypes: PredatorTypeIndex;
+  blood: BloodCatalog;
 }
 
 /** A labeled value; `html` comes pre-rendered from the vault notes. */
@@ -275,10 +277,28 @@ function predatorTypeEntry(text: string, predatorTypes: PredatorTypeIndex): Refe
   return null;
 }
 
+function generationReference(ficha: Ficha, blood: BloodCatalog): ReferenceEntry | null {
+  const digits = /\d+/.exec(ficha.identity.generation);
+  const match = matchIdentity('generation', ficha.identity.generation);
+  if (digits === null || !match.matched || match.canonical === null) return null;
+  const section = generationEntry(blood, Number(digits[0]));
+  return {
+    ...EMPTY_ENTRY,
+    kicker: IDENTITY_FIELD_LABELS.generation,
+    title: match.canonical,
+    facts: [{ label: 'Blood Potency na ficha', value: `${ficha.blood.potency} de ${BLOOD_POTENCY_RANGE.max}` }],
+    blocks: section === null ? [] : htmlBlocks({ title: section.title, html: section.html }),
+  };
+}
+
 function identityEntry(ficha: Ficha, field: CatalogField, catalogs: ReferenceCatalogs): ReferenceEntry {
   const text = ficha.identity[field];
   if (field === 'predatorType' && text.trim() !== '') {
     const entry = predatorTypeEntry(text, catalogs.predatorTypes);
+    if (entry !== null) return entry;
+  }
+  if (field === 'generation') {
+    const entry = generationReference(ficha, catalogs.blood);
     if (entry !== null) return entry;
   }
   const match = matchIdentity(field, text);
@@ -295,9 +315,29 @@ function identityEntry(ficha: Ficha, field: CatalogField, catalogs: ReferenceCat
   };
 }
 
-function trackerEntry(ficha: Ficha, tracker: TrackerKind): ReferenceEntry {
+/** Labels of the Blood Potency table columns, in note order. */
+const POTENCY_COLUMNS = [
+  ['surge', 'Blood Surge'],
+  ['mend', 'Mend (por Rouse Check)'],
+  ['disciplineBonus', 'Bônus de Disciplina'],
+  ['rouseReRoll', 'Re-roll do Rouse Check'],
+  ['baneSeverity', 'Bane Severity'],
+  ['feeding', 'Alimentação'],
+] as const;
+
+function bloodPotencyFacts(potency: number, blood: BloodCatalog): { facts: ReferenceFact[]; blocks: ReferenceBlock[] } {
+  const row = potencyRow(blood, potency);
+  const level = potencyLevelEntry(blood, potency);
+  const levelTitle = level === null ? null : level.orMore && level.level !== potency ? `Blood Potency ${level.level} e Maior` : null;
+  return {
+    facts: row === null ? [] : POTENCY_COLUMNS.map(([key, label]) => ({ label, value: row[key] })),
+    blocks: level === null ? [] : htmlBlocks({ title: levelTitle, html: level.html }),
+  };
+}
+
+function trackerEntry(ficha: Ficha, tracker: TrackerKind, bloodCatalog: BloodCatalog): ReferenceEntry {
   const base = { ...EMPTY_ENTRY, kicker: 'Trilha', title: TRACKER_LABELS[tracker] };
-  const { trackers, blood } = ficha;
+  const { trackers } = ficha;
   switch (tracker) {
     case 'health':
     case 'willpower': {
@@ -337,8 +377,9 @@ function trackerEntry(ficha: Ficha, tracker: TrackerKind): ReferenceEntry {
       return {
         ...base,
         kicker: 'The Blood',
-        dots: { value: blood.potency, max: BLOOD_POTENCY_RANGE.max },
-        facts: [{ label: 'Atual', value: `${blood.potency} de ${BLOOD_POTENCY_RANGE.max}` }],
+        title: `Blood Potency ${ficha.blood.potency}`,
+        dots: { value: ficha.blood.potency, max: BLOOD_POTENCY_RANGE.max },
+        ...bloodPotencyFacts(ficha.blood.potency, bloodCatalog),
       };
   }
 }
@@ -356,7 +397,7 @@ export function referenceFor(selection: Selection, ficha: Ficha, catalogs: Refer
     case 'identity':
       return identityEntry(ficha, selection.field, catalogs);
     case 'tracker':
-      return trackerEntry(ficha, selection.tracker);
+      return trackerEntry(ficha, selection.tracker, catalogs.blood);
     case 'advantage':
       return advantageEntry(ficha, selection.index, catalogs.advantages);
   }

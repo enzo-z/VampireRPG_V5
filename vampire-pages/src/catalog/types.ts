@@ -90,3 +90,34 @@ export interface PredatorTypeEntry {
 export interface PredatorTypeCatalog {
   entries: PredatorTypeEntry[];
 }
+
+/** A "Lista de Gerações" section of Gerações e Potência.md. */
+export interface GenerationEntry {
+  title: string;
+  generations: number[];
+  html: string;
+}
+
+/** A "### Blood Potency N" section; `orMore` covers every higher level too. */
+export interface PotencyLevelEntry {
+  level: number;
+  orMore: boolean;
+  html: string;
+}
+
+/** One row of the Blood Potency table, as written in the note. */
+export interface PotencyRowEntry {
+  level: number;
+  surge: string;
+  mend: string;
+  disciplineBonus: string;
+  rouseReRoll: string;
+  baneSeverity: string;
+  feeding: string;
+}
+
+export interface BloodCatalog {
+  generations: GenerationEntry[];
+  potencyLevels: PotencyLevelEntry[];
+  potencyTable: PotencyRowEntry[];
+}

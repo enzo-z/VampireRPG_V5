@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdvantageCatalog, DisciplineCatalog, PredatorTypeCatalog } from './types.ts';
+import type { AdvantageCatalog, BloodCatalog, DisciplineCatalog, PredatorTypeCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -51,3 +51,19 @@ const predatorType = z.strictObject({
 });
 
 export const predatorTypeCatalogSchema = z.strictObject({ entries: z.array(predatorType) }) satisfies z.ZodType<PredatorTypeCatalog>;
+
+const potencyRow = z.strictObject({
+  level: z.int().min(0).max(10),
+  surge: z.string(),
+  mend: z.string(),
+  disciplineBonus: z.string(),
+  rouseReRoll: z.string(),
+  baneSeverity: z.string(),
+  feeding: z.string(),
+});
+
+export const bloodCatalogSchema = z.strictObject({
+  generations: z.array(z.strictObject({ title: z.string().min(1), generations: z.array(z.int().min(1)).min(1), html: z.string() })),
+  potencyLevels: z.array(z.strictObject({ level: z.int().min(0).max(10), orMore: z.boolean(), html: z.string() })),
+  potencyTable: z.array(potencyRow),
+}) satisfies z.ZodType<BloodCatalog>;

@@ -1,3 +1,6 @@
+import { potencyRow } from '../../catalog/blood.ts';
+import { BLOOD_CATALOG } from '../../catalog/bloodCatalog.ts';
+import type { PotencyRowEntry } from '../../catalog/types.ts';
 import { BLOOD_POTENCY_RANGE } from '../../domain/character.ts';
 import { isSameSelection, type Selection } from '../../reference/lookup.ts';
 import type { BloodTextField } from '../../store/sheetsReducer.ts';
@@ -22,10 +25,24 @@ const LONG_FIELDS: readonly { field: BloodTextField; label: string }[] = [
 
 const BLOOD_POTENCY: Selection = { kind: 'tracker', tracker: 'bloodPotency' };
 
+/** Sheet fields filled from the Blood Potency table, with the table column each one takes. */
+const FROM_TABLE: readonly { field: BloodTextField; column: keyof PotencyRowEntry; label: string }[] = [
+  { field: 'surge', column: 'surge', label: 'Blood Surge' },
+  { field: 'mendAmount', column: 'mend', label: 'Mend' },
+  { field: 'rouseReRoll', column: 'rouseReRoll', label: 'Rouse Re-Roll' },
+  { field: 'baneSeverity', column: 'baneSeverity', label: 'Bane Severity' },
+];
+
 export function BloodSection() {
   const { ficha, readOnly, edit, selection, select } = useSheet();
   const change = (field: BloodTextField) => (value: string) => edit({ type: 'blood/changed', id: ficha.id, field, value });
   const bpSelected = isSameSelection(selection, BLOOD_POTENCY);
+  const row = potencyRow(BLOOD_CATALOG, ficha.blood.potency);
+  const differs = row !== null && FROM_TABLE.some(({ field, column }) => ficha.blood[field] !== String(row[column]));
+  const fillFromTable = () => {
+    if (row === null) return;
+    for (const { field, column } of FROM_TABLE) edit({ type: 'blood/changed', id: ficha.id, field, value: String(row[column]) });
+  };
 
   return (
     <section aria-labelledby="blood-title">
@@ -49,6 +66,17 @@ export function BloodSection() {
           }
         />
       </div>
+      {row !== null && (
+        <div className={styles.table}>
+          <span className={styles.tableTitle}>Pela tabela (Blood Potency {row.level}):</span>
+          <span>{FROM_TABLE.map(({ column, label }) => `${label} ${String(row[column])}`).join(' · ')}</span>
+          {!readOnly && differs && (
+            <button type="button" className={styles.fill} onClick={fillFromTable}>
+              Preencher com a tabela
+            </button>
+          )}
+        </div>
+      )}
       <div className={styles.shortFields}>
         {SHORT_FIELDS.map(({ field, label }) => (
           <TextField key={field} label={label} value={ficha.blood[field]} onChange={change(field)} readOnly={readOnly} />
