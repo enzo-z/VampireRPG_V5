@@ -21,6 +21,8 @@ interface SheetPageProps {
   page: SheetPageName;
   onPageChange: (page: SheetPageName) => void;
   onPrint: () => void;
+  onDeleted: () => void;
+  onOpenFicha: (id: string) => void;
 }
 
 function PageContent({ page }: { page: SheetPageName }) {
@@ -44,7 +46,7 @@ function PageContent({ page }: { page: SheetPageName }) {
 }
 
 /** Ficha B. Render with key={ficha.id} so selection and drafts reset when switching fichas. */
-export function SheetPage({ ficha, readOnly, page, onPageChange, onPrint }: SheetPageProps) {
+export function SheetPage({ ficha, readOnly, page, onPageChange, onPrint, onDeleted, onOpenFicha }: SheetPageProps) {
   const { dispatch } = useSheets();
   const [selection, setSelection] = useState<Selection | null>(null);
   const tabsAnchor = useRef<HTMLDivElement>(null);
@@ -90,7 +92,7 @@ export function SheetPage({ ficha, readOnly, page, onPageChange, onPrint }: Shee
 
   return (
     <SheetContext value={value}>
-      <SheetHeader onPrint={onPrint} />
+      <SheetHeader onPrint={onPrint} onDeleted={onDeleted} onOpenFicha={onOpenFicha} />
       <div ref={tabsAnchor} />
       <PageTabs page={page} onChange={changePage} />
       <div className={styles.body}>

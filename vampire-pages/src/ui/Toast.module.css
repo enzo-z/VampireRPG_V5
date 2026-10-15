@@ -26,6 +26,17 @@
   white-space: pre-line;
 }
 
+.action {
+  flex: none;
+  padding: 0 var(--space-2);
+  border: var(--border-width-hairline) solid currentColor;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+}
+
 .close {
   flex: none;
   padding: 0 var(--space-1);

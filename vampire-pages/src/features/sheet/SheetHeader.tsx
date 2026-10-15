@@ -11,11 +11,18 @@ import styles from './SheetHeader.module.css';
 
 interface SheetHeaderProps {
   onPrint: () => void;
+  /** After deleting this ficha (the app goes back to the Mesa). */
+  onDeleted: () => void;
+  /** Opens a ficha (the copy after duplicating, the ficha back after undoing a delete). */
+  onOpenFicha: (id: string) => void;
 }
 
-export function SheetHeader({ onPrint }: SheetHeaderProps) {
+export function SheetHeader({ onPrint, onDeleted, onOpenFicha }: SheetHeaderProps) {
   const { ficha, readOnly, edit } = useSheet();
-  const { dispatch } = useSheets();
+  const {
+    state: { fichas },
+    dispatch,
+  } = useSheets();
   const { notify } = useToast();
 
   const exportJson = () => {
@@ -23,11 +30,26 @@ export function SheetHeader({ onPrint }: SheetHeaderProps) {
     notify(`Ficha de ${ficha.name} exportada.`);
   };
 
+  const duplicateFicha = () => {
+    const newId = crypto.randomUUID();
+    dispatch({ type: 'ficha/duplicated', id: ficha.id, newId });
+    onOpenFicha(newId);
+    notify(`Cópia de "${ficha.name}" criada.`);
+  };
+
+  // No confirm: the toast offers to undo, putting the ficha back where it was.
   const deleteFicha = () => {
-    if (window.confirm(`Excluir a ficha "${ficha.name}"? Não dá para desfazer; exporte antes se quiser guardar.`)) {
-      dispatch({ type: 'ficha/deleted', id: ficha.id });
-      notify(`Ficha "${ficha.name}" excluída.`);
-    }
+    const deleted = ficha;
+    const index = fichas.findIndex((other) => other.id === deleted.id);
+    dispatch({ type: 'ficha/deleted', id: deleted.id });
+    onDeleted();
+    notify(`Ficha "${deleted.name}" excluída.`, {
+      label: 'Desfazer',
+      onSelect: () => {
+        dispatch({ type: 'ficha/restored', ficha: deleted, index });
+        onOpenFicha(deleted.id);
+      },
+    });
   };
 
   return (
@@ -56,6 +78,7 @@ export function SheetHeader({ onPrint }: SheetHeaderProps) {
             items={[
               { label: 'Exportar JSON', onSelect: exportJson },
               { label: 'Exportar PDF (impressão)', onSelect: onPrint },
+              { label: 'Duplicar ficha', onSelect: duplicateFicha },
               { label: 'Excluir ficha', onSelect: deleteFicha, danger: true },
             ]}
           />

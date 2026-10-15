@@ -66,6 +66,8 @@ function AppContent() {
         page={page}
         onPageChange={setPage}
         onPrint={() => setView({ name: 'print', autoPrint: true })}
+        onDeleted={openMesa}
+        onOpenFicha={openFicha}
       />
     ) : (
       <MesaView readOnly={readOnly} onOpenFicha={openFicha} />

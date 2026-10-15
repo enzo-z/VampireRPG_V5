@@ -23,6 +23,8 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - **B, ficha com painel de referência**: base do app. Modo "olho" (somente leitura, mas o painel explicativo de atributos continua clicável), exportação JSON/PDF.
   - Desde 2026-10-15 a B tem duas páginas em abas fixas no topo: **I · Mecânica** (Attributes, Skills, Disciplines) e **II · Perfil** (Profile com foto 3 × 4, Beliefs, Vantagens e Defeitos, The Blood). Cabeçalho e trackers aparecem nas duas. A página escolhida se mantém ao trocar de ficha. Layout do app é livre para melhorar UX; a impressão (A) precisa de revisão do Enzo.
 - **C, shell do app**: sidebar (Fichas, Mesa, Vault, Backlog, Raw PDF), Mesa com cards por personagem, sincronização Mesa↔ficha. Vault e Backlog ficam desabilitados no começo.
+  - Implementado em 2026-10-15: menu lateral recolhível (lembrado por navegador; gaveta no celular) com a Mesa e **todas** as fichas listadas (sem seletor na barra superior); o app abre na Mesa; cartões editam Fome, Saúde, Willpower e Humanidade, e o rótulo Saúde/Willpower abre um modal com máximo e dano. Modo leitura vale para o app inteiro.
+  - Decisões do Enzo: nomes de ficha nunca se repetem ("Nina (1)", "Nina (2)", como arquivos copiados) ao criar, renomear, duplicar ou importar; excluir não pede confirmação e oferece "Desfazer"; **não** há "imprimir todas" nem "Raw PDF": a impressão continua ficha por ficha (menu da ficha). A revisão na importação fica para depois.
 - Não reimplemente o HTML dos protótipos literalmente: extraia estrutura, comportamento e tokens, e componha em React.
 
 ## Modelo dos trackers (regra de domínio, com testes)
