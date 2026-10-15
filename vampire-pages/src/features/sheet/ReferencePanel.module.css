@@ -110,3 +110,73 @@
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-xs);
 }
+
+.block {
+  margin-block: var(--space-4);
+}
+
+.blockTitle {
+  margin-block-end: var(--space-1);
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+}
+
+.catalogLevels {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+/* Rendered vault markdown. */
+.prose {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-snug);
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose table {
+  margin-block: 0 var(--space-2);
+}
+
+.prose ul,
+.prose ol {
+  padding-inline-start: var(--space-5);
+}
+
+.prose li {
+  margin-block-end: var(--space-1);
+}
+
+.prose li > p {
+  margin-block-end: var(--space-1);
+}
+
+.prose blockquote {
+  margin-inline: 0;
+  padding-inline-start: var(--space-3);
+  border-inline-start: var(--border-width-thick) solid var(--color-border-accent);
+}
+
+.prose table {
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+}
+
+.prose th,
+.prose td {
+  padding: var(--space-1) var(--space-2);
+  border-block-end: var(--border-width-hairline) solid var(--color-border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.prose hr {
+  border: 0;
+  border-block-start: var(--border-width-hairline) solid var(--color-border);
+}

@@ -1,3 +1,5 @@
+import { entriesOf, findDiscipline, findEntry, type CatalogIndex } from '../catalog/lookup.ts';
+import type { CatalogEntry } from '../catalog/types.ts';
 import { ATTRIBUTE_RANGE, BLOOD_POTENCY_RANGE, DISCIPLINE_RANGE, HUNGER_MAX, SKILL_RANGE, type Ficha } from '../domain/character.ts';
 import { matchIdentity, type CatalogField } from '../domain/identityCatalog.ts';
 import { damageSummary, humanitySummary } from '../domain/trackers.ts';
@@ -26,9 +28,18 @@ export type Selection =
   | { kind: 'identity'; field: CatalogField }
   | { kind: 'tracker'; tracker: TrackerKind };
 
-export interface ReferenceFact {
-  label: string;
-  value: string;
+/** A labeled value; `html` comes pre-rendered from the vault notes. */
+export type ReferenceFact = { label: string; value: string } | { label: string; html: string };
+
+/** Pre-rendered HTML from the vault notes, optionally under a title. */
+export interface ReferenceBlock {
+  title: string | null;
+  html: string;
+}
+
+export interface CatalogLevel {
+  level: number;
+  names: readonly string[];
 }
 
 export interface ReferenceEntry {
@@ -41,6 +52,9 @@ export interface ReferenceEntry {
   levels: readonly string[] | null;
   currentLevel: number;
   facts: readonly ReferenceFact[];
+  blocks: readonly ReferenceBlock[];
+  /** Powers of a discipline grouped by level, from the catalog. */
+  catalogLevels: readonly CatalogLevel[] | null;
 }
 
 export const IDENTITY_FIELD_LABELS: Readonly<Record<CatalogField, string>> = {
@@ -65,7 +79,25 @@ const EMPTY_ENTRY: Omit<ReferenceEntry, 'kicker' | 'title'> = {
   levels: null,
   currentLevel: 0,
   facts: [],
+  blocks: [],
+  catalogLevels: null,
 };
+
+const ENTRY_KIND_LABELS: Readonly<Record<CatalogEntry['kind'], string>> = {
+  power: 'Poder',
+  ritual: 'Ritual',
+  ceremony: 'Cerimônia',
+  formula: 'Fórmula',
+};
+
+function htmlBlocks(...blocks: ReferenceBlock[]): ReferenceBlock[] {
+  return blocks.filter((block) => block.html !== '');
+}
+
+function groupByLevel(entries: readonly CatalogEntry[]): CatalogLevel[] {
+  const levels = [...new Set(entries.map((entry) => entry.level))].sort((a, b) => a - b);
+  return levels.map((level) => ({ level, names: entries.filter((entry) => entry.level === level).map((entry) => entry.name) }));
+}
 
 function groupOf<K extends string>(groups: Readonly<Record<TraitGroup, readonly K[]>>, key: K): TraitGroup {
   return TRAIT_GROUPS.find((group) => groups[group].includes(key)) ?? 'physical';
@@ -106,28 +138,69 @@ function skillEntry(ficha: Ficha, key: SkillKey): ReferenceEntry {
   };
 }
 
-function disciplineEntry(ficha: Ficha, slot: number): ReferenceEntry | null {
+function disciplineEntry(ficha: Ficha, slot: number, catalog: CatalogIndex): ReferenceEntry | null {
   const discipline = ficha.disciplines[slot];
   if (discipline === undefined) return null;
-  const powers = discipline.powers.filter((power) => power.name !== '').map((power) => power.name);
+  const onSheet = discipline.powers.filter((power) => power.name !== '').map((power) => power.name);
+  const sheetFact: ReferenceFact[] = onSheet.length > 0 ? [{ label: 'Na ficha', value: onSheet.join(', ') }] : [];
+  const dots = { value: discipline.value, max: DISCIPLINE_RANGE.max };
+  const note = discipline.name === '' ? null : findDiscipline(catalog, discipline.name);
+
+  if (note === null) {
+    return {
+      ...EMPTY_ENTRY,
+      kicker: 'Disciplina',
+      title: discipline.name || 'Disciplina sem nome',
+      dots,
+      paragraphs: discipline.name === '' ? [] : [`"${discipline.name}" não foi encontrada no catálogo de disciplinas.`],
+      facts: [...sheetFact, { label: 'Disciplinas no catálogo', value: catalog.disciplines.map((d) => d.discipline).join(', ') }],
+    };
+  }
   return {
     ...EMPTY_ENTRY,
-    kicker: 'Disciplina',
-    title: discipline.name || 'Disciplina sem nome',
-    dots: { value: discipline.value, max: DISCIPLINE_RANGE.max },
-    facts: powers.length > 0 ? [{ label: 'Poderes', value: powers.join(', ') }] : [],
+    kicker: note.category ? `Disciplina · ${note.category}` : 'Disciplina',
+    title: note.discipline,
+    dots,
+    facts: [
+      ...sheetFact,
+      ...(note.masquerade ? [{ label: 'Ameaça à Máscara', value: note.masquerade }] : []),
+      ...(note.resonance ? [{ label: 'Resonance', value: note.resonance }] : []),
+      ...(note.nicknames.length > 0 ? [{ label: 'Apelidos', value: note.nicknames.join(', ') }] : []),
+    ],
+    blocks: htmlBlocks({ title: null, html: note.introHtml }, ...note.sections),
+    catalogLevels: groupByLevel(entriesOf(catalog, note.discipline)),
   };
 }
 
-function powerEntry(ficha: Ficha, slot: number, powerIndex: number): ReferenceEntry | null {
+function powerEntry(ficha: Ficha, slot: number, powerIndex: number, catalog: CatalogIndex): ReferenceEntry | null {
   const discipline = ficha.disciplines[slot];
   const power = discipline?.powers[powerIndex];
   if (discipline === undefined || power === undefined) return null;
+  const disciplineName = discipline.name || 'Disciplina sem nome';
+  const noteFact: ReferenceFact[] = power.note ? [{ label: 'Nota na ficha', value: power.note }] : [];
+  const entry = findEntry(catalog, discipline.name, power.name);
+
+  if (entry === null) {
+    const available = entriesOf(catalog, discipline.name).filter((candidate) => candidate.level <= Math.max(discipline.value, 1));
+    return {
+      ...EMPTY_ENTRY,
+      kicker: `Poder · ${disciplineName}`,
+      title: power.name || 'Poder sem nome',
+      paragraphs: power.name === '' ? [] : [`"${power.name}" não foi encontrado no catálogo de ${disciplineName}.`],
+      facts: [
+        ...noteFact,
+        ...(available.length > 0 ? [{ label: `Opções até o nível ${Math.max(discipline.value, 1)}`, value: available.map((c) => c.name).join(', ') }] : []),
+      ],
+    };
+  }
   return {
     ...EMPTY_ENTRY,
-    kicker: `Poder · ${discipline.name || 'Disciplina sem nome'}`,
-    title: power.name || 'Poder sem nome',
-    facts: power.note ? [{ label: 'Nota', value: power.note }] : [],
+    kicker: `${ENTRY_KIND_LABELS[entry.kind]} · ${catalog.disciplineOfEntry.get(entry) ?? disciplineName}`,
+    title: entry.name,
+    source: entry.source,
+    dots: { value: entry.level, max: DISCIPLINE_RANGE.max },
+    facts: [...entry.fields.map((field) => ({ label: field.label, html: field.html })), ...noteFact],
+    blocks: htmlBlocks({ title: null, html: entry.descriptionHtml }, { title: 'Sistema', html: entry.systemHtml }),
   };
 }
 
@@ -195,16 +268,16 @@ function trackerEntry(ficha: Ficha, tracker: TrackerKind): ReferenceEntry {
   }
 }
 
-export function referenceFor(selection: Selection, ficha: Ficha): ReferenceEntry | null {
+export function referenceFor(selection: Selection, ficha: Ficha, catalog: CatalogIndex): ReferenceEntry | null {
   switch (selection.kind) {
     case 'attribute':
       return attributeEntry(ficha, selection.key);
     case 'skill':
       return skillEntry(ficha, selection.key);
     case 'discipline':
-      return disciplineEntry(ficha, selection.slot);
+      return disciplineEntry(ficha, selection.slot, catalog);
     case 'power':
-      return powerEntry(ficha, selection.slot, selection.powerIndex);
+      return powerEntry(ficha, selection.slot, selection.powerIndex, catalog);
     case 'identity':
       return identityEntry(ficha, selection.field);
     case 'tracker':

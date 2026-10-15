@@ -122,3 +122,8 @@ button.power {
   color: var(--color-text-muted);
   font-style: italic;
 }
+
+.unmatched {
+  text-decoration: underline dashed var(--color-leader);
+  text-underline-offset: 3px;
+}

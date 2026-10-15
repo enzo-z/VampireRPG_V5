@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import { DISCIPLINE_INDEX } from '../../catalog/disciplines.ts';
+import { entriesOf, findDiscipline, findEntry } from '../../catalog/lookup.ts';
 import { DISCIPLINE_RANGE, POWERS_PER_DISCIPLINE, type Discipline } from '../../domain/character.ts';
 import { isSameSelection, type Selection } from '../../reference/lookup.ts';
 import { Dots } from '../../ui/Dots.tsx';
 import { SectionTitle } from '../../ui/SectionTitle.tsx';
 import { useSheet } from './SheetContext.tsx';
 import styles from './DisciplinesSection.module.css';
+
+const DISCIPLINE_LIST_ID = 'catalog-disciplines';
+const powersListId = (slot: number) => `catalog-powers-${slot}`;
+const KIND_LABELS = { power: 'poder', ritual: 'ritual', ceremony: 'cerimônia', formula: 'fórmula' } as const;
 
 function isEmptyDiscipline(discipline: Discipline): boolean {
   return discipline.name === '' && discipline.value === 0 && discipline.powers.length === 0;
@@ -30,13 +36,16 @@ function PowerRow({ slot, powerIndex }: { slot: number; powerIndex: number }) {
 
   const change = (field: 'name' | 'note', value: string) =>
     edit({ type: 'power/changed', id: ficha.id, slot, powerIndex, field, value });
+  const unmatched = power.name !== '' && findEntry(DISCIPLINE_INDEX, ficha.disciplines[slot]?.name ?? '', power.name) === null;
 
   return (
     <div className={`${styles.power} ${selected ? styles.selected : ''}`}>
       <span aria-hidden="true" className={styles.bullet} />
       <input
         type="text"
-        className={styles.powerNameInput}
+        className={`${styles.powerNameInput} ${unmatched ? styles.unmatched : ''}`}
+        list={powersListId(slot)}
+        title={unmatched ? 'Não encontrado no catálogo' : undefined}
         value={power.name}
         aria-label={`Poder ${powerIndex + 1}`}
         onChange={(event) => change('name', event.target.value)}
@@ -87,7 +96,8 @@ function DisciplineBlock({ slot }: { slot: number }) {
         ) : (
           <input
             type="text"
-            className={styles.nameInput}
+            className={`${styles.nameInput} ${discipline.name !== '' && findDiscipline(DISCIPLINE_INDEX, discipline.name) === null ? styles.unmatched : ''}`}
+            list={DISCIPLINE_LIST_ID}
             value={discipline.name}
             aria-label={`Nome da disciplina ${slot + 1}`}
             placeholder={`Disciplina ${slot + 1}`}
@@ -111,6 +121,13 @@ function DisciplineBlock({ slot }: { slot: number }) {
       </div>
       {expanded && (
         <div className={styles.powers}>
+          {!readOnly && (
+            <datalist id={powersListId(slot)}>
+              {entriesOf(DISCIPLINE_INDEX, discipline.name).map((entry) => (
+                <option key={`${entry.kind}-${entry.name}`} value={entry.name} label={`${KIND_LABELS[entry.kind]} · nível ${entry.level}`} />
+              ))}
+            </datalist>
+          )}
           {Array.from({ length: powerCount }, (_, powerIndex) => (
             <PowerRow key={powerIndex} slot={slot} powerIndex={powerIndex} />
           ))}
@@ -130,6 +147,11 @@ export function DisciplinesSection() {
   return (
     <section aria-labelledby="disciplines-title">
       <SectionTitle id="disciplines-title">Disciplines</SectionTitle>
+      <datalist id={DISCIPLINE_LIST_ID}>
+        {DISCIPLINE_INDEX.disciplines.map((note) => (
+          <option key={note.discipline} value={note.discipline} />
+        ))}
+      </datalist>
       {slots.length === 0 ? (
         <p className={styles.empty}>Nenhuma disciplina.</p>
       ) : (
