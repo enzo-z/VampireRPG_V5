@@ -63,6 +63,7 @@ describe('parsePoints', () => {
     expect(parsePoints('••')).toEqual({ min: 2, max: 2 });
     expect(parsePoints('• a ••••••')).toEqual({ min: 1, max: 6 });
     expect(parsePoints('●–●●●')).toEqual({ min: 1, max: 3 });
+    expect(parsePoints('• ou ••')).toEqual({ min: 1, max: 2 });
     expect(parsePoints('• por idioma')).toEqual({ min: 1, max: 5 });
     expect(parsePoints('variável')).toBeNull();
   });

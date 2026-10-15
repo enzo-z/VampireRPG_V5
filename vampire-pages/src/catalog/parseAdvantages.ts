@@ -36,13 +36,13 @@ const CATEGORIES: Readonly<Record<string, AdvantageCategory>> = {
 
 const DEFAULT_POINTS: AdvantagePoints = { min: 1, max: 5 };
 
-/** "••" → 2..2, "• a •••" → 1..3, "• por idioma" → 1..5 (repeatable). */
+/** "••" → 2..2, "• a •••" or "• ou ••" → range, "• por idioma" → 1..5 (repeatable). */
 export function parsePoints(label: string): AdvantagePoints | null {
   const groups = label.match(/[•●]+/g) ?? [];
   const first = groups[0]?.length;
   if (first === undefined) return null;
   const second = groups[1]?.length;
-  if (/\ba\b|–|-/.test(label) && second !== undefined) return { min: Math.min(first, second), max: Math.max(first, second) };
+  if (/\b(a|ou)\b|–|-/.test(label) && second !== undefined) return { min: Math.min(first, second), max: Math.max(first, second) };
   if (/\bpor\b/i.test(label)) return { min: first, max: DEFAULT_POINTS.max };
   return { min: first, max: first };
 }
