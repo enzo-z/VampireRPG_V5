@@ -4,12 +4,18 @@ import { parseDisciplineNote, type ParsedNote } from '../src/catalog/parseNote.t
 import { disciplineCatalogSchema } from '../src/catalog/schema.ts';
 import type { CatalogNote, DisciplineCatalog } from '../src/catalog/types.ts';
 import { renderInline, renderMarkdown, toPlainText } from './markdown.ts';
+import type { VaultModuleBuild } from './vaultModulePlugin.ts';
 
 export interface CatalogBuild {
   catalog: DisciplineCatalog;
   files: string[];
   errors: string[];
   warnings: string[];
+}
+
+export function buildDisciplineModule(notesDir: string): VaultModuleBuild<DisciplineCatalog> {
+  const { catalog, ...rest } = buildCatalog(notesDir);
+  return { data: catalog, ...rest };
 }
 
 function toCatalogNote(note: ParsedNote): CatalogNote {

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
+import { indexAdvantages } from '../catalog/advantages.ts';
 import { indexCatalog } from '../catalog/lookup.ts';
-import type { CatalogEntry, DisciplineCatalog } from '../catalog/types.ts';
+import type { AdvantageEntry, CatalogEntry, DisciplineCatalog } from '../catalog/types.ts';
 import { createFicha } from '../domain/defaults.ts';
 import { ATTRIBUTE_KEYS, SKILL_KEYS } from '../domain/traits.ts';
 import { CORE_ATTRIBUTES } from './attributes.ts';
@@ -35,7 +36,20 @@ const catalog: DisciplineCatalog = {
     },
   ],
 };
-const index = indexCatalog(catalog);
+function advantage(name: string, category: AdvantageEntry['category'], group: string | null, aliases: string[], label: string, max: number): AdvantageEntry {
+  return { name, category, group, points: { min: 1, max }, pointsLabel: label, aliases, source: 'Core, p. 2', fields: [], descriptionHtml: '', systemHtml: '<p>Regra.</p>' };
+}
+
+const catalogs = {
+  disciplines: indexCatalog(catalog),
+  advantages: indexAdvantages({
+    entries: [
+      advantage('Allies', 'background', null, ['Aliados'], '• a ••••••', 6),
+      advantage('Haven', 'background', null, ['Refúgio'], '• a •••', 3),
+      advantage('Prey Exclusion', 'flaw', 'Feeding', ['Exclusão de Presa'], '•', 1),
+    ],
+  }),
+};
 
 const base = createFicha('nina', 'Nina');
 const ficha = {
@@ -47,6 +61,12 @@ const ficha = {
   disciplines: base.disciplines
     .with(0, { name: 'Presença', value: 2, powers: [{ name: 'awe', note: 'Nv 1' }, { name: 'Inventado', note: '' }] })
     .with(1, { name: 'Vicissitude', value: 1, powers: [] }),
+  advantages: [
+    { category: 'background' as const, name: 'Allies (Augie Mendez)', level: 2, note: 'Augie Mendez' },
+    { category: 'flaw' as const, name: 'exclusao de presa', level: 1, note: '' },
+    { category: 'merit' as const, name: 'Refugo', level: 1, note: '' },
+    { category: 'merit' as const, name: 'Ilha Perdida', level: 1, note: '' },
+  ],
 };
 
 describe('ported reference text', () => {
@@ -58,23 +78,23 @@ describe('ported reference text', () => {
 
 describe('referenceFor', () => {
   it('shows an attribute with its group, value and current level', () => {
-    const result = referenceFor({ kind: 'attribute', key: 'manipulation' }, ficha, index);
+    const result = referenceFor({ kind: 'attribute', key: 'manipulation' }, ficha, catalogs);
     expect(result).toMatchObject({ kicker: 'Atributo · Social', title: 'Manipulation', dots: { value: 4, max: 5 }, currentLevel: 4 });
     expect(result?.source).toMatch(/^CORE/);
   });
 
   it('shows a skill with its specialization', () => {
-    const result = referenceFor({ kind: 'skill', key: 'performance' }, ficha, index);
+    const result = referenceFor({ kind: 'skill', key: 'performance' }, ficha, catalogs);
     expect(result?.kicker).toBe('Perícia · Social');
     expect(result?.facts[0]).toEqual({ label: 'Especialização', value: 'Canto' });
   });
 
   it('uses the table label for renamed skills', () => {
-    expect(referenceFor({ kind: 'skill', key: 'animalKen' }, ficha, index)?.title).toBe('Animal Handling');
+    expect(referenceFor({ kind: 'skill', key: 'animalKen' }, ficha, catalogs)?.title).toBe('Animal Handling');
   });
 
   it('shows a discipline from the catalog, matched through its Portuguese name', () => {
-    expect(referenceFor({ kind: 'discipline', slot: 0 }, ficha, index)).toMatchObject({
+    expect(referenceFor({ kind: 'discipline', slot: 0 }, ficha, catalogs)).toMatchObject({
       kicker: 'Disciplina · Mental',
       title: 'Presence',
       dots: { value: 2, max: 5 },
@@ -97,13 +117,13 @@ describe('referenceFor', () => {
   });
 
   it('says when a discipline is not in the catalog', () => {
-    const result = referenceFor({ kind: 'discipline', slot: 1 }, ficha, index);
+    const result = referenceFor({ kind: 'discipline', slot: 1 }, ficha, catalogs);
     expect(result?.paragraphs[0]).toBe('"Vicissitude" não foi encontrada no catálogo de disciplinas.');
     expect(result?.catalogLevels).toBeNull();
   });
 
   it('shows a power from the catalog with its fields, description and system', () => {
-    expect(referenceFor({ kind: 'power', slot: 0, powerIndex: 0 }, ficha, index)).toMatchObject({
+    expect(referenceFor({ kind: 'power', slot: 0, powerIndex: 0 }, ficha, catalogs)).toMatchObject({
       kicker: 'Poder · Presence',
       title: 'Awe',
       source: 'Core, p. 1',
@@ -120,31 +140,61 @@ describe('referenceFor', () => {
   });
 
   it('lists the options up to the discipline level when a power is not found', () => {
-    const result = referenceFor({ kind: 'power', slot: 0, powerIndex: 1 }, ficha, index);
+    const result = referenceFor({ kind: 'power', slot: 0, powerIndex: 1 }, ficha, catalogs);
     expect(result?.paragraphs[0]).toBe('"Inventado" não foi encontrado no catálogo de Presença.');
     expect(result?.facts).toEqual([{ label: 'Opções até o nível 2', value: 'Awe, Daunt, Lingering Kiss' }]);
   });
 
   it('returns null for selections outside the sheet', () => {
-    expect(referenceFor({ kind: 'power', slot: 0, powerIndex: 3 }, ficha, index)).toBeNull();
-    expect(referenceFor({ kind: 'discipline', slot: 9 }, ficha, index)).toBeNull();
+    expect(referenceFor({ kind: 'power', slot: 0, powerIndex: 3 }, ficha, catalogs)).toBeNull();
+    expect(referenceFor({ kind: 'discipline', slot: 9 }, ficha, catalogs)).toBeNull();
   });
 
   it('matches identity text against the catalog or lists the options', () => {
-    expect(referenceFor({ kind: 'identity', field: 'clan' }, ficha, index)?.title).toBe('Banu Haqim');
-    const unmatched = referenceFor({ kind: 'identity', field: 'sect' }, ficha, index);
+    expect(referenceFor({ kind: 'identity', field: 'clan' }, ficha, catalogs)?.title).toBe('Banu Haqim');
+    const unmatched = referenceFor({ kind: 'identity', field: 'sect' }, ficha, catalogs);
     expect(unmatched?.paragraphs[0]).toContain('Sem correspondência para "Camarila"');
     const options = unmatched?.facts[0];
     expect(options !== undefined && 'value' in options ? options.value : '').toContain('Camarilla');
   });
 
   it('summarizes trackers', () => {
-    expect(referenceFor({ kind: 'tracker', tracker: 'health' }, ficha, index)?.facts).toEqual([
+    expect(referenceFor({ kind: 'tracker', tracker: 'health' }, ficha, catalogs)?.facts).toEqual([
       { label: 'Máximo', value: '7' },
       { label: 'Superficial', value: '0' },
       { label: 'Agravado', value: '0' },
     ]);
-    expect(referenceFor({ kind: 'tracker', tracker: 'humanity' }, ficha, index)?.facts[0]).toEqual({ label: 'Humanidade', value: '7' });
+    expect(referenceFor({ kind: 'tracker', tracker: 'humanity' }, ficha, catalogs)?.facts[0]).toEqual({ label: 'Humanidade', value: '7' });
+  });
+});
+
+describe('referenceFor advantages', () => {
+  it('shows the catalog entry with category, points and system', () => {
+    expect(referenceFor({ kind: 'advantage', index: 0 }, ficha, catalogs)).toMatchObject({
+      kicker: 'Background',
+      title: 'Allies',
+      source: 'Core, p. 2',
+      dots: { value: 2, max: 6 },
+      facts: [
+        { label: 'Na ficha', value: 'Augie Mendez' },
+        { label: 'Pontos', value: '• a ••••••' },
+      ],
+      blocks: [{ title: 'Sistema', html: '<p>Regra.</p>' }],
+    });
+  });
+
+  it('matches flaws by Portuguese alias without accents, with the group in the kicker', () => {
+    expect(referenceFor({ kind: 'advantage', index: 1 }, ficha, catalogs)).toMatchObject({ kicker: 'Flaw · Feeding', title: 'Prey Exclusion' });
+  });
+
+  it('tolerates a typo in the name (Refugo → Refúgio → Haven)', () => {
+    expect(referenceFor({ kind: 'advantage', index: 2 }, ficha, catalogs)?.title).toBe('Haven');
+  });
+
+  it('says when an advantage is not in Advantages.md', () => {
+    const result = referenceFor({ kind: 'advantage', index: 3 }, ficha, catalogs);
+    expect(result?.paragraphs[0]).toBe('"Ilha Perdida" não foi encontrado em Advantages.md.');
+    expect(result?.facts).toEqual([]);
   });
 });
 

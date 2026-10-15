@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { DisciplineCatalog } from './types.ts';
+import type { AdvantageCatalog, DisciplineCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -27,3 +27,18 @@ const note = z.strictObject({
 });
 
 export const disciplineCatalogSchema = z.strictObject({ notes: z.array(note) }) satisfies z.ZodType<DisciplineCatalog>;
+
+const advantage = z.strictObject({
+  name: z.string().min(1),
+  category: z.enum(['merit', 'background', 'flaw', 'loresheet']),
+  group: z.string().nullable(),
+  points: z.strictObject({ min: z.int().min(0), max: z.int().min(1) }),
+  pointsLabel: z.string(),
+  aliases: z.array(z.string()),
+  source: z.string().nullable(),
+  fields: z.array(field),
+  descriptionHtml: z.string(),
+  systemHtml: z.string(),
+});
+
+export const advantageCatalogSchema = z.strictObject({ entries: z.array(advantage) }) satisfies z.ZodType<AdvantageCatalog>;

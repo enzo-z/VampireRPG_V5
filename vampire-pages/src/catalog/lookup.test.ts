@@ -72,3 +72,16 @@ describe('findEntry', () => {
     expect(findEntry(index, 'Auspex', 'Telepathy')).toBeNull();
   });
 });
+
+describe('tolerant matching', () => {
+  it('finds powers with typos, missing accents or only the start of the name', () => {
+    expect(findEntry(index, 'Obfuscate', 'cloak of shadow')?.name).toBe('Cloak of Shadows');
+    expect(findEntry(index, 'Obfuscate', 'Chimerstr')?.name).toBe('Chimerstry');
+    expect(findEntry(index, 'Blood Sorcery', 'blod walk')?.name).toBe('Blood Walk');
+  });
+
+  it('finds disciplines with typos', () => {
+    expect(findDiscipline(index, 'Ofuscacao')?.noteName).toBe('Obfuscate');
+    expect(findDiscipline(index, 'Obfuscat')?.noteName).toBe('Obfuscate');
+  });
+});

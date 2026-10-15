@@ -117,3 +117,32 @@ describe('sheetsReducer', () => {
     ]);
   });
 });
+
+describe('advantages', () => {
+  const start = stateOf('nina', nina);
+
+  it('adds advantages and flaws with level 1', () => {
+    const next = run(start, { type: 'advantage/added', id: 'nina', side: 'advantage' }, { type: 'advantage/added', id: 'nina', side: 'flaw' });
+    expect(ficha(next, 'nina').advantages).toEqual([
+      { category: 'merit', name: '', level: 1, note: '' },
+      { category: 'flaw', name: '', level: 1, note: '' },
+    ]);
+  });
+
+  it('renames with the matched category, edits the note and picks dots', () => {
+    const next = run(
+      start,
+      { type: 'advantage/added', id: 'nina', side: 'advantage' },
+      { type: 'advantage/renamed', id: 'nina', index: 0, name: 'Allies', category: 'background' },
+      { type: 'advantage/noteChanged', id: 'nina', index: 0, note: 'Augie Mendez' },
+      { type: 'advantage/picked', id: 'nina', index: 0, dotIndex: 1 },
+    );
+    expect(ficha(next, 'nina').advantages[0]).toEqual({ category: 'background', name: 'Allies', level: 2, note: 'Augie Mendez' });
+  });
+
+  it('removes an item and ignores unknown indexes', () => {
+    const withTwo = run(start, { type: 'advantage/added', id: 'nina', side: 'advantage' }, { type: 'advantage/added', id: 'nina', side: 'flaw' });
+    expect(ficha(run(withTwo, { type: 'advantage/removed', id: 'nina', index: 0 }), 'nina').advantages.map((a) => a.category)).toEqual(['flaw']);
+    expect(run(withTwo, { type: 'advantage/removed', id: 'nina', index: 5 })).toEqual(withTwo);
+  });
+});

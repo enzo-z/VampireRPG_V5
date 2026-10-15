@@ -46,3 +46,33 @@ export interface CatalogNote {
 export interface DisciplineCatalog {
   notes: CatalogNote[];
 }
+
+// ---------- Advantages (Advantages.md) ----------
+
+export type AdvantageCategory = 'merit' | 'background' | 'flaw' | 'loresheet';
+
+export interface AdvantagePoints {
+  min: number;
+  max: number;
+}
+
+export interface AdvantageEntry {
+  name: string;
+  category: AdvantageCategory;
+  /** "## Group" the item sits under (Feeding, Looks, Fame…), if any. */
+  group: string | null;
+  points: AdvantagePoints;
+  /** "Pontos" as written in the note, e.g. "• a •••". */
+  pointsLabel: string;
+  /** Portuguese names and spellings a sheet may use. */
+  aliases: string[];
+  source: string | null;
+  /** Fields other than Fonte, Pontos, Apelidos and Sistema. */
+  fields: CatalogField[];
+  descriptionHtml: string;
+  systemHtml: string;
+}
+
+export interface AdvantageCatalog {
+  entries: AdvantageEntry[];
+}

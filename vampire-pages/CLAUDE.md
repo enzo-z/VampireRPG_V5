@@ -33,9 +33,11 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 
 ## Schema de dados
 ```
-{ schemaVersion: 1, fichas: [ { name, identity, trackers, specs, ... } ] }
+{ schemaVersion: 2, fichas: [ { name, identity, trackers, specs, advantages, ... } ] }
 ```
 - `schemaVersion` obrigatório; import valida com zod e rejeita/migra versões desconhecidas, com mensagem clara.
+- v2 (2026-10-15) acrescenta `advantages: { category: merit|background|flaw|loresheet, name, level, note }[]`; arquivos v1 migram sozinhos (`src/schema/migrations.ts`).
+- Catálogos lidos do vault no build: `O Sangue (Vitae)/Disciplinas/*.md` e `Advantages.md` (só com `publicar: true`). A ficha casa nomes com tolerância (acento, maiúscula, plural, apelido pt-BR, prefixo, erro de digitação).
 - Identidade: Nome, Player, Crônica, Clã, Predator Type, Ambição, Facção, Geração, Desejo.
 - Disciplinas têm nome editável (6 slots). Especializações são texto livre, sem placeholder.
 

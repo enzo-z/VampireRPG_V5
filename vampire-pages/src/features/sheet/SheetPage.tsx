@@ -3,6 +3,7 @@ import type { Ficha } from '../../domain/character.ts';
 import type { Selection } from '../../reference/lookup.ts';
 import type { SheetsAction } from '../../store/sheetsReducer.ts';
 import { useSheets } from '../../store/SheetsProvider.tsx';
+import { AdvantagesSection } from './AdvantagesSection.tsx';
 import { BloodSection } from './BloodSection.tsx';
 import { DisciplinesSection } from './DisciplinesSection.tsx';
 import { ReferencePanel } from './ReferencePanel.tsx';
@@ -52,6 +53,7 @@ export function SheetPage({ ficha, readOnly, onToggleReadOnly, onPrint }: SheetP
           <AttributesSection />
           <SkillsSection />
           <DisciplinesSection />
+          <AdvantagesSection />
           <BloodSection />
         </div>
         <div className={styles.aside}>

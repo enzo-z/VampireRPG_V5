@@ -19,6 +19,8 @@ export const ATTRIBUTE_RANGE: DotRange = { min: 1, max: 5 };
 export const SKILL_RANGE: DotRange = { min: 0, max: 5 };
 export const DISCIPLINE_RANGE: DotRange = { min: 0, max: 5 };
 export const BLOOD_POTENCY_RANGE: DotRange = { min: 0, max: 10 };
+/** Allies go up to six dots; most advantages stop at five. */
+export const ADVANTAGE_RANGE: DotRange = { min: 1, max: 6 };
 
 export interface DamageTrack {
   /** Number of usable boxes, 1..TRACK_CAP. */
@@ -72,6 +74,18 @@ export interface Blood {
   clanCompulsion: string;
 }
 
+/** Merits, backgrounds and loresheets sit in the "Vantagens" column; flaws in "Defeitos". */
+export type AdvantageCategory = 'merit' | 'background' | 'flaw' | 'loresheet';
+
+export interface AdvantageItem {
+  category: AdvantageCategory;
+  /** As written on the sheet; matched against Advantages.md, e.g. "Allies". */
+  name: string;
+  level: number;
+  /** Detail such as who the ally is: "Augie Mendez". */
+  note: string;
+}
+
 export interface Ficha {
   id: string;
   name: string;
@@ -84,10 +98,11 @@ export interface Ficha {
   disciplines: Discipline[];
   trackers: Trackers;
   blood: Blood;
+  advantages: AdvantageItem[];
   notes: string;
 }
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export interface SheetFile {
   schemaVersion: typeof SCHEMA_VERSION;

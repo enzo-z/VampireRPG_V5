@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import {
+  ADVANTAGE_RANGE,
   ATTRIBUTE_RANGE,
   BLOOD_POTENCY_RANGE,
   DISCIPLINE_RANGE,
@@ -61,6 +62,13 @@ const blood = z.strictObject({
   clanCompulsion: z.string(),
 });
 
+const advantage = z.strictObject({
+  category: z.enum(['merit', 'background', 'flaw', 'loresheet']),
+  name: z.string(),
+  level: dots(ADVANTAGE_RANGE),
+  note: z.string(),
+});
+
 export const fichaSchema = z.strictObject({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -76,6 +84,7 @@ export const fichaSchema = z.strictObject({
     humanity: z.array(boxState).length(HUMANITY_SIZE),
   }),
   blood,
+  advantages: z.array(advantage),
   notes: z.string(),
 }) satisfies z.ZodType<Ficha>;
 

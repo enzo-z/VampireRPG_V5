@@ -69,12 +69,24 @@ describe('migrateLegacyPedro', () => {
     expect(ficha.disciplines.map((d) => d.name)).toEqual(['Auspex', '', '', '', '', '']);
   });
 
-  it('keeps fields without a place in v1 as text in the notes', () => {
+  it('keeps fields without a place in the sheet as text in the notes', () => {
     const { notes } = migrate().ficha;
     expect(notes).toContain('Importado do app do Pedro');
     expect(notes).toContain('XP: total 12, gasto 7');
-    expect(notes).toContain('Defeitos: Prey Exclusion (1) — crianças');
     expect(notes).toContain('Poderes excedentes: Presence: P6');
+    expect(notes).not.toContain('Prey Exclusion');
+  });
+
+  it('moves advantages and flaws into the advantage list with a category', () => {
+    expect(migrate().ficha.advantages).toEqual([
+      { category: 'merit', name: 'Beautiful', level: 2, note: '' },
+      { category: 'flaw', name: 'Prey Exclusion', level: 1, note: 'crianças' },
+    ]);
+    const withBackgrounds = { ...legacyCharacter(), advantages: [{ name: 'Allies', level: 7, note: 'x' }, { name: 'Loresheet: Sect War Veteran', level: 3, note: '' }] };
+    expect(migrate(withBackgrounds).ficha.advantages.slice(0, 2)).toEqual([
+      { category: 'background', name: 'Allies', level: 6, note: 'x' },
+      { category: 'loresheet', name: 'Loresheet: Sect War Veteran', level: 3, note: '' },
+    ]);
   });
 
   it('copies blood potency and resonance and warns about dropped media', () => {

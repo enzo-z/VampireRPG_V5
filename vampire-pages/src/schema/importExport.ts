@@ -1,6 +1,7 @@
 import { SCHEMA_VERSION, type Ficha, type SheetFile } from '../domain/character.ts';
 import { formatIssues } from './issues.ts';
 import { looksLikeLegacyPedro, migrateLegacyPedro } from './legacyPedro.ts';
+import { migrateToCurrent, SUPPORTED_VERSIONS } from './migrations.ts';
 import { sheetFileSchema } from './sheetFile.ts';
 
 export type ImportResult =
@@ -30,12 +31,13 @@ export function parseSheetFile(text: string, options: ImportOptions = {}): Impor
     return { ok: false, error: 'O arquivo não é um JSON válido.' };
   }
 
-  if (typeof data === 'object' && data !== null && 'schemaVersion' in data) {
+  if (typeof data === 'object' && data !== null && !Array.isArray(data) && 'schemaVersion' in data) {
     const version = data.schemaVersion;
-    if (version !== SCHEMA_VERSION) {
-      return { ok: false, error: `Versão ${JSON.stringify(version)} não suportada; este app lê a versão ${SCHEMA_VERSION}.` };
+    const migrated = typeof version === 'number' ? migrateToCurrent(data as Record<string, unknown>, version, SCHEMA_VERSION) : null;
+    if (migrated === null) {
+      return { ok: false, error: `Versão ${JSON.stringify(version)} não suportada; este app lê as versões ${SUPPORTED_VERSIONS.join(' e ')}.` };
     }
-    return validate(data, []);
+    return validate(migrated, []);
   }
 
   if (looksLikeLegacyPedro(data)) {
@@ -44,7 +46,7 @@ export function parseSheetFile(text: string, options: ImportOptions = {}): Impor
     return validate({ schemaVersion: SCHEMA_VERSION, fichas: [migration.ficha] }, migration.warnings);
   }
 
-  return { ok: false, error: 'Formato não reconhecido: esperado { "schemaVersion": 1, "fichas": [...] } ou uma ficha do app do Pedro.' };
+  return { ok: false, error: `Formato não reconhecido: esperado { "schemaVersion": ${SCHEMA_VERSION}, "fichas": [...] } ou uma ficha do app do Pedro.` };
 }
 
 export function serializeSheetFile(fichas: readonly Ficha[]): string {

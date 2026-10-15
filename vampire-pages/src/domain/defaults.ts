@@ -70,6 +70,7 @@ export function createFicha(id: string, name: string, player = ''): Ficha {
       clanBane: '',
       clanCompulsion: '',
     },
+    advantages: [],
     notes: '',
   };
 }

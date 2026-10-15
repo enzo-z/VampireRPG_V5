@@ -61,6 +61,8 @@ const FIELD_LABELS: Readonly<Record<string, string>> = {
   sistema: 'Sistema',
   system: 'Sistema',
   'system regras': 'Sistema',
+  pontos: 'Pontos',
+  apelidos: 'Apelidos',
 };
 
 const META_BULLET = /^- (\*\*)?(Nicknames|Tipo|Ameaça|Masquerade Threat|Blood Resonance|\[\[Resonance\]\])/;
@@ -128,15 +130,28 @@ function fieldValue(rest: string): string {
 
 // ---------- Entries ----------
 
-function parseEntry(name: string, level: number, kind: CatalogEntryKind, rawLines: readonly string[], warn: (message: string) => void): ParsedEntry {
+export interface ParsedBlock {
+  source: string | null;
+  /** Every field except Fonte, in note order. */
+  fields: ParsedField[];
+  description: string;
+  system: string;
+}
+
+/**
+ * Parses the lines under a "### Item" heading: optional description, then a
+ * blockquote with "- **Label**: value" fields; "- **Sistema**:" starts the system text.
+ * `label` identifies the item in warnings, e.g. `"Cat's Grace" (nível 1)`.
+ */
+export function parseEntryBlock(label: string, rawLines: readonly string[], warn: (message: string) => void): ParsedBlock {
   const lines = rawLines.filter((line) => line.trim() !== '---');
   const quoted = lines.map((line) => line.trimStart().startsWith('>'));
   const firstQuote = quoted.indexOf(true);
   const lastQuote = quoted.lastIndexOf(true);
 
   if (firstQuote === -1) {
-    warn(`"${name}" (nível ${level}) não tem bloco de campos; o texto inteiro vira o Sistema.`);
-    return { name, level, kind, source: null, fields: [], description: '', system: dedent(lines) };
+    warn(`${label} não tem bloco de campos; o texto inteiro vira o Sistema.`);
+    return { source: null, fields: [], description: '', system: dedent(lines) };
   }
 
   const description: string[] = [...lines.slice(0, firstQuote)];
@@ -171,18 +186,19 @@ function parseEntry(name: string, level: number, kind: CatalogEntryKind, rawLine
 
   const parsedFields = fields.map((field) => ({ label: field.label, markdown: dedent(field.lines) }));
   const source = parsedFields.find((field) => field.label === 'Fonte')?.markdown ?? null;
-  if (source === null) warn(`"${name}" (nível ${level}) sem Fonte.`);
-  if (!inSystem) warn(`"${name}" (nível ${level}) sem Sistema.`);
+  if (source === null) warn(`${label} sem Fonte.`);
+  if (!inSystem) warn(`${label} sem Sistema.`);
 
   return {
-    name,
-    level,
-    kind,
     source,
     fields: parsedFields.filter((field) => field.label !== 'Fonte'),
     description: dedent(description),
     system: dedent(system),
   };
+}
+
+function parseEntry(name: string, level: number, kind: CatalogEntryKind, lines: readonly string[], warn: (message: string) => void): ParsedEntry {
+  return { name, level, kind, ...parseEntryBlock(`"${name}" (nível ${level})`, lines, warn) };
 }
 
 function entryKindOf(noteKind: CatalogNoteKind, entries: string | undefined): CatalogEntryKind {

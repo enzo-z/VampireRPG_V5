@@ -17,7 +17,7 @@ describe('parseSheetFile', () => {
     const text = serializeSheetFile([nina, vincent]);
     const result = parseSheetFile(text);
 
-    expect(result).toEqual({ ok: true, file: { schemaVersion: 1, fichas: [nina, vincent] }, warnings: [] });
+    expect(result).toEqual({ ok: true, file: { schemaVersion: 2, fichas: [nina, vincent] }, warnings: [] });
     if (result.ok) expect(serializeSheetFile(result.file.fichas)).toBe(text);
   });
 
@@ -26,9 +26,15 @@ describe('parseSheetFile', () => {
   });
 
   it('rejects unknown schema versions with a clear message', () => {
-    expect(expectError(JSON.stringify({ schemaVersion: 2, fichas: [] }))).toBe(
-      'Versão 2 não suportada; este app lê a versão 1.',
+    expect(expectError(JSON.stringify({ schemaVersion: 3, fichas: [] }))).toBe(
+      'Versão 3 não suportada; este app lê as versões 1 e 2.',
     );
+  });
+
+  it('upgrades version 1 files, which had no advantages', () => {
+    const { advantages: _dropped, ...v1Ficha } = nina;
+    const result = parseSheetFile(JSON.stringify({ schemaVersion: 1, fichas: [v1Ficha] }));
+    expect(result).toEqual({ ok: true, file: { schemaVersion: 2, fichas: [nina] }, warnings: [] });
   });
 
   it('reports the path of an invalid value', () => {
@@ -55,11 +61,11 @@ describe('parseSheetFile', () => {
     expect(expectError(serializeSheetFile([nina, nina]))).toContain('fichas[1].id: id repetido: "nina"');
   });
 
-  it('wraps a legacy character from Pedro\'s app into a v1 file', () => {
+  it('wraps a legacy character from Pedro\'s app into a current file', () => {
     const result = parseSheetFile(JSON.stringify(legacyCharacter()), { newId: () => 'fresh' });
     if (!result.ok) throw new Error(result.error);
 
-    expect(result.file.schemaVersion).toBe(1);
+    expect(result.file.schemaVersion).toBe(2);
     expect(result.file.fichas.map((f) => [f.id, f.name])).toEqual([['fresh', 'Teste Legado']]);
     expect(result.warnings.length).toBeGreaterThan(0);
   });

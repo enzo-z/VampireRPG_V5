@@ -1,16 +1,9 @@
+import { bestMatch, normalizeName, type MatchCandidate } from './fuzzy.ts';
 import type { CatalogEntry, CatalogNote, DisciplineCatalog } from './types.ts';
 
 // Matches what is written on a sheet (free text) against the discipline catalog.
 
-export function normalizeName(text: string): string {
-  return text
-    .normalize('NFD')
-    .replace(/\p{M}/gu, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .replace(/^the /, '');
-}
+export { normalizeName };
 
 /** Portuguese names, older names and common misspellings → canonical discipline. */
 const DISCIPLINE_ALIASES: Readonly<Record<string, string>> = {
@@ -74,24 +67,42 @@ function canonicalKey(disciplineName: string): string {
   return alias === undefined ? key : normalizeName(alias);
 }
 
+function disciplineCandidates(index: CatalogIndex): MatchCandidate<CatalogNote>[] {
+  return index.disciplines.map((note) => ({
+    item: note,
+    names: [
+      note.discipline,
+      ...Object.entries(DISCIPLINE_ALIASES).filter(([, target]) => target === note.discipline).map(([alias]) => alias),
+      ...note.nicknames,
+    ],
+  }));
+}
+
+/** Finds a discipline by name, Portuguese or older name, nickname or a close spelling. */
 export function findDiscipline(index: CatalogIndex, name: string): CatalogNote | null {
   const key = canonicalKey(name);
-  return index.disciplines.find((note) => normalizeName(note.discipline) === key) ?? null;
+  const exact = index.disciplines.find((note) => normalizeName(note.discipline) === key);
+  return exact ?? bestMatch(name, disciplineCandidates(index))?.item ?? null;
 }
 
 export function entriesOf(index: CatalogIndex, disciplineName: string): readonly CatalogEntry[] {
-  return index.entriesByDiscipline.get(canonicalKey(disciplineName)) ?? [];
+  const direct = index.entriesByDiscipline.get(canonicalKey(disciplineName));
+  if (direct !== undefined) return direct;
+  const note = disciplineName.trim() === '' ? null : findDiscipline(index, disciplineName);
+  return note === null ? [] : (index.entriesByDiscipline.get(normalizeName(note.discipline)) ?? []);
 }
 
 /**
- * Finds a power, ritual, ceremony or formula by name inside the discipline.
- * Falls back to the whole catalog only when the name is unique, to avoid homonyms.
+ * Finds a power, ritual, ceremony or formula inside the discipline, tolerating
+ * accents, case, plurals, prefixes and small typos. Falls back to the whole
+ * catalog only for an exact, unique name, to avoid homonyms.
  */
 export function findEntry(index: CatalogIndex, disciplineName: string, entryName: string): CatalogEntry | null {
   const key = normalizeName(entryName);
   if (key === '') return null;
-  const inDiscipline = entriesOf(index, disciplineName).find((entry) => normalizeName(entry.name) === key);
-  if (inDiscipline !== undefined) return inDiscipline;
+  const candidates = entriesOf(index, disciplineName).map((entry) => ({ item: entry, names: [entry.name] }));
+  const inDiscipline = bestMatch(entryName, candidates);
+  if (inDiscipline !== null) return inDiscipline.item;
   const anywhere = index.entriesByName.get(key) ?? [];
   return anywhere.length === 1 ? (anywhere[0] ?? null) : null;
 }

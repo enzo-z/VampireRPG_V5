@@ -1,5 +1,6 @@
+import { findAdvantage, sideOf, suggestAdvantages, type AdvantageIndex } from '../catalog/advantages.ts';
 import { entriesOf, findDiscipline, findEntry, type CatalogIndex } from '../catalog/lookup.ts';
-import type { CatalogEntry } from '../catalog/types.ts';
+import type { AdvantageCategory, CatalogEntry } from '../catalog/types.ts';
 import { ATTRIBUTE_RANGE, BLOOD_POTENCY_RANGE, DISCIPLINE_RANGE, HUNGER_MAX, SKILL_RANGE, type Ficha } from '../domain/character.ts';
 import { matchIdentity, type CatalogField } from '../domain/identityCatalog.ts';
 import { damageSummary, humanitySummary } from '../domain/trackers.ts';
@@ -26,7 +27,14 @@ export type Selection =
   | { kind: 'discipline'; slot: number }
   | { kind: 'power'; slot: number; powerIndex: number }
   | { kind: 'identity'; field: CatalogField }
-  | { kind: 'tracker'; tracker: TrackerKind };
+  | { kind: 'tracker'; tracker: TrackerKind }
+  | { kind: 'advantage'; index: number };
+
+/** Catalogs built from the vault notes. */
+export interface ReferenceCatalogs {
+  disciplines: CatalogIndex;
+  advantages: AdvantageIndex;
+}
 
 /** A labeled value; `html` comes pre-rendered from the vault notes. */
 export type ReferenceFact = { label: string; value: string } | { label: string; html: string };
@@ -81,6 +89,13 @@ const EMPTY_ENTRY: Omit<ReferenceEntry, 'kicker' | 'title'> = {
   facts: [],
   blocks: [],
   catalogLevels: null,
+};
+
+const ADVANTAGE_CATEGORY_LABELS: Readonly<Record<AdvantageCategory, string>> = {
+  merit: 'Merit',
+  background: 'Background',
+  flaw: 'Flaw',
+  loresheet: 'Loresheet',
 };
 
 const ENTRY_KIND_LABELS: Readonly<Record<CatalogEntry['kind'], string>> = {
@@ -204,6 +219,41 @@ function powerEntry(ficha: Ficha, slot: number, powerIndex: number, catalog: Cat
   };
 }
 
+function advantageEntry(ficha: Ficha, index: number, catalog: AdvantageIndex): ReferenceEntry | null {
+  const item = ficha.advantages[index];
+  if (item === undefined) return null;
+  const side = sideOf(item.category);
+  const sideLabel = side === 'flaw' ? 'Defeito' : 'Vantagem';
+  const noteFact: ReferenceFact[] = item.note ? [{ label: 'Na ficha', value: item.note }] : [];
+  const entry = findAdvantage(catalog, side, item.name);
+
+  if (entry === null) {
+    const suggestions = item.name.trim() === '' ? [] : suggestAdvantages(catalog, side, item.name);
+    return {
+      ...EMPTY_ENTRY,
+      kicker: sideLabel,
+      title: item.name || `${sideLabel} sem nome`,
+      dots: { value: item.level, max: Math.max(5, item.level) },
+      paragraphs: item.name === '' ? [] : [`"${item.name}" não foi encontrado em Advantages.md.`],
+      facts: [...noteFact, ...(suggestions.length > 0 ? [{ label: 'Parecidos', value: suggestions.map((s) => s.name).join(', ') }] : [])],
+    };
+  }
+  const kicker = [ADVANTAGE_CATEGORY_LABELS[entry.category], entry.group].filter((part) => part !== null).join(' · ');
+  return {
+    ...EMPTY_ENTRY,
+    kicker,
+    title: entry.name,
+    source: entry.source,
+    dots: { value: item.level, max: Math.max(entry.points.max, item.level) },
+    facts: [
+      ...noteFact,
+      { label: 'Pontos', value: entry.pointsLabel },
+      ...entry.fields.map((field) => ({ label: field.label, html: field.html })),
+    ],
+    blocks: htmlBlocks({ title: null, html: entry.descriptionHtml }, { title: 'Sistema', html: entry.systemHtml }),
+  };
+}
+
 function identityEntry(ficha: Ficha, field: CatalogField): ReferenceEntry {
   const text = ficha.identity[field];
   const match = matchIdentity(field, text);
@@ -268,20 +318,22 @@ function trackerEntry(ficha: Ficha, tracker: TrackerKind): ReferenceEntry {
   }
 }
 
-export function referenceFor(selection: Selection, ficha: Ficha, catalog: CatalogIndex): ReferenceEntry | null {
+export function referenceFor(selection: Selection, ficha: Ficha, catalogs: ReferenceCatalogs): ReferenceEntry | null {
   switch (selection.kind) {
     case 'attribute':
       return attributeEntry(ficha, selection.key);
     case 'skill':
       return skillEntry(ficha, selection.key);
     case 'discipline':
-      return disciplineEntry(ficha, selection.slot, catalog);
+      return disciplineEntry(ficha, selection.slot, catalogs.disciplines);
     case 'power':
-      return powerEntry(ficha, selection.slot, selection.powerIndex, catalog);
+      return powerEntry(ficha, selection.slot, selection.powerIndex, catalogs.disciplines);
     case 'identity':
       return identityEntry(ficha, selection.field);
     case 'tracker':
       return trackerEntry(ficha, selection.tracker);
+    case 'advantage':
+      return advantageEntry(ficha, selection.index, catalogs.advantages);
   }
 }
 

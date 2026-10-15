@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import {
+  ADVANTAGE_RANGE,
   ATTRIBUTE_RANGE,
   BLOOD_POTENCY_RANGE,
   DISCIPLINE_RANGE,
@@ -9,6 +10,8 @@ import {
   POWERS_PER_DISCIPLINE,
   SKILL_RANGE,
   TRACK_CAP,
+  type AdvantageCategory,
+  type AdvantageItem,
   type BoxState,
   type DamageTrack,
   type Discipline,
@@ -148,14 +151,35 @@ function migrateDisciplines(legacy: LegacyCharacter['disciplines'], warnings: st
   return [...migrated, ...Array.from({ length: DISCIPLINE_SLOTS - migrated.length }, emptyDiscipline)];
 }
 
+/** Backgrounds of the V5 Core (English and common Portuguese names); other advantages count as merits. */
+const BACKGROUND_NAMES = new Set([
+  'allies', 'aliados', 'contacts', 'contatos', 'fame', 'fama', 'haven', 'refugio', 'herd', 'rebanho',
+  'influence', 'influencia', 'mask', 'mascara', 'mawla', 'mentor', 'resources', 'recursos', 'retainer', 'retainers', 'status',
+]);
+
+function advantageCategory(name: string, isFlaw: boolean): AdvantageCategory {
+  if (isFlaw) return 'flaw';
+  const key = name.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/\s*\(.*$/, '').trim();
+  if (key.startsWith('loresheet')) return 'loresheet';
+  return BACKGROUND_NAMES.has(key) ? 'background' : 'merit';
+}
+
+function migrateAdvantages(legacy: LegacyCharacter): AdvantageItem[] {
+  const toItem = (isFlaw: boolean) => (item: { name: string; level: number; note: string }): AdvantageItem => ({
+    category: advantageCategory(item.name, isFlaw),
+    name: item.name.trim(),
+    level: clampInt(item.level, ADVANTAGE_RANGE.min, ADVANTAGE_RANGE.max),
+    note: item.note.trim(),
+  });
+  return [...legacy.advantages.map(toItem(false)), ...legacy.flaws.map(toItem(true))].filter((item) => item.name !== '');
+}
+
 function line(label: string, value: string): string[] {
   return value.trim() === '' ? [] : [`${label}: ${value.trim()}`];
 }
 
 /** Fields without a place in schema v1 are kept as text in `notes` until page 2 exists. */
 function legacyNotes(legacy: LegacyCharacter): string {
-  const listed = (items: { name: string; level: number; note: string }[]) =>
-    items.map((item) => `${item.name} (${item.level})${item.note ? ` — ${item.note}` : ''}`).join('; ');
   const overflowPowers = legacy.disciplines
     .filter((d) => d.powers.length > POWERS_PER_DISCIPLINE)
     .map((d) => `${d.name}: ${d.powers.slice(POWERS_PER_DISCIPLINE).join(', ')}`);
@@ -167,8 +191,6 @@ function legacyNotes(legacy: LegacyCharacter): string {
     ...line('Abraço', legacy.embrace),
     ...line('Idiomas', legacy.languages),
     ...line('XP', legacy.xpTotal === '' && legacy.xpSpent === '' ? '' : `total ${legacy.xpTotal}, gasto ${legacy.xpSpent}`),
-    ...line('Vantagens', listed(legacy.advantages)),
-    ...line('Defeitos', listed(legacy.flaws)),
     ...line('Convicções', legacy.convictions.join('; ')),
     ...line('Touchstones', legacy.touchstones.map((t) => (t.summary ? `${t.name} — ${t.summary}` : t.name)).join('; ')),
     ...line('Poderes excedentes', overflowPowers.join('; ')),
@@ -222,6 +244,7 @@ export function migrateLegacyPedro(input: unknown, newId: () => string): LegacyM
       potency: clampInt(trackers.bp, BLOOD_POTENCY_RANGE.min, BLOOD_POTENCY_RANGE.max),
       resonance: trackers.resonance,
     },
+    advantages: migrateAdvantages(legacy),
     notes: legacyNotes(legacy),
   };
   return { ficha, warnings };

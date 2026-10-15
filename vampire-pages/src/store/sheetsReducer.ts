@@ -1,9 +1,12 @@
 import {
+  ADVANTAGE_RANGE,
   ATTRIBUTE_RANGE,
   BLOOD_POTENCY_RANGE,
   DISCIPLINE_RANGE,
   POWERS_PER_DISCIPLINE,
   SKILL_RANGE,
+  type AdvantageCategory,
+  type AdvantageItem,
   type Blood,
   type Discipline,
   type DisciplinePower,
@@ -21,6 +24,7 @@ export interface SheetsState {
 
 export type DamageTrackKey = 'health' | 'willpower';
 export type BloodTextField = Exclude<keyof Blood, 'potency'>;
+export type AdvantageSide = 'advantage' | 'flaw';
 
 export type SheetsAction =
   | { type: 'ficha/created'; ficha: Ficha }
@@ -41,7 +45,12 @@ export type SheetsAction =
   | { type: 'humanity/cycled'; id: string; index: number }
   | { type: 'blood/potencyPicked'; id: string; index: number }
   | { type: 'blood/changed'; id: string; field: BloodTextField; value: string }
-  | { type: 'notes/changed'; id: string; value: string };
+  | { type: 'notes/changed'; id: string; value: string }
+  | { type: 'advantage/added'; id: string; side: AdvantageSide }
+  | { type: 'advantage/renamed'; id: string; index: number; name: string; category: AdvantageCategory }
+  | { type: 'advantage/noteChanged'; id: string; index: number; note: string }
+  | { type: 'advantage/picked'; id: string; index: number; dotIndex: number }
+  | { type: 'advantage/removed'; id: string; index: number };
 
 export const EMPTY_SHEETS_STATE: SheetsState = { fichas: [], activeId: null };
 
@@ -68,6 +77,12 @@ function changePower(powers: readonly DisciplinePower[], index: number, field: k
   });
   const lastFilled = edited.findLastIndex((power) => power.name !== '' || power.note !== '');
   return edited.slice(0, lastFilled + 1);
+}
+
+function updateAdvantage(ficha: Ficha, index: number, change: (item: AdvantageItem) => AdvantageItem): Ficha {
+  const current = ficha.advantages[index];
+  if (current === undefined) return ficha;
+  return { ...ficha, advantages: ficha.advantages.with(index, change(current)) };
 }
 
 function withoutFicha(state: SheetsState, id: string): SheetsState {
@@ -170,5 +185,24 @@ export function sheetsReducer(state: SheetsState, action: SheetsAction): SheetsS
       return updateFicha(state, action.id, (ficha) => ({ ...ficha, blood: { ...ficha.blood, [action.field]: action.value } }));
     case 'notes/changed':
       return updateFicha(state, action.id, (ficha) => ({ ...ficha, notes: action.value }));
+    case 'advantage/added':
+      return updateFicha(state, action.id, (ficha) => ({
+        ...ficha,
+        advantages: [...ficha.advantages, { category: action.side === 'flaw' ? 'flaw' : 'merit', name: '', level: ADVANTAGE_RANGE.min, note: '' }],
+      }));
+    case 'advantage/renamed':
+      return updateFicha(state, action.id, (ficha) =>
+        updateAdvantage(ficha, action.index, (item) => ({ ...item, name: action.name, category: action.category })),
+      );
+    case 'advantage/noteChanged':
+      return updateFicha(state, action.id, (ficha) => updateAdvantage(ficha, action.index, (item) => ({ ...item, note: action.note })));
+    case 'advantage/picked':
+      return updateFicha(state, action.id, (ficha) =>
+        updateAdvantage(ficha, action.index, (item) => ({ ...item, level: pickDots(item.level, action.dotIndex, ADVANTAGE_RANGE) })),
+      );
+    case 'advantage/removed':
+      return updateFicha(state, action.id, (ficha) =>
+        ficha.advantages[action.index] === undefined ? ficha : { ...ficha, advantages: ficha.advantages.toSpliced(action.index, 1) },
+      );
   }
 }
