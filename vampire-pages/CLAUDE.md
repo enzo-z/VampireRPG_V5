@@ -44,7 +44,7 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - Disciplinas têm nome editável (6 slots). Especializações são texto livre, sem placeholder.
 
 ## Vocabulário da UI (pt-BR)
-Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity. Pendente: decidir "Clan Bane" e "Player".
+Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity, Clan Bane, Player (decidido em 2026-10-15).
 
 ## Impressão (A)
 - `@media print`, página A4, `print-color-adjust: exact`. Conteúdo alvo ≤ ~1.670 px de altura (A4 sem margens a 96 dpi); com margens de 10 mm, ≤ ~1.720 px. A ficha não pode rolar nem estourar a página; se não couber, avise em vez de comprimir às cegas.
