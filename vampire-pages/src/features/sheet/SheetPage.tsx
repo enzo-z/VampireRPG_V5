@@ -20,7 +20,7 @@ interface SheetPageProps {
   /** Kept by the app, so switching fichas keeps the same page. */
   page: SheetPageName;
   onPageChange: (page: SheetPageName) => void;
-  onPrint: () => void;
+  onPrint: (id: string) => void;
   onDeleted: () => void;
   onOpenFicha: (id: string) => void;
 }

@@ -37,6 +37,10 @@
   font-size: var(--font-size-xs);
 }
 
+.alignEnd {
+  inset-inline: auto 0;
+}
+
 .item {
   display: block;
   inline-size: 100%;

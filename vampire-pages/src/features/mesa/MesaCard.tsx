@@ -2,6 +2,7 @@ import { HUNGER_MAX, type BoxState, type Ficha } from '../../domain/character.ts
 import { humanitySummary, visibleBoxes } from '../../domain/trackers.ts';
 import type { DamageTrackKey, SheetsAction } from '../../store/sheetsReducer.ts';
 import { Boxes } from '../../ui/Boxes.tsx';
+import { FichaActions } from '../sheet/FichaActions.tsx';
 import styles from './MesaCard.module.css';
 
 const DAMAGE_NAMES: Readonly<Record<BoxState, string>> = { 0: 'vazia', 1: 'dano superficial', 2: 'dano agravado' };
@@ -18,10 +19,11 @@ interface MesaCardProps {
   onOpen: () => void;
   /** Opens the full Saúde / Willpower tracker (maximum and damage). */
   onOpenTracker: (track: DamageTrackKey) => void;
+  onPrint: (id: string) => void;
 }
 
 /** One character at the table: identity line and live trackers. */
-export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker }: MesaCardProps) {
+export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker, onPrint }: MesaCardProps) {
   const { trackers } = ficha;
   const sub = [ficha.identity.clan, ficha.identity.player].map((part) => part.trim()).filter(Boolean).join(' · ');
   const hunger = Array.from({ length: HUNGER_MAX }, (_, index): BoxState => (index < trackers.hunger ? 2 : 0));
@@ -54,10 +56,22 @@ export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker }: MesaCar
 
   return (
     <article className={`${styles.card} ${active ? styles.active : ''}`} aria-label={ficha.name}>
-      <button type="button" className={styles.identity} onClick={onOpen} aria-label={`Abrir a ficha de ${ficha.name}`}>
-        <span className={styles.name}>{ficha.name}</span>
-        {sub !== '' && <span className={styles.sub}>{sub}</span>}
-      </button>
+      <div className={styles.head}>
+        <button type="button" className={styles.identity} onClick={onOpen} aria-label={`Abrir a ficha de ${ficha.name}`}>
+          <span className={styles.name}>{ficha.name}</span>
+          {sub !== '' && <span className={styles.sub}>{sub}</span>}
+        </button>
+        {/* On the Mesa everything stays put: the copy and the restored ficha appear as cards. */}
+        <FichaActions
+          ficha={ficha}
+          readOnly={edit === null}
+          onPrint={onPrint}
+          onDuplicated={() => undefined}
+          onDeleted={() => undefined}
+          onRestored={() => undefined}
+          align="end"
+        />
+      </div>
       <div className={styles.row}>
         <span className={styles.trackLabel}>Fome</span>
         <Boxes

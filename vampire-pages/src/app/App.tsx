@@ -32,6 +32,10 @@ function AppContent() {
     setView({ name: 'sheet' });
     sidebar.closeIfNarrow();
   };
+  const printFicha = (id: string) => {
+    dispatch({ type: 'ficha/activated', id });
+    setView({ name: 'print', autoPrint: true });
+  };
   const openMesa = () => {
     setView({ name: 'mesa' });
     sidebar.closeIfNarrow();
@@ -65,12 +69,12 @@ function AppContent() {
         readOnly={readOnly}
         page={page}
         onPageChange={setPage}
-        onPrint={() => setView({ name: 'print', autoPrint: true })}
+        onPrint={printFicha}
         onDeleted={openMesa}
         onOpenFicha={openFicha}
       />
     ) : (
-      <MesaView readOnly={readOnly} onOpenFicha={openFicha} />
+      <MesaView readOnly={readOnly} onOpenFicha={openFicha} onPrint={printFicha} />
     );
 
   return (

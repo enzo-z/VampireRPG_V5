@@ -12,10 +12,12 @@ interface MenuProps {
   label: string;
   trigger: ReactNode;
   items: readonly MenuItem[];
+  /** "end" opens the list aligned to the trigger's end edge (for triggers in a right corner). */
+  align?: 'start' | 'end';
 }
 
 /** Disclosure menu: closes on Escape, on outside click and after choosing an item. */
-export function Menu({ label, trigger, items }: MenuProps) {
+export function Menu({ label, trigger, items, align = 'start' }: MenuProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const menuId = useId();
@@ -50,7 +52,7 @@ export function Menu({ label, trigger, items }: MenuProps) {
         {trigger}
       </button>
       {open && (
-        <ul id={menuId} className={styles.menu}>
+        <ul id={menuId} className={`${styles.menu} ${align === 'end' ? styles.alignEnd : ''}`}>
           {items.map((item) => (
             <li key={item.label}>
               <button
