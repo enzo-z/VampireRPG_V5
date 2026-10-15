@@ -782,6 +782,8 @@ Apenas ancillae ou vampiros mais velhos podem escolher qualquer um destes Flaws.
 > - **Fonte**: Core, p. 180 · texto do app do Pedro
 > - **Pontos**: •
 > - **Apelidos**: Vivendo no Passado, Preso ao Passado
+> - **Restrição**: ancillae são os Abraçados entre 1780 e 1940, geração 10ª–11ª (Player's Guide, pp. 65 e 235). Neonates e childer (Abraçados depois de 1940) não podem escolher.
+> - **Regra da casa**: liberado para o Gideon, Abraçado em 1943.
 >
 > - **Sistema**:
 >   você não compreendeu a mentalidade moderna, ou simplesmente não quer. Você tem uma ou mais Convictions seriamente ultrapassadas, por exemplo “A palavra do Papa é lei”, “Mulheres são flores delicadas”, “As classes baixas existem apenas para servir” ou “Queime a bagagem dos seus inimigos”. Essas moralidades arcaicas mantêm sua Humanity, mas são odiosas para muitos; você perde um dado das pools de testes Sociais que envolvam essas crenças arcaicas, exceto com vampiros da sua idade ou mais velhos, que podem admirar sua virtude inabalável.
@@ -1029,6 +1031,7 @@ Veja Loresheets na p. 382 para mais.
 > - **Fonte**: Core, p. 392 · texto do app do Pedro
 > - **Pontos**: • a •••••
 > - **Apelidos**: Loresheet: Sect War Veteran, Veterano da Guerra de Seitas
+> - **Observação**: confirmado em Courts of the Damned e Gehenna War; não está no Children of the Blood. Na Auld Sanguine, o Vincent tem Trophy Kill (●●●).
 >
 > - **Sistema**:
 >   A guerra Sabbat–Camarilla pela América do Norte, nos anos 1990 e no início dos anos 2000, selou as seitas como inimigas de sangue eternas. Para exterminar os rivais e firmar o domínio sobre o continente, o Sabbat abriu caminho à força por domínios da Camarilla e dos Anarchs, matando Kindred sem piedade e revelando seus poderes aos mortais sem hesitar. A Camarilla percebeu que precisava reagir e montou uma defesa militante e forte, liderada por ícones como Theo Bell. Mais defensiva que ofensiva, ela retomou vários domínios no Sul dos Estados Unidos, embora bolsões de controle do Sabbat permaneçam em grandes cidades até hoje. Todo vampiro que participou tem uma história para contar sobre o que fez e o que sobreviveu.

@@ -122,14 +122,15 @@ O vampiro pode conferir uma medida de sutileza aos animais sob sua influência, 
 
 Alucinações breves (um sentido), como algo visto de relance ou voz fraca; não serve para falsificar um RG.
 
-> - **Fonte**: Player's Guide, pp. 76-77 · texto do app do Pedro
+> - **Fonte**: Player's Guide, pp. 76-77 · texto do app do Pedro (saiu antes no Companion; vale a versão do Player's Guide)
 > - **Custo**: 1 Rouse Check
 > - **Dice Pool**: Manipulation + Obfuscate vs Composure + Wits
 > - **Duração**: Um turno
 > - **Amálgama**: Presence 1
+> - **Observação**: a regra de uso em combate só existe no Player's Guide; o Companion não a tem.
 >
 > - **Sistema**:
->   Qualquer um despreparado e em linha de visão sofre -2 dados na próxima ação; quem falha em resistir com Composure + Wits perde a próxima ação ativa (ainda pode defender e resistir, com -2 dados). Diferente da maioria dos poderes de Presence, pode ser usado em combate, mas cada alvo só uma vez por conflito. Não pode ser gravado ou transmitido (ex.: Ghost in the Machine).
+>   Qualquer um despreparado e em linha de visão sofre -2 dados na próxima ação; quem falha em resistir com Composure + Wits perde a próxima ação ativa (ainda pode defender e resistir, com -2 dados). Diferente da maioria dos poderes de Presence, pode ser usado em combate, mas cada alvo só uma vez por conflito. Não pode ser gravado ou transmitido (ex.: Ghost in the Machine). Outros efeitos da alucinação ficam a critério do Narrador, que deve usá-los com cautela.
 
 ---
 ## Nível 3
