@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #rules #important #concept 
 
 ![[Pasted image 20241127193824.png]]
@@ -13,14 +16,29 @@
     - [[#Maldição dos Toreador|Maldição dos Toreador]]
     - [[#Maldição dos Tremere|Maldição dos Tremere]]
     - [[#Maldição dos Ventrue|Maldição dos Ventrue]]
+    - [[#Maldição dos Banu Haqim|Maldição dos Banu Haqim]]
+    - [[#Maldição dos Hecata|Maldição dos Hecata]]
+    - [[#Maldição dos Lasombra|Maldição dos Lasombra]]
+    - [[#Maldição do Ministry|Maldição do Ministry]]
+    - [[#Maldição dos Ravnos|Maldição dos Ravnos]]
+    - [[#Maldição dos Salubri|Maldição dos Salubri]]
+    - [[#Maldição dos Tzimisce|Maldição dos Tzimisce]]
 - [[#Compulsões de Clã|Compulsões de Clã]]
-    - [[#Brujah: Rebelião|Brujah: Rebelião]]
-    - [[#Gangrel: Impulsos Animais|Gangrel: Impulsos Animais]]
-    - [[#Malkavian: Delírio|Malkavian: Delírio]]
-    - [[#Nosferatu: Cryptophilia|Nosferatu: Cryptophilia]]
-    - [[#Toreador: Obsessão|Toreador: Obsessão]]
-    - [[#Tremere: Perfeccionismo|Tremere: Perfeccionismo]]
-    - [[#Ventrue: Arrogância|Ventrue: Arrogância]]
+    - [[#Brujah Rebelião|Brujah: Rebelião]]
+    - [[#Gangrel Impulsos Animais|Gangrel: Impulsos Animais]]
+    - [[#Malkavian Delírio|Malkavian: Delírio]]
+    - [[#Nosferatu Cryptophilia|Nosferatu: Cryptophilia]]
+    - [[#Toreador Obsessão|Toreador: Obsessão]]
+    - [[#Tremere Perfeccionismo|Tremere: Perfeccionismo]]
+    - [[#Ventrue Arrogância|Ventrue: Arrogância]]
+    - [[#Banu Haqim Julgamento|Banu Haqim: Julgamento]]
+    - [[#Hecata Morbidez|Hecata: Morbidez]]
+    - [[#Lasombra Implacabilidade|Lasombra: Implacabilidade]]
+    - [[#Ministry Transgressão|Ministry: Transgressão]]
+    - [[#Ravnos Tentar o Destino|Ravnos: Tentar o Destino]]
+    - [[#Salubri Empatia Afetiva|Salubri: Empatia Afetiva]]
+    - [[#Tzimisce Cobiça|Tzimisce: Cobiça]]
+- [[#Perfis dos Clãs|Perfis dos Clãs]]
 
 ---
 # Introdução
@@ -139,6 +157,74 @@ As preferências variam amplamente, indo de **Ventrue** que só podem se aliment
 
 
 ---
+### Maldição dos Banu Haqim
+
+Os **Banu Haqim** são viciados no Sangue de outros vampiros.
+
+- **Gatilho**: Saciar pelo menos **um nível de [[Fome]]** com vitae vampírica.
+- **Teste**: Um teste de **hunger frenzy** (Core, p. 220) com Dificuldade 2 + **Bane Severity**.
+- **Falha**: O vampiro tenta se empanturrar de sangue vampírico, às vezes até cometer [[Diablerie, Blood Bond, Ghouls#Diablerie|diablerie]] na vítima Kindred.
+
+*Fonte: Player's Guide, p. 18 · texto do app do Pedro*
+
+---
+### Maldição dos Hecata
+
+A mordida dos **Hecata** é agonizante.
+
+- **Só harmful drinks**: Ao beber diretamente de uma vítima, o Hecata só pode fazer *harmful drinks* (perda de sangue, Core, p. 212). Mortais não contidos tentam fugir.
+- **Vítimas coagidas ou voluntárias**: Mortais precisam passar em Stamina + Resolve contra Dificuldade 2 + **Bane Severity** para não se debaterem de dor. Vampiros fazem um teste de [[Frenzy|frenesi]] contra Dificuldade 3 para evitar o frenesi de terror.
+
+*Fonte: Player's Guide, pp. 23-24 · texto do app do Pedro*
+
+---
+### Maldição dos Lasombra
+
+- **Imagem Distorcida**: O reflexo e as gravações (ao vivo ou não) de um **Lasombra** saem distorcidos. Quem sabe o que procurar reconhece; quem não sabe percebe algo errado e culpa o meio. Isso **não esconde a identidade** do vampiro.
+- **Tecnologia**: Usar tecnologia de comunicação moderna, até uma simples ligação, exige um teste de **Technology** com Dificuldade 2 + **Bane Severity**. Para evitar sistemas eletrônicos de detecção de vampiros, sofre penalidade igual à **Bane Severity**.
+- Tecnologia de toque ou comando de voz tende a falhar com eles; muitos usam mortais ou ghouls como atendentes.
+
+*Fonte: Player's Guide, pp. 29-30 · texto do app do Pedro*
+
+---
+### Maldição do Ministry
+
+- **Luz Direta**: Quando luz brilhante, natural ou artificial, é dirigida diretamente ao **Minister**, ele sofre penalidade igual à **Bane Severity** em todas as dice pools.
+- **Sol**: Soma a **Bane Severity** ao dano Agravado recebido da luz do sol.
+
+*Fonte: Player's Guide, p. 36; Anarch · texto do app do Pedro*
+
+---
+### Maldição dos Ravnos
+
+O fogo do sol que incinerou o fundador do clã queima no Sangue de quem se fixa por muito tempo no mesmo lugar.
+
+- **Gatilho**: Dormir (daysleep, inclusive em torpor) no mesmo lugar **mais de uma vez em sete noites**.
+- **Penalidade**: Rola dados iguais à **Bane Severity** e sofre **dano Agravado** igual ao número de 10s.
+- Salvo outra escala definida na crônica, dois locais de descanso precisam estar a pelo menos **uma milha** de distância. Um refúgio móvel serve, desde que estacione a uma milha do último local.
+- Ravnos não podem escolher o Flaw **No Haven** na criação.
+
+*Fonte: Player's Guide, p. 42; Companion · texto do app do Pedro*
+
+---
+### Maldição dos Salubri
+
+- **Sangue Cobiçado**: Quando um não-Salubri bebe sangue Salubri e sacia ao menos um nível de [[Fome]], faz um teste de **hunger frenzy** (Core, p. 220) com Dificuldade 2 + a **Bane Severity** do Salubri (3 + Bane Severity para Banu Haqim). Se falhar, continua bebendo até ser afastado à força.
+- **Terceiro Olho**: Está sempre presente. Pode ser coberto fisicamente, mas nenhum poder o esconde, exceto os que escondem o Salubri inteiro. Sempre que o Salubri ativa um poder de Disciplina, o olho **chora vitae** (mais intenso quanto maior o nível), provocando um teste de hunger frenzy em vampiros próximos com **Fome 4 ou mais**.
+
+*Fonte: Player's Guide, p. 47 · texto do app do Pedro*
+
+---
+### Maldição dos Tzimisce
+
+- **Charge**: Cada **Tzimisce** escolhe uma "charge" clara e delimitada: um domínio físico, um grupo de pessoas (uma coterie, uma gangue, um culto), uma organização ou algo mais esotérico.
+- **Gatilho**: Deve passar o daysleep **cercado pela sua charge**.
+- **Penalidade**: Se não o fizer, sofre **dano Agravado de Willpower** igual à **Bane Severity** ao acordar na noite seguinte.
+
+*Fonte: Player's Guide, p. 54; Companion · texto do app do Pedro*
+
+
+---
 # Compulsões de Clã
 
 >**Atenção:** Leia sobre [[Fome]], [[Fome#A Besta Bestial Failure|Bestial Failure]], [[Fome#Compulsões|Compulsões]], e saiba [[Entendendo Dados e Ficha#Bestial Failure|reconhecer Bestial Failure em rolagens]] para uma melhor compreensão. 
@@ -210,3 +296,334 @@ A necessidade de governar toma conta do vampiro, que faz de tudo para assumir o 
 
 >- **Penalidade**: Todas as ações que não estejam diretamente relacionadas à liderança sofrem uma **penalidade de dois dados** na [[Entendendo Dados e Ficha#Dice Pool|dice pool]].
 >- A Compulsão dura até que uma ordem do vampiro seja obedecida. A obediência, no entanto, **não pode ser forçada sobrenaturalmente**, como por meio de [[Disciplinas#Dominate|Dominate]] ou outros poderes.
+
+---
+## Banu Haqim: Julgamento
+
+O vampiro é compelido a punir quem transgrida um código pessoal.
+
+>- **Penalidade**: Por uma [[Regras Fundamentais#Scene|cena]], deve saciar pelo menos um nível de [[Fome]] de qualquer um, amigo ou inimigo, que aja contra uma **Conviction** dele. Até conseguir, sofre ***penalidade de três dados*** em todas as rolagens, ou até a cena acabar.
+>- Se a vítima for vampiro, vale o teste de hunger frenzy da [[#Maldição dos Banu Haqim|Maldição]].
+
+*Fonte: Player's Guide, p. 18 · texto do app do Pedro*
+
+---
+## Hecata: Morbidez
+
+O vampiro precisa mover algo da vida para a morte, ou vice-versa: um objeto, uma ideia, uma conversa; não precisa ser uma pessoa.
+
+>- **Penalidade**: Qualquer ação que não vise encerrar ou ressuscitar algo sofre ***penalidade de dois dados***.
+>- Dura até o vampiro conseguir matar ou devolver à vida alguma coisa, figurada ou literalmente.
+
+*Fonte: Player's Guide, p. 24 · texto do app do Pedro*
+
+---
+## Lasombra: Implacabilidade
+
+O vampiro escala para métodos cada vez mais implacáveis.
+
+>- **Penalidade**: Na próxima vez que falhar em qualquer ação, sofre ***penalidade de dois dados*** em todas as rolagens, até uma nova tentativa da mesma ação ter sucesso ou a [[Regras Fundamentais#Scene|cena]] acabar.
+>- A penalidade vale também para as novas tentativas da ação que a disparou.
+
+*Fonte: Player's Guide, p. 30 · texto do app do Pedro*
+
+---
+## Ministry: Transgressão
+
+O vampiro precisa levar alguém, inclusive ele mesmo, a quebrar o que acredita.
+
+>- **Penalidade**: ***Dois dados a menos*** em todas as dice pools que não visem seduzir alguém a quebrar um **Chronicle Tenet** ou uma **Conviction**.
+>- Causar ao menos uma **Stain** encerra a Compulsão.
+
+*Fonte: Player's Guide, p. 36 · texto do app do Pedro*
+
+---
+## Ravnos: Tentar o Destino
+
+Na próxima vez que enfrentar um problema, o vampiro só aceita a solução mais ousada ou perigosa.
+
+>- **Penalidade**: Qualquer tentativa que não seja a mais ousada ou perigosa sofre ***penalidade de dois dados***. Tentativas chamativas e arriscadas o bastante podem até ganhar dados de bônus, a critério do Narrador.
+>- Persiste até o problema ser resolvido ou novas tentativas se tornarem impossíveis.
+
+*Fonte: Player's Guide, p. 42 · texto do app do Pedro*
+
+---
+## Salubri: Empatia Afetiva
+
+O vampiro é tomado de empatia por um problema pessoal de alguém na cena, de qualquer escala, e busca resolvê-lo.
+
+>- **Penalidade**: Toda ação que não vise mitigar essa tragédia sofre ***penalidade de dois dados***.
+>- Persiste até o fardo ser aliviado, uma crise mais imediata se sobrepor ou a [[Regras Fundamentais#Scene|cena]] acabar.
+
+*Fonte: Player's Guide, pp. 47-48 · texto do app do Pedro*
+
+---
+## Tzimisce: Cobiça
+
+O vampiro fica obcecado em possuir algo na cena: um objeto, uma propriedade ou uma pessoa.
+
+>- **Penalidade**: Toda ação que não vise isso sofre ***penalidade de dois dados***.
+>- Persiste até a posse ser estabelecida (o Narrador decide o que é "posse" quando não é um objeto) ou o objeto de desejo se tornar inalcançável.
+
+*Fonte: Player's Guide, p. 54 · texto do app do Pedro*
+
+
+---
+# Perfis dos Clãs
+
+Um perfil por clã, mais Caitiff e Thin-Bloods: seita, Disciplinas do clã e resumos da Maldição e da Compulsão (curtos o bastante para a ficha impressa). O app mostra estes perfis no painel do campo **Clã**, junto com a Maldição e a Compulsão completas das seções acima.
+
+## Brujah
+
+> - **Fonte**: Core, pp. 64-67 · texto do app do Pedro
+> - **Apelidos**: Rabble, Punks, Rebels
+> - **Seita**: Anarquistas (muitos) · Camarilla (os que permaneceram)
+> - **Disciplinas**: Celerity, Potence, Presence
+> - **Bane (resumo)**: Subtrai Bane Severity dados em testes para resistir ao Frenesi de Fúria (mínimo de 1 dado).
+> - **Compulsão (resumo)**: −2 dados em todas as rolagens até desafiar ordens ou expectativas, ou mudar a opinião de alguém.
+>
+> - **Sistema**:
+>   O Core chama os Brujah de "clã erudito" (apelidos: Rabble, Punks, Hipsters, Prometheans, Rebels, Philosopher-Kings, Hellenes). Seu sonho é um mundo sem injustiça, em que vivos e mortos coexistam em paz; dizem agir por amor aos mortais, mas talvez apenas se enfureçam contra um Deus distante ou uma maldição que não podem encerrar. A fome e a paixão do clã garantem que o sangue corra, que inocentes morram e que a paz nunca venha.
+>
+>   Os Brujah Abraçam quem simpatiza com a contracultura e a revolução e gravita para o underdog: punks, membros de gangues, imigrantes rejeitados, mas também o fraudador que rouba a própria empresa ou o advogado que atua pro bono. Os recém-Abraçados para lutar e protestar são os *rabble*; os Brujah filosóficos, os *Hellenes*, acreditam que o melhor modo de desmontar o establishment é entender os sistemas que o sustentam. O clã já foi considerado um High Clan, e muitos Brujah deixaram a Camarilla.
+>
+>   **Para o Narrador:** Brujah são PNJs excelentes para criar pressão dramática: difíceis de manipular, impossíveis de intimidar e dispostos a dizer em voz alta o que outros sussurram. Um Brujah aliado é um aliado que diz a verdade. Um Brujah inimigo não esquece.
+
+---
+## Gangrel
+
+> - **Fonte**: Core, pp. 68-73 · texto do app do Pedro
+> - **Apelidos**: Animals, Ferals, Outcasts
+> - **Seita**: Independente (maioria) · Camarilla (poucos) · Anarquistas (alguns)
+> - **Disciplinas**: Animalism, Fortitude, Protean
+> - **Bane (resumo)**: Em frenesi, ganha traços animais (quantidade igual à Bane Severity), cada um −1 em um Atributo, por mais uma noite. Ao Surfar a Onda, escolhe só um.
+> - **Compulsão (resumo)**: Por uma cena, −3 dados em Manipulation e Intelligence e só fala frases de uma palavra.
+>
+> - **Sistema**:
+>   O Core chama os Gangrel de "Clan of the Beast" (Animals, Ferals, Savages, Barbarians, Outcasts, Wolves, Strays). Enquanto outros Kindred amaldiçoam seus apetites e escolhem a jaula dourada da cidade, os Gangrel aceitam a Besta como parte de si e correm livres; deram as costas à Camarilla. Fazem haven nas partes mais pobres da cidade, reivindicam poucos domínios e não se curvam a nenhum príncipe.
+>
+>   Abraçam sobreviventes e lutadores: líderes de gangues de prisão, exploradores, qualquer mortal que veja o mundo como algo a atravessar. Valorizam realizações e reputação, e o clã segue rituais e iniciações para garantir que o novato valha o esforço.
+>
+>   **Para o Narrador:** Gangrel ligam o mundo urbano dos Kindred ao que está fora: florestas, periferia, lugares sem Príncipe. Um PNJ Gangrel raramente pede favores políticos; pede algo concreto ou oferece informação que não se encontra no Elísio.
+
+---
+## Malkavian
+
+> - **Fonte**: Core, pp. 74-79 · texto do app do Pedro
+> - **Apelidos**: Lunatics, Oracles, Children of Malkav
+> - **Seita**: Camarilla (maioria)
+> - **Disciplinas**: Auspex, Dominate, Obfuscate
+> - **Bane (resumo)**: Em Bestial Failure ou Compulsão, −Bane Severity dados em uma categoria de pool (Físico, Social ou Mental) durante a cena.
+> - **Compulsão (resumo)**: Por uma cena, −2 dados em Dexterity, Manipulation, Composure e Wits, e para resistir ao frenesi de terror.
+>
+> - **Sistema**:
+>   O Core chama os Malkavian de "Clan of the Moon" (Lunatics, Madmen, Jesters, Oracles, Dervishes, Visionaries, Children of Malkav). A insanidade deles viria de ver demais do mundo de uma vez, de entender fundo demais e de sentir emoções fortes demais; eles se automedicam com sangue.
+>
+>   Quem Abraça vê no mortal algo visível só a um Malkavian: "second sight" (interpretar sonhos, perceber espíritos, prever eventos), "insight" (empatia elevada, obsessão por perguntas filosóficas; por isso há muitos acadêmicos, médicos e terapeutas) ou o "broken", quem foi mudado por trauma. Alguns dizem estar ligados por uma consciência compartilhada, a *cobweb* ou *madness network*.
+>
+>   **Para o Narrador:** Um PNJ Malkavian bem feito transmite foreshadowing, revela verdades que outros negariam e cria ambiguidade entre loucura e visão. Evite o clichê do louco inofensivo; os mais perigosos são os que parecem coerentes.
+
+---
+## Nosferatu
+
+> - **Fonte**: Core, pp. 80-85 · texto do app do Pedro
+> - **Apelidos**: Sewer Rats, Lepers, Orloks
+> - **Seita**: Camarilla (maioria)
+> - **Disciplinas**: Animalism, Obfuscate, Potence
+> - **Bane (resumo)**: Tem o Flaw Repulsive (−2) e não aumenta Aparência. Disfarçar-se de humano sofre −Bane Severity dados (inclui Obfuscate).
+> - **Compulsão (resumo)**: −2 dados em ações que não busquem um segredo, até aprender um segredo útil.
+>
+> - **Sistema**:
+>   O Core chama os Nosferatu de "Clan of the Hidden" (Horrors, Sewer Rats, Lepers, Hives, Carnies, Scabs, Kapos, Vagrants, Orloks). Talvez a dor e a humilhação ensinem compaixão: os próprios Nosferatu se consideram os mais humanos dos Kindred, usando a maldição por fora em vez de por dentro.
+>
+>   Depois que a Second Inquisition encontrou a SchreckNET, o clã perdeu credibilidade e membros, mas os que resistiram dominam o arquivamento seguro, físico e online. Gostam do subterrâneo (esgotos, catacumbas, estações de metrô abandonadas) e vão para o esconderijo antes de o pânico se espalhar.
+>
+>   **Para o Narrador:** Nosferatu são o serviço de inteligência da noite. Se os PCs precisam de informação sobre um PNJ poderoso, o caminho mais curto passa por um Nosferatu. O preço nunca é dinheiro: é informação, favor ou serviço.
+
+---
+## Toreador
+
+> - **Fonte**: Core, pp. 86-91 · texto do app do Pedro
+> - **Apelidos**: Divas, Artists, Hedonists
+> - **Seita**: Camarilla (maioria)
+> - **Disciplinas**: Auspex, Celerity, Presence
+> - **Bane (resumo)**: Em ambientes que não são belos, −Bane Severity dados nas pools de Disciplinas.
+> - **Compulsão (resumo)**: Fixa-se em algo belo: −2 dados em qualquer outra ação, até perder o objeto de vista ou a cena acabar.
+>
+> - **Sistema**:
+>   O Core chama os Toreador de "Clan of the Rose" (Divas, Degenerates, Artists, Harlots, Arikelites, Hedonists, Sensates, Perverts), obcecados por perfeição estética. Dizem liderar a Camarilla ao lado dos Ventrue e dos Tremere e se veem como a voz, a inspiração e a alma que une a seita.
+>
+>   O clã prega seletividade no Abraço: quer pioneiros das artes e da vanguarda, e entende "arte" como qualquer forma de entretenimento e estímulo (atores, cantores, escritores, dançarinos e até profissionais do sexo). Mesmo assim, a fixação em beleza leva muitos a Abraçar com pressa, gerando hedonistas rasos e "one-hit wonders".
+>
+>   **Para o Narrador:** Toreador são o coração social da Camarilla: controlam o Elísio, definem o que é culturalmente aceitável e usam reputação como arma. Um Toreador inimigo pode destruir a posição social de um PC sem nunca usar uma Disciplina.
+
+---
+## Tremere
+
+> - **Fonte**: Core, pp. 92-97 · texto do app do Pedro
+> - **Apelidos**: Warlocks, Usurpers, Blood Witches
+> - **Seita**: Camarilla (pilar central)
+> - **Disciplinas**: Auspex, Dominate, Blood Sorcery
+> - **Bane (resumo)**: Não forma Blood Bond com Kindred. Para vincular mortais e ghouls, a vitae deve ser dada Bane Severity vezes a mais.
+> - **Compulsão (resumo)**: −2 dados em todos os testes até um sucesso crítico em Skill ou o fim da cena. Ao repetir a ação a penalidade cai para −1 e depois some.
+>
+> - **Sistema**:
+>   O Core apresenta os Tremere como "Usurpers, Warlocks, Hermetics, Thaumaturges, Transgressors, The Broken Clan, Blood Witches". Tremere era um mago hermético que, ao buscar a imortalidade com seus seguidores, descobriu a maldição de Caim: morreram e acordaram vampiros, afastados da sua arte. Hoje só sangue fresco permite a eles lançar feitiços.
+>
+>   Depois que a Second Inquisition destruiu a Prime Chantry em Viena, em 2008, os Tremere caíram de "eminências pardas" a personae non gratae em muitas regiões. Sem a Pirâmide, disputam entre si e com os outros Kindred qualquer coisa que devolva poder (artefatos, grimórios); "mercenary magus" é um termo cada vez mais comum.
+>
+>   **Para o Narrador:** Tremere são o recurso sobrenatural por excelência: se alguém sabe sobre Blood Sorcery, rituais ou ocultismo vampírico, é um Tremere. São aliados valiosos e inimigos perigosos, e nunca se sabe quando a lealdade ao clã supera a amizade pessoal.
+
+---
+## Ventrue
+
+> - **Fonte**: Core, pp. 98-103 · texto do app do Pedro
+> - **Apelidos**: Blue Bloods, Tyrants, Patricians
+> - **Seita**: Camarilla (fundadores, pilares)
+> - **Disciplinas**: Dominate, Fortitude, Presence
+> - **Bane (resumo)**: Só se alimenta da sua preferência. Beber outro sangue custa Willpower igual à Bane Severity, ou volta como vômito.
+> - **Compulsão (resumo)**: −2 dados em ações sem relação com liderança, até alguém obedecer a uma ordem dele (sem poderes sobrenaturais).
+>
+> - **Sistema**:
+>   O Core chama os Ventrue de "Clan of Kings" (Blue Bloods, Tyrants, Warlords, Patricians, Borgias, the Cult of Mithras). Em sua própria visão, só eles têm a contenção, a sabedoria, o controle e o pedigree para liderar os Kindred; são obcecados pelo impulso de governar.
+>
+>   O clã acredita na força da tradição e da linhagem: o Abraço é um dos rituais mais importantes, e a escolha do childe afeta como os outros Ventrue tratam o sire. Abraçam *overachievers* e mortais com poder político ou financeiro. Hoje os melhores se misturam como banqueiros, diretores nas sombras e magnatas reclusos.
+>
+>   **Para o Narrador:** Ventrue são os chefes dos chefes da Camarilla. Se um PC precisa de proteção institucional, recursos ou legitimidade política, o caminho passa por um Ventrue. O preço é obrigação, cobrada com juros.
+
+---
+## Banu Haqim
+
+> - **Fonte**: Player's Guide, p. 18 · texto do app do Pedro
+> - **Apelidos**: Assamita, Assamitas, Haqim
+> - **Seita**: Camarilla (entrada formal recente) · independentes · Anarquistas
+> - **Disciplinas**: Celerity, Obfuscate, Blood Sorcery
+> - **Bane (resumo)**: Saciar Hunger com vitae vampírica exige teste de hunger frenzy (Dif. 2 + Bane Severity). Falhar arrisca diablerie.
+> - **Compulsão (resumo)**: Pune quem age contra uma Conviction dele, saciando Hunger dessa pessoa. Senão, −3 dados em tudo até cumprir ou a cena acabar.
+>
+> - **Sistema**:
+>   Antes chamados de Assamitas, os Banu Haqim são uma linhagem de origem árabe com longa história de assassinos e juízes sobrenaturais. Por séculos operaram como mercenários independentes: matavam vampiros por contrato e bebiam seu sangue como pagamento e como ritual.
+>
+>   Uma facção significativa do clã ingressou na Camarilla após negociações tensas, o que não foi bem recebido por todos, dentro e fora do clã. Os que ficaram de fora continuam independentes ou com os Anarquistas. Banu Haqim podem tomar Blood Sorcery com os Predator Types Bagger ou Osiris.
+
+---
+## Hecata
+
+> - **Fonte**: Player's Guide, pp. 23-24 · texto do app do Pedro
+> - **Apelidos**: Giovanni, Samedi
+> - **Seita**: Independente
+> - **Disciplinas**: Auspex, Fortitude, Oblivion
+> - **Bane (resumo)**: Só faz harmful drinks. A vítima passa em Stamina + Resolve (Dif. 2 + Bane Severity) para não se debater de dor.
+> - **Compulsão (resumo)**: −2 dados em ações que não encerrem ou ressuscitem algo, até matar ou devolver à vida alguma coisa.
+>
+> - **Sistema**:
+>   Os Hecata são uma confederação de linhagens necromânticas que se uniram por necessidade: os Giovanni (mercadores venezianos da morte), os Samedi (de aparência cadavérica), os Harbingers of Skulls e outras linhagens menores. Todos compartilham afinidade com a morte, o mundo espiritual e o trato com fantasmas, e vendem seus serviços a quem pagar.
+>
+>   **Para o Narrador:** Hecata são o recurso de morte da mesa: comunicação com mortos, causa de óbito, rastreio de fantasmas. O serviço é vendido, não dado. A confederação é instável; um Giovanni e um Samedi podem ter visões opostas sobre o que fazer com a informação dos PCs.
+
+---
+## Lasombra
+
+> - **Fonte**: Player's Guide, pp. 28-30 · texto do app do Pedro
+> - **Apelidos**: Keepers, Magisters
+> - **Seita**: Em transição: parte na Camarilla, parte no Sabbat
+> - **Disciplinas**: Dominate, Oblivion, Potence
+> - **Bane (resumo)**: Reflexo e gravações distorcidos. Tecnologia de comunicação exige Technology (Dif. 2 + Bane Severity).
+> - **Compulsão (resumo)**: Após a próxima falha, −2 dados em todas as rolagens até uma nova tentativa da mesma ação ter sucesso ou a cena acabar.
+>
+> - **Sistema**:
+>   Os Lasombra esperam triunfar a qualquer custo e preferem agir como titereiros, "poderes por trás do trono". Historicamente influenciaram todas as seitas: foram rebeldes na Anarch Revolt, senhores de guerra do Sabbat nas Américas e recrutas respeitáveis da Camarilla na era da Second Inquisition.
+>
+>   **Para o Narrador:** Lasombra são os melhores aliados perigosos: sempre têm uma agenda, mas ela converge com a dos PCs com frequência. Use a imagem distorcida e o atrito com tecnologia em cenas de tensão (câmera de segurança, foto de grupo, ligação que não completa).
+
+---
+## Ministry
+
+> - **Fonte**: Player's Guide, p. 36 · texto do app do Pedro
+> - **Apelidos**: The Ministry, Ministério, Setitas, Seguidores de Set
+> - **Seita**: Anarquistas (majoritariamente)
+> - **Disciplinas**: Obfuscate, Presence, Protean
+> - **Bane (resumo)**: Luz direta dá −Bane Severity dados em todas as pools. Soma Bane Severity ao dano agravado do sol.
+> - **Compulsão (resumo)**: −2 dados em pools que não visem seduzir alguém a quebrar um Tenet ou Conviction. Termina ao causar 1 Stain.
+>
+> - **Sistema**:
+>   Antes conhecidos como Followers of Set, o Ministry é um culto vampírico em torno de Set, divindade egípcia do caos e da subversão. Apresentam-se como "libertadores", oferecendo exatamente o que cada pessoa mais deseja e cobrando depois. Não impõem; seduzem.
+>
+>   **Para o Narrador:** Ministry são facilitadores: sabem o que cada um quer e vendem acesso ao impossível, sempre com uma transação moral incômoda. Qualquer relação com eles é ao mesmo tempo genuína e transacional. Use-os como tentações com rosto, não como vilões simples.
+
+---
+## Ravnos
+
+> - **Fonte**: Player's Guide, pp. 41-42 · texto do app do Pedro
+> - **Apelidos**: Ilusionistas
+> - **Seita**: Independente
+> - **Disciplinas**: Animalism, Obfuscate, Presence
+> - **Bane (resumo)**: Dormir no mesmo local mais de uma vez em 7 noites: rola Bane Severity dados e sofre dano agravado por cada 10.
+> - **Compulsão (resumo)**: Soluções que não sejam a mais ousada ou perigosa sofrem −2 dados, até o problema ser resolvido.
+>
+> - **Sistema**:
+>   Os Ravnos são nômades, ligados a tradições de ilusionismo e engano. O clã foi quase destruído na "Semana de Pesadelos": segundo o Core, o Antediluviano Ravnos encontrou a Morte Final em julho de 1999, e antes de morrer drenou vitae de todo o seu clã, levando-os a frenesi e canibalismo (Core, Loresheet The Week of Nightmares, p. 395). Os sobreviventes são raros, paranoicos e extraordinariamente adaptáveis.
+>
+>   **Animalism**: a critério do Narrador, reduza em 1 a Dificuldade de testes de Animalism com corvos, raposas, coiotes, aranhas e macacos, e aumente-a para os demais animais (Player's Guide, p. 41).
+>
+>   **Para o Narrador:** A Maldição cria pressão natural de movimento: o Ravnos precisa mudar de local de repouso a cada noite ou manter um refúgio móvel. A Compulsão é um motor narrativo: use-a para forçar decisões dramáticas em momentos de tensão.
+
+---
+## Salubri
+
+> - **Fonte**: Player's Guide, pp. 47-48 · texto do app do Pedro
+> - **Apelidos**: Ciclopes
+> - **Seita**: Independente (raros)
+> - **Disciplinas**: Auspex, Dominate, Fortitude
+> - **Bane (resumo)**: O terceiro olho chora vitae ao usar Disciplinas e o sangue Salubri provoca hunger frenzy em outros Kindred.
+> - **Compulsão (resumo)**: −2 dados em tudo que não alivie o problema de alguém na cena.
+>
+> - **Sistema**:
+>   Os Salubri são quase uma lenda: acreditava-se que os Tremere os haviam destruído, caçando-os para roubar seu poder e legitimidade. Alguns sobrevivem em segredo, muitas vezes como monges ou curandeiros que oferecem seus serviços em troca de proteção. Têm um código de ética rígido e tendem a ajudar mortais e Kindred feridos.
+>
+>   **Para o Narrador:** Salubri funcionam como personagens raros e perturbadores: um curador que cobra um preço inesperado, um fugitivo a proteger de um Tremere implacável. Todo uso de Disciplina em público é arriscado, e o sangue deles é um perigo para quem o prova.
+
+---
+## Tzimisce
+
+> - **Fonte**: Player's Guide, p. 54 · texto do app do Pedro
+> - **Apelidos**: Dragões, Fiends
+> - **Seita**: Sabbat (majoritariamente)
+> - **Disciplinas**: Animalism, Dominate, Protean
+> - **Bane (resumo)**: Deve passar o daysleep cercado pela sua charge. Senão, sofre dano agravado de Willpower igual à Bane Severity.
+> - **Compulsão (resumo)**: −2 dados em ações que não visem possuir algo da cena, até a posse ser estabelecida ou ficar inalcançável.
+>
+> - **Sistema**:
+>   Os Tzimisce constroem a identidade em torno da ideia de que o corpo é uma obra inacabada; os suplementos trazem regras de Vicissitude, a modelagem de carne e osso pela qual são conhecidos. São profundamente territoriais: estabelecem um domínio e o defendem com ferocidade. Convidados recebem hospitalidade elaborada, e quem a viola é punido com extrema crueldade.
+>
+>   **Para o Narrador:** Um PC Tzimisce precisa definir sua "charge" na criação, uma ótima fonte de ganchos. Como aliados são perturbadores: a lealdade é real, mas possessiva.
+
+---
+## Caitiff
+
+> - **Fonte**: Core, p. 107 · texto do app do Pedro
+> - **Apelidos**: Sem clã
+> - **Seita**: Qualquer
+> - **Disciplinas**: Quaisquer três, à escolha (nenhuma conta como de clã)
+> - **Bane (resumo)**: Sem Bane de clã. Começa com o Flaw Suspect (•) e sem Status positivo.
+> - **Compulsão (resumo)**: Sem Compulsão de clã.
+>
+> - **Sistema**:
+>   Caitiff não são um clã, são a ausência de um: vampiros cujo Sangue não carrega marca de linhagem identificável, ou cujo sire não os reconhece. Na Camarilla são tratados com suspeita; entre os Anarquistas, encontram mais aceitação.
+>
+>   Começam com o Flaw **Suspect (•)** e não podem comprar Status positivo na criação; o Narrador pode impor penalidade de 1 ou 2 dados em testes sociais contra Kindred que saibam que são Caitiff. Melhorar qualquer Disciplina custa nível × 6 de XP.
+
+---
+## Thin-Blood
+
+> - **Fonte**: Core, pp. 108-113 · texto do app do Pedro
+> - **Apelidos**: Sangue-Fraco, Sangue Ralo, Duskborn
+> - **Seita**: Nenhuma formal
+> - **Disciplinas**: Temporárias, pela Resonance do sangue bebido; Thin-blood Alchemy
+> - **Bane (resumo)**: Sem Bane de clã, a não ser pelo Flaw Clan Curse.
+> - **Compulsão (resumo)**: Sem Compulsão de clã.
+>
+> - **Sistema**:
+>   Thin-bloods são vampiros de 14ª a 16ª geração, com Blood Potency 0, cujo Sangue mal conta como vitae. Sofrem dano como mortais, só entram em frenesi por meios sobrenaturais e sofrem apenas 1 ponto de dano Superficial por turno sob sol direto. Não criam Blood Bonds nem realizam o Abraço com certeza.
+>
+>   Não têm Disciplinas iniciais: a cada alimentação ganham 1 ponto numa Disciplina ligada à Resonance do sangue, até a Fome chegar a 5 ou a próxima alimentação. Sua habilidade característica é a [[Thin-blood Alchemy]].
