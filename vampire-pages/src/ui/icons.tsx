@@ -101,3 +101,44 @@ export const MoreIcon = () => (
     <circle cx="19" cy="12" r="1" />
   </Icon>
 );
+
+export const TableIcon = () => (
+  <Icon>
+    <rect x="3" y="3" width="7" height="7" />
+    <rect x="14" y="3" width="7" height="7" />
+    <rect x="3" y="14" width="7" height="7" />
+    <rect x="14" y="14" width="7" height="7" />
+  </Icon>
+);
+
+export const BookIcon = () => (
+  <Icon>
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z" />
+    <path d="M6.5 17A2.5 2.5 0 0 0 4 19.5 2.5 2.5 0 0 0 6.5 22H20v-5" />
+  </Icon>
+);
+
+export const ListIcon = () => (
+  <Icon>
+    <path d="M9 6h12M9 12h12M9 18h12" />
+    <path d="M4 6h.01M4 12h.01M4 18h.01" />
+  </Icon>
+);
+
+export const ChevronLeftIcon = () => (
+  <Icon>
+    <path d="M15 18l-6-6 6-6" />
+  </Icon>
+);
+
+export const ChevronRightIcon = () => (
+  <Icon>
+    <path d="M9 18l6-6-6-6" />
+  </Icon>
+);
+
+export const MenuIcon = () => (
+  <Icon>
+    <path d="M3 6h18M3 12h18M3 18h18" />
+  </Icon>
+);

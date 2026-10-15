@@ -16,6 +16,7 @@
   --palette-rose: #dcc3c7;         /* sheet frame edge, decorative only */
   --palette-crimson: #790914;      /* book accent (sheet: #730e1e) */
   --palette-crimson-deep: #5c0610; /* derived, hover/pressed, 14.1:1 on paper */
+  --palette-ink-veil: rgb(35 31 32 / 0.45); /* ink at 45%, behind drawers and dialogs */
 
   /* ---------- Semantic colors ---------- */
   --color-surface: var(--palette-paper);
@@ -39,6 +40,7 @@
   --color-accent-hover: var(--palette-crimson-deep);
   --color-accent-subtle: var(--palette-paper-tint);
   --color-focus-ring: var(--palette-crimson);
+  --color-scrim: var(--palette-ink-veil);       /* behind drawers and dialogs */
 
   --color-trait-border: var(--palette-ink);
   --color-trait-empty: var(--palette-paper);
@@ -98,6 +100,8 @@
   /* ---------- Layers (z-index) ---------- */
   --layer-sticky: 10;
   --layer-popover: 20;
+  --layer-drawer: 30;
+  --layer-dialog: 40;
   --layer-toast: 50;
 }
 

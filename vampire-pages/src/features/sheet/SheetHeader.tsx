@@ -1,7 +1,6 @@
 import { serializeSheetFile } from '../../schema/importExport.ts';
 import { useSheets } from '../../store/SheetsProvider.tsx';
-import { IconButton } from '../../ui/IconButton.tsx';
-import { DownloadIcon, EyeIcon, EyeOffIcon } from '../../ui/icons.tsx';
+import { DownloadIcon } from '../../ui/icons.tsx';
 import { Menu } from '../../ui/Menu.tsx';
 import { useToast } from '../../ui/Toast.tsx';
 import { downloadText, jsonFileName } from './fileTransfer.ts';
@@ -11,11 +10,10 @@ import { useSheet } from './SheetContext.tsx';
 import styles from './SheetHeader.module.css';
 
 interface SheetHeaderProps {
-  onToggleReadOnly: () => void;
   onPrint: () => void;
 }
 
-export function SheetHeader({ onToggleReadOnly, onPrint }: SheetHeaderProps) {
+export function SheetHeader({ onPrint }: SheetHeaderProps) {
   const { ficha, readOnly, edit } = useSheet();
   const { dispatch } = useSheets();
   const { notify } = useToast();
@@ -51,13 +49,6 @@ export function SheetHeader({ onToggleReadOnly, onPrint }: SheetHeaderProps) {
             onKeyDown={(event) => {
               if (event.key === 'Enter') event.currentTarget.blur();
             }}
-          />
-          <IconButton
-            label={readOnly ? 'Modo leitura ativo. Clique para permitir edição' : 'Ativar modo leitura'}
-            icon={readOnly ? <EyeIcon /> : <EyeOffIcon />}
-            active={readOnly}
-            aria-pressed={readOnly}
-            onClick={onToggleReadOnly}
           />
           <Menu
             label="Exportar ficha"

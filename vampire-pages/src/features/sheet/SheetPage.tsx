@@ -20,7 +20,6 @@ interface SheetPageProps {
   /** Kept by the app, so switching fichas keeps the same page. */
   page: SheetPageName;
   onPageChange: (page: SheetPageName) => void;
-  onToggleReadOnly: () => void;
   onPrint: () => void;
 }
 
@@ -45,7 +44,7 @@ function PageContent({ page }: { page: SheetPageName }) {
 }
 
 /** Ficha B. Render with key={ficha.id} so selection and drafts reset when switching fichas. */
-export function SheetPage({ ficha, readOnly, page, onPageChange, onToggleReadOnly, onPrint }: SheetPageProps) {
+export function SheetPage({ ficha, readOnly, page, onPageChange, onPrint }: SheetPageProps) {
   const { dispatch } = useSheets();
   const [selection, setSelection] = useState<Selection | null>(null);
   const tabsAnchor = useRef<HTMLDivElement>(null);
@@ -91,7 +90,7 @@ export function SheetPage({ ficha, readOnly, page, onPageChange, onToggleReadOnl
 
   return (
     <SheetContext value={value}>
-      <SheetHeader onToggleReadOnly={onToggleReadOnly} onPrint={onPrint} />
+      <SheetHeader onPrint={onPrint} />
       <div ref={tabsAnchor} />
       <PageTabs page={page} onChange={changePage} />
       <div className={styles.body}>

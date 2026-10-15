@@ -1,0 +1,204 @@
+/* Main menu. Wide screens: a column that collapses to icons. Narrow screens: a
+   drawer over the content (opened from the top bar). */
+.sidebar {
+  position: sticky;
+  inset-block-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  block-size: 100vh;
+  block-size: 100dvh;
+  padding: var(--space-3) 0;
+  overflow-y: auto;
+  border-inline-end: var(--border-width-hairline) solid var(--color-border);
+  background: var(--color-surface-tint);
+  font-family: var(--font-serif);
+}
+
+.sidebar[hidden] {
+  display: none;
+}
+
+.open {
+  inline-size: 15rem;
+}
+
+.closed {
+  inline-size: 3.5rem;
+}
+
+.drawer {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 0;
+  z-index: var(--layer-drawer);
+  inline-size: min(17rem, 85vw);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+.closed .top {
+  justify-content: center;
+  padding-inline: 0;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-tight);
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2rem;
+  block-size: 2rem;
+  padding: 0;
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-accent);
+  cursor: pointer;
+}
+
+.group {
+  padding: var(--space-2) var(--space-4) var(--space-1);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.item,
+.ficha {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  inline-size: 100%;
+  min-block-size: 2.5rem;
+  padding: 0 var(--space-4);
+  border: 0;
+  border-inline-start: var(--border-width-thick) solid transparent;
+  background: transparent;
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-align: start;
+  cursor: pointer;
+}
+
+.closed .item,
+.closed .ficha {
+  justify-content: center;
+  padding: 0;
+}
+
+.item:hover:not(:disabled),
+.ficha:hover {
+  background: var(--color-surface);
+}
+
+.item:disabled {
+  color: var(--color-text-subtle);
+  cursor: not-allowed;
+}
+
+.current,
+.current:hover {
+  border-inline-start-color: var(--color-rule);
+  background: var(--color-accent-subtle);
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+  color: var(--color-text-accent);
+}
+
+.item:disabled .icon {
+  color: var(--color-text-subtle);
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.note {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-smallcaps);
+  text-transform: uppercase;
+}
+
+.fichas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.open .ficha {
+  padding-inline-start: calc(var(--space-4) + 18px + var(--space-3));
+  font-weight: var(--font-weight-medium);
+}
+
+.fichaText {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 0;
+  padding-block: var(--space-1);
+}
+
+.fichaName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: var(--line-height-snug);
+}
+
+.fichaSub {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-subtle);
+}
+
+.monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border: var(--border-width-hairline) solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-smallcaps);
+}
+
+.current .monogram {
+  border-color: var(--color-rule);
+  color: var(--color-text-accent);
+}
+
+.later {
+  margin-block-start: auto;
+  padding-block-start: var(--space-3);
+  border-block-start: var(--border-width-hairline) solid var(--color-border);
+}
+
+@media print {
+  .sidebar {
+    display: none;
+  }
+}

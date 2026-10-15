@@ -3,42 +3,25 @@
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-2) var(--space-5);
+  min-block-size: 3.25rem;
   padding: var(--space-2) var(--space-5);
   border-block-end: var(--border-width-hairline) solid var(--color-border);
   font-family: var(--font-sans);
   font-size: var(--font-size-xs);
 }
 
-.brand {
-  font-family: var(--font-display);
+.title {
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-md);
-}
-
-.switcher {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.switcherLabel {
-  font-size: var(--font-size-2xs);
   letter-spacing: var(--letter-spacing-caps);
   text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.select {
-  min-inline-size: 14rem;
-  min-block-size: 2rem;
-  padding: 0 var(--space-2);
-  border: var(--border-width-hairline) solid var(--color-border-strong);
-  border-radius: var(--radius-sm);
-  background: var(--color-surface);
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-2);
   margin-inline-start: auto;
 }
