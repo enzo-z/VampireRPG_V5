@@ -74,3 +74,16 @@
 .catalogInput:read-only {
   cursor: default;
 }
+
+/* Suggestion arrow (datalist): discreet, shown on hover or focus only. */
+.catalogInput::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  inline-size: 0.6em;
+  color: var(--color-text-subtle);
+  cursor: pointer;
+}
+
+.catalogInput:hover::-webkit-calendar-picker-indicator,
+.catalogInput:focus::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}

@@ -1,5 +1,6 @@
 import { ADVANTAGE_INDEX } from '../../catalog/advantagesCatalog.ts';
 import { DISCIPLINE_INDEX } from '../../catalog/disciplines.ts';
+import { PREDATOR_TYPE_INDEX } from '../../catalog/predatorTypesCatalog.ts';
 import { referenceFor } from '../../reference/lookup.ts';
 import { Dots } from '../../ui/Dots.tsx';
 import { IconButton } from '../../ui/IconButton.tsx';
@@ -16,7 +17,11 @@ function NoteHtml({ html, className }: { html: string; className?: string }) {
 
 export function ReferencePanel() {
   const { ficha, selection, select } = useSheet();
-  const entry = selection === null ? null : referenceFor(selection, ficha, { disciplines: DISCIPLINE_INDEX, advantages: ADVANTAGE_INDEX });
+  const entry = selection === null ? null : referenceFor(selection, ficha, {
+    disciplines: DISCIPLINE_INDEX,
+    advantages: ADVANTAGE_INDEX,
+    predatorTypes: PREDATOR_TYPE_INDEX,
+  });
 
   return (
     <aside className={styles.panel} aria-label="Referência">

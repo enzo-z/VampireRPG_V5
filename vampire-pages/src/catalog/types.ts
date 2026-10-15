@@ -76,3 +76,17 @@ export interface AdvantageEntry {
 export interface AdvantageCatalog {
   entries: AdvantageEntry[];
 }
+
+/** One "# Name" section of Predator Type.md. */
+export interface PredatorTypeEntry {
+  /** Heading as written, e.g. "Headhunter/Blood Leech". */
+  title: string;
+  /** Each name in the heading. */
+  names: string[];
+  source: string | null;
+  html: string;
+}
+
+export interface PredatorTypeCatalog {
+  entries: PredatorTypeEntry[];
+}

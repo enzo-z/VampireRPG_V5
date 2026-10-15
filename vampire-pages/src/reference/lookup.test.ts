@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { indexAdvantages } from '../catalog/advantages.ts';
 import { indexCatalog } from '../catalog/lookup.ts';
+import { indexPredatorTypes } from '../catalog/predatorTypes.ts';
 import type { AdvantageEntry, CatalogEntry, DisciplineCatalog } from '../catalog/types.ts';
 import { createFicha } from '../domain/defaults.ts';
 import { ATTRIBUTE_KEYS, SKILL_KEYS } from '../domain/traits.ts';
@@ -47,6 +48,12 @@ const catalogs = {
       advantage('Allies', 'background', null, ['Aliados'], '• a ••••••', 6),
       advantage('Haven', 'background', null, ['Refúgio'], '• a •••', 3),
       advantage('Prey Exclusion', 'flaw', 'Feeding', ['Exclusão de Presa'], '•', 1),
+    ],
+  }),
+  predatorTypes: indexPredatorTypes({
+    entries: [
+      { title: 'Alleycat', names: ['Alleycat'], source: null, html: '<p>Ataque direto.</p>' },
+      { title: 'Headhunter/Blood Leech', names: ['Headhunter', 'Blood Leech'], source: null, html: '<p>Sangue de vampiros.</p>' },
     ],
   }),
 };
@@ -156,6 +163,26 @@ describe('referenceFor', () => {
     expect(unmatched?.paragraphs[0]).toContain('Sem correspondência para "Camarila"');
     const options = unmatched?.facts[0];
     expect(options !== undefined && 'value' in options ? options.value : '').toContain('Camarilla');
+  });
+
+  it('shows the rules of a predator type from the vault note, tolerating typos', () => {
+    const withType = (predatorType: string) => ({ ...ficha, identity: { ...ficha.identity, predatorType } });
+    expect(referenceFor({ kind: 'identity', field: 'predatorType' }, withType('Alleycat'), catalogs)).toMatchObject({
+      kicker: 'Predator Type',
+      title: 'Alleycat',
+      paragraphs: [],
+      blocks: [{ title: null, html: '<p>Ataque direto.</p>' }],
+    });
+    expect(referenceFor({ kind: 'identity', field: 'predatorType' }, withType('blood leech'), catalogs)?.title).toBe('Headhunter/Blood Leech');
+    expect(referenceFor({ kind: 'identity', field: 'predatorType' }, withType('Aleycat'), catalogs)?.paragraphs).toEqual(['"Aleycat" lido como Alleycat.']);
+  });
+
+  it('recognizes a predator type with no rules yet, and says so', () => {
+    const trapdoor = { ...ficha, identity: { ...ficha.identity, predatorType: 'Trapdoor' } };
+    expect(referenceFor({ kind: 'identity', field: 'predatorType' }, trapdoor, catalogs)).toMatchObject({
+      title: 'Trapdoor',
+      paragraphs: ['Reconhecido, mas ainda sem regras em Predator Type.md.'],
+    });
   });
 
   it('summarizes trackers', () => {

@@ -43,7 +43,7 @@ const CATALOGS: Readonly<Record<Exclude<CatalogField, 'generation'>, Catalog>> =
     ['Camarilla'], ['Anarch', 'Anarquista', 'Anarquistas', 'Anarcas'], ['Sabbat'], ['Independent', 'Independente', 'Independentes'],
   ]),
   predatorType: makeCatalog([
-    ['Alleycat'], ['Bagger'], ['Blood Leech'], ['Cleaner'], ['Consensualist'], ['Extortionist'], ['Farmer'], ['Grim Reaper'],
+    ['Alleycat'], ['Bagger'], ['Blood Leech', 'Headhunter'], ['Cleaver'], ['Consensualist'], ['Extortionist'], ['Farmer'], ['Grim Reaper'],
     ['Graverobber'], ['Montero'], ['Osiris'], ['Pursuer'], ['Roadside Killer'], ['Sandman'], ['Scene Queen'], ['Siren', 'Sereia'], ['Trapdoor'],
   ]),
 };

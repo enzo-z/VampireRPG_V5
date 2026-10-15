@@ -1,5 +1,6 @@
 import { findAdvantage, sideOf, suggestAdvantages, type AdvantageIndex } from '../catalog/advantages.ts';
 import { entriesOf, findDiscipline, findEntry, type CatalogIndex } from '../catalog/lookup.ts';
+import { findPredatorType, type PredatorTypeIndex } from '../catalog/predatorTypes.ts';
 import type { AdvantageCategory, CatalogEntry } from '../catalog/types.ts';
 import { ATTRIBUTE_RANGE, BLOOD_POTENCY_RANGE, DISCIPLINE_RANGE, HUNGER_MAX, SKILL_RANGE, type Ficha } from '../domain/character.ts';
 import { matchIdentity, type CatalogField } from '../domain/identityCatalog.ts';
@@ -34,6 +35,7 @@ export type Selection =
 export interface ReferenceCatalogs {
   disciplines: CatalogIndex;
   advantages: AdvantageIndex;
+  predatorTypes: PredatorTypeIndex;
 }
 
 /** A labeled value; `html` comes pre-rendered from the vault notes. */
@@ -254,8 +256,31 @@ function advantageEntry(ficha: Ficha, index: number, catalog: AdvantageIndex): R
   };
 }
 
-function identityEntry(ficha: Ficha, field: CatalogField): ReferenceEntry {
+/** Whether an identity field reads as a known value (names list or, for predator types, the vault note). */
+export function isIdentityRecognized(field: CatalogField, text: string, predatorTypes: PredatorTypeIndex): boolean {
+  return matchIdentity(field, text).matched || (field === 'predatorType' && findPredatorType(predatorTypes, text) !== null);
+}
+
+function predatorTypeEntry(text: string, predatorTypes: PredatorTypeIndex): ReferenceEntry | null {
+  const match = matchIdentity('predatorType', text);
+  const rules = findPredatorType(predatorTypes, match.canonical ?? text);
+  const kicker = IDENTITY_FIELD_LABELS.predatorType;
+  if (rules !== null) {
+    const readAs = match.matched ? [] : [`"${text.trim()}" lido como ${rules.title}.`];
+    return { ...EMPTY_ENTRY, kicker, title: rules.title, source: rules.source, paragraphs: readAs, blocks: htmlBlocks({ title: null, html: rules.html }) };
+  }
+  if (match.matched && match.canonical !== null) {
+    return { ...EMPTY_ENTRY, kicker, title: match.canonical, paragraphs: ['Reconhecido, mas ainda sem regras em Predator Type.md.'] };
+  }
+  return null;
+}
+
+function identityEntry(ficha: Ficha, field: CatalogField, catalogs: ReferenceCatalogs): ReferenceEntry {
   const text = ficha.identity[field];
+  if (field === 'predatorType' && text.trim() !== '') {
+    const entry = predatorTypeEntry(text, catalogs.predatorTypes);
+    if (entry !== null) return entry;
+  }
   const match = matchIdentity(field, text);
   const kicker = IDENTITY_FIELD_LABELS[field];
   if (match.matched && match.canonical !== null) {
@@ -329,7 +354,7 @@ export function referenceFor(selection: Selection, ficha: Ficha, catalogs: Refer
     case 'power':
       return powerEntry(ficha, selection.slot, selection.powerIndex, catalogs.disciplines);
     case 'identity':
-      return identityEntry(ficha, selection.field);
+      return identityEntry(ficha, selection.field, catalogs);
     case 'tracker':
       return trackerEntry(ficha, selection.tracker);
     case 'advantage':

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdvantageCatalog, DisciplineCatalog } from './types.ts';
+import type { AdvantageCatalog, DisciplineCatalog, PredatorTypeCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -42,3 +42,12 @@ const advantage = z.strictObject({
 });
 
 export const advantageCatalogSchema = z.strictObject({ entries: z.array(advantage) }) satisfies z.ZodType<AdvantageCatalog>;
+
+const predatorType = z.strictObject({
+  title: z.string().min(1),
+  names: z.array(z.string().min(1)).min(1),
+  source: z.string().nullable(),
+  html: z.string(),
+});
+
+export const predatorTypeCatalogSchema = z.strictObject({ entries: z.array(predatorType) }) satisfies z.ZodType<PredatorTypeCatalog>;
