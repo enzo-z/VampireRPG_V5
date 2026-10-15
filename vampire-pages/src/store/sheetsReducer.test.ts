@@ -51,6 +51,37 @@ describe('sheetsReducer', () => {
     expect(next.activeId).toBe('nina');
   });
 
+  it('never repeats a name: create, rename and import add " (n)"', () => {
+    const otherNina = createFicha('nina-2', 'nina');
+    const created = run(stateOf('nina', nina), { type: 'ficha/created', ficha: otherNina });
+    expect(ficha(created, 'nina-2').name).toBe('nina (1)');
+
+    const renamed = run(stateOf('nina', nina, vincent), { type: 'ficha/renamed', id: 'vincent', name: 'Nina' });
+    expect(ficha(renamed, 'vincent').name).toBe('Nina (1)');
+    expect(ficha(run(stateOf('nina', nina), { type: 'ficha/renamed', id: 'nina', name: 'Nina' }), 'nina').name).toBe('Nina');
+
+    const imported = run(stateOf('nina', nina), { type: 'fichas/imported', fichas: [{ ...khalid, name: 'Nina' }, { ...vincent, name: 'Nina' }] });
+    expect(imported.fichas.map((f) => f.name)).toEqual(['Nina', 'Nina (1)', 'Nina (2)']);
+  });
+
+  it('duplicates a ficha right after it, as a deep copy named "(1)"', () => {
+    const next = run(stateOf('vincent', nina, vincent), { type: 'ficha/duplicated', id: 'nina', newId: 'nina-copy' });
+    expect(next.fichas.map((f) => [f.id, f.name])).toEqual([['nina', 'Nina'], ['nina-copy', 'Nina (1)'], ['vincent', 'Vincent']]);
+    expect(next.activeId).toBe('nina-copy');
+    expect(ficha(next, 'nina-copy').trackers).not.toBe(nina.trackers);
+    expect(ficha(next, 'nina-copy').trackers).toEqual(nina.trackers);
+    const state = stateOf('nina', nina);
+    expect(run(state, { type: 'ficha/duplicated', id: 'ghost', newId: 'x' })).toBe(state);
+  });
+
+  it('restores a deleted ficha at its old position (undo)', () => {
+    const deleted = run(stateOf('vincent', nina, vincent, khalid), { type: 'ficha/deleted', id: 'vincent' });
+    const restored = run(deleted, { type: 'ficha/restored', ficha: vincent, index: 1 });
+    expect(restored.fichas.map((f) => f.id)).toEqual(['nina', 'vincent', 'khalid']);
+    expect(restored.activeId).toBe('vincent');
+    expect(run(restored, { type: 'ficha/restored', ficha: vincent, index: 0 })).toBe(restored);
+  });
+
   it('ignores blank names when renaming', () => {
     const state = stateOf('nina', nina);
     expect(run(state, { type: 'ficha/renamed', id: 'nina', name: '   ' })).toBe(state);

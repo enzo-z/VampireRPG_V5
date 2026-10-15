@@ -16,6 +16,7 @@ import {
   type Profile,
 } from '../domain/character.ts';
 import { pickDots } from '../domain/dots.ts';
+import { uniqueName } from '../domain/names.ts';
 import { cycleDamageBox, cycleHumanityBox, pickHunger, withMax } from '../domain/trackers.ts';
 import type { AttributeKey, SkillKey } from '../domain/traits.ts';
 
@@ -33,6 +34,10 @@ export type SheetsAction =
   | { type: 'ficha/deleted'; id: string }
   | { type: 'ficha/activated'; id: string }
   | { type: 'ficha/renamed'; id: string; name: string }
+  /** Copies a ficha under a new id, right after it, named "Name (1)". */
+  | { type: 'ficha/duplicated'; id: string; newId: string }
+  /** Puts back a deleted ficha at its old position (undo). */
+  | { type: 'ficha/restored'; ficha: Ficha; index: number }
   | { type: 'fichas/imported'; fichas: readonly Ficha[] }
   | { type: 'identity/changed'; id: string; field: keyof Identity; value: string }
   | { type: 'attribute/picked'; id: string; key: AttributeKey; index: number }
@@ -99,25 +104,59 @@ function withoutFicha(state: SheetsState, id: string): SheetsState {
   return { fichas, activeId: neighbor?.id ?? null };
 }
 
+/** Names of every ficha except `id`. */
+const namesBesides = (fichas: readonly Ficha[], id: string) => fichas.filter((ficha) => ficha.id !== id).map((ficha) => ficha.name);
+
+/** Gives each ficha a name no other ficha uses ("Nina (1)"), keeping the first one as is. */
+function withUniqueNames(fichas: readonly Ficha[]): Ficha[] {
+  const named: Ficha[] = [];
+  for (const ficha of fichas) {
+    const name = uniqueName(ficha.name, named.map((other) => other.name));
+    named.push(name === ficha.name ? ficha : { ...ficha, name });
+  }
+  return named;
+}
+
 function withImported(state: SheetsState, imported: readonly Ficha[]): SheetsState {
   const byId = new Map(imported.map((ficha) => [ficha.id, ficha]));
   const replaced = state.fichas.map((ficha) => byId.get(ficha.id) ?? ficha);
   const existing = new Set(state.fichas.map((ficha) => ficha.id));
   const added = imported.filter((ficha) => !existing.has(ficha.id));
-  return { fichas: [...replaced, ...added], activeId: imported[0]?.id ?? state.activeId };
+  return { fichas: withUniqueNames([...replaced, ...added]), activeId: imported[0]?.id ?? state.activeId };
+}
+
+function withDuplicate(state: SheetsState, id: string, newId: string): SheetsState {
+  const index = state.fichas.findIndex((ficha) => ficha.id === id);
+  const source = state.fichas[index];
+  if (source === undefined || state.fichas.some((ficha) => ficha.id === newId)) return state;
+  const copy: Ficha = { ...structuredClone(source), id: newId, name: uniqueName(source.name, state.fichas.map((ficha) => ficha.name)) };
+  return { fichas: state.fichas.toSpliced(index + 1, 0, copy), activeId: newId };
+}
+
+function withRestored(state: SheetsState, ficha: Ficha, index: number): SheetsState {
+  if (state.fichas.some((other) => other.id === ficha.id)) return state;
+  const restored = { ...ficha, name: uniqueName(ficha.name, state.fichas.map((other) => other.name)) };
+  const at = Math.min(Math.max(0, index), state.fichas.length);
+  return { fichas: state.fichas.toSpliced(at, 0, restored), activeId: ficha.id };
 }
 
 export function sheetsReducer(state: SheetsState, action: SheetsAction): SheetsState {
   switch (action.type) {
-    case 'ficha/created':
-      return { fichas: [...state.fichas, action.ficha], activeId: action.ficha.id };
+    case 'ficha/created': {
+      const name = uniqueName(action.ficha.name, state.fichas.map((ficha) => ficha.name));
+      return { fichas: [...state.fichas, { ...action.ficha, name }], activeId: action.ficha.id };
+    }
+    case 'ficha/duplicated':
+      return withDuplicate(state, action.id, action.newId);
+    case 'ficha/restored':
+      return withRestored(state, action.ficha, action.index);
     case 'ficha/deleted':
       return withoutFicha(state, action.id);
     case 'ficha/activated':
       return state.fichas.some((ficha) => ficha.id === action.id) ? { ...state, activeId: action.id } : state;
     case 'ficha/renamed': {
       const name = action.name.trim();
-      return name === '' ? state : updateFicha(state, action.id, (ficha) => ({ ...ficha, name }));
+      return name === '' ? state : updateFicha(state, action.id, (ficha) => ({ ...ficha, name: uniqueName(name, namesBesides(state.fichas, ficha.id)) }));
     }
     case 'fichas/imported':
       return withImported(state, action.fichas);
