@@ -170,23 +170,23 @@ O "Chamado" lentamente convoca os anciões para a [[Guerra da Gehenna]], e eles 
 # Blood Potency
 
 
-![[Pasted image 20241126224215.png]]
+%% Tabela antiga, de antes da errata (Blood Surge e Bane Severity desatualizados): ![[Pasted image 20241126224215.png]] %%
 
-Tabela acima transcrita (Core). O app lê esta tabela; cada linha já traz o efeito completo daquele nível.
+Tabela de Blood Potency conforme a errata publicada no **Companion, p. 63** (versão mais atual). O app lê esta tabela; cada linha já traz o efeito completo daquele nível.
 
 | Blood Potency | Blood Surge | Mend (por Rouse Check) | Bônus de Disciplina | Re-roll do Rouse Check | Bane Severity | Alimentação |
 |---|---|---|---|---|---|---|
-| 0 | Nenhum | 1 Superficial | Nenhum | Nenhum | 0 | Sem efeito |
-| 1 | +1 dado | 1 Superficial | Nenhum | Nível 1 | 1 | Sem efeito |
-| 2 | +1 dado | 2 Superficial | +1 dado | Nível 1 | 1 | Sangue animal e de bolsa sacia metade da Fome |
-| 3 | +2 dados | 2 Superficial | +1 dado | Nível 2 ou menor | 2 | Sangue animal e de bolsa não sacia Fome |
-| 4 | +2 dados | 3 Superficial | +2 dados | Nível 2 ou menor | 2 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano |
-| 5 | +3 dados | 3 Superficial | +2 dados | Nível 3 ou menor | 3 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
-| 6 | +3 dados | 3 Superficial | +3 dados | Nível 3 ou menor | 3 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
-| 7 | +4 dados | 3 Superficial | +3 dados | Nível 4 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
-| 8 | +4 dados | 4 Superficial | +4 dados | Nível 4 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
-| 9 | +5 dados | 4 Superficial | +4 dados | Nível 5 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
-| 10 | +5 dados | 5 Superficial | +5 dados | Nível 5 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 3 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
+| 0 | +1 dado | 1 Superficial | Nenhum | Nenhum | 0 | Sem efeito |
+| 1 | +2 dados | 1 Superficial | Nenhum | Nível 1 | 2 | Sem efeito |
+| 2 | +2 dados | 2 Superficial | +1 dado | Nível 1 | 2 | Sangue animal e de bolsa sacia metade da Fome |
+| 3 | +3 dados | 2 Superficial | +1 dado | Nível 2 ou menor | 3 | Sangue animal e de bolsa não sacia Fome |
+| 4 | +3 dados | 3 Superficial | +2 dados | Nível 2 ou menor | 3 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano |
+| 5 | +4 dados | 3 Superficial | +2 dados | Nível 3 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 1 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 6 | +4 dados | 3 Superficial | +3 dados | Nível 3 ou menor | 4 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 7 | +5 dados | 3 Superficial | +3 dados | Nível 4 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 2 |
+| 8 | +5 dados | 4 Superficial | +4 dados | Nível 4 ou menor | 5 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
+| 9 | +6 dados | 4 Superficial | +4 dados | Nível 5 ou menor | 6 | Sangue animal e de bolsa não sacia Fome; sacia 2 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
+| 10 | +6 dados | 5 Superficial | +5 dados | Nível 5 ou menor | 6 | Sangue animal e de bolsa não sacia Fome; sacia 3 Fome a menos por humano; só drenando e matando um humano a Fome cai abaixo de 3 |
 
 Mesmo dentro de uma mesma Geração, a potência do Sangue varia. Com o passar dos anos, o Sangue se espessa e amadurece dentro dos limites da geração de um vampiro. Ser Abraçado por um sire poderoso ou enfrentar o repulsivo ***amaranth*** (ver [[Diablerie, Blood Bond, Ghouls#Diablerie|Diablerie]]) oferece atalhos para esse poder.
 
@@ -229,7 +229,7 @@ Você é um vampiro verdadeiro, embora alguns anciões possam considerá-lo apen
 #### Efeitos:
 
 - **Impulso de Sangue (_Blood Surge_)**:
-    - Adicione **1 dado de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
+    - Adicione **2 dados de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
 
 - **Cura de Danos (_Mending Damage_)**:
     - Ao usar [[Kindred#Recuperação Vampírica|Recuperação de Dano]] você pode remover **1 ponto de [[Dano|Dano]] Superficial** por [[Kindred#Quando Realizar um Rouse Check|Rouse Check]].
@@ -238,7 +238,7 @@ Você é um vampiro verdadeiro, embora alguns anciões possam considerá-lo apen
     - Ao realizar um  [[Kindred#Quando Realizar um Rouse Check|Rouse Check]] para [[Disciplinas]] de nível 1, role **dois dados** e escolha o maior resultado. (_Ou re-role o Rouse Check._)
 
 - **Severidade da Maldição (_Bane Severity_)**:
-    - Sua **Bane Severity** é **1**.
+    - Sua **Bane Severity** é **2**.
 
 ---
 ### Blood Potency 2
@@ -263,7 +263,7 @@ Como um vampiro mais conservador e respeitado entre os anciões, seu sangue espe
 #### Efeitos:
 
 - **Impulso de Sangue (_Blood Surge_)**:
-    - Adicione **2 dados de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
+    - Adicione **3 dados de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
 
 - **Rouse Check para Disciplinas**:
     - Lance **2 dados** e escolha o maior ao fazer um [[Kindred#Quando Realizar um Rouse Check|Rouse Check]] para [[Disciplinas]] de nível **2 ou inferior**.
@@ -272,7 +272,7 @@ Como um vampiro mais conservador e respeitado entre os anciões, seu sangue espe
     - Sangue animal ou ensacado [[Fome#Reduzindo a Fome|não reduz mais a sua Fome.]]
 
 - **Severidade da Fraqueza do Clã (_Bane Severity_)**:
-    - Sua **Bane Severity aumenta para 2**, reforçando as fraquezas associadas ao seu clã.
+    - Sua **Bane Severity aumenta para 3**, reforçando as fraquezas associadas ao seu clã.
 
 
 ---
@@ -298,7 +298,7 @@ Você está à beira de se tornar um [[#Elders|elder]], a apenas um passo tentad
 #### Efeitos:
 
 - **Surto de Sangue (_Blood Surge_)**:
-    - Adicione **3 dados de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
+    - Adicione **4 dados de Atributo** ao seu [[Entendendo Dados e Ficha#Dice Pool|dice pool]] ao realizar um [[Kindred#Blood Surge (Ímpeto do Sangue)|Blood Surge]].
 
 - **Rouse Check para Disciplinas**:
     - Lance **2 dados** e escolha o maior ao fazer um [[Kindred#Quando Realizar um Rouse Check|Rouse Check]] para [[Disciplinas]] de nível **3 ou inferior**.
@@ -307,7 +307,7 @@ Você está à beira de se tornar um [[#Elders|elder]], a apenas um passo tentad
     - Apenas **drenando e matando um mortal** é possível [[Fome#Reduzindo a Fome|reduzir sua Fome abaixo de 2]].
 
 - **Gravidade da Maldição (_Bane Severity_)**:
-    - Sua **Gravidade da Maldição** é **3**.
+    - Sua **Gravidade da Maldição** é **4**.
 
 ---
 ### Blood Potency 6 e Maior
