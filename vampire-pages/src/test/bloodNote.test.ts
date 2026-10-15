@@ -28,9 +28,12 @@ describe('Gerações e Potência.md', () => {
     }
   });
 
-  it('agrees with the level sections on the Core values (spot check)', () => {
-    expect(potencyRow(build.data, 1)).toMatchObject({ surge: '+1 dado', mend: '1 Superficial', rouseReRoll: 'Nível 1', baneSeverity: '1' });
-    expect(potencyRow(build.data, 3)).toMatchObject({ surge: '+2 dados', mend: '2 Superficial', rouseReRoll: 'Nível 2 ou menor', baneSeverity: '2' });
-    expect(potencyRow(build.data, 5)).toMatchObject({ surge: '+3 dados', mend: '3 Superficial', rouseReRoll: 'Nível 3 ou menor', baneSeverity: '3' });
+  // Companion p. 63 errata: Blood Surge and Bane Severity are one higher than the first Core printing.
+  it('follows the Companion errata (spot check)', () => {
+    expect(potencyRow(build.data, 0)).toMatchObject({ surge: '+1 dado', mend: '1 Superficial', rouseReRoll: 'Nenhum', baneSeverity: '0' });
+    expect(potencyRow(build.data, 1)).toMatchObject({ surge: '+2 dados', mend: '1 Superficial', rouseReRoll: 'Nível 1', baneSeverity: '2' });
+    expect(potencyRow(build.data, 3)).toMatchObject({ surge: '+3 dados', mend: '2 Superficial', rouseReRoll: 'Nível 2 ou menor', baneSeverity: '3' });
+    expect(potencyRow(build.data, 5)).toMatchObject({ surge: '+4 dados', mend: '3 Superficial', rouseReRoll: 'Nível 3 ou menor', baneSeverity: '4' });
+    expect(potencyRow(build.data, 10)).toMatchObject({ surge: '+6 dados', mend: '5 Superficial', rouseReRoll: 'Nível 5 ou menor', baneSeverity: '6' });
   });
 });
