@@ -237,6 +237,80 @@ tags: [vantagens]
 > - **Sistema**:
 >   Você pode fabricar ou obter Masks. Fabricar uma Mask leva três dias por dot e possivelmente o expõe online; obter Masks leva um dia por dot, mas custa algo em troca. Quanto depende da sua vantagem, da margem no teste Social ou de qualquer outra coisa que o Narrador decidir.
 
+## Thin-blood
+
+### Anarch Comrades
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Camaradas Anarquistas, Companheiros Anarquistas
+>
+> - **Sistema**:
+>   Você fez amizade com os membros de uma coterie Anarch que toleram sua presença ou até o tratam com carinho como seu bichinho de estimação. Juntos, eles agem como um Mawla Anarch de um dot, desde que você não se desvie da linha do grupo. Anote-os no Relationship Map.
+
+### Camarilla Contact
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Contato na Camarilla
+>
+> - **Sistema**:
+>   Você chamou a atenção de um recrutador da Camarilla que lhe prometeu admissão e a chance de se tornar um vampiro de verdade. Tudo o que você precisa fazer é manter olhos e ouvidos abertos, relatar suas atividades e as da sua coterie, e estar preparado para cumprir qualquer tarefa que lhe peçam. Você tem o equivalente a um Mawla da Camarilla de um dot que o trata mal. Anote-o no Relationship Map.
+
+### Catenating Blood
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Sangue Catenante, Sangue que Vincula
+>
+> - **Sistema**:
+>   Você pode criar Blood Bonds e realizar o Embrace como um vampiro comum. Qualquer vampiro que você criar assim será um thin-blood.
+
+### Day Drinker
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Bebedor Diurno, Andarilho Diurno
+>
+> - **Sistema**:
+>   A luz do sol reduz pela metade (arredondado para cima) seu Health tracker, mas, fora isso, apenas remove suas habilidades vampíricas, incluindo todas as Disciplinas e benefícios de Health, e não causa nenhum outro dano. Você ainda sofre de Hunger, porém, e cedo ou tarde precisará dormir. Se sua Health cair abaixo dos níveis de dano atualmente sustentados por causa disso, você sofre os efeitos de Impairment ou torpor (dependendo do tipo de dano) até sair da luz do sol.
+
+### Discipline Affinity
+
+> - **Fonte**: Core, p. 184 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Afinidade com Disciplina
+>
+> - **Sistema**:
+>   Você tem afinidade com uma certa Disciplina, escolhida na criação do personagem. Você ganha um dot nessa Disciplina e pode aprender e manter dots adicionais nela por meio de gastos de experiência, como se fosse um vampiro normal. (O custo em pontos de experiência é o mesmo de uma Disciplina fora do clã.) Beber sangue com Resonance correspondente não lhe dá dots extras nessa Disciplina, temporários ou não.
+
+### Lifelike
+
+> - **Fonte**: Core, p. 184 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Quase Vivo, Aparência Viva
+>
+> - **Sistema**:
+>   Você tem batimentos cardíacos, pode comer e desfruta de atividades sexuais como um mortal. Todas as inspeções médicas, exceto as mais avançadas, não revelam nada de extraordinário, supondo que aconteçam à noite.
+
+### Thin-blood Alchemist
+
+> - **Fonte**: Core, p. 184 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Thin-blood Alchemy, Alquimista, Alquimia de Sangue Fraco
+>
+> - **Sistema**:
+>   Os Duskborn mudam conforme se alimentam. Thin-Blood Alchemy é o domínio desse processo. Seja espontâneo ou uma habilidade aprendida comparando anotações com outros bloodcookers, você ganhou um dot e uma fórmula (p. 282) em Thin-blood Alchemy. Você pode comprar dots e fórmulas adicionais com experiência, como de costume.
+
+### Vampiric Resilience
+
+> - **Fonte**: Core, p. 184 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Merits, pareados com Flaws)
+> - **Apelidos**: Resiliência Vampírica
+>
+> - **Sistema**:
+>   Você sofre dano como um vampiro comum, tratando ferimentos perfurantes e cortantes comuns como dano Superficial.
+
 ---
 # Backgrounds
 
@@ -864,6 +938,80 @@ Apenas ancillae ou vampiros mais velhos podem escolher qualquer um destes Flaws.
 >
 > - **Sistema**:
 >   Você tem tendência a atrair pessoas que ficam um pouquinho apaixonadas demais por você, para o seu próprio bem. Um ex-retainer mantém a memória de você e o desejo de se reconectar. Pode estar faminto, enlouquecido de amor, desesperado, oportunista ou qualquer combinação ou variação disso. Se você se livrar dele, logo aparece outro.
+
+## Thin-blood
+
+### Baby Teeth
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Dentes de Leite, Presas de Leite
+>
+> - **Sistema**:
+>   Você nunca desenvolveu presas, ou as que tem são inúteis para se alimentar. Ou você precisa cortar suas vítimas, ou extrai o sangue delas com uma seringa.
+
+### Bestial Temper
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Temperamento Bestial
+>
+> - **Sistema**:
+>   Você é afligido pela Besta como um vampiro completo. Você precisa testar para Frenzy segundo as regras normais de vampiros.
+
+### Branded by the Camarilla
+
+> - **Fonte**: Core, p. 182 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Marcado pela Camarilla, Marcada pela Camarilla
+>
+> - **Sistema**:
+>   Em algumas cidades, os governantes simplesmente caçam e destroem thin-bloods. Em outras, o Sheriff misericordioso apenas os marca a ferro, à força e dolorosamente, para lembrá-los de seu lugar. (Muitos são então caçados e destruídos, muitas vezes por supostas ofensas ou simples capricho.) Você tem uma marca que não cicatriza, e a Camarilla faz questão de ficar de olho no momento em que você sair da linha. Você pode escolher Camarilla Contact com este Flaw; a Camarilla prospera em duplicidades desse tipo.
+
+### Clan Curse
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Maldição de Clã
+>
+> - **Sistema**:
+>   Resquícios do Sangue do seu sire ainda correm em suas veias, trazendo vestígios de sua antiga maldição. Você deve escolher um Clan Bane para sofrer, contando sua Bane Severity como 1 para esse fim. Você só pode escolher o Bane Brujah ou Gangrel se possuir o Flaw Bestial Temper, e o Bane Tremere apenas se tiver o Merit Catenating Blood.
+
+### Dead Flesh
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Carne Morta
+>
+> - **Sistema**:
+>   Seu Sangue não é forte o bastante para sustentá-lo completamente e, em consequência, sua carne está em constante estado de putrefação, com um tom esverdeado e um leve fedor de podridão. Qualquer inspeção médica o identificará imediatamente como morto, e você recebe uma penalidade de um dado em qualquer teste Social face a face com um mortal. Você não pode escolher Lifelike se tiver este Flaw.
+
+### Mortal Frailty
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Fragilidade Mortal
+>
+> - **Sistema**:
+>   Você não consegue fazer Rouse no Sangue para se curar, curando-se como um mortal (p. 126). Você não pode escolher Vampiric Resilience se tiver este Flaw.
+
+### Shunned by the Anarchs
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Rejeitado pelos Anarquistas, Rejeitada pelos Anarquistas
+>
+> - **Sistema**:
+>   Você quebrou uma regra não escrita ou se julgou igual entre iguais, onde alguns se revelaram mais iguais que outros. Em qualquer dos casos, os Anarchs do regnum sabem de você e o evitam. Preferem entregá-lo à Camarilla a ouvir suas súplicas. Você não pode escolher Anarch Comrades se tiver este Flaw.
+
+### Vitae Dependency
+
+> - **Fonte**: Core, p. 183 · texto do app do Pedro
+> - **Pontos**: • (thin-blood: até três Flaws, pareados com Merits)
+> - **Apelidos**: Dependência de Vitae
+>
+> - **Sistema**:
+>   Seu Sangue é incapaz de sustentar poderes vampíricos por si só. A menos que você beba Sangue de vampiro suficiente para saciar um de Hunger por semana, você perde a capacidade de ganhar e usar quaisquer Disciplinas (incluindo Thin-Blood Alchemy). Você recupera seus poderes assim que saciar pelo menos um de Hunger com Sangue de vampiro.
 
 ---
 # Loresheets
