@@ -23,8 +23,15 @@ const PLAYER_POWERS: Readonly<Record<string, readonly string[]>> = {
 };
 
 describe('discipline notes in the vault', () => {
-  it('parse without errors', () => {
+  it('parse without errors or warnings', () => {
     expect(build.errors).toEqual([]);
+    expect(build.warnings).toEqual([]);
+  });
+
+  it('leave out the rituals marked as not used in this chronicle', () => {
+    for (const ritual of ['Bind the Accusing Tongue', 'Viscera Garden', 'Bloodless Feast']) {
+      expect(findEntry(index, 'Blood Sorcery', ritual), ritual).toBeNull();
+    }
   });
 
   it('cover every discipline, with entries in every note', () => {

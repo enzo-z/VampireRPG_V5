@@ -1,4 +1,4 @@
-import { normalizeLabel, parseEntryBlock, parseFrontmatter, type ParsedField } from './parseNote.ts';
+import { hiddenItems, normalizeLabel, parseEntryBlock, parseFrontmatter, type ParsedField } from './parseNote.ts';
 import type { AdvantageCategory, AdvantagePoints } from './types.ts';
 
 // Pure parser for Advantages.md:
@@ -55,6 +55,7 @@ export function parseAdvantagesNote(noteName: string, text: string): AdvantagesP
 
   const warnings: string[] = [];
   const warn = (message: string) => warnings.push(`${noteName}: ${message}`);
+  const hidden = hiddenItems(parsed.fields);
   const entries: ParsedAdvantage[] = [];
   let category: AdvantageCategory | null = null;
   let group: string | null = null;
@@ -97,11 +98,12 @@ export function parseAdvantagesNote(noteName: string, text: string): AdvantagesP
       if (category === null) warn(`categoria desconhecida "# ${title}"; os itens dela são ignorados.`);
     } else if (hashes === '##') {
       group = title;
-    } else if (category !== null) {
+    } else if (category !== null && !hidden.isHidden(title)) {
       current = { name: title, category, group, lines: [] };
     }
   }
   flush();
+  for (const name of hidden.unmatched()) warn(`"${name}" está em "ocultos", mas não há item com esse nome.`);
 
   const seen = new Set<string>();
   for (const entry of entries) {

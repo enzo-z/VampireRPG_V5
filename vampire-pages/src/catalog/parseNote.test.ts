@@ -175,6 +175,13 @@ describe('parseDisciplineNote', () => {
     expect(parsed(NOTE.replace('tags:', 'entradas: formulas\ntags:')).note.entries[0]?.kind).toBe('formula');
   });
 
+  it('leaves out items listed in "ocultos", with their warnings, and warns about names not found', () => {
+    const hiddenNote = NOTE.replace('tags: [disciplina]', 'ocultos: ["poder antigo", "Inexistente"]\ntags: [disciplina]');
+    const { note, warnings } = parsed(hiddenNote);
+    expect(note.entries.map((e) => e.name)).toEqual(['Poder Novo', 'Ritual Estranho']);
+    expect(warnings).toEqual(['Exemplo: "Inexistente" está em "ocultos", mas não há item com esse nome.']);
+  });
+
   it('skips notes that are not published', () => {
     expect(parseDisciplineNote('Exemplo', NOTE.replace('publicar: true', 'publicar: false'))).toEqual({ status: 'unpublished' });
     expect(parseDisciplineNote('Exemplo', NOTE.replace('publicar: true\n', ''))).toEqual({ status: 'unpublished' });

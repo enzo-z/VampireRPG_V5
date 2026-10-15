@@ -85,6 +85,11 @@ describe('parseAdvantagesNote', () => {
     expect(parsed().warnings).toEqual(['Advantages: categoria desconhecida "# Outra Coisa"; os itens dela são ignorados.']);
   });
 
+  it('leaves out items listed in "ocultos"', () => {
+    const result = parseAdvantagesNote('Advantages', NOTE.replace('tipo: vantagens', 'tipo: vantagens\nocultos: [Faro Fino]'));
+    expect(result.status === 'parsed' && result.entries.map((e) => e.name)).toEqual(['Refúgio Exemplo', 'Preso ao Tempo']);
+  });
+
   it('requires publicar: true and tipo: vantagens', () => {
     expect(parseAdvantagesNote('A', NOTE.replace('publicar: true', 'publicar: false'))).toEqual({ status: 'unpublished' });
     expect(parseAdvantagesNote('A', NOTE.replace('tipo: vantagens', 'tipo: outra'))).toEqual({ status: 'invalid', errors: ['A: "tipo" deve ser vantagens.'] });

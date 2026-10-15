@@ -101,6 +101,30 @@ function splitList(inner: string): string[] {
   return (inner.match(/"[^"]*"|'[^']*'|[^,]+/g) ?? []).map((item) => unquote(item.trim())).filter((item) => item !== '');
 }
 
+// ---------- Hidden items ----------
+
+export interface HiddenItems {
+  isHidden: (name: string) => boolean;
+  /** Names listed in `ocultos` that no item in the note matched (likely typos). */
+  unmatched: () => string[];
+}
+
+/** Items listed in the `ocultos` frontmatter key stay in the note but are left out of the app. */
+export function hiddenItems(fields: Record<string, string | string[]>): HiddenItems {
+  const raw = fields['ocultos'];
+  const listed = Array.isArray(raw) ? raw : typeof raw === 'string' && raw !== '' ? [raw] : [];
+  const pending = new Map(listed.map((name) => [normalizeLabel(name), name]));
+  const keys = new Set(pending.keys());
+  return {
+    isHidden: (name) => {
+      const key = normalizeLabel(name);
+      pending.delete(key);
+      return keys.has(key);
+    },
+    unmatched: () => [...pending.values()],
+  };
+}
+
 // ---------- Helpers ----------
 
 function trimBlank(lines: readonly string[]): string[] {
@@ -255,6 +279,7 @@ export function parseDisciplineNote(noteName: string, text: string): ParseResult
   const entryKind = entryKindOf(noteKind, typeof fields['entradas'] === 'string' ? fields['entradas'] : undefined);
   const warnings: string[] = [];
   const warn = (message: string) => warnings.push(`${noteName}: ${message}`);
+  const hidden = hiddenItems(fields);
 
   // Split the body after the title into H2 segments.
   const segments: { title: string | null; lines: string[] }[] = [{ title: null, lines: [] }];
@@ -281,13 +306,15 @@ export function parseDisciplineNote(noteName: string, text: string): ParseResult
       const h3 = /^###\s+(.+?)\s*$/.exec(line);
       if (h3 !== null) {
         flush();
-        current = { name: h3[1] ?? '', lines: [] };
+        const name = h3[1] ?? '';
+        current = hidden.isHidden(name) ? null : { name, lines: [] };
       } else if (current !== null) {
         current.lines.push(line);
       }
     }
     flush();
   }
+  for (const name of hidden.unmatched()) warn(`"${name}" está em "ocultos", mas não há item com esse nome.`);
 
   const seen = new Set<string>();
   for (const entry of entries) {

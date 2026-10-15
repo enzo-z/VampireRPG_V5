@@ -2,6 +2,7 @@
 publicar: true
 tipo: rituais
 disciplina: Blood Sorcery
+ocultos: ["Bind the Accusing Tongue", "Viscera Garden", "Bloodless Feast"]
 tags: [disciplina, rituais]
 ---
 
