@@ -2,6 +2,7 @@ import { ADVANTAGE_INDEX } from '../../catalog/advantagesCatalog.ts';
 import { BLOOD_CATALOG } from '../../catalog/bloodCatalog.ts';
 import { DISCIPLINE_INDEX } from '../../catalog/disciplines.ts';
 import { PREDATOR_TYPE_INDEX } from '../../catalog/predatorTypesCatalog.ts';
+import { highlightPlainText, highlightRolls } from '../../reference/highlightRolls.ts';
 import { referenceFor } from '../../reference/lookup.ts';
 import { Dots } from '../../ui/Dots.tsx';
 import { IconButton } from '../../ui/IconButton.tsx';
@@ -11,10 +12,13 @@ import styles from './ReferencePanel.module.css';
 
 const HINT = 'Clique num atributo, perícia, disciplina, poder, campo de identidade ou trilha para ver a referência aqui. Esc fecha.';
 
-/** HTML comes from the vault notes, rendered at build time with raw HTML escaped. */
+/** HTML comes from the vault notes, rendered at build time with raw HTML escaped; tests, difficulties and Rouse Checks are marked. */
 function NoteHtml({ html, className }: { html: string; className?: string }) {
-  return <div className={`${styles.prose} ${className ?? ''}`} dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div className={`${styles.prose} ${className ?? ''}`} dangerouslySetInnerHTML={{ __html: highlightRolls(html) }} />;
 }
+
+/** Plain text (reference texts, what the player wrote) with tests, difficulties and Rouse Checks marked. */
+const marked = (text: string) => ({ __html: highlightPlainText(text) });
 
 export function ReferencePanel() {
   const { ficha, selection, select } = useSheet();
@@ -43,16 +47,14 @@ export function ReferencePanel() {
             </div>
           )}
           {entry.paragraphs.map((paragraph, index) => (
-            <p key={index} className={styles.body}>
-              {paragraph}
-            </p>
+            <p key={index} className={styles.body} dangerouslySetInnerHTML={marked(paragraph)} />
           ))}
           {entry.facts.length > 0 && (
             <dl className={styles.facts}>
               {entry.facts.map((fact) => (
                 <div key={fact.label} className={styles.fact}>
                   <dt>{fact.label}</dt>
-                  {'html' in fact ? <dd dangerouslySetInnerHTML={{ __html: fact.html }} /> : <dd>{fact.value}</dd>}
+                  {'html' in fact ? <dd dangerouslySetInnerHTML={{ __html: highlightRolls(fact.html) }} /> : <dd dangerouslySetInnerHTML={marked(fact.value)} />}
                 </div>
               ))}
             </dl>
@@ -87,7 +89,7 @@ export function ReferencePanel() {
                     aria-current={index + 1 === entry.currentLevel ? 'true' : undefined}
                   >
                     <span className={styles.levelNumber}>{index + 1}</span>
-                    <span>{level}</span>
+                    <span dangerouslySetInnerHTML={marked(level)} />
                   </li>
                 ))}
               </ol>

@@ -180,3 +180,24 @@
   border: 0;
   border-block-start: var(--border-width-hairline) solid var(--color-border);
 }
+
+/* Mechanics a reader scans for, rubricated like an old manuscript: tests and
+   difficulties as a crimson seal on the paper tint; Rouse Checks (a cost, not a
+   test) in crimson with a dotted underline. Weight and shape, not only color. */
+.panel :global(mark.roll) {
+  padding: 0 0.2em;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-subtle);
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-semibold);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.panel :global(mark.roll[data-roll='rouse']) {
+  padding: 0;
+  background: transparent;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--color-text-accent);
+  text-underline-offset: 0.2em;
+}
