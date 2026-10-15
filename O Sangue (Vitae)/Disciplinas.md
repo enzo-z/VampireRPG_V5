@@ -63,11 +63,14 @@ Cada disciplina tem uma nota própria em `O Sangue (Vitae)/Disciplinas/`, com re
 | [[Presence]] | Mental | Baixa-Média | Sanguine |
 | [[Obfuscate]] | Mental | Baixa | Melancholic |
 | [[Protean]] | Físico | Alta | Animal Blood |
-| Animalism | — | — | — |
+| [[Animalism]] | Mental | Baixa-Média | Animal Blood |
 | [[Potence]] | Físico | Médio-Alto | Choleric |
 | [[Fortitude]] | Físico | Médio | Melancholic |
 | [[Blood Sorcery]] | Feitiçaria | Baixa-Alta | Sanguine |
 | [[Rituais de Blood Sorcery]] | Rituais | — | — |
+| [[Oblivion]] | Mental | Média-Alta | Empty |
+| [[Cerimônias de Oblivion]] | Cerimônias | — | — |
+| [[Thin-blood Alchemy]] | Alquimia | Variável | Variável |
 
 ---
 # Dominate
@@ -114,7 +117,9 @@ Regras gerais e poderes: [[Protean]]
 ---
 # Animalism
 
-*Ainda sem nota própria (próximo lote).*
+Mental · Máscara: Baixa-Média · Resonance: Animal Blood
+
+Regras gerais e poderes: [[Animalism]]
 
 ---
 # Potence
@@ -141,3 +146,22 @@ Regras gerais e poderes: [[Blood Sorcery]]
 # Rituais de Blood Sorcery
 
 Rituais de Blood Sorcery por nível: [[Rituais de Blood Sorcery]]
+
+---
+# Oblivion
+
+Mental · Máscara: Média-Alta · Resonance: Empty
+
+Regras gerais e poderes: [[Oblivion]]
+
+---
+# Cerimônias de Oblivion
+
+Cerimônias de Oblivion por nível: [[Cerimônias de Oblivion]]
+
+---
+# Thin-blood Alchemy
+
+Alquimia · Máscara: Variável · Resonance: Variável
+
+Regras gerais e fórmulas: [[Thin-blood Alchemy]]
