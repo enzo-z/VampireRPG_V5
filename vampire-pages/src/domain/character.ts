@@ -93,6 +93,9 @@ export interface Beliefs {
   touchstones: string;
 }
 
+/** Longest stored photo (data URL characters); a 360 × 480 JPEG is ~60–120 k. */
+export const PHOTO_MAX_LENGTH = 400_000;
+
 /** Page 2 of the sheet: "Profile". */
 export interface Profile {
   sire: string;

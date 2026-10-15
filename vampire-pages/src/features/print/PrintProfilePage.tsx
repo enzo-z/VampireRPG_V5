@@ -3,7 +3,7 @@ import { sideOf, type AdvantageSide } from '../../catalog/advantages.ts';
 import type { AdvantageItem, Beliefs, Ficha, Profile } from '../../domain/character.ts';
 import type { SheetsAction } from '../../store/sheetsReducer.ts';
 import { Dots } from '../../ui/Dots.tsx';
-import { photoDataUrl } from './photo.ts';
+import { PHOTO_ACCEPT, readPhoto } from '../photo/photo.ts';
 import styles from './PrintProfilePage.module.css';
 
 interface PrintProfilePageProps {
@@ -92,7 +92,7 @@ export function PrintProfilePage({ ficha, edit, ref, onError }: PrintProfilePage
   const choosePhoto = async (file: File | undefined) => {
     if (file === undefined || edit === null) return;
     try {
-      edit({ type: 'profile/changed', id: ficha.id, field: 'photo', value: await photoDataUrl(file) });
+      edit({ type: 'profile/changed', id: ficha.id, field: 'photo', value: await readPhoto(file) });
     } catch (error) {
       onError(error instanceof Error ? error.message : 'Não foi possível usar a imagem.');
     }
@@ -158,7 +158,7 @@ export function PrintProfilePage({ ficha, edit, ref, onError }: PrintProfilePage
                 {edit !== null && (
                   <input
                     type="file"
-                    accept="image/*"
+                    accept={PHOTO_ACCEPT}
                     className={styles.photoInput}
                     aria-label="Escolher foto do personagem"
                     onChange={(event) => {

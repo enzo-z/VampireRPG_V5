@@ -19,3 +19,23 @@
   min-inline-size: 0;
   align-self: stretch;
 }
+
+/* "Turn the page" link at the end of each page. */
+.turn {
+  align-self: center;
+  min-block-size: 2.75rem;
+  padding: var(--space-2) var(--space-5);
+  border: var(--border-width-hairline) solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-accent);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-md);
+  letter-spacing: var(--letter-spacing-smallcaps);
+  cursor: pointer;
+}
+
+.turn:hover {
+  background: var(--color-accent-subtle);
+}

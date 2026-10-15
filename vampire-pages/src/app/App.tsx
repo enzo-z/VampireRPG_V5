@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { PrintView } from '../features/print/PrintView.tsx';
+import type { SheetPageName } from '../features/sheet/PageTabs.tsx';
 import { SheetPage } from '../features/sheet/SheetPage.tsx';
 import { SheetsProvider, useSheets } from '../store/SheetsProvider.tsx';
 import { ToastProvider, useToast } from '../ui/Toast.tsx';
@@ -13,6 +14,7 @@ function AppContent() {
   const { notify } = useToast();
   const [readOnly, setReadOnly] = useState(false);
   const [view, setView] = useState<View>({ name: 'sheet' });
+  const [page, setPage] = useState<SheetPageName>('mechanics');
   const active = state.fichas.find((ficha) => ficha.id === state.activeId) ?? null;
 
   useEffect(() => {
@@ -49,6 +51,8 @@ function AppContent() {
             key={active.id}
             ficha={active}
             readOnly={readOnly}
+            page={page}
+            onPageChange={setPage}
             onToggleReadOnly={() => setReadOnly((value) => !value)}
             onPrint={() => setView({ name: 'print', autoPrint: true })}
           />

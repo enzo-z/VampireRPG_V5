@@ -102,6 +102,12 @@ describe('migrateLegacyPedro', () => {
     expect(ficha.notes).not.toContain('Convicções');
   });
 
+  it('drops a portrait too large to store, with a warning', () => {
+    const { ficha, warnings } = migrate({ ...legacyCharacter(), portrait: `data:image/png;base64,${'A'.repeat(500_000)}` });
+    expect(ficha.profile.photo).toBe('');
+    expect(warnings).toContain('Não importados (sem lugar no app): portrait, backdrop.');
+  });
+
   it('falls back to defaults when sections are missing', () => {
     const { ficha } = migrate({ name: 'Mínimo', attributes: {}, skills: {}, trackers: {} });
     expect(ficha.trackers.health.max).toBe(1);

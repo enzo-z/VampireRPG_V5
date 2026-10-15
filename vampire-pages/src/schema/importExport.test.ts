@@ -48,6 +48,11 @@ describe('parseSheetFile', () => {
     expect(expectError(JSON.stringify({ schemaVersion: 3, fichas: [withLink] }))).toContain('fichas[0].profile.photo');
   });
 
+  it('refuses photos too large for localStorage', () => {
+    const huge = { ...nina, profile: { ...nina.profile, photo: `data:image/jpeg;base64,${'A'.repeat(400_000)}` } };
+    expect(expectError(JSON.stringify({ schemaVersion: 3, fichas: [huge] }))).toContain('fichas[0].profile.photo');
+  });
+
   it('reports the path of an invalid value', () => {
     const broken = { ...nina, trackers: { ...nina.trackers, health: { ...nina.trackers.health, max: 13 } } };
     expect(expectError(JSON.stringify({ schemaVersion: 1, fichas: [broken] }))).toContain(

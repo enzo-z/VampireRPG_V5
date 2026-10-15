@@ -21,6 +21,7 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 ## Os três protótipos (independentes entre si)
 - **A, ficha de impressão**: um A4, sem scroll, todos os círculos e caixas visíveis, campos de texto editáveis. Base do PDF/impressão e da view "Raw PDF".
 - **B, ficha com painel de referência**: base do app. Modo "olho" (somente leitura, mas o painel explicativo de atributos continua clicável), exportação JSON/PDF.
+  - Desde 2026-10-15 a B tem duas páginas em abas fixas no topo: **I · Mecânica** (Attributes, Skills, Disciplines) e **II · Perfil** (Profile com foto 3 × 4, Beliefs, Vantagens e Defeitos, The Blood). Cabeçalho e trackers aparecem nas duas. A página escolhida se mantém ao trocar de ficha. Layout do app é livre para melhorar UX; a impressão (A) precisa de revisão do Enzo.
 - **C, shell do app**: sidebar (Fichas, Mesa, Vault, Backlog, Raw PDF), Mesa com cards por personagem, sincronização Mesa↔ficha. Vault e Backlog ficam desabilitados no começo.
 - Não reimplemente o HTML dos protótipos literalmente: extraia estrutura, comportamento e tokens, e componha em React.
 

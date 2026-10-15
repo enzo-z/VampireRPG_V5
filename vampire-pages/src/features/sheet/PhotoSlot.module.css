@@ -1,0 +1,104 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.slot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 9rem;
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  overflow: hidden;
+  border: var(--border-width-hairline) solid var(--color-rule);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.editable {
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.editable:focus-within {
+  outline: var(--border-width-focus) solid var(--color-focus-ring);
+  outline-offset: var(--border-width-focus);
+}
+
+.dragging {
+  border-style: solid;
+  background: var(--color-accent-subtle);
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-subtle);
+}
+
+.placeholderTitle {
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Caption shown over the photo on hover or keyboard focus. */
+.overlay {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding: var(--space-1);
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-smallcaps);
+  opacity: 0;
+}
+
+.editable:hover .overlay,
+.editable:focus-within .overlay,
+.dragging .overlay {
+  opacity: 1;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  color: var(--color-text-subtle);
+}
+
+.remove {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-accent);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  text-decoration: underline;
+  cursor: pointer;
+}

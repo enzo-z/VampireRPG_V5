@@ -7,6 +7,7 @@ import {
   DISCIPLINE_SLOTS,
   HUMANITY_SIZE,
   HUNGER_MAX,
+  PHOTO_MAX_LENGTH,
   POWERS_PER_DISCIPLINE,
   SCHEMA_VERSION,
   SKILL_RANGE,
@@ -83,7 +84,7 @@ const profile = z.strictObject({
   apparentAge: z.string(),
   description: z.string(),
   concept: z.string(),
-  photo: z.union([z.literal(''), z.string().startsWith('data:image/')]),
+  photo: z.union([z.literal(''), z.string().startsWith('data:image/').max(PHOTO_MAX_LENGTH)]),
 });
 
 export const fichaSchema = z.strictObject({

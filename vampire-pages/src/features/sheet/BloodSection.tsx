@@ -59,15 +59,6 @@ export function BloodSection() {
           <TextField key={field} label={label} value={ficha.blood[field]} onChange={change(field)} readOnly={readOnly} multiline />
         ))}
       </div>
-      <TextField
-        label="Notas"
-        value={ficha.notes}
-        onChange={(value) => edit({ type: 'notes/changed', id: ficha.id, value })}
-        readOnly={readOnly}
-        multiline
-        rows={5}
-        className={styles.notes}
-      />
     </section>
   );
 }

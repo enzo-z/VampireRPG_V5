@@ -7,6 +7,7 @@ import {
   DISCIPLINE_SLOTS,
   HUMANITY_SIZE,
   HUNGER_MAX,
+  PHOTO_MAX_LENGTH,
   POWERS_PER_DISCIPLINE,
   SKILL_RANGE,
   TRACK_CAP,
@@ -197,7 +198,8 @@ function legacyNotes(legacy: LegacyCharacter): string {
   return body.length === 0 ? '' : ['— Importado do app do Pedro —', ...body].join('\n');
 }
 
-const isImageDataUrl = (value: unknown): value is string => typeof value === 'string' && value.startsWith('data:image/');
+const isImageDataUrl = (value: unknown): value is string =>
+  typeof value === 'string' && value.startsWith('data:image/') && value.length <= PHOTO_MAX_LENGTH;
 
 function hasContent(value: unknown): boolean {
   if (Array.isArray(value)) return value.length > 0;
