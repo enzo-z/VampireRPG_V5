@@ -1,7 +1,6 @@
 import type { Ref } from 'react';
 import {
   ATTRIBUTE_RANGE,
-  BLOOD_POTENCY_RANGE,
   DISCIPLINE_RANGE,
   HUNGER_MAX,
   POWERS_PER_DISCIPLINE,
@@ -46,6 +45,9 @@ const IDENTITY_ROWS: readonly { label: string; value: (ficha: Ficha) => string }
 const DAMAGE_NAMES: Readonly<Record<BoxState, string>> = { 0: 'vazia', 1: 'dano superficial', 2: 'dano agravado' };
 const HUMANITY_NAMES: Readonly<Record<BoxState, string>> = { 0: 'vazia', 1: 'mancha', 2: 'cheia' };
 const HUNGER_NAMES: Readonly<Record<BoxState, string>> = { 0: 'vazia', 1: 'cheia', 2: 'cheia' };
+
+/** Players start with low Blood Potency: the paper shows 5 circles (more only if the ficha already has more). */
+const PRINTED_POTENCY_DOTS = 5;
 
 function Title({ children }: { children: string }) {
   return <h2 className={styles.sectionTitle}>{children}</h2>;
@@ -244,7 +246,7 @@ export function PrintSheet({ ficha, edit, ref }: PrintSheetProps & { ref?: Ref<H
               <span>Blood Potency</span>
               <Dots
                 value={ficha.blood.potency}
-                max={BLOOD_POTENCY_RANGE.max}
+                max={Math.max(PRINTED_POTENCY_DOTS, ficha.blood.potency)}
                 label="Blood Potency"
                 groupSize={5}
                 onPick={edit ? (index) => edit({ type: 'blood/potencyPicked', id: ficha.id, index }) : undefined}
