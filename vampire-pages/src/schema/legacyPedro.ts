@@ -187,12 +187,8 @@ function legacyNotes(legacy: LegacyCharacter): string {
 
   const body = [
     ...line('Apelidos', legacy.aliases),
-    ...line('Senhor (sire)', legacy.sire),
-    ...line('Abraço', legacy.embrace),
     ...line('Idiomas', legacy.languages),
     ...line('XP', legacy.xpTotal === '' && legacy.xpSpent === '' ? '' : `total ${legacy.xpTotal}, gasto ${legacy.xpSpent}`),
-    ...line('Convicções', legacy.convictions.join('; ')),
-    ...line('Touchstones', legacy.touchstones.map((t) => (t.summary ? `${t.name} — ${t.summary}` : t.name)).join('; ')),
     ...line('Poderes excedentes', overflowPowers.join('; ')),
     ...line('Rituais', rituals.join('; ')),
     ...line('Background', legacy.background),
@@ -200,6 +196,8 @@ function legacyNotes(legacy: LegacyCharacter): string {
   ];
   return body.length === 0 ? '' : ['— Importado do app do Pedro —', ...body].join('\n');
 }
+
+const isImageDataUrl = (value: unknown): value is string => typeof value === 'string' && value.startsWith('data:image/');
 
 function hasContent(value: unknown): boolean {
   if (Array.isArray(value)) return value.length > 0;
@@ -217,7 +215,8 @@ export function migrateLegacyPedro(input: unknown, newId: () => string): LegacyM
 
   const humanity = clampInt(trackers.humanity, 0, HUMANITY_SIZE);
   const stains = clampInt(trackers.humanityStains, 0, HUMANITY_SIZE - humanity);
-  const dropped = (['portrait', 'backdrop', 'pools', 'inventory'] as const).filter((key) => hasContent(legacy[key]));
+  const dropped: string[] = (['backdrop', 'pools', 'inventory'] as const).filter((key) => hasContent(legacy[key]));
+  if (hasContent(legacy.portrait) && !isImageDataUrl(legacy.portrait)) dropped.unshift('portrait');
   if (dropped.length > 0) warnings.push(`Não importados (sem lugar no app): ${dropped.join(', ')}.`);
 
   const ficha: Ficha = {
@@ -245,6 +244,20 @@ export function migrateLegacyPedro(input: unknown, newId: () => string): LegacyM
       resonance: trackers.resonance,
     },
     advantages: migrateAdvantages(legacy),
+    beliefs: {
+      ...base.beliefs,
+      convictions: legacy.convictions.map((conviction) => conviction.trim()).filter(Boolean).join('\n'),
+      touchstones: legacy.touchstones
+        .map((touchstone) => (touchstone.summary ? `${touchstone.name} — ${touchstone.summary}` : touchstone.name))
+        .filter(Boolean)
+        .join('\n'),
+    },
+    profile: {
+      ...base.profile,
+      sire: legacy.sire,
+      embraced: legacy.embrace,
+      photo: isImageDataUrl(legacy.portrait) ? legacy.portrait : '',
+    },
     notes: legacyNotes(legacy),
   };
   return { ficha, warnings };

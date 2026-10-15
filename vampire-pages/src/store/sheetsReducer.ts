@@ -7,11 +7,13 @@ import {
   SKILL_RANGE,
   type AdvantageCategory,
   type AdvantageItem,
+  type Beliefs,
   type Blood,
   type Discipline,
   type DisciplinePower,
   type Ficha,
   type Identity,
+  type Profile,
 } from '../domain/character.ts';
 import { pickDots } from '../domain/dots.ts';
 import { cycleDamageBox, cycleHumanityBox, pickHunger, withMax } from '../domain/trackers.ts';
@@ -50,7 +52,10 @@ export type SheetsAction =
   | { type: 'advantage/renamed'; id: string; index: number; name: string; category: AdvantageCategory }
   | { type: 'advantage/noteChanged'; id: string; index: number; note: string }
   | { type: 'advantage/picked'; id: string; index: number; dotIndex: number }
-  | { type: 'advantage/removed'; id: string; index: number };
+  | { type: 'advantage/removed'; id: string; index: number }
+  | { type: 'advantage/created'; id: string; item: AdvantageItem }
+  | { type: 'beliefs/changed'; id: string; field: keyof Beliefs; value: string }
+  | { type: 'profile/changed'; id: string; field: keyof Profile; value: string };
 
 export const EMPTY_SHEETS_STATE: SheetsState = { fichas: [], activeId: null };
 
@@ -200,6 +205,15 @@ export function sheetsReducer(state: SheetsState, action: SheetsAction): SheetsS
       return updateFicha(state, action.id, (ficha) =>
         updateAdvantage(ficha, action.index, (item) => ({ ...item, level: pickDots(item.level, action.dotIndex, ADVANTAGE_RANGE) })),
       );
+    case 'advantage/created':
+      return updateFicha(state, action.id, (ficha) => ({
+        ...ficha,
+        advantages: [...ficha.advantages, { ...action.item, level: Math.min(ADVANTAGE_RANGE.max, Math.max(ADVANTAGE_RANGE.min, action.item.level)) }],
+      }));
+    case 'beliefs/changed':
+      return updateFicha(state, action.id, (ficha) => ({ ...ficha, beliefs: { ...ficha.beliefs, [action.field]: action.value } }));
+    case 'profile/changed':
+      return updateFicha(state, action.id, (ficha) => ({ ...ficha, profile: { ...ficha.profile, [action.field]: action.value } }));
     case 'advantage/removed':
       return updateFicha(state, action.id, (ficha) =>
         ficha.advantages[action.index] === undefined ? ficha : { ...ficha, advantages: ficha.advantages.toSpliced(action.index, 1) },

@@ -4,10 +4,12 @@ import {
   HUMANITY_SIZE,
   SKILL_RANGE,
   TRACK_CAP,
+  type Beliefs,
   type BoxState,
   type DamageTrack,
   type Discipline,
   type Ficha,
+  type Profile,
 } from './character.ts';
 import { ATTRIBUTE_KEYS, SKILL_KEYS, type AttributeKey, type SkillKey } from './traits.ts';
 
@@ -26,6 +28,14 @@ export function humanityBoxes(humanity: number, stains = 0): BoxState[] {
     if (index >= HUMANITY_SIZE - stains) return 1;
     return 0;
   });
+}
+
+export function emptyBeliefs(): Beliefs {
+  return { chronicleTenets: '', convictions: '', touchstones: '' };
+}
+
+export function emptyProfile(): Profile {
+  return { sire: '', birthday: '', age: '', embraced: '', apparentAge: '', description: '', concept: '', photo: '' };
 }
 
 export function emptyDiscipline(): Discipline {
@@ -71,6 +81,8 @@ export function createFicha(id: string, name: string, player = ''): Ficha {
       clanCompulsion: '',
     },
     advantages: [],
+    beliefs: emptyBeliefs(),
+    profile: emptyProfile(),
     notes: '',
   };
 }

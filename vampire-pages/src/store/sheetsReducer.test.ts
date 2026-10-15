@@ -146,3 +146,23 @@ describe('advantages', () => {
     expect(run(withTwo, { type: 'advantage/removed', id: 'nina', index: 5 })).toEqual(withTwo);
   });
 });
+
+describe('page 2', () => {
+  const start = stateOf('nina', nina);
+
+  it('creates an advantage typed into an empty row, keeping the level in range', () => {
+    const next = run(start, { type: 'advantage/created', id: 'nina', item: { category: 'flaw', name: 'Suspect', level: 9, note: '' } });
+    expect(ficha(next, 'nina').advantages).toEqual([{ category: 'flaw', name: 'Suspect', level: 6, note: '' }]);
+  });
+
+  it('edits beliefs and profile fields', () => {
+    const next = run(
+      start,
+      { type: 'beliefs/changed', id: 'nina', field: 'convictions', value: 'Nunca mentir para a coterie.' },
+      { type: 'profile/changed', id: 'nina', field: 'sire', value: 'Augusto' },
+      { type: 'profile/changed', id: 'nina', field: 'photo', value: 'data:image/jpeg;base64,AAAA' },
+    );
+    expect(ficha(next, 'nina').beliefs.convictions).toBe('Nunca mentir para a coterie.');
+    expect(ficha(next, 'nina').profile).toMatchObject({ sire: 'Augusto', photo: 'data:image/jpeg;base64,AAAA' });
+  });
+});

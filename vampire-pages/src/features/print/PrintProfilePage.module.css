@@ -1,0 +1,273 @@
+/* Ficha A, page 2 (prototype A2). Fixed to one A4 page: the content box is
+   --print-page-height tall and the rows/text areas stretch to fill it.
+   Scale variables (--print-*) come from the print view. */
+
+.page {
+  inline-size: var(--print-layout-width);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-medium);
+  font-size: calc(var(--font-size-md) * var(--print-type-scale));
+  line-height: var(--line-height-snug);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+  .page {
+    zoom: var(--print-zoom);
+    padding: 0;
+    break-before: page;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  block-size: var(--print-page-height);
+  overflow: hidden;
+}
+
+.header {
+  flex: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block-end: var(--space-2);
+  border-block-end: var(--border-width-thick) solid var(--color-rule);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: calc(var(--font-size-2xl) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+}
+
+.runningHead {
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-2xs) * var(--print-small-scale));
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.sectionTitle {
+  flex: none;
+  margin-block: calc(var(--space-5) * var(--print-gap-scale)) calc(var(--space-2) * var(--print-gap-scale));
+  padding-block-end: var(--space-1);
+  border-block-end: var(--border-width-hairline) solid var(--color-rule);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: calc(var(--font-size-lg) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+}
+
+/* ---------- Text areas ---------- */
+
+.area {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-block-size: 0;
+}
+
+.areaLabel {
+  flex: none;
+  font-style: italic;
+}
+
+.box {
+  flex: 1 1 0;
+  min-block-size: 0;
+  inline-size: 100%;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width-hairline) dotted var(--color-leader);
+  border-radius: var(--radius-none);
+  background: transparent;
+  resize: none;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+  color: var(--color-text-muted);
+}
+
+.line {
+  flex: 1;
+  min-inline-size: 0;
+  padding: 0 var(--space-1);
+  border: 0;
+  border-block-end: var(--border-width-hairline) dotted var(--color-leader);
+  border-radius: var(--radius-none);
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  color: var(--color-text-muted);
+}
+
+/* ---------- Beliefs ---------- */
+
+.beliefs {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  block-size: calc(9rem * var(--print-type-scale));
+}
+
+/* ---------- Body: merits/flaws | profile ---------- */
+
+.body {
+  flex: 1 1 0;
+  min-block-size: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 0 var(--space-5);
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 0;
+}
+
+.advantageGroup {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-block-size: 0;
+}
+
+.advantageRows {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-block-size: 0;
+}
+
+.advantageRow {
+  flex: 1 1 0;
+  min-block-size: var(--print-write-line);
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-2);
+  padding-block-end: var(--space-1);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 0;
+  padding-inline-start: var(--space-5);
+  border-inline-start: var(--border-width-hairline) solid;
+  border-image: linear-gradient(to bottom, transparent, var(--color-rule) 6%, var(--color-rule) 94%, transparent) 1;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.profileTop {
+  flex: none;
+  display: flex;
+  gap: var(--space-5);
+}
+
+/* Exactly 3 × 4 cm on paper: the layout is zoomed by --print-zoom when printing. */
+.photo {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: calc(3cm / var(--print-zoom));
+  block-size: calc(4cm / var(--print-zoom));
+  overflow: hidden;
+  border: var(--border-width-hairline) solid var(--color-rule);
+  text-align: center;
+  cursor: pointer;
+}
+
+.photoImage {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.photoHint {
+  padding: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-2xs) * var(--print-small-scale));
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
+}
+
+.photoAction {
+  letter-spacing: var(--letter-spacing-normal);
+  text-transform: none;
+  color: var(--color-leader);
+}
+
+.photoInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profileFields {
+  flex: 1;
+  min-inline-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileField {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.removePhoto {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-accent);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.description {
+  flex: 5 1 0;
+  margin-block-start: calc(var(--space-4) * var(--print-gap-scale));
+}
+
+.bottomAreas {
+  flex: 7 1 0;
+  display: flex;
+  gap: var(--space-5);
+  min-block-size: 0;
+  margin-block-start: calc(var(--space-4) * var(--print-gap-scale));
+}
+
+.notes {
+  flex: 2 1 0;
+  min-inline-size: 0;
+}
+
+.concept {
+  flex: 1 1 0;
+  min-inline-size: 0;
+}

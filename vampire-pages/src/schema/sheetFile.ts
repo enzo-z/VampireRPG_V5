@@ -69,6 +69,23 @@ const advantage = z.strictObject({
   note: z.string(),
 });
 
+const beliefs = z.strictObject({
+  chronicleTenets: z.string(),
+  convictions: z.string(),
+  touchstones: z.string(),
+});
+
+const profile = z.strictObject({
+  sire: z.string(),
+  birthday: z.string(),
+  age: z.string(),
+  embraced: z.string(),
+  apparentAge: z.string(),
+  description: z.string(),
+  concept: z.string(),
+  photo: z.union([z.literal(''), z.string().startsWith('data:image/')]),
+});
+
 export const fichaSchema = z.strictObject({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -85,6 +102,8 @@ export const fichaSchema = z.strictObject({
   }),
   blood,
   advantages: z.array(advantage),
+  beliefs,
+  profile,
   notes: z.string(),
 }) satisfies z.ZodType<Ficha>;
 

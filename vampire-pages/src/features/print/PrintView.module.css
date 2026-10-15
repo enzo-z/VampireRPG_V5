@@ -58,6 +58,29 @@
   padding: var(--space-5);
 }
 
+/* Both printed pages: shared print scale. At the A4 zoom (~0.60) one layout px
+   prints as ~0.45 pt, so the app tokens are scaled up; the smallest text lands at
+   ~7 pt (agreed minimum). */
+.sheets {
+  /* Tuned on a full ficha (6 disciplines x 5 powers, 200-character Clan Bane and
+     Compulsão, the agreed worst case): ~1,700 of 1,720 px. */
+  --print-type-scale: 1.2;   /* serif labels ~9.75 pt, titles ~11.9 pt */
+  --print-text-scale: 1.3;   /* sans values (xs): ~7.6 pt */
+  --print-small-scale: 1.42; /* sans fields (2xs): ~7 pt */
+  --print-box-scale: 1.2;    /* dots, boxes, bullets outside the trackers */
+  --print-gap-scale: 0.85;   /* vertical spacing, traded for larger type */
+  --print-write-line: 2.1rem;        /* skill and power lines: ~5.3 mm to write by hand */
+  --print-tracker-scale: 1.5;        /* trackers: boxes ~3.8 mm, dots ~3.1 mm */
+  --print-tracker-label-scale: 1.25; /* tracker and The Blood labels: ~10 pt */
+  --dots-sm-size: calc(0.8rem * var(--print-box-scale));
+  --boxes-sm-size: calc(1rem * var(--print-box-scale));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
 .sheetFrame {
   position: relative;
   inline-size: max-content;
@@ -95,5 +118,9 @@
 
   .sheetFrame {
     border: 0;
+  }
+
+  .sheets {
+    gap: 0;
   }
 }

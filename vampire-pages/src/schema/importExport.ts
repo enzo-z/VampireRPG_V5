@@ -35,7 +35,8 @@ export function parseSheetFile(text: string, options: ImportOptions = {}): Impor
     const version = data.schemaVersion;
     const migrated = typeof version === 'number' ? migrateToCurrent(data as Record<string, unknown>, version, SCHEMA_VERSION) : null;
     if (migrated === null) {
-      return { ok: false, error: `Versão ${JSON.stringify(version)} não suportada; este app lê as versões ${SUPPORTED_VERSIONS.join(' e ')}.` };
+      const versions = `${SUPPORTED_VERSIONS.slice(0, -1).join(', ')} e ${SUPPORTED_VERSIONS.at(-1)}`;
+      return { ok: false, error: `Versão ${JSON.stringify(version)} não suportada; este app lê as versões ${versions}.` };
     }
     return validate(migrated, []);
   }

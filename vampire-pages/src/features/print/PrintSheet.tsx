@@ -1,4 +1,4 @@
-import type { CSSProperties, Ref } from 'react';
+import type { Ref } from 'react';
 import {
   ATTRIBUTE_RANGE,
   BLOOD_POTENCY_RANGE,
@@ -23,7 +23,6 @@ import type { BloodTextField, DamageTrackKey, SheetsAction } from '../../store/s
 import { Boxes } from '../../ui/Boxes.tsx';
 import { Dots } from '../../ui/Dots.tsx';
 import { AnkhIcon, DropIcon } from '../../ui/icons.tsx';
-import { PRINT_LAYOUT_WIDTH_PX, PRINT_ZOOM } from './printLayout.ts';
 import styles from './PrintSheet.module.css';
 
 interface PrintSheetProps {
@@ -119,14 +118,10 @@ function BloodNote({ ficha, edit, field, label }: PrintSheetProps & { field: Blo
 
 /** Ficha A: one A4 page, every circle and box visible. */
 export function PrintSheet({ ficha, edit, ref }: PrintSheetProps & { ref?: Ref<HTMLDivElement> }) {
-  const pageStyle = {
-    '--print-layout-width': `${PRINT_LAYOUT_WIDTH_PX}px`,
-    '--print-zoom': String(PRINT_ZOOM),
-  } as CSSProperties;
   const hungerStates = Array.from({ length: HUNGER_MAX }, (_, index): BoxState => (index < ficha.trackers.hunger ? 2 : 0));
 
   return (
-    <div ref={ref} className={styles.page} style={pageStyle}>
+    <div ref={ref} className={styles.page}>
       <header className={styles.header}>
         <div className={styles.name}>{ficha.name}</div>
         <div className={styles.runningHead}>Ficha · página 1 de 2 · mecânica</div>

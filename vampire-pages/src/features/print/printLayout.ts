@@ -22,6 +22,9 @@ export const PRINT_ZOOM = (PRINTABLE_WIDTH_PX - EDGE_SAFETY_PX) / PRINT_LAYOUT_W
 /** Tallest layout that fits one A4 page with 10 mm margins (≈ 1,720 px); conservative, ignores the safety margin. */
 export const PRINT_HEIGHT_LIMIT_PX = Math.floor((PRINTABLE_HEIGHT_PX * PRINT_LAYOUT_WIDTH_PX) / PRINTABLE_WIDTH_PX);
 
+/** Height of the fixed page 2 content box, a little under the limit for safety. */
+export const PRINT_PAGE_HEIGHT_PX = PRINT_HEIGHT_LIMIT_PX - 10;
+
 export function overflowPx(contentHeightPx: number): number {
   return Math.max(0, Math.ceil(contentHeightPx - PRINT_HEIGHT_LIMIT_PX));
 }

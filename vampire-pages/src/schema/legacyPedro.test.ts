@@ -89,10 +89,17 @@ describe('migrateLegacyPedro', () => {
     ]);
   });
 
-  it('copies blood potency and resonance and warns about dropped media', () => {
+  it('copies blood potency and resonance and warns about dropped data', () => {
     const { ficha, warnings } = migrate();
     expect([ficha.blood.potency, ficha.blood.resonance]).toEqual([1, 'Sanguine']);
-    expect(warnings).toContain('Não importados (sem lugar no app): portrait, backdrop.');
+    expect(warnings).toContain('Não importados (sem lugar no app): backdrop.');
+  });
+
+  it('fills page 2: convictions, touchstones, sire, embrace and the portrait', () => {
+    const { ficha } = migrate();
+    expect(ficha.beliefs).toEqual({ chronicleTenets: '', convictions: 'Nunca trair a família', touchstones: 'Irmã — mora em Recife' });
+    expect(ficha.profile).toMatchObject({ sire: '', embraced: '1998', photo: 'data:image/jpeg;base64,AAAA' });
+    expect(ficha.notes).not.toContain('Convicções');
   });
 
   it('falls back to defaults when sections are missing', () => {

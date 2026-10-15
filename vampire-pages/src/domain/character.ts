@@ -86,6 +86,26 @@ export interface AdvantageItem {
   note: string;
 }
 
+/** Page 2 of the sheet: "Beliefs". */
+export interface Beliefs {
+  chronicleTenets: string;
+  convictions: string;
+  touchstones: string;
+}
+
+/** Page 2 of the sheet: "Profile". */
+export interface Profile {
+  sire: string;
+  birthday: string;
+  age: string;
+  embraced: string;
+  apparentAge: string;
+  description: string;
+  concept: string;
+  /** JPEG data URL (3 × 4 portrait, downscaled), or empty. */
+  photo: string;
+}
+
 export interface Ficha {
   id: string;
   name: string;
@@ -99,10 +119,12 @@ export interface Ficha {
   trackers: Trackers;
   blood: Blood;
   advantages: AdvantageItem[];
+  beliefs: Beliefs;
+  profile: Profile;
   notes: string;
 }
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export interface SheetFile {
   schemaVersion: typeof SCHEMA_VERSION;

@@ -17,7 +17,7 @@ describe('parseSheetFile', () => {
     const text = serializeSheetFile([nina, vincent]);
     const result = parseSheetFile(text);
 
-    expect(result).toEqual({ ok: true, file: { schemaVersion: 2, fichas: [nina, vincent] }, warnings: [] });
+    expect(result).toEqual({ ok: true, file: { schemaVersion: 3, fichas: [nina, vincent] }, warnings: [] });
     if (result.ok) expect(serializeSheetFile(result.file.fichas)).toBe(text);
   });
 
@@ -26,15 +26,26 @@ describe('parseSheetFile', () => {
   });
 
   it('rejects unknown schema versions with a clear message', () => {
-    expect(expectError(JSON.stringify({ schemaVersion: 3, fichas: [] }))).toBe(
-      'Versão 3 não suportada; este app lê as versões 1 e 2.',
+    expect(expectError(JSON.stringify({ schemaVersion: 4, fichas: [] }))).toBe(
+      'Versão 4 não suportada; este app lê as versões 1, 2 e 3.',
     );
   });
 
-  it('upgrades version 1 files, which had no advantages', () => {
-    const { advantages: _dropped, ...v1Ficha } = nina;
+  it('upgrades version 1 files, which had no advantages nor page 2', () => {
+    const { advantages: _a, beliefs: _b, profile: _p, ...v1Ficha } = nina;
     const result = parseSheetFile(JSON.stringify({ schemaVersion: 1, fichas: [v1Ficha] }));
-    expect(result).toEqual({ ok: true, file: { schemaVersion: 2, fichas: [nina] }, warnings: [] });
+    expect(result).toEqual({ ok: true, file: { schemaVersion: 3, fichas: [nina] }, warnings: [] });
+  });
+
+  it('upgrades version 2 files, which had no page 2', () => {
+    const { beliefs: _b, profile: _p, ...v2Ficha } = nina;
+    const result = parseSheetFile(JSON.stringify({ schemaVersion: 2, fichas: [v2Ficha] }));
+    expect(result).toEqual({ ok: true, file: { schemaVersion: 3, fichas: [nina] }, warnings: [] });
+  });
+
+  it('accepts only image data URLs as photos', () => {
+    const withLink = { ...nina, profile: { ...nina.profile, photo: 'https://example.com/foto.jpg' } };
+    expect(expectError(JSON.stringify({ schemaVersion: 3, fichas: [withLink] }))).toContain('fichas[0].profile.photo');
   });
 
   it('reports the path of an invalid value', () => {
@@ -65,7 +76,7 @@ describe('parseSheetFile', () => {
     const result = parseSheetFile(JSON.stringify(legacyCharacter()), { newId: () => 'fresh' });
     if (!result.ok) throw new Error(result.error);
 
-    expect(result.file.schemaVersion).toBe(2);
+    expect(result.file.schemaVersion).toBe(3);
     expect(result.file.fichas.map((f) => [f.id, f.name])).toEqual([['fresh', 'Teste Legado']]);
     expect(result.warnings.length).toBeGreaterThan(0);
   });

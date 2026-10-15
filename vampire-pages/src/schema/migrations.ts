@@ -15,9 +15,25 @@ function v1ToV2(file: Json): Json {
   };
 }
 
-const STEPS: Readonly<Record<number, (file: Json) => Json>> = { 1: v1ToV2 };
+/** v2 → v3: fichas gain page 2 (beliefs and profile), empty. */
+function v2ToV3(file: Json): Json {
+  const fichas = Array.isArray(file['fichas']) ? file['fichas'] : [];
+  const emptyBeliefs = { chronicleTenets: '', convictions: '', touchstones: '' };
+  const emptyProfile = { sire: '', birthday: '', age: '', embraced: '', apparentAge: '', description: '', concept: '', photo: '' };
+  return {
+    ...file,
+    schemaVersion: 3,
+    fichas: fichas.map((ficha) =>
+      isObject(ficha)
+        ? { ...ficha, beliefs: ficha['beliefs'] ?? emptyBeliefs, profile: ficha['profile'] ?? emptyProfile }
+        : ficha,
+    ),
+  };
+}
 
-export const SUPPORTED_VERSIONS: readonly number[] = [1, 2];
+const STEPS: Readonly<Record<number, (file: Json) => Json>> = { 1: v1ToV2, 2: v2ToV3 };
+
+export const SUPPORTED_VERSIONS: readonly number[] = [1, 2, 3];
 
 /** Applies every step from `version` up to the current schema; returns null for unknown versions. */
 export function migrateToCurrent(file: Json, version: number, current: number): Json | null {
