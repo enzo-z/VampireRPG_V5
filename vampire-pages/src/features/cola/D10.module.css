@@ -1,0 +1,42 @@
+/* d10 drawn with the trait tokens: black = regular die, red = Hunger die. */
+.die {
+  inline-size: var(--d10-size, 2rem);
+  block-size: calc(var(--d10-size, 2rem) * 1.1);
+  flex: none;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.body {
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.edge {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.black .body {
+  fill: var(--color-trait-filled);
+  stroke: var(--color-trait-filled);
+}
+
+.red .body {
+  fill: var(--color-trait-marked);
+  stroke: var(--color-trait-marked);
+}
+
+.black .edge,
+.red .edge {
+  stroke: var(--color-text-on-accent);
+  opacity: 0.45;
+}
+
+.number {
+  fill: var(--color-text-on-accent);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 40px;
+}

@@ -142,3 +142,11 @@ export const MenuIcon = () => (
     <path d="M3 6h18M3 12h18M3 18h18" />
   </Icon>
 );
+
+/** A ten-sided die, for the player's cheat sheet. */
+export const DieIcon = () => (
+  <Icon>
+    <path d="M12 2l9 9.5-9 10.5-9-10.5z" />
+    <path d="M12 2l4.5 11-4.5 3.5-4.5-3.5z" />
+  </Icon>
+);

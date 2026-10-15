@@ -5,6 +5,8 @@ import { useToast } from '../../ui/Toast.tsx';
 import { overflowPx, PRINT_HEIGHT_LIMIT_PX, PRINT_LAYOUT_WIDTH_PX, PRINT_PAGE_HEIGHT_PX, PRINT_ZOOM } from './printLayout.ts';
 import { PrintProfilePage } from './PrintProfilePage.tsx';
 import { PrintSheet } from './PrintSheet.tsx';
+import { overflowingFields } from './fit.ts';
+import scale from './printScale.module.css';
 import styles from './PrintView.module.css';
 
 interface PrintViewProps {
@@ -19,14 +21,6 @@ interface PrintViewProps {
 function contentHeight(element: HTMLElement): number {
   const style = window.getComputedStyle(element);
   return element.scrollHeight - Number.parseFloat(style.paddingTop) - Number.parseFloat(style.paddingBottom);
-}
-
-/** Page 2 has fixed boxes: lists the labels of the boxes whose content does not fit. */
-function overflowingFields(page: HTMLElement): string[] {
-  const fields = [...page.querySelectorAll<HTMLElement>('[data-fit-label]')];
-  const labels = fields.filter((field) => field.scrollHeight > field.clientHeight + 1).map((field) => field.dataset['fitLabel'] ?? '');
-  if (page.scrollHeight > page.clientHeight + 1) labels.push('página inteira');
-  return labels;
 }
 
 const SHEETS_STYLE = {
@@ -103,7 +97,7 @@ export function PrintView({ ficha, edit, autoPrint, onBack }: PrintViewProps) {
         )}
       </div>
       <div className={styles.stage}>
-        <div className={styles.sheets} style={SHEETS_STYLE}>
+        <div className={`${scale.scale} ${styles.sheets}`} style={SHEETS_STYLE}>
           <div className={styles.sheetFrame} style={MARKER_STYLE}>
             <PrintSheet ref={pageRef} ficha={ficha} edit={edit} />
             <div className={styles.limitMarker} data-print="hide" aria-hidden="true">

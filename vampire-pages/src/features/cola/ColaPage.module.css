@@ -1,0 +1,210 @@
+/* Player's cheat sheet, page 1. One A4 page: the content box is --print-page-height
+   tall; the two columns take what the glossaries leave and flag overflow.
+   Scale variables (--print-*) come from printScale.module.css. */
+
+.page {
+  inline-size: var(--print-layout-width);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-medium);
+  font-size: calc(var(--font-size-md) * var(--print-type-scale));
+  line-height: var(--line-height-snug);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+@media print {
+  .page {
+    zoom: var(--print-zoom);
+    padding: 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-4) * var(--print-gap-scale));
+  block-size: var(--print-page-height);
+  overflow: hidden;
+}
+
+.header {
+  flex: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block-end: var(--space-2);
+  border-block-end: var(--border-width-thick) solid var(--color-rule);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: calc(var(--font-size-2xl) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+}
+
+.runningHead {
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-2xs) * var(--print-small-scale));
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.columns {
+  flex: 1 1 0;
+  min-block-size: 0;
+  overflow: hidden;
+  display: grid;
+  /* The left column carries the dice panel, so it gets a little more width. */
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: 0 var(--space-6);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-4) * var(--print-gap-scale));
+  min-block-size: 0;
+  overflow: hidden;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.blockTitle {
+  padding-block-end: 2px;
+  border-block-end: var(--border-width-hairline) solid var(--color-rule);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: calc(var(--font-size-lg) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin-block-end: var(--space-2);
+  padding-block-end: var(--space-1);
+  border-block-end: var(--border-width-hairline) solid var(--color-rule);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: calc(var(--font-size-lg) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+}
+
+/* Vault prose: sans, compact, with the rubric marks from highlightRolls. */
+/* Prose at the size of the printed sheet's values (~7.6 pt). */
+.prose {
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+.prose :global(p),
+.prose :global(ul) {
+  margin: 0 0 var(--space-1);
+}
+
+.prose > :global(:last-child) {
+  margin-block-end: 0;
+}
+
+.prose :global(ul) {
+  padding-inline-start: var(--space-4);
+}
+
+.prose :global(li) {
+  margin-block-end: 2px;
+}
+
+/* A rule to remember (blockquote in the note): rubric bar on the left. */
+.prose :global(blockquote) {
+  margin: 0 0 var(--space-1);
+  padding: 2px var(--space-2);
+  border-inline-start: var(--border-width-thick) solid var(--color-rule);
+  background: var(--color-surface-tint);
+}
+
+.prose :global(blockquote p) {
+  margin: 0;
+}
+
+.prose :global(strong) {
+  font-weight: var(--font-weight-bold);
+}
+
+.prose :global(mark.roll) {
+  padding: 0 0.2em;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-subtle);
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-semibold);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.prose :global(mark.roll[data-roll='rouse']) {
+  padding: 0;
+  background: transparent;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--color-text-accent);
+  text-underline-offset: 0.2em;
+}
+
+/* Glossaries (Termos, Clãs): an optional intro line, then compact entries in columns. */
+.glossary {
+  flex: none;
+}
+
+.intro {
+  margin-block-end: var(--space-2);
+  text-align: center;
+}
+
+.intro :global(p) {
+  margin: 0;
+}
+
+.entries {
+  margin: 0;
+  columns: var(--glossary-columns, 3);
+  column-gap: var(--space-5);
+}
+
+.entry {
+  break-inside: avoid;
+  margin-block-end: var(--space-1);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+.entry dt {
+  display: inline;
+  font-weight: var(--font-weight-bold);
+}
+
+.entry dt::after {
+  content: ': ';
+}
+
+.entry dd {
+  display: inline;
+  margin: 0;
+}
+
+.entry dd :global(p) {
+  display: inline;
+  margin: 0;
+}

@@ -1,0 +1,78 @@
+/* Top of the left column: the two rulers, then the three example rolls side by side. */
+.panel {
+  --d10-size: calc(1.6rem * var(--print-box-scale, 1));
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-2) * var(--print-gap-scale, 1));
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width-hairline) solid var(--color-border);
+  background: var(--color-surface-tint);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.ruler {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rulerTitle,
+.exampleTitle {
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-semibold);
+  font-size: calc(var(--font-size-md) * var(--print-type-scale, 1));
+  line-height: var(--line-height-tight);
+}
+
+.bands {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.band {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.dice {
+  display: flex;
+  gap: 2px;
+}
+
+.bandLabel,
+.exampleResult {
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-2xs) * var(--print-small-scale, 1));
+  line-height: var(--line-height-tight);
+  color: var(--color-text-muted);
+}
+
+/* Two short lines under a single die ("perigo:" / "Messy Critical"). */
+.bandLabel {
+  max-inline-size: 8em;
+  text-align: center;
+}
+
+.strong .bandLabel {
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-semibold);
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  padding-block-start: var(--space-2);
+  border-block-start: var(--border-width-hairline) solid var(--color-border);
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

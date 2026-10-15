@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ColaView } from '../features/cola/ColaView.tsx';
 import { MesaView } from '../features/mesa/MesaView.tsx';
 import { PrintView } from '../features/print/PrintView.tsx';
 import type { SheetPageName } from '../features/sheet/PageTabs.tsx';
@@ -10,7 +11,7 @@ import { Sidebar, type ShellView } from './Sidebar.tsx';
 import { useSidebar } from './useSidebar.ts';
 import styles from './App.module.css';
 
-type View = { name: ShellView } | { name: 'print'; autoPrint: boolean };
+type View = { name: ShellView } | { name: 'print'; autoPrint: boolean } | { name: 'cola' };
 
 function AppContent() {
   const { state, dispatch, storageNotice, dismissStorageNotice } = useSheets();
@@ -40,6 +41,14 @@ function AppContent() {
     setView({ name: 'mesa' });
     sidebar.closeIfNarrow();
   };
+
+  if (view.name === 'cola') {
+    return (
+      <main>
+        <ColaView onBack={openMesa} />
+      </main>
+    );
+  }
 
   if (active !== null && view.name === 'print') {
     return (
@@ -87,6 +96,7 @@ function AppContent() {
         view={shellView}
         activeId={state.activeId}
         onMesa={openMesa}
+        onCola={() => setView({ name: 'cola' })}
         onFicha={openFicha}
       />
       {sidebar.narrow && sidebar.open && (

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Ficha } from '../domain/character.ts';
-import { BookIcon, ChevronLeftIcon, ChevronRightIcon, ListIcon, TableIcon } from '../ui/icons.tsx';
+import { BookIcon, ChevronLeftIcon, ChevronRightIcon, DieIcon, ListIcon, TableIcon } from '../ui/icons.tsx';
 import styles from './Sidebar.module.css';
 
 export type ShellView = 'mesa' | 'sheet';
@@ -15,6 +15,8 @@ interface SidebarProps {
   activeId: string | null;
   onMesa: () => void;
   onFicha: (id: string) => void;
+  /** Opens the player's cheat sheet (page 1, the same for everyone). */
+  onCola: () => void;
 }
 
 /** "Nina Blue Calloway" → "NB"; a copy keeps its number: "Nina (1)" → "N1". */
@@ -61,7 +63,7 @@ function NavItem({ icon, label, current, disabled, note, onClick, open }: {
 }
 
 /** Collapsible main menu: Fichas (Mesa and every ficha), Vault and Backlog (later). */
-export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha }: SidebarProps) {
+export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha, onCola }: SidebarProps) {
   return (
     <nav
       id="main-menu"
@@ -115,6 +117,9 @@ export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa
           );
         })}
       </ul>
+
+      {open && <p className={styles.group}>Mesa de jogo</p>}
+      <NavItem icon={<DieIcon />} label="Cola do jogador" onClick={onCola} open={open} />
 
       <div className={styles.later}>
         <NavItem icon={<BookIcon />} label="Vault" note="em breve" disabled open={open} />

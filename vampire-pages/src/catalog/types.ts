@@ -146,3 +146,20 @@ export interface ClanEntry {
 export interface ClanCatalog {
   entries: ClanEntry[];
 }
+
+/** A "### Term" of the player's cheat sheet (Cola do Jogador.md). */
+export interface ColaEntry {
+  term: string;
+  html: string;
+}
+
+/** A "## Section" of the cheat sheet: its text and optional terms. */
+export interface ColaBlock {
+  title: string;
+  html: string;
+  entries: ColaEntry[];
+}
+
+export interface ColaCatalog {
+  blocks: ColaBlock[];
+}
