@@ -53,8 +53,8 @@ Você rouba, compra ou de outra forma adquire sangue frio, em vez de caçar, dep
 
 - **Adicione uma especialidade:** Larceny (Lockpicking) or Streetwise (Black Market).
 - **Ganhe um ponto em:** Gain one dot of [[Disciplinas#Blood Sorcery|Blood Sorcery]] (Tremere only) or [[Disciplinas#Obfuscate||Obsfucate]].
-- **[[Mérito]]:** Ganhe o [[Advantages||Mérito]] Iron Gullet (•••)
-- **[[Advantages|Defeito]]:** Ganhe o Defeito _Enemy (••)_: Alguém acredita que você deve algo ou há outro motivo que o mantém fora das ruas.
+- **[[Mérito]]:** Ganhe o [[Advantages#Merits|Mérito]] Iron Gullet (•••)
+- **[[Advantages#Flaws|Defeito]]:** Ganhe o Defeito _Enemy (••)_: Alguém acredita que você deve algo ou há outro motivo que o mantém fora das ruas.
 ---
 # Cleaver
 Você se alimenta secretamente de sua família mortal ou de amigos próximos com quem ainda mantém laços. Alguns _Cleavers_ mais extremos adotam crianças, casam-se com humanos e tentam levar uma vida familiar pelo maior tempo possível. 
@@ -66,7 +66,7 @@ A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [
 
 - **Adicione uma especialidade:** Persuasion (Gaslighting) ou Subterfuge (Coverups).
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominate]] ou [[Disciplinas#Animalism|Animalism]];
-- **Ganhe o [[Advantages|Defeito]]:**  Dark Secret (•) - Cleaver.
+- **Ganhe o [[Advantages#Flaws|Defeito]]:**  Dark Secret (•) - Cleaver.
 - **Ganhe o [[Mérito]]:** Herd (••).
 ---
 # Consensualist
@@ -78,8 +78,8 @@ A [[Camarilla]] considera este último método uma violação da [[Camarilla#1ª
 - **Adicione uma especialidade:** Medicine (Phlebotomy) ou Persuasion (Victims). 
 - **Ganhe um ponto em:** [[Disciplinas#Auspex|Auspícios]] ou [[Disciplinas#Fortitude|Fortitude]].
 - **Ganhe um ponto de:** [[Humanidade]]. 
-- **Ganhe o [[Advantages|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*). 
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Prey Exclusion* (não-consentidos) (•).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*). 
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Prey Exclusion* (não-consentidos) (•).
 ---
 # Farmer
 
@@ -91,7 +91,7 @@ Esta escolha reflete uma obsessão com a moralidade. Talvez você tenha sido um 
 - **Adicione uma especialidade:** Animal Ken (Specific Animal) ou Survival (Hunting).
 - **Ganhe um ponto em:** [[Disciplinas#Animalism|Animalismo]] ou [[Disciplinas#Protean|Protean]].
 - **Ganhe um ponto de:** [[Humanidade]].
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Vegan* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Vegan* (••).
 ---
 # Osiris
 
@@ -102,7 +102,7 @@ Em vida, você pode ter sido um DJ, escritor, cultista, pregador ou organizador 
 - **Adicione uma especialidade:** Occult (specific tradition) ou Performance (specific entertainment field).
 - **Ganhe um ponto em:** [[Disciplinas#Blood Sorcery|Feitiçaria de Sangue]] (apenas Tremere) ou [[Disciplinas#Presence|Presença]]. 
 - **Gaste três pontos entre os [[Advantages#Backgrounds|Antecedentes]]:** Fama (*Fame*) e Rebanho (*Herd*). 
-- **Gaste dois pontos entre os [[Advantages|Defeitos]]:** Inimigos (*Enemies*) e Lenda Mítica (*Mythic*).
+- **Gaste dois pontos entre os [[Advantages#Flaws|Defeitos]]:** Inimigos (*Enemies*) e Lenda Mítica (*Mythic*).
 ---
 # Headhunter/Blood Leech
 
@@ -113,8 +113,8 @@ Alimentar-se assim é incrivelmente arriscado ou exige uma posição de poder in
 - **Ganhe um ponto em:** [[Disciplinas#Celerity|Celeridade]] ou [[Disciplinas#Protean|Protean]].
 - **Perda:** Perde um ponto de [[Humanidade]].
 - **Aumente:** A [[Kindred#Blood Potency|Blood Potency ("Potência de Sangue")]] em um ponto.
-- **Ganhe o [[Advantages|Defeito]]:** *Segredo Sombrio (Dark Secret)* (••) - Diablerista, ou *Exilado (Shunned)* (••).
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Prey Exclusion (mortais)* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (••) - Diablerista, ou *Exilado (Shunned)* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Prey Exclusion (mortais)* (••).
 ---
 # Sandman
 
@@ -136,7 +136,7 @@ Em vida, é quase certo que você fazia parte de uma cena semelhante à que agor
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominação]] ou [[Disciplinas#Potence|Potência]].
 - **Ganhe a [[Advantages|Vantagem]]:** *Fama (Fame)* (•).
 - **Ganhe a [[Advantages|Vantagem]]:** *Contatos (Contacts)* (•).
-- **Escolha um [[Advantages|Defeito]]:** *Influência Negativa (Disliked)* (•) (fora de sua subcultura) ou *Prey Exclusion* (•) (uma subcultura diferente da sua).
+- **Escolha um [[Advantages#Flaws|Defeito]]:** *Influência Negativa (Disliked)* (•) (fora de sua subcultura) ou *Prey Exclusion* (•) (uma subcultura diferente da sua).
 ---
 # Siren
 
@@ -146,8 +146,8 @@ Talvez em vida você fosse um artista da sedução, produtor de cinema, autor, u
 
 - **Adicione uma especialidade:** Persuasion (Seduction) ou Subterfuge (Seduction).
 - **Ganhe um ponto em:** [[Disciplinas#Fortitude|Fortitude]] ou [[Disciplinas#Presence|Presença]].
-- **Ganhe o [[Advantages|Mérito]]:** *Beleza (Looks)* (••) - Bonito(a).
-- **Ganhe o [[Advantages|Defeito]]:** *Inimigo (Enemy)* (•) - Um amante rejeitado ou parceiro ciumento.
+- **Ganhe o [[Advantages#Merits|Mérito]]:** *Beleza (Looks)* (••) - Bonito(a).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Inimigo (Enemy)* (•) - Um amante rejeitado ou parceiro ciumento.
 
 
 Predator Type é um dos features do seu personagem, e é uma coisa que você escolhe no momento da criação. Suas preferências de caça alimentam seu Sangue, e seu Sangue molda quais Habilidades e até [[Disciplinas]] que você desenvolve como vampiro.
@@ -177,8 +177,8 @@ Você rouba, compra ou de outra forma adquire sangue frio, em vez de caçar, dep
 
 - **Adicione uma especialidade:** Larceny (Lockpicking) or Streetwise (Black Market).
 - **Ganhe um ponto em:** Gain one dot of [[Disciplinas#Blood Sorcery|Blood Sorcery]] (Tremere only) or [[Disciplinas#Obfuscate||Obsfucate]].
-- **[[Mérito]]:** Ganhe o [[Advantages||Mérito]] Iron Gullet (•••)
-- **[[Advantages|Defeito]]:** Ganhe o Defeito _Enemy (••)_: Alguém acredita que você deve algo ou há outro motivo que o mantém fora das ruas.
+- **[[Mérito]]:** Ganhe o [[Advantages#Merits|Mérito]] Iron Gullet (•••)
+- **[[Advantages#Flaws|Defeito]]:** Ganhe o Defeito _Enemy (••)_: Alguém acredita que você deve algo ou há outro motivo que o mantém fora das ruas.
 ---
 # Cleaver
 Você se alimenta secretamente de sua família mortal ou de amigos próximos com quem ainda mantém laços. Alguns _Cleavers_ mais extremos adotam crianças, casam-se com humanos e tentam levar uma vida familiar pelo maior tempo possível. 
@@ -190,7 +190,7 @@ A [[Camarilla]] desaprova _Cleavers_, considerando-os violações iminentes da [
 
 - **Adicione uma especialidade:** Persuasion (Gaslighting) ou Subterfuge (Coverups).
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominate]] ou [[Disciplinas#Animalism|Animalism]];
-- **Ganhe o [[Advantages|Defeito]]:**  Dark Secret (•) - Cleaver.
+- **Ganhe o [[Advantages#Flaws|Defeito]]:**  Dark Secret (•) - Cleaver.
 - **Ganhe o [[Mérito]]:** Herd (••).
 ---
 # Consensualist
@@ -202,8 +202,8 @@ A [[Camarilla]] considera este último método uma violação da [[Camarilla#1ª
 - **Adicione uma especialidade:** Medicine (Phlebotomy) ou Persuasion (Victims). 
 - **Ganhe um ponto em:** [[Disciplinas#Auspex|Auspícios]] ou [[Disciplinas#Fortitude|Fortitude]].
 - **Ganhe um ponto de:** [[Humanidade]]. 
-- **Ganhe o [[Advantages|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*). 
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Prey Exclusion* (não-consentidos) (•).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (•) - Quebrador da Máscara (*Masquerade Breacher*). 
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Prey Exclusion* (não-consentidos) (•).
 ---
 # Farmer
 
@@ -215,7 +215,7 @@ Esta escolha reflete uma obsessão com a moralidade. Talvez você tenha sido um 
 - **Adicione uma especialidade:** Animal Ken (Specific Animal) ou Survival (Hunting).
 - **Ganhe um ponto em:** [[Disciplinas#Animalism|Animalismo]] ou [[Disciplinas#Protean|Protean]].
 - **Ganhe um ponto de:** [[Humanidade]].
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Vegan* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Vegan* (••).
 ---
 # Osiris
 
@@ -226,7 +226,7 @@ Em vida, você pode ter sido um DJ, escritor, cultista, pregador ou organizador 
 - **Adicione uma especialidade:** Occult (specific tradition) ou Performance (specific entertainment field).
 - **Ganhe um ponto em:** [[Disciplinas#Blood Sorcery|Feitiçaria de Sangue]] (apenas Tremere) ou [[Disciplinas#Presence|Presença]]. 
 - **Gaste três pontos entre os [[Advantages#Backgrounds|Antecedentes]]:** Fama (*Fame*) e Rebanho (*Herd*). 
-- **Gaste dois pontos entre os [[Advantages|Defeitos]]:** Inimigos (*Enemies*) e Lenda Mítica (*Mythic*).
+- **Gaste dois pontos entre os [[Advantages#Flaws|Defeitos]]:** Inimigos (*Enemies*) e Lenda Mítica (*Mythic*).
 ---
 # Headhunter/Blood Leech
 
@@ -237,8 +237,8 @@ Alimentar-se assim é incrivelmente arriscado ou exige uma posição de poder in
 - **Ganhe um ponto em:** [[Disciplinas#Celerity|Celeridade]] ou [[Disciplinas#Protean|Protean]].
 - **Perda:** Perde um ponto de [[Humanidade]].
 - **Aumente:** A [[Kindred#Blood Potency|Blood Potency ("Potência de Sangue")]] em um ponto.
-- **Ganhe o [[Advantages|Defeito]]:** *Segredo Sombrio (Dark Secret)* (••) - Diablerista, ou *Exilado (Shunned)* (••).
-- **Ganhe o [[Advantages|Defeito]] de Alimentação:** *Prey Exclusion (mortais)* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Segredo Sombrio (Dark Secret)* (••) - Diablerista, ou *Exilado (Shunned)* (••).
+- **Ganhe o [[Advantages#Flaws|Defeito]] de Alimentação:** *Prey Exclusion (mortais)* (••).
 ---
 # Sandman
 
@@ -260,7 +260,7 @@ Em vida, é quase certo que você fazia parte de uma cena semelhante à que agor
 - **Ganhe um ponto em:** [[Disciplinas#Dominate|Dominação]] ou [[Disciplinas#Potence|Potência]].
 - **Ganhe a [[Advantages|Vantagem]]:** *Fama (Fame)* (•).
 - **Ganhe a [[Advantages|Vantagem]]:** *Contatos (Contacts)* (•).
-- **Escolha um [[Advantages|Defeito]]:** *Influência Negativa (Disliked)* (•) (fora de sua subcultura) ou *Prey Exclusion* (•) (uma subcultura diferente da sua).
+- **Escolha um [[Advantages#Flaws|Defeito]]:** *Influência Negativa (Disliked)* (•) (fora de sua subcultura) ou *Prey Exclusion* (•) (uma subcultura diferente da sua).
 ---
 # Siren
 
@@ -270,5 +270,5 @@ Talvez em vida você fosse um artista da sedução, produtor de cinema, autor, u
 
 - **Adicione uma especialidade:** Persuasion (Seduction) ou Subterfuge (Seduction).
 - **Ganhe um ponto em:** [[Disciplinas#Fortitude|Fortitude]] ou [[Disciplinas#Presence|Presença]].
-- **Ganhe o [[Advantages|Mérito]]:** *Beleza (Looks)* (••) - Bonito(a).
-- **Ganhe o [[Advantages|Defeito]]:** *Inimigo (Enemy)* (•) - Um amante rejeitado ou parceiro ciumento.
+- **Ganhe o [[Advantages#Merits|Mérito]]:** *Beleza (Looks)* (••) - Bonito(a).
+- **Ganhe o [[Advantages#Flaws|Defeito]]:** *Inimigo (Enemy)* (•) - Um amante rejeitado ou parceiro ciumento.
