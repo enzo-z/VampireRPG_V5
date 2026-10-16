@@ -64,9 +64,9 @@ Seus Touchstones são os dois lados da mesma ferida: você os protege ficando mo
 
 | Pessoa | Quem é | O que você sabe |
 |---|---|---|
-| 🕯️ **Leila Yusuf** (👤 NPC mortal) | Sua irmã mais nova. Jornalista investigativa. Mora e trabalha em **Nova York**. | Ela acredita que você morreu em 2010. Ligada à sua Convicção *"A verdade precisa vir à tona, custe o que custar."* Por ofício, ela é a pessoa mais capaz de expor o que você esconde. A cidade é a mesma para os dois. |
-| 🕯️ **Amira Yusuf** (👤 NPC mortal) | Sua mãe, viúva. Mora em **Dearborn, Michigan**. | Acende uma vela por você **todo dia 10 de cada mês**. Você a observa de longe e nunca se revelou. Ligada à Convicção *"Nunca abandonar quem depende de mim."* |
-| **Seu pai** (👤 NPC mortal, morto) | Professor e repórter assassinado pelo regime. | Origem da sua obsessão por justiça. Ligado à Convicção *"Nenhum tirano merece escapar da justiça"*, que **não tem Touchstone**. |
+| 🕯️ **Leila Yusuf** (👤 NPC mortal) | Sua irmã mais nova. Jornalista investigativa. Mora e trabalha em **Nova York**, na redação do ***The Harbor Ledger***. | Ela acredita que você morreu em 2010. Ligada à sua Convicção *\"A verdade precisa vir à tona, custe o que custar.\"* Por ofício, ela é a pessoa mais capaz de expor o que você esconde. A cidade é a mesma para os dois. |
+| 🕯️ **Amira Yusuf** (👤 NPC mortal) | Sua mãe, viúva. Mora em **Dearborn, Michigan**. | Acende uma vela por você **todo dia 10 de cada mês**. Você a observa de longe e nunca se revelou. Ligada à Convicção *\"Nunca abandonar quem depende de mim.\"* |
+| **Seu pai** (👤 NPC mortal, morto) | Professor e repórter assassinado pelo regime. | Origem da sua obsessão por justiça. Ligado à Convicção *\"Nenhum tirano merece escapar da justiça\"*, que **não tem Touchstone**. |
 
 ---
 
@@ -86,24 +86,38 @@ Todos 👤 **NPCs mortais**, conduzidos pelo Narrador.
 
 ## A coterie: os outros jogadores
 
-Os três 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** os três. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
+Os quatro 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
 ### 🎭 Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat** (nascido na seita), hoje na Camarilla de Nova York.
 - Dono do **Hotel Plaza**, onde você mora. A Camarilla o encarregou de ajudá-lo. Vocês convivem há cerca de dez anos.
 - **Herói de guerra** da Camarilla pela Batalha de Nova York de 1999.
 - Você conhece a segurança do hotel por dentro; ele conhece o hotel inteiro.
+- **Gusman:** você e Gideon o chamaram por ser ex-Sabbat. Ele viu a marca e deu **cobertura** a Gusman nas primeiras semanas. Ele **não sabe o nome verdadeiro** de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-### 🎭 Gideon Nichols, o produtor
+### 🎭 Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**.
 - Sem cargo oficial na corte, mas com muito poder em **favores e informação**. Tem reconhecimento entre anciões pelo trabalho de bastidores na Batalha de 1999.
 - Dá festas no Plaza. Ele e Vincent **se encontram regularmente**.
 - Você sabe muito pouco da vida mortal dele.
+- **Gusman:** Gideon é o **responsável** por ele e foi quem decidiu que o rapaz ficaria escondido. Foi para ele que você entregou o nome verdadeiro de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
 ### 🎭 Daniel Mercer, o nômade
 - **Brujah**, ligado ao clube de motociclistas **Iron Lanterns**. Esteve na guerra de 1999.
 - Foi o mais **fácil de rastrear**: foi Abraçado mais recentemente que os outros, e tem um **filho** com registros em hospital.
 - 🔒 **Você sabe**: o filho se chama **Nathan** e está doente (registros desde 2020; o sobrenome nos arquivos é **Ward**). **Daniel não sabe que você sabe.** Guarde, e decida o que fazer com isso.
+- **Daniel não sabe de Gusman** e fica de fora do segredo.
+
+### 🎭 Gusman Gutierrez, o rapaz do metrô
+- **Ravnos** de 13ª geração, Abraçado em 2018, **sem sire conhecido**. Mora em **Staten Island**. **Gideon é o responsável** por ele. 🔒 **Ele não sabe que é Ravnos.**
+- **Como vocês o acharam:** Gideon procurava um **Ravnos sobrevivente da Semana de Pesadelos** e usava você para vigiar quem entrava e saía do domínio, com seus contatos na polícia e com técnicos de câmera. Em **março de 2018** acharam o rapaz **recém-Abraçado**, acordando numa **estação do metrô** da 50th Street, com uma **marca escrita no peito** (sânscrito misturado com a marca de Caim, com ar de Sabbat) que ninguém decifrou.
+- **A gravação é sua.** Você viu numa câmera uma **figura encapuzada** escrever a marca, **virar para a câmera sem mostrar o rosto**, dar um **meio sorriso**, e a **câmera cortar**. Você não sabe quem é.
+- **O segredo:** vocês três (você, Gideon e Vincent, que **sabe que Gusman é Ravnos**) decidiram **não expor Gusman à Camarilla**. Gideon argumentou que "informação vale ouro".
+- **A sua parte é investigar a origem dele.** Você achou o **orfanato** em Newark (a Casa Santa Rita, fechada em 2016), a anotação "**N.N.**" no arquivo da diocese e, em **um ou dois anos** (2019 a 2020), o **nome verdadeiro**: **Julian Jiménez**. Você passou o nome a Gideon. Você **sabe onde Julius mora** e **onde Mike esteve preso** (ele só saiu em **2020**; hoje você sabe onde mora), mas **nunca os procurou**.
+- **O nome é só um dado para você.** Você **não sabe** que ele tem qualquer importância além de ser o resultado da sua investigação.
+- **Ele sabe quase nada da sociedade vampírica** e evita outros Kindred. **Gideon lhe explicou que ele é provavelmente um Caitiff**, e você (com Vincent) sustentou isso. **Nem ele sabe que é Ravnos.** Se perguntarem, ele diz **com sinceridade** que não sabe de que "tipo de vampiro" é. Ninguém de fora sabe que é Ravnos. Se ele lhe perguntar direto, **você decide** se mente ou diz a verdade.
+- **Alimentação:** primeiro, bolsas desviadas por vocês. Depois, o enfermeiro **Marcus Bell**, que Gideon conheceu por uma artista dele, **Tessa Lang**. Hoje Gusman se vira sozinho.
+- ⚠️ **O risco:** esconder um Abraço fere a **Terceira Tradição (Progeny)**. O arquivo que você montou sobre Mike e Julius, se cair em mãos erradas, entrega o nome e os amigos.
 
 ---
 
@@ -196,6 +210,8 @@ flowchart TB
 - **O que você sabe de Nathan.** Você rastreou o filho de Daniel por registros de hospital, e Daniel não sabe.
 - **Reyes acredita numa mentira.** Ele pensa que você trabalha num programa sigiloso.
 - **O seu lado da Sede de Justiça.** A Compulsion de Judgment faz do castigo uma refeição, e a Prey Exclusion (só se alimenta de quem fez algo errado) pode virar álibi.
+- **O arquivo de Gusman.** Você tem o orfanato, o "N.N." do arquivo da diocese, Mike e Julius e a gravação da figura encapuzada. Nem tudo isso é conhecido de Vincent, e Daniel não sabe de nada.
+- **Mike e Julius.** Você sabe onde moram e nunca os procurou.
 
 ---
 

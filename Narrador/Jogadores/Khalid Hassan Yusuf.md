@@ -16,6 +16,7 @@
 - [[#Ambição]]
 - [[#Resumo mecânico (do JSON)]]
 - [[#Segredos]]
+- [[#Gusman Gutierrez: o achado de 2018]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -112,7 +113,7 @@ Filho de um professor e repórter assassinado pelo regime que ele ousou criticar
 | Pessoa / Grupo | Natureza | Estado atual |
 |---|---|---|
 | Nizar ibn Tahir | Sire, Mawla (1) | Mentor distante; ajuda quando lhe convém |
-| Leila Yusuf | Irmã mais nova, jornalista investigativa em Nova York, Touchstone | Acredita que Khalid morreu em 2010; pode cruzar o caminho dele na virada do ano |
+| Leila Yusuf | Irmã mais nova, jornalista investigativa em Nova York (*The Harbor Ledger*), Touchstone | Acredita que Khalid morreu em 2010; pode cruzar o caminho dele na virada do ano |
 | Amira Yusuf | Mãe viúva, Dearborn, Touchstone | Acende uma vela por ele todo dia 10; ele a observa de longe |
 | Pai (nome não dado) | Professor e repórter assassinado pelo regime | Morto; origem da obsessão de Khalid |
 | Reyes | Ex-parceiro, agente do FBI em Nova York, Allies (2) | Sabe que Khalid está vivo; acha que ele está num programa sigiloso |
@@ -122,7 +123,7 @@ Filho de um professor e repórter assassinado pelo regime que ele ousou criticar
 | Camarilla | Seita | Status 1: Membro confiável |
 | Vincent Marchetti | Dono do Plaza, onde Khalid mora; encarregado de ajudá-lo | Convivência de cerca de dez anos; Khalid conhece a segurança do hotel por dentro |
 | Samira | Primogen Banu Haqim; apresentou-o à corte | Contato mínimo: Khalid pouco a conhece |
-| Gideon Nichols, Vincent Marchetti, Daniel Mercer | Coterie | Khalid os pesquisou ao longo dos anos; sabe mais de Daniel (rastreou o filho por registros de hospital) |
+| Gideon Nicols, Vincent Marchetti, Daniel Mercer | Coterie | Khalid os pesquisou ao longo dos anos; sabe mais de Daniel (rastreou o filho por registros de hospital) |
 
 ---
 
@@ -191,6 +192,22 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 
 ---
 
+## Gusman Gutierrez: o achado de 2018
+
+> ✅ **Decidido pelo Narrador (16/10/2026).** Detalhes completos em [[Gusman Gutierrez]]. Aqui, só o que mexe com Khalid. Marcadores: ✅ decidido, 💡 proposta minha, 🔒 assimetria, ⚠️ risco.
+
+- ✅ **A vigília.** Gideon procurava um **Ravnos remanescente da Semana de Pesadelos** e usava Khalid para observar **entradas, saídas e qualquer informação estranha** no domínio. 💡 Khalid usa seus **contatos na polícia** e com **técnicos de câmera**.
+- ✅ **O achado.** Em **março de 2018** (data livre 💡), Khalid e Gideon acham **Gusman**, recém-Abraçado, numa **estação do metrô** da 50th Street, com uma **marca escrita no peito**.
+- ✅ **A gravação é de Khalid.** Uma **figura encapuzada** escreve a marca, **vira para a câmera sem mostrar o rosto**, dá um **meio sorriso** e a **câmera corta**. Ninguém sabe quem é.
+- ✅ **O segredo dos três.** Khalid e Gideon contam a **Vincent**; os três **guardam o segredo**, e **Gideon é o responsável**. **Vincent sabe que Gusman é Ravnos.**
+- ✅ **A investigação.** **Khalid rastreia a origem de Gusman**: o orfanato (✅ **Casa Santa Rita**, em Newark, fechada em 2016) e, em **1 ou 2 anos** (2019 a 2020), o **nome verdadeiro** (**Julian Jiménez**), que **passa a Gideon**. 💡 O caminho: arquivo da diocese, a anotação "N.N.", a data de entrada.
+- ✅ **Mike e Julius.** Khalid **sabe onde Julius mora** e **onde Mike esteve preso** (Mike só saiu em **2020**; depois, **onde ele mora**). **Nunca os procurou.**
+- 🔒 **Khalid não sabe a importância do nome.** Para ele, é só um dado da investigação. **Só Gideon** tem a vaga impressão do que o nome permite.
+- ✅ **Cobertura (decisão de 16/10/2026).** **Nem Gusman sabe que é Ravnos**: Khalid, com Gideon e Vincent, **sustentou a explicação de que ele é provavelmente Caitiff**. Se perguntado, Gusman diz **com sinceridade** que não sabe de que "tipo de vampiro" é. **Ninguém de fora sabe que é Ravnos.** **Khalid não sabe de Iggy**, o único Kindred de fora que sabe de Gusman.
+- ✅ **Daniel fica de fora.**
+- ⚠️ **O arquivo de Khalid** (orfanato, Mike, Julius, gravação) é um risco: se cair nas mãos de um inimigo, entrega o **nome** e os **amigos** de Gusman. 💡 E é o tipo de coisa que um ex-Homeland Security **guarda com cuidado**.
+- ⚠️ **A mentira dentro do grupo.** Khalid **conhece os fatos** que provam que Gusman é Ravnos (a busca de Gideon, o nome, a lenda da Semana de Pesadelos). Se Gusman perguntar a Khalid direto, **Khalid decide se mente** ou se diz a verdade.
+- ❓ **Khalid sabe que Gideon usa o nome?** Deixei como **não**: ele só informou o nome.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -201,9 +218,12 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 - **Nizar reaparece.** Ele ajuda quando lhe convém; a pergunta é quanto vai pedir desta vez, e por quê.
 - **O regime tem um braço em Nova York.** Alguém ligado ao assassinato do pai surge como alvo, e a Convicção "nenhum tirano merece escapar da justiça" empurra Khalid a Judgment.
 - **A vela do dia 10.** Se a mãe acende a vela todo dia 10, e o one-shot cai perto de uma dessas datas, a cena pode ser um momento de silêncio em meio à ação.
-- **Conexão com os outros jogadores.** Khalid conhece por dentro as agências de segurança; pode ser útil (ou perigoso) se [[Daniel Mercer]], [[Vincent Marchetti]] ou [[Gideon Nichols]] precisarem de acesso a registros, câmeras ou documentos.
+- **Conexão com os outros jogadores.** Khalid conhece por dentro as agências de segurança; pode ser útil (ou perigoso) se [[Daniel Mercer]], [[Vincent Marchetti]] ou [[Gideon Nicols]] precisarem de acesso a registros, câmeras ou documentos.
 
 ---
+
+- **O arquivo de Gusman.** Alguém acha a pasta de Khalid sobre o orfanato, Mike e Julius. Khalid tem de decidir o que fazer com quem leu.
+- **A figura encapuzada.** O meio sorriso da gravação aparece de novo. Khalid é o único que sabe o que a câmera viu.
 
 ## Pendências
 
@@ -223,3 +243,6 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 - [x] Datas: tudo alinhado em 2021 pelo Narrador; a nota de [[Vincent Marchetti]] foi corrigida.
 - [x] Nomes parecidos: o aliado de Khalid passa a ser chamado só de **Reyes** em toda a nota.
 - [ ] Conferir a ficha: Auspex 1 não é Disciplina de clã do Banu Haqim; confirmar se vem do Predator Type e como foi pago.
+
+- [x] **Gusman:** evento de 2018, gravação, investigação da origem e nome verdadeiro registrados (16/10/2026).
+- [ ] Validar com Klaus: contatos que ele usa na vigília, o arquivo sobre Mike e Julius e se ele sabe que Gideon usa o nome.

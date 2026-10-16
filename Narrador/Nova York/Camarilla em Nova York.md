@@ -31,18 +31,18 @@
 ---
 # A corte em 2021
 
-| Cargo | Quem | Clã | Conf. | Observação |
-|---|---|---|---|---|
-| **[[Camarilla#Estrutura e Organização\|Príncipe]]** | Hellene Panhard | Ventrue | [M] | Childe de Michaela; Príncipe desde ~2005; o anúncio de *Shadows* a chama de "governante Ventrue" |
-| **[[Camarilla#Estrutura e Organização\|Xerife]]** | Qadir al-Asmai | Toreador | [A] | Ex-Arconte; serviu sob Calebros |
-| **[[Camarilla#Estrutura e Organização\|Scourge]]** | Valerie Duval | Ventrue | [M] | Neonata; caça thin-bloods; sucedeu David Morgan |
-| **[[Camarilla#Estrutura e Organização\|Herald/Harpia]]** | Thomas Arturo | Toreador | [A] | Influência "comparável à de um Primogen" |
-| **Alta Regente da Capela dos Cinco Distritos** | Aisling Sturbridge | Tremere | [A] | Líder dos Tremere na cidade |
-| **[[Camarilla#Estrutura e Organização\|Primogen]] Lasombra** | Julia Sowinski | Lasombra | [M] | Abraçada em jun/2019; começou como "representante" |
-| **[[Camarilla#Estrutura e Organização\|Primogen]] Banu Haqim** | Samira | Banu Haqim | [M] | Respeita Julia |
-| **[[Camarilla#Estrutura e Organização\|Primogen]] thin-blood** | Robert Larson | thin-blood | [M] | Morto em dez/2024 |
-| **[[Camarilla#Estrutura e Organização\|Primogen]] Malkaviano** | Carter Vanderweyden | Malkaviano | [M/B] | Possivelmente já fora de cena em 2021 (ver abaixo) |
-| **[[Camarilla#Estrutura e Organização\|Primogen]] Brujah** | Katherine Weiss (?) | Brujah | [B] | Aparece em *Shadows*; se é Primogen, não está claro |
+| Cargo                                                          | Quem                | Clã        | Conf. | Observação                                                                                       |
+| -------------------------------------------------------------- | ------------------- | ---------- | ----- | ------------------------------------------------------------------------------------------------ |
+| **[[Camarilla#Estrutura e Organização\|Príncipe]]**            | Hellene Panhard     | Ventrue    | [M]   | Childe de Michaela; Príncipe desde ~2005; o anúncio de *Shadows* a chama de "governante Ventrue" |
+| **[[Camarilla#Estrutura e Organização\|Xerife]]**              | Qadir al-Asmai      | Toreador   | [A]   | Ex-Arconte; serviu sob Calebros                                                                  |
+| **[[Camarilla#Estrutura e Organização\|Scourge]]**             | Valerie Duval       | Ventrue    | [M]   | Neonata; caça thin-bloods; sucedeu David Morgan                                                  |
+| **[[Camarilla#Estrutura e Organização\|Herald/Harpia]]**       | Thomas Arturo       | Toreador   | [A]   | Influência "comparável à de um Primogen"                                                         |
+| **Alta Regente da Capela dos Cinco Distritos**                 | Aisling Sturbridge  | Tremere    | [A]   | Líder dos Tremere na cidade                                                                      |
+| **[[Camarilla#Estrutura e Organização\|Primogen]] Lasombra**   | Julia Sowinski      | Lasombra   | [M]   | Abraçada em jun/2019; começou como "representante"                                               |
+| **[[Camarilla#Estrutura e Organização\|Primogen]] Banu Haqim** | Samira              | Banu Haqim | [M]   | Respeita Julia                                                                                   |
+| **[[Camarilla#Estrutura e Organização\|Primogen]] thin-blood** | Robert Larson       | thin-blood | [M]   | Morto em dez/2024                                                                                |
+| **[[Camarilla#Estrutura e Organização\|Primogen]] Malkaviano** | Carter Vanderweyden | Malkaviano | [M/B] | Possivelmente já fora de cena em 2021 (ver abaixo)                                               |
+| **[[Camarilla#Estrutura e Organização\|Primogen]] Brujah**     | Katherine Weiss (?) | Brujah     | [B]   | Aparece em *Shadows*; se é Primogen, não está claro                                              |
 
 **Cargos sem nome encontrado:** [[Camarilla#Estrutura e Organização|Senescal]], Guardião do Elysium, Primogens Ventrue, Nosferatu, Toreador e Gangrel. **[B]** Uma lista de corte de uma campanha de fãs existe na internet, mas **não usei**.
 

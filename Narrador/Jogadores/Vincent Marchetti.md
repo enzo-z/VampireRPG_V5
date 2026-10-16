@@ -12,10 +12,12 @@
 - [[#Linha do Tempo]]
 - [[#Batalha de Nova York]]
 - [[#Relações]]
+- [[#Elias Voss: o que Vincent sabe]]
 - [[#Convicções e Touchstones]]
 - [[#Ambição]]
 - [[#Segredos]]
 - [[#Contexto: o Sabbat em Nova York]]
+- [[#Gusman Gutierrez: o achado de 2018]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -132,12 +134,25 @@ O alvo era o bispo **Simón Orozco**, que protegia a cidade com o arcebispo **Po
 | Arcebispo Polonia | Escapou do Bronx | Paradeiro desconhecido; alvo da Ambição |
 | Camarilla de NY | Reconhece-o como herói de guerra | Respeito, mas ninguém pergunta como cortou a cabeça |
 | Ventrue, Tremere, Toreador, Giovanni, Setites, Ravnos | Aliados da Batalha de 1999 | Devem favores a ele |
+| Elias Voss | Malkaviano, "O Cartógrafo"; conselheiro tolerado, sem cargo | Vincent o conhece de nome e de reputação, com um contato breve; **sabe menos que Gideon**. Ver [[#Elias Voss: o que Vincent sabe]] |
 
 > 🧩 **Dica Para o Narrador**
-> Vincent é o contraponto de [[Gideon Nichols]]: ambos foram peças-chave da Batalha de Nova York, um pelo lado da espionagem nos bastidores, o outro pelo da contabilidade e do plano. Vale decidir se se conhecem e o que cada um sabe do outro.
+> Vincent é o contraponto de [[Gideon Nicols]]: ambos foram peças-chave da Batalha de Nova York, um pelo lado da espionagem nos bastidores, o outro pelo da contabilidade e do plano. Vale decidir se se conhecem e o que cada um sabe do outro.
 
 ---
 
+## Elias Voss: o que Vincent sabe
+
+> ⚠️ Proposta do Narrador (Claude) a partir do pedido de Enzo; validar com o jogador.
+
+**Premissa (✅ pedido do Narrador):** Gideon e Vincent são os membros mais antigos da coterie na cidade, então ambos já ouviram falar de figuras proeminentes, e Elias é uma delas. **Vincent sabe menos que Gideon.**
+
+**O que Vincent sabe (💡 proposto):**
+- Conhece **o nome e a reputação**: Malkaviano antigo, conselheiro tolerado pela corte, sem cargo, que aparece quando algo está para dar errado. Quem pede conselho a Elias raramente entende a resposta na hora.
+- Ouviu falar dele na rede de aliados de **1999**. Sabe que ele **interveio no julgamento de um Brujah** (Daniel) em campo, sem saber os detalhes.
+- Teve **um contato breve**, ainda nas semanas depois da Batalha: Elias passou por ele, traçou uma rota com o dedo na margem de um papel do Plaza e foi embora. Vincent nunca soube se foi um aviso, uma piada ou nada. (💡 gancho opcional)
+- **Não sabe** onde Elias vive, quem são os intermediários dele nem quanto ele pesa nas decisões da corte.
+- Sabe, por reputação, que **Gideon costuma saber como chegar a ele**. É um conhecimento superficial.
 ## Convicções e Touchstones
 
 - **Toda dívida se paga.** Touchstone: **Carmine Gallo**, morto em 1930, o chefe que ele traiu. É a única dívida que Vincent nunca pagou.
@@ -180,6 +195,19 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 
 ---
 
+## Gusman Gutierrez: o achado de 2018
+
+> ✅ **Decidido pelo Narrador (16/10/2026).** Detalhes completos em [[Gusman Gutierrez]]. Aqui, só o que mexe com Vincent. Marcadores: ✅ decidido, 💡 proposta minha, 🔒 assimetria, ⚠️ risco.
+
+- ✅ **Gideon e Khalid contam a Vincent** o que aconteceu: o rapaz recém-Abraçado no metrô e a **marca escrita no peito**. Os três **guardam o segredo**, e **Gideon é o responsável**.
+- ✅ **Vincent sabe que Gusman é Ravnos** (decisão do Narrador). 💡 Ele **não sabe** que Gideon e Khalid procuravam um Ravnos.
+- 💡 **Por que Vincent:** a marca tem **ar de Sabbat** e ele é **ex-Sabbat**. Ele **reconhece o estilo, não o rito**, e não consegue lê-la.
+- 💡 **A cobertura:** nas primeiras semanas, **um quarto fora do registro do Plaza**, onde Khalid mora e Gideon dá festas.
+- 🔒 **Vincent não sabe o nome verdadeiro** de Gusman nem o que o nome permite. Só **Gideon** tem a vaga impressão.
+- ✅ **Cobertura de Gusman (decisão de 16/10/2026):** **nem o próprio Gusman sabe que é Ravnos.** Vincent, com Gideon e Khalid, **sustentou a explicação de que ele é provavelmente Caitiff**. **Daniel fica de fora.** **Vincent não sabe de Iggy**, o único Kindred de fora que sabe de Gusman.
+- ⚠️ **O risco.** Esconder um Abraço fere a **Terceira Tradição (Progeny)**. Vincent, **herói de guerra** e dono do **Plaza**, arrisca o que construiu. 💡 O ex-Sabbat também **sabe o que a corte faz** com quem esconde Abraços.
+- ⚠️ **A mentira dentro do grupo.** Vincent **sabe o clã** de Gusman e **mente por omissão** a alguém que ele hospedou. Se Gusman perguntar direto a Vincent *"você sabe o que eu sou?"*, Vincent decide se mente ou diz a verdade.
+- ❓ **Vincent liga a marca a alguém?** Deixei **sem ligação**, para manter o mistério.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -192,13 +220,23 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 
 ---
 
+- **Elias Voss pode ter visto algo no Plaza.** Se o encontro breve de 1999 for mantido, o mapa que Elias traçou pode apontar para uma passagem do Plaza que Vincent ainda não achou. Ver [[#Elias Voss: o que Vincent sabe]].
+
+- **A marca de Gusman.** Alguém do Sabbat sobrevivente lê a marca e procura Vincent. Ele é o único dos três com alguma chance de reconhecer o rito.
+- **O quarto do Plaza.** Um funcionário do hotel se lembra do quarto fora do registro.
+
 ## Pendências
 
 - [ ] Nome do sire Tzimisce.
 - [ ] Linhagem das Disciplinas (Tzimisce: Animalismo, Auspícios e Vicissitude no V5) e ficha mecânica completa.
 - [ ] Predator Type (ele não bebe de mortais, então conferir a combinação).
-- [x] Definir se Vincent e [[Gideon Nichols]] se conhecem: decidido pelo Narrador, eles se conhecem e se encontram regularmente.
+- [x] Definir se Vincent e [[Gideon Nicols]] se conhecem: decidido pelo Narrador, eles se conhecem e se encontram regularmente.
 - [ ] Como o Bane do clã dele (charge ligada ao Plaza) funciona em mesa.
 - [ ] Resolver contradições do texto: Polonia é dado como arcebispo "até 1998", mas escapa em 1999; "bebeu do corpo" de Orozco pode ser diablerie, o que muda Humanidade e a reação da Camarilla.
 - [x] Ano: o texto original dizia 2022; agora está alinhado em 2021 (como [[Camarilla em Nova York]]).
 - [ ] Revisar trecho de "Convicções": o texto usa "dela" para Touchstone (parece resto de edição); corrigido para neutro.
+
+- [ ] Validar com o jogador o grau de conhecimento sobre Elias Voss (contato breve em 1999 incluído) e manter a regra: Vincent sabe menos que Gideon.
+
+- [x] **Gusman:** evento de 2018, segredo dos três e cobertura registrados (16/10/2026). ✅ **Vincent sabe que Gusman é Ravnos** (decisão do Narrador).
+- [ ] Validar com Pedro: o quarto do Plaza e se Vincent reconhece o estilo da marca.

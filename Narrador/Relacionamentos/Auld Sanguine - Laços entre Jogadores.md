@@ -2,7 +2,7 @@
 
 # Auld Sanguine: Laços entre Jogadores
 
-> Cruzamento dos backgrounds de [[Gideon Nichols]], [[Vincent Marchetti]], [[Daniel Mercer]] e [[Khalid Hassan Yusuf]]. Primeira rodada com quatro PCs; o Gangrel e os demais jogadores entram depois.
+> Cruzamento dos backgrounds de [[Gideon Nicols]], [[Vincent Marchetti]], [[Daniel Mercer]] e [[Khalid Hassan Yusuf]]. Primeira rodada com quatro PCs; o Gangrel e os demais jogadores entram depois.
 > Método e convenções em [[mapas-de-relacionamento]].
 
 ## Sumário
@@ -55,17 +55,22 @@ Lista de assimetrias, para o Narrador não vazar nada sem querer.
 | **Sensação** de diablerie em Vincent (percebida com os anos, não em 1999) | Gideon 🔒 ✅ (sem certeza) | Vincent, Khalid, Daniel |
 | Vincent bebeu do corpo de Orozco | Vincent | Gideon (só suspeita), Khalid, Daniel |
 | Vincent conhece **Silas Redd** | Vincent 🔒 ✅ | Daniel (não sabe que Vincent o conhece), Khalid |
-| Daniel teve papel no **desvio de tropas** | Vincent ✅, Gideon ✅ | |
-| A repórter de Gideon trabalha com **Leila** | Gideon 🔒 ✅ | **Khalid** (não faz ideia) |
+| Daniel teve papel no **desvio de tropas** (ver [[#O desvio de tropas: o que cada um sabe]]) | Vincent ✅, Gideon ✅ | |
+| **Gideon liga o testemunho de Daniel à fuga de Polonia** (inferência) | Gideon 💡 | Daniel?, Vincent? (Vincent sabe só que a rota abriu) |
+| A repórter de Gideon, **Mary Winchester**, chefia o veículo onde **Leila** trabalha | Gideon 🔒 ✅ | **Khalid** (não faz ideia) |
 | Quem Daniel é na Camarilla | Gideon ✅ | |
+| **Elias Voss**: reputação, aparência, modo de trabalhar, intermediários e por onde começar a busca | **Gideon** ✅ (conhece há décadas; contatos 💡) | Vincent (só nome e reputação), Khalid?, Daniel (sabe dos próprios contatos e que Gideon é o caminho) |
+| **Elias Voss**: nome, reputação e que interveio no julgamento de Daniel; contato breve em 1999 💡 | Vincent ✅ | Detalhes do julgamento e do vínculo com Daniel; intermediários; paradeiro |
+| **Paradeiro atual de Elias Voss** | Narrador (em aberto) | Todos os jogadores |
 | Khalid **pesquisou** os outros três ao longo dos anos | Khalid ✅ | Gideon, Vincent, Daniel |
 | Khalid sabe do **filho de Daniel** (rastreou por registros de hospital) | Khalid 🔒 ✅ | Daniel |
 | **Quem é o sire de Khalid** (Nizar ibn Tahir, Arconte de Don Cerro) | **Khalid** 🔒 ✅ (guarda a identidade), Nizar | Vincent, Daniel, Gideon (só **suspeita** de alguém do alto escalão, sem saber o quanto) |
 | **Samira é a ponte** entre o sire e a corte de NY | Gideon ✅, Khalid | Vincent?, Daniel? |
 | **Samira não é a sire de Khalid** | Gideon ✅ (única certeza dele), Khalid | |
-| **O Plaza é uma extensão do alcance de Nizar** (olhos dele, via Khalid) | Nizar ✅ | **Khalid** (não sabe), Vincent 💡, coterie, corte de Panhard |
+| **O Plaza é uma extensão do alcance de Nizar** (olhos dele, via Khalid; mecanismo: fornecedor + ligação) | Nizar ✅ | **Khalid** (não sabe), Vincent 💡, coterie, corte de Panhard |
 | **Lealdade de Samira é dúbia** | Narrador ✅ | Todos os jogadores; Khalid teve pouco contato com ela |
 | Nizar é **Arconte** | Khalid ✅, Qadir 💡 | Gideon (só suspeita de "alto escalão"), Vincent, Daniel |
+| **Cordelia Vane desapareceu em 2008** (Segunda Inquisição) | Gideon ✅, quem acompanha a corte 💡 | Se está morta ou presa: **ninguém** |
 
 > 🧩 **Dica Para o Narrador**
 > A assimetria que mais pesa é a de Nathan. A proteção que Elias montou em volta dele (sobrenome Ward, fichas queimadas) aguentou todos os inimigos de Daniel e **não aguentou um investigador com acesso a registros**. A segunda é o Plaza: o investigador da coterie é, sem saber, o vigiado.
@@ -90,6 +95,24 @@ Três dos quatro estiveram na mesma guerra por lados diferentes. As "noites" de 
 
 ---
 
+### O desvio de tropas: o que cada um sabe
+> 💡 Redação do Narrador (16/10/2026) para esclarecer o "desvio de tropas" citado nos laços. Vale confirmar com Enzo; o texto de Vincent ainda usa a versão curta.
+
+"Desvio de tropas" aparece em duas coisas ligadas, e a confusão vem de misturá-las:
+
+1. **O desvio de Doc (a Segunda Guarda).** Durante a Batalha, Doc Keane, Brujah do Iron Lanterns, monta uma suposta "reserva" da Camarilla. Na prática, **desvia veículos, armas e rotas de evacuação** para uma equipe própria e ocupa um depósito em Red Hook. Daniel, sem saber o objetivo político, **leva ordens e cargas** (Maggie, caminhonetes da oficina). Na terceira noite é **preso** com ordens falsas no bolso.
+2. **O redirecionamento da Camarilla.** O **depoimento de Daniel** (e as provas de Ivo Rask, a exigência de Elias) revela os abrigos da Segunda Guarda. Na noite seguinte, a Camarilla **cerca Red Hook** com uma força comandada por **Marian Price**, e **Doc é destruído**. Para isso, os comandantes **tiram tropas do cerco do Bronx**, onde o arcebispo Polonia estava acuado. A rota que Vincent pedira para fechar fica aberta e **Polonia e um templar escapam**.
+
+| Quem | O que sabe |
+|---|---|
+| **Daniel** | Os dois passos 1 e 2. Não sabe necessariamente que o passo 2 abriu a fuga de Polonia. |
+| **Vincent** ✅ | Sabe que Daniel teve envolvimento e **não o culpa**. Sabe da rota aberta e atribui o erro aos comandantes. |
+| **Gideon** ✅ | Sabe do passo 1 e do julgamento (fatos de circulação entre anciões). Seus informantes viram o cordão do Bronx afinar na noite 4, e ele **infere** a ligação com Daniel (💡 inferência, não confirmada). |
+| **Khalid** | Esteve ausente (Abraçado em 2010). Só sabe que Daniel esteve na guerra de 1999. |
+
+> 🧩 **Dica Para o Narrador**
+> A inferência de Gideon é a chave: ele sabe uma coisa que Daniel talvez ignore, e que Vincent entende de outro ângulo. Se Daniel descobrir que o testemunho que o salvou também deixou Polonia escapar, a Convicção *"Nunca use a família de alguém como arma"* e a culpa por Doc passam a disputar o mesmo lugar.
+
 ## Laços entre os PCs
 
 Os seis pares possíveis. Cada um tem um lado positivo e um negativo, como pede o Core.
@@ -105,15 +128,21 @@ Os seis pares possíveis. Cada um tem um lado positivo e um negativo, como pede 
 
 ### Gideon ↔ Daniel: o corretor e quem procura Elias
 - ✅ Gideon **sabe quem Daniel é na Camarilla** (o homem que testemunhou contra o sire e foi salvo por Elias).
+- ✅ Gideon sabe do **envolvimento de Daniel no desvio de tropas**. O que isso quer dizer, passo a passo, está em [[#O desvio de tropas: o que cada um sabe]].
 - ✅ Daniel **pensa em Gideon como o caminho para achar Elias Voss.**
+- ✅ **Gideon conhece Elias há décadas** e sabe mais dele que Vincent. Fala com ele quase sempre por intermediários e **não sabe onde ele está hoje**.
+- 💡 **Pontos de partida de Gideon** (contatos inventados, a validar): 👤 **Wally Drake** (contrarregra de um teatro no West Village; Elias deixa envelopes "para o Cartógrafo"; Wally deve um favor a Gideon), 👤 **Odile Marchand** (antiquária de programas antigos; recebe programas com margens anotadas por Elias), 🩸 **Lu Hargrove** (Malkaviana neonata, atriz; já foi mensageira de Elias). Nenhum sabe o paradeiro atual; as pistas **complementam** as de Daniel (oficina, livreiro, Ivo Rask). Detalhe em [[Gideon Nicols#Elias Voss: o que Gideon sabe]].
 - 📄 Em 1999, Daniel localizou refúgios do Sabbat e reconheceu uma rota do arquivo vazado; Gideon fazia o mesmo trabalho por outro caminho.
-- 📄 O arquivo de Doc/Silas Redd cruzava identidades vampíricas com civis: o disfarce de produtor de Gideon pode ter estado ali. 💡
-- 💡 **Positivo:** Gideon é intermediário de favores e provavelmente conhece Elias. É o caminho para a audiência com Panhard sobre o Abraço de Nathan.
-- 💡 **Negativo:** Gideon sabe o que Daniel carrega e pode cobrar por isso.
+- 📄 O arquivo de Doc/Silas Redd cruzava identidades vampíricas com civis: o disfarce de produtor de Gideon pode ter estado ali. 💡 (Gideon não sabe do arquivo.)
+- 💡 **Positivo:** Gideon é intermediário de favores e é o caminho mais concreto até Elias. Também pode abrir a audiência com Panhard sobre o Abraço de Nathan.
+- 💡 **Negativo:** Gideon sabe o que Daniel carrega e pode cobrar por isso. Ajudar na busca custa um favor, uma informação ou algo de Daniel.
+- 💡 **Gancho de cena:** a busca passa por três cenas curtas (teatro, antiquário, ensaio), cada uma com uma peça que se cruza com as pistas de Daniel. O paradeiro de Elias fica em aberto.
 
 ### Gideon ↔ Khalid: a repórter que Khalid não sabe que existe
-- ✅ A repórter de Gideon (não é a irmã de Khalid) **é chefe de um veículo investigativo**, e **Leila trabalha lá**.
+- ✅ A jornalista de Gideon é **Mary Winchester** (nome dado pelo Narrador). Ela **não é Leila**: é **chefe de um veículo investigativo**, e **Leila trabalha lá**.
 - ✅ **Gideon sabe disso. Khalid não faz ideia** de que na redação da irmã trabalha alguém querido e importante para Gideon. 🔒
+- 💡 **Gideon sabe que Leila é irmã de Khalid** (como descobriu fica em aberto).
+- ✅ Sobre o sire: **Gideon só sabe que Samira, a Primogen dos Banu Haqim, foi a ponte**, tem certeza de que **não é ela** a sire e suspeita de alguém do alto escalão. Khalid sabe a identidade e a guarda.
 - Detalhes do veículo em [[#O veículo: onde Leila trabalha]].
 - 💡 **Positivo:** Gideon tem motivo para proteger Leila (ela trabalha com quem ele ama), e por tabela protege o que Khalid mais valoriza.
 - 💡 **Negativo:** Gideon guarda uma informação sensível sobre Khalid. Se Khalid descobrir que Gideon sabia e calou, o laço racha.
@@ -203,12 +232,12 @@ Tudo aqui é proposta (💡). Nada contradiz as fontes que li; o V5 não traz um
 | Quem | Impacto |
 |---|---|
 | **Hellene Panhard** (Príncipe) | O poder dela está em queda. Ela aceitou o Plaza sem ver que ali havia um posto de Arconte; se descobrir, vai sentir o Justicar espionando-a. Um Justicar pode depô-la. |
-| **Qadir al-Asmai** (Xerife) | Ex-Arconte de Don Cerro; pode reconhecer o estilo de Nizar num caso do Plaza. Ele já pensa em partir, e a presença de um Arconte pode precipitar isso (ou fazê-lo ficar). |
+| **Qadir al-Asmai** (Xerife) | Ex-Arconte de Don Cerro; pode reconhecer o estilo de Nizar num caso do Plaza. Ele já pensa em partir, e a presença de um Arconte pode precipitar isso (ou fazê-lo ficar). ✅ Também é, com Arturo, uma das duas maiores autoridades Toreador da cidade e responde, em teoria, politicamente por Gideon. |
 | **Samira** (Primogen Banu Haqim) | Peça solta. Pode virar informante de Panhard ou ponte para Nizar. |
 | **Valerie Duval** (Scourge) | Qualquer incidente com thin-bloods no Plaza chama um Arconte, e ela não quer isso. |
-| **Thomas Arturo** (Herald) | Corretor de reputação; pode vender o que souber sobre o childe do Arconte. |
+| **Thomas Arturo** (Herald) | Corretor de reputação; pode vender o que souber sobre o childe do Arconte. ✅ Também é, com Qadir, autoridade Toreador e responde, em teoria, politicamente por Gideon. |
 | **Vincent** | Ganha proteção e um favor de Nizar, mas tem um fiscal em casa. O segredo do Orozco passa a ter um destinatário potencial (Don Cerro). |
-| **Gideon** | Corretor de informação; pode perceber o alcance de Nizar e vender ou usar isso. |
+| **Gideon** | ✅ Sem sire (Cordelia desapareceu em 2008) e **sem Primogen Toreador** na cidade em 2021, **não reporta diretamente a ninguém**. A responsabilidade política dele recai, em teoria, sobre Arturo e Qadir, mas ele tem liberdade pela idade (78 anos) e pela contribuição na Batalha de 1999. Corretor de informação: pode perceber o alcance de Nizar e vender ou usar isso. |
 | **Daniel** | Poder pedir ao Gideon uma audiência com Panhard fica mais delicado: a corte está atenta a quem anda com um childe de Arconte. |
 | **Khalid** | Protegido pela ligação, mas peão sem saber. Se descobrir, a Convicção "A verdade precisa vir à tona" se volta contra o próprio sire. |
 
@@ -219,15 +248,15 @@ Tudo aqui é proposta (💡). Nada contradiz as fontes que li; o V5 não traz um
 
 ## O veículo: onde Leila trabalha
 
-✅ A repórter de Gideon é chefe de um veículo jornalístico investigativo. Leila trabalha lá. Khalid não sabe.
+✅ A repórter de Gideon, **Mary Winchester**, é chefe do ***The Harbor Ledger***, veículo jornalístico investigativo. Leila trabalha lá. Khalid sabe o nome da redação onde a irmã trabalha, mas **não sabe** que Mary é chefe dela nem que Gideon a conhece. ✅ Nome aprovado pelo Narrador em 16/10/2026 (ainda inventado: conferir se não existe um com o mesmo nome antes de usar na mesa).
 
 ### Proposta: *The Harbor Ledger* 💡 (inventado)
 
 Redação pequena e sem fins lucrativos, de jornalismo investigativo local, com sede no Lower Manhattan. Cobre habitação, polícia, contratos públicos e o porto. Financiada por fundações e doações de leitores, e publica em parceria com outras redações da cidade.
 
 - **Modelo real:** imita redações sem fins lucrativos que existem em Nova York, como *The City*, *Documented* e as parcerias locais da *ProPublica* ([fontes abaixo](#fontes)). O nome *The Harbor Ledger* é inventado. Se for usar o nome na mesa, confira se não existe um com o mesmo nome.
-- **A repórter de Gideon:** editora-chefe ou cofundadora do veículo (nome a definir). Foi a jovem repórter que ele conheceu nos anos 2000.
-- **Leila:** repórter investigativa na redação, sob a repórter de Gideon.
+- **A repórter de Gideon:** ✅ **Mary Winchester**, editora-chefe ou cofundadora do veículo. Foi a jovem repórter que ele conheceu nos anos 2000.
+- **Leila:** repórter investigativa na redação, sob Mary.
 - **Por que serve ao jogo:** Leila é Touchstone do Khalid. A redação dela está a uma pauta de investigar algo que cruze com os quatro: o porto (Giovanni, Red Hook), registros do Plaza, as famílias da Chama.
 
 ### Alternativa canônica
@@ -239,24 +268,73 @@ O *Shadows of New York* tem como mortal de Julia Sowinski (Primogen Lasombra) o 
 
 | NPC | Aparece em | Papel de ponte |
 |---|---|---|
-| **Elias Voss** (Malkaviano, "O Cartógrafo") | Daniel 📄 | ✅ Daniel acha que Gideon é o caminho; Khalid pode localizá-lo |
+| **Elias Voss** (Malkaviano, "O Cartógrafo") | Daniel 📄, Gideon, Vincent | ✅ Daniel acha que Gideon é o caminho; Gideon o conhece há décadas e sabe mais que Vincent; Vincent só de nome e de um contato breve 💡; Khalid pode localizá-lo |
+| **Wally Drake**, **Odile Marchand**, **Lu Hargrove** | Gideon 💡 (inventados) | Intermediários de Elias; pontos de partida para a busca |
 | **Silas Redd** (Lasombra, intermediário do Sabbat) | Daniel 📄 | ✅ Vincent o conhece (Daniel não sabe); o arquivo expôs identidades civis (Gideon) |
-| **Marian Price** (Ventrue, oficial de campo) | Daniel 📄 | 💡 Comandou a força que destruiu Doc na noite em que Polonia escapou |
+| **Marian Price** (Ventrue, oficial de campo) | Daniel 📄 | 💡 Comandou a força que destruiu Doc na noite em que Polonia escapou; Gideon sabe |
 | **Arcebispo Polonia** | Vincent 📄 | Ambição de Vincent; ligado indiretamente ao desvio de Red Hook |
 | **Calebros** (Nosferatu, Príncipe provisório) | Daniel 📄 | Ajudou a sustentar o julgamento |
 | **Ivo Rask** (Nosferatu) | Daniel 📄 | Guardou as provas; caminho para Elias pela rede Nosferatu |
 | **Hellene Panhard** (Príncipe) | Daniel 📄 | Autoridade do Abraço de Nathan; aprovou a alocação de Khalid no Plaza 💡 |
 | **Qadir al-Asmai** (Xerife) | Daniel 📄 | Origem da missão do Gangrel; ex-Arconte de Don Cerro, conhece Nizar de ofício 💡 |
-| **Samira** (Primogen Banu Haqim) | Notas de NY | ✅ Lealdade dúbia; Khalid a conhece pouco |
+| **Samira** (Primogen Banu Haqim) | Notas de NY | ✅ Lealdade dúbia; Khalid a conhece pouco; Gideon sabe que é a ponte |
 | **Nizar ibn Tahir** | Khalid 📄 | ✅ 11ª geração, ancilla, Arconte de Don Cerro |
 | **Don Cerro** (Justicar) | Notas de NY | ✅ Superior de Nizar |
-| **Leila Yusuf** | Khalid 📄 | ✅ Trabalha com a repórter de Gideon |
+| **Leila Yusuf** | Khalid 📄 | ✅ Trabalha na redação de Mary Winchester |
+| **Mary Winchester** | Gideon 📄 | ✅ Chefe do veículo onde Leila trabalha; Touchstone candidata de Gideon |
+| **Cordelia Vane** | Gideon (nome dado pelo Narrador) | ✅ Senhora de Gideon; levada pela Segunda Inquisição em 2008, morta ou capturada |
 | **Reyes** (FBI) | Khalid 📄 | Aliado de Khalid |
 | **Nick Gallo** | Vincent 📄 | Recepcionista do Plaza; Khalid mora no mesmo prédio |
 | **Nathan Ward** | Daniel 📄 | ✅ Khalid rastreou |
 
 ---
 
+## Gusman Gutierrez: elo de 2018 (em construção)
+
+> 💡 **Rascunho.** O quinto jogador (Oliveira) entra por **um elo decidido**: **Gideon e Khalid acharam Gusman no metrô em 2018**, e **os três (com Vincent)** esconderam a identidade dele, **inclusive dele mesmo**. Detalhes em [[Gusman Gutierrez#A noite de 2018: o achado no metrô]]. O mapa Mermaid **ainda não** inclui Gusman. ✅ **Daniel fica de fora** (decisão do Narrador, 16/10/2026).
+
+| Elo | Situação |
+|---|---|
+| ✅ **Gusman acordou numa estação do metrô de NY, no meio da noite, já Abraçado.** O sire é desconhecido para todos e **não será escrito**. | Decidido pelo Narrador. |
+| ✅ **Khalid e Gideon o acharam**, procurando um Ravnos sobrevivente da Semana de Pesadelos. | Decidido pelo Narrador. |
+| ✅ **O Abraço deixou uma marca escrita** (sânscrito + marca de Caim + ar de Sabbat) que **ninguém decifrou**. | Decidido e **validado** pelo Narrador. |
+| ✅ **Khalid viu na gravação** uma figura encapuzada que escreve a marca, olha a câmera **com meio sorriso** e a **câmera corta**. | Decidido e **validado** pelo Narrador. |
+| ✅ **Gideon e Khalid contam a Vincent.** Gideon argumenta contra expor Gusman à Camarilla (sem provas, para não causar alarde; **informação vale ouro**). Os três **guardam segredo**. **Vincent sabe que Gusman é Ravnos.** | Decidido e **validado** pelo Narrador. |
+| ✅ **Gideon é o responsável por Gusman** (Mawla). | Decidido pelo Narrador. |
+| ✅ **Khalid rastreia a origem** e, em 1 ou 2 anos, acha o **nome verdadeiro** (Julian Jiménez) e **informa Gideon**. Sabe onde Julius mora e onde Mike esteve preso (Mike só saiu em **2020**). | Decidido e **validado** pelo Narrador. |
+| ✅ **Só Gideon tem uma vaga ideia** de que saber o nome verdadeiro de um Ravnos dá controle (maldição *Unbirth Name*). **Khalid e Vincent não têm esse conhecimento.** Quando Gideon usa o nome, **sente Gusman ceder**. | Decidido pelo Narrador (16/10/2026). |
+| ✅ **Nem o próprio Gusman sabe que é Ravnos.** Gideon, Khalid e Vincent lhe **explicaram que ele é provavelmente um Caitiff**. Se perguntado, ele diz **com sinceridade** que não sabe de que "tipo de vampiro" é. **Ninguém de fora sabe que ele é Ravnos.** Ele **evita Kindred**. | Decidido pelo Narrador (16/10/2026), **substitui** a versão anterior ("Gusman se passa por Caitiff por instrução de Gideon"). |
+| ✅ **Só um Kindred de fora sabe que Gusman existe: Iggy**, barman Malkaviano, Anarquista independente (quase Autarkis), lunático. Gusman **não tem certeza** de que Iggy é Kindred. Nenhum servo de Gideon sabe. | Decidido pelo Narrador (16/10/2026). 💡 Nome e bar (*The Broken Minute*) inventados por mim. |
+| ✅ **Pavio Negro MC:** Gusman o conhece de bares na vida mortal; **não sabe** da história do clube nem da relação com Daniel. Os Anarquistas da ilha **não sabem** dele. | Decidido pelo Narrador (16/10/2026). |
+| ✅ **Alimentação:** bolsas desviadas pelos três; depois **Marcus Bell** (enfermeiro) por uma **ponte de Gideon** (**Tessa Lang**, artista que o namora). Hoje independente. | Decidido e **validado** pelo Narrador. |
+| ✅ **Gusman sabe quase nada** da sociedade vampírica. | Decidido pelo Narrador. |
+| ✅ **Gusman mora em Staten Island.** | Decidido pelo Narrador. Ver [[Gusman Gutierrez#Onde ele mora]]. |
+| ✅ **Os italianos (máfia) odeiam Gusman** por algo que ele fez quando mortal: um golpe contra a filha de um membro. | Decidido pelo Narrador (16/10/2026). 💡 Detalhes (Submariner, Gianna Bellandi) em [[Gusman Gutierrez#Os italianos: o golpe do Submariner]]. |
+| ✅ **Mike esteve preso de 2016 a 2020.** | Decidido pelo Narrador (16/10/2026). |
+| ✅ **Casa Santa Rita** (Newark, fechada em 2016) é o orfanato. | Decreto do Narrador (16/10/2026). |
+| 💡 **Gusman não sabe** que Gideon procurava um Ravnos. | Proposta. |
+| ❓ **Quando e como os três lhe explicaram o "Caitiff"**, e o que cada um fará se ele perguntar direto. | Aberto; decidir com os jogadores de Gideon, Khalid e Vincent. |
+
+**Assimetrias para a tabela de [[#Quem sabe o quê]]:**
+- **Que Gusman existe:** **Gideon, Khalid, Vincent** ✅ e **Iggy** (único Kindred de fora) ✅ | **Daniel** ✅, a corte em geral.
+- **Que Gusman é Ravnos:** **Gideon, Khalid, Vincent** ✅ | **Gusman** ✅ (acredita ser Caitiff), Daniel, **todo o resto** ✅ (inclusive Iggy).
+- **O nome verdadeiro de Gusman (Julian Jiménez):** **Gusman, Gideon, Khalid** ✅, Mike e Julius | **Vincent**, Daniel, a corte.
+- **O que o nome permite (maldição *Unbirth Name*):** **Gideon**, só uma vaga impressão ✅ | **Khalid**, **Vincent**, Daniel, a corte. **Gusman** sabe que cede, mas **não conhece a maldição nem o clã** ✅.
+- **O significado da marca:** ninguém.
+- **Quem é o sire / a figura da gravação:** ninguém.
+- **Que o achado foi parte de uma busca por um Ravnos:** Gideon, Khalid | Gusman, Vincent (💡), Daniel.
+- **Que a explicação "Caitiff" foi dita a Gusman para esconder o clã:** Gideon, Khalid, Vincent | Gusman, Daniel, a corte.
+- **A gravação:** Khalid, Gideon, Vincent (em parte) | Gusman.
+- **O golpe contra os italianos:** Gusman, os italianos 💡 | os outros jogadores.
+- **Iggy:** Gusman (com dúvida) | Gideon, Khalid, Vincent, Daniel.
+
+**Riscos políticos (⚠️):** esconder um Abraço sem apresentá-lo à corte contraria a **Terceira Tradição (Progeny)**. **Gideon** (responsável) responde a **Arturo** e **Qadir**, em teoria. **Qadir é o Xerife** de Nova York; **Vincent** perde o que arrisca como herói de guerra; **Khalid** tem Status 1. 💡 Descoberto como **Caitiff sem apresentação** é uma ofensa; como **Ravnos escondido por três anos**, muito pior. ⚠️ **Risco interno:** se Gusman descobrir que os três lhe esconderam o clã, a confiança em Gideon (e em Khalid e Vincent) quebra.
+
+**Sem ligação com Daniel:** Gusman mora em **Staten Island**, onde está o **Pavio Negro MC** da história de Daniel, mas **nenhum dos dois sabe** da conexão. Se se cruzarem, será por acaso.
+
+**Arquivos atualizados (16/10/2026):** `Gideon Nicols.md`, `Khalid Hassan Yusuf.md`, `Vincent Marchetti.md` e os READMEs dos três, com o evento de 2018, o segredo dos três e a cobertura (**Gusman não sabe que é Ravnos**). **Só Gideon** recebeu a vaga impressão sobre o nome. O README do Daniel **não mudou**, porque ele fica de fora.
+
+**Cronologia:** a Semana de Pesadelos foi em julho de 1999, 19 anos antes de 2018. Ver [[Semana de Pesadelos]].
 ## O que os quatro têm em comum
 
 - **Todos vigiam um mortal à distância**, sem se revelar: Gideon, a jornalista; Vincent, Nick Gallo; Daniel, Nathan; Khalid, a mãe e a irmã.
@@ -279,6 +357,7 @@ flowchart LR
   K["KHALID HASSAN YUSUF<br/>Banu Haqim, 12ª"]:::pc
 
   Elias["Elias Voss<br/>Malkaviano"]:::kindred
+  Lu["Lu Hargrove<br/>Malkaviana neonata"]:::kindred
   Redd["Silas Redd<br/>Lasombra"]:::kindred
   Price["Marian Price<br/>Ventrue"]:::kindred
   Polonia["Arcebispo Polonia<br/>Sabbat"]:::kindred
@@ -288,13 +367,17 @@ flowchart LR
   Nizar["Nizar ibn Tahir<br/>Arconte, 11ª geração"]:::kindred
   Cerro["Don Cerro<br/>Justicar"]:::kindred
   Samira["Samira<br/>Primogen Banu Haqim<br/>lealdade dúbia"]:::kindred
+  Cordelia["Cordelia Vane<br/>senhora de Gideon<br/>sumiu em 2008"]:::kindred
 
-  Rep["Repórter de Gideon<br/>chefe do veículo"]:::mortal
+  Rep["Mary Winchester<br/>chefe do veículo"]:::mortal
   Leila["Leila Yusuf<br/>irmã de Khalid"]:::mortal
+  Wally["Wally Drake<br/>contrarregra"]:::mortal
+  Odile["Odile Marchand<br/>antiquária"]:::mortal
   Nick["Nick Gallo"]:::mortal
   Nathan["Nathan Ward"]:::mortal
   Reyes["Reyes<br/>FBI"]:::mortal
   Plaza["Hotel Plaza"]:::local
+  Inq["Segunda Inquisição"]:::local
 
   G -- "avaliou e recomendou / dívida" --- V
   G -. "suspeita de diablerie, guarda para si" .-> V
@@ -311,6 +394,7 @@ flowchart LR
   D --> Nathan
   Price -. "destruiu Doc" .-> Doc
   Polonia -. "escapou na noite 4" .-> V
+  D -. "testemunho levou tropas a Red Hook" .-> Polonia
   Redd -. "arquivo" .-> D
   Redd -. "passava no Plaza" .-> V
   Redd -. "identidades civis" .-> G
@@ -332,6 +416,17 @@ flowchart LR
   Plaza -. "olhos de Nizar, Khalid não sabe" .-> Nizar
   G --> Rep
   Rep -- "chefe de" --- Leila
+  Cordelia --> G
+  Inq -. "levou em 2008" .-> Cordelia
+
+  G -- "conhece há décadas,<br/>sabe mais" --- Elias
+  V -. "só de nome,<br/>contato breve" .-> Elias
+  Wally -. "envelopes" .-> Elias
+  Odile -. "programas anotados" .-> Elias
+  Lu -. "mensageira" .-> Elias
+  G -. "devem favores / contato" .-> Wally
+  G -. "contato" .-> Odile
+  G -. "frequenta ensaios" .-> Lu
 
   classDef pc fill:#ffffff,stroke:#231f20,color:#231f20,stroke-width:3px
   classDef kindred fill:#ffffff,stroke:#790914,color:#790914
@@ -361,18 +456,26 @@ flowchart LR
 
 ---
 
+**Sobre Elias Voss (💡)**
+- Os intermediários **Wally Drake, Odile Marchand e Lu Hargrove** (inventados) servem ao jogador de Gideon? Ele quer trocá-los ou nomeá-los de outro jeito?
+- O contato breve de **Vincent com Elias em 1999** (rota traçada na margem de um papel) fica? Se sim, para onde a rota aponta?
+- Onde está **Elias Voss** hoje? (Em aberto, só o Narrador decide.)
+- Elias sabe algo sobre o **sumiço de Cordelia** em 2008?
+
 ## Inconsistências a resolver
 
 - [x] Ano: tudo em 2021 ✅ (nota de Vincent corrigida).
 - [x] Nome: usar **Reyes** ✅ (nota de Khalid corrigida).
 - [x] Khalid, "quem o patrocina em NY": Nizar → Samira (apresentação) → Plaza ✅ (pendente de aprovação do jogador).
 - [x] Quem conhece a identidade do sire ✅ (só Khalid; Gideon suspeita).
+- [x] Senhora de Gideon: **Cordelia Vane**, levada pela Segunda Inquisição em 2008 ✅ (a validar com o jogador).
+- [x] Jornalista de Gideon: **Mary Winchester** ✅. Confirmar a grafia ("Mary Win Winchester" na mensagem original).
 - [ ] **Geração de Khalid:** 12ª em vez de 13ª. Conferir se a ficha (Blood Potency 1, 15 XP, Humanidade 6) continua válida. A nota [[Gerações e Potência]] não traz o mínimo de Blood Potency por geração.
 - [ ] **Cronologia da Batalha**: Vincent descreve cerca de uma semana; Daniel numera noites 2 a 4. Tratar as noites de Daniel como o recorte pessoal dele.
 - [ ] **Polonia**: arcebispo "até 1998" no texto de Vincent, mas escapa em 1999. Conferir com o jogador.
 - [ ] **Orozco**: confirmar com Vincent se "bebeu do corpo" foi diablerie.
+- [ ] **Desvio de tropas:** a redação do Narrador está em [[#O desvio de tropas: o que cada um sabe]]. O README e a nota de Vincent ainda usam a versão curta ("envolvimento no desvio de tropas"); alinhar se aprovado.
 - [ ] **Terceira Tradição** (permissão para criar um childe): Nizar Abraçou em D.C. em 2010 com a autoridade do Justicar; decidir se o Príncipe de D.C. soube.
-- [ ] **Nota de Khalid:** já não tem link para este arquivo nem segredos do Narrador (as "olhos de Nizar" e a suspeita de Gideon ficam só aqui). Conferir antes de mostrar ao jogador.
 - [ ] **Quinto jogador (Gangrel)** e os outros três da one-shot: entram quando os personagens estiverem definidos.
 
 ## Fontes

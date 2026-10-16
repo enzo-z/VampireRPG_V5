@@ -330,7 +330,7 @@ Harley-Davidson azul-escura, comprada em 1979, batizada por Claire em 1985 ("se 
 | O Gangrel | Futuro companheiro de coterie | Personagem de outro jogador; encontro e resultado abertos |
 
 > 🧩 **Dica Para o Narrador**
-> Daniel e [[Vincent Marchetti]] vêm da mesma conquista de 1999, mas por lados opostos. Vincent deu à Camarilla o plano que derrubou o Sabbat; Daniel foi usado por um sire que tentou lucrar com a mesma guerra. Vale decidir se os dois se conhecem e o que cada um sabe do outro, e o mesmo vale para [[Gideon Nichols]], que também foi peça da Batalha de Nova York.
+> Daniel e [[Vincent Marchetti]] vêm da mesma conquista de 1999, mas por lados opostos. Vincent deu à Camarilla o plano que derrubou o Sabbat; Daniel foi usado por um sire que tentou lucrar com a mesma guerra. Vale decidir se os dois se conhecem e o que cada um sabe do outro, e o mesmo vale para [[Gideon Nicols]], que também foi peça da Batalha de Nova York.
 
 ---
 
@@ -399,7 +399,7 @@ Versões menores, se a primeira sessão cobrir só uma etapa: "Conseguir de Ivo 
 3. **Uma visão de Elias aponta para o filho.** Um desenho deixado pelo velho: Nathan numa estação desativada, sem saber se é futuro, lembrança ou associação equivocada. Daniel tem de verificar antes de provocar o perigo que tenta evitar. A profecia não deve garantir morte nem salvação.
 4. **O Gangrel pergunta por que deveria confiar nele.** Daniel tem uma resposta verdadeira sobre a Camarilla e outra sobre si mesmo. Contar como foi manipulado pelo próprio irmão pode criar a primeira ponte entre os dois, ou revelar que ele ainda repete a linguagem de Doc.
 5. **Motoclube e Maggie como fonte de história.** Um irmão do Ferro pode precisar de ajuda no meio de uma missão; uma oficina conhecida pode deixar de ser segura; um prospect do Pavio Negro pode ser filho de alguém que Daniel conheceu; Maggie pode ser reconhecida por quem a viu em 1999; Nathan pode ouvir o motor perto de uma cerimônia; Torch pode mandar levá-la; Elias pode desenhar a cicatriz do tanque num mapa e insistir que Daniel troque a peça.
-6. ⚠️ Um sobrevivente do Sabbat da Batalha de Nova York pode reconhecer a assinatura da Segunda Guarda ou o nome de Silas Redd, ligando Daniel a quem queira cobrar 1999. [[Vincent Marchetti]] e [[Gideon Nichols]] podem ser o caminho para isso.
+6. ⚠️ Um sobrevivente do Sabbat da Batalha de Nova York pode reconhecer a assinatura da Segunda Guarda ou o nome de Silas Redd, ligando Daniel a quem queira cobrar 1999. [[Vincent Marchetti]] e [[Gideon Nicols]] podem ser o caminho para isso.
 7. ⚠️ Marian Price pode reaparecer como a oficial que destruiu Doc e que ainda desconfia dele, cobrando o resultado da missão do Gangrel.
 8. ⚠️ Nathan pode ter uma consulta marcada para a semana da chegada de Daniel: uma cena de aproximação à distância, com Ruth como ponte, antes de qualquer decisão sobre o Abraço.
 
@@ -438,6 +438,6 @@ Versões menores, se a primeira sessão cobrir só uma etapa: "Conseguir de Ivo 
 - [ ] Definir o personagem do Gangrel (jogador, clã, origem) e como o encontro é montado sem retirar a agência dele.
 - [ ] Datas: o texto de Daniel começa em **2021**, e a nota de [[Vincent Marchetti]] fala em 2022 (e a de [[Camarilla em Nova York]] usa 2021). Alinhar a linha do tempo da campanha.
 - [ ] Possível contradição de cronologia a conferir: a Segunda Guarda decorre na "segunda noite" da batalha, enquanto [[Vincent Marchetti]] descreve a Batalha de Nova York como cerca de uma semana. Garantir que as noites numeradas de Daniel sejam só o recorte pessoal dele.
-- [ ] Definir se Daniel conhece [[Vincent Marchetti]] e [[Gideon Nichols]], e se a Batalha de 1999 os aproximou.
+- [ ] Definir se Daniel conhece [[Vincent Marchetti]] e [[Gideon Nicols]], e se a Batalha de 1999 os aproximou.
 - [ ] Relação de Daniel com a corte da Camarilla de NY em [[Personagens da Camarilla de NY]] e [[Camarilla em Nova York]].
 - [ ] Dentro de 1999, divergência entre fontes sobre a data e a posição da morte de Michaela na wiki; a história evita depender disso.

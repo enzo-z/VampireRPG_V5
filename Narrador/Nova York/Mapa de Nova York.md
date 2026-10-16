@@ -110,7 +110,7 @@ Texto do painel quando nada está selecionado.
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
 | Ventrue | Hellene Panhard (Príncipe), Addison Payne (Primogen) e o childe Leo, Valerie Duval (Scourge). Wall Street e o distrito financeiro, cheios de ghouls. | jogos V5 · livro V5 |
-| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nichols na Broadway, Benoit Segal. O clã não tem Primogen em 2021. | jogos V5 · notas |
+| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nicols na Broadway, Benoit Segal. O clã não tem Primogen em 2021. | jogos V5 · notas |
 | Tremere | Aisling Sturbridge, Regente da Chantry of the Five Boroughs; Agathon (desaparecido) e Juno. | livro V5 · jogos V5 |
 | Nosferatu | Donos do subsolo. Calebros, ex-Príncipe, ainda ativo; Kaiser, corretor de informações; Gianni D'Angelo. | livro V5 · jogos V5 |
 | Malkavian | Elias Voss, "o Cartógrafo" (envelopes num teatro do West Village); um Malkaviano que diz viver "embaixo de Manhattan"; Cara Montgomery. | notas · livro V5 · jogos V5 |
