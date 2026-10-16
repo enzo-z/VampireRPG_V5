@@ -18,10 +18,9 @@
 - [[#Segredos]]
 - [[#Contexto: o Sabbat em Nova York]]
 - [[#Gusman Gutierrez: o achado de 2018]]
+- [[#Nina Calloway: a visitante do Plaza]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
-
----
 
 ## Resumo
 Nascido em 1908 em Little Italy, filho de um estivador alcoólatra, Vincent cresceu entre favores e dívidas, sem pertencer à máfia nem aos Giovanni. Tornou-se contador de dívidas na Lei Seca, vendeu o próprio chefe, Carmine Gallo, em 1930, e virou carniçal de um Tzimisce do Sabbat em 1931, trabalhando como porteiro do hotel Plaza. Morreu em 1957 durante a Terceira Guerra Civil do Sabbat e foi Abraçado pelo mesmo sire. Em 1999 forneceu à Camarilla o plano e as informações que derrubaram o Sabbat de Nova York. Hoje (2021), com o sire ausente por causa do Beckoning, dirige o Plaza sozinho.
@@ -208,6 +207,16 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 - ⚠️ **O risco.** Esconder um Abraço fere a **Terceira Tradição (Progeny)**. Vincent, **herói de guerra** e dono do **Plaza**, arrisca o que construiu. 💡 O ex-Sabbat também **sabe o que a corte faz** com quem esconde Abraços.
 - ⚠️ **A mentira dentro do grupo.** Vincent **sabe o clã** de Gusman e **mente por omissão** a alguém que ele hospedou. Se Gusman perguntar direto a Vincent *"você sabe o que eu sou?"*, Vincent decide se mente ou diz a verdade.
 - ❓ **Vincent liga a marca a alguém?** Deixei **sem ligação**, para manter o mistério.
+
+## Nina Calloway: a visitante do Plaza
+
+> ✅ **Decidido pelo Narrador (16/10/2026).** Detalhes em [[Nina Calloway#Ligação com a coterie (one-shot)]]. Marcadores: ✅ decidido, 💡 proposta minha, ⚠️ risco.
+
+- ✅ **Vincent conhece Nina pessoalmente.** [[Gideon Nicols]] a leva ao Plaza vez ou outra, e Vincent a recebe ali. Ela é a pupila de Gideon: Toreador neonata, Abraço irregular de novembro de 2020, *Suspect* na corte.
+- ✅ **Nina conhece Khalid** da mesma forma. **Daniel e Gusman**, ela não conhece.
+- 💡 **O trato é de visita.** Nada além de cordialidade foi definido entre os dois. O jogador de Vincent decide se isso vira alguma coisa.
+- ⚠️ **O risco de hospedar.** Nina é vigiada pela corte, e Gideon por tabela. Quem a seguir pode parar no Plaza, onde Vincent escondeu Gusman nas primeiras semanas e onde Khalid mora.
+- ❓ **Nina e Gusman.** Ela não conhece Gusman, e não há proibição de encontro entre os dois. Vincent, que sabe o que Gusman é, tem motivo para observar se isso acontecer.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.

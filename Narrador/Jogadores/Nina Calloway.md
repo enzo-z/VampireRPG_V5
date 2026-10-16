@@ -17,6 +17,7 @@
 - [[#Resumo mecânico (do JSON)]]
 - [[#Segredos]]
 - [[#Abraço irregular: a corte de olho]]
+- [[#Ligação com a coterie (one-shot)]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -40,7 +41,7 @@ Filha de pai afro-americano e mãe dominicana, Nina foi criada pela avó, **Alta
 | Predator Type | Scene Queen (cena do jazz) |
 | Abraço | Novembro de 2020, no porão de um restaurante fechado na Lenox Avenue, Harlem |
 | Sire | Toreador sem nome, elegante e silencioso, obcecado pela música dela; levado pela Camarilla pouco depois do Abraço |
-| Mawla | Mentor na corte (Mawla 1 concedido pelo mestre); **identidade a definir** |
+| Mawla | ✅ **[[Gideon Nicols]]** (Mawla 1 da ficha), **desde antes da one-shot** (decisão do Narrador, 16/10/2026). Ver [[#Ligação com a coterie (one-shot)]] |
 | Residência | Apartamento pequeno em **Washington Heights** (Haven 1) |
 | Palco | Speakeasy no porão de Augie Mendez, Lenox Avenue (Harlem) |
 | Cidade | Nova York (cenário do one-shot) |
@@ -117,15 +118,16 @@ Filha de pai afro-americano e mãe dominicana, Nina foi criada pela avó, **Alta
 | Sire (nome não dado) | Toreador que a Abraçou sem permissão | Levado pela Camarilla pouco depois do Abraço; destino desconhecido |
 | Altagracia Reyes | Avó materna dominicana, criou Nina, Touchstone | Nunca perdeu um show da Blue |
 | Eddie Park | Pianista e parceiro de banda há anos, Touchstone | Toca com ela toda semana; não sabe o que ela se tornou |
-| Augie Mendez | Dono do restaurante na Lenox Avenue, Allies (2) | Mantém o speakeasy do porão; velho amigo da cena |
+| Augie Mendez | Dono do restaurante na Lenox Avenue, Allies (2) | Mantém o speakeasy do porão; velho amigo da cena. ✅ **É o gatilho da one-shot**: pede ajuda por Isabella |
 | Pais (nomes não dados) | Pai afro-americano, mãe dominicana | O JSON não diz onde estão nem por que a avó a criou |
 | Público fiel do porão | Herd (2) | Fonte de alimento discreta |
 | Gente dos bastidores do jazz | Contacts (2) | Sabem dos boatos da noite |
-| Mawla (a definir) | Mentor na corte, Mawla (1) | Orienta a neonata nos primeiros passos |
+| **[[Gideon Nicols]]** | ✅ **Mawla (1)**, Toreador antigo, sem cargo | **Mawla desde antes da one-shot** (decisão do Narrador, 16/10/2026). É a quem ela recorre quando Augie pede ajuda. ✅ **Leva Nina ao Plaza vez ou outra.** 💡 Motivos dele em [[#Ligação com a coterie (one-shot)]] |
+| [[Khalid Hassan Yusuf]] | ✅ **Conhece pessoalmente**, das visitas ao Plaza. Vínculo secundário | 💡 Investigador da noite e espelho dela (Abraçado sem escolha). Ver [[#Ligação com a coterie (one-shot)]] |
+| [[Vincent Marchetti]] | ✅ **Conhece pessoalmente**, das visitas ao Plaza | Dono do hotel e herói de guerra. Trato de visita, sem laço além disso (💡) |
+| [[Daniel Mercer]] | ✅ Não o conhece | Sem vínculo antes da noite |
+| [[Gusman Gutierrez]] | Outro protegido de Gideon | ✅ Não o conhece antes da noite. Sem proibição de encontro: os dois se cruzam. 💡 Ela **não sabe** o que ele é |
 | Camarilla | Seita | Tolerada e vigiada (*Suspect*) |
-| [[Gideon Nicols]] | Toreador antigo, sem cargo | Sem vínculo definido. 💡 O Gideon é dos Toreador mais antigos da cidade, e um Toreador jovem em apuros é o tipo de coisa que Arturo e Qadir podem jogar no colo dele |
-
----
 
 ## Convicções e Touchstones
 
@@ -195,15 +197,55 @@ Os três pontos se encaixam: a cena do jazz é o lugar onde Nina come, onde a be
 
 ## Abraço irregular: a corte de olho
 
-> 💡 Tudo nesta seção é proposta minha a partir do texto do jogador e das notas de [[Camarilla em Nova York]]. Nada foi decidido.
+> 💡 Tudo nesta seção é proposta minha a partir do texto do jogador e das notas de [[Camarilla em Nova York]], **exceto onde marcado ✅** (decisão do Narrador, 16/10/2026).
 
 - **Quem a vigia (o *Suspect*).** O JSON só diz "a corte da Camarilla". Candidatos naturais: o **Xerife Qadir al-Asmai** (Toreador, lei da corte), a **Harpia Thomas Arturo** (Toreador, reputação e escândalo) ou a própria **Príncipe Hellene Panhard**, cuja permissão foi ignorada.
-- **Quem é o Mawla.** [[nova-york]] sugere **Thomas Arturo** (Herald, Toreador) ou **Titus Jones** (Toreador, fã de talentos). Arturo como mentor tem uma ironia boa: quem orienta Nina é quem mais lucra com o escândalo do Abraço dela.
-- **Sem Primogen Toreador.** Em 2021 o clã não tem Primogen em Nova York (ver [[Gideon Nicols#Sem sire, sem Primogen: a quem Gideon responde]]). Sem sire e sem Primogen, a responsabilidade por Nina fica, como no caso do Gideon, entre Arturo e Qadir.
+- ✅ **Quem é o Mawla.** **[[Gideon Nicols]]**, desde antes da one-shot. Substitui os candidatos que [[nova-york]] e o roteiro sugeriam (**Thomas Arturo**, **Titus Jones**). 💡 A ironia de Arturo como Mawla some, mas ele continua a quem mais interessa o escândalo do Abraço dela, e agora **tem um Mawla para cobrar**.
+- **Sem Primogen Toreador.** Em 2021 o clã não tem Primogen em Nova York (ver [[Gideon Nicols#Sem sire, sem Primogen: a quem Gideon responde]]). Sem sire e sem Primogen, a responsabilidade por Nina fica entre Arturo e Qadir, e 💡 é isso que empurra Gideon para a posição de Mawla.
 - ⚠️ **O porão de Augie.** Se a corte souber onde o Abraço aconteceu, o speakeasy deixa de ser um lugar seguro. Augie pode estar sendo observado sem saber.
 
----
+## Ligação com a coterie (one-shot)
 
+> ✅ = decidido pelo Narrador (16/10/2026). 💡 = proposta minha, a validar com Marcelle (Nina) e Victor Polck (Gideon). Não há mapa de relacionamento para Nina, por decisão do Narrador.
+
+**Decidido**
+- ✅ **Gideon Nicols é Mawla de Nina desde antes da one-shot.** Mawla (1) da ficha. Mawla, não sire: o sire dela sumiu.
+- ✅ **Khalid e Vincent: Nina os conhece pessoalmente.** Gideon já a levou ao **Plaza** vez ou outra, e ali ela os encontrou. **Daniel e Gusman**, ela não conhece antes da noite.
+- ✅ **O gatilho.** O roteiro pede um contato mortal de um PC, ciente dos vampiros, amigo de Isabella; o "melhor encaixe" é **Augie Mendez**, Allies (2) de Nina. Augie liga para Nina, Nina procura o Mawla, Gideon reúne a coterie. Ela segue a história por um motivo **pessoal** (o amigo e a amiga dele em perigo), e não porque alguém a colocou lá.
+- ✅ **Por que ela não resolve sozinha:** é neonata, *Suspect*, sem aliados na corte e não pode pedir ajuda à Camarilla sem se expor. Gideon tem Status (2) e é a voz da coterie perante a corte.
+- ✅ **Gusman:** **sem proibição** de encontro. Os dois estão na mesma noite. Ver [[Gusman Gutierrez]].
+- ✅ **Khalid:** vínculo secundário (abaixo).
+
+**Por que Gideon aceitou (💡 a validar com Victor Polck)**
+- **Foi cobrado.** A nota dele já prevê que Arturo e Qadir lhe lembrem a responsabilidade quando houver "um Toreador jovem em apuros". Sem sire e sem Primogen, o Abraço irregular de Nina cai no colo de alguém.
+- **Negou moeda a Arturo.** Arturo lucra com o escândalo. Como Mawla, Gideon fica com o dossiê (o caso do sire) e tira a peça das mãos dele.
+- **Espelho de Cordelia.** O sire de Nina a observou todas as noites no porão antes de agir. Cordelia o Abraçou durante *Oklahoma!* (1943), vendo nele uma ferramenta. Gideon reconhece o método, e isso lhe dá motivo pessoal sem resolver nada sobre Cordelia.
+- **Território.** O Harlem foi hostil à Camarilla. Nina quer o jazz como território da Camarilla, e Gideon tem favores, mas nenhum território. Troca clara: ela precisa de cobertura política, ele ganha uma peça no Harlem e na cena artística.
+- **Quando começou:** 💡 nos meses seguintes à apresentação dela à corte, no início de 2021. Fica em aberto.
+- **O Plaza:** Gideon dá festas lá e a leva de vez em quando. É a vitrine dela diante de quem importa (Vincent, dono; Khalid, segurança).
+
+**Cobertura de Gusman (💡, segredo privado de Gideon)**
+- Nina é a pupila **oficial e visível**; Gusman, o protegido **escondido**. Quem vê Gideon com um Kindred jovem presume que é Nina.
+- Gideon não admite isso a si mesmo no começo; é o jogador que decide quando percebe que está usando Nina como escudo.
+- ⚠️ Nina é *Suspect*: quem a vigia passa a vigiar Gideon. E ela, com **Auspex 2** (Heightened Senses, Premonition) e **Insight 3**, é a que mais provavelmente nota algo estranho em Gusman (o alho, as ilusões). Sem regra que impeça: a cena é dela.
+- ⚠️ Como ela circula pelo **Plaza**, quem a vigia pode acabar no hotel de Vincent, onde Gusman se escondeu nas primeiras semanas.
+- 💡 Ninguém lhe diz o clã de Gusman. **Nem ele sabe** (ver [[Gusman Gutierrez#A cobertura: Caitiff e a vizinhança ✅]]).
+- ❓ **Nina sabe de Gusman antes da noite?** Decidido 💡: não; conhecem-se na one-shot, apresentados por Gideon.
+
+**Khalid (💡)**
+- **Já se conhecem:** das visitas ao Plaza. Ele sabe quem é a pupila de Gideon e o que a corte diz dela.
+- **Na noite:** Khalid lidera a investigação do Capítulo Quatro (Pursuer); Nina não tem perícia para isso.
+- **Espelho:** os dois foram Abraçados sem escolha, por um talento ou uma dívida. Khalid forjou a própria morte e se afastou da família; Nina mantém Eddie e Altagracia por perto. Ele sabe ler os sinais de um Touchstone que repara.
+- **Ganchos de campanha (não para a one-shot):** (a) Nizar, Arconte de Don Cerro, e o caso do sire de Nina (Qadir também foi Arconte de Don Cerro); (b) *The Harbor Ledger* (Mary, de Gideon, e Leila, de Khalid) cobrindo os speakeasies da pandemia, o que põe o porão de Augie em risco; (c) Altagracia **Reyes** e o aliado **Reyes** de Khalid como parentes.
+
+**Vincent (💡)**
+- **Já se conhecem:** das visitas ao Plaza, o hotel dele. Ele a recebe como a pupila de Gideon. Nada além de cordialidade foi definido.
+- Como porteiro e dono do hotel, ele sabe que quem vigia Nina e Gideon pode passar por lá.
+- Sem gancho próprio da one-shot. Fica livre para o jogador de Vincent usar.
+
+**Em aberto**
+- Daniel: sem vínculo, não se conhecem antes da noite.
+- ❓ O sobrenome **Calloway** com Jesse Calloway (Rafael).
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -224,12 +266,16 @@ Os três pontos se encaixam: a cena do jazz é o lugar onde Nina come, onde a be
 - [ ] Idade e ano de nascimento de Nina.
 - [ ] Nomes dos pais e por que a avó a criou.
 - [ ] **Identidade do sire**, quem o levou e o que aconteceu com ele.
-- [ ] **Identidade do Mawla** (candidatos: Thomas Arturo ou Titus Jones).
+- [x] **Mawla:** [[Gideon Nicols]], desde antes da one-shot (decisão do Narrador, 16/10/2026). Substitui Thomas Arturo e Titus Jones.
+- [x] **Vínculo Gideon–Nina:** o Narrador aprovou tudo o que está em [[#Ligação com a coterie (one-shot)]], incluindo os motivos 💡 (decisão do Narrador, 16/10/2026: não é preciso validar com os jogadores).
 - [ ] **Quem vigia Nina** (*Suspect*): facção ou figura da corte.
 - [ ] **Desejo** (o JSON não traz).
 - [ ] Touchstone da terceira Convicção (*"Nunca destruir a arte de outro artista"*), ou deixar sem.
-- [ ] **Nomes parecidos:** a avó de Nina é Altagracia **Reyes**, e **Reyes** é o aliado do FBI de [[Khalid Hassan Yusuf]]. Decidir se muda um dos dois ou se fica assim.
+- [ ] **Nomes parecidos:** a avó de Nina é Altagracia **Reyes**, e **Reyes** é o aliado do FBI de [[Khalid Hassan Yusuf]]. Decidir se muda um dos dois, se fica assim ou se vira parentesco (💡 gancho de campanha).
 - [ ] **Sobrenome Calloway:** Nina divide o sobrenome com **Jesse Calloway** (Rafael). Parentesco ou coincidência?
 - [ ] Onde Nina fica no [[Mapa de Nova York]] (Harlem para a cena, Washington Heights para o refúgio).
-- [ ] Ligação de Nina com a coterie ([[Gideon Nicols]], [[Vincent Marchetti]], [[Daniel Mercer]], [[Khalid Hassan Yusuf]], [[Gusman Gutierrez]]). Nada definido.
+- [x] **Ligação com a coterie** (decisão do Narrador, 16/10/2026): Gideon (Mawla), Khalid (vínculo secundário, **já se conhecem do Plaza**), [[Vincent Marchetti]] (**já se conhecem do Plaza**), [[Daniel Mercer]] (não se conhecem) e Gusman (não se conhecem, sem proibição de encontro).
+- [x] **Nina sabe de [[Gusman Gutierrez]] antes da noite?** Não (adotado nos READMEs).
+- [x] **Roteiro atualizado** (16/10/2026): [[Auld Sanguine - Roteiro da Sessão]] agora traz Gideon como Mawla de Nina e Augie como gatilho.
+- [x] **README criado** (16/10/2026): [[README - Nina Calloway]] (sem mapa de relacionamentos, por decisão do Narrador). READMEs de Gideon, Khalid e Vincent atualizados.
 - [ ] Fome inicial (a definir pelo mestre).

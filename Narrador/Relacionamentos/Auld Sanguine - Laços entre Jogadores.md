@@ -16,6 +16,8 @@
 - [[#Impacto na corte de Nova York]]
 - [[#O veículo: onde Leila trabalha]]
 - [[#NPCs compartilhados]]
+- [[#Gusman Gutierrez: elo de 2018 (em construção)]]
+- [[#Nina Calloway: elo com a coterie]]
 - [[#O que os quatro têm em comum]]
 - [[#Mapa (Mermaid)]]
 - [[#Perguntas em aberto]]
@@ -335,6 +337,32 @@ O *Shadows of New York* tem como mortal de Julia Sowinski (Primogen Lasombra) o 
 **Arquivos atualizados (16/10/2026):** `Gideon Nicols.md`, `Khalid Hassan Yusuf.md`, `Vincent Marchetti.md` e os READMEs dos três, com o evento de 2018, o segredo dos três e a cobertura (**Gusman não sabe que é Ravnos**). **Só Gideon** recebeu a vaga impressão sobre o nome. O README do Daniel **não mudou**, porque ele fica de fora.
 
 **Cronologia:** a Semana de Pesadelos foi em julho de 1999, 19 anos antes de 2018. Ver [[Semana de Pesadelos]].
+## Nina Calloway: elo com a coterie
+
+> ✅ = decidido pelo Narrador (16/10/2026). 💡 = proposta minha, a validar com Marcelle, Victor Polck e Klaus. **Não há mapa Mermaid para Nina**, por decisão do Narrador. Detalhes em [[Nina Calloway#Ligação com a coterie (one-shot)]].
+
+| Elo | Situação |
+|---|---|
+| ✅ **Gideon Nicols é Mawla de Nina** (Toreador neonata, Abraço irregular de novembro de 2020, *Suspect*) **desde antes da one-shot**. | Decidido pelo Narrador. |
+| ✅ **Gideon leva Nina ao Plaza vez ou outra.** Por isso ela **conhece pessoalmente Khalid e Vincent**. | Decidido pelo Narrador. |
+| ✅ **Daniel e Gusman: Nina não os conhece** antes da noite. | Decidido pelo Narrador. |
+| ✅ **Gatilho da one-shot:** Augie Mendez (aliado de Nina) pede ajuda por Isabella → Nina procura o Mawla → Gideon reúne a coterie. | Decidido pelo Narrador. O roteiro já aponta Augie como o "melhor encaixe". |
+| ✅ **Gusman e Nina: sem proibição de encontro.** | Decidido pelo Narrador. |
+| ✅ **Khalid: vínculo secundário** com Nina. | Decidido pelo Narrador. |
+| 💡 **Motivos de Gideon:** cobrança de Arturo e Qadir ("Toreador jovem em apuros"), tirar a moeda de Arturo, espelho do método de Cordelia, território no Harlem. | Proposta. |
+| 💡 **Cobertura de Gusman:** Nina é a pupila oficial e visível; Gusman, o escondido. Segredo privado de Gideon. | Proposta. |
+| 💡 **Khalid na noite:** lidera a investigação (Pursuer); é o espelho de Nina (Abraçados sem escolha). | Proposta. |
+| 💡 **Ganchos de campanha com Khalid:** Nizar e o sire de Nina; *The Harbor Ledger* (Mary e Leila); parentesco Altagracia **Reyes** e o **Reyes** do FBI. | Proposta, **não para a one-shot**. |
+| 💡 **Vincent e Nina:** trato de visita no Plaza, o hotel dele; sem laço além disso. | Proposta. |
+| ❓ Nina sabe de Gusman antes da noite? | Decidido 💡: não. |
+
+**Assimetrias (💡):**
+- **Que Nina é Mawla-dependente de Gideon:** a coterie e a corte ✅ (ela é a pupila **visível**).
+- **Que Nina existe e é a pupila de Gideon:** Khalid e Vincent ✅ (conhecem das visitas ao Plaza) | **Daniel** e **Gusman** ✅ (não a conhecem).
+- **Que Gusman existe:** Nina passa a saber na noite ⚠️ (era só Gideon, Khalid, Vincent e Iggy). Nina é vigiada pela corte.
+- **O clã de Gusman:** Nina **não sabe**; o próprio Gusman também não.
+
+**Riscos (⚠️):** quem vigia Nina vigia Gideon, e portanto chega perto de Gusman. Como Nina circula pelo **Plaza**, quem a vigia pode ir parar no hotel de Vincent, onde Gusman se escondeu nas primeiras semanas. Com Auspex 2 e Insight 3, Nina é a que mais provavelmente nota algo estranho nele.
 ## O que os quatro têm em comum
 
 - **Todos vigiam um mortal à distância**, sem se revelar: Gideon, a jornalista; Vincent, Nick Gallo; Daniel, Nathan; Khalid, a mãe e a irmã.

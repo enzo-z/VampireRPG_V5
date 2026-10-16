@@ -2,7 +2,7 @@
 
 # Gusman Gutierrez: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+> Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Gusman sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário

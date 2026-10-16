@@ -2,7 +2,7 @@
 
 # Daniel "Danny" Mercer: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+> Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Daniel sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -96,9 +96,9 @@ Você carrega três mortes: **Claire**, **Doc** (que você não matou, mas entre
 
 Os 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
-### 🎭 O Gangrel (jogador, personagem ainda a definir)
+### 🎭 O Gangrel (Jesse)
 - Recém-Abraçado. Você foi enviado para levá-lo à corte; ser levado à cidade **não o torna Camarilla**, e a coerção do transporte não produz lealdade.
-- O personagem é de outro jogador: nome, origem e comportamento serão definidos por ele e pelo Narrador. A ordem é coercitiva na ficção, mas não define PvP.
+- O personagem é de outro jogador: A ordem é coercitiva na ficção, mas não define PvP.
 - Ele é um espelho incômodo: um vampiro experiente chegando para dizer a alguém assustado o que fazer. Você conhece bem a voz que diz *"confie em mim, eu sei o que é melhor para você"*. Era a de Doc.
 
 ### 🎭 Vincent Marchetti, o dono do Plaza
@@ -220,6 +220,6 @@ flowchart TB
 
 ## O que os outros sabem de você
 
-- Na corte, o seu nome é ligado ao **julgamento de 1999**: você serviu à operação sem conhecer o objetivo político e foi liberado sob supervisão. **A desconfiança de alguns permanece.**
+- Na corte, o seu nome é ligado a um **julgamento de 1999**: você serviu à operação sem conhecer o objetivo político e foi liberado sob supervisão. **A desconfiança de alguns permanece.**
 - Você acredita que ninguém da coterie sabe de **Nathan**, de **Ruth** ou da sua busca por **Elias**.
-- A coterie sabe que você é Brujah, nômade do Iron Lanterns e veterano de 1999.
+- A coterie (Gideon, Vincent e Khalid) sabe que você é Brujah, nômade do Iron Lanterns e veterano de 1999.

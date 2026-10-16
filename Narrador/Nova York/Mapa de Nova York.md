@@ -93,8 +93,8 @@ Texto do painel quando nada está selecionado.
 | Addison Payne | Primogen · Ventrue |
 | Julia Sowinski | Primogen · Lasombra |
 | Samira | Primogen · Banu Haqim |
+| Katherine Weiss | Primogen · Brujah (leal da Camarilla) |
 | Ivan Kutkha | Primogen · Caitiff |
-| Robert Larson | Primogen · thin-blood |
 | Calebros | ex-Príncipe · Nosferatu |
 
 **Antes de 1999, "Uma ilha cercada":** por quase 300 anos Nova York foi domínio do Sabbat, com um arcebispo e uma linha de bispos; Lasombra mandavam e os Tzimisce eram a ala mística. Depois do crash de 1929 a Camarilla se firmou em Manhattan pelo dinheiro e ficou confinada à ilha por décadas. [notas] [livro V5] Em 1999 a Batalha de Nova York durou cerca de uma semana: incêndios à luz do dia, caça nas ruas e nos esgotos, o cerco do Bronx. Polonia escapou; a seita perdeu a cidade. Três PCs estavam lá: Vincent deu o plano, Gideon a espionagem, Daniel foi usado pela Segunda Guarda. [notas]
@@ -110,10 +110,10 @@ Texto do painel quando nada está selecionado.
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
 | Ventrue | Hellene Panhard (Príncipe), Addison Payne (Primogen) e o childe Leo, Valerie Duval (Scourge). Wall Street e o distrito financeiro, cheios de ghouls. | jogos V5 · livro V5 |
-| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nicols na Broadway, Benoit Segal. O clã não tem Primogen em 2021. | jogos V5 · notas |
-| Tremere | Aisling Sturbridge, Regente da Chantry of the Five Boroughs; Agathon (desaparecido) e Juno. | livro V5 · jogos V5 |
-| Nosferatu | Donos do subsolo. Calebros, ex-Príncipe, ainda ativo; Kaiser, corretor de informações; Gianni D'Angelo. | livro V5 · jogos V5 |
-| Malkavian | Elias Voss, "o Cartógrafo" (envelopes num teatro do West Village); um Malkaviano que diz viver "embaixo de Manhattan"; Cara Montgomery. | notas · livro V5 · jogos V5 |
+| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nicols na Broadway. O clã não tem Primogen em 2021. | jogos V5 · notas |
+| Tremere | Aisling Sturbridge, Regente da Chantry of the Five Boroughs; ❔ Juno (a confirmar). | livro V5 · jogos V5 |
+| Nosferatu | Donos do subsolo. Calebros, ex-Príncipe, ainda ativo; Gianni D'Angelo. | livro V5 · jogos V5 |
+| Malkavian | Elias Voss, "o Cartógrafo" (envelopes num teatro do West Village); um Malkaviano que diz viver "embaixo de Manhattan"; ❔ Cara Montgomery (a confirmar). | notas · livro V5 · jogos V5 |
 | Hecata | Donatello Giovanni recebe coteries nos seus clubes do Village. A corte lhe deve um favor maior pela guerra contra o Sabbat. | livro V5 |
 | Tzimisce | Vincent Marchetti, dono do Hotel Plaza, herói de guerra de 1999. | notas |
 | Banu Haqim | Khalid Hassan Yusuf, residente do Plaza desde ~2011. Samira, a Primogen, é a ponte com o sire dele. | notas · jogos V5 |
@@ -158,7 +158,6 @@ Texto do painel quando nada está selecionado.
 |---|---|---|
 | Brujah | Torque, barão presumido; Mia Morgan, do coterie Midnighters. | jogos V5 |
 | Gangrel | Tamika, que caça agentes do governo que perseguem vampiros; ex de Torque. | jogos V5 |
-| Lasombra | Vincent Cerutti, Anarch dos Midnighters. | jogos V5 |
 | Toreador | Duke, líder de gangue de *Auld Sanguine*, que não se dá bem com o barão local. Pôr Duke aqui é escolha da campanha. | SUG |
 
 - **Antes de 1999:** Sabbat. Na Batalha de 1999, o arcebispo Polonia recuou para um complexo de armazéns comprado por uma fachada Lasombra. Na quarta noite o cerco afinou e ele escapou com um templar. Paradeiro desconhecido.
@@ -241,7 +240,7 @@ Formato: **Nome** (`id`) · camadas · `lon, lat` · rótulo curto · extras · 
 
 ### Queens
 - **Art Hole (Elysium)** (`arthole`) · Lugares de 2021 · `-73.9405, 40.7470` · "Art Hole" · aproximado · jogos V5
-  Elysium da Camarilla, de pé em 2021. Em dez/2024 (*Reckoning of New York*) o Hunter Offensive o destrói e mata Robert Larson e um Primogen. O vault só diz "Queens"; o ponto é aproximado.
+  Elysium da Camarilla, de pé em 2021. Em dez/2024 (*Reckoning of New York*) o Hunter Offensive o destrói. O vault só diz "Queens"; o ponto é aproximado.
 - **Domínio de Julia Sowinski** (`julia`) · Lugares de 2021 · `-73.9120, 40.7620` · "Julia Sowinski" · aproximado · jogos V5
   Primogen Lasombra, ex-jornalista da *New York Lodestar*. Tem escritório e refúgio no Queens. Ponto aproximado.
 - **Flushing Meadows** (`flushing`) · História · `-73.8448, 40.7466` · "Feira de 1939" · livro V5
@@ -287,21 +286,19 @@ Matriz abaixo do mapa. **●** = sede, domínio ou base do clã; **○** = figur
 | Clã | Manhattan | Brooklyn | Queens | Bronx | Staten Is. | N. Jersey | Cidade |
 |---|---|---|---|---|---|---|---|
 | Ventrue | ● Panhard, Payne, Leo, Duval; Wall Street | | | | | | |
-| Toreador | ● Qadir, Arturo, Gideon, Segal | | | ○ Duke (sugestão) | | | |
-| Tremere | ● Sturbridge; Chantry of the Five Boroughs | | | | | | |
-| Nosferatu | ● Subsolo; Calebros, Kaiser | ● Atlantic Avenue Tunnel | | | | | |
-| Malkavian | ○ Elias Voss, Cara Montgomery | | | | | | |
-| Brujah | | ● Chama / Iron Lanterns, Deacon | | ● Torque, Mia Morgan | ● Pavio Negro, Torch | | ○ Katherine Weiss |
-| Gangrel | ○ Wolves of Wall Street | | | ○ Tamika | | | ○ Ranq, Declan, Raoul; Jesse (PC) |
+| Toreador | ● Qadir, Arturo, Gideon | | | ○ Duke (sugestão) | | | |
+| Tremere | ● Sturbridge; Chantry of the Five Boroughs; ❔ Juno | | | | | | |
+| Nosferatu | ● Subsolo; Calebros | ● Atlantic Avenue Tunnel | | | | | |
+| Malkavian | ○ Elias Voss; ❔ Cara Montgomery | | | | | | |
+| Brujah | | ● Chama / Iron Lanterns, Deacon | | ● Torque, Mia Morgan | ● Pavio Negro, Torch | | ○ Katherine Weiss (Primogen, leal) |
+| Gangrel | ○ Wolves of Wall Street | | | ○ Tamika | | | ○ Ranq; ❔ Declan, Raoul; Jesse (PC) |
 | Banu Haqim | ○ Khalid (Plaza) | | | | | | ○ Samira, Primogen |
-| Lasombra | | | ● Julia Sowinski, Primogen | ○ Vincent Cerutti | | | |
+| Lasombra | | | ● Julia Sowinski, Primogen | | | | |
 | Tzimisce | ○ Vincent Marchetti (Plaza) | | | | | | |
 | Hecata | ● Donatello Giovanni, Village | ○ Porto de Red Hook | | | | | |
 | Ministry | | ● Templo de Red Hook, 1893 | | | | | |
-| Ravnos | | | | | | ○ Gusman (Status) | ○ Kali, fugitiva |
-| Salubri | | | | | | | ○ Malik Diallo, ex-promotor de festas |
+| Ravnos | | | | | | ○ Gusman (Status) | |
 | Caitiff | | ● Ivan Kutkha, Little Odessa | | | | | |
-| Thin-blood | | | | | | | ○ Robert Larson, Primogen; Sana |
 
 **Fora da matriz por falta de lugar:** Nina "Blue" Calloway (Toreador, cena do jazz; o Harlem é o encaixe natural, mas não está decidido) e o 8º jogador.
 
@@ -318,6 +315,10 @@ Aparecem no mapa como "Divergências e cuidados". Ao decidir uma, atualize a se�
 - [x] **O mapa clássico é outro.** O *New York by Night* dos anos 1990 punha Anarchs no Brooklyn e Sabbat no Bronx e no Queens. Não serve para V5 nem para esta campanha e não foi usado. (Só um aviso.)
 - [ ] **Onde ficam Nina, Jesse e o 8º jogador?** Não têm lugar no mapa. Candidatos: Nina no Harlem (jazz); Jesse fora do centro (Gangrel saíram da Camarilla).
 - [ ] **Onde mora Gusman?** A ficha deixa em aberto entre Nova York (fora de Manhattan) e Nova Jersey. Hoje ele só aparece em Newark, pelo orfanato proposto.
+- [ ] ❔ **Nomes a confirmar (Narrador, 16/10/2026):** Juno (Tremere), Cara Montgomery (Malkaviano), Declan e Raoul (Gangrel) aparecem no mapa com a marca ❔ até a decisão; Hope (ex-Double Spiral) só está em [[Camarilla em Nova York#❔ A confirmar|❔ A confirmar]].
+- [ ] **Nomes ainda sem decisão:** Addison Payne, Leo, Ivan Kutkha, Donatello Giovanni, Ranq, Gianni D'Angelo, Elias Voss e os demais da matriz que não estão na corte confirmada de [[Camarilla em Nova York]] seguem como estavam.
+- [x] **Reserva:** Robert Larson saiu do mapa e ficou guardado em [[Camarilla em Nova York#Reserva para o futuro|Reserva para o futuro]].
+- [x] **Mortos antes de 2021 (confirmados):** Callihan (mar/2020), Michaela (1999) e Sophie Langley (2019). Estão em [[Camarilla em Nova York#Confirmados já mortos (antes de 2021)|Confirmados já mortos]].
 
 ---
 *Fontes web usadas só para contraste:* [NYBN Overview](https://shipwrecklibrary.com/?p=2224) · [White Wolf Wiki: New York by Night](https://whitewolf.fandom.com/wiki/New_York_by_Night) · [Wikipedia: NY by Night](https://www.wikipedia.org/wiki/NY_by_Night). *Área e população:* Censo dos EUA de 2020.

@@ -2,7 +2,7 @@
 
 # Vincent Marchetti: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+> Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Vincent sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -76,16 +76,17 @@ Tudo aqui é o que **Vincent** sabe ou acredita. Pode haver coisas que ele ignor
 
 ## A coterie: os outros jogadores
 
-Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos.
+Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. Nina é a mais nova e a que você conhece menos.
 
 ### 🎭 Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**, sem cargo mas com muito poder em favores e informação.
 - Vocês se **conheceram e se ajudaram na Batalha de Nova York**: informação de refúgios de um lado, a sua lista do outro.
-- **Gideon o avaliou em 1999 e o recomendou à Camarilla.** Você lhe deve ter sido aceito (uma **dívida relativa**), mas ele também se beneficiou do que você entregou.
-- O Plaza é palco natural das **festas** dele. Vocês **se encontram regularmente**.
+- **Gideon o avaliou em 1999 juntamente de sua sire na época, e o recomendou à Camarilla como confiável.** Você lhe deve ter sido aceito (uma **dívida relativa**), mas ele também se beneficiou do que você entregou.
+- O Plaza é palco natural de algumas **festas** dele. Vocês **se encontram regularmente**.
 
 - Dizem que **Gideon costuma saber como chegar a Elias Voss** (ver [[#Elias Voss, o Cartógrafo]]). É o que você sabe; os detalhes são dele.
 - **Gusman:** Gideon é o **responsável** por ele e foi quem argumentou pelo segredo. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
+- **Nina:** Gideon é o Mawla dela, à vista da corte. Ver [[#🎭 Nina "Blue" Calloway, a pupila de Gideon]].
 
 ### 🎭 Daniel Mercer, o nômade
 - **Brujah**, do motoclube **Iron Lanterns**. Esteve na guerra de 1999, mas em **lado oposto ao seu**: você deu o plano da Camarilla; ele foi usado por um sire que quis lucrar com a mesma guerra.
@@ -99,6 +100,13 @@ Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningu�
 - Você não sabe quem é o sire dele; ninguém na coterie sabe.
 - **Khalid não sabe nada do que você fez com o corpo de Orozco.** Se descobrir, talvez reaja.
 - **Gusman:** foi Khalid quem filmou a gravação e quem investiga a origem do rapaz. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
+
+### 🎭 Nina "Blue" Calloway, a pupila de Gideon
+- **Toreador** neonata, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**. **Gideon é o Mawla** dela.
+- **Abraço irregular.** O sire dela a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. A corte a **tolera e vigia** (ela é *Suspect*). O que você sabe do caso circula na corte: nada além disso.
+- Você **a conhece pessoalmente**: Gideon a leva ao Plaza vez ou outra, e você a recebe lá como a pupila dele.
+- Como dono do Plaza, você sabe que **quem vigia Nina pode passar por aqui**, atrás de Gideon.
+- **Gusman:** ela ainda não o conhece. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
 ### 🎭 Gusman Gutierrez, o rapaz do metrô
 - **Ravnos**, recém-Abraçado em 2018, **sem sire conhecido**, achado por **Gideon e Khalid** numa estação de metrô, com uma **marca escrita no peito**. **Gideon é o responsável** por ele. Ele mora em **Staten Island**. 🔒 **Ele não sabe que é Ravnos.**
@@ -115,14 +123,40 @@ Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningu�
 
 Todos 🩸 **NPCs Kindred**, salvo indicação.
 
+##### A corte em 2021
+
 | Quem | Papel | O que você sabe |
 |---|---|---|
-| **Hellene Panhard** | **Príncipe** de Nova York (Ventrue). | Autoridade da Camarilla na cidade. |
+| **Hellene Panhard** | **Príncipe** de Nova York (Ventrue). | Autoridade da Camarilla na cidade, no cargo desde cerca de 2005, depois de Calebros. |
+| **Qadir al-Asmai** | **Xerife** (Toreador). | Ex-Arconte. Foi Xerife de Calebros e depois de Panhard. Faz cumprir a lei da corte: é ele quem importa se o segredo de Gusman vazar. |
+| **Valerie Duval** | **Scourge** (Ventrue). | Neonata que caça thin-bloods e age sob as ordens do Xerife. |
+| **Thomas Arturo** | **Herald**, a Harpia da corte (Toreador). | Dono de reputações e escândalos; a influência dele é comparável à de um Primogen. Dizem que favorece Ventrue, Toreador e Tremere, três dos clãs que lhe devem favores. |
+| **Aisling Sturbridge** | **Alta Regente da Capela dos Cinco Distritos** (Tremere). | Líder dos Tremere da cidade, o clã que o ajudou com Orozco em 1999. |
+| **Julia Sowinski** | **Primogen** Lasombra. | Neonata, Abraçada em junho de 2019. Era jornalista investigativa. O clã que mandava no Sabbat que você conheceu hoje tem assento na Camarilla. |
+| **Samira** | **Primogen dos Banu Haqim**. | O clã de Khalid, seu hóspede. |
+| **Katherine Weiss** | **Primogen dos Brujah** (leal da Camarilla). | Representa os Brujah que ficaram na seita depois de 2012. O clã de Daniel, que esteve do outro lado em 1999. |
+| **Calebros** | **Príncipe interino** depois da Batalha de 1999 (Nosferatu). | Declarou a moratória ao Embrace e recebeu você como herói de guerra. Governou até Panhard assumir, por volta de 2005. |
+
+##### Aliados de 1999 e outros
+
+| Quem | Papel | O que você sabe |
+|---|---|---|
 | **Ventrue, Tremere, Toreador** | Aliados da Batalha de 1999. | Você deu o roteiro; eles lhe **devem favores**. |
 | **Giovanni, Setites, um Ravnos** | Aliados da Batalha de 1999. | Idem. Os Giovanni olharam para o outro lado porque você levou a oferta no preço certo. |
 | **Tremere** | Entregaram o cabelo de Orozco e o localizaram. | Participaram da morte dele em Grand Central. |
 | **Silas Redd** | Intermediário Lasombra do Sabbat. | Você o viu no Plaza, no quinto andar. Destino desconhecido desde 1999. |
 | **Elias Voss** | Malkaviano, conselheiro tolerado, "O Cartógrafo". | Ver [[#Elias Voss, o Cartógrafo]]. Você sabe pouco dele. |
+
+##### Anarquistas
+
+A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam quase só no **Bronx**, o bairro onde você fechou o complexo de Polonia em 1999.
+
+| Quem | Papel | O que você sabe |
+|---|---|---|
+| **Douglas "Boss" Callihan** | Barão Anarch, o "Boss". | Foi encontrado **morto em março de 2020**. Dizem que era aliado e amante da Príncipe. |
+| **Torque** | Brujah, Barão Anarch. | **Novo líder presumido** depois de Callihan, acusado de trair as raízes do movimento. |
+| **Mia Morgan** | Brujah, Anarch. | Do coterie **Midnighters**. |
+| **Tamika** | Gangrel, Anarch. | Caça agentes do governo que perseguem vampiros; foi ligada a Torque. |
 
 ---
 

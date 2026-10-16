@@ -13,6 +13,7 @@
 - [[#Posição na Sociedade Vampírica]]
 - [[#Elias Voss: o que Gideon sabe]]
 - [[#Gusman Gutierrez: o achado de 2018]]
+- [[#Nina Calloway: a pupila]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -103,6 +104,8 @@ Produtor teatral nascido em Nova York no início do século XX, Abraçado em 194
 | Vincent Marchetti | Recomendado por Gideon em 1999 | Dívida relativa; Gideon guarda a sensação de diablerie |
 | Daniel Mercer | Veterano de 1999, ex-Segunda Guarda | Gideon sabe quem é e do desvio de tropas |
 | Khalid Hassan Yusuf | Residente do Plaza | Gideon sabe que Samira é a ponte; suspeita do sire |
+| **Gusman Gutierrez** | Protegido secreto; Gideon é o Mawla | Ver [[#Gusman Gutierrez: o achado de 2018]] |
+| **Nina Calloway** | ✅ Pupila oficial; Gideon é o Mawla (1) dela desde antes da one-shot | Toreador neonata, Abraço irregular de 2020, *Suspect*. Ver [[#Nina Calloway: a pupila]] |
 | Elias Voss | Malkaviano, "O Cartógrafo"; conselheiro tolerado, sem cargo | Gideon o conhece há décadas, sempre por intermediários; **sabe mais dele que Vincent**; não sabe onde está hoje. Ver [[#Elias Voss: o que Gideon sabe]] |
 | Wally Drake, Odile Marchand, Lu Hargrove | Intermediários de Elias (proposta do Narrador) | Pontos de partida para uma busca; ver [[#Elias Voss: o que Gideon sabe]] |
 | Camarilla (anciões) | Reconhecimento pelo trabalho na Batalha de Nova York | Sem cargo, apenas favores |
@@ -186,6 +189,25 @@ Produtor teatral nascido em Nova York no início do século XX, Abraçado em 194
 - ⚠️ **O risco.** Esconder um Abraço fere a **Terceira Tradição (Progeny)**. **Gideon, o responsável, é quem mais arrisca** diante de **Qadir** e **Panhard**. 💡 Como **Caitiff sem apresentação** é uma ofensa; como **Ravnos escondido por três anos**, muito pior. ⚠️ E se **Gusman** descobrir que **mentiram para ele**, é a confiança no Mawla que quebra.
 - ❓ **O que Gideon pretendia fazer com um Ravnos**, uma vez achado, e **por que ainda não fez**. Ele guardou o segredo em vez de usá-lo como moeda: ou **não confia na corte**, ou **protege Gusman** de verdade. Decida com Victor Polck.
 - ❓ **Por que Gideon escolheu dizer "Caitiff" a Gusman** em vez de lhe contar a verdade: **proteção** (quanto menos ele sabe, menos entrega), **controle**, ou **medo** do que um Ravnos que sabe o que é poderia fazer. Decida com Victor Polck.
+## Nina Calloway: a pupila
+
+> ✅ **Decidido pelo Narrador (16/10/2026).** Detalhes completos em [[Nina Calloway#Ligação com a coterie (one-shot)]]. Marcadores: ✅ decidido, 💡 proposta minha (a validar com Victor Polck), ⚠️ risco.
+
+- ✅ **Gideon é Mawla de Nina Calloway** ("Blue"), Toreador, 13ª geração, saxofonista do Harlem, Abraço irregular de novembro de 2020, **desde antes da one-shot** (Mawla 1 da ficha dela). O sire dela foi levado pela Camarilla e o destino dele é desconhecido.
+- ✅ **O gatilho da one-shot.** **Augie Mendez**, aliado de Nina, pede ajuda por Isabella. Nina procura o Mawla, e Gideon, que tem Status (2) e é a voz da coterie perante a corte, reúne os outros.
+- 💡 **Por que ele aceitou:**
+  - **Foi cobrado.** Arturo e Qadir podem lhe lembrar a responsabilidade por "um Toreador jovem em apuros" (ver [[#Sem sire, sem Primogen: a quem Gideon responde]]).
+  - **Tirou a moeda de Arturo.** O Abraço irregular de Nina é matéria de escândalo; como Mawla, Gideon fica com o caso do sire.
+  - **Espelho de Cordelia.** O sire de Nina a observou todas as noites antes de agir, o mesmo método com que Cordelia o Abraçou durante *Oklahoma!*. Isso não resolve nada sobre Cordelia.
+  - **Território.** Nina quer o jazz como território da Camarilla, e o Harlem foi hostil. Gideon tem favores e nenhum território.
+- 💡 **Cobertura de Gusman.** Nina é a pupila oficial e visível; Gusman é o escondido. Quem vê Gideon com um Kindred jovem presume que é Nina. Gideon não admite isso a si mesmo no começo.
+- ⚠️ **O risco.** Nina é *Suspect*: quem a vigia passa a vigiar Gideon. E ela, com **Auspex 2** e **Insight 3**, pode notar algo estranho em Gusman. **Sem proibição:** os dois se encontram na noite.
+- 💡 **Mawla de dois.** Gideon é Mawla de Gusman (o segredo) e de Nina (a vitrine). Ele usa uma menina real como escudo, e quando ela descobrir, a Convicção dela (*"Nunca tocar sem verdade"*) bate com o teatro dele.
+- 💡 **Espelho de Mary.** Eddie e Altagracia são os Touchstones que Nina mantém por perto e que Gideon afastou. Ele pode aconselhá-la a se afastar, como ele fez, ou a não repetir o erro.
+- ❓ **Nina sabe de Gusman antes da noite?** Sugestão 💡: não; Gideon os apresenta na one-shot.
+- ❓ Como o vínculo começou: validar com Victor Polck e Marcelle.
+
+- ✅ **O Plaza.** Gideon já levou Nina ao Plaza vez ou outra (decisão do Narrador, 16/10/2026). Ela **conhece Khalid e Vincent pessoalmente**; Daniel e Gusman, não. Na sala dele, Nina é a pupila visível, e o hotel de Vincent é onde ele a apresenta a quem importa.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -206,6 +228,11 @@ Produtor teatral nascido em Nova York no início do século XX, Abraçado em 194
 - **O nome na boca de Gideon.** A primeira vez que ele usa o nome verdadeiro de Gusman **diante de outra pessoa**, Gusman cede em público e Gideon descobre até onde vai (ou o quão pouco sabe). Ver [[Gusman Gutierrez#Ganchos para o Narrador]].
 - **O segredo racha.** Qadir ou Panhard farejam um Abraço escondido; Gideon é quem responde.
 
+- **Nina e o escudo.** Quem vigia Nina (*Suspect*) acaba vigiando Gideon e chega perto de Gusman. Ver [[#Nina Calloway: a pupila]].
+- **Nina nota Gusman.** Auspex 2 e Insight 3: o alho, as ilusões, o que ele esconde. O que ela faz com isso é decisão dela.
+- **Arturo cobra Nina por Gideon.** Se ela errar na noite (Duke é Toreador e Anarquista), o escândalo cai no Mawla.
+- **Eddie e Altagracia.** Nina escolhe se afasta dos Touchstones como Gideon fez com Mary, e ele aconselha.
+
 ## Pendências
 
 - [x] Grafia do sobrenome: **Nicols** (sem "h"), confirmada pelo Narrador em 16/10/2026.
@@ -220,3 +247,5 @@ Produtor teatral nascido em Nova York no início do século XX, Abraçado em 194
 - [x] Paradeiro atual de Elias Voss: **mantido em aberto** por decisão do Narrador (16/10/2026). O que cada contato revela fica para a mesa.
 - [x] **Gusman:** evento de 2018, segredo dos três, cobertura de Caitiff e vaga impressão sobre o nome registrados (16/10/2026).
 - [ ] Validar com Victor Polck: o que Gideon pretendia com um Ravnos, a vaga impressão sobre o nome e a discussão de 2020.
+- [x] **Nina Calloway:** Gideon é Mawla dela desde antes da one-shot; Augie como gatilho (16/10/2026).
+- [x] **Motivos de Gideon com Nina** (cobrança de Arturo e Qadir, moeda, espelho de Cordelia, território) e a **cobertura de Gusman**: **aprovados pelo Narrador** em 16/10/2026 (não é preciso validar com os jogadores). README atualizado.

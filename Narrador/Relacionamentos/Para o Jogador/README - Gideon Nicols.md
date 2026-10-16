@@ -2,7 +2,7 @@
 
 # Gideon Nicols: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+>Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Gideon sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -37,6 +37,8 @@ Tudo aqui é o que **Gideon** sabe ou acredita. Pode haver coisas que ele ignora
 - Sua especialidade é **Auspex** e a espionagem. Você usa a Broadway como fachada para identificar vítimas, fazer contatos e reunir informação sobre recursos, aliados e esconderijos do Sabbat e movimentos dos Anarquistas.
 - Na **Batalha de Nova York (1999)**, mapeou refúgios e movimentos do Sabbat. Isso lhe rendeu **reconhecimento entre alguns anciões** da Camarilla, mas nenhum título.
 - Seus **espetáculos e festas** têm no **Hotel Plaza** um endereço natural. Por isso você conhece a Broadway por dentro e o Plaza por dentro.
+
+- Você é **Mawla de dois**: de **Gusman**, em segredo, e de **Nina Calloway**, à vista da corte. Ver [[#A coterie: os outros jogadores]].
 
 ## Sua senhora e seu clã
 
@@ -94,7 +96,7 @@ Você não sabe onde ele está, mas sabe **quem procurar primeiro**. São contat
 ---
 ## A coterie: os outros jogadores
 
-Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. (Gusman é o único que **você** trouxe para dentro.)
+Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. (Gusman é o que **você** trouxe para dentro em segredo; Nina é a que você assumiu à vista da corte.)
 
 ### 🎭 Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat**, dono do **Hotel Plaza**. **Herói de guerra** da Camarilla pela Batalha de 1999.
@@ -122,6 +124,21 @@ Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningu�
 - Khalid nunca disse quem é o sire. Você **suspeita de alguém do alto escalão**, mas não sabe o quanto.
 - Você sabe da irmã dele, Leila, que trabalha no *The Harbor Ledger* (ver [[#Quem você ama à distância (Mary)]]). Khalid não sabe que você sabe.
 - **Gusman:** foi Khalid quem vigiou o domínio para você e quem achou, junto com você, o rapaz do metrô. Depois, **foi Khalid quem descobriu o nome verdadeiro dele**. Ver [[#🎭 Gusman Gutierrez, o seu protegido]].
+- **Nina:** Khalid é o melhor investigador que você conhece. Se a história da sua pupila exigir procurar alguém, é a ele que você recorreria. Ver [[#🎭 Nina "Blue" Calloway, a sua pupila]].
+
+### 🎭 Nina "Blue" Calloway, a sua pupila
+- **Toreador**, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**, no porão de um restaurante fechado na **Lenox Avenue**, onde toca com o pianista **Eddie Park** em sessões clandestinas mantidas por **Augie Mendez**.
+- **Abraço irregular.** O sire dela, um Toreador "elegante e silencioso" que a assistiu todas as noites antes de agir, a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. Ninguém lhe disse o nome dele nem o que aconteceu com ele. A corte a **tolera e vigia** (ela é *Suspect*).
+- **Você é o Mawla dela**, desde antes da noite do Réveillon. O que pesou na sua decisão:
+  - **A cobrança.** Sem sire e sem Primogen, um Toreador jovem em apuros cai, em teoria, sobre **Arturo** e **Qadir**. Você preferiu assumir a deixá-la com eles.
+  - **Arturo.** O escândalo do Abraço dela é moeda para um Harpia. Como Mawla, o caso do sire passa por você, não por ele.
+  - 🔒 **Cordelia.** O sire de Nina a observou todas as noites antes de agir, o mesmo método com que Cordelia o Abraçou durante *Oklahoma!*, em 1943. Isso não prova nada sobre a sua senhora, e você nunca disse isso a ninguém.
+  - **O Harlem.** Nina quer fazer do jazz o território da Camarilla, com o nome dela à frente. O Harlem foi hostil à Camarilla, e você tem favores, mas nenhum território. É uma troca: ela precisa de cobertura política, você ganha uma peça na cena artística.
+- **Você a leva ao Plaza vez ou outra.** Ela **conhece Khalid e Vincent pessoalmente**, das suas visitas. Daniel e Gusman, não.
+- **Augie Mendez**, dono do porão e aliado dela, é a ponte entre ela e a cena mortal. É por ele que problemas da cena chegam a você pelas mãos dela.
+- 🔒 **Ela é também a sua vitrine.** Quem vê você com um jovem Kindred presume que é Nina. Isso protege **Gusman**, e o quanto você assume que está usando Nina como escudo é decisão sua.
+- ⚠️ **O risco.** Quem vigia Nina vigia você, e portanto chega perto de Gusman. Nina lê plateias e percebe coisas (**Auspex 2**, **Insight 3**). Ela e Gusman **ainda não se conhecem**, e **nada os impede de se encontrar**. O que ela faz com o que notar é dela.
+- **Eddie Park e Altagracia Reyes**, os Touchstones dela, não sabem o que Nina se tornou. Você afastou Mary para protegê-la, e Nina mantém os dois por perto. Você pode aconselhá-la a se afastar também, ou a não repetir o seu erro.
 
 ### 🎭 Gusman Gutierrez, o seu protegido
 - **Ravnos** de 13ª geração, Abraçado em 2018, **sem sire conhecido**. **Você é o responsável por ele.** Ele mora em **Staten Island**. 🔒 **Ele não sabe que é Ravnos.**
@@ -133,6 +150,7 @@ Os quatro 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningu�
 - **A alimentação:** primeiro, bolsas de sangue desviadas por vocês. Depois, o enfermeiro **Marcus Bell**, que você conheceu por **Tessa Lang**, uma das suas artistas, que o namora. Hoje Gusman se vira sozinho.
 - 🔒 **O nome verdadeiro:** Khalid investigou a origem dele (orfanato, amigos) e lhe entregou o nome, **Julian Jiménez**. Você tem **uma vaga impressão** de que o nome verdadeiro de um Ravnos, **em alguns casos**, dá **mais controle** sobre ele. Quando você o usa, **sente Gusman ceder** e aceitar o que você diz. Você usa pouco. **Nem Khalid nem Vincent** sabem disso. **Gusman não sabe por que cede.**
 - **Daniel não sabe** que Gusman existe.
+- **Nina** vai conhecer Gusman na noite do Réveillon, a menos que você decida o contrário. Ver [[#🎭 Nina "Blue" Calloway, a sua pupila]].
 - ⚠️ **O risco é seu.** Esconder um Abraço fere a **Terceira Tradição (Progeny)**. Se o **Xerife Qadir** ou o **Príncipe Panhard** descobrirem, **você é o responsável**. E se **Gusman** descobrir que você lhe escondeu o clã, é a confiança dele que quebra.
 
 ---
@@ -239,6 +257,9 @@ flowchart TB
 - **A explicação do Caitiff.** Foi ideia sua dizer isso a Gusman, e Khalid e Vincent a sustentaram. Se ela cair, a pergunta será por que você mentiu a quem você diz proteger.
 - **O Abraço escondido.** Vocês três esconderam um Abraço da corte desde 2018. A Terceira Tradição recai sobre você.
 
+- **Por que você assumiu Nina.** Os motivos além do dever de clã: tirar a moeda das mãos de Arturo, o método do sire dela (o mesmo de Cordelia) e o Harlem. Nina não sabe de nenhum deles.
+- **Nina como vitrine.** Quem vê você com um jovem Kindred presume que é ela, e isso protege Gusman. Nina não sabe que serve a isso.
+
 ## O que os outros sabem de você
 
 - **Vincent** sabe que você o avaliou e o recomendou em 1999 e que vocês se encontram regularmente. Não sabe que você desconfia de nada.
@@ -248,3 +269,6 @@ flowchart TB
 - **Khalid e Vincent** sabem de Gusman e do segredo, mas **não** sabem que o nome verdadeiro dele dá a você algum controle, nem que você o usa.
 - **Gusman** sabe que você sabe o nome dele e que ele **cede** quando você o diz. Não sabe por quê, nem que você procurava um Ravnos.
 - **Daniel e a corte** não sabem de Gusman.
+
+- **Nina** sabe que você é o Mawla dela, que é Toreador e que produz na Broadway. **Não sabe** de Gusman antes da noite, nem de Cordelia, nem de por que você a aceitou.
+- **A corte** sabe que você é o Mawla de Nina. Arturo e Qadir sabem que ela é *Suspect* e **sabem o que você assumiu**.

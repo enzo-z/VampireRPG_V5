@@ -615,6 +615,8 @@ Pelos recursos da ficha dele ([[Khalid Hassan Yusuf#Identidade, rede e recursos]
 - **O Ravnos que nunca foi achado.** Gideon continua procurando em segredo. O jogador decidiu que o sire não será escrito, então isso só pode ser **tocado de lado**: alguém que *diz* saber. Não resolver.
 - **Sem tutor.** Gideon **já não o alimenta**; Gusman está independente. Se Gideon cair, ele **não tem a quem recorrer** na corte.
 
+- **Nina Calloway na mesma noite.** ✅ Sem proibição de encontro entre os dois (decisão do Narrador, 16/10/2026). Nina é Toreador neonata, pupila oficial de Gideon e *Suspect*. 💡 Com **Auspex 2** e **Insight 3**, é a que mais provavelmente nota algo estranho em Gusman (o alho, as ilusões). Ela **não sabe** o que ele é, e **ele também não** (acredita ser Caitiff). ⚠️ Nina passa a saber que Gusman existe, e ela é vigiada pela corte. ❓ Se ela o conhece antes da noite (sugestão 💡: não). Ver [[Nina Calloway#Ligação com a coterie (one-shot)]].
+
 ## Pendências
 
 - [x] **Grafia do nome:** **Gusman**, como na ficha (decisão do Narrador, 16/10/2026).

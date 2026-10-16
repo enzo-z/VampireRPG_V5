@@ -47,7 +47,7 @@
 | *In Memoriam* | V5 | Linha do tempo, pp. 26-29; Revolução Americana, pp. 38-39; Era Vitoriana, p. 55; Belle Époque, p. 57; Lei Seca, pp. 68-71; Grande Depressão (capítulo em NY), pp. 72-77; Loresheet *The Vanderbilt Ventrue*, p. 154 | História de NY de 1664 a 1939, Nostoket, Isabella "Bella" Moretti, Olga Alexandrova, Titus Jones, Atlantic Avenue Tunnel, Waldorf-Astoria, Feira Mundial de 1939 |
 | *Trails of Ash and Bone* | V5 | História *The Family* (Atlantic City), pp. 48-95; quadro "Stewards, Martinets, Barons and Princes", p. 100; personagens prontos, p. 180 e seguintes | Donatello Giovanni, fim das guerras de seita, Atlantic City, micro-domínios de Nova Jersey, Inquisição em Newark e Jersey City, Ranq |
 | *Camarilla* | V5 | Excertos de Addison Payne (`Camarilla.txt`, linhas 278-290, 537-541, 1408); Sons of Magog (l. 497); Project Twilight (l. 968-976); Talley (l. 1154); Primogen de NY (l. 1306); carta de Windham (l. 1668-1676); texto Malkaviano (l. 1727); Anarchs (l. 1915-1921); Calebros sobre os Gangrel (l. 1949-1960) | Ventrue Primogen, conselho de NY, Ivan Kutkha, Chantry of the Five Boroughs, 11 de setembro e a Segunda Inquisição, brechas Anarch em NY, Calebros "ex-Príncipe" |
-| *Courts of the Damned* | V5 | Aisling Sturbridge, pp. 58-59; domínio grande, p. 84; Malik Diallo, pp. 136-137; Jaliah Imani, p. 139 | Ficha e papel de Sturbridge; NY como exemplo de domínio de ~50 Kindred; Salubri e Tzimisce ligados a NY |
+| *Courts of the Damned* | V5 | Aisling Sturbridge, pp. 58-59; domínio grande, p. 84; Jaliah Imani, p. 139 | Ficha e papel de Sturbridge; NY como exemplo de domínio de ~50 Kindred; Tzimisce ligado a NY |
 | *Anarch* | V5 | Cena de Calebros (`Anarch.txt`, linhas 2068-2085) | Calebros, "o ex-Príncipe de Nova York", e o ringue Nosferatu |
 | *Chicago By Night* | V5 | Sierra (l. 1883); Erzulie (l. 3095-3111); Malenkov (l. 5200-5234) | O ataque Sabbat de Malenkov a NY e Polonia; Erzulie no Harlem |
 | *Sabbat: The Black Hand* | V5 | `Sabbat - The Black Hand.txt`, linhas 846-849, 1024-1027, 1277-1280 | NY já foi "domínio Sabbat"; exemplo de pack Cathari em NY; casa segura em NY |
@@ -147,7 +147,7 @@
 | 2001-2002 | **11 de setembro**; nasce a Segunda Inquisição. O Inner Circle usa a Guerra ao Terror contra o Sabbat, e as cidades Sabbat americanas caem "uma por uma". | Camarilla.txt, linhas 968-976, 1919 |
 | ~2005 | **(jogos V5)** Panhard sucede Calebros. V5 confirma Calebros como "ex-Príncipe". | notas do Narrador · Camarilla.txt, linha 1949 |
 | ~2006-2012 | A Inquisição passa a atingir a Camarilla; brechas Anarch em NY; Convenção de Praga (2012), saída dos Brujah. | Camarilla.txt, linhas 1919-1921 |
-| 2018-2019 | Deserção Lasombra; **(jogos V5)** Julia Sowinski é Abraçada em NY (jun/2019); *Coteries of New York*. O Salubri **Malik Diallo**, promotor de festas de NY, é Abraçado em 2019. | notas do Narrador · Courts of the Damned, p. 136 |
+| 2018-2019 | Deserção Lasombra; **(jogos V5)** Julia Sowinski é Abraçada em NY (jun/2019); *Coteries of New York*. | notas do Narrador |
 | 2020-2024 | **(jogos V5)** Callihan morto (mar/2020); campanha em 2021; *Reckoning* (dez/2024). | [[Camarilla em Nova York#Linha do tempo até 2021|notas do Narrador]] |
 
 > V5 **mantém** o essencial das edições anteriores (NY foi Sabbat, a Camarilla a tomou por volta de 2000, Calebros foi Príncipe), mas **não repete** os detalhes (Michaela, a falsa trégua de 1999, o nome "Batalha de Nova York"). Polonia só aparece em V5 de passagem, na fala de Malenkov.
@@ -204,7 +204,7 @@
 | **Ivan Kutkha** | Caitiff ("unbound") | Primogen recente | Ancilla mal visto no começo, hoje indispensável pelos laços com a máfia russa de Little Odessa, que limpa brechas da Máscara. | Camarilla.txt, l. 1306 |
 | **Aisling Sturbridge** | Tremere, 10ª geração, Abraço 1911, BP 3, Humanidade 7 | Regente da Chantry of the Five Boroughs | Negociadora; quando é inimiga, ataca por fontes que parecem desconexas. Auspex 5 e Blood Sorcery 5. | Courts of the Damned, pp. 58-59 |
 | **Leo** | Ventrue | Neonato, childe de Payne | Escreve sobre os perigos de viajar entre domínios; contato natural para PCs neonatos. | Camarilla.txt, l. 1408 |
-| **Hellene Panhard**, **Qadir al-Asmai**, **Thomas Arturo**, **Valerie Duval**, **Julia Sowinski**, **Robert Larson** | vários | Príncipe, Sheriff, Herald, Scourge, Primogen | Corte da crônica; **não aparecem nos livros**. | (jogos V5) [[Camarilla em Nova York#A corte em 2021|notas do Narrador]] |
+| **Hellene Panhard**, **Qadir al-Asmai**, **Thomas Arturo**, **Valerie Duval**, **Julia Sowinski**, **Samira**, **Katherine Weiss** | vários | Príncipe, Sheriff, Herald, Scourge, Primogen | Corte da crônica; **não aparecem nos livros**. Weiss é o "Brujah leal" do conselho (decisão do Narrador). | (jogos V5) [[Camarilla em Nova York#A corte em 2021|notas do Narrador]] |
 
 ### Anarchs
 - **Douglas Callihan**, **Torque**, **Tamika**, **Mia Morgan**: só nos jogos. Ver [[Personagens da Camarilla de NY#Anarquistas|Anarquistas]]. *(jogos V5)*
@@ -217,9 +217,7 @@
 |---|---|---|---|---|
 | **Donatello Giovanni** | Hecata | Chefe do clã na Costa Leste, a partir de NY | A Camarilla de NY lhe deve um **favor maior**; recompensa quem serve à "família" com território, e manda matar "ratos". | Trails of Ash and Bone, pp. 48, 50, 58, 95 |
 | **Ranq** | Gangrel | Matador de aluguel de NY | Usado "muitas vezes como assassino e fonte de caos"; sire de Motti Fenn. | Trails of Ash and Bone, p. 180 |
-| **Malik Diallo** | Salubri, 12ª geração, Abraço 2019 | Ex-promotor de festas de NY, líder Salubri | Quer destruir todos os Tremere; onde ele vai, Tremere caçadores vão atrás. | Courts of the Damned, p. 136 |
 | **Jaliah Imani** | Tzimisce | Professora de Tzimisce "perdidos" | Sua doutrina nasceu de um encontro em NY, em 1998, com um velho Tzimisce romeno. | Courts of the Damned, p. 139 |
-| **Kali** | Ravnos | Fugitiva da corte | Julia a ajudou a escapar de uma execução. | (jogos V5) notas do Narrador |
 
 ### Sabbat e veteranos da guerra
 - **Malenkov** (Lasombra, childe de Talley): "Khan" dos packs de guerra da Costa Leste; atacou NY e perdeu a cidade. Hoje está em Chicago, ligado à deserção Lasombra, e é visto como criminoso de guerra. *Fonte: Chicago By Night.txt, linhas 1883, 5200-5234*
@@ -265,7 +263,6 @@
 - **Caçadores amadores:** os de *Auld Sanguine* são uma **equipe local** (Moses Gardner, ex-engenheiro do Exército, dono de oficina, cujo irmão foi morto por um vampiro). Não são a Inquisição, mas, se a noite der errado, **vazam vídeos e escutas na internet**, e isso sim chama a Inquisição. *Fonte: Auld Sanguine.txt, linhas 87-90, 278, 323, 402*
 - **A própria corte:** a aventura avisa que qualquer ghoul assediado por alguém que sabe dos vampiros provoca uma resposta "imediata e quase sempre fatal" da Camarilla, para o ghoul e para o mestre. Em NY, isso é o Sheriff militante e a Scourge. *Fonte: Auld Sanguine.txt, linha 321 · Trails of Ash and Bone, p. 100*
 - **Sabbat remanescente:** packs de guerra fria (Cathari, infiltradores), veteranos com contas a acertar. *Fonte: Sabbat - The Black Hand.txt, linhas 848, 1279*
-- **Tremere contra Salubri:** se Malik Diallo passar pela cidade, caçadores Tremere vêm atrás, e a chantry de Sturbridge fica no meio. *Fonte: Courts of the Damned, p. 136*
 - **Hecata:** a "família" de Donatello cobra lealdade e manda mortais da família eliminar quem mente. *Fonte: Trails of Ash and Bone, p. 95*
 - **Lobisomens:** nas Catskills, fora da cidade. *Fonte: Let the Streets Run Red.txt, linha 2763*
 - **Debaixo da rua:** o túnel da Atlantic Avenue, de onde ninguém volta. *Fonte: In Memoriam, p. 76*
@@ -281,11 +278,11 @@
 	- **Primogen Caitiff = Ivan Kutkha**, que não está nas notas do Narrador.
 	- **Calebros existe em V5** (a nota diz "não sei se existe em V5") e está ativo como ex-Príncipe.
 	- **Aisling Sturbridge:** V5 dá Abraço em **1911**, 10ª geração, BP 3 (a nota diz "ano do Abraço não encontrado"). V5 **não nomeia** o sire (Lucien de Maupassant é dado de edição anterior) nem confirma o Barnard College.
-	- **"Brujah leal" no conselho:** pode ser a **Katherine Weiss** das notas, que hoje está marcada como "se é Primogen, não está claro". **[SUG]**
+	- **"Brujah leal" no conselho:** é a **Katherine Weiss**, confirmada pelo Narrador (16/10/2026) como Primogen Brujah leal da Camarilla.
 - **Pequenas diferenças:**
-	- *Camarilla* diz que o representante thin-blood é "um neonato de 13ª geração que representa os thin-bloods"; as notas dizem que **Robert Larson** é ele mesmo thin-blood. Dá para conciliar (Larson pode ser 13ª geração e porta-voz dos Duskborn), mas o texto não diz que ele é thin-blood.
+	- *Camarilla* diz que o representante thin-blood é "um neonato de 13ª geração que representa os thin-bloods". Nas fontes de jogo, quem ocupa esse cargo é **Robert Larson**, mas o Narrador o guardou na **reserva**: em 2021 o cargo fica sem nome.
 	- **Ano da campanha:** [[Camarilla em Nova York]] fixa **2021**; [[Auld Sanguine - Balanceamento]] usa **2019** como hipótese para contar anos de Abraço. Vale escolher um. Os livros de V5 têm o "presente" entre 2019 e 2023; nada neles impede 2021.
-	- **Callihan** (Ventrue na wiki clássica, Barão Anarch nos jogos) não aparece em nenhum livro de V5.
+	- **Callihan** (Ventrue na wiki clássica, Barão Anarch nos jogos) não aparece em nenhum livro de V5; para a campanha, está morto desde março de 2020.
 - **Edições anteriores:** Michaela, a falsa trégua de 1999 e a "Batalha de Nova York" com esse nome **não aparecem em V5**. V5 só confirma o quadro geral (NY foi Sabbat; a guerra acabou por volta de 2000; Polonia perdeu a cidade).
 
 ### Os personagens dos jogadores
@@ -295,10 +292,10 @@ São 7 fichas para 8 jogadores (ver [[disciplinas-jogadores-v5]] e [[merits-flaw
 - **Gideon Nicols** (Toreador, Abraçado em 1943, *Living in the Past*): viveu a NY da guerra e do pós-guerra; lembra do Waldorf, da Feira de 1939 e do tempo em que o Sabbat ainda disputava a cidade. **Status 2** pede uma posição na corte; é Mawla do Gusman.
 - **Vincent Marchetti** (Tzimisce, Blood Leech, *Sect War Veteran*, *Dark Secret: Diablerist*, *Adversary: Sabbat remanescente*, refúgio no Plaza, contato com **Valerie Duval**): é o personagem mais ligado ao cânone. A guerra de seitas de NY é a guerra dele. **Malenkov** ou um ex-pack de **Polonia** são bons Adversários. Um Tzimisce na corte desperta suspeita (o clã ficou com o Sabbat), e **Jaliah Imani** (Tzimisce que se encontrou em NY em 1998) pode ser uma conhecida dele. O segredo de diablerie é exatamente o tipo de coisa que a Scourge, contato dele, caçaria.
 - **Khalid Hassan Yusuf** (Banu Haqim, Mawla Nizar ibn Tahir, Blood Sorcery): a Primogen Banu Haqim é **Samira** (jogos V5). Uma carta Tremere em *Camarilla* reclama que os Banu Haqim "estão entrando para nos substituir": Sturbridge vai querer saber o que ele sabe de feitiçaria.
-- **Daniel Mercer** (Brujah, Alleycat, ligado a motoclubes: Iron Lanterns, Pavio Negro MC): os Brujah saíram da Camarilla em 2012, menos os **Hellenes**, os leais. Se Daniel é Camarilla, ele é suspeito por padrão; o "Brujah leal" do conselho é o patrono óbvio. Os motoclubes e as estradas de Nova Jersey são o território natural dele.
+- **Daniel Mercer** (Brujah, Alleycat, ligado a motoclubes: Iron Lanterns, Pavio Negro MC): os Brujah saíram da Camarilla em 2012, menos os **Hellenes**, os leais. Se Daniel é Camarilla, ele é suspeito por padrão; o "Brujah leal" do conselho, **Katherine Weiss**, é o patrono óbvio. Os motoclubes e as estradas de Nova Jersey são o território natural dele.
 - **Jesse Calloway** (Gangrel, Alleycat, *Folkloric Bane*: flor): os Gangrel deixaram a Camarilla; **Ranq**, o matador Gangrel de NY, é um contato ou ameaça possível. **Tamika** (jogos V5) é a Gangrel Anarch que caça agentes do governo.
-- **Gusman Gutierrez** (Ravnos, Bagger, **Status em Nova Jersey**, **Infamy entre "italianos"**, *Enemy* desconhecido): Nova Jersey tem os micro-domínios de Trails. A "Infamy entre italianos" pode ser com a **família Giovanni**, e o *Enemy* desconhecido pode ser um enviado de Donatello. Kali (Ravnos, jogos V5) é uma conhecida natural.
-- **O oitavo jogador:** ainda sem ficha. Um **Caitiff** (como a pronta Klara Larson) teria em **Ivan Kutkha** um patrono, e em **Robert Larson** um parente possível (gancho já em [[Sangue Ralo#Ganchos em Nova York|Sangue Ralo > Ganchos em Nova York]]).
+- **Gusman Gutierrez** (Ravnos, Bagger, **Status em Nova Jersey**, **Infamy entre "italianos"**, *Enemy* desconhecido): Nova Jersey tem os micro-domínios de Trails. A "Infamy entre italianos" pode ser com a **família Giovanni**, e o *Enemy* desconhecido pode ser um enviado de Donatello.
+- **O oitavo jogador:** ainda sem ficha. Um **Caitiff** (como a pronta Klara Larson) teria em **Ivan Kutkha** um patrono; o parentesco com **Robert Larson** fica guardado na reserva (gancho em [[Sangue Ralo#Ganchos em Nova York|Sangue Ralo > Ganchos em Nova York]]).
 
 ### Ganchos para a noite de Ano-Novo
 - **[SUG] A bola de Times Square:** a aventura termina "quando a bola cai à meia-noite". Em NY, isso é literal: o centro fica lotado, e a polícia está toda em Midtown, o que justifica a resposta lenta (15 minutos) que a aventura dá ao alarme do parque industrial. *Base: Auld Sanguine.txt, linhas 40, 349, 387*

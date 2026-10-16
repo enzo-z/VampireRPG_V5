@@ -245,9 +245,9 @@ Qualquer experiência visível atrai problemas para todos os Sangues Ralos da re
 ### Ganchos em Nova York
 > **[SUG]** Sugestões para a campanha, a partir das notas do Narrador em [[Camarilla em Nova York]].
 
-- A corte de Nova York tem (ou teve) um **Primogen Sangue Ralo**, **Robert Larson** (ver [[Personagens da Camarilla de NY#Robert Larson|Robert Larson]]), algo raro numa cidade da Camarilla. Um fórum diz que a Príncipe o mantém "por diversão"; ele pode ser um aliado, um símbolo ou um alvo.
+- Nas fontes, a corte de Nova York tem um **Primogen Sangue Ralo**, **Robert Larson**, algo raro numa cidade da Camarilla. O Narrador o **guardou na reserva** (ele não está na corte de 2021; ver [[Personagens da Camarilla de NY#Robert Larson|Robert Larson]]). Se quiser a ideia em 2021, use um porta-voz thin-blood **sem nome** como **[SUG]**: aliado, símbolo ou alvo.
 - A Scourge, **Valerie Duval**, caça Sangues Ralos, e só a aparência de tolerância da Príncipe a segura (ver [[Personagens da Camarilla de NY#Valerie Duval|Valerie Duval]]).
-- **Klara Larson**, a Caitiff pronta de *Auld Sanguine*, divide o sobrenome com Robert Larson. Ela é Caitiff, não Sangue Ralo, mas a coincidência pode virar parentesco, sire ou dívida.
+- **Klara Larson**, a Caitiff pronta de *Auld Sanguine*, divide o sobrenome com Robert Larson (reserva). Ela é Caitiff, não Sangue Ralo; se Robert entrar um dia, a coincidência pode virar parentesco, sire ou dívida.
 - Na noite de Ano-Novo de *Auld Sanguine*, um Sangue Ralo com *Day Drinker* ou *Lifelike* é quem pode ter visto os caçadores de dia, ou quem pode entrar num lugar que um Kindred não entraria.
 
 *Fonte: Player's Guide, pp. 128-130 · notas do Narrador em `Narrador/Nova York/`*

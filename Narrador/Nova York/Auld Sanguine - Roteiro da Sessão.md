@@ -136,8 +136,8 @@ O PDF usa os nomes da edição brasileira; o vault e as fichas usam o inglês. *
 ## O contato em comum
 
 - O PDF pede um **Aliado mortal, Contato ou Pilar (Touchstone)** de um PC que **saiba da existência dos vampiros** e seja amigo de Isabella (fã, parente, colega). Se não houver, ajuste Isabella. **[PDF p. 3]**
-- Candidatos nas fichas **[SUG]** (fonte das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md`):
-    - **Augie Mendez**, Allies •• da **Nina**: a festa é cheia de artistas e jovens profissionais, perto da cena dela. **Melhor encaixe.** **[PDF p. 9] / [SUG]**
+- ✅ **Decidido pelo Narrador (16/10/2026): Augie Mendez**, Allies •• da **Nina**. A festa é cheia de artistas e jovens profissionais, perto da cena dela. **[PDF p. 9]** Augie liga para **Nina**, Nina procura o Mawla (**Gideon Nicols**) e Gideon reúne a coterie.
+- Outros candidatos nas fichas, **descartados** **[SUG]** (fonte das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md`):
     - **Daniel Reyes**, Allies •• do **Khalid**.
     - **O enfermeiro**, Contacts •• do **Gusman** (também fonte das bolsas de sangue dele).
     - **Red Harlan** (Iron Lanterns), Allies •• do **Daniel**: funciona se Isabella frequentar o mundo dos motociclistas; encaixe mais fraco.
@@ -145,17 +145,17 @@ O PDF usa os nomes da edição brasileira; o vault e as fichas usam o inglês. *
 
 ## Ganchos dos personagens
 
-Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `vampire-pages/docs/players/disciplinas-jogadores-v5.md`. Todos os "momentos" abaixo são **[SUG]**, ancorados nas páginas do PDF indicadas.
+Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `vampire-pages/docs/players/disciplinas-jogadores-v5.md`. Todos os "momentos" abaixo são **[SUG]**, ancorados nas páginas do PDF indicadas. ✅ = decidido pelo Narrador (16/10/2026).
 
-**Nina "Blue" Calloway (Marcelle)**: Toreador / Scene Queen (cena do jazz). Looks: Beautiful, Fame •, Allies (Augie Mendez) ••, Contacts ••, Herd ••, Haven •, Mawla • (a definir); Flaws Prey Exclusion (fora da cena do jazz), Suspect. Auspex 2 (Heightened Senses, Premonition), Presence 1 (Awe), Dominate 1 (Cloud Memory).
-- **Gancho:** o contato em comum pode ser o Allies dela (acima). Isabella e Nina são as duas "conhecidas" da noite (Fame •): Nina pode rolar Inteligência + Ocultismo para conhecer a "Bruja". **[PDF p. 3, 8]**
+**Nina "Blue" Calloway (Marcelle)**: Toreador / Scene Queen (cena do jazz). Looks: Beautiful, Fame •, Allies (Augie Mendez) ••, Contacts ••, Herd ••, Haven •, Mawla • (✅ **Gideon Nicols**, desde antes da noite); Flaws Prey Exclusion (fora da cena do jazz), Suspect. Auspex 2 (Heightened Senses, Premonition), Presence 1 (Awe), Dominate 1 (Cloud Memory).
+- **Gancho:** ✅ o contato em comum é o Allies dela. **Augie Mendez liga para Nina, Nina procura o Mawla (Gideon) e Gideon reúne a coterie.** Isabella e Nina são as duas "conhecidas" da noite (Fame •): Nina pode rolar Inteligência + Ocultismo para conhecer a "Bruja". **[PDF p. 3, 8]**
 - **Na mesa:** Toreador como Duke; pode tentar a ponte entre clã ("Carisma + Persuasão, Dif. 5, melhor reforçada com Presence"). **[PDF p. 10]** Cloud Memory para limpar testemunhas na rua. **[PDF p. 10]** Premonition como aviso antes das minas. **[PDF p. 20]**
-- **Cuidado:** **Prey Exclusion** impede caçar na festa (não é a cena do jazz) → Fome sobe. O Mawla dela pode ser **Thomas Arturo** (Toreador, Herald), canal com a corte no Capítulo Quatro. **[SUG]** ([[Personagens da Camarilla de NY#Thomas Arturo|Thomas Arturo]]) **Suspect** dá −2 dados sociais com a facção ofendida ([[Advantages#Suspect|Suspect]]): decidir qual.
+- **Cuidado:** **Prey Exclusion** impede caçar na festa (não é a cena do jazz) → Fome sobe. ✅ O Mawla dela é **Gideon Nicols**; **Thomas Arturo** (Toreador, Herald) deixa de ser Mawla e fica como canal de status e de corte no Capítulo Quatro, e como quem cobra o escândalo do Abraço dela. **[SUG]** ([[Personagens da Camarilla de NY#Thomas Arturo|Thomas Arturo]]) **Suspect** dá −2 dados sociais com a facção ofendida ([[Advantages#Suspect|Suspect]]): decidir qual. Ver [[Nina Calloway#Ligação com a coterie (one-shot)]].
 
-**Gideon Nicols (Victor)**: Toreador / Scene Queen, Abraçado em 1943. Resources •••, Herd ••, Status ••, Fame •, Contact •; Flaws Prey Exclusion, Disliked, Living in the Past (regra da casa, [[Advantages#Living in the Past|Living in the Past]]). Auspex 3 (Heightened Senses, Sense the Unseen, Share the Senses), Celerity 1, Potence 1 (Soaring Leap). É o Mawla do Gusman.
-- **Gancho:** **Status ••** faz dele a voz da coterie perante a corte: "qualquer resposta da Camarilla vai depender dos personagens e da sua posição". **[PDF p. 17]** Resources ••• resolve o traje a rigor e carros. **[PDF p. 4]**
+**Gideon Nicols (Victor)**: Toreador / Scene Queen, Abraçado em 1943. Resources •••, Herd ••, Status ••, Fame •, Contact •; Flaws Prey Exclusion, Disliked, Living in the Past (regra da casa, [[Advantages#Living in the Past|Living in the Past]]). Auspex 3 (Heightened Senses, Sense the Unseen, Share the Senses), Celerity 1, Potence 1 (Soaring Leap). É o Mawla do Gusman **e da Nina** (✅).
+- **Gancho:** **Status ••** faz dele a voz da coterie perante a corte: "qualquer resposta da Camarilla vai depender dos personagens e da sua posição". **[PDF p. 17]** Resources ••• resolve o traje a rigor e carros. **[PDF p. 4]** ✅ É a Gideon que **Nina leva o pedido de Augie**, e é ele quem reúne a coterie.
 - **Na mesa:** **Share the Senses** costura cenas paralelas (ver pelos olhos de outro PC num grupo separado). Heightened Senses para achar caçadores no labirinto (Raciocínio + Investigação, Dif. 1). **[PDF p. 24]** Soaring Leap para o telhado do galpão 17 (o atirador) ou o guindaste. **[PDF p. 20, 24]**
-- **Cuidado:** **Living in the Past** contra aplicativos anônimos, streamers e rastreio de celular rende cena cômica. **[PDF p. 8, 17]**
+- **Cuidado:** **Living in the Past** contra aplicativos anônimos, streamers e rastreio de celular rende cena cômica. **[PDF p. 8, 17]** Se Nina errar na noite (Duke é Toreador e Anarch), o escândalo cai no Mawla.
 
 **Vincent Marchetti (Pedro)**: Tzimisce / Blood Leech. Loresheet **Sect War Veteran ••• (Trophy Kill)**, Contacts (Valerie Duval, polícia, sindicato) ••, Haven (suíte no Plaza) •, Resources •; Flaws Dark Secret (Diablerist) ••, Prey Exclusion (mortais) ••, Adversary (Sabbat remanescente) ••. Dominate 3 (Compel, Mesmerize, The Forgetful Mind), Protean 2 (Eyes of the Beast, Feral Weapons).
 - **Gancho, Trophy Kill:** "uma vez por história, você pode usar essa lenda para **ignorar um contest** em que ela possa ajudar, e o Narrador pode sempre usá-la para mandar inimigos atrás da sua cabeça". **[VAULT]** [[Advantages#Sect War Veteran|Sect War Veteran]] Bons usos: acalmar Duke sem a rolagem de Dif. 5 **[PDF p. 10]**, fazê-lo falar **[PDF p. 14]**, ou dobrar um caçador capturado. **[PDF p. 25]** Quem foi o "nome" que ele matou? Sugestão: um Sabbat da Batalha de Nova York. **[SUG]** ([[Sabbat#Nova York e o Auld Sanguine|Sabbat > Nova York]])
@@ -165,7 +165,7 @@ Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `v
 
 **Khalid Hassan Yusuf (Klaus)**: Banu Haqim / Pursuer. Bloodhound, Contacts •••, Mask ••, Resources •, Mawla (Nizar ibn Tahir) •, Status •, Allies (Daniel Reyes) ••, Linguistics (árabe); Flaws Known Corpse, Prey Exclusion (inocentes). Celerity 2, Obfuscate 2 (Cloak of Shadows, Unseen Passage), Auspex 1 (Heightened Senses), Blood Sorcery 1 (A Taste for Blood + ritual Blood Walk).
 - **Gancho:** **A Taste for Blood** (Determinação + Blood Sorcery, Dif. 3) numa gota do sangue de Isabella revela que ela é **carniçal** antes de ela admitir. **[VAULT]** [[Blood Sorcery#A Taste for Blood|A Taste for Blood]] / **[PDF p. 8]** **Blood Walk** no sangue de Duke ou de um Anarch dá geração, nome e sire, mas leva **1 hora** (contra o relógio). **[VAULT]** [[Rituais de Blood Sorcery#Blood Walk|Blood Walk]]
-- **Na mesa:** o Pursuer (Investigation/Profiling) lidera o **Capítulo Quatro** (Raciocínio + Investigação, Dif. 3) e o perfil de Moses. **[PDF p. 16–17]** ([[Predator Type#Pursuer|Pursuer]])
+- **Na mesa:** o Pursuer (Investigation/Profiling) lidera o **Capítulo Quatro** (Raciocínio + Investigação, Dif. 3) e o perfil de Moses. **[PDF p. 16–17]** ([[Predator Type#Pursuer|Pursuer]]) ✅ **Nina** (vínculo secundário) não tem perícia para investigar e depende dele.
 - **Cuidado:** **Prey Exclusion (inocentes)**: os convidados da festa são inocentes. E Moses, que vinga o irmão, é culpado ou inocente? Bom gatilho para a compulsão **Julgamento** ([[Clãs#Compulsões de Clã|Compulsões de Clã]]). **Known Corpse** complica buscas em bancos de dados. **[SUG]**
 
 **Daniel Mercer (Luiz Miguel)**: Brujah / Alleycat. Contacts (criminosos da estrada) •••, Allies (Red Harlan, Iron Lanterns) ••, Mawla (Elias Voss) ••, Mask •, Status •, Resources •; Flaw Adversary (Teresa "Torch" Malloy, Pavio Negro MC) ••. Potence 2 (Lethal Body, Prowess), Celerity 2, Presence 1 (Daunt).
@@ -181,7 +181,7 @@ Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `v
 **Gusman Gutierrez (Oliveira)**: Ravnos / Bagger. Haven •, Resources •, Linguistics (espanhol), Mawla (Gideon) •, Status (New Jersey, Working Class) •, Contacts (enfermeiro) ••, Iron Gullet •••; Flaws Infamy (italianos), Folkloric Bane (alho), Enemy (desconhecido) ••. Obfuscate 3 (Cloak of Shadows, Unseen Passage, **Chimerstry**), Presence 1 (Awe).
 - **Gancho:** fala **espanhol** com Isabella (latina, "Bruja"). **[PDF p. 4, 8]** **[SUG]**: −1 de Dificuldade numa rolagem social com ela se ele usar isso bem.
 - **Na mesa:** **Chimerstry** no labirinto: uma ilusão de **Duke** atrai o fogo de Moses. **[PDF p. 24] / [SUG]** Bagger e o enfermeiro: alimentar-se sem gastar o tempo de caça do Capítulo Quatro. **[PDF p. 18] / [SUG]**
-- **Cuidado:** **alho** na comida da festa ("cada móvel tem uma bebida, um prato de comida"). **[PDF p. 6] / [SUG]** O **Enemy (desconhecido)** pode ser revelado como um membro da Equipe. **[SUG]** Obfuscate **não engana câmeras automáticas** ([[Obfuscate]]), o que pesa no parque industrial. **[VAULT] / [PDF p. 19–20]**
+- **Cuidado:** **alho** na comida da festa ("cada móvel tem uma bebida, um prato de comida"). **[PDF p. 6] / [SUG]** O **Enemy (desconhecido)** pode ser revelado como um membro da Equipe. **[SUG]** Obfuscate **não engana câmeras automáticas** ([[Obfuscate]]), o que pesa no parque industrial. **[VAULT] / [PDF p. 19–20]** ✅ **Nina** (Auspex 2) e Gusman se conhecem na noite, sem proibição; ela pode notar o alho e as ilusões. Ver [[Gusman Gutierrez#Ganchos para o Narrador]].
 
 ## O 8º jogador
 
@@ -190,7 +190,7 @@ Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `v
 - Opção rápida: uma das **fichas prontas do PDF** (p. 27–30, fichas preenchidas nas p. 31–42). Os encaixes melhores **[SUG]**:
     - **Kacey Baxter** (Malkaviano, Sandman, Obfuscate 3, Auspex 2): clã que falta na mesa; infiltração no parque industrial. **[PDF p. 29]**
     - **Emma Preston** (Toreador, ocultista; Pilar Noa Fernandez transmite "caçadas a fantasmas" online): ligação natural com a streamer Isabella. Seria a 3ª Toreador. **[PDF p. 29]**
-    - **Klara "Stormklara" Larson** (Caitiff, influencer, Dominate 3): as notas já sugerem ligá-la a **Robert Larson**. **[PDF p. 28] / [NOTA]** [[Personagens da Camarilla de NY#Ganchos para a campanha|Ganchos para a campanha]]
+    - **Klara "Stormklara" Larson** (Caitiff, influencer, Dominate 3): o sobrenome Larson é um gancho guardado, hoje fora da corte de 2021. **[PDF p. 28] / [NOTA]** [[Camarilla em Nova York#Reserva para o futuro|Reserva para o futuro]]
     - **Sasha Morozov** (Ventrue, Siren, Influence no crime organizado): Siren tem caça farta na festa; Influence ajuda na pista das armas. **[PDF p. 6, 16, 30]**
 
 ---
@@ -233,12 +233,12 @@ Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `v
 - **Seguranças da festa** (2): moradores grandes com adesivo "Segurança"; **Segurança ••** (Core p. 370). Antagonista simples: vencê-los é uma rolagem de **Dif. 2**; se precisar rolar por eles, role o dobro da Dificuldade (4 dados). **[PDF p. 6] / [CORE]**
 - **Convidados**: jovens profissionais, artistas e atletas; ajudam em pedidos razoáveis; diante de ameaça, ligam para a polícia ou transmitem. **[PDF p. 9]**
 - **Polícia**: chega **15 minutos** depois de um 911 ou do alarme; use o **Detetive da Polícia** (Core p. 371: Físico 4, Social 3, Mental 4; Vitalidade 6, Força de Vontade 5; Atletismo 5, Armas de Fogo 5, Investigação 6, Manha 5; via resumo do Core no worktree do Pedro). **[PDF p. 18, 20] / [CORE]**
-- **Um Membro da Camarilla** que assiste à briga do Capítulo Dois enquanto caça. **[PDF p. 12]** Em NY, pode ser alguém da Scourge **Valerie Duval** ou um informante do **Kaiser**. **[SUG]** ([[Personagens da Camarilla de NY#Corretores, detetives e satélites|Corretores e satélites]])
+- **Um Membro da Camarilla** que assiste à briga do Capítulo Dois enquanto caça. **[PDF p. 12]** Em NY, pode ser alguém da Scourge **Valerie Duval** ou um informante Nosferatu **sem nome**. **[SUG]**
 
 **A cidade (notas de Nova York)** **[NOTA]**: material do Narrador, que vale para a campanha.
 - **Corte:** Príncipe **Hellene Panhard** (Ventrue); Xerife **Qadir al-Asmai** (Toreador); Scourge **Valerie Duval** (Ventrue); Herald **Thomas Arturo** (Toreador). [[Camarilla em Nova York#A corte em 2021|A corte em 2021]]
 - **O "barão local"** que não ajuda Duke **[PDF p. 17]**: **Torque** (Brujah) ou um Anarch menor do Bronx, no vácuo deixado por **Callihan** (morto em março de 2020). [[Camarilla em Nova York#Anarquistas (contexto)|Anarquistas (contexto)]]
-- **Quem cobra a regra dos carniçais expostos:** Qadir e Valerie. **Quem vende informação no Capítulo Quatro:** Kaiser (Nosferatu). **Quem dá status com preço:** Arturo. [[Camarilla em Nova York#Ideias para o Auld Sanguine|Ideias para o Auld Sanguine]]
+- **Quem cobra a regra dos carniçais expostos:** Qadir e Valerie. **Quem vende informação no Capítulo Quatro:** um corretor Nosferatu **sem nome** (invente ou deixe anônimo). **Quem dá status com preço:** Arturo. [[Camarilla em Nova York#Ideias para o Auld Sanguine|Ideias para o Auld Sanguine]]
 
 ---
 # Locais
@@ -356,7 +356,7 @@ Dados das fichas: `vampire-pages/docs/players/merits-flaws-jogadores-v5.md` e `v
 - **Preparação [PDF p. 18]:** lojas fechadas (arrombar vitrines é possível; a polícia demora); **equipamento ilegal** via Advantages com Dificuldade **maior** pelo feriado; **caçar** usa as regras de caça à distância (Core p. 306–307) e **gasta a ação** do PC.
 - **Controle de danos [PDF p. 18]:** **polícia**: 911 responde com **15 minutos de atraso**, tempo para os caçadores fugirem ao ouvir o rádio; folguistas respondem devagar; tiroteios também demoram. **Mídia**: ocupada com o centro; denúncias viram trote; dicas anônimas só são atendidas na manhã seguinte. **Levar Isabella**: Duke não deixa; ela resiste, mas pode ser coagida (Presence, Dominate); escapa se se recuperar da coerção; se não for escondida, os caçadores sobreviventes a acham. **Matá-la** resolve problemas e cria outros: vingança de Duke, perda de Humanidade, um assassinato para esconder.
 - **Cena extra [SUG]:** a oficina **Gardner Bros.** fechada: garrafas vazias, a foto do irmão, recortes sobre "ataques de animais", embalagens de munição. Só se sobrar tempo; humaniza Moses antes do galpão.
-- **Fontes da campanha [NOTA]:** **Kaiser** (Nosferatu) como corretor de informações; **Arturo** para status com preço político. [[Personagens da Camarilla de NY#Ganchos para a campanha|Ganchos para a campanha]]
+- **Fontes da campanha [NOTA]:** um **corretor de informações Nosferatu sem nome** (invente ou deixe anônimo); **Arturo** para status com preço político. [[Personagens da Camarilla de NY#Ganchos para a campanha|Ganchos para a campanha]]
 - **Transição:** saem para o parque industrial (Cena 6). Faça o intervalo aqui. **[SUG]**
 
 ## Cena 6 — Capítulo Cinco (Metendo o Pé na Porta)
@@ -529,9 +529,9 @@ Conferi [[Camarilla em Nova York]], [[Personagens da Camarilla de NY]], [[Auld S
 ## O que as notas acrescentam
 
 Material do Narrador, que **vale para a campanha** mesmo sem estar no PDF:
-- **Cidade e corte de NY**: Panhard, Qadir, Valerie, Arturo, Aisling, Julia, Robert Larson; Callihan morto, Torque; Art Hole, Port Morris. [[Camarilla em Nova York]] · [[Personagens da Camarilla de NY]]
-- **Quem cobra os carniçais** (Qadir, Valerie), **Kaiser** no Capítulo 4, **Arturo** como contato de status. [[Camarilla em Nova York#Ideias para o Auld Sanguine|Ideias]]
-- **Ganchos**: Klara Larson × Robert Larson; Callihan irlandês como "eco" do título. Observação: o título brinca com *Auld Lang Syne*, a canção **escocesa** de Ano-Novo; o eco irlandês é fraco. [[Personagens da Camarilla de NY#Ganchos para a campanha|Ganchos]]
+- **Cidade e corte de NY**: Panhard, Qadir, Valerie, Arturo, Aisling, Julia, Samira, Katherine Weiss (Brujah leal); Callihan morto, Torque; Art Hole, Port Morris. [[Camarilla em Nova York]] · [[Personagens da Camarilla de NY]]
+- **Quem cobra os carniçais** (Qadir, Valerie), um **corretor Nosferatu sem nome** no Capítulo 4, **Arturo** como contato de status. [[Camarilla em Nova York#Ideias para o Auld Sanguine|Ideias]]
+- **Ganchos**: Callihan irlandês como "eco" do título (o sobrenome Larson de Klara fica guardado na [[Camarilla em Nova York#Reserva para o futuro|Reserva]]). Observação: o título brinca com *Auld Lang Syne*, a canção **escocesa** de Ano-Novo; o eco irlandês é fraco. [[Personagens da Camarilla de NY#Ganchos para a campanha|Ganchos]]
 - **Matemática e simulação** (probabilidades, 6.000 execuções, tabela 4/6/8 caçadores), childers × neonatos, conselhos de ritmo para mesas grandes. [[Auld Sanguine - Balanceamento]] · [[Balanceamento de Encontros]]
 - Outras notas que já falam do Auld Sanguine: [[Sabbat#Nova York e o Auld Sanguine|Sabbat > Nova York e o Auld Sanguine]] e [[Sangue Ralo#Ganchos em Nova York|Sangue Ralo > Ganchos em Nova York]].
 - **As 7 fichas dos jogadores**, que substituem a coterie pronta.
@@ -561,8 +561,8 @@ Material do Narrador, que **vale para a campanha** mesmo sem estar no PDF:
 # Pendências para o roteiro final
 
 1. **O 8º jogador:** quem é e qual ficha (nova, 12ª/13ª, BP 1, ou um PC pronto; ver [[#O 8º jogador]]).
-2. **O contato em comum** e qual PC recebe a mensagem (sugestão: Augie Mendez, da Nina).
-3. **A coterie:** Camarilla? Quem a reuniu e a quem responde (Xerife Qadir?). O PDF supõe neonatos da Camarilla numa coterie Vehme; a mesa tem Tzimisce, Ravnos e Banu Haqim.
+2. ✅ **O contato em comum:** decidido (16/10/2026): **Augie Mendez**, da Nina. Nina leva o pedido ao Mawla **Gideon**, que reúne a coterie.
+3. **A coterie:** Camarilla? Quem a reuniu e a quem responde (Xerife Qadir?). O PDF supõe neonatos da Camarilla numa coterie Vehme; a mesa tem Tzimisce, Ravnos e Banu Haqim. ✅ Quem a reúne é **Gideon**, depois do pedido de Nina.
 4. **Ano da noite:** 31/12/**2021** (notas de NY) ou outro (a tabela de childers usa 2019).
 5. **Bairros:** onde fica o prédio da festa e o parque industrial (sugestões: Harlem/Bed-Stuy e Port Morris).
 6. **O barão local:** Torque ou um Anarch menor do Bronx.
@@ -571,7 +571,7 @@ Material do Narrador, que **vale para a campanha** mesmo sem estar no PDF:
 9. **Isabella:** Dif. 4 ou 5 para sair da festa; Dif. para "Bruja" e para Duke (sugestão: 2).
 10. **"Particularmente bem-sucedida"** no Capítulo 4 (sugestão: margem ≥ 2).
 11. **Onde fica o atirador** se o alarme não tocar.
-12. **Fichas:** Valerie Duval como Contact do Vincent; quem o Vincent matou (Trophy Kill); o Mawla da Nina; a facção do Suspect da Nina; a flor do Jesse; o Enemy do Gusman; o sobrenome Calloway (Nina e Jesse); Gideon com 5 dots de Disciplina e Living in the Past.
+12. **Fichas:** Valerie Duval como Contact do Vincent; quem o Vincent matou (Trophy Kill); a facção do Suspect da Nina; a flor do Jesse; o Enemy do Gusman; o sobrenome Calloway (Nina e Jesse); Gideon com 5 dots de Disciplina e Living in the Past. (✅ O Mawla da Nina é Gideon.)
 13. **Tenets da crônica** (para Stains ao matar caçadores ou Isabella).
 14. **Quem 'abasteceu' Moses**, se alguém: Segunda Inquisição, o Adversary do Vincent, o Enemy do Gusman, ou ninguém.
 15. **Mapas** do parque e do galpão (o PDF não tem).
@@ -579,8 +579,6 @@ Material do Narrador, que **vale para a campanha** mesmo sem estar no PDF:
 17. **Duração da sessão** (o roteiro supõe ~4h30) e **ferramentas de segurança**.
 18. **Quais 3 PCs são childers**, se a ideia de "3 childers + 5 neonatos" continua.
 19. **Corrigir nas notas**, se quiser: a regra dos carniçais e o "se um Anarch cair" (ver [[#O que contradiz o PDF]]).
-
----
 # Fontes
 
 - **PDF**: *Auld Sanguine*, Eddy Webb, Renegade/Paradox, edição brasileira da Galápagos (2021/2022), `vampire-pages/docs/og-pdfs/auldSanguine-ptBR-VTMV5.pdf`. Lido inteiro (42 páginas): texto das p. 1–6, 8–10, 12–21, 23–42 extraído; p. 7, 11 e 22 são só ilustrações (Isabella, Duke e gangue, galpão) e a p. 21 (ficha da Equipe) foi conferida como imagem. Não há mapas.

@@ -80,7 +80,7 @@ No centro da fé do Sabbat está o ódio aos [[Gerações e Potência#Antediluvi
 ### Nova York e o Auld Sanguine
 > **[SUG]** Sugestões para a campanha, a partir das notas do Narrador em [[Camarilla em Nova York]].
 
-- *Auld Sanguine* não menciona o Sabbat. Ele entra como **pano de fundo histórico**: segundo *The Black Hand*, Nova York já foi considerada domínio Sabbat, e as notas do Narrador registram que a Príncipe anterior, **Michaela**, foi destruída pelo Sabbat em 1999 (dado de edições anteriores) e que **Carter Vanderweyden** lutou na Batalha de Nova York e negociou com os Sabbat que deixaram a cidade (ver [[Personagens da Camarilla de NY#Carter Vanderweyden|Carter Vanderweyden]]).
+- *Auld Sanguine* não menciona o Sabbat. Ele entra como **pano de fundo histórico**: segundo *The Black Hand*, Nova York já foi considerada domínio Sabbat, e as notas do Narrador registram que a Príncipe anterior, **Michaela**, foi destruída pelo Sabbat em 1999 (dado de edições anteriores; ver [[Camarilla em Nova York#Confirmados já mortos (antes de 2021)|Confirmados já mortos]]).
 - Anciões e ancillae da corte de **Hellene Panhard** viveram essa guerra. Um PC ou NPC com o Loresheet [[Advantages#Sect War Veteran|Sect War Veteran]] tem histórias (e inimigos) dessa época.
 - A deserção Lasombra chegou a Nova York: a corte tem uma Primogen Lasombra, **Julia Sowinski** (ver [[Personagens da Camarilla de NY#Julia Sowinski|Julia Sowinski]]). Os outros Kindred podem desconfiar dela por isso.
 - Numa noite de Ano-Novo, com a cidade cheia e barulhenta, um boato de "pack na cidade" é um bom motivo para o Xerife ficar nervoso e para a coterie ser mandada investigar. Não precisa ser verdade.

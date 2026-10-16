@@ -17,6 +17,7 @@
 - [[#Resumo mecânico (do JSON)]]
 - [[#Segredos]]
 - [[#Gusman Gutierrez: o achado de 2018]]
+- [[#Nina Calloway: a neonata do Harlem]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -208,6 +209,20 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 - ⚠️ **O arquivo de Khalid** (orfanato, Mike, Julius, gravação) é um risco: se cair nas mãos de um inimigo, entrega o **nome** e os **amigos** de Gusman. 💡 E é o tipo de coisa que um ex-Homeland Security **guarda com cuidado**.
 - ⚠️ **A mentira dentro do grupo.** Khalid **conhece os fatos** que provam que Gusman é Ravnos (a busca de Gideon, o nome, a lenda da Semana de Pesadelos). Se Gusman perguntar a Khalid direto, **Khalid decide se mente** ou se diz a verdade.
 - ❓ **Khalid sabe que Gideon usa o nome?** Deixei como **não**: ele só informou o nome.
+## Nina Calloway: a neonata do Harlem
+
+> ✅ = decidido pelo Narrador (16/10/2026). 💡 = proposta minha, a validar com Klaus (Khalid). Detalhes em [[Nina Calloway#Ligação com a coterie (one-shot)]].
+
+- ✅ **Nina é uma Toreador neonata, Mawla de [[Gideon Nicols]] desde antes da one-shot.** Ela chega à história por **Augie Mendez** (aliado dela), que pede ajuda por Isabella. O vínculo dela com Khalid é **secundário**; o principal é com Gideon.
+- 💡 **Na noite:** Khalid lidera a investigação do Capítulo Quatro (Pursuer). Nina não tem perícia para isso e depende dele.
+- 💡 **Espelho.** Os dois foram Abraçados sem escolha, por um talento (ela) ou uma dívida (ele). Khalid forjou a própria morte e se afastou da família; Nina mantém Eddie e Altagracia por perto. Ele sabe ler os sinais de um Touchstone que repara, e pode avisá-la, ou calar.
+- 💡 **Ganchos de campanha (não para a one-shot):**
+  - **Nizar e o sire de Nina.** Um Abraço sem permissão do Príncipe cabe a Xerife ou Arconte. Nizar é Arconte de Don Cerro, e Qadir também foi. O sire foi "levado pela Camarilla"; Khalid pode saber mais do que Nina.
+  - ***The Harbor Ledger*.** Mary (de Gideon) e Leila (irmã de Khalid) cobrindo os speakeasies da pandemia põem o porão de Augie em risco.
+  - **Reyes.** Altagracia **Reyes**, avó de Nina, e o **Reyes** do FBI, aliado de Khalid, dividem o sobrenome. Poderiam ser parentes.
+- ⚠️ **Gusman.** Khalid esconde o segredo dos três (Gusman, Ravnos). Nina e Gusman estão na mesma noite, sem proibição, e Nina tem Auspex 2.
+
+- ✅ **Já se conhecem.** Gideon a leva ao Plaza vez ou outra, e Khalid a vê lá (decisão do Narrador, 16/10/2026). Ele a conhece como a pupila de Gideon e sabe o que circula dela na corte. Ela ainda não conhece Daniel nem Gusman.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -224,6 +239,9 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 
 - **O arquivo de Gusman.** Alguém acha a pasta de Khalid sobre o orfanato, Mike e Julius. Khalid tem de decidir o que fazer com quem leu.
 - **A figura encapuzada.** O meio sorriso da gravação aparece de novo. Khalid é o único que sabe o que a câmera viu.
+
+- **Nina e o espelho.** Uma neonata Abraçada por obsessão com o talento, que ainda toca para Eddie sem que ele saiba. Khalid vê nela o que fez com a própria família. Ver [[#Nina Calloway: a neonata do Harlem]].
+- **O caso do sire de Nina e Nizar.** Se Nizar levou o sire dela, Khalid sabe algo que Nina não sabe.
 
 ## Pendências
 
@@ -246,3 +264,5 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 
 - [x] **Gusman:** evento de 2018, gravação, investigação da origem e nome verdadeiro registrados (16/10/2026).
 - [ ] Validar com Klaus: contatos que ele usa na vigília, o arquivo sobre Mike e Julius e se ele sabe que Gideon usa o nome.
+- [x] **Nina Calloway:** vínculo secundário registrado e **aprovado pelo Narrador** (16/10/2026); o principal é com Gideon. README atualizado.
+- [ ] Ganchos de campanha com Nina (Nizar, *Harbor Ledger*, Reyes): ainda não decididos.

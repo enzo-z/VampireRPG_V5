@@ -2,7 +2,7 @@
 
 # Khalid Hassan Yusuf: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+> Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Khalid sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -86,29 +86,39 @@ Todos 👤 **NPCs mortais**, conduzidos pelo Narrador.
 
 ## A coterie: os outros jogadores
 
-Os quatro 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
+Os cinco 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Nina é a pupila de Gideon, e você a conhece pessoalmente das visitas dela ao Plaza. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
-### 🎭 Vincent Marchetti, o dono do Plaza
+##### 🎭 Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat** (nascido na seita), hoje na Camarilla de Nova York.
 - Dono do **Hotel Plaza**, onde você mora. A Camarilla o encarregou de ajudá-lo. Vocês convivem há cerca de dez anos.
 - **Herói de guerra** da Camarilla pela Batalha de Nova York de 1999.
 - Você conhece a segurança do hotel por dentro; ele conhece o hotel inteiro.
 - **Gusman:** você e Gideon o chamaram por ser ex-Sabbat. Ele viu a marca e deu **cobertura** a Gusman nas primeiras semanas. Ele **não sabe o nome verdadeiro** de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-### 🎭 Gideon Nicols, o produtor
+##### 🎭 Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**.
 - Sem cargo oficial na corte, mas com muito poder em **favores e informação**. Tem reconhecimento entre anciões pelo trabalho de bastidores na Batalha de 1999.
 - Dá festas no Plaza. Ele e Vincent **se encontram regularmente**.
 - Você sabe muito pouco da vida mortal dele.
 - **Gusman:** Gideon é o **responsável** por ele e foi quem decidiu que o rapaz ficaria escondido. Foi para ele que você entregou o nome verdadeiro de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
+- **Nina:** Gideon é o **Mawla** dela, à vista da corte, e a leva ao Plaza vez ou outra. Ver [[#🎭 Nina "Blue" Calloway, a pupila de Gideon]].
 
-### 🎭 Daniel Mercer, o nômade
+##### 🎭 Daniel Mercer, o nômade
 - **Brujah**, ligado ao clube de motociclistas **Iron Lanterns**. Esteve na guerra de 1999.
 - Foi o mais **fácil de rastrear**: foi Abraçado mais recentemente que os outros, e tem um **filho** com registros em hospital.
 - 🔒 **Você sabe**: o filho se chama **Nathan** e está doente (registros desde 2020; o sobrenome nos arquivos é **Ward**). **Daniel não sabe que você sabe.** Guarde, e decida o que fazer com isso.
 - **Daniel não sabe de Gusman** e fica de fora do segredo.
 
-### 🎭 Gusman Gutierrez, o rapaz do metrô
+##### 🎭 Nina "Blue" Calloway, a pupila de Gideon
+- **Toreador** neonata, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**. **Gideon é o Mawla** dela.
+- **Abraço irregular.** O sire dela a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. A corte a **tolera e vigia** (ela é *Suspect*). O destino do sire é desconhecido para ela.
+- Você **a conhece pessoalmente**: Gideon a leva ao Plaza vez ou outra, e você a vê lá. Sabe o que circula dela na corte.
+- Ela toca num porão da **Lenox Avenue**, mantido por **Augie Mendez**, e se alimenta da plateia fiel da cena.
+- Você a vê com um olhar que poucos teriam: foi **Abraçada sem escolher**, por causa de um talento, como você foi por uma dívida. Você sabe o que custa a um recém-Abraçado manter a vida de antes escondida de quem ama, e pode avisá-la, ou calar.
+- Na noite do Réveillon, quando a história começar, **ela vai precisar da sua investigação**: não tem perícia para isso.
+- **Gusman:** ela ainda não o conhece. Os dois vão se cruzar, e você sabe o que ele esconde. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
+
+##### 🎭 Gusman Gutierrez, o rapaz do metrô
 - **Ravnos** de 13ª geração, Abraçado em 2018, **sem sire conhecido**. Mora em **Staten Island**. **Gideon é o responsável** por ele. 🔒 **Ele não sabe que é Ravnos.**
 - **Como vocês o acharam:** Gideon procurava um **Ravnos sobrevivente da Semana de Pesadelos** e usava você para vigiar quem entrava e saía do domínio, com seus contatos na polícia e com técnicos de câmera. Em **março de 2018** acharam o rapaz **recém-Abraçado**, acordando numa **estação do metrô** da 50th Street, com uma **marca escrita no peito** (sânscrito misturado com a marca de Caim, com ar de Sabbat) que ninguém decifrou.
 - **A gravação é sua.** Você viu numa câmera uma **figura encapuzada** escrever a marca, **virar para a câmera sem mostrar o rosto**, dar um **meio sorriso**, e a **câmera cortar**. Você não sabe quem é.
@@ -123,15 +133,33 @@ Os quatro 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent
 
 ## A corte e outros NPCs Kindred
 
-Todos 🩸 **NPCs Kindred**.
+Todos 🩸 **NPCs Kindred**. Esta é a corte de Nova York em 2021 como você a conhece, e os Anarquistas.
+
+##### A corte
 
 | Quem | Papel | O que você sabe |
 |---|---|---|
 | **Nizar ibn Tahir** | Seu sire. | Ver [[#Seu sire: Nizar ibn Tahir]]. |
 | **Don Cerro** | Justicar, superior de Nizar. | Nunca o encontrou. |
+| **Hellene Panhard** | **Príncipe** de Nova York (Ventrue). | Autoridade da Camarilla na cidade, no cargo desde cerca de 2005, depois de Calebros. Você é um Membro reconhecido dentro do domínio dela. |
+| **Qadir al-Asmai** | **Xerife** de Nova York (Toreador). | Faz cumprir a lei da corte. Foi **Arconte de Don Cerro**, o mesmo Justicar do seu sire, e Xerife de Calebros antes de Panhard. |
+| **Valerie Duval** | **Scourge** (Ventrue). | Neonata. Caça thin-bloods e é dura com os que saem da linha. Age sob as ordens do Xerife. |
+| **Thomas Arturo** | **Herald**, a Harpia da corte (Toreador). | Dono de reputações e escândalos; a influência dele é comparável à de um Primogen. Dizem que favorece Ventrue, Toreador e Tremere. |
+| **Aisling Sturbridge** | **Alta Regente da Capela dos Cinco Distritos** (Tremere). | Líder dos Tremere na cidade. Esperta e estratégica; faz acordos com outros Membros, o que é raro entre os Tremere. |
+| **Julia Sowinski** | **Primogen** Lasombra. | Neonata, Abraçada em junho de 2019. Era jornalista investigativa e investigou a morte de Callihan, em 2020. |
 | **Samira** | **Primogen dos Banu Haqim** em Nova York. | Foi quem o **apresentou à corte** em 2010 ou 2011. Depois disso, **contato mínimo**. Você a conhece pouco. |
-| **Hellene Panhard** | **Príncipe** de Nova York (Ventrue). | Autoridade da Camarilla na cidade. Você é um Membro reconhecido dentro do domínio dela. |
-| **Qadir al-Asmai** | **Xerife** de Nova York (Toreador). | Faz parte da estrutura de poder da corte. |
+| **Katherine Weiss** | **Primogen dos Brujah** (leal da Camarilla). | Representa os Brujah que ficaram na Camarilla depois de 2012. Você a conhece só de nome. |
+| **Calebros** | **Príncipe interino** depois da Batalha de Nova York (Nosferatu). | Governou a cidade logo depois da guerra de 1999, até Panhard assumir. Você chegou depois: só o conhece de nome. |
+
+##### Anarquistas
+
+A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam quase só no **Bronx**.
+
+| Quem                        | Papel                   | O que você sabe                                                                                                               |
+| --------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Douglas "Boss" Callihan** | Barão Anarch, o "Boss". | Foi encontrado **morto em março de 2020**. Dizem que era aliado e amante da Príncipe.                                         |
+| **Torque**                  | Brujah, Barão Anarch.   | **Novo líder presumido** depois de Callihan, acusado de trair as raízes do movimento.                                         |
+| **Tamika**                  | Gangrel, Anarch.        | Caça agentes do governo que perseguem vampiros; foi ligada a Torque. Você, ex-Homeland Security, conhece o tipo que ela caça. |
 
 ---
 
@@ -159,7 +187,7 @@ flowchart TB
 
   subgraph COT["Coterie (jogadores)"]
     V["VINCENT MARCHETTI<br/>Tzimisce, dono do Plaza"]:::pc
-    G["GIDEON NICHOLS<br/>Toreador, Broadway"]:::pc
+    G["GIDEON NICOLS<br/>Toreador, Broadway"]:::pc
     D["DANIEL MERCER<br/>Brujah, Iron Lanterns"]:::pc
   end
 
