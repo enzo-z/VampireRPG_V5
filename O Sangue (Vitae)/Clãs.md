@@ -562,7 +562,7 @@ Um perfil por clã, mais Caitiff e Thin-Bloods: seita, Disciplinas do clã e res
 > - **Compulsão (resumo)**: Soluções que não sejam a mais ousada ou perigosa sofrem −2 dados, até o problema ser resolvido.
 >
 > - **Sistema**:
->   Os Ravnos são nômades, ligados a tradições de ilusionismo e engano. O clã foi quase destruído na "Semana de Pesadelos": segundo o Core, o Antediluviano Ravnos encontrou a Morte Final em julho de 1999, e antes de morrer drenou vitae de todo o seu clã, levando-os a frenesi e canibalismo (Core, Loresheet The Week of Nightmares, p. 395). Os sobreviventes são raros, paranoicos e extraordinariamente adaptáveis.
+>   Os Ravnos são nômades, ligados a tradições de ilusionismo e engano. O clã foi quase destruído na [[Semana de Pesadelos]]: segundo o Core, o Antediluviano Ravnos encontrou a Morte Final em julho de 1999, e antes de morrer drenou vitae de todo o seu clã, levando-os a frenesi e canibalismo (Core, Loresheet The Week of Nightmares, p. 395). Os sobreviventes são raros, paranoicos e extraordinariamente adaptáveis.
 >
 >   **Animalism**: a critério do Narrador, reduza em 1 a Dificuldade de testes de Animalism com corvos, raposas, coiotes, aranhas e macacos, e aumente-a para os demais animais (Player's Guide, p. 41).
 >

@@ -1044,5 +1044,23 @@ Veja Loresheets na p. 382 para mais.
 >   | ●●●● | No Vampire’s Land: hit-teams Kindred de ambos os lados percorreram domínio após domínio e voltaram por terreno antigo enquanto os defensores se reagrupavam. Você conhece os melhores pontos do seu domínio e de dois domínios vizinhos para emboscar, se esconder, reabastecer uma milícia e contatar mercenários. Adicione dois pontos ao Portillon do seu Domain e dois dados às pools relevantes de Streetwise, Larceny e Stealth nos dois domínios vizinhos. |
 >   | ●●●●● | Sect Agitator: alguns vampiros existem só para causar derramamento de sangue, e você se conta entre eles. Indivíduos como Lucinda, da Camarilla, e Francisco Domingo de Polonia, do Sabbat, tinham gosto pela guerra e ficaram vazios quando ela acabou. Você conhece todos os gatilhos e o pavio certo para acender uma nova guerra entre seitas. Pode começar localizada, mas, uma vez acesas as chamas, você pode alimentá-las até se espalharem. Adicione dois dados a todas as suas pools de testes Sociais para inflamar a tensão sectária. |
 
+### The Week of Nightmares
+
+> - **Fonte**: Core, p. 395 · texto do app do Pedro
+> - **Pontos**: • a •••••
+> - **Apelidos**: Loresheet: The Week of Nightmares, Week of Nightmares, Semana de Pesadelos
+> - **Observação**: o Core não está transcrito; os níveis foram deduzidos pela ordem dos itens no resumo do Pedro. O Children of the Blood (p. 77) confirma Ravnos Remains em ●●. Lore completo em [[Semana de Pesadelos]].
+>
+> - **Sistema**:
+>   Em julho de 1999, por cerca de uma semana, um vampiro antiquíssimo, talvez o Antediluviano dos Ravnos, despertou e expurgou o próprio clã: drenou a vitae da linhagem e levou os Ravnos ao frenesi e ao canibalismo, até encontrar a Morte Final nas mãos de partes desconhecidas, com armamento avançado e o poder do sol. Ao mesmo tempo, a Red Star surgiu no céu. Poucos viram de perto, mas o pânico correu o mundo, e muitos veem a Semana como o estopim da Gehenna War. Quem tem esta Loresheet conhece a história, os sobreviventes ou os presságios.
+>
+>   | Pontos | Efeito |
+>   |---|---|
+>   | ● | Oral History: você conta a história da Semana de Pesadelos com maestria, e ela faz sucesso nos Elysia. Adicione três dados às pools de Performance para contá-la. |
+>   | ●● | Ravnos Remains: você tem um grupo de contatos Ravnos sobreviventes, que contam como Mawla de três pontos. Trazem notícias e avisos e talvez, uma vez por crônica, lancem ilusões poderosas a seu favor. A associação é malvista, se descoberta. |
+>   | ●●● | I Was There: você tem fama de sobrevivente e veterano da Semana, e Status entre historiadores Kindred, ocultistas, Ravnos e cultistas da Gehenna. Uma vez por história, pode usar esse Status para obter um minor boon de um desses grupos ou de um cortesão proeminente. |
+>   | ●●●● | The Red Star: Anthelios (Wormwood), arauto da Gehenna, ainda brilha para você. Uma vez por história, depois de olhar a estrela por dez minutos, você reduz sua Fome a 2 ou ganha um dado nas pools de uma Disciplina por uma noite. |
+>   | ●●●●● | Blood of Zapathasura: você tem um pequeno frasco com o Sangue do Antediluviano Ravnos. O que fazer com ele é com você; o efeito em quem beber é decidido pelo Narrador. |
+
 ---
 *Ver também:* [[Predator Type]] · [[Character]]
