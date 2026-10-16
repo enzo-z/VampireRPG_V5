@@ -168,7 +168,7 @@
 }
 
 .intro {
-  margin-block-end: var(--space-2);
+  margin-block-end: var(--space-1);
   text-align: center;
 }
 
@@ -182,9 +182,15 @@
   column-gap: var(--space-5);
 }
 
+/* Each entry opens with a crimson diamond; wrapped lines hang past it, so the eye
+   finds where one term (or clan) ends and the next begins. */
 .entry {
+  --entry-marker-size: 0.42em;
+  --entry-hang: 0.95em;
   break-inside: avoid;
-  margin-block-end: var(--space-1);
+  margin-block-end: calc(var(--space-1) * 1.75); /* ~7px: 3px more than before, all the page can spare */
+  padding-inline-start: var(--entry-hang);
+  text-indent: calc(-1 * var(--entry-hang));
   font-family: var(--font-sans);
   font-size: calc(var(--font-size-xs) * var(--print-text-scale));
   line-height: var(--line-height-snug);
@@ -193,6 +199,19 @@
 .entry dt {
   display: inline;
   font-weight: var(--font-weight-bold);
+}
+
+.entry dt::before {
+  content: '';
+  display: inline-block;
+  inline-size: var(--entry-marker-size);
+  block-size: var(--entry-marker-size);
+  margin-inline-end: calc(var(--entry-hang) - var(--entry-marker-size));
+  vertical-align: 0.12em;
+  background: var(--color-rule);
+  transform: rotate(45deg);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 .entry dt::after {
