@@ -1,8 +1,11 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #nina #readme
 
 # Nina Calloway: o que você sabe
 
-> Auld Sanguine · Nova York · Dezembro de 2021
+> Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Nina sabe e as relações dela com os outros personagens, do ponto de vista dela. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -38,7 +41,7 @@ Tudo aqui é o que **Nina** sabe ou acredita. Pode haver coisas que ela ignora, 
 - Você foi **Abraçada em novembro de 2020**, no porão de um restaurante fechado na **Lenox Avenue**. É uma neonata que **ainda não entende a noite**, mas já enxerga nela uma oportunidade.
 - Você mora num **apartamento pequeno em Washington Heights** e continua tocando no **porão de Augie Mendez** com **Eddie Park**, que **não sabe o que você se tornou**.
 - Você se alimenta **discretamente da plateia fiel** da cena de jazz. É o único lugar onde você consegue caçar (a sua *Prey Exclusion*).
-- A corte a **tolera e vigia** (você é *Suspect*) e você **sabe quase nada das regras**. Seu **Mawla é Gideon Nicols**, que está à vista de todos como o seu mentor desde antes da noite do Réveillon.
+- A corte a **tolera e vigia** (você é *Suspect*) e você **sabe quase nada das regras**. Seu **Mawla é Gideon Nicols**, que está à vista de todos como o seu mentor desde antes do Réveillon de 2020, há quase um ano.
 - Sua **Ambição**: *"Fazer do jazz o território da Camarilla em Nova York, com meu nome à frente."*
 - Suas **Convicções**: *"Nunca tocar sem verdade."* · *"A música deve continuar, mesmo que tudo desabe."* · *"Nunca destruir a arte de outro artista."*
 
@@ -101,12 +104,12 @@ Tudo aqui é o que **Nina** sabe ou acredita. Pode haver coisas que ela ignora, 
 
 ## A coterie: os outros jogadores
 
-Os quatro 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e Vincent**, das visitas ao Plaza em que Gideon a leva de vez em quando. **Daniel e Gusman**, você ainda não conhece.
+Os seis 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e Vincent**, das visitas ao Plaza em que Gideon a leva de vez em quando. **Daniel, Gusman e Herta**, você ainda não conhece.
 
 ### 🎭 Gideon Nicols, o seu Mawla
 - **Toreador**, **produtor da Broadway**. Mora e trabalha em Manhattan. **Sem cargo oficial** na corte, mas com muito poder em **favores e informação**.
-- É um dos Toreador mais antigos da cidade. A sua senhora, **Cordelia Vane**, desapareceu em 2008, e quem acompanha a corte sabe disso.
-- **Mawla (•)** seu, assumido **antes** da noite do Réveillon. Você sabe que ele não faz nada de graça e **não perguntou o que ele ganha com isso**. Sabe que ele **assumiu a sua responsabilidade diante da corte**, o que lhe dá cobertura política.
+- É um dos Toreador mais antigos da cidade. A sire dele, **Cordelia Vane**, desapareceu em 2008, e quem acompanha a corte sabe disso.
+- **Mawla (•)** seu, assumido **antes** do Réveillon de 2020, há quase um ano. Você sabe que ele não faz nada de graça e **não perguntou o que ele ganha com isso**. Sabe que ele **assumiu a sua responsabilidade diante da corte**, o que lhe dá cobertura política.
 - Ele conhece a cena de arte e a Broadway por dentro, e **dá festas no Hotel Plaza**. **Ele já a levou lá vez ou outra.**
 
 ### 🎭 Khalid Hassan Yusuf
@@ -122,6 +125,9 @@ Os quatro 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e 
 
 ### 🎭 Gusman Gutierrez
 - **Você nunca ouviu falar dele.** Não há regra que o impeça de aparecer na sua noite.
+
+### 🎭 Herta Müller
+- **Você nunca ouviu falar dela.**
 
 ## Os segredos que você guarda
 
@@ -142,4 +148,4 @@ Os quatro 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e 
 - **Khalid** e **Vincent** conhecem você das visitas ao Plaza e sabem que você é a pupila de Gideon.
 - **Eddie Park** e **Altagracia** **não sabem** o que você se tornou.
 - **O público do porão** conhece a **Blue**, a saxofonista, e não sabe de mais nada.
-- **Daniel** e **Gusman** ainda não conhecem você.
+- **Daniel**, **Gusman** e **Herta** ainda não conhecem você.

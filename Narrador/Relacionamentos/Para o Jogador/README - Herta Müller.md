@@ -36,7 +36,7 @@ Tudo aqui é o que **Herta** sabe ou acredita. Pode haver coisas que ela ignora,
 - Você foi Abraçada no clã **Ventrue** em **Berlim, no outono de 2021**, há dois ou três meses. É **13ª geração**. Ainda está aprendendo o que é.
 - Antes, era **diplomata** do Ministério das Relações Exteriores alemão e trabalhava com reassentamento de refugiados. Oficialmente, foi afastada por "problemas de saúde".
 - Agora tem uma fachada na **Missão Permanente da Alemanha junto à ONU**, como assistente. Na prática, você **acompanha Heinrich**: não tem papel na comitiva e não foi por vontade própria.
-- Você está hospedada no **Hotel Plaza** desde **terça, 28 de dezembro**. Na noite de 31, completa **três noites** no hotel, as duas últimas **sozinha**: o resto da comitiva saiu para as festas de fim de ano da corte.
+- Você está hospedada no **Hotel Plaza** desde **terça, 28 de dezembro**, e desde quinta, 30, está **sozinha**: o resto da comitiva saiu para as festas de fim de ano da corte.
 - Você não conhece ninguém em Nova York. Não tem refúgio, dinheiro nem aliados próprios na cidade. Se precisar de algo, Heinrich mandou chamar **Vincent Marchetti**, o dono do hotel.
 - **Como você se alimenta:** só consegue beber de quem, naquele momento, **trai uma confiança com uma mentira que tem vítima**. Beber de outra pessoa custa Força de Vontade. Antes de agir, você observa e confirma.
 - **O poder que quase a quebrou.** Dominate, o poder que Heinrich usou em você, está no seu sangue: é uma Disciplina do seu clã, e você **pode** aprendê-lo um dia. Tem medo de querer. Por enquanto, o que despertou em você foi o contrário: uma mente que não se dobra.
@@ -77,7 +77,6 @@ Uma comitiva da Camarilla europeia, pequena de propósito: grupo grande chama at
 - **Terça, 28/12:** a comitiva chega a Nova York e se hospeda no **Plaza**. Heinrich escolheu o hotel: é de um Kindred, é discreto e é onde a corte põe visitantes importantes. E o dono é **ex-Sabbat**: *"a prova de que a Camarilla sabe absorver o inimigo"*, nas palavras de Heinrich.
 - **Quarta, 29/12:** pela **Quinta Tradição**, Heinrich apresenta a comitiva à **Príncipe Hellene Panhard**, no **Elysium**. Você é apresentada como **progênie** dele. Teodoro é levado para conhecer Julia Sowinski. A Príncipe convida Heinrich e Teodoro a passarem o fim de ano numa das **residências dela**.
 - **Quinta, 30/12:** Heinrich, Teodoro e Lorenz deixam o Plaza. Você **não foi convidada**: Heinrich explicou que a recepção de fim de ano é para anciões e convidados da Príncipe, não para uma neonata que ele ainda não liberou. Antes de sair, ele **encarregou Vincent Marchetti** de atender às suas necessidades e disse a você: *"Se precisar de algo, chame Herr Marchetti."*
-- **Sexta, 31/12:** a corte celebra a virada no Elysium. Você está sozinha no Plaza.
 - **Depois:** a comitiva fica na cidade pelo menos até a primeira semana de janeiro.
 
 ---

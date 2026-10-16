@@ -118,7 +118,7 @@ Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, 
 - Você **a conhece pessoalmente**: Gideon a leva ao Plaza vez ou outra, e você a vê lá. Sabe o que circula dela na corte.
 - Ela toca num porão da **Lenox Avenue**, mantido por **Augie Mendez**, e se alimenta da plateia fiel da cena.
 - Você a vê com um olhar que poucos teriam: foi **Abraçada sem escolher**, por causa de um talento, como você foi por uma dívida. Você sabe o que custa a um recém-Abraçado manter a vida de antes escondida de quem ama, e pode avisá-la, ou calar.
-- Na noite do Réveillon, quando a história começar, **ela vai precisar da sua investigação**: não tem perícia para isso.
+- Ela **não tem perícia para investigar**; se um dia precisar, é a você que vai recorrer.
 - **Gusman:** ela ainda não o conhece. Os dois vão se cruzar, e você sabe o que ele esconde. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
 ##### 🎭 Gusman Gutierrez, o rapaz do metrô
