@@ -1,0 +1,801 @@
+<title>Nova York by Night</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cabin:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<style>
+/* Layout: chart-table — map plate on the left, a dossier column on the right that reads whatever is selected; clan ledger and source notes below. */
+:root {
+  --bg: #ffffff;
+  --ink: #231f20;
+  --ink-muted: #5e5a5b;
+  --ink-subtle: #757172;
+  --rule: #dcc3c7;
+  --mist: #c8c7c7;
+  --accent: #790914;
+  --accent-deep: #5c0610;
+  --water: #eef0f1;
+  --land: #f3eeec;
+  --coast: #8f8a8b;
+  --halo: #ffffff;
+  --f-cam: #790914;
+  --f-cam-fill: #d9a2a8;
+  --f-cam-tint: #f4e3e4;
+  --f-anarch: #8f5408;
+  --f-anarch-fill: #e5bd7c;
+  --f-anarch-tint: #f8ecd8;
+  --f-indep: #3e6463;
+  --f-indep-tint: #e0eaea;
+  --f-sabbat: #231f20;
+  --f-sabbat-fill: #6b6466;
+  --f-unk: #e4e1e1;
+  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --font-text: "Cormorant Garamond", "Garamond", Georgia, serif;
+  --font-ui: "Cabin", "Gill Sans", "Segoe UI", system-ui, sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 1.125rem;
+  --step-1: 1.375rem;
+  --step-2: 1.75rem;
+  --step-4: clamp(2.25rem, 5vw, 3.5rem);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 36px;
+  --space-7: 56px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151112; --ink: #efe7e5; --ink-muted: #bdb3b1; --ink-subtle: #9a908f; --rule: #4d3439; --mist: #3d3637;
+    --accent: #e8707e; --accent-deep: #f19aa4; --water: #0f1618; --land: #221c1d; --coast: #6a6162; --halo: #151112;
+    --f-cam: #e8707e; --f-cam-fill: #7a2a35; --f-cam-tint: #3a1b20; --f-anarch: #e0a24a; --f-anarch-fill: #7a5216; --f-anarch-tint: #3a2a14;
+    --f-indep: #7fb3b1; --f-indep-tint: #1c2e2e; --f-sabbat: #0b0909; --f-sabbat-fill: #3a3335; --f-unk: #2c2627;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151112; --ink: #efe7e5; --ink-muted: #bdb3b1; --ink-subtle: #9a908f; --rule: #4d3439; --mist: #3d3637;
+  --accent: #e8707e; --accent-deep: #f19aa4; --water: #0f1618; --land: #221c1d; --coast: #6a6162; --halo: #151112;
+  --f-cam: #e8707e; --f-cam-fill: #7a2a35; --f-cam-tint: #3a1b20; --f-anarch: #e0a24a; --f-anarch-fill: #7a5216; --f-anarch-tint: #3a2a14;
+  --f-indep: #7fb3b1; --f-indep-tint: #1c2e2e; --f-sabbat: #0b0909; --f-sabbat-fill: #3a3335; --f-unk: #2c2627;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-text); font-weight: 500; font-size: var(--step-0); line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: var(--space-6) var(--space-7);
+}
+.wrap { max-width: 1280px; margin: 0 auto; display: grid; gap: var(--space-6); }
+.eyebrow { font-family: var(--font-ui); font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.26em; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--font-display); font-weight: 400; font-size: var(--step-4); line-height: 1.02; margin: var(--space-2) 0 var(--space-3); text-wrap: balance; }
+h1 em { font-style: italic; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--ink-muted); margin: 0; }
+.lede strong { color: var(--ink); font-weight: 700; }
+header.top { display: grid; gap: var(--space-4); border-bottom: 1px solid var(--accent); padding-bottom: var(--space-5); }
+
+.controls { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5); align-items: center; font-family: var(--font-ui); font-size: var(--step--1); }
+.ctl-group { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.ctl-label { text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-subtle); font-weight: 600; margin-right: var(--space-1); }
+.seg { display: inline-flex; border: 1px solid var(--ink); }
+.seg button { font: inherit; background: transparent; color: var(--ink); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.chk { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px dotted var(--mist); cursor: pointer; user-select: none; }
+.chk input { accent-color: var(--accent); margin: 0; }
+.chk svg { width: 12px; height: 12px; overflow: visible; }
+button:focus-visible, .chk:focus-within, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+@media (max-width: 900px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+
+.plate { position: relative; border: 1px solid var(--ink); background: var(--water); }
+.plate svg { display: block; width: 100%; height: auto; }
+.plate-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-4); padding: var(--space-2) var(--space-3); border-top: 1px solid var(--ink); background: var(--bg); font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-subtle); }
+
+.coast { stroke: var(--coast); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.ctx { fill: var(--land); }
+.boro { cursor: pointer; transition: opacity .2s; }
+.boro:hover { opacity: .86; }
+.boro.sel { stroke: var(--ink); stroke-width: 2.5; }
+.f-cam { fill: var(--f-cam-fill); }
+.f-camSoft { fill: url(#h-cam); }
+.f-anarch { fill: var(--f-anarch-fill); }
+.f-anarchSoft { fill: url(#h-anarch); }
+.f-indep { fill: url(#h-indep); }
+.f-sabbat { fill: url(#h-sabbat); }
+.f-unk { fill: url(#d-unk); }
+.pb-cam { fill: var(--f-cam-tint); } .pl-cam { stroke: var(--f-cam); stroke-width: 1.6; }
+.pb-anarch { fill: var(--f-anarch-tint); } .pl-anarch { stroke: var(--f-anarch); stroke-width: 1.8; }
+.pb-indep { fill: var(--f-indep-tint); } .pl-indep { stroke: var(--f-indep); stroke-width: 1.2; }
+.pb-sabbat { fill: var(--f-sabbat-fill); } .pl-sabbat { stroke: var(--f-sabbat); stroke-width: 2.2; }
+.pb-unk { fill: var(--land); } .pd-unk { fill: var(--coast); }
+
+.blabel { font-family: var(--font-text); font-weight: 700; text-transform: uppercase; letter-spacing: 0.22em; fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+.clabel { font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 0.2em; fill: var(--ink-subtle); pointer-events: none; }
+.wlabel { font-family: var(--font-text); font-style: italic; fill: var(--coast); pointer-events: none; }
+.mlabel { font-family: var(--font-ui); font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; pointer-events: none; }
+.mk { cursor: pointer; }
+.mk .hit { fill: transparent; }
+.m-now { fill: var(--ink); stroke: var(--halo); }
+.m-hist { fill: var(--halo); stroke: var(--ink); }
+.m-b1999 { fill: var(--halo); stroke: var(--accent); }
+.m-pc { fill: var(--accent); stroke: var(--halo); }
+.m-auld { fill: var(--halo); stroke: var(--accent); }
+.m-auld-dot { fill: var(--accent); }
+.m-approx { fill: none; stroke: var(--ink-subtle); stroke-dasharray: 2 2; }
+.mk.sel .m-ring { fill: none; stroke: var(--accent); }
+.edge { cursor: pointer; }
+.edge text { font-family: var(--font-ui); font-weight: 600; fill: var(--ink-muted); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; }
+.edge:hover text { fill: var(--accent); }
+.scale rect { fill: var(--ink); }
+.scale rect.alt { fill: var(--halo); stroke: var(--ink); }
+.scale text { font-family: var(--font-ui); fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; }
+
+.legend { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin-top: var(--space-3); font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend svg { width: 22px; height: 14px; border: 1px solid var(--coast); }
+
+aside.dossier { border-top: 3px double var(--accent); padding-top: var(--space-4); display: grid; gap: var(--space-4); min-width: 0; }
+@media (min-width: 901px) { aside.dossier { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); max-height: calc(100vh - 32px); overflow-y: auto; padding-right: var(--space-2); } }
+.d-kicker { font-family: var(--font-ui); font-size: var(--step--1); letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-subtle); font-weight: 600; }
+.d-title { font-family: var(--font-display); font-size: var(--step-2); font-weight: 400; line-height: 1.1; margin: 2px 0 0; text-wrap: balance; color: var(--ink); border: 0; padding: 0; }
+.d-status { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 10px; border: 1px solid currentColor; }
+.st-cam, .st-camSoft { color: var(--f-cam); }
+.st-anarch, .st-anarchSoft { color: var(--f-anarch); }
+.st-indep { color: var(--f-indep); }
+.st-sabbat { color: var(--ink); }
+.st-unk { color: var(--ink-subtle); }
+.d-body p { margin: 0 0 var(--space-3); }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 2px var(--space-4); font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-muted); margin: 0; font-variant-numeric: tabular-nums; }
+.facts dt { text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-subtle); }
+.facts dd { margin: 0; color: var(--ink); }
+.d-sec { font-family: var(--font-ui); font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); font-weight: 600; border-bottom: 1px solid var(--accent); padding-bottom: 4px; margin: 0 0 var(--space-2); }
+.clans { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.clans li { display: grid; gap: 2px; }
+.clan-name { font-family: var(--font-text); font-weight: 700; font-size: var(--step-1); line-height: 1.1; }
+.clan-who { color: var(--ink-muted); }
+.src { display: inline-block; font-family: var(--font-ui); font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 1px 6px; margin-left: 6px; border: 1px dotted var(--ink-subtle); color: var(--ink-subtle); vertical-align: 2px; white-space: nowrap; }
+.src.sug { border-style: solid; border-color: var(--accent); color: var(--accent); }
+.pre { border-left: 2px solid var(--ink); padding-left: var(--space-3); color: var(--ink-muted); font-style: italic; }
+.d-back { font: inherit; font-family: var(--font-ui); font-size: var(--step--1); background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; justify-self: start; }
+.court { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.court li { display: flex; justify-content: space-between; gap: var(--space-3); border-bottom: 1px dotted var(--mist); padding-bottom: 3px; }
+.court b { font-weight: 700; }
+.court span { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-subtle); text-align: right; }
+.hint { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-subtle); }
+
+section.ledger, section.notes { display: grid; gap: var(--space-4); }
+h2 { font-family: var(--font-text); font-weight: 700; font-size: var(--step-2); color: var(--accent); margin: 0; line-height: 1.1; border-bottom: 1px solid var(--accent); padding-bottom: var(--space-2); }
+.table-scroll { overflow-x: auto; border: 1px solid var(--ink); }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 10px; border-bottom: 1px dotted var(--mist); text-align: center; }
+thead th { font-family: var(--font-ui); font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-subtle); font-weight: 600; border-bottom: 1px solid var(--ink); background: var(--bg); }
+tbody th { text-align: left; font-family: var(--font-text); font-weight: 700; font-size: var(--step-0); white-space: nowrap; }
+tbody tr:nth-child(even) { background: color-mix(in srgb, var(--f-cam-tint) 45%, var(--bg)); }
+td { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-muted); text-align: left; min-width: 110px; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.dot.strong { background: var(--accent); }
+.dot.present { border: 1.5px solid var(--accent); }
+.ledger-key { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-subtle); display: flex; gap: var(--space-4); flex-wrap: wrap; }
+
+.notes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--space-4) var(--space-6); }
+.note { min-width: 0; }
+.note h3 { font-family: var(--font-text); font-weight: 700; font-size: var(--step-1); margin: 0 0 var(--space-1); }
+.note p { margin: 0; color: var(--ink-muted); }
+.sources { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-subtle); max-width: 90ch; }
+.sources a { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .boro { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">Auld Sanguine · mapa do Narrador · Réveillon de 2021</div>
+      <h1>Nova York <em>by Night</em></h1>
+      <p class="lede">Os cinco distritos e Nova Jersey divididos por quem manda à noite. A <strong>Camarilla</strong> reivindica a cidade inteira, mas só governa de fato Manhattan; os <strong>Anarquistas</strong> ficam no Bronx e em Staten Island; o <strong>Sabbat</strong> perdeu tudo em 1999. Clique num distrito ou num ponto para ver clãs, figuras e a fonte de cada dado.</p>
+    </div>
+    <div class="controls" role="group" aria-label="Controles do mapa">
+      <div class="ctl-group">
+        <span class="ctl-label">Época</span>
+        <div class="seg" id="era">
+          <button type="button" id="era-2021" data-era="2021" aria-pressed="true">2021</button>
+          <button type="button" id="era-pre" data-era="pre" aria-pressed="false">Antes de 1999</button>
+        </div>
+      </div>
+      <div class="ctl-group">
+        <span class="ctl-label">Vista</span>
+        <div class="seg" id="zoom">
+          <button type="button" id="zoom-city" data-zoom="city" aria-pressed="true">Cidade</button>
+          <button type="button" id="zoom-man" data-zoom="man" aria-pressed="false">Manhattan</button>
+        </div>
+      </div>
+      <div class="ctl-group" id="layers">
+        <span class="ctl-label">Camadas</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <div>
+      <div class="plate">
+        <svg id="map" viewBox="0 0 1088 1010" role="img" aria-label="Mapa de Nova York com territórios das facções vampíricas">
+          <defs>
+            <pattern id="h-cam" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="9" height="9" class="pb-cam"/><line x1="0" y1="0" x2="0" y2="9" class="pl-cam"/></pattern>
+            <pattern id="h-anarch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="9" height="9" class="pb-anarch"/><line x1="0" y1="0" x2="0" y2="9" class="pl-anarch"/></pattern>
+            <pattern id="h-indep" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" class="pb-indep"/><line x1="0" y1="0" x2="7" y2="0" class="pl-indep"/></pattern>
+            <pattern id="h-sabbat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="pb-sabbat"/><line x1="0" y1="0" x2="0" y2="6" class="pl-sabbat"/></pattern>
+            <pattern id="d-unk" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" class="pb-unk"/><circle cx="4" cy="4" r="1" class="pd-unk"/></pattern>
+          </defs>
+          <rect x="-400" y="-400" width="1900" height="1900" fill="var(--water)" style="fill: var(--water)"/>
+          <g id="g-ctx"></g>
+          <g id="g-boros"></g>
+          <g id="g-water"></g>
+          <g id="g-blabels"></g>
+          <g id="g-markers"></g>
+          <g id="g-edges"></g>
+          <g id="g-scale"></g>
+        </svg>
+        <div class="plate-foot">
+          <span id="foot-scale">Escala real: projeção a partir de latitude e longitude · norte para cima</span>
+          <span>Contornos simplificados · pontos com anel tracejado têm local aproximado</span>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <aside class="dossier" id="dossier" aria-live="polite"></aside>
+  </div>
+
+  <section class="ledger">
+    <h2>Clãs por distrito</h2>
+    <div class="ledger-key"><span><i class="dot strong"></i>Sede, domínio ou base do clã</span><span><i class="dot present"></i>Figura conhecida mora ou age ali</span><span>"Cidade" = está em NY, bairro não informado</span></div>
+    <div class="table-scroll"><table id="ledger"></table></div>
+  </section>
+
+  <section class="notes">
+    <h2>Divergências e cuidados</h2>
+    <div class="notes-grid" id="notes"></div>
+    <p class="sources">Fontes do vault: <i>Narrador/Nova York/Camarilla em Nova York</i>, <i>Personagens da Camarilla de NY</i>, <i>Auld Sanguine - Roteiro da Sessão</i>, <i>vampire-pages/docs/notes/one-shot/nova-york</i>, <i>O Sangue (Vitae)/Clãs</i>, <i>Lore/Sabbat</i>, <i>Lore/Semana de Pesadelos</i>, <i>Sangue Ralo</i>, as notas dos jogadores e <i>Auld Sanguine - Laços entre Jogadores</i>. Web, para contraste: <a href="https://shipwrecklibrary.com/?p=2224" target="_blank" rel="noopener">NYBN Overview</a>, <a href="https://whitewolf.fandom.com/wiki/New_York_by_Night" target="_blank" rel="noopener">White Wolf Wiki: New York by Night</a>, <a href="https://www.wikipedia.org/wiki/NY_by_Night" target="_blank" rel="noopener">Wikipedia: NY by Night</a>. Área e população: Censo dos EUA de 2020.</p>
+  </section>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  function P(c) { return [(c[0] + 74.30) * 1700, (40.94 - c[1]) * 2244]; }
+  function pathD(pts) { return pts.map(function (c, i) { var p = P(c); return (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join("") + "Z"; }
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  var SRC = { jogos: "jogos V5", livro: "livro V5", notas: "notas do Narrador", sug: "sugestão", ant: "edição anterior" };
+  function srcTags(list) { return (list || []).map(function (s) { return '<span class="src' + (s === "sug" ? " sug" : "") + '">' + SRC[s] + "</span>"; }).join(""); }
+
+  var FACTIONS = {
+    cam: { name: "Camarilla: domínio da corte" },
+    camSoft: { name: "Camarilla sem senhor único" },
+    anarch: { name: "Anarquistas" },
+    anarchSoft: { name: "Anarquistas (base do pós-guerra)" },
+    indep: { name: "Periferia: micro-domínios" },
+    sabbat: { name: "Sabbat" },
+    unk: { name: "Sem dados" }
+  };
+
+  var BOROS = [
+    {
+      id: "manhattan", name: "Manhattan", f: "cam", pre: "cam", area: "58,7", pop: "1.694.251",
+      label: [-73.967, 40.792], rot: -68,
+      status: "Coração da corte",
+      poly: [[-74.017,40.701],[-74.014,40.712],[-74.012,40.728],[-74.010,40.742],[-74.006,40.755],[-73.996,40.770],[-73.986,40.788],[-73.972,40.808],[-73.960,40.828],[-73.949,40.848],[-73.936,40.866],[-73.925,40.878],[-73.912,40.875],[-73.920,40.860],[-73.928,40.845],[-73.933,40.830],[-73.935,40.815],[-73.934,40.800],[-73.937,40.790],[-73.943,40.777],[-73.958,40.760],[-73.968,40.746],[-73.972,40.735],[-73.973,40.722],[-73.977,40.711],[-73.995,40.707],[-74.007,40.702]],
+      summary: "Onde a Camarilla governa de fato desde 1929: dinheiro Ventrue em Wall Street, a cultura Toreador da Broadway e do Village, a chantry Tremere e os Nosferatu, que mandam em tudo abaixo do nível da rua. Sede da corte de Hellene Panhard.",
+      clans: [
+        ["Ventrue", "Hellene Panhard (Príncipe), Addison Payne (Primogen) e o childe Leo, Valerie Duval (Scourge). Wall Street e o distrito financeiro, cheios de ghouls.", ["jogos", "livro"]],
+        ["Toreador", "Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nichols na Broadway, Benoit Segal. O clã não tem Primogen em 2021.", ["jogos", "notas"]],
+        ["Tremere", "Aisling Sturbridge, Regente da Chantry of the Five Boroughs; Agathon (desaparecido) e Juno.", ["livro", "jogos"]],
+        ["Nosferatu", "Donos do subsolo. Calebros, ex-Príncipe, ainda ativo; Kaiser, corretor de informações; Gianni D'Angelo.", ["livro", "jogos"]],
+        ["Malkavian", "Elias Voss, \"o Cartógrafo\" (envelopes deixados num teatro do West Village); um Malkaviano que diz viver \"embaixo de Manhattan\"; Cara Montgomery.", ["notas", "livro", "jogos"]],
+        ["Hecata", "Donatello Giovanni recebe coteries nos seus clubes do Village. A corte lhe deve um favor maior pela guerra contra o Sabbat.", ["livro"]],
+        ["Tzimisce", "Vincent Marchetti, dono do Hotel Plaza, herói de guerra de 1999.", ["notas"]],
+        ["Banu Haqim", "Khalid Hassan Yusuf, residente do Plaza desde ~2011. Samira, a Primogen, é a ponte com o sire dele.", ["notas", "jogos"]],
+        ["Gangrel", "Os \"Wolves of Wall Street\", Gangrel financistas que deixaram a Camarilla e bancavam os Anarchs.", ["livro"]]
+      ],
+      preText: "Único bastião da Camarilla por 70 anos. Depois do crash de 1929, a Ventrue Michaela montou um domínio comprando ações baratas; a seita ficou confinada à ilha, cercada por bairros do Sabbat, até a Batalha de Nova York."
+    },
+    {
+      id: "brooklyn", name: "Brooklyn", f: "camSoft", pre: "sabbat", area: "179,7", pop: "2.736.074",
+      label: [-73.945, 40.646],
+      status: "Camarilla sem senhor único",
+      poly: [[-73.962,40.737],[-73.963,40.725],[-73.968,40.712],[-73.985,40.704],[-73.998,40.699],[-74.006,40.690],[-74.019,40.678],[-74.016,40.668],[-74.022,40.655],[-74.033,40.640],[-74.042,40.625],[-74.037,40.608],[-74.020,40.600],[-74.002,40.592],[-73.992,40.576],[-73.960,40.574],[-73.938,40.578],[-73.918,40.585],[-73.898,40.600],[-73.880,40.620],[-73.868,40.640],[-73.858,40.656],[-73.866,40.680],[-73.890,40.690],[-73.902,40.700],[-73.920,40.711],[-73.936,40.725],[-73.950,40.735]],
+      summary: "Tolerado pela corte, sem governante exclusivo. Aqui estão os Brujah motociclistas da Chama, a principal toca Nosferatu, o templo mais antigo do Ministry no Ocidente e a máfia russa de um Primogen Caitiff.",
+      clans: [
+        ["Brujah", "A Chama do Brooklyn (Iron Lanterns MC), liderada por Deacon Brandt: presta serviços à corte sem fazer parte dela. Daniel Mercer é irmão nômade; Red Harlan preside o clube de dia.", ["notas"]],
+        ["Nosferatu", "Atlantic Avenue Tunnel, túnel de 1845 lacrado em 1861: a principal toca do clã. Quem entra para investigar não volta.", ["livro"]],
+        ["Ministry", "Templo de Set de Red Hook, fundado em 1893.", ["livro"]],
+        ["Caitiff", "Ivan Kutkha, Primogen, em Little Odessa (Brighton Beach). A máfia russa limpa brechas da Máscara para ele.", ["livro"]],
+        ["Hecata", "Interesses Giovanni no porto de Red Hook.", ["notas"]]
+      ],
+      preText: "Bairro do Sabbat. A Chama de Doc Keane era um bolsão Brujah discreto que vendia serviços à rede clandestina da Camarilla. Em 1999, Doc tentou tomar a orla com a \"Segunda Guarda\" e foi destruído em Red Hook pela força de Marian Price."
+    },
+    {
+      id: "queens", name: "Queens", f: "camSoft", pre: "sabbat", area: "281,6", pop: "2.405.464",
+      label: [-73.80, 40.722],
+      status: "Camarilla: Elysium e domínio Lasombra",
+      poly: [[-73.962,40.740],[-73.950,40.757],[-73.940,40.772],[-73.930,40.781],[-73.912,40.786],[-73.890,40.780],[-73.870,40.776],[-73.850,40.790],[-73.832,40.796],[-73.810,40.790],[-73.790,40.796],[-73.773,40.793],[-73.756,40.775],[-73.730,40.770],[-73.700,40.760],[-73.705,40.730],[-73.725,40.680],[-73.740,40.650],[-73.752,40.636],[-73.780,40.628],[-73.820,40.645],[-73.850,40.655],[-73.858,40.656],[-73.866,40.680],[-73.890,40.690],[-73.902,40.700],[-73.920,40.711],[-73.936,40.725],[-73.950,40.735]],
+      extra: [[[-73.745,40.607],[-73.800,40.597],[-73.880,40.576],[-73.940,40.561],[-73.936,40.551],[-73.880,40.564],[-73.800,40.583],[-73.745,40.593]]],
+      summary: "Também sem governante exclusivo, mas é onde fica o Elysium, o Art Hole, e o domínio da Primogen Lasombra Julia Sowinski, o rosto da deserção do clã para a Camarilla.",
+      clans: [
+        ["Lasombra", "Julia Sowinski, Primogen (Abraçada em jun/2019), com escritório e refúgio no Queens.", ["jogos"]],
+        ["Todos os clãs", "Art Hole, Elysium da Camarilla, de pé em 2021 (destruído em dez/2024, em Reckoning).", ["jogos"]]
+      ],
+      also: "Nathan Ward, filho e Touchstone de Daniel, mora no Queens. Isso não dá a ninguém autoridade sobre o distrito.",
+      preText: "Bairro do Sabbat, como todo o anel em volta de Manhattan."
+    },
+    {
+      id: "bronx", name: "Bronx", f: "anarch", pre: "sabbat", area: "109,3", pop: "1.472.654",
+      label: [-73.862, 40.856],
+      status: "Anarquistas",
+      poly: [[-73.928,40.884],[-73.918,40.897],[-73.912,40.915],[-73.865,40.905],[-73.840,40.910],[-73.810,40.890],[-73.785,40.875],[-73.780,40.860],[-73.790,40.840],[-73.795,40.815],[-73.805,40.805],[-73.830,40.812],[-73.855,40.808],[-73.870,40.800],[-73.885,40.806],[-73.897,40.800],[-73.912,40.797],[-73.926,40.805],[-73.929,40.815],[-73.927,40.830],[-73.922,40.845],[-73.913,40.860],[-73.905,40.873],[-73.912,40.882]],
+      summary: "Reduto Anarch da continuidade moderna, com Port Morris, no South Bronx. Desde que Callihan foi achado morto (mar/2020), Torque disputa a liderança, acusado de trair as raízes do movimento. Foi também o último refúgio do Sabbat em 1999.",
+      clans: [
+        ["Brujah", "Torque, barão presumido; Mia Morgan, do coterie Midnighters.", ["jogos"]],
+        ["Gangrel", "Tamika, que caça agentes do governo que perseguem vampiros; ex de Torque.", ["jogos"]],
+        ["Lasombra", "Vincent Cerutti, Anarch dos Midnighters.", ["jogos"]],
+        ["Toreador", "Duke, líder de gangue de Auld Sanguine, que não se dá bem com o barão local. Pôr Duke aqui é escolha da campanha.", ["sug"]]
+      ],
+      preText: "Sabbat. Na Batalha de 1999, o arcebispo Polonia recuou para um complexo de armazéns comprado por uma fachada Lasombra. Na quarta noite o cerco afinou e ele escapou com um templar. Paradeiro desconhecido."
+    },
+    {
+      id: "staten", name: "Staten Island", f: "anarchSoft", pre: "sabbat", area: "148,9", pop: "495.747",
+      label: [-74.145, 40.584],
+      status: "Anarquistas do pós-guerra",
+      poly: [[-74.072,40.645],[-74.100,40.646],[-74.130,40.643],[-74.160,40.644],[-74.185,40.638],[-74.195,40.615],[-74.200,40.590],[-74.215,40.560],[-74.235,40.530],[-74.250,40.505],[-74.232,40.498],[-74.200,40.512],[-74.160,40.533],[-74.130,40.548],[-74.100,40.563],[-74.080,40.583],[-74.060,40.600],[-74.058,40.622]],
+      summary: "Base dos Anarchs de Callihan depois de 1999 e sede do Pavio Negro MC, os dissidentes da Chama do Brooklyn. Pouco disputado: refúgio de quem quer distância da corte, ou de caçadores.",
+      clans: [
+        ["Brujah", "Teresa \"Torch\" Malloy e o Pavio Negro (Black Wick MC), patch com o rocker DOC VIVE. Para eles, o Brooklyn são as \"Coleiras\". Daniel não entra na ilha.", ["notas"]]
+      ],
+      preText: "Sabbat. Em 1776, o exército britânico acampou aqui e trouxe de volta Nostoket, Nosferatu de 6ª geração que considerava a cidade seu reino."
+    },
+    {
+      id: "nj", name: "Nova Jersey", f: "indep", pre: "unk", area: null, pop: null,
+      label: [-74.175, 40.80],
+      status: "Periferia: micro-domínios",
+      poly: [[-74.40,41.0],[-73.925,41.0],[-73.930,40.915],[-73.945,40.880],[-73.962,40.850],[-73.978,40.825],[-73.995,40.800],[-74.010,40.775],[-74.020,40.757],[-74.027,40.740],[-74.033,40.720],[-74.045,40.705],[-74.055,40.690],[-74.065,40.670],[-74.075,40.655],[-74.090,40.651],[-74.130,40.651],[-74.160,40.653],[-74.200,40.645],[-74.210,40.620],[-74.218,40.590],[-74.233,40.560],[-74.253,40.530],[-74.268,40.505],[-74.25,40.40],[-74.40,40.40]],
+      summary: "Fora dos cinco distritos, mas colada neles. Jersey City, Newark, Paterson e Elizabeth são \"micro-domínios incomuns\", e corre o boato de que a Segunda Inquisição ganha terreno em Newark e Jersey City.",
+      clans: [
+        ["Ravnos", "Gusman Gutierrez: Status em Nova Jersey (classe trabalhadora); o orfanato proposto para a infância dele fica em Newark.", ["notas"]],
+        ["Toreador · Hecata", "Em Atlantic City (fora do mapa): Edith Blumenau, Barão Anarch e matriarca Bahari; antes, Ornella Giovanni a mando de Donatello.", ["livro"]]
+      ],
+      preText: "O vault não diz quem mandava em Nova Jersey antes de 1999. Atlantic City foi terreno neutro (Elysium) até 1999."
+    }
+  ];
+
+  var CTX = [
+    { name: "Westchester", label: [-73.80, 40.93], poly: [[-73.900,41.0],[-73.910,40.917],[-73.865,40.905],[-73.840,40.910],[-73.810,40.890],[-73.785,40.875],[-73.760,40.887],[-73.700,40.915],[-73.60,40.95],[-73.60,41.0]] },
+    { name: "Nassau", label: [-73.668, 40.705], poly: [[-73.700,40.760],[-73.705,40.730],[-73.725,40.680],[-73.740,40.650],[-73.755,40.627],[-73.742,40.610],[-73.736,40.596],[-73.60,40.58],[-73.60,40.85],[-73.700,40.810],[-73.724,40.786]] },
+    { name: "", label: null, poly: [[-74.020,40.693],[-74.012,40.692],[-74.015,40.686],[-74.024,40.688]] },
+    { name: "", label: null, poly: [[-73.946,40.770],[-73.941,40.771],[-73.956,40.751],[-73.960,40.752]] }
+  ];
+
+  var WATER = [
+    ["Rio Hudson", [-74.0045, 40.832], -64, 11],
+    ["East River", [-73.9605, 40.722], -62, 8],
+    ["Upper Bay", [-74.052, 40.668], 0, 13],
+    ["Lower Bay", [-74.03, 40.545], 0, 14],
+    ["Long Island Sound", [-73.735, 40.835], 0, 13],
+    ["Jamaica Bay", [-73.835, 40.612], 0, 12],
+    ["Oceano Atlântico", [-73.86, 40.515], 0, 16]
+  ];
+
+  // layer: now | hist | b1999 | pc | auld ; man: inside the Manhattan cluster (label hidden in city view)
+  var MARKERS = [
+    { id: "plaza", n: "Hotel Plaza", s: "Plaza", c: [-73.9744, 40.7645], L: ["pc"], boro: "manhattan", man: true, src: ["notas"],
+      t: "Domínio de Vincent Marchetti (Tzimisce): o hotel e as pessoas que o mantêm são a charge dele. Residência de Khalid desde ~2011, por designação da corte. Cenário das festas de Gideon. Em segredo, os olhos de Nizar ibn Tahir, Arconte de Don Cerro: Khalid escolheu o sistema de câmeras por indicação dele." },
+    { id: "wall", n: "Wall Street", s: "Wall Street", c: [-74.0090, 40.7062], L: ["now"], boro: "manhattan", man: true, src: ["livro"],
+      t: "Distrito financeiro cheio de ghouls e de dinheiro antigo; símbolo do poder Ventrue desde o crash de 1929. Os Gangrel financistas, os \"Wolves of Wall Street\", bancavam os Anarchs." },
+    { id: "village", n: "Greenwich Village", s: "Village", c: [-74.0005, 40.7336], L: ["now"], boro: "manhattan", man: true, src: ["livro"],
+      t: "Clubes de Donatello Giovanni, chefe Hecata da Costa Leste, onde ele recebe coteries. Bairro boêmio que acolhe Toreador excêntricos." },
+    { id: "chantry", n: "Chantry of the Five Boroughs", s: "Chantry Tremere", c: [-73.9637, 40.8090], L: ["now"], boro: "manhattan", man: true, approx: true, src: ["livro", "ant"],
+      t: "Sede Tremere sob a Regente Aisling Sturbridge (10ª geração, Abraço 1911). A localização no campus do Barnard College é de edição anterior; V5 não diz onde fica." },
+    { id: "harlem", n: "Harlem", s: "Harlem", c: [-73.9445, 40.8095], L: ["now", "hist"], boro: "manhattan", man: true, src: ["livro"],
+      t: "Raiz do jazz de Nova York: Renascença do Harlem, cultura de ballroom, Brujah com o \"numbers racket\" nos anos 1930. Na época, território inimigo para a Camarilla. Hoje, a cena natural da Nina. Também é a alternativa ao Bed-Stuy para o prédio da festa de Isabella." },
+    { id: "ues", n: "Upper East Side", s: "Upper East Side", c: [-73.9566, 40.7736], L: ["now"], boro: "manhattan", man: true, src: ["livro"],
+      t: "Terreno de caça dos ricos." },
+    { id: "ledger", n: "The Harbor Ledger", s: "Harbor Ledger", c: [-74.0060, 40.7128], L: ["pc"], boro: "manhattan", man: true, approx: true, src: ["notas"],
+      t: "Redação investigativa sem fins lucrativos em Lower Manhattan; cobre habitação, polícia, contratos e o porto. Mary Winchester (chefe, ligada a Gideon) e Leila Yusuf (irmã e Touchstone de Khalid, que o crê morto desde 2010)." },
+    { id: "cordelia", n: "Refúgio de Cordelia Vane", s: "Cordelia (2008)", c: [-73.9754, 40.7870], L: ["pc", "hist"], boro: "manhattan", man: true, approx: true, src: ["notas"],
+      t: "Sire de Gideon. Levada de madrugada em 2008 por uma operação federal disfarçada de prisão por fraude (Segunda Inquisição). O refúgio no Upper West Side foi achado vazio e lacrado." },
+    { id: "wally", n: "Teatro do West Village", s: "Teatro (Wally Drake)", c: [-74.0072, 40.7318], L: ["pc"], boro: "manhattan", man: true, approx: true, d: "l", src: ["notas"],
+      t: "Walter \"Wally\" Drake, contrarregra, guarda os envelopes que Elias Voss deixa \"para o Cartógrafo\". Gideon pagou o telhado do teatro; Wally não abre os envelopes, mas sabe quando foram retirados." },
+    { id: "times", n: "Times Square e Broadway", s: "Times Square", c: [-73.9855, 40.7580], L: ["auld", "pc"], boro: "manhattan", man: true, d: "l", src: ["sug", "notas"],
+      t: "A bola cai à meia-noite: o centro lota e a polícia fica toda em Midtown, o que explica os 15 minutos de resposta ao alarme do parque industrial. Os teatros da Broadway são a fachada de Gideon, que mapeou o Sabbat pelos bastidores. Odile Marchand vende programas anotados por Elias num antiquário aqui perto." },
+    { id: "grand", n: "Grand Central", s: "Grand Central", c: [-73.9772, 40.7527], L: ["b1999"], boro: "manhattan", man: true, src: ["notas"],
+      t: "Batalha de 1999: os Tremere receberam aqui o cabelo dos ternos de Orozco, desviado pela lavanderia do Plaza que atendia metade da cidade, ideia de Vincent." },
+    { id: "littleitaly", n: "Little Italy", s: "Little Italy", c: [-73.9975, 40.7190], L: ["hist"], boro: "manhattan", man: true, src: ["notas"],
+      t: "Vincent Marchetti nasce aqui em 1908 e vive no bairro até 1930, antes de virar carniçal do Plaza." },
+    { id: "rockland", n: "Rockland Palace", s: "Rockland Palace", c: [-73.9385, 40.8290], L: ["hist"], boro: "manhattan", man: true, src: ["livro"],
+      t: "1919: Erzulie (Toreador) é Abraçada no baile da Hamilton Lodge, no Harlem. Depois acolheu Caitiff perseguidos; hoje está em Chicago." },
+    { id: "waldorf", n: "Empire State (antigo Waldorf)", s: "Empire State", c: [-73.9857, 40.7484], L: ["hist"], boro: "manhattan", man: true, d: "l", src: ["livro"],
+      t: "Até 1929, o Elysium ficava no Waldorf-Astoria original, recém-reformado pelo Keeper. Olga Alexandrova (Ventrue) forçou a demolição para erguer o Empire State, contra um Ventrue com refúgio no Chrysler." },
+    { id: "roosevelt", n: "Roosevelt Island (Blackwell's)", s: "Blackwell's", c: [-73.9500, 40.7615], L: ["hist"], boro: null, man: true, src: ["livro"],
+      t: "Desde 1830, depósito de presos, órfãos e internos de asilo. Caça fácil no século XIX." },
+    { id: "atlantic", n: "Atlantic Avenue Tunnel", s: "Atlantic Ave. Tunnel", c: [-73.9935, 40.6905], L: ["now"], boro: "brooklyn", d: "l", src: ["livro"],
+      t: "Túnel ferroviário de 1845, lacrado em 1861, com quase 800 m: a principal toca Nosferatu de Nova York. Quem entra para investigar não volta." },
+    { id: "redhook", n: "Red Hook: templo de Set", s: "Red Hook", c: [-74.0095, 40.6775], L: ["now"], boro: "brooklyn", d: "l", src: ["livro", "notas"],
+      t: "Templo do Ministry fundado em 1893, o mais antigo do hemisfério ocidental. Também é onde o Iron Lanterns MC nasceu, numa garagem, em 1962, e onde ficam os interesses Giovanni no porto. Candidato a local do galpão de Auld Sanguine." },
+    { id: "redhook99", n: "Depósito da Segunda Guarda", s: "Depósito (1999)", c: [-74.0150, 40.6700], L: ["b1999"], boro: "brooklyn", approx: true, d: "l", src: ["notas"],
+      t: "Noite 3: Daniel é capturado aqui com ordens falsas no bolso. Noite 4: a Camarilla cerca Red Hook com a força de Marian Price e destrói Doc Keane. Para isso tira tropas do cerco do Bronx, e Polonia escapa. O tanque da Maggie, a moto de Daniel, guarda um estilhaço daqui." },
+    { id: "odessa", n: "Little Odessa", s: "Little Odessa", c: [-73.9614, 40.5790], L: ["now"], boro: "brooklyn", src: ["livro"],
+      t: "Brighton Beach, comunidade russa e ucraniana. Base de Ivan Kutkha, Primogen Caitiff, cujos laços com a máfia russa limpam brechas da Máscara \"sem perguntas\"." },
+    { id: "bedstuy", n: "Bed-Stuy: a festa de Isabella", s: "Festa (Bed-Stuy)", c: [-73.9418, 40.6872], L: ["auld"], boro: "brooklyn", src: ["sug"],
+      t: "O prédio da festa tem fachada de arenito: bairro de brownstones. Bed-Stuy ou o Harlem servem. Isabella fica no último apartamento do corredor." },
+    { id: "arthole", n: "Art Hole (Elysium)", s: "Art Hole", c: [-73.9405, 40.7470], L: ["now"], boro: "queens", approx: true, src: ["jogos"],
+      t: "Elysium da Camarilla, de pé em 2021. Em dez/2024 (Reckoning of New York) o Hunter Offensive o destrói e mata Robert Larson e um Primogen. O vault só diz \"Queens\"; o ponto é aproximado." },
+    { id: "julia", n: "Domínio de Julia Sowinski", s: "Julia Sowinski", c: [-73.9120, 40.7620], L: ["now"], boro: "queens", approx: true, src: ["jogos"],
+      t: "Primogen Lasombra, ex-jornalista da New York Lodestar. Tem escritório e refúgio no Queens. Ponto aproximado." },
+    { id: "flushing", n: "Flushing Meadows", s: "Feira de 1939", c: [-73.8448, 40.7466], L: ["hist"], boro: "queens", src: ["livro"],
+      t: "Feira Mundial de 1939. Boato: a cápsula do tempo da Westinghouse guarda o crânio da matusalém Brujah Altamira." },
+    { id: "portmorris", n: "Port Morris", s: "Port Morris", c: [-73.9115, 40.8020], L: ["now", "auld"], boro: "bronx", src: ["jogos", "sug"],
+      t: "Domínio Anarch no South Bronx. Melhor candidato para o parque industrial e o galpão 17 de Auld Sanguine: território de Duke e do barão local, a uma distância considerável do centro sem sair da jurisdição da polícia." },
+    { id: "warehouses", n: "Armazéns de Polonia", s: "Armazéns (1999)", c: [-73.8840, 40.8135], L: ["b1999"], boro: "bronx", approx: true, src: ["notas"],
+      t: "Haven de emergência do arcebispo Polonia: complexo de armazéns abandonado que uma fachada Lasombra comprara anos antes. Vincent previu o recuo pela papelada que passou pelo Plaza. Cerco na noite 3; na noite 4 Polonia e um templar escapam pela rota que Vincent pedira para fechar. Local exato em aberto." },
+    { id: "ellis", n: "Ellis Island", s: "Ellis Island", c: [-74.0396, 40.6995], L: ["now"], boro: null, d: "l", src: ["jogos"],
+      t: "Confronto final de Coteries of New York (fim de 2019). Torque fugiu da briga." },
+    { id: "pavio", n: "Sede do Pavio Negro MC", s: "Pavio Negro", c: [-74.1300, 40.6050], L: ["pc"], boro: "staten", approx: true, src: ["notas"],
+      t: "Fundado no início de 2000 pelos dissidentes da Chama, liderados por Torch Malloy, Adversary de Daniel. Ligado aos Anarchs de Staten Island. Local exato em aberto." },
+    { id: "jc", n: "Jersey City", s: "Jersey City", c: [-74.0560, 40.7250], L: ["now"], boro: "nj", d: "l", src: ["livro"],
+      t: "Micro-domínio incomum. Boato: a Segunda Inquisição ganha terreno aqui." },
+    { id: "newark", n: "Newark", s: "Newark", c: [-74.1724, 40.7357], L: ["now", "pc"], boro: "nj", src: ["livro", "notas", "sug"],
+      t: "Micro-domínio incomum; boato de avanço da Segunda Inquisição. Proposta para a infância de Gusman: a Casa Santa Rita, orfanato católico de freiras de língua espanhola, fechado em 2016." },
+    { id: "paterson", n: "Paterson", s: "Paterson", c: [-74.1718, 40.9168], L: ["now"], boro: "nj", src: ["livro"],
+      t: "Micro-domínio incomum, sugerido pela Barão de Atlantic City como lugar para coteries se instalarem." },
+    { id: "elizabeth", n: "Elizabeth", s: "Elizabeth", c: [-74.2107, 40.6640], L: ["now"], boro: "nj", d: "l", src: ["livro"],
+      t: "Micro-domínio incomum." }
+  ];
+
+  var EDGES = [
+    { id: "catskills", n: "Catskills", s: "↑ Catskills", xy: [210, 24], anchor: "middle", src: ["livro"], t: "Norte do estado: território de lobisomens. O sinal de \"cuidado, lobisomens\" na cant vampírica é o mesmo lá e em Los Angeles. Aisling Sturbridge nasceu no norte do estado, em 1890." },
+    { id: "westhampton", n: "Westhampton, Long Island", s: "Westhampton →", xy: [1078, 560], anchor: "end", src: ["livro"], t: "Reuniões dos Sons of Magog, Ventrue que fugiram de Londres antes da queda. Anciões britânicos empurrados para a região." },
+    { id: "atlanticcity", n: "Atlantic City", s: "↓ Atlantic City", xy: [120, 996], anchor: "middle", src: ["livro"], t: "Cerca de 200 km ao sul. Elysium neutro até 1999; depois Hecata com fachada de Camarilla; hoje, na prática, Anarch e Bahari sob a Toreador Edith Blumenau (clube Ruby Throat, casino Three Bears). Uns 15 vampiros. A Camarilla de NY nem a considera um domínio separado." }
+  ];
+
+  var LAYERS = [
+    { id: "now", name: "Lugares de 2021", on: true },
+    { id: "pc", name: "Coterie", on: true },
+    { id: "auld", name: "Auld Sanguine", on: true },
+    { id: "b1999", name: "Batalha de 1999", on: false },
+    { id: "hist", name: "História", on: false }
+  ];
+
+  var LEDGER_COLS = [["manhattan", "Manhattan"], ["brooklyn", "Brooklyn"], ["queens", "Queens"], ["bronx", "Bronx"], ["staten", "Staten Is."], ["nj", "N. Jersey"], ["city", "Cidade"]];
+  var LEDGER = [
+    ["Ventrue", { manhattan: ["s", "Panhard, Payne, Leo, Duval; Wall Street"] }],
+    ["Toreador", { manhattan: ["s", "Qadir, Arturo, Gideon, Segal"], bronx: ["p", "Duke (sugestão)"] }],
+    ["Tremere", { manhattan: ["s", "Sturbridge; Chantry of the Five Boroughs"] }],
+    ["Nosferatu", { manhattan: ["s", "Subsolo; Calebros, Kaiser"], brooklyn: ["s", "Atlantic Avenue Tunnel"] }],
+    ["Malkavian", { manhattan: ["p", "Elias Voss, Cara Montgomery"] }],
+    ["Brujah", { brooklyn: ["s", "Chama / Iron Lanterns, Deacon"], bronx: ["s", "Torque, Mia Morgan"], staten: ["s", "Pavio Negro, Torch"], city: ["p", "Katherine Weiss"] }],
+    ["Gangrel", { manhattan: ["p", "Wolves of Wall Street"], bronx: ["p", "Tamika"], city: ["p", "Ranq, Declan, Raoul; Jesse (PC)"] }],
+    ["Banu Haqim", { manhattan: ["p", "Khalid (Plaza)"], city: ["p", "Samira, Primogen"] }],
+    ["Lasombra", { queens: ["s", "Julia Sowinski, Primogen"], bronx: ["p", "Vincent Cerutti"] }],
+    ["Tzimisce", { manhattan: ["p", "Vincent Marchetti (Plaza)"] }],
+    ["Hecata", { manhattan: ["s", "Donatello Giovanni, Village"], brooklyn: ["p", "Porto de Red Hook"] }],
+    ["Ministry", { brooklyn: ["s", "Templo de Red Hook, 1893"] }],
+    ["Ravnos", { nj: ["p", "Gusman (Status)"], city: ["p", "Kali, fugitiva"] }],
+    ["Salubri", { city: ["p", "Malik Diallo, ex-promotor de festas"] }],
+    ["Caitiff", { brooklyn: ["s", "Ivan Kutkha, Little Odessa"] }],
+    ["Thin-blood", { city: ["p", "Robert Larson, Primogen; Sana"] }]
+  ];
+
+  var NOTES = [
+    ["Bronx ou Staten Island?", "A nota da Camarilla em NY põe os Anarquistas \"quase só no Bronx\" (Port Morris). A ficha do Daniel diz que Staten Island foi a base Anarch do pós-guerra (por isso o Pavio Negro) e que o Bronx tem presença Anarch na continuidade moderna. O mapa mostra os dois como Anarch, com o Bronx como centro atual."],
+    ["Brooklyn e Queens sem dono", "As notas dizem que esses distritos \"não são atribuídos a governante exclusivo\". Ficam como Camarilla tracejada: a corte reivindica, mas quem age ali são a Chama, Kutkha, os Nosferatu e Julia Sowinski."],
+    ["Locais aproximados", "Art Hole, o domínio de Julia, a Chantry, o Pavio Negro, o Harbor Ledger e os armazéns de 1999 não têm endereço nas fontes. O anel tracejado marca o ponto como escolha do mapa."],
+    ["Michaela: 1998 ou 1999?", "A ficha do Vincent diz que os templars de Polonia mataram Michaela em 1998; as notas da Camarilla e dos personagens dizem 1999, durante um falso parlamento. Vale fixar um ano."],
+    ["Red Hook \"no Harlem\"", "Cult of the Blood Gods escreve \"Red Hook in the Harlem borough\". É erro do livro: Red Hook fica no Brooklyn, e o Harlem é um bairro de Manhattan."],
+    ["O mapa clássico é outro", "O New York by Night dos anos 1990 punha Anarchs no Brooklyn e Sabbat no Bronx e no Queens. Não serve para V5 nem para esta campanha, e não foi usado."]
+  ];
+
+  var COURT = [
+    ["Hellene Panhard", "Príncipe · Ventrue"],
+    ["Qadir al-Asmai", "Xerife · Toreador"],
+    ["Thomas Arturo", "Herald · Toreador"],
+    ["Valerie Duval", "Scourge · Ventrue"],
+    ["Aisling Sturbridge", "Regente · Tremere"],
+    ["Addison Payne", "Primogen · Ventrue"],
+    ["Julia Sowinski", "Primogen · Lasombra"],
+    ["Samira", "Primogen · Banu Haqim"],
+    ["Ivan Kutkha", "Primogen · Caitiff"],
+    ["Robert Larson", "Primogen · thin-blood"],
+    ["Calebros", "ex-Príncipe · Nosferatu"]
+  ];
+
+  var VIEWS = { city: [0, 0, 1088, 1010], man: [372, 112, 380, 452] };
+  var S = { era: "2021", zoom: "city", vb: VIEWS.city.slice(), sel: null, layers: {} };
+  LAYERS.forEach(function (l) { S.layers[l.id] = l.on; });
+
+  var svg = document.getElementById("map");
+  var gCtx = document.getElementById("g-ctx"), gBoros = document.getElementById("g-boros"), gWater = document.getElementById("g-water"),
+      gBl = document.getElementById("g-blabels"), gMk = document.getElementById("g-markers"), gEdges = document.getElementById("g-edges"), gScale = document.getElementById("g-scale");
+  var dossier = document.getElementById("dossier");
+
+  function k() { return S.vb[3] / 1010; } // 1 at city view, smaller when zoomed
+
+  function drawStatic() {
+    CTX.forEach(function (c) {
+      el("path", { d: pathD(c.poly), "class": "ctx coast" }, gCtx);
+    });
+    BOROS.forEach(function (b) {
+      var g = el("g", { "class": "boro", tabindex: "0", role: "button", "aria-label": b.name, "data-id": b.id }, gBoros);
+      var d = pathD(b.poly) + (b.extra || []).map(pathD).join("");
+      el("path", { d: d, "class": "coast shape" }, g);
+      el("title", {}, g).textContent = b.name;
+      g.addEventListener("click", function () { select({ type: "boro", id: b.id }); });
+      g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select({ type: "boro", id: b.id }); } });
+    });
+  }
+
+  function drawDynamic() {
+    var s = k();
+    // fills by era
+    Array.prototype.forEach.call(gBoros.children, function (g) {
+      var b = BOROS.find(function (x) { return x.id === g.getAttribute("data-id"); });
+      var f = S.era === "2021" ? b.f : b.pre;
+      var shape = g.querySelector(".shape");
+      shape.setAttribute("class", "coast shape f-" + f);
+      g.classList.toggle("sel", !!(S.sel && S.sel.type === "boro" && S.sel.id === b.id));
+    });
+    // borough + context labels
+    gBl.innerHTML = ""; gWater.innerHTML = "";
+    BOROS.forEach(function (b) {
+      var p = P(b.label);
+      var size = (b.id === "manhattan" ? 15 : b.id === "nj" ? 17 : 19) * Math.max(s, 0.55);
+      var t = el("text", { x: p[0], y: p[1], "text-anchor": "middle", "class": "blabel", "font-size": size.toFixed(1), "stroke-width": (4 * s).toFixed(1) }, gBl);
+      if (b.rot) t.setAttribute("transform", "rotate(" + b.rot + " " + p[0] + " " + p[1] + ")");
+      t.textContent = b.name;
+    });
+    CTX.forEach(function (c) {
+      if (!c.label) return;
+      var p = P(c.label);
+      var t = el("text", { x: p[0], y: p[1], "text-anchor": "middle", "class": "clabel", "font-size": (11 * Math.max(s, 0.55)).toFixed(1) }, gBl);
+      t.textContent = c.name;
+    });
+    WATER.forEach(function (w) {
+      var p = P(w[1]);
+      var t = el("text", { x: p[0], y: p[1], "text-anchor": "middle", "class": "wlabel", "font-size": (w[3] * Math.max(s, 0.5)).toFixed(1) }, gWater);
+      if (w[2]) t.setAttribute("transform", "rotate(" + w[2] + " " + p[0] + " " + p[1] + ")");
+      t.textContent = w[0];
+    });
+    drawMarkers(s);
+    drawEdges(s);
+    drawScale(s);
+  }
+
+  function markerLayer(m) {
+    for (var i = 0; i < m.L.length; i++) if (S.layers[m.L[i]]) return m.L[i];
+    return null;
+  }
+
+  function drawMarkerShape(g, layer, r) {
+    var sw = (r * 0.38).toFixed(2);
+    if (layer === "b1999") {
+      el("path", { d: "M0 " + (-r * 1.35) + "L" + (r * 1.35) + " 0L0 " + (r * 1.35) + "L" + (-r * 1.35) + " 0Z", "class": "m-b1999", "stroke-width": (r * 0.5).toFixed(2) }, g);
+    } else if (layer === "pc") {
+      el("rect", { x: -r, y: -r, width: r * 2, height: r * 2, "class": "m-pc", "stroke-width": sw }, g);
+    } else if (layer === "auld") {
+      el("circle", { r: r * 1.15, "class": "m-auld", "stroke-width": (r * 0.45).toFixed(2) }, g);
+      el("circle", { r: r * 0.42, "class": "m-auld-dot" }, g);
+    } else if (layer === "hist") {
+      el("circle", { r: r * 0.95, "class": "m-hist", "stroke-width": (r * 0.4).toFixed(2) }, g);
+    } else {
+      el("circle", { r: r, "class": "m-now", "stroke-width": sw }, g);
+    }
+  }
+
+  function drawMarkers(s) {
+    gMk.innerHTML = "";
+    var r = 5.2 * Math.max(s, 0.42);
+    MARKERS.forEach(function (m) {
+      var layer = markerLayer(m);
+      if (!layer) return;
+      var p = P(m.c);
+      var isSel = S.sel && S.sel.type === "mk" && S.sel.id === m.id;
+      var g = el("g", { "class": "mk" + (isSel ? " sel" : ""), transform: "translate(" + p[0].toFixed(1) + " " + p[1].toFixed(1) + ")", tabindex: "0", role: "button", "aria-label": m.n }, gMk);
+      el("circle", { r: r * 2.6, "class": "hit" }, g);
+      if (m.approx) el("circle", { r: r * 2.1, "class": "m-approx", "stroke-width": (r * 0.22).toFixed(2) }, g);
+      if (isSel) el("circle", { r: r * 2.6, "class": "m-ring", "stroke-width": (r * 0.45).toFixed(2) }, g);
+      drawMarkerShape(g, layer, r);
+      el("title", {}, g).textContent = m.n;
+      var showLabel = S.zoom === "man" || !m.man;
+      if (showLabel) {
+        var left = m.d === "l";
+        var fs = 11.5 * Math.max(s, 0.45);
+        var t = el("text", { x: (left ? -1 : 1) * r * 2.2, y: fs * 0.35, "text-anchor": left ? "end" : "start", "class": "mlabel", "font-size": fs.toFixed(1), "stroke-width": (3.2 * Math.max(s, 0.45)).toFixed(1) }, g);
+        t.textContent = m.s;
+      }
+      g.addEventListener("click", function (e) { e.stopPropagation(); select({ type: "mk", id: m.id }); });
+      g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select({ type: "mk", id: m.id }); } });
+    });
+  }
+
+  function drawEdges(s) {
+    gEdges.innerHTML = "";
+    if (S.zoom !== "city") return;
+    EDGES.forEach(function (ed) {
+      var g = el("g", { "class": "edge", tabindex: "0", role: "button", "aria-label": ed.n }, gEdges);
+      var t = el("text", { x: ed.xy[0], y: ed.xy[1], "text-anchor": ed.anchor, "font-size": "14", "stroke-width": "4" }, g);
+      t.textContent = ed.s;
+      g.addEventListener("click", function () { select({ type: "edge", id: ed.id }); });
+      g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select({ type: "edge", id: ed.id }); } });
+    });
+  }
+
+  function drawScale(s) {
+    gScale.innerHTML = "";
+    var km = S.zoom === "city" ? 5 : 2;
+    var pxPerKm = 20.14;
+    var x0 = S.vb[0] + S.vb[2] * 0.04, y0 = S.vb[1] + S.vb[3] * 0.955;
+    var h = 5 * s, seg = pxPerKm;
+    var g = el("g", { "class": "scale" }, gScale);
+    for (var i = 0; i < km; i++) el("rect", { x: x0 + i * seg, y: y0, width: seg, height: h, "class": i % 2 ? "alt" : "", "stroke-width": (0.6 * s).toFixed(2) }, g);
+    var fs = 11 * s;
+    var t1 = el("text", { x: x0, y: y0 - 4 * s, "font-size": fs.toFixed(1), "stroke-width": (3 * s).toFixed(1) }, g); t1.textContent = "0";
+    var t2 = el("text", { x: x0 + km * seg, y: y0 - 4 * s, "font-size": fs.toFixed(1), "text-anchor": "middle", "stroke-width": (3 * s).toFixed(1) }, g); t2.textContent = km + " km";
+    // north arrow
+    var nx = S.vb[0] + S.vb[2] * 0.95, ny = S.vb[1] + S.vb[3] * 0.06;
+    el("path", { d: "M" + nx + " " + (ny - 14 * s) + "L" + (nx + 6 * s) + " " + (ny + 6 * s) + "L" + nx + " " + (ny + 2 * s) + "L" + (nx - 6 * s) + " " + (ny + 6 * s) + "Z", style: "fill: var(--ink)" }, g);
+    var tn = el("text", { x: nx, y: ny + 20 * s, "font-size": (12 * s).toFixed(1), "text-anchor": "middle", "stroke-width": (3 * s).toFixed(1) }, g); tn.textContent = "N";
+  }
+
+  function setVB() { svg.setAttribute("viewBox", S.vb.map(function (v) { return v.toFixed(1); }).join(" ")); }
+
+  function animateTo(target) {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var from = S.vb.slice();
+    if (reduce) { S.vb = target.slice(); setVB(); drawDynamic(); return; }
+    var t0 = null, dur = 520;
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var u = Math.min(1, (ts - t0) / dur), e = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
+      S.vb = from.map(function (v, i) { return v + (target[i] - v) * e; });
+      setVB();
+      if (u < 1) requestAnimationFrame(step); else drawDynamic();
+    }
+    gBl.innerHTML = ""; gMk.innerHTML = ""; gEdges.innerHTML = ""; gScale.innerHTML = ""; gWater.innerHTML = "";
+    requestAnimationFrame(step);
+  }
+
+  // ---------- dossier ----------
+  function factionBadge(f) { return '<span class="d-status st-' + f + '">' + FACTIONS[f].name + "</span>"; }
+
+  function renderOverview() {
+    var pre = S.era === "pre";
+    var h = '<div><div class="d-kicker">' + (pre ? "Antes de 1999" : "Dezembro de 2021") + '</div><h2 class="d-title">' + (pre ? "Uma ilha cercada" : "A cidade de Panhard") + "</h2></div>";
+    if (pre) {
+      h += '<div class="d-body"><p>Por quase 300 anos Nova York foi domínio do Sabbat, com um arcebispo e uma linha de bispos; Lasombra mandavam e os Tzimisce eram a ala mística. Depois do crash de 1929 a Camarilla se firmou em Manhattan pelo dinheiro e ficou confinada à ilha por décadas.' + srcTags(["notas", "livro"]) + "</p>" +
+        "<p>Em 1999 a Batalha de Nova York durou cerca de uma semana: incêndios à luz do dia, caça nas ruas e nos esgotos, o cerco do Bronx. Polonia escapou; a seita perdeu a cidade. Três PCs estavam lá: Vincent deu o plano, Gideon a espionagem, Daniel foi usado pela Segunda Guarda." + srcTags(["notas"]) + "</p>" +
+        '<p class="hint">Ligue a camada "Batalha de 1999" para ver os pontos da guerra.</p></div>';
+    } else {
+      h += '<div class="d-body"><p>Domínio grande, com cerca de 50 Kindred, corte completa e mais de um Xerife. Por fora, estável; por dentro, Callihan morreu em março de 2020, Torque disputa os Anarchs, e o Xerife e a Scourge pressionam a Príncipe por mais dureza.' + srcTags(["livro", "jogos"]) + "</p></div>";
+      h += '<div><h3 class="d-sec">A corte</h3><ul class="court">' + COURT.map(function (c) { return "<li><b>" + esc(c[0]) + "</b><span>" + esc(c[1]) + "</span></li>"; }).join("") + "</ul></div>";
+    }
+    h += '<p class="hint">Clique num distrito, num ponto ou nas setas da borda do mapa.</p>';
+    dossier.innerHTML = h;
+  }
+
+  function renderBoro(b) {
+    var pre = S.era === "pre";
+    var f = pre ? b.pre : b.f;
+    var h = '<button type="button" class="d-back" id="d-back">Visão geral</button>';
+    h += '<div><div class="d-kicker">Distrito</div><h2 class="d-title">' + esc(b.name) + "</h2></div>";
+    h += "<div>" + factionBadge(f) + "</div>";
+    if (b.area) h += '<dl class="facts"><dt>Área</dt><dd>' + b.area + ' km²</dd><dt>População</dt><dd>' + b.pop + " (Censo 2020)</dd></dl>";
+    if (pre) {
+      h += '<div class="d-body"><p class="pre">' + esc(b.preText) + "</p></div>";
+      h += '<p class="hint">Mude para 2021 para ver os clãs atuais.</p>';
+    } else {
+      h += '<div class="d-body"><p>' + esc(b.summary) + "</p></div>";
+      h += '<div><h3 class="d-sec">Clãs e figuras</h3><ul class="clans">' + b.clans.map(function (c) {
+        return '<li><span class="clan-name">' + esc(c[0]) + srcTags(c[2]) + '</span><span class="clan-who">' + esc(c[1]) + "</span></li>";
+      }).join("") + "</ul></div>";
+      if (b.also) h += '<p class="hint">' + esc(b.also) + "</p>";
+      h += '<div><h3 class="d-sec">Antes de 1999</h3><p class="pre">' + esc(b.preText) + "</p></div>";
+    }
+    var here = MARKERS.filter(function (m) { return m.boro === b.id; });
+    if (here.length) h += '<div><h3 class="d-sec">Pontos no mapa</h3><ul class="court">' + here.map(function (m) { return '<li><b>' + esc(m.n) + "</b><span>" + layerName(m.L[0]) + "</span></li>"; }).join("") + "</ul></div>";
+    dossier.innerHTML = h;
+    document.getElementById("d-back").addEventListener("click", function () { select(null); });
+  }
+
+  function layerName(id) { var l = LAYERS.find(function (x) { return x.id === id; }); return l ? l.name : ""; }
+
+  function renderPoint(m, kicker) {
+    var b = m.boro ? BOROS.find(function (x) { return x.id === m.boro; }) : null;
+    var h = '<button type="button" class="d-back" id="d-back">Visão geral</button>';
+    h += '<div><div class="d-kicker">' + esc(kicker) + '</div><h2 class="d-title">' + esc(m.n) + "</h2></div>";
+    h += '<div class="d-body"><p>' + esc(m.t) + srcTags(m.src) + "</p></div>";
+    if (m.approx) h += '<p class="hint">Local aproximado: as fontes não dão endereço.</p>';
+    if (b) h += '<button type="button" class="d-back" id="d-boro">Ver ' + esc(b.name) + "</button>";
+    dossier.innerHTML = h;
+    document.getElementById("d-back").addEventListener("click", function () { select(null); });
+    if (b) document.getElementById("d-boro").addEventListener("click", function () { select({ type: "boro", id: b.id }); });
+  }
+
+  function renderDossier() {
+    if (!S.sel) return renderOverview();
+    if (S.sel.type === "boro") return renderBoro(BOROS.find(function (b) { return b.id === S.sel.id; }));
+    if (S.sel.type === "mk") { var m = MARKERS.find(function (x) { return x.id === S.sel.id; }); return renderPoint(m, layerName(m.L[0])); }
+    var ed = EDGES.find(function (x) { return x.id === S.sel.id; });
+    return renderPoint(ed, "Fora do mapa");
+  }
+
+  function select(sel) { S.sel = sel; drawDynamic(); renderDossier(); }
+
+  // ---------- controls ----------
+  function wireSeg(id, key, onChange) {
+    var root = document.getElementById(id);
+    root.addEventListener("click", function (e) {
+      var btn = e.target.closest("button"); if (!btn) return;
+      Array.prototype.forEach.call(root.querySelectorAll("button"), function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
+      onChange(btn.getAttribute("data-" + key));
+    });
+  }
+  wireSeg("era", "era", function (v) {
+    S.era = v;
+    if (v === "pre") { S.layers.b1999 = true; syncLayerInputs(); }
+    drawDynamic(); renderDossier(); renderLegend();
+  });
+  wireSeg("zoom", "zoom", function (v) { S.zoom = v; animateTo(VIEWS[v]); });
+
+  var layerBox = document.getElementById("layers");
+  var ICONS = {
+    now: '<circle cx="6" cy="6" r="4.5" class="m-now" stroke-width="1.5"/>',
+    pc: '<rect x="1.5" y="1.5" width="9" height="9" class="m-pc" stroke-width="1"/>',
+    auld: '<circle cx="6" cy="6" r="4.6" class="m-auld" stroke-width="2"/><circle cx="6" cy="6" r="1.8" class="m-auld-dot"/>',
+    b1999: '<path d="M6 0.5L11.5 6L6 11.5L0.5 6Z" class="m-b1999" stroke-width="2"/>',
+    hist: '<circle cx="6" cy="6" r="4.3" class="m-hist" stroke-width="1.8"/>'
+  };
+  LAYERS.forEach(function (l) {
+    var lab = document.createElement("label");
+    lab.className = "chk";
+    lab.innerHTML = '<input type="checkbox" id="layer-' + l.id + '"' + (S.layers[l.id] ? " checked" : "") + '><svg viewBox="0 0 12 12" aria-hidden="true">' + ICONS[l.id] + "</svg>" + esc(l.name);
+    layerBox.appendChild(lab);
+    lab.querySelector("input").addEventListener("change", function (e) { S.layers[l.id] = e.target.checked; drawDynamic(); });
+  });
+  function syncLayerInputs() { LAYERS.forEach(function (l) { document.getElementById("layer-" + l.id).checked = !!S.layers[l.id]; }); }
+
+  function renderLegend() {
+    var keys = S.era === "2021" ? ["cam", "camSoft", "anarch", "anarchSoft", "indep"] : ["cam", "sabbat", "unk"];
+    document.getElementById("legend").innerHTML = keys.map(function (f) {
+      return '<span><svg viewBox="0 0 22 14" aria-hidden="true"><rect width="22" height="14" class="f-' + f + '"/></svg>' + FACTIONS[f].name + "</span>";
+    }).join("");
+  }
+
+  function renderLedger() {
+    var h = "<thead><tr><th scope=\"col\">Clã</th>" + LEDGER_COLS.map(function (c) { return '<th scope="col">' + c[1] + "</th>"; }).join("") + "</tr></thead><tbody>";
+    LEDGER.forEach(function (row) {
+      h += '<tr><th scope="row">' + esc(row[0]) + "</th>" + LEDGER_COLS.map(function (c) {
+        var v = row[1][c[0]];
+        if (!v) return "<td></td>";
+        return '<td><i class="dot ' + (v[0] === "s" ? "strong" : "present") + '" aria-label="' + (v[0] === "s" ? "base" : "presente") + '"></i>' + esc(v[1]) + "</td>";
+      }).join("") + "</tr>";
+    });
+    document.getElementById("ledger").innerHTML = h + "</tbody>";
+  }
+
+  function renderNotes() {
+    document.getElementById("notes").innerHTML = NOTES.map(function (n) { return '<div class="note"><h3>' + esc(n[0]) + "</h3><p>" + esc(n[1]) + "</p></div>"; }).join("");
+  }
+
+  drawStatic();
+  setVB();
+  drawDynamic();
+  renderDossier();
+  renderLegend();
+  renderLedger();
+  renderNotes();
+})();
+</script>
