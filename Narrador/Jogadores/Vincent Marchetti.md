@@ -37,7 +37,7 @@ Nascido em 1908 em Little Italy, filho de um estivador alcoólatra, Vincent cres
 | Alcunha | O Porteiro |
 | Nascimento | 1908, Little Italy |
 | Carniçal | 1931 |
-| Abraço | 1957, por seu sire Tzimisce |
+| Abraço | 1957, por seu sire Tzimisce, Dragomir Vlădescu (nome definido pelo Narrador) |
 | Domínio | Hotel Plaza |
 | Bane de clã | O Plaza e as pessoas que o mantêm são sua *charge*; afastar-se causa sofrimento |
 | Habito de alimentação | Não bebe de mortais; bebe de Kindred |
@@ -249,7 +249,7 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 
 ## Pendências
 
-- [ ] Nome do sire Tzimisce.
+- [x] Nome do sire Tzimisce: **Dragomir Vlădescu**, definido pelo Narrador (16/10/2026).
 - [ ] Linhagem das Disciplinas (Tzimisce: Animalismo, Auspícios e Vicissitude no V5) e ficha mecânica completa.
 - [ ] Predator Type (ele não bebe de mortais, então conferir a combinação).
 - [x] Definir se Vincent e [[Gideon Nicols]] se conhecem: decidido pelo Narrador, eles se conhecem e se encontram regularmente.

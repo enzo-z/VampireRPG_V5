@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #vincent #readme
 
 # Vincent Marchetti: o que você sabe
@@ -48,7 +51,7 @@ Tudo aqui é o que **Vincent** sabe ou acredita. Pode haver coisas que ele ignor
 
 | Quem | O que você sabe |
 |---|---|
-| 🩸 **Seu sire** (Tzimisce, nome a definir) | Comprou o Plaza em 1931, o transformou em carniçal e depois o Abraçou por **utilidade**: você era o único que conhecia a contabilidade inteira. Era paranoico, dormia cercado pelo que considerava seu, e manteve laços com a Camarilla de Nova York, o que no Sabbat era traição. **Partiu com o Beckoning, sem avisar nem se despedir.** O Plaza ficou. Você não sabe se ele volta, nem se quer que volte. |
+| 🩸 **Seu sire, Dragomir Vlădescu** (Tzimisce; nome definido pelo Narrador) | Comprou o Plaza em 1931, o transformou em carniçal e depois o Abraçou por **utilidade**: você era o único que conhecia a contabilidade inteira. Era paranoico, dormia cercado pelo que considerava seu, e manteve laços com a Camarilla de Nova York, o que no Sabbat era traição. **Partiu com o Beckoning, sem avisar nem se despedir.** O Plaza ficou. Você não sabe se ele volta, nem se quer que volte. |
 | 🩸 **Sabbat sobrevivente** | Alguns fugiram com o arcebispo e **juraram voltar**. Eles o odeiam, e sabem o que aconteceu com o corpo de Orozco. É o inimigo que você carrega. |
 | 🩸 **Arcebispo Polonia** | Escapou do Bronx em 1999 por uma rota que você pediu para fechar. Foi o **único erro** de uma campanha sem erros, e não foi seu. Paradeiro desconhecido. A sua **Ambição** é achar Polonia e fazer pessoalmente o corte final. |
 | 🩸 **Simón Orozco** | Bispo, braço direito do arcebispo. Morreu em 1999, num trem em Grand Central. |
@@ -59,7 +62,7 @@ Tudo aqui é o que **Vincent** sabe ou acredita. Pode haver coisas que ele ignor
 
 | Convicção | Pessoa | O que você sabe |
 |---|---|---|
-| *"Toda dívida se paga."* | 🕯️ **Carmine Gallo** (👤 NPC mortal, morto em 1930) | Seu chefe na Lei Seca, que lhe deu o primeiro trabalho de verdade. Você o **vendeu a um rival em 1930**, porque a conta dava mais lucro. É a única dívida que você nunca pagou. (Está na sua ficha como Touchstone, mas já morreu; vale alinhar com o Narrador.) |
+| *"Toda dívida se paga."* | 🕯️ **Carmine Gallo** (👤 NPC mortal, morto em 1930) | Seu chefe na Lei Seca, que lhe deu o primeiro trabalho de verdade. Você o **vendeu a um rival em 1930**, porque a conta dava mais lucro. É a única dívida que você nunca pagou. |
 | *"Olhe por aqueles que você sabe que estão com você."* | 🕯️ **Nick Gallo** (👤 NPC mortal) | Neto de Carmine. Você mandou contratá-lo na recepção do Plaza sem ele saber por quê. Tem o mesmo jeito de contar o troco do avô e a mesma risada curta. Não sabe quem você é nem o que aconteceu com o avô. |
 
 ---
@@ -144,7 +147,7 @@ Todos 🩸 **NPCs Kindred**, salvo indicação.
 | **Julia Sowinski** | **Primogen** Lasombra. | Neonata, Abraçada em junho de 2019. Era jornalista investigativa. O clã que mandava no Sabbat que você conheceu hoje tem assento na Camarilla. |
 | **Samira** | **Primogen dos Banu Haqim**. | O clã de Khalid, seu hóspede. |
 | **Katherine Weiss** | **Primogen dos Brujah** (leal da Camarilla). | Representa os Brujah que ficaram na seita depois de 2012. O clã de Daniel, que esteve do outro lado em 1999. |
-| **Calebros** | **Príncipe interino** depois da Batalha de 1999 (Nosferatu). | Declarou a moratória ao Embrace e recebeu você como herói de guerra. Governou até Panhard assumir, por volta de 2005. |
+| **Calebros** | **Príncipe interino** depois da Batalha de 1999 (Nosferatu). | Declarou a moratória ao Abraço e recebeu você como herói de guerra. Governou até Panhard assumir, por volta de 2005. |
 
 ##### A comitiva europeia
 
