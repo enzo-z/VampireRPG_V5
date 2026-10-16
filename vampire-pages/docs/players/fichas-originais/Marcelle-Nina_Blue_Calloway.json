@@ -1,0 +1,294 @@
+{
+  "id": "char_1791752160",
+  "name": "Nina Calloway",
+  "aliases": "Blue",
+  "clan": "Toreador",
+  "generation": "13th",
+  "predatorType": "Scene Queen",
+  "faction": "Camarilla",
+  "embrace": "Novembro de 2020, no porão de um restaurante fechado na Lenox Avenue, Harlem, Nova York",
+  "sire": "Um Toreador elegante e silencioso, obcecado pela música dela, que a Abraçou sem permissão do Príncipe e foi levado pela Camarilla pouco depois",
+  "languages": "Inglês, Espanhol",
+  "xpTotal": 0,
+  "xpSpent": 0,
+  "attributes": {
+    "strength": 1,
+    "dexterity": 2,
+    "stamina": 2,
+    "charisma": 3,
+    "manipulation": 2,
+    "composure": 3,
+    "intelligence": 2,
+    "wits": 4,
+    "resolve": 3
+  },
+  "skills": {
+    "athletics": {
+      "value": 1,
+      "specialty": ""
+    },
+    "brawl": {
+      "value": 1,
+      "specialty": ""
+    },
+    "craft": {
+      "value": 0,
+      "specialty": ""
+    },
+    "drive": {
+      "value": 0,
+      "specialty": ""
+    },
+    "firearms": {
+      "value": 0,
+      "specialty": ""
+    },
+    "larceny": {
+      "value": 1,
+      "specialty": ""
+    },
+    "melee": {
+      "value": 0,
+      "specialty": ""
+    },
+    "stealth": {
+      "value": 2,
+      "specialty": ""
+    },
+    "survival": {
+      "value": 0,
+      "specialty": ""
+    },
+    "animalKen": {
+      "value": 0,
+      "specialty": ""
+    },
+    "etiquette": {
+      "value": 2,
+      "specialty": ""
+    },
+    "insight": {
+      "value": 3,
+      "specialty": "Audiences"
+    },
+    "intimidation": {
+      "value": 0,
+      "specialty": ""
+    },
+    "leadership": {
+      "value": 1,
+      "specialty": ""
+    },
+    "performance": {
+      "value": 3,
+      "specialty": "Saxophone"
+    },
+    "persuasion": {
+      "value": 2,
+      "specialty": ""
+    },
+    "streetwise": {
+      "value": 2,
+      "specialty": "Jazz Scene"
+    },
+    "subterfuge": {
+      "value": 2,
+      "specialty": ""
+    },
+    "academics": {
+      "value": 1,
+      "specialty": "Jazz History"
+    },
+    "awareness": {
+      "value": 3,
+      "specialty": "Crowds"
+    },
+    "finance": {
+      "value": 0,
+      "specialty": ""
+    },
+    "investigation": {
+      "value": 1,
+      "specialty": ""
+    },
+    "medicine": {
+      "value": 0,
+      "specialty": ""
+    },
+    "occult": {
+      "value": 0,
+      "specialty": ""
+    },
+    "politics": {
+      "value": 0,
+      "specialty": ""
+    },
+    "science": {
+      "value": 0,
+      "specialty": ""
+    },
+    "technology": {
+      "value": 1,
+      "specialty": ""
+    }
+  },
+  "advantages": [
+    {
+      "name": "Looks: Beautiful",
+      "level": 2,
+      "note": "Presença de palco marcante"
+    },
+    {
+      "name": "Herd",
+      "level": 2,
+      "note": "Frequentadores fiéis das sessões clandestinas de jazz"
+    },
+    {
+      "name": "Allies",
+      "level": 2,
+      "note": "Augie Mendez, dono do restaurante fechado na Lenox Avenue que abriga o speakeasy"
+    },
+    {
+      "name": "Contacts",
+      "level": 2,
+      "note": "Gente dos bastidores da cena do jazz que sabe dos boatos da noite (1 ponto do Scene Queen)"
+    },
+    {
+      "name": "Fame",
+      "level": 1,
+      "note": "Conhecida na cena do jazz do Harlem e do Village (Scene Queen)"
+    },
+    {
+      "name": "Haven",
+      "level": 1,
+      "note": "Apartamento pequeno em Washington Heights"
+    },
+    {
+      "name": "Mawla",
+      "level": 1,
+      "note": "Mentor vampiro na corte que orienta a neonata nos primeiros passos (identidade definida pelo mestre)"
+    }
+  ],
+  "flaws": [
+    {
+      "name": "Prey Exclusion",
+      "level": 1,
+      "note": "Não se alimenta de quem é de fora da cena do jazz (Scene Queen)"
+    },
+    {
+      "name": "Suspect",
+      "level": 1,
+      "note": "Abraço irregular; a corte da Camarilla a vigia com desconfiança"
+    }
+  ],
+  "trackers": {
+    "healthMax": 5,
+    "health": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "willpowerMax": 6,
+    "willpower": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hunger": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "humanity": 7,
+    "humanityStains": 0,
+    "bp": 1,
+    "resonance": ""
+  },
+  "disciplines": [
+    {
+      "name": "Auspex",
+      "level": 2,
+      "powers": [
+        "Heightened Senses",
+        "Premonition"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Presence",
+      "level": 1,
+      "powers": [
+        "Awe"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Dominate",
+      "level": 1,
+      "powers": [
+        "Cloud Memory"
+      ],
+      "rituals": []
+    }
+  ],
+  "inventory": [],
+  "pools": [
+    {
+      "title": "Tocar e encantar o público",
+      "attr": "charisma",
+      "skill": "performance",
+      "specialty": "Saxophone",
+      "disc": ""
+    },
+    {
+      "title": "Perceber o ambiente",
+      "attr": "wits",
+      "skill": "awareness",
+      "specialty": "Crowds",
+      "disc": "Auspex"
+    },
+    {
+      "title": "Convencer com charme",
+      "attr": "charisma",
+      "skill": "persuasion",
+      "specialty": "",
+      "disc": "Presence"
+    },
+    {
+      "title": "Ler as intenções de alguém",
+      "attr": "wits",
+      "skill": "insight",
+      "specialty": "Audiences",
+      "disc": ""
+    }
+  ],
+  "convictions": [
+    "Nunca tocar sem verdade.",
+    "Nunca destruir a arte de outro artista.",
+    "A música deve continuar, mesmo que tudo desabe."
+  ],
+  "touchstones": [
+    {
+      "name": "Altagracia Reyes",
+      "summary": "Avó materna dominicana que criou Nina em Washington Heights",
+      "linkedConviction": "Nunca tocar sem verdade.",
+      "description": "Criou a neta entre boleros, merengue e discos antigos de jazz trazidos de Santo Domingo. Sempre repetiu que música sem verdade é só barulho. Nunca perdeu um show da Blue."
+    },
+    {
+      "name": "Eddie Park",
+      "summary": "Pianista e parceiro de banda há anos",
+      "linkedConviction": "A música deve continuar, mesmo que tudo desabe.",
+      "description": "Foi quem insistiu em continuar tocando quando a pandemia fechou os clubes, levando a dupla para as sessões clandestinas no porão de Augie. Ainda toca com ela toda semana e não sabe o que ela se tornou."
+    }
+  ],
+  "background": "Nina Calloway nasceu em Washington Heights, filha de pai afro-americano e mãe dominicana, e foi criada pela avó materna, Altagracia Reyes, entre boleros, merengue e uma pilha de discos antigos de jazz que Altagracia guardava desde a juventude em Santo Domingo. Cresceu falando espanhol em casa e inglês na rua. Pegou o saxofone aos catorze anos e nunca mais largou, misturando o jazz do Harlem com o latin jazz que ouvia na vizinhança. Passou a década seguinte tocando em clubes pequenos do Harlem e do Village, respeitada pelos músicos, adorada por um público fiel e sempre a um passo de estourar, sem nunca chegar lá. No palco virou \"Blue\", pelo som grave e melancólico que arrancava do sax. Quando a pandemia fechou os clubes em 2020, ela e o pianista Eddie Park se recusaram a parar: passaram a tocar em sessões clandestinas no porão de um restaurante fechado na Lenox Avenue, mantido por Augie Mendez, dono do lugar e velho amigo da cena. Foi ali, em novembro de 2020, que um espectador elegante e silencioso, presente em todas as noites, a esperou depois do último set. Ela acordou três noites depois, faminta e sem entender nada. Seu sire, um Toreador obcecado pela música dela, a Abraçou sem permissão do Príncipe e foi levado pela Camarilla pouco tempo depois. Sozinha, Blue foi apresentada à corte como um Abraço irregular, tolerada, vigiada e sem saber quase nada sobre as regras da noite. Desde então, continua tocando no porão de Augie e se alimentando discretamente do público fiel da cena do jazz, enquanto tenta entender o mundo em que caiu e, aos poucos, enxerga nele uma oportunidade.",
+  "notes": "One-shot em Nova York, virada de 2020 para 2021. Neonata recém-Abraçada, conhece muito pouco da sociedade vampírica. Toreador: Bane Aesthetic Fixation, Compulsion Obsession. Scene Queen (cena do jazz): +1 Dominate, especialidade Streetwise (Jazz Scene), Fame 1, Contacts 1, Prey Exclusion. Espanhol concedido pelo mestre sem custo de Linguistics. Hunger inicial a definir pelo mestre. Perícias na distribuição Balanced do V5 (26 pontos); especialidade grátis Academics (Jazz History). Mawla 1 concedido pelo mestre.",
+  "ambition": "Fazer do jazz o território da Camarilla em Nova York, com meu nome à frente"
+}

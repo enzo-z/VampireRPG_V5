@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 3,
+  "fichas": [
+    {
+      "id": "gideon",
+      "name": "Gideon Nicols",
+      "identity": {
+        "player": "Victor Polck",
+        "chronicle": "NY By Night",
+        "clan": "Toreador",
+        "predatorType": "Scene Queen",
+        "ambition": "To become Prince",
+        "sect": "",
+        "generation": "12th",
+        "desire": "Become Harpy"
+      },
+      "attributes": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 2,
+        "manipulation": 4,
+        "composure": 3,
+        "intelligence": 3,
+        "wits": 2,
+        "resolve": 3
+      },
+      "skills": {
+        "athletics": 1,
+        "brawl": 0,
+        "craft": 0,
+        "drive": 1,
+        "firearms": 0,
+        "larceny": 1,
+        "melee": 2,
+        "stealth": 1,
+        "survival": 0,
+        "animalKen": 0,
+        "etiquette": 2,
+        "insight": 2,
+        "intimidation": 1,
+        "leadership": 0,
+        "performance": 1,
+        "persuasion": 3,
+        "streetwise": 1,
+        "subterfuge": 3,
+        "academics": 2,
+        "awareness": 2,
+        "finance": 0,
+        "investigation": 0,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 3,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "academics": "arts History",
+        "etiquette": "Camarilla",
+        "performance": "acting"
+      },
+      "disciplines": [
+        {
+          "name": "Auspex",
+          "value": 3,
+          "powers": [
+            {
+              "name": "Heightened Senses",
+              "note": ""
+            },
+            {
+              "name": "Sense the Unseen",
+              "note": "Wits / Resolve + Auspex"
+            },
+            {
+              "name": "Share the Senses",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Celerity",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Rapid Reflexes",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Potence",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Soaring Leap",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 6,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 0,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 1,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "1 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "2",
+        "clanBane": "Aesthetic Fixation: While you're in less than beautiful surroundings you take 2 (bane severity) dice penalty on Discipline rolls.",
+        "clanCompulsion": "Obsession: Become fixated with something in the scene. Take a two-dice penalty on any actions that aren't directly related to that thing. Lasts until you can't perceive the thing or scene ends."
+      },
+      "advantages": [
+        {
+          "category": "background",
+          "name": "Resources",
+          "level": 3,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Herd",
+          "level": 2,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Status",
+          "level": 2,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Fame",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Prey Exclusion",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Living in the Past",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Disliked",
+          "level": 1,
+          "note": ""
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Demand respect and be respected (Career)\nAlways keep a promise (Juliet Smith)",
+        "touchstones": "My career → Demand respect and be respected.\nJuliet Smith (mortal, ex-lover, NY Times art journalist) → Always keep a promise."
+      },
+      "profile": {
+        "sire": "Evangeline Spivachka",
+        "birthday": "",
+        "age": "",
+        "embraced": "",
+        "apparentAge": "",
+        "description": "Blonde, blue eyes, black jacket and pale skin",
+        "concept": "An actress that was prevented to get the main female role in Oklahoma! The reason why she turned him, to give him other roles.\nPhrase: Don't bother me and I won't kill you",
+        "photo": ""
+      },
+      "notes": "REVISAR: o PDF tem campos em conflito (valor guardado × desenho). Occult ou Streetwise: só um tem ponto; usei Streetwise 1 (valor mais recente). Confirmar.\n\nXP: 5\nJuliet Smith: now respected journalist in NY Times art section. A mortal woman who was a lover of my character and always made him vulnerable, when around. She knew that he would always be busy and forced him to a promise that one day they would take a time to themselves. This day never came and since then Gideon realized that if he would live eternity, he needed to keep his promises."
+    }
+  ]
+}

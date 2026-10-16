@@ -1,0 +1,313 @@
+{
+  "id": "char_1791379260",
+  "name": "Khalid Hassan Yusuf",
+  "aliases": "",
+  "clan": "Banu Haqim",
+  "generation": "13th",
+  "predatorType": "Pursuer",
+  "faction": "Camarilla",
+  "embrace": "2010, Washington D.C.",
+  "sire": "Nizar ibn Tahir",
+  "languages": "Árabe (nativo), Inglês",
+  "xpTotal": 15,
+  "xpSpent": 15,
+  "attributes": {
+    "strength": 2,
+    "dexterity": 3,
+    "stamina": 2,
+    "charisma": 1,
+    "manipulation": 2,
+    "composure": 2,
+    "intelligence": 3,
+    "wits": 4,
+    "resolve": 3
+  },
+  "skills": {
+    "athletics": {
+      "value": 2,
+      "specialty": ""
+    },
+    "brawl": {
+      "value": 1,
+      "specialty": ""
+    },
+    "craft": {
+      "value": 0,
+      "specialty": ""
+    },
+    "drive": {
+      "value": 1,
+      "specialty": ""
+    },
+    "firearms": {
+      "value": 2,
+      "specialty": "Pistols"
+    },
+    "larceny": {
+      "value": 1,
+      "specialty": ""
+    },
+    "melee": {
+      "value": 0,
+      "specialty": ""
+    },
+    "stealth": {
+      "value": 3,
+      "specialty": "Crowds"
+    },
+    "survival": {
+      "value": 0,
+      "specialty": ""
+    },
+    "animalKen": {
+      "value": 0,
+      "specialty": ""
+    },
+    "etiquette": {
+      "value": 1,
+      "specialty": ""
+    },
+    "insight": {
+      "value": 2,
+      "specialty": ""
+    },
+    "intimidation": {
+      "value": 0,
+      "specialty": ""
+    },
+    "leadership": {
+      "value": 0,
+      "specialty": ""
+    },
+    "performance": {
+      "value": 0,
+      "specialty": ""
+    },
+    "persuasion": {
+      "value": 0,
+      "specialty": ""
+    },
+    "streetwise": {
+      "value": 1,
+      "specialty": ""
+    },
+    "subterfuge": {
+      "value": 1,
+      "specialty": ""
+    },
+    "academics": {
+      "value": 0,
+      "specialty": ""
+    },
+    "awareness": {
+      "value": 3,
+      "specialty": ""
+    },
+    "finance": {
+      "value": 0,
+      "specialty": ""
+    },
+    "investigation": {
+      "value": 3,
+      "specialty": "Profiling"
+    },
+    "medicine": {
+      "value": 0,
+      "specialty": ""
+    },
+    "occult": {
+      "value": 1,
+      "specialty": ""
+    },
+    "politics": {
+      "value": 2,
+      "specialty": ""
+    },
+    "science": {
+      "value": 0,
+      "specialty": ""
+    },
+    "technology": {
+      "value": 2,
+      "specialty": ""
+    }
+  },
+  "advantages": [
+    {
+      "name": "Bloodhound",
+      "level": 1,
+      "note": "Do Predator Type Pursuer. Sente a Resonance do sangue mortal pelo cheiro."
+    },
+    {
+      "name": "Contacts",
+      "level": 3,
+      "note": "1 ponto do Pursuer: um agente da Homeland Security que ainda atende o celular. 2 pontos comprados: um detetive do NYPD e um técnico com acesso a câmeras de segurança em NY."
+    },
+    {
+      "name": "Mask",
+      "level": 2,
+      "note": "Identidade falsa sólida, com documentos que resistem a checagem séria; pode incluir porte de arma ou credencial de segurança privada."
+    },
+    {
+      "name": "Resources",
+      "level": 1,
+      "note": "Renda modesta; economias retiradas antes da morte forjada."
+    },
+    {
+      "name": "Mawla",
+      "level": 1,
+      "note": "Nizar ibn Tahir, o sire. Mentor distante que ajuda quando isso lhe convém."
+    },
+    {
+      "name": "Status",
+      "level": 1,
+      "note": "Reconhecido na Camarilla como Membro confiável."
+    },
+    {
+      "name": "Allies",
+      "level": 2,
+      "note": "Daniel Reyes, agente do FBI no escritório de campo de NY. Ex-parceiro numa força-tarefa conjunta; sabe que Khalid está vivo e acredita que ele trabalha num programa sigiloso."
+    },
+    {
+      "name": "Linguistics",
+      "level": 1,
+      "note": "Árabe"
+    }
+  ],
+  "flaws": [
+    {
+      "name": "Known Corpse",
+      "level": 1,
+      "note": "Khalid forjou a própria morte em 2010; antigos colegas, a mãe e a irmã sabem que ele 'morreu'."
+    },
+    {
+      "name": "Prey Exclusion",
+      "level": 1,
+      "note": "Inocentes. Só se alimenta de quem fez algo errado."
+    }
+  ],
+  "trackers": {
+    "healthMax": 5,
+    "health": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "willpowerMax": 5,
+    "willpower": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hunger": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "humanity": 6,
+    "humanityStains": 0,
+    "bp": 1,
+    "resonance": ""
+  },
+  "disciplines": [
+    {
+      "name": "Celerity",
+      "level": 2,
+      "powers": [
+        "Rapid Reflexes",
+        "Fleetness"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Obfuscate",
+      "level": 2,
+      "powers": [
+        "Cloak of Shadows",
+        "Unseen Passage"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Auspex",
+      "level": 1,
+      "powers": [
+        "Heightened Senses"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Blood Sorcery",
+      "level": 1,
+      "powers": [
+        "A Taste for Blood"
+      ],
+      "rituals": [
+        "Blood Walk"
+      ]
+    }
+  ],
+  "inventory": [
+    "Pistola compacta (com porte vinculado à identidade falsa)",
+    "Documentos da identidade falsa (Mask)",
+    "Celular descartável com os números dos Contacts e de Daniel Reyes",
+    "Kit de coleta de amostras (frascos para sangue, luvas)"
+  ],
+  "pools": [
+    {
+      "title": "Traçar perfil de suspeito",
+      "attr": "intelligence",
+      "skill": "investigation",
+      "specialty": "Profiling",
+      "disc": ""
+    },
+    {
+      "title": "Perceber detalhe ou emboscada",
+      "attr": "wits",
+      "skill": "awareness",
+      "specialty": "",
+      "disc": "Auspex"
+    },
+    {
+      "title": "Esquivar em combate",
+      "attr": "dexterity",
+      "skill": "athletics",
+      "specialty": "",
+      "disc": "Celerity"
+    },
+    {
+      "title": "Atirar",
+      "attr": "dexterity",
+      "skill": "firearms",
+      "specialty": "Pistols",
+      "disc": ""
+    }
+  ],
+  "convictions": [
+    "A verdade precisa vir à tona, custe o que custar.",
+    "Nenhum tirano merece escapar da justiça.",
+    "Nunca abandonar quem depende de mim."
+  ],
+  "touchstones": [
+    {
+      "name": "Leila Yusuf",
+      "summary": "Irmã mais nova, jornalista investigativa em Nova York",
+      "linkedConviction": "A verdade precisa vir à tona, custe o que custar.",
+      "description": "Seguiu os passos do pai no jornalismo e acredita que o irmão está morto desde 2010. Mora e trabalha em Nova York, o que pode colocá-la no caminho de Khalid durante a virada do ano."
+    },
+    {
+      "name": "Amira Yusuf",
+      "summary": "Mãe viúva, vive em Dearborn, Michigan",
+      "linkedConviction": "Nunca abandonar quem depende de mim.",
+      "description": "Perdeu o marido para o regime e depois o filho para uma 'morte' em 2010. Acende uma vela por Khalid todo dia 10 de cada mês. Ele a observa de longe, sem nunca se revelar."
+    }
+  ],
+  "background": "Khalid Hassan Yusuf nasceu filho de um professor e repórter que ousou escrever o que o regime não queria ler. Quando o pai foi perseguido e assassinado, um estranho chamado Nizar ibn Tahir tirou a família às escondidas do Oriente Médio e a levou para os Estados Unidos, sem pedir nada em troca. Khalid cresceu americano, tornou-se cidadão e, após o 11 de Setembro, entrou para a Homeland Security, determinado a caçar homens parecidos com os que mataram seu pai. Em 2010, em Washington D.C., Nizar voltou para cobrar a dívida: Khalid foi Abraçado no clã Banu Haqim, pois seu benfeitor havia visto nele um caçador nato. Khalid forjou a própria morte, deixando para trás a mãe e a irmã, que ainda o choram. Desde então, serve à Camarilla como alguém que conhece por dentro o governo e as agências de segurança americanas. Onze anos depois, ele continua sendo o que sempre foi: um investigador que não descansa até a verdade aparecer e o culpado pagar.",
+  "notes": "Bane (Blood Addiction, severidade 2): ao saciar Hunger com sangue de vampiro, faz teste de frenesi de fome ou se empanturra. Compulsion (Judgment): impulso de punir quem viola suas Convictions, bebendo do transgressor; sofre penalidades até cumprir. XP: 15 de neonato, gastos em Obfuscate 2 (10) e Blood Sorcery 1 (5). Regras da mesa: Perícias pelos pacotes do V5 (Balanced); 3 especialidades e Flaws opcionais (+2) conforme o guia. One-shot: Nova York, Réveillon de 2021."
+}

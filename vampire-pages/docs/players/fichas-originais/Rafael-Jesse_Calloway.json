@@ -1,0 +1,267 @@
+{
+  "id": "char_1792028568",
+  "name": "Jesse Calloway",
+  "aliases": "Wire",
+  "clan": "Gangrel",
+  "generation": "14th",
+  "predatorType": "Alleycat",
+  "faction": "Independente",
+  "embrace": "Outubro de 2020, num posto na I-80, de madrugada. Acordou enterrado na beira da estrada.",
+  "sire": "Desconhecido (nunca viu o rosto)",
+  "languages": "English",
+  "xpTotal": 0,
+  "xpSpent": 0,
+  "attributes": {
+    "strength": 4,
+    "dexterity": 2,
+    "stamina": 3,
+    "charisma": 2,
+    "manipulation": 1,
+    "composure": 2,
+    "intelligence": 2,
+    "wits": 3,
+    "resolve": 3
+  },
+  "skills": {
+    "athletics": {
+      "value": 3,
+      "specialty": "Dodging"
+    },
+    "brawl": {
+      "value": 3,
+      "specialty": "Grappling"
+    },
+    "craft": {
+      "value": 0,
+      "specialty": ""
+    },
+    "drive": {
+      "value": 2,
+      "specialty": ""
+    },
+    "firearms": {
+      "value": 0,
+      "specialty": ""
+    },
+    "larceny": {
+      "value": 1,
+      "specialty": ""
+    },
+    "melee": {
+      "value": 0,
+      "specialty": ""
+    },
+    "stealth": {
+      "value": 2,
+      "specialty": ""
+    },
+    "survival": {
+      "value": 0,
+      "specialty": ""
+    },
+    "animalKen": {
+      "value": 0,
+      "specialty": ""
+    },
+    "etiquette": {
+      "value": 0,
+      "specialty": ""
+    },
+    "insight": {
+      "value": 3,
+      "specialty": "Detecting Lies"
+    },
+    "intimidation": {
+      "value": 1,
+      "specialty": ""
+    },
+    "leadership": {
+      "value": 0,
+      "specialty": ""
+    },
+    "performance": {
+      "value": 0,
+      "specialty": ""
+    },
+    "persuasion": {
+      "value": 0,
+      "specialty": ""
+    },
+    "streetwise": {
+      "value": 2,
+      "specialty": ""
+    },
+    "subterfuge": {
+      "value": 0,
+      "specialty": ""
+    },
+    "academics": {
+      "value": 0,
+      "specialty": ""
+    },
+    "awareness": {
+      "value": 4,
+      "specialty": ""
+    },
+    "finance": {
+      "value": 0,
+      "specialty": ""
+    },
+    "investigation": {
+      "value": 1,
+      "specialty": ""
+    },
+    "medicine": {
+      "value": 0,
+      "specialty": ""
+    },
+    "occult": {
+      "value": 0,
+      "specialty": ""
+    },
+    "politics": {
+      "value": 0,
+      "specialty": ""
+    },
+    "science": {
+      "value": 0,
+      "specialty": ""
+    },
+    "technology": {
+      "value": 0,
+      "specialty": ""
+    }
+  },
+  "advantages": [
+    {
+      "name": "Contacts",
+      "level": 3,
+      "note": "Criminosos e gente de estrada (bônus do Alleycat)"
+    },
+    {
+      "name": "Resources",
+      "level": 2,
+      "note": "Ex-peão de gangue, dinheiro curto"
+    }
+  ],
+  "flaws": [
+    {
+      "name": "Prey Exclusion",
+      "level": 1,
+      "note": "Não se alimenta de crianças"
+    },
+    {
+      "name": "Folkloric Bane",
+      "level": 1,
+      "note": "Flor do local onde foi enterrado (a definir com o mestre)"
+    }
+  ],
+  "trackers": {
+    "healthMax": 6,
+    "health": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "willpowerMax": 5,
+    "willpower": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hunger": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "humanity": 6,
+    "humanityStains": 0,
+    "bp": 1,
+    "resonance": ""
+  },
+  "disciplines": [
+    {
+      "name": "Protean",
+      "level": 2,
+      "powers": [
+        "Eyes of the Beast",
+        "Feral Weapons"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Fortitude",
+      "level": 1,
+      "powers": [
+        "Resilience"
+      ],
+      "rituals": []
+    },
+    {
+      "name": "Celerity",
+      "level": 1,
+      "powers": [
+        "Rapid Reflexes"
+      ],
+      "rituals": []
+    }
+  ],
+  "inventory": [],
+  "pools": [
+    {
+      "title": "Agarrar (Grappling)",
+      "attr": "strength",
+      "skill": "brawl",
+      "specialty": "Grappling",
+      "disc": ""
+    },
+    {
+      "title": "Garras (Feral Weapons)",
+      "attr": "strength",
+      "skill": "brawl",
+      "specialty": "",
+      "disc": "Protean"
+    },
+    {
+      "title": "Esquivar",
+      "attr": "dexterity",
+      "skill": "athletics",
+      "specialty": "Dodging",
+      "disc": "Celerity"
+    },
+    {
+      "title": "Ler uma mentira",
+      "attr": "wits",
+      "skill": "insight",
+      "specialty": "Detecting Lies",
+      "disc": ""
+    }
+  ],
+  "convictions": [
+    "Os culpados precisam ser punidos"
+  ],
+  "touchstones": [
+    {
+      "name": "Dani Calloway",
+      "summary": "Irmã mais nova, 19 anos, em Youngstown",
+      "linkedConviction": "Os culpados precisam ser punidos",
+      "description": "Acha que Jesse foi preso ou morreu. Tudo o que ele fez foi para sustentá-la, e ela nem sabe. Jesse manda dinheiro anônimo para ela."
+    },
+    {
+      "name": "Pete \"Big Pete\" Kenway",
+      "summary": "Mecânico do Rusty Saints MC",
+      "linkedConviction": "Os culpados precisam ser punidos",
+      "description": "O único que sabe a verdade sobre Dutch e Ray. Nunca julgou Jesse, mas ficou calado por medo. Acha que Jesse sumiu para fugir de uma dívida."
+    }
+  ],
+  "background": "Jesse Calloway nasceu em Youngstown, Ohio, em 1991. Depois que a mãe morreu num hospital que ele não conseguiu pagar, entrou para o Rusty Saints MC, um clube de motoqueiros, para quitar a dívida e sustentar a irmã mais nova, Dani. Roubava carga e transportava mercadoria ilegal; o apelido Wire vem de ligar carros sem chave. Em 2019, uma entrega do clube foi estourada pela polícia e o presidente, Dutch, apontou Ray Brennan, um caminhoneiro de 60 anos que o clube subornava, como delator. Dutch mandou Jesse dar um recado, e ele espancou Ray numa parada de caminhão. Ray sobreviveu com fratura no crânio, perda total da audição no ouvido direito e tremor permanente na mão direita; perdeu a licença de caminhoneiro e vive de pensão por invalidez. Semanas depois, Jesse descobriu que o delator era o próprio Dutch, que entregou a carga para reduzir a própria pena. Big Pete sabia e ficou calado por medo. Jesse também ficou: a irmã dependia dele e o clube sabia onde ela morava. Em 2020 saiu do clube e passou a fazer transporte por conta própria. Em outubro daquele ano, numa noite na I-80, foi Abraçado por um sire que nunca viu e acordou enterrado na beira da estrada. Passou semanas se alimentando de animais e de quem cruzava seu caminho, até que um Brujah motoqueiro o encontrou perdido e o levou junto até Nova York. Jesse não sabe nada de política vampírica; para ele, vampiro é gente que bebe sangue.",
+  "notes": "Aparência: ex-motoqueiro de 29 anos, ombros largos, cabelo curto louro-escuro, barba por fazer. Jaqueta de trabalho desbotada com o contorno de um patch de clube arrancado nas costas e um fio de cobre no pulso esquerdo. Fala pouco, fica de costas para a parede e observa as mãos de todo mundo. Desejo de curto prazo: ter certeza de que quem punir é mesmo culpado. Pendente com o mestre: flor do Folkloric Bane e demais Advantages.Tenants\nNão mataras, a menos que seja por legítima defesaNão machucarás os inocentesNão arruinará vidas",
+  "ambition": "Não me tornar um monstro"
+}

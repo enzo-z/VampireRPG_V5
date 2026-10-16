@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 3,
+  "fichas": [
+    {
+      "id": "vincent",
+      "name": "Vincent Marchetti",
+      "identity": {
+        "player": "Pedro",
+        "chronicle": "",
+        "clan": "Tzimisce",
+        "predatorType": "Blood Leech",
+        "ambition": "Terminar a guerra: levar a cabeça do arcebispo que escapou.",
+        "sect": "Camarilla",
+        "generation": "12th",
+        "desire": ""
+      },
+      "attributes": {
+        "strength": 3,
+        "dexterity": 1,
+        "stamina": 2,
+        "charisma": 2,
+        "manipulation": 4,
+        "composure": 2,
+        "intelligence": 3,
+        "wits": 2,
+        "resolve": 3
+      },
+      "skills": {
+        "athletics": 3,
+        "brawl": 3,
+        "craft": 0,
+        "drive": 0,
+        "firearms": 0,
+        "larceny": 1,
+        "melee": 0,
+        "stealth": 1,
+        "survival": 0,
+        "animalKen": 0,
+        "etiquette": 1,
+        "insight": 2,
+        "intimidation": 2,
+        "leadership": 1,
+        "performance": 0,
+        "persuasion": 3,
+        "streetwise": 2,
+        "subterfuge": 2,
+        "academics": 0,
+        "awareness": 2,
+        "finance": 1,
+        "investigation": 1,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 1,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "brawl": "Kindred",
+        "stealth": "Against Kindred"
+      },
+      "disciplines": [
+        {
+          "name": "Dominate",
+          "value": 3,
+          "powers": [
+            {
+              "name": "Compel",
+              "note": ""
+            },
+            {
+              "name": "Mesmerize",
+              "note": ""
+            },
+            {
+              "name": "The Forgetful Mind",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Protean",
+          "value": 2,
+          "powers": [
+            {
+              "name": "Eyes of the Beast",
+              "note": ""
+            },
+            {
+              "name": "Feral Weapons",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 0,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 2,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "2 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "2",
+        "clanBane": "Grounded: deve passar o daysleep cercado pela sua charge. Senão, sofre dano agravado de Willpower igual à Bane Severity.",
+        "clanCompulsion": "Covetousness: −2 dados em ações que não visem possuir algo da cena, até a posse ser estabelecida ou ficar inalcançável."
+      },
+      "advantages": [
+        {
+          "category": "loresheet",
+          "name": "Sect War Veteran",
+          "level": 3,
+          "note": "Survivor · Active · Trophy"
+        },
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 2,
+          "note": "Valerie Duval (Scourge) · polícia e sindicato"
+        },
+        {
+          "category": "background",
+          "name": "Haven",
+          "level": 1,
+          "note": "Suíte no Plaza"
+        },
+        {
+          "category": "background",
+          "name": "Resources",
+          "level": 1,
+          "note": "Dinheiro do Plaza e de décadas de acordos"
+        },
+        {
+          "category": "flaw",
+          "name": "Dark Secret",
+          "level": 2,
+          "note": "Diablerist (bispo do Sabbat)"
+        },
+        {
+          "category": "flaw",
+          "name": "Prey Exclusion",
+          "level": 2,
+          "note": "Mortais"
+        },
+        {
+          "category": "flaw",
+          "name": "Adversary",
+          "level": 2,
+          "note": "Sabbat que sobrou da cidade"
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Toda dívida se paga.\nOlhe por aqueles que você sabe que estão com você.",
+        "touchstones": "Carmine Gallo (†1930, chefe na Lei Seca) → Toda dívida se paga.\nNick Gallo (neto de Carmine, recepcionista do Plaza) → Olhe por aqueles que você sabe que estão com você."
+      },
+      "profile": {
+        "sire": "Radu Vâlcan",
+        "birthday": "1908, Little Italy",
+        "age": "",
+        "embraced": "1957 · New York",
+        "apparentAge": "",
+        "description": "",
+        "concept": "\"O Porteiro\"",
+        "photo": ""
+      },
+      "notes": "REVISAR: o Sect War Veteran está anotado como \"Survivor · Active · Trophy\", mas com 3 pontos só cabe Trophy Kill (•••) ou Survivor + Active Participant (• + ••). Bater com a história que o Pedro mandou.\n\nApelido: \"O Porteiro\" · XP 15/15\nInventário: chaves-mestras do Plaza; caderno de contas e favores; terno cinza de corte antigo; celular.\n\nNascido em 1908 em Little Italy, filho de um estivador. Cresceu entre o porto, a Lei Seca e o crime organizado, e aprendeu que o bairro funcionava por favores. Nunca precisou de força: bastava saber o que cada um tinha a perder. Sem escrúpulos desde antes de tudo, vendeu o chefe da própria equipe, Carmine Gallo, a um rival por lucro e dormiu bem. Foi a única dívida que nunca pagou.\n\nNo começo dos anos 1930, um Tzimisce do Sabbat comprou o Plaza e o fez carniçal (1931) para tocar o hotel de dia. Virou porteiro de fachada e consigliere de verdade: finanças, polícia, máfia e favores. Em 1957, morto numa emboscada em plena guerra civil do Sabbat, foi Abraçado pelo sire para não perder o servo útil.\n\nDepois da guerra o sire se destacou do Sabbat e passou a ter laços com a Camarilla, o que o deixou paranoico. Por quarenta anos Vincent anotou os pontos cegos do Sabbat de Nova York e previu o ataque. No Battle of New York (1999–2000) deu à Camarilla o roteiro da campanha inteira, com ações calculadas desde os meses antes da primeira noite: os nomes por trás das empresas de fachada do Sabbat, a oferta que comprou os Giovanni, os carniçais presos na véspera e a lista dos havens incendiados de dia. Planejou e executou a morte do braço direito do arcebispo (a lavanderia do Plaza levou o cabelo do alvo aos Tremere, um trem foi explodido e descarrilado, e ele cortou a cabeça com as próprias garras; bebeu do corpo, e só poucos sabem). A última investida, no Bronx, também foi dele, e só falhou em um ponto: o arcebispo escapou por uma saída que ele pediu para fechar e os comandantes liberaram.\n\nA Camarilla o tem como herói de guerra, e a Hound que fechou o túnel do trem a seu lado, Valerie Duval, hoje é a Scourge da cidade e a única que sabe o que ele fez no escuro. Ela o usa e o protege, e nenhum dos dois pergunta o preço. Em 2022 o sire está ausente por causa do Beckoning e o Plaza ficou com ele. O neto do chefe que ele traiu trabalha na recepção do hotel, e Vincent olha por ele.\n\nCarmine Gallo (†1930 · Chefe da equipe da Lei Seca → Toda dívida se paga.): O homem que deu a Vincent o primeiro trabalho de verdade, em Little Italy, e que ele vendeu a um rival porque a conta dava mais lucro. Foi morto no mesmo mês. Vincent nunca sentiu culpa, só a satisfação de ver o número fechar, e é por isso que a única dívida que ele nunca pagou é a dele. Vincent projeta o morto no neto: o que fez com o avô é o que ele ainda tenta consertar.\n\nNick Gallo (Mortal · Neto de Carmine, recepcionista do Plaza → Olhe por aqueles que você sabe que estão com você.): Trinta e poucos anos, trabalha na recepção do Plaza porque Vincent mandou contratá-lo sem que ele soubesse por quê. Tem o mesmo jeito de contar o troco do avô e a mesma risada curta. Não sabe quem Vincent é nem o que o avô sofreu. Vincent o protege em silêncio, por culpa e por cálculo, e já não sabe distinguir uma coisa da outra."
+    },
+    {
+      "id": "gideon",
+      "name": "Gideon Nicols",
+      "identity": {
+        "player": "Victor Polck",
+        "chronicle": "NY By Night",
+        "clan": "Toreador",
+        "predatorType": "Scene Queen",
+        "ambition": "To become Prince",
+        "sect": "",
+        "generation": "12th",
+        "desire": "Become Harpy"
+      },
+      "attributes": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 2,
+        "manipulation": 4,
+        "composure": 3,
+        "intelligence": 3,
+        "wits": 2,
+        "resolve": 3
+      },
+      "skills": {
+        "athletics": 1,
+        "brawl": 0,
+        "craft": 0,
+        "drive": 1,
+        "firearms": 0,
+        "larceny": 1,
+        "melee": 2,
+        "stealth": 1,
+        "survival": 0,
+        "animalKen": 0,
+        "etiquette": 2,
+        "insight": 2,
+        "intimidation": 1,
+        "leadership": 0,
+        "performance": 1,
+        "persuasion": 3,
+        "streetwise": 1,
+        "subterfuge": 3,
+        "academics": 2,
+        "awareness": 2,
+        "finance": 0,
+        "investigation": 0,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 3,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "academics": "arts History",
+        "etiquette": "Camarilla",
+        "performance": "acting"
+      },
+      "disciplines": [
+        {
+          "name": "Auspex",
+          "value": 3,
+          "powers": [
+            {
+              "name": "Heightened Senses",
+              "note": ""
+            },
+            {
+              "name": "Sense the Unseen",
+              "note": "Wits / Resolve + Auspex"
+            },
+            {
+              "name": "Share the Senses",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Celerity",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Rapid Reflexes",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Potence",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Soaring Leap",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 6,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 0,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 1,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "1 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "2",
+        "clanBane": "Aesthetic Fixation: While you're in less than beautiful surroundings you take 2 (bane severity) dice penalty on Discipline rolls.",
+        "clanCompulsion": "Obsession: Become fixated with something in the scene. Take a two-dice penalty on any actions that aren't directly related to that thing. Lasts until you can't perceive the thing or scene ends."
+      },
+      "advantages": [
+        {
+          "category": "background",
+          "name": "Resources",
+          "level": 3,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Herd",
+          "level": 2,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Status",
+          "level": 2,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Fame",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Prey Exclusion",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Living in the Past",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Disliked",
+          "level": 1,
+          "note": ""
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Demand respect and be respected (Career)\nAlways keep a promise (Juliet Smith)",
+        "touchstones": "My career → Demand respect and be respected.\nJuliet Smith (mortal, ex-lover, NY Times art journalist) → Always keep a promise."
+      },
+      "profile": {
+        "sire": "Evangeline Spivachka",
+        "birthday": "",
+        "age": "",
+        "embraced": "",
+        "apparentAge": "",
+        "description": "Blonde, blue eyes, black jacket and pale skin",
+        "concept": "An actress that was prevented to get the main female role in Oklahoma! The reason why she turned him, to give him other roles.\nPhrase: Don't bother me and I won't kill you",
+        "photo": ""
+      },
+      "notes": "REVISAR: o PDF tem campos em conflito (valor guardado × desenho). Occult ou Streetwise: só um tem ponto; usei Streetwise 1 (valor mais recente). Confirmar.\n\nXP: 5\nJuliet Smith: now respected journalist in NY Times art section. A mortal woman who was a lover of my character and always made him vulnerable, when around. She knew that he would always be busy and forced him to a promise that one day they would take a time to themselves. This day never came and since then Gideon realized that if he would live eternity, he needed to keep his promises."
+    }
+  ]
+}
