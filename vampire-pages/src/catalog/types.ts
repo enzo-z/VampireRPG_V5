@@ -163,3 +163,23 @@ export interface ColaBlock {
 export interface ColaCatalog {
   blocks: ColaBlock[];
 }
+
+/** A "## Section" of a player's secret document (README - Name.md). */
+export interface SecretSection {
+  title: string;
+  html: string;
+}
+
+/** What one character knows, printed for that player only ("Segredos"). */
+export interface SecretDocument {
+  /** URL-safe id, from the character's name. */
+  slug: string;
+  character: string;
+  title: string;
+  introHtml: string;
+  sections: SecretSection[];
+}
+
+export interface SecretsCatalog {
+  documents: SecretDocument[];
+}

@@ -45,6 +45,11 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - Identidade: Nome, Player, Crônica, Clã, Predator Type, Ambição, Facção, Geração, Desejo.
 - Disciplinas têm nome editável (6 slots). Especializações são texto livre, sem placeholder.
 
+## Segredos (documentos por jogador)
+- Menu "Narrador › Segredos": o que cada personagem sabe, impresso para entregar só ao jogador. Fonte: `Narrador/Relacionamentos/Para o Jogador/README - Nome.md` com `publicar: true` (o Enzo libera um jogador por vez). Ficam de fora: linha de tags, "Sumário", "Mapa de relacionamentos" e qualquer bloco Mermaid. O build avisa se o texto citar "Auld Sanguine" (não pode sair no PDF).
+- Senha só de frontend (cortina, não segurança): `SECRETS_PASSWORD` em `vampire-pages/.env.local` (no `.gitignore`); o build guarda só o SHA-256 com sal (`src/features/secrets/password.ts`). Os documentos são um chunk separado, baixado só depois da senha; a liberação dura até fechar a aba.
+- PDF em várias folhas A4 (sem zoom; texto ≈ 9,75 pt), rodapé "Nome · p. N de M" via `@page`, título da aba = nome do arquivo salvo.
+
 ## Vocabulário da UI (pt-BR)
 Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity, Clan Bane, Player (decidido em 2026-10-15).
 

@@ -9,3 +9,5 @@ vampire-pages/docs/og-pdfs/
 External Documents/Exemplo/
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/obsidian-local-rest-api/data.json
+vampire-pages/.env.local
+vampire-pages/.env.*.local

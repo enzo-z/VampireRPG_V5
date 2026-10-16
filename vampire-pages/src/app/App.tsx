@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { ColaView } from '../features/cola/ColaView.tsx';
 import { MesaView } from '../features/mesa/MesaView.tsx';
 import { PrintView } from '../features/print/PrintView.tsx';
+import { SecretDocView } from '../features/secrets/SecretDocView.tsx';
+import { SecretsView } from '../features/secrets/SecretsView.tsx';
+import { useSecretsLock } from '../features/secrets/useSecretsLock.ts';
 import type { SheetPageName } from '../features/sheet/PageTabs.tsx';
 import { SheetPage } from '../features/sheet/SheetPage.tsx';
 import { SheetsProvider, useSheets } from '../store/SheetsProvider.tsx';
@@ -11,12 +14,13 @@ import { Sidebar, type ShellView } from './Sidebar.tsx';
 import { useSidebar } from './useSidebar.ts';
 import styles from './App.module.css';
 
-type View = { name: ShellView } | { name: 'print'; autoPrint: boolean } | { name: 'cola' };
+type View = { name: ShellView } | { name: 'print'; autoPrint: boolean } | { name: 'cola' } | { name: 'secret'; slug: string };
 
 function AppContent() {
   const { state, dispatch, storageNotice, dismissStorageNotice } = useSheets();
   const { notify } = useToast();
   const sidebar = useSidebar();
+  const secrets = useSecretsLock();
   const [readOnly, setReadOnly] = useState(false);
   const [view, setView] = useState<View>({ name: 'mesa' });
   const [page, setPage] = useState<SheetPageName>('mechanics');
@@ -41,11 +45,23 @@ function AppContent() {
     setView({ name: 'mesa' });
     sidebar.closeIfNarrow();
   };
+  const openSecrets = () => {
+    setView({ name: 'secrets' });
+    sidebar.closeIfNarrow();
+  };
 
   if (view.name === 'cola') {
     return (
       <main>
         <ColaView onBack={openMesa} />
+      </main>
+    );
+  }
+
+  if (view.name === 'secret' && secrets.unlocked) {
+    return (
+      <main>
+        <SecretDocView slug={view.slug} onBack={openSecrets} />
       </main>
     );
   }
@@ -64,9 +80,13 @@ function AppContent() {
     );
   }
 
-  const shellView: ShellView = view.name === 'sheet' && active !== null ? 'sheet' : 'mesa';
+  // A secret document opened while locked falls back to the password form.
+  const shellView: ShellView =
+    view.name === 'secrets' || view.name === 'secret' ? 'secrets' : view.name === 'sheet' && active !== null ? 'sheet' : 'mesa';
   const content =
-    state.fichas.length === 0 ? (
+    shellView === 'secrets' ? (
+      <SecretsView lock={secrets} onOpen={(slug) => setView({ name: 'secret', slug })} />
+    ) : state.fichas.length === 0 ? (
       <section className={styles.empty}>
         <h2 className={styles.emptyTitle}>Nenhuma ficha ainda</h2>
         <p>Crie uma ficha nova ou importe um JSON (deste app ou exportado do app do Pedro) pela barra acima.</p>
@@ -97,6 +117,7 @@ function AppContent() {
         activeId={state.activeId}
         onMesa={openMesa}
         onCola={() => setView({ name: 'cola' })}
+        onSecrets={openSecrets}
         onFicha={openFicha}
       />
       {sidebar.narrow && sidebar.open && (
@@ -104,7 +125,7 @@ function AppContent() {
       )}
       <div className={styles.main}>
         <AppBar
-          title={shellView === 'sheet' ? 'Ficha' : 'Mesa'}
+          title={shellView === 'sheet' ? 'Ficha' : shellView === 'secrets' ? 'Segredos' : 'Mesa'}
           readOnly={readOnly}
           onToggleReadOnly={() => setReadOnly((value) => !value)}
           onOpenMenu={sidebar.narrow ? sidebar.toggle : null}

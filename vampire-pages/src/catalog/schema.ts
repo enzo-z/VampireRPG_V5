@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, PredatorTypeCatalog } from './types.ts';
+import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, PredatorTypeCatalog, SecretsCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -96,3 +96,15 @@ export const colaCatalogSchema = z.strictObject({
     }),
   ),
 }) satisfies z.ZodType<ColaCatalog>;
+
+export const secretsCatalogSchema = z.strictObject({
+  documents: z.array(
+    z.strictObject({
+      slug: z.string().min(1),
+      character: z.string().min(1),
+      title: z.string().min(1),
+      introHtml: z.string(),
+      sections: z.array(z.strictObject({ title: z.string().min(1), html: z.string() })),
+    }),
+  ),
+}) satisfies z.ZodType<SecretsCatalog>;
