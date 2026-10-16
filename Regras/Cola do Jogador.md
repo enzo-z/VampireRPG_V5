@@ -39,21 +39,21 @@ Sua força de vontade, e o recurso que mais salva uma cena: depois de rolar, gas
 
 Não vale em Rouse Check, nos dados vermelhos nem em testes de Willpower ou Humanidade.
 
-## Blood Surge (Ímpeto do Sangue)
+## Blood Surge
 
-O Sangue como "buff": antes de rolar, faça um Rouse Check e some dados extras ao teste. Quantos depende da sua Blood Potency (**normalmente +2**). Uma vez por teste; não vale em testes de Willpower ou Humanidade.
+Use o Sangue como "buff" para se fortalecer: **antes de rolar**, faça um Rouse Check e some dados extras ao teste. A quantidade depende da sua Blood Potency (**+2**). Só pode uma vez por teste e não vale em testes de Willpower ou Humanidade.
 
 ## Curar (Mending)
 
-Vampiros só se curam com o Sangue. Uma vez por turno, faça um Rouse Check para curar **dano superficial**: a quantidade é o Mend Amount da sua ficha.
+Vampiros só se curam usando o Sangue. Uma vez por turno, faça um Rouse Check para curar **dano superficial**: a quantidade é o Mend Amount da sua ficha.
 
 **Dano agravado** (fogo, sol, garras e presas sobrenaturais) só cura na noite seguinte: 3 Rouse Checks por ponto.
 
 ## Humanidade
 
-O quanto ainda resta de humano em você. Começa em 7. Agir contra os princípios da crônica (**Tenets**) ou as suas **Convicções**, ou ver suas **Touchstones** (os mortais que as representam) sofrerem, pode custar Humanidade, e perdê-la tem consequências **gravíssimas**.
+O quanto ainda resta de humano em você. Agir contra os princípios da crônica (**Tenets**), as suas **Convicções**, ou suas **Touchstones** (os mortais que as representam) sofrerem, pode custar Humanidade, e perdê-la tem consequências **gravíssimas**.
 
-Cada transgressão rende **Manchas** (marcadas da direita para a esquerda). No fim da sessão, quem tem Manchas faz um teste de **Remorso**: com pelo menos 1 sucesso, as Manchas somem; sem nenhum, você perde 1 de Humanidade.
+Cada transgressão rende **Manchas** (marcadas da direita para a esquerda). No fim da sessão, quem tem Manchas faz um teste de **Remorso**.
 
 ## Termos
 
@@ -95,7 +95,7 @@ A transformação em vampiro. Quem Abraça é o **Sire** (Senhor); quem é Abra�
 
 ## Clãs
 
-Todo clã tem uma maldição diferente, a **Clan Bane** (a sua está na ficha). Abaixo, do coração da Camarilla para fora.
+**Todo clã tem uma maldição diferente**, a **Clan Bane** (a sua está na ficha). Abaixo, quanto mais a esquerda, mais próximo da Camarilla.
 
 ### Ventrue
 Aristocratas nascidos para mandar; o Príncipe costuma ser um deles. Proteção, dinheiro e legitimidade passam por eles.
@@ -133,9 +133,6 @@ Necromantes que negociam com os mortos. Independentes: vendem seus serviços a q
 ### Ravnos
 Ilusionistas nômades que não podem dormir duas vezes no mesmo lugar. Quase extintos e independentes.
 
-### Salubri
-Curandeiros raros, marcados por um terceiro olho. Caçados pelos Tremere, vivem escondidos.
-
 ### Tzimisce
 Senhores possessivos que moldam a carne e defendem seu domínio. A maioria serviu ao Sabbat, e a Camarilla não esquece.
 
@@ -144,6 +141,9 @@ Vampiros sem clã reconhecido. Na Camarilla, tratados com desprezo e suspeita.
 
 ### Sangue Ralo
 Sangue fraquíssimo, quase humanos. Para a Camarilla, mau presságio e problema a controlar.
+
+### Salubri (?)
+Curandeiros raros, marcados por um terceiro olho. Caçados pelos Tremere, vivem escondidos.
 
 ## Para saber mais
 
