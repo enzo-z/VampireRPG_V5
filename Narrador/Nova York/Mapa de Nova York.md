@@ -165,7 +165,7 @@ Texto do painel quando nada está selecionado.
 ## Staten Island
 - **Facção:** 2021 `anarchSoft` (Anarquistas do pós-guerra) · antes de 1999 `sabbat`
 - **Área / população:** 148,9 km² · 495.747
-- **Resumo:** base dos Anarchs de Callihan depois de 1999 e sede do Pavio Negro MC, os dissidentes da Chama do Brooklyn. Pouco disputado: refúgio de quem quer distância da corte, ou de caçadores.
+- **Resumo:** base dos Anarchs de Callihan depois de 1999 e sede do Pavio Negro MC, os dissidentes da Chama do Brooklyn. Em 2021 é a segunda presença Anarch da cidade, significativa, mas atrás do Bronx. Pouco disputado: refúgio de quem quer distância da corte, ou de caçadores.
 
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
@@ -307,7 +307,7 @@ Matriz abaixo do mapa. **●** = sede, domínio ou base do clã; **○** = figur
 
 Aparecem no mapa como "Divergências e cuidados". Ao decidir uma, atualize a seção correspondente acima e a apague (ou marque ✅) aqui.
 
-- [ ] **Bronx ou Staten Island?** [[Camarilla em Nova York]] põe os Anarquistas "quase só no Bronx" (Port Morris). [[Daniel Mercer]] diz que Staten Island foi a base Anarch do pós-guerra (por isso o Pavio Negro) e que o Bronx tem presença Anarch na continuidade moderna. Hoje: os dois são Anarch, com o Bronx como centro atual.
+- [x] **Bronx ou Staten Island?** ✅ Decidido pelo Narrador (16/10/2026): os Anarquistas ficam **majoritariamente no Bronx** (Port Morris), com **presença significativa em Staten Island**, a base do pós-guerra (por isso o Pavio Negro). Registrado em [[Camarilla em Nova York]] e nos READMEs dos jogadores.
 - [ ] **Brooklyn e Queens sem dono.** As notas dizem que esses distritos "não são atribuídos a governante exclusivo". Hoje: Camarilla tracejada; quem age ali são a Chama, Kutkha, os Nosferatu e Julia Sowinski. Se algum ganhar um senhor (um Barão, um Primogen como regente), troque para `cam`.
 - [ ] **Locais aproximados.** Art Hole, o domínio de Julia, a Chantry, o Pavio Negro, o Harbor Ledger e os armazéns de 1999 não têm endereço nas fontes. Se fixar algum, troque a coordenada e tire o "aproximado".
 - [ ] **Michaela: 1998 ou 1999?** [[Vincent Marchetti]] diz que os templars de Polonia mataram Michaela em 1998; [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]] dizem 1999, durante um falso parlamento.

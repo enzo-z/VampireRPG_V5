@@ -25,7 +25,7 @@
 ---
 # Resumo
 
-- A Camarilla **reivindica a cidade inteira**; os Anarquistas ficam quase só no **Bronx**. **[A]**
+- A Camarilla **reivindica a cidade inteira**; os Anarquistas ficam majoritariamente no **Bronx**. **[A]** Há também uma presença Anarch significativa em **Staten Island**, a base do pós-guerra (decisão do Narrador, 16/10/2026).
 - Depois da Batalha de Nova York, o Nosferatu **Calebros** governou como Príncipe interino. A [[Camarilla#Estrutura e Organização|Príncipe]] é **Hellene Panhard**, desde ~2005. **[M]**
 - Em 2021 a corte está **estável por fora**, mas cheia de intrigas: Callihan (líder Anarch) morreu em março de 2020, Torque disputa a liderança, e o [[Camarilla#Estrutura e Organização|Xerife]] e a [[Camarilla#Estrutura e Organização|Scourge]] já pressionam por mais dureza. **[M/B]**
 - Não existe **lista oficial** de cargos para 2021: [[Camarilla#Estrutura e Organização|Senescal]], Guardião do Elysium e vários [[Camarilla#Estrutura e Organização|Primogens]] **não têm nome confirmado**.
@@ -76,7 +76,7 @@ Perfil completo em [[Personagens da Camarilla de NY]].
 
 ✅ Informações dos Anarquistas confirmadas pelo Narrador para a campanha (16/10/2026).
 
-- A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam quase só no **Bronx**. **[A]**
+- A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam majoritariamente no **Bronx**. **[A]** Há também uma presença Anarch significativa em **Staten Island**, a base do pós-guerra e sede do Pavio Negro MC (decisão do Narrador, 16/10/2026).
 - **Douglas "Boss" Callihan** ☠️, o Boss/Barão Anarch, foi encontrado **morto em março de 2020**. **[A]** Em *Coteries* é **amante e aliado de Panhard**. **[A/M]**
 - **Torque** (Brujah) é o "novo líder presumido", acusado de trair as raízes do movimento. **[A]**
 - **Mia Morgan** (Brujah) e o coterie **Midnighters** aparecem em *Coteries*. **[M]**

@@ -168,7 +168,7 @@ Hospedada no Plaza de **28 a 30/12**. Desde **30/12**, só Herta continua no hot
 
 ##### Anarquistas
 
-A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam quase só no **Bronx**, o bairro onde você fechou o complexo de Polonia em 1999.
+A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam majoritariamente no **Bronx**, o bairro onde você fechou o complexo de Polonia em 1999, com uma presença significativa em **Staten Island**.
 
 | Quem | Papel | O que você sabe |
 |---|---|---|

@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #khalid #readme
 
 # Khalid Hassan Yusuf: o que você sabe
@@ -170,7 +173,7 @@ Hospedada no Plaza de **28 a 30/12**. Você sabe o que as câmeras e o registro 
 
 ##### Anarquistas
 
-A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam quase só no **Bronx**.
+A Camarilla reivindica a cidade inteira, mas os Anarquistas ficam majoritariamente no **Bronx**, com uma presença significativa em **Staten Island**.
 
 | Quem                        | Papel                   | O que você sabe                                                                                                               |
 | --------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------- |

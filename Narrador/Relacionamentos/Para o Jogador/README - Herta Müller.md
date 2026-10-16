@@ -98,13 +98,13 @@ Uma comitiva da Camarilla europeia, pequena de propósito: grupo grande chama at
 
 Os outros 🎭 são **jogadores**. Você chegou há três noites e **não conhece a coterie**. Dos outros jogadores, só cruzou com dois, os dois no Plaza.
 
-##### 🎭 Vincent Marchetti, o dono do Plaza
+##### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - Dono do **Hotel Plaza**. **Tzimisce** e **ex-Sabbat**: nasceu na seita e passou para a Camarilla. Em **1999** deu à Camarilla o plano que derrubou o Sabbat de Nova York, e por isso é chamado de **herói de guerra**. Foi o que Heinrich lhe contou.
 - Ele recebeu a comitiva na chegada. Heinrich conversou com ele mais de uma vez, com a cortesia de quem toma notas.
 - **Heinrich o encarregou de você** antes de sair. Se precisar de algo (um carro, um quarto, uma informação, uma saída), é a ele que deve pedir.
 - Você não sabe o que ele pensa disso, nem se ele aceitou por cortesia ou por um favor que Heinrich agora lhe deve.
 
-##### 🎭 Khalid Hassan Yusuf, o homem das câmeras
+##### 🎭 (Klaus) Khalid Hassan Yusuf, o homem das câmeras
 - Mora no Plaza **de forma permanente**. Vincent mencionou, na chegada, que um residente **Banu Haqim** cuida da **segurança** do hotel.
 - Vocês **se cruzaram** algumas vezes no saguão e no elevador. Um aceno, uma ou duas frases. Ele não puxou conversa, e você também não.
 - Você reparou que ele olha para as saídas antes de olhar para as pessoas.
@@ -136,7 +136,7 @@ Todos 🩸 **NPCs Kindred**. É o que Heinrich lhe ensinou antes da apresentaç�
 | Ventrue, Nosferatu, Malkaviano | Você não ouviu nenhum nome. |
 | Gangrel | Nenhum: os Gangrel deixaram a Camarilla. |
 
-**Fora da corte.** Os **Anarquistas** recusam a Camarilla e ficam quase só no **Bronx**. Heinrich resumiu assim: *"Não é o nosso bairro."*
+**Fora da corte.** Os **Anarquistas** recusam a Camarilla e ficam majoritariamente no **Bronx**, com uma presença significativa em **Staten Island**. Heinrich resumiu assim: *"Não é o nosso bairro."*
 
 ---
 
