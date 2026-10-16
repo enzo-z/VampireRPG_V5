@@ -2,7 +2,7 @@
 
 # Khalid Hassan Yusuf: o que você sabe
 
-> Auld Sanguine · Nova York · Réveillon de 2021
+> Auld Sanguine · Nova York · Dezembro de 2021
 > Este arquivo é **só seu**. Reúne o que Khalid sabe e as relações dele com os outros personagens, do ponto de vista dele. Não repasse aos outros jogadores.
 
 ## Sumário
@@ -34,7 +34,7 @@ Tudo aqui é o que **Khalid** sabe ou acredita. Pode haver coisas que ele ignora
 
 ## Onde você está em 2021
 
-- **Há 11 anos** (2010, Washington D.C.) você foi Abraçado no clã Banu Haqim. É **12ª geração**.
+- **Há 11 anos** (2010, Washington D.C.) você foi Abraçado no clã Banu Haqim. É **12ª geração** (sim, 12ª).
 - Você mora de forma permanente no **Hotel Plaza**, em Nova York, **desde cerca de 2011**. Foi a Camarilla de Nova York que o colocou ali, e o dono do hotel, Vincent, ficou **encarregado de ajudá-lo**.
 - Sua cobertura é **consultor de segurança do hotel**, com a identidade falsa e a credencial que você já tinha. Isso lhe dá motivo para circular pelas câmeras, pela segurança e pela equipe.
 - Você é oficialmente **morto desde 2010**. Mãe e irmã acreditam nisso.
@@ -52,7 +52,7 @@ Tudo aqui é o que **Khalid** sabe ou acredita. Pode haver coisas que ele ignora
 - Ele **viaja muito** a serviço do Justicar, por isso você o vê pouco.
 - Você sabe quem ele é e **não contou à coterie**.
 - Nizar **liga de tempos em tempos**. Pergunta como você está, como vai o hotel, quem tem passado por lá.
-- Foi por **indicação dele** que você escolheu o fornecedor do sistema de câmeras do hotel.
+- Foi por **indicação dele** que você escolheu o fornecedor e trocou o sistema de segurança do hotel (câmeras, etc).
 
 🩸 **Don Cerro** (Justicar) é o superior de Nizar. Você sabe disso e pouco mais: nunca o encontrou.
 
@@ -103,7 +103,6 @@ Os três 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** os três
 ### 🎭 Daniel Mercer, o nômade
 - **Brujah**, ligado ao clube de motociclistas **Iron Lanterns**. Esteve na guerra de 1999.
 - Foi o mais **fácil de rastrear**: foi Abraçado mais recentemente que os outros, e tem um **filho** com registros em hospital.
-- Você sabe que a esposa dele (**Claire**) morreu durante a Batalha de Nova York em 1999, mas não sabe exatamente as circunstâncias que ocasionaram a morte dela.
 - 🔒 **Você sabe**: o filho se chama **Nathan** e está doente (registros desde 2020; o sobrenome nos arquivos é **Ward**). **Daniel não sabe que você sabe.** Guarde, e decida o que fazer com isso.
 
 ---
