@@ -71,12 +71,13 @@ Tudo aqui é o que **Vincent** sabe ou acredita. Pode haver coisas que ele ignor
 | 👤 **Nick Gallo** | Recepcionista. Ver [[#Seus Touchstones]]. |
 | 👤 **Equipe do Plaza** | Funcionários, contatos e ambiente que sustentam o hotel. É o seu patrimônio. |
 | 🎭 **Khalid** | Residente permanente desde cerca de 2011. A Camarilla o encarregou de ajudá-lo. Ele reformulou o sistema de segurança do hotel (câmeras, etc.). |
+| 🎭 **Herta Müller** | Hóspede desde **28/12**, com a comitiva europeia. Desde **30/12** está sozinha no hotel, e o sire dela a deixou **aos seus cuidados**. Ver [[#🎭 Herta Müller, a hóspede da comitiva]]. |
 
 ---
 
 ## A coterie: os outros jogadores
 
-Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. Nina é a mais nova e a que você conhece menos.
+Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. Nina é a mais nova da cidade e a que você conhece menos. Herta acabou de chegar: você a conhece há três noites.
 
 ### 🎭 Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**, sem cargo mas com muito poder em favores e informação.
@@ -117,6 +118,14 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - **O que você não sabe:** o **nome verdadeiro** dele. Khalid investigou a origem dele, mas **nunca lhe contou o nome**.
 - ⚠️ **O risco:** esconder um Abraço fere a **Terceira Tradição (Progeny)**. Você é **herói de guerra** e o **Plaza** foi onde ele ficou escondido. Se o **Xerife Qadir** descobrir, você também responde.
 
+### 🎭 Herta Müller, a hóspede da comitiva
+- **Ventrue** neonata, 13ª geração, Abraçada em Berlim no **outono de 2021**. Ex-diplomata alemã; a fachada dela é a **Missão Permanente da Alemanha junto à ONU**.
+- **Progênie de Heinrich von Altenfeld**, que chefia a comitiva europeia (ver [[#A comitiva europeia]]).
+- Está no Plaza desde **terça, 28/12**. Na quinta, **30/12**, o resto da comitiva saiu para as festas de fim de ano numa residência da Príncipe. **Ela ficou.** Na noite de 31, completa três noites no hotel.
+- **Antes de sair, Heinrich a deixou aos seus cuidados**: pediu que você atendesse às necessidades dela e disse a ela para chamá-lo se precisasse de algo. É uma hóspede, e mais do que isso: alguém por quem você agora responde dentro do Plaza.
+- Você a conhece pouco: sabe que é educada, observa muito e fala pouco. Não sabe por que o sire não a levou junto.
+- Ela não conhece a coterie. Khalid só cruzou com ela no saguão.
+
 ---
 
 ## A corte, os aliados de 1999 e outros NPCs
@@ -136,6 +145,16 @@ Todos 🩸 **NPCs Kindred**, salvo indicação.
 | **Samira** | **Primogen dos Banu Haqim**. | O clã de Khalid, seu hóspede. |
 | **Katherine Weiss** | **Primogen dos Brujah** (leal da Camarilla). | Representa os Brujah que ficaram na seita depois de 2012. O clã de Daniel, que esteve do outro lado em 1999. |
 | **Calebros** | **Príncipe interino** depois da Batalha de 1999 (Nosferatu). | Declarou a moratória ao Embrace e recebeu você como herói de guerra. Governou até Panhard assumir, por volta de 2005. |
+
+##### A comitiva europeia
+
+Hospedada no Plaza de **28 a 30/12**. Desde **30/12**, só Herta continua no hotel. A comitiva fica na cidade pelo menos até a primeira semana de janeiro.
+
+| Quem | Papel | O que você sabe |
+|---|---|---|
+| **Heinrich von Altenfeld** | Ventrue de Berlim, Abraçado em 1887; chefia a comitiva. Sire de Herta. | Ex-diplomata do Império Alemão. Conversou com você mais de uma vez, cortês, com perguntas sobre 1999 e sobre como é ser ex-Sabbat na Camarilla. Parecia tomar notas. Deixou Herta aos seus cuidados. |
+| **Teodoro Castellví** | **Lasombra** de Barcelona. | Entrou na Camarilla com a deserção de parte do clã, em 2018. O motivo público da comitiva é ver como Nova York integrou os Lasombra. Um Lasombra dormiu no seu hotel: o clã que mandava no Sabbat que você traiu. |
+| **Lorenz Kehl** (👤) | Secretário e motorista de Heinrich. | Mortal, ou quase: cuida de documentos e carros, e não dorme quando o patrão acorda. Você aposta que é carniçal. |
 
 ##### Aliados de 1999 e outros
 

@@ -18,6 +18,7 @@
 - [[#Segredos]]
 - [[#Gusman Gutierrez: o achado de 2018]]
 - [[#Nina Calloway: a neonata do Harlem]]
+- [[#Herta Müller: a hóspede da comitiva]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -125,6 +126,7 @@ Filho de um professor e repórter assassinado pelo regime que ele ousou criticar
 | Vincent Marchetti | Dono do Plaza, onde Khalid mora; encarregado de ajudá-lo | Convivência de cerca de dez anos; Khalid conhece a segurança do hotel por dentro |
 | Samira | Primogen Banu Haqim; apresentou-o à corte | Contato mínimo: Khalid pouco a conhece |
 | Gideon Nicols, Vincent Marchetti, Daniel Mercer | Coterie | Khalid os pesquisou ao longo dos anos; sabe mais de Daniel (rastreou o filho por registros de hospital) |
+| [[Herta Müller]] | Ventrue da comitiva europeia, hóspede do Plaza desde 28/12 | Só se cruzaram no saguão; ver [[#Herta Müller: a hóspede da comitiva]] |
 
 ---
 
@@ -223,6 +225,15 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 - ⚠️ **Gusman.** Khalid esconde o segredo dos três (Gusman, Ravnos). Nina e Gusman estão na mesma noite, sem proibição, e Nina tem Auspex 2.
 
 - ✅ **Já se conhecem.** Gideon a leva ao Plaza vez ou outra, e Khalid a vê lá (decisão do Narrador, 16/10/2026). Ele a conhece como a pupila de Gideon e sabe o que circula dela na corte. Ela ainda não conhece Daniel nem Gusman.
+
+## Herta Müller: a hóspede da comitiva
+
+> ✅ = decidido pelo Narrador. 💡 = proposta minha, a validar com Klaus (Khalid). 🔒 = assimetria. Detalhes em [[Herta Müller#Ligação com a coterie (one-shot)]].
+
+- ✅ **Ligação leve.** Herta, Ventrue neonata da comitiva europeia, está hospedada no Plaza desde **28/12**. Os dois já se viram no hotel, mas tiveram pouco contato.
+- 💡 **O que Khalid viu:** como consultor de segurança, registrou a chegada (três Kindred e um carniçal) e, em **30/12**, a saída de Heinrich, Teodoro e Lorenz para uma residência da Príncipe. Sabe por Vincent que Heinrich deixou Herta aos cuidados dele.
+- 💡 **O que um percebe do outro:** ele, que ela lê pessoas como quem lê um depoimento; ela, que ele olha para as saídas antes de olhar para as pessoas. Dois investigadores no mesmo saguão.
+- 🔒 **Os olhos de Nizar.** A comitiva passou três noites nas câmeras com a porta dos fundos de Nizar. Se Nizar ligar perguntando "quem passou por aí", Khalid vai contar, de boa-fé, de uma comitiva Ventrue de Berlim. **Gancho de campanha, não para o one-shot.**
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.

@@ -18,6 +18,7 @@
 - [[#NPCs compartilhados]]
 - [[#Gusman Gutierrez: elo de 2018 (em construção)]]
 - [[#Nina Calloway: elo com a coterie]]
+- [[#Herta Müller: a hóspede da comitiva]]
 - [[#O que os quatro têm em comum]]
 - [[#Mapa (Mermaid)]]
 - [[#Perguntas em aberto]]
@@ -363,6 +364,25 @@ O *Shadows of New York* tem como mortal de Julia Sowinski (Primogen Lasombra) o 
 - **O clã de Gusman:** Nina **não sabe**; o próprio Gusman também não.
 
 **Riscos (⚠️):** quem vigia Nina vigia Gideon, e portanto chega perto de Gusman. Como Nina circula pelo **Plaza**, quem a vigia pode ir parar no hotel de Vincent, onde Gusman se escondeu nas primeiras semanas. Com Auspex 2 e Insight 3, Nina é a que mais provavelmente nota algo estranho nele.
+
+## Herta Müller: a hóspede da comitiva
+
+> ✅ = decidido pelo Narrador. 💡 = proposta minha, a validar com Rebeca, o jogador de Vincent e Klaus. **Não há mapa Mermaid para Herta**, por decisão do Narrador. Detalhes em [[Herta Müller#A comitiva: quem veio e quando]] e [[Herta Müller#Ligação com a coterie (one-shot)]].
+
+| Elo | Situação |
+|---|---|
+| ✅ **A comitiva europeia se hospeda no Plaza** em 28/12; em 30/12 sai para uma residência da Príncipe, para as festas de fim de ano. **Só Herta fica**: na noite de 31, são três noites no hotel. | Decidido pelo Narrador. |
+| ✅ **Vincent é encarregado de Herta**: Heinrich pediu a ele que a atendesse, e mandou Herta chamá-lo. | Decidido pelo Narrador. |
+| ✅ **Khalid: ligação leve.** Moram no mesmo hotel e já se viram; pouco contato. | Decidido pelo Narrador. |
+| 💡 **Membros:** Heinrich (Ventrue, chefe), **Teodoro Castellví** (Lasombra), Herta e **Lorenz Kehl** (carniçal). | Proposta. |
+| 💡 **Datas:** chegada ter 28/12, Elysium qua 29/12, saída qui 30/12. | Proposta. |
+| 💡 **Gideon, Daniel, Nina, Gusman:** não conhecem Herta antes da noite. | Proposta. |
+| 💡 **Entrada na noite:** se a coterie se reunir no Plaza, Herta está lá, e Vincent pode chamá-la. | Proposta. |
+
+**Assimetrias (🔒):**
+- **Motivo da comitiva:** a corte, Vincent e Khalid conhecem o público (os Lasombra). O real (reassentamento de Kindred europeus) só Heinrich e Teodoro sabem; Herta tem uma pista.
+- **As câmeras do Plaza:** a comitiva passou pelas câmeras com a porta dos fundos de Nizar (ver [[#O Plaza como "olhos de Nizar" 🔒]]). Gancho de campanha, não para o one-shot.
+
 ## O que os quatro têm em comum
 
 - **Todos vigiam um mortal à distância**, sem se revelar: Gideon, a jornalista; Vincent, Nick Gallo; Daniel, Nathan; Khalid, a mãe e a irmã.

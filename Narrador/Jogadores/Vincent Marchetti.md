@@ -19,6 +19,7 @@
 - [[#Contexto: o Sabbat em Nova York]]
 - [[#Gusman Gutierrez: o achado de 2018]]
 - [[#Nina Calloway: a visitante do Plaza]]
+- [[#Herta Müller: a hóspede da comitiva]]
 - [[#Ganchos para o Narrador]]
 - [[#Pendências]]
 
@@ -134,6 +135,7 @@ O alvo era o bispo **Simón Orozco**, que protegia a cidade com o arcebispo **Po
 | Camarilla de NY | Reconhece-o como herói de guerra | Respeito, mas ninguém pergunta como cortou a cabeça |
 | Ventrue, Tremere, Toreador, Giovanni, Setites, Ravnos | Aliados da Batalha de 1999 | Devem favores a ele |
 | Elias Voss | Malkaviano, "O Cartógrafo"; conselheiro tolerado, sem cargo | Vincent o conhece de nome e de reputação, com um contato breve; **sabe menos que Gideon**. Ver [[#Elias Voss: o que Vincent sabe]] |
+| [[Herta Müller]] | Ventrue da comitiva europeia, hóspede do Plaza desde 28/12 | Heinrich, o sire dela, a deixou **aos cuidados de Vincent** em 30/12. Ver [[#Herta Müller: a hóspede da comitiva]] |
 
 > 🧩 **Dica Para o Narrador**
 > Vincent é o contraponto de [[Gideon Nicols]]: ambos foram peças-chave da Batalha de Nova York, um pelo lado da espionagem nos bastidores, o outro pelo da contabilidade e do plano. Vale decidir se se conhecem e o que cada um sabe do outro.
@@ -217,6 +219,17 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 - 💡 **O trato é de visita.** Nada além de cordialidade foi definido entre os dois. O jogador de Vincent decide se isso vira alguma coisa.
 - ⚠️ **O risco de hospedar.** Nina é vigiada pela corte, e Gideon por tabela. Quem a seguir pode parar no Plaza, onde Vincent escondeu Gusman nas primeiras semanas e onde Khalid mora.
 - ❓ **Nina e Gusman.** Ela não conhece Gusman, e não há proibição de encontro entre os dois. Vincent, que sabe o que Gusman é, tem motivo para observar se isso acontecer.
+
+## Herta Müller: a hóspede da comitiva
+
+> ✅ = decidido pelo Narrador. 💡 = proposta minha, a validar com o jogador. 🔒 = assimetria. Detalhes em [[Herta Müller#Ligação com a coterie (one-shot)]].
+
+- ✅ **A comitiva no Plaza.** A comitiva da Camarilla europeia se hospedou no Plaza em **28/12**. Em **30/12**, quase todos foram para uma residência da Príncipe, para as festas de fim de ano. **Só Herta ficou.**
+- ✅ **Encarregado dela.** Antes de sair, Heinrich von Altenfeld, o sire de Herta, pediu a Vincent que **atendesse às necessidades dela**, e mandou Herta chamá-lo se precisasse de algo.
+- 💡 **O que pesa para Vincent:** o Bane faz do Plaza e de quem dorme lá a sua *charge*. Herta é hóspede e responsabilidade dele ao mesmo tempo. Heinrich agora lhe deve um pequeno favor.
+- 💡 **Vincent foi estudado.** O pretexto público da comitiva é ver como Nova York integrou os Lasombra. Heinrich fez perguntas a Vincent sobre 1999 e sobre ser ex-Sabbat na Camarilla, e **Teodoro Castellví**, um Lasombra, dormiu no hotel dele.
+- 🔒 **O que Vincent não sabe:** o motivo real da comitiva (reassentamento de Kindred europeus) nem por que Herta foi deixada para trás.
+- ⚠️ **Caça no hotel.** Herta se alimenta de mentirosos, e Vincent protege os mortais que sustentam o Plaza.
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.

@@ -86,7 +86,7 @@ Todos 👤 **NPCs mortais**, conduzidos pelo Narrador.
 
 ## A coterie: os outros jogadores
 
-Os cinco 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Nina é a pupila de Gideon, e você a conhece pessoalmente das visitas dela ao Plaza. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
+Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Nina é a pupila de Gideon, e você a conhece pessoalmente das visitas dela ao Plaza. Herta é uma hóspede recém-chegada, que você só viu de passagem. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
 ##### 🎭 Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat** (nascido na seita), hoje na Camarilla de Nova York.
@@ -129,6 +129,13 @@ Os cinco 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent,
 - **Alimentação:** primeiro, bolsas desviadas por vocês. Depois, o enfermeiro **Marcus Bell**, que Gideon conheceu por uma artista dele, **Tessa Lang**. Hoje Gusman se vira sozinho.
 - ⚠️ **O risco:** esconder um Abraço fere a **Terceira Tradição (Progeny)**. O arquivo que você montou sobre Mike e Julius, se cair em mãos erradas, entrega o nome e os amigos.
 
+##### 🎭 Herta Müller, a hóspede da comitiva
+- **Ventrue** neonata, recém-chegada da Alemanha com uma **comitiva da Camarilla europeia** (ver [[#A comitiva europeia]]). Está no Plaza desde **terça, 28/12**.
+- Como consultor de segurança, você **registrou a chegada**: três Kindred e um mortal que não sai do lado do chefe. Na quinta, **30/12**, as câmeras mostraram os outros três saindo com bagagem. **Ela ficou sozinha** no hotel.
+- Vocês **se cruzaram** algumas vezes no saguão e no elevador. Um aceno, uma ou duas frases, em inglês com sotaque alemão. Nenhum dos dois puxou conversa.
+- Você reparou que ela **observa as pessoas como quem lê um depoimento**: demora nos rostos e repara quando alguém hesita.
+- Sabe por Vincent que o sire dela a deixou **aos cuidados dele**.
+
 ---
 
 ## A corte e outros NPCs Kindred
@@ -150,6 +157,16 @@ Todos 🩸 **NPCs Kindred**. Esta é a corte de Nova York em 2021 como você a c
 | **Samira** | **Primogen dos Banu Haqim** em Nova York. | Foi quem o **apresentou à corte** em 2010 ou 2011. Depois disso, **contato mínimo**. Você a conhece pouco. |
 | **Katherine Weiss** | **Primogen dos Brujah** (leal da Camarilla). | Representa os Brujah que ficaram na Camarilla depois de 2012. Você a conhece só de nome. |
 | **Calebros** | **Príncipe interino** depois da Batalha de Nova York (Nosferatu). | Governou a cidade logo depois da guerra de 1999, até Panhard assumir. Você chegou depois: só o conhece de nome. |
+
+##### A comitiva europeia
+
+Hospedada no Plaza de **28 a 30/12**. Você sabe o que as câmeras e o registro do hotel mostram, e o pouco que circula na corte.
+
+| Quem | Papel | O que você sabe |
+|---|---|---|
+| **Heinrich von Altenfeld** | Ventrue de Berlim; chefia a comitiva. Sire de Herta. | Velho, formal, ex-diplomata. Foi apresentado à Príncipe em **29/12** e saiu do hotel em **30/12** para uma residência dela, para as festas de fim de ano. |
+| **Teodoro Castellví** | **Lasombra** de Barcelona. | Na corte, dizem que a comitiva veio ver **como Nova York integrou os Lasombra**, e ele é a prova viva. Saiu com Heinrich. |
+| **Lorenz Kehl** | Secretário e motorista de Heinrich. | Mortal. Pelo que você viu nas câmeras, não dorme quando o patrão acorda: carniçal, quase certo. |
 
 ##### Anarquistas
 

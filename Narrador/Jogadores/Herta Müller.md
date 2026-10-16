@@ -13,6 +13,7 @@
 - [[#A corte de Nova York (resumo para a jogadora)]]
 - [[#Identidade, rede e recursos]]
 - [[#Relações]]
+- [[#Ligação com a coterie (one-shot)]]
 - [[#Convicções e Touchstones]]
 - [[#Paladar Raro: Bane e Compulsion]]
 - [[#Ambição]]
@@ -42,14 +43,14 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 | Abraço | Outono de 2021, em Berlim, poucos dias depois da tentativa de Dominação; sem consentimento |
 | Sire | **Heinrich von Altenfeld**, Ventrue Abraçado em Berlim em 1887 |
 | Idade | 31 (nascida em 1990); idade aparente 31 |
-| Residência | Onde a comitiva se hospeda; não tem Haven próprio |
+| Residência | **Hotel Plaza**, de [[Vincent Marchetti]], desde 28/12/2021; sozinha desde 30/12. Não tem Haven próprio |
 | Origem | Göttingen, Alemanha; família vinda de Erfurt (Alemanha Oriental) |
 | Idiomas | Alemão (nativo), Inglês, Francês (Linguistics), Russo (concedido pelo mestre) |
 | Ocupação mortal | Ex-diplomata (reassentamento de refugiados); hoje, no papel, assistente na Missão Permanente da Alemanha junto à ONU. Na prática, acompanha Heinrich, sem papel ativo na comitiva |
 | Humanidade | 6 (7 − 1 do Pursuer; o campo está vazio na ficha) |
 | Avô | Walter, ex-preso político da Stasi, **vivo**, frágil, em Göttingen |
 | Mãe | Ingrid, em Göttingen |
-| Cenário | One-shot em Nova York, **Réveillon de 2021**; Herta está na cidade há poucos dias |
+| Cenário | One-shot em Nova York, **Réveillon de 2021**; na noite de 31/12, Herta completa três noites no Plaza |
 
 ## Linha do Tempo
 
@@ -75,8 +76,11 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 - **Semanas seguintes:** afastamento por "problemas de saúde". Ingrid e Walter notam que ela voltou diferente.
 
 ### Dezembro de 2021: Nova York
-- Chega com a comitiva, poucos dias antes do Réveillon. Pela 5ª Tradição (Hospitalidade), Heinrich a apresenta à corte de Hellene Panhard como sua **progênie**.
-- Tem **dois ou três meses** de não-vida. Ainda está aprendendo o que é.
+- **Terça, 28/12:** chega com a comitiva e se hospeda no **Plaza**.
+- **Quarta, 29/12:** pela 5ª Tradição (Hospitalidade), Heinrich apresenta a comitiva a Hellene Panhard no Elysium, e Herta como sua **progênie**.
+- **Quinta, 30/12:** o resto da comitiva vai para uma residência da Príncipe; Herta fica no Plaza aos cuidados de Vincent.
+- **Sexta, 31/12:** terceira noite no hotel. Tem **dois ou três meses** de não-vida e ainda está aprendendo o que é.
+- Detalhes em [[#A comitiva: quem veio e quando]].
 
 ---
 
@@ -116,6 +120,35 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 **A única pista de Herta:** na viagem, Heinrich pediu a ela um **resumo dos programas de reassentamento da ONU**. Ela fez o resumo e não entendeu por quê.
 
 - **Para o one-shot:** a comitiva fica **ao fundo** e não precisa aparecer em cena. Herta é a única dela que cruza com a coterie.
+
+### A comitiva: quem veio e quando
+
+> ✅ Hospedagem no Plaza, saída para a residência da Príncipe e Vincent encarregado de Herta: decisões do Narrador. 💡 Membros, nomes e datas exatas: propostas minhas.
+
+**Quem veio** (pequena de propósito: comitiva grande põe a Máscara em risco):
+
+| Quem | O que é | Quem sabe o quê |
+|---|---|---|
+| **Heinrich von Altenfeld** | Ventrue, chefe da comitiva; fala pela corte de Berlim | Sabe o motivo real |
+| 💡 **Teodoro Castellví** | Lasombra de Barcelona, da deserção de 2018. Rosto do motivo público: vem conhecer Julia Sowinski | Sabe o motivo real; Lasombra que negocia o futuro de outros deslocados |
+| **Herta Müller** | Progênie de Heinrich; acompanha | Só o motivo público e a pista |
+| 💡 **Lorenz Kehl** | Carniçal de Heinrich: secretário e motorista | Sabe o que Heinrich manda saber |
+
+**Cronologia** (31/12/2021 foi uma sexta-feira):
+
+| Data | O que acontece |
+|---|---|
+| Outono de 2021 | Abraço de Herta em Berlim; semanas de afastamento por "saúde" |
+| Dezembro, antes da viagem | Heinrich pede a Herta o resumo dos programas de reassentamento da ONU |
+| **Ter 28/12** | Chegada a Nova York. Hospedagem no **Plaza**: hotel de Kindred, discreto, onde a corte põe visitantes importantes. E o dono é ex-Sabbat, a "prova" do pretexto público |
+| **Qua 29/12** | Apresentação a **Panhard** no **Elysium** (Hospitalidade). Teodoro conhece Julia Sowinski. A Príncipe convida Heinrich e Teodoro a passar o fim de ano numa das **residências dela** |
+| **Qui 30/12** | Heinrich, Teodoro e Lorenz deixam o Plaza. Antes, Heinrich **encarrega Vincent** de atender às necessidades de Herta e diz a ela: *"Se precisar de algo, chame Herr Marchetti."* |
+| **Sex 31/12** | A corte celebra a virada no Elysium. Herta, sozinha no Plaza, completa **três noites** no hotel. Começa o one-shot |
+| Até a 1ª semana de janeiro | A comitiva fica na cidade; a negociação real acontece longe do hotel |
+
+**Por que Herta ficou.**
+- **A explicação de Heinrich:** a recepção de fim de ano é para anciões e convidados da Príncipe, não para uma neonata que ele ainda não liberou (4ª Tradição).
+- **O motivo real:** a conversa sobre reassentamento acontece na residência de Panhard. Heinrich quer Herta longe dela até a hora certa.
 
 ---
 
@@ -161,7 +194,7 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 - **Bloodhound (1).** Sente a Resonance do sangue mortal pelo cheiro (Pursuer).
 - **Contacts (1).** Uma pessoa sem escrúpulos do terreno de caça (Pursuer). 💡 Um funcionário corrupto do circuito diplomático da ONU, o primeiro mentiroso que ela confirmou em Nova York.
 - **Enemy (2).** Um grupo de mortais que quer prejudicá-la. 💡 Os funcionários do ministério cujo favor ela recusou e que acham suspeito o "afastamento por saúde". Ficam na Alemanha, longe da cena, mas podem cavar.
-- **Sem Haven, Resources ou Allies:** em Nova York, Herta depende de Heinrich para tudo.
+- **Sem Haven, Resources ou Allies:** em Nova York, Herta depende de Heinrich para tudo e, desde 30/12, de Vincent.
 
 ---
 
@@ -174,7 +207,24 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 | Ingrid | Mãe | Em Göttingen; percebeu que ela voltou diferente |
 | A comitiva europeia | Grupo que Heinrich integra | Herta conhece só o motivo público (os Lasombra); não tem papel ativo |
 | Missão Permanente da Alemanha junto à ONU | Fachada mortal (Mask 2) | Assistente, no papel |
-| Coterie | Nenhuma ligação | Recém-chegada; conhece os outros PCs no one-shot |
+| Teodoro Castellví | Lasombra da comitiva | Cortês; Herta o conhece da viagem |
+| Lorenz Kehl | Carniçal de Heinrich | Herta desconfia que não é só um funcionário |
+| [[Vincent Marchetti]] | Dono do Plaza, encarregado dela por Heinrich | Ver [[#Ligação com a coterie (one-shot)]] |
+| [[Khalid Hassan Yusuf]] | Residente do Plaza, segurança do hotel | Só se cruzaram no saguão |
+| Resto da coterie | Nenhuma ligação | Conhece no one-shot |
+
+---
+
+## Ligação com a coterie (one-shot)
+
+> ✅ = decidido pelo Narrador. 💡 = proposta minha. 🔒 = assimetria. **Não há mapa Mermaid para Herta**, por decisão do Narrador.
+
+- ✅ **Vincent.** Antes de sair em 30/12, Heinrich **encarregou Vincent** de atender às necessidades de Herta, e mandou Herta chamá-lo se precisasse de algo. 💡 Para Vincent, cujo Bane faz do Plaza e de quem dorme lá a sua *charge*, Herta passa a ser responsabilidade dele dentro do hotel.
+- 💡 **Por que Vincent aceitou:** cortesia de anfitrião e um pequeno favor que Heinrich agora lhe deve. Heinrich também o estudou: fez perguntas sobre 1999 e sobre ser ex-Sabbat na Camarilla, que é o pretexto público da comitiva.
+- ✅ **Khalid: ligação leve.** Os dois moram no Plaza e já se viram, mas tiveram pouco contato. 💡 Khalid registrou a chegada e a saída da comitiva pelas câmeras.
+- 🔒 **Os olhos de Nizar.** As câmeras do Plaza têm a porta dos fundos de Nizar (ver [[Auld Sanguine - Laços entre Jogadores#O Plaza como "olhos de Nizar" 🔒]]). Uma comitiva Ventrue europeia negociando às escondidas com a Príncipe é o tipo de coisa que chega a um Arconte de Don Cerro. Khalid, de boa-fé, pode contar a Nizar quem passou pelo hotel. **Gancho de campanha, não para o one-shot.**
+- 💡 **Como ela entra na noite:** se a coterie se reunir no Plaza, Herta está lá. Vincent, encarregado dela, pode chamá-la, ou ela pode pedir para ir junto. Não precisa de outra justificativa.
+- 💡 **Risco no hotel:** Herta se alimenta de mentirosos, e Vincent protege os mortais que sustentam o Plaza. Se ela caçar dentro do hotel, os dois vão ter uma conversa.
 
 ---
 
@@ -267,7 +317,10 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 - [ ] **Atualizar a ficha:** marcar Stunning com 4 pontos, Humanidade 6, o Russo como idioma concedido, e corrigir o texto da Bane ("costs 0" → custo igual à Bane Severity, 2).
 - [x] **Comitiva:** motivo público os Lasombra (Herta sabe), motivo real o reassentamento (Herta só tem a pista); ela acompanha, sem papel ativo.
 - [ ] Validar com a jogadora o que Herta descobriu sobre Heinrich.
-- [ ] **README da jogadora:** criar a partir de [[#A corte de Nova York (resumo para a jogadora)]], sem os segredos de Narrador: o motivo real da comitiva, a culpa de Heinrich nos anos 1930 (ela só sabe que há uma lacuna) e por que ele não usou o Laço de Sangue.
+- [x] **README da jogadora:** [[README - Herta Müller]], sem os segredos de Narrador (motivo real, culpa de Heinrich, motivo do Laço).
+- [x] **Plaza:** Herta hospedada lá; a comitiva sai em 30/12 para uma residência da Príncipe; Vincent encarregado dela; ligação leve com Khalid.
+- [ ] Validar os nomes e papéis propostos: **Teodoro Castellví** (Lasombra) e **Lorenz Kehl** (carniçal).
+- [ ] Qual residência de Panhard hospeda a comitiva (não precisa aparecer no one-shot).
 - [ ] Convicções, Touchstone e Ambição preenchidos a partir do texto: validar.
 - [ ] Geração de Heinrich (12ª, se Herta é 13ª).
 - [ ] **Nome:** Herta Müller é também o nome da escritora romeno-alemã, Nobel de Literatura em 2009, que escreveu sobre a polícia secreta romena. Pode ser homenagem ou coincidência; algum jogador pode reconhecer.
