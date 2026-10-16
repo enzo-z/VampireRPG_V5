@@ -2,7 +2,7 @@
 
 # Herta Müller
 
-> Ventrue · Camarilla · ex-diplomata do Ministério das Relações Exteriores alemão · Abraçada em Berlim no outono de 2021 · chega a Nova York como emissária da comitiva do sire · a mulher que não tinha preço, num mundo em que tudo se negocia
+> Ventrue · Camarilla · ex-diplomata do Ministério das Relações Exteriores alemão · Abraçada em Berlim no outono de 2021 · chega a Nova York acompanhando o sire e a comitiva dele · a mulher que não tinha preço, num mundo em que tudo se negocia
 
 ## Sumário
 - [[#Resumo]]
@@ -10,6 +10,7 @@
 - [[#Linha do Tempo]]
 - [[#Heinrich von Altenfeld, o sire]]
 - [[#A comitiva: por que vem a Nova York]]
+- [[#A corte de Nova York (resumo para a jogadora)]]
 - [[#Identidade, rede e recursos]]
 - [[#Relações]]
 - [[#Convicções e Touchstones]]
@@ -23,7 +24,7 @@
 ---
 
 ## Resumo
-Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um apartamento maior em troca, Herta cresceu em Göttingen ouvindo o avô, **Walter**, resumir a vida numa frase: *"Fui vendido duas vezes. Uma vez por um apartamento, outra vez por marcos alemães."* Aos onze anos decidiu que não teria preço, e nunca mudou de ideia. Virou diplomata, trabalhou com reassentamento de refugiados e ficou conhecida por duas coisas: ninguém conseguia comprá-la, e ela lia as pessoas melhor do que a maioria. No outono de 2021, num andar vazio do ministério, um homem a **Dominou** para assinar sem ler um documento irregular. Ela sangrou pelo nariz e manteve o não. Poucos dias depois, ele a Abraçou. Era **Heinrich von Altenfeld**, Ventrue de 1887, ex-diplomata do Império Alemão, que chama aquilo de admiração. No final de 2021, Herta chega a Nova York como assistente e emissária da comitiva europeia que Heinrich integra, sob uma fachada na **Missão Permanente da Alemanha junto à ONU**. Não vai por vontade própria, não conhece ninguém na cidade e não sabe o que a comitiva pretende.
+Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um apartamento maior em troca, Herta cresceu em Göttingen ouvindo o avô, **Walter**, resumir a vida numa frase: *"Fui vendido duas vezes. Uma vez por um apartamento, outra vez por marcos alemães."* Aos onze anos decidiu que não teria preço, e nunca mudou de ideia. Virou diplomata, trabalhou com reassentamento de refugiados e ficou conhecida por duas coisas: ninguém conseguia comprá-la, e ela lia as pessoas melhor do que a maioria. No outono de 2021, num andar vazio do ministério, um homem a **Dominou** para assinar sem ler um documento irregular. Ela sangrou pelo nariz e manteve o não. Poucos dias depois, ele a Abraçou. Era **Heinrich von Altenfeld**, Ventrue de 1887, ex-diplomata do Império Alemão, que chama aquilo de admiração. No final de 2021, Herta chega a Nova York acompanhando Heinrich e a comitiva europeia que ele integra, sob uma fachada na **Missão Permanente da Alemanha junto à ONU**. Não vai por vontade própria e não conhece ninguém na cidade. Sabe só o motivo público da viagem (observar como Nova York integrou os Lasombra à Camarilla), não o real.
 
 > Herta é uma estrangeira de passagem: não tem refúgio, aliados nem história em Nova York. Tudo o que a prende ali é Heinrich. A pergunta da personagem é a do avô: qual é o seu preço?
 
@@ -44,7 +45,7 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 | Residência | Onde a comitiva se hospeda; não tem Haven próprio |
 | Origem | Göttingen, Alemanha; família vinda de Erfurt (Alemanha Oriental) |
 | Idiomas | Alemão (nativo), Inglês, Francês (Linguistics), Russo (concedido pelo mestre) |
-| Ocupação mortal | Ex-diplomata (reassentamento de refugiados); hoje assistente e emissária com fachada na Missão Permanente da Alemanha junto à ONU |
+| Ocupação mortal | Ex-diplomata (reassentamento de refugiados); hoje, no papel, assistente na Missão Permanente da Alemanha junto à ONU. Na prática, acompanha Heinrich, sem papel ativo na comitiva |
 | Humanidade | 6 (7 − 1 do Pursuer; o campo está vazio na ficha) |
 | Avô | Walter, ex-preso político da Stasi, **vivo**, frágil, em Göttingen |
 | Mãe | Ingrid, em Göttingen |
@@ -74,7 +75,7 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 - **Semanas seguintes:** afastamento por "problemas de saúde". Ingrid e Walter notam que ela voltou diferente.
 
 ### Dezembro de 2021: Nova York
-- Chega com a comitiva, poucos dias antes do Réveillon. Heinrich a apresenta à corte de Hellene Panhard como sua **progênie e emissária**.
+- Chega com a comitiva, poucos dias antes do Réveillon. Pela 5ª Tradição (Hospitalidade), Heinrich a apresenta à corte de Hellene Panhard como sua **progênie**.
 - Tem **dois ou três meses** de não-vida. Ainda está aprendendo o que é.
 
 ---
@@ -91,7 +92,7 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 - **O paladar dele.** Heinrich só bebe de quem **acabou de cumprir uma ordem contra a própria consciência**: o funcionário que carimbou, o soldado que atirou, o gerente que demitiu. Ele se alimenta de obediência, e Herta come mentirosos. Ela ainda não decidiu o que isso diz sobre os dois.
 - **A lacuna.** Ele conta histórias de Bismarck, de Versalhes, da Guerra Fria. De 1933 a 1945 não diz nada. Herta reparou no buraco e não sabe o que tem dentro.
 - **Nunca mais a Dominou.** Desde o Abraço, ele dá ordens só com palavras e espera. Ela não sabe se é respeito ou um teste que continua.
-- **Nunca propôs o Laço de Sangue.** Herta já sabe o que é. Não sabe por que ele não a prendeu. (A resposta do Narrador: uma emissária vinculada ao sire não serve como alguém em quem **todos os lados** confiem. Ver [[#A comitiva: por que vem a Nova York]].)
+- **Nunca propôs o Laço de Sangue.** Herta já sabe o que é. Não sabe por que ele não a prendeu. (A resposta do Narrador: uma intermediária vinculada ao sire não serve como alguém em quem **todos os lados** confiem. Ver [[#A comitiva: por que vem a Nova York]].)
 
 **Como é a relação:**
 - **Formal.** Eles se tratam por *Sie*: ele a chama de *Frau Müller*, ela o chama de *Herr von Altenfeld*. Ele nunca disse "filha".
@@ -100,16 +101,56 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 
 ## A comitiva: por que vem a Nova York
 
-> A jogadora deixou ao mestre: a comitiva está **negociando com a Camarilla local**, e Heinrich quer alguém em quem **todos os lados possam confiar**. Herta **não sabe** o que se negocia. Abaixo, três motivos possíveis; recomendo o primeiro.
+> ✅ Decidido pelo Narrador: a comitiva tem um **motivo público**, que Herta conhece, e um **motivo real**, que ela não conhece. Herta **acompanha** Heinrich; não tem papel ativo na comitiva.
 
-1. **⭐ Reassentamento de Kindred europeus (recomendado).** Desde 2008 a **Segunda Inquisição** destrói cortes inteiras na Europa, e os anciões que sobram querem atravessar o Atlântico. A comitiva negocia com a Príncipe **Hellene Panhard** quantos Kindred europeus Nova York aceita receber, onde vão caçar e quanto vão dever. A fachada na ONU é o meio: imunidade diplomática, carros que a polícia não revista, malas diplomáticas que ninguém abre.
-   - **Por que Herta:** Heinrich não escolheu só uma incorruptível. Escolheu uma **especialista em reassentamento de refugiados**, a profissão dela em vida.
-   - **O peso na personagem:** a negociação troca gente por favores. É o *"Fui vendido duas vezes"* de Walter repetido com Kindred, e Herta vai estar na mesa como a intermediária.
-2. **Os Lasombra na Camarilla.** O clã entrou para a seita há pouco, e Nova York já tem uma Primogen Lasombra (**Julia Sowinski**, desde 2019; ver [[Camarilla em Nova York]]). A corte de Berlim quer ver como a cidade integrou o antigo inimigo antes de aceitar o mesmo em casa. Uma emissária sem passado na seita é uma observadora que ninguém acusa de parcialidade.
-3. **A cidade depois de Callihan.** O líder Anarch morreu em março de 2020, e os Ventrue europeus querem saber se Nova York está estável o bastante para seus interesses financeiros. A comitiva veio auditar a corte de Panhard, e Herta redige os relatórios.
+**O motivo público (Herta sabe): os Lasombra na Camarilla.**
+- Parte dos Lasombra desertou para a Camarilla há pouco (a negociação foi em 2018), e Nova York já tem uma **Primogen Lasombra**, **Julia Sowinski**, uma neonata Abraçada em 2019 (ver [[Camarilla em Nova York]]).
+- A corte de Berlim quer ver **como a cidade integrou o antigo inimigo** antes de aceitar o mesmo em casa. É isso que a comitiva diz à corte de Panhard, e é isso que Heinrich disse a Herta.
 
-- 💡 **A pista que Herta tem:** na viagem, Heinrich pediu a ela um resumo dos **programas de reassentamento da ONU**. Ela não entendeu por quê.
-- **Para o one-shot:** a comitiva fica **ao fundo**. Herta é a única dela que interage com a coterie; o resto não precisa aparecer em cena.
+**O motivo real (Herta não sabe): o reassentamento de Kindred europeus.**
+- Desde 2008 a **Segunda Inquisição** destrói cortes inteiras na Europa, e os Kindred que sobram querem atravessar o Atlântico. A comitiva sonda a Príncipe **Hellene Panhard** sobre quantos Kindred europeus Nova York aceitaria receber, onde iriam caçar e quanto deveriam. Os Lasombra são a conversa de fachada.
+- **O meio:** a fachada na ONU dá imunidade diplomática, carros que a polícia não revista e malas diplomáticas que ninguém abre.
+- **Por que Herta:** Heinrich não escolheu só uma incorruptível. Escolheu uma **especialista em reassentamento de refugiados**, a profissão dela em vida. Ele a quer pronta para quando a negociação real vier à mesa, e é por isso que não a prendeu com o Laço de Sangue.
+- **O peso na personagem:** a negociação troca gente por favores. É o *"Fui vendido duas vezes"* de Walter repetido com Kindred.
+
+**A única pista de Herta:** na viagem, Heinrich pediu a ela um **resumo dos programas de reassentamento da ONU**. Ela fez o resumo e não entendeu por quê.
+
+- **Para o one-shot:** a comitiva fica **ao fundo** e não precisa aparecer em cena. Herta é a única dela que cruza com a coterie.
+
+---
+
+## A corte de Nova York (resumo para a jogadora)
+
+> Base para o futuro README da Herta: a jogadora é nova e precisa saber o que cada cargo faz e quem o ocupa. Entram só nomes **confirmados pelo Narrador** e só o que é **público** na corte. Os segredos (laços de sangue, intrigas, quem matou quem) ficam em [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]].
+
+**Como funciona.** A Camarilla governa cada cidade como uma pequena corte. O **Príncipe** manda. Os **Primogen** formam o conselho dos clãs e aconselham o Príncipe. Os **oficiais** (Xerife, Scourge, Herald e os outros) fazem a corte funcionar. Os encontros acontecem no **Elysium**, território neutro onde a violência é proibida; em Nova York é o **Art Hole**, no Queens. As leis são as **Seis Tradições** ([[Camarilla#Regras Fundamentais da Camarilla|Camarilla]]).
+
+| Cargo | O que faz | Quem ocupa em Nova York (2021) |
+|---|---|---|
+| **Príncipe** | Governa a cidade com autoridade quase absoluta. Autoriza Abraços, recebe quem chega e pode decretar uma Caçada de Sangue | **Hellene Panhard**, Ventrue, desde cerca de 2005 |
+| **Senescal** | Braço direito do Príncipe, geralmente o possível sucessor | Sem nome conhecido |
+| **Xerife** | Mantém a ordem e faz cumprir as Tradições: investiga, prende e pune | **Qadir al-Asmai**, Toreador, ex-Arconte |
+| **Scourge** (Algoz) | Elimina intrusos e quem ameaça a ordem; em Nova York, caça sobretudo os thin-bloods (Sangue Ralo) | **Valerie Duval**, Ventrue, neonata |
+| **Herald** (antiga Harpia) | Cuida da reputação: quem está em alta, quem caiu, quem deve favores a quem. Uma palavra dele faz ou desfaz alguém na corte | **Thomas Arturo**, Toreador; tem influência comparável à de um Primogen |
+| **Guardião do Elysium** | Zela pelo Elysium e pela trégua que vale lá dentro | Sem nome conhecido |
+| **Primogen** | Conselho de representantes dos clãs perante o Príncipe; cada clã tem o seu | Ver a tabela abaixo |
+| **Alta Regente** (Tremere) | Líder dos Tremere da cidade. Responde à hierarquia do próprio clã, não à corte | **Aisling Sturbridge**, na Capela dos Cinco Distritos |
+
+| Clã | Primogen |
+|---|---|
+| Lasombra | **Julia Sowinski**, neonata Abraçada em 2019, ex-jornalista; começou como "representante" do clã |
+| Banu Haqim | **Samira** |
+| Brujah | **Katherine Weiss**, da ala que ficou leal à Camarilla (a maioria dos Brujah saiu da seita em 2012) |
+| Toreador | Nenhum em 2021; Arturo e Qadir, ambos Toreador, são as maiores autoridades do clã |
+| Ventrue, Nosferatu, Malkaviano, thin-blood | Sem nome conhecido |
+| Gangrel | Nenhum: os Gangrel deixaram a Camarilla |
+
+**O que mais importa para a Herta:**
+- **5ª Tradição, a Hospitalidade.** Quem chega a uma cidade se apresenta ao Príncipe; sem a aceitação dele, não é nada. Heinrich a apresentou a **Panhard**, que é do mesmo clã dela.
+- **4ª Tradição, a Responsabilidade.** Até ser "liberada", a progênie responde ao sire, e os erros dela são dele. O que Herta fizer em Nova York cai na conta de Heinrich.
+- **Julia Sowinski** é o pretexto público da comitiva. A corte vai supor que Herta está ali para observá-la.
+- **Thomas Arturo** é quem mais oferece favores e cobra depois: o rosto mais provável da "oferta de poder".
+- **Qadir al-Asmai** é quem pune se ela quebrar uma Tradição.
 
 ---
 
@@ -128,11 +169,11 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 
 | Pessoa / Grupo | Natureza | Estado atual |
 |---|---|---|
-| Heinrich von Altenfeld | Sire | Formal; ele a apresenta como emissária. Ver [[#Heinrich von Altenfeld, o sire]] |
+| Heinrich von Altenfeld | Sire | Formal; ela o acompanha. Ver [[#Heinrich von Altenfeld, o sire]] |
 | Walter | Avô, ex-preso da Stasi, Touchstone | Vivo, frágil, em Göttingen; percebeu que ela voltou diferente |
 | Ingrid | Mãe | Em Göttingen; percebeu que ela voltou diferente |
-| A comitiva europeia | A quem ela serve em Nova York | Herta não sabe o que negociam |
-| Missão Permanente da Alemanha junto à ONU | Fachada mortal (Mask 2) | Assistente e emissária |
+| A comitiva europeia | Grupo que Heinrich integra | Herta conhece só o motivo público (os Lasombra); não tem papel ativo |
+| Missão Permanente da Alemanha junto à ONU | Fachada mortal (Mask 2) | Assistente, no papel |
 | Coterie | Nenhuma ligação | Recém-chegada; conhece os outros PCs no one-shot |
 
 ---
@@ -171,7 +212,7 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 > Os campos de Ambição e Desejo estão vazios; leituras do texto, para validar com a jogadora.
 
 - **Ambição:** fazer a Camarilla proteger os humanos em vez de explorá-los (*"uma ideia ingênua e perigosa, mas é minha"*).
-- **Desejo** para a noite: descobrir o que a comitiva veio negociar.
+- **Desejo** para a noite: descobrir por que Heinrich quis o resumo dos programas de reassentamento.
 
 ---
 
@@ -197,7 +238,7 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 - **A família não sabe.** Walter e Ingrid acham que ela teve "problemas de saúde", e os dois desconfiam.
 - **Resistiu à Dominação de um ancião ainda mortal.** Se isso vazar na corte, vira curiosidade, ameaça ou moeda.
 - **Caça mentirosos.** Para comer, confirma traições. Isso produz informação, e alguém pode se interessar por quem ela escolhe.
-- **É emissária de uma missão cujo objetivo desconhece.**
+- **Acompanha uma missão cujo objetivo real desconhece.** Conhece só a fachada (os Lasombra) e tem uma pista (o resumo de reassentamento).
 - **O medo do preço.** Tem medo de descobrir que também tinha um, e de se tornar o colega que denunciou o avô.
 
 ---
@@ -212,7 +253,7 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 - ✅ **Alimentação.** Cada caçada é uma investigação: achar e confirmar uma mentira com vítima.
 - ✅ **Oferta de poder.** A Camarilla local tenta comprá-la com poder ou favores.
 - 💡 **A ligação da meia-noite.** No Réveillon de Nova York já é manhã de 1º de janeiro em Göttingen. Ingrid liga para desejar feliz ano-novo no meio da ação.
-- 💡 **O preço do reassentamento.** Se a comitiva veio negociar Kindred deslocados, alguém da corte oferece a Herta um favor em troca de influenciar os números. É a oferta de poder com o rosto de Walter.
+- 💡 **Acham que ela sabe.** Alguém da corte que já farejou o motivo real oferece a Herta um favor para "influenciar os números" do reassentamento. Ela não sabe do que estão falando, e é assim que descobre. É a oferta de poder com o rosto de Walter.
 
 ---
 
@@ -224,7 +265,9 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 - [x] **Dominate:** mantidas as Disciplinas de clã da ficha (Fortitude e Presence); a menção no texto foi adaptada (ver [[#Paladar Raro: Bane e Compulsion]]).
 - [x] **Walter:** vivo.
 - [ ] **Atualizar a ficha:** marcar Stunning com 4 pontos, Humanidade 6, o Russo como idioma concedido, e corrigir o texto da Bane ("costs 0" → custo igual à Bane Severity, 2).
-- [ ] Validar com a jogadora o que Herta descobriu sobre Heinrich e o motivo da comitiva.
+- [x] **Comitiva:** motivo público os Lasombra (Herta sabe), motivo real o reassentamento (Herta só tem a pista); ela acompanha, sem papel ativo.
+- [ ] Validar com a jogadora o que Herta descobriu sobre Heinrich.
+- [ ] **README da jogadora:** criar a partir de [[#A corte de Nova York (resumo para a jogadora)]], sem os segredos de Narrador: o motivo real da comitiva, a culpa de Heinrich nos anos 1930 (ela só sabe que há uma lacuna) e por que ele não usou o Laço de Sangue.
 - [ ] Convicções, Touchstone e Ambição preenchidos a partir do texto: validar.
 - [ ] Geração de Heinrich (12ª, se Herta é 13ª).
 - [ ] **Nome:** Herta Müller é também o nome da escritora romeno-alemã, Nobel de Literatura em 2009, que escreveu sobre a polícia secreta romena. Pode ser homenagem ou coincidência; algum jogador pode reconhecer.
