@@ -397,6 +397,107 @@ describe("Vincent's page", () => {
   });
 });
 
+function gusman(): Ficha {
+  const ficha = createFicha('gusman', 'Gusman Gutierrez', 'Oliveira');
+  ficha.identity = { ...ficha.identity, predatorType: 'Bagger', generation: '13th' };
+  ficha.attributes.charisma = 4;
+  ficha.attributes.manipulation = 3;
+  ficha.attributes.wits = 3;
+  ficha.attributes.resolve = 3;
+  ficha.skills.streetwise = 3;
+  ficha.skills.persuasion = 3;
+  ficha.skills.insight = 3;
+  ficha.specs.persuasion = 'Bargaining';
+  ficha.disciplines[0] = { name: 'Presence', value: 1, powers: [{ name: 'Awe', note: '' }] };
+  ficha.disciplines[1] = {
+    name: 'Obfuscate',
+    value: 3,
+    powers: [
+      { name: 'Chimerstry', note: '' },
+      { name: 'Unseen Passage', note: '' },
+      { name: 'Cloak of Shadows', note: '' },
+    ],
+  };
+  return ficha;
+}
+
+describe("Gusman's page", () => {
+  const cola = buildPlayerCola(gusman(), catalogs);
+  const lore = findPlayerCola(catalogs.playerColas, 'Gusman Gutierrez');
+  const blocks = lore?.blocks ?? [];
+  const summary = (name: string) =>
+    cola.disciplines.flatMap((discipline) => discipline.powers).find((power) => power.name === name)?.summaryHtml ?? '';
+  const entry = (title: string, term: string) =>
+    JSON.stringify(blocks.find((block) => block.title === title)?.entries.find((candidate) => candidate.term.includes(term)));
+
+  it('finds every power of the sheet and the lore note, with no warnings', () => {
+    expect(cola.warnings).toEqual([]);
+    const powers = cola.disciplines.flatMap((discipline) => discipline.powers);
+    expect(powers.map((power) => power.name)).toEqual(['Awe', 'Chimerstry', 'Unseen Passage', 'Cloak of Shadows']);
+    for (const power of powers) expect(power.summaryHtml, power.name).not.toBeNull();
+  });
+
+  it('keeps the rules that matter in the summaries', () => {
+    expect(summary('Chimerstry')).toContain('−2 dados');
+    expect(summary('Unseen Passage')).toContain('Rouse Check');
+    expect(summary('Cloak of Shadows')).toContain('Parado');
+  });
+
+  it('lists the strong pools with the best attribute', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
+      ['Insight', 6],
+      ['Persuasion', 7],
+      ['Streetwise', 7],
+    ]);
+  });
+
+  it('builds the lore note without errors, with the blocks the page places by title', () => {
+    expect(playerColas.errors).toEqual([]);
+    expect(playerColas.warnings).toEqual([]);
+    const titles = blocks.map((block) => block.title);
+    const expected = ['A corte de Nova York', 'NPCs que você conhece', 'Jogadores (a coterie)', 'Facções e organizações', 'Nova York por distrito'];
+    for (const title of expected) expect(titles, title).toContain(title);
+    for (const block of blocks) expect(block.entries.length, block.title).toBeGreaterThan(0);
+  });
+
+  it('shows the mark as a possible Sabbat sign, and Iggy as only very strange', () => {
+    const mark = entry('Facções e organizações', 'marca');
+    expect(mark).toContain('Sabbat');
+    expect(mark).toContain('devanágari');
+    const iggy = entry('NPCs que você conhece', 'Iggy');
+    expect(iggy).toContain('relógios quebrados');
+    expect(iggy).toContain('Relojoeiro');
+    expect(iggy).toContain('apenas bem estranho');
+    for (const hint of ['Kindred', 'vampiro']) expect(iggy, hint).not.toContain(hint);
+  });
+
+  it('lists the quirks he lives as personal flaws, with the real name in the Unbirth Name entry', () => {
+    const titles = blocks.map((block) => block.title);
+    expect(titles).toContain('O que há de estranho em você');
+    const fate = entry('O que há de estranho em você', 'Tempting Fate');
+    expect(fate).toContain('−2 dados');
+    const name = entry('O que há de estranho em você', 'Unbirth Name');
+    expect(name).toContain('Julian Jiménez');
+    expect(name).toContain('Gideon');
+    expect(entry('O que há de estranho em você', 'Alho')).toContain('Folkloric Bane');
+  });
+
+  it('tells the 2017 scam of the Italians and briefly explains the Anarchs', () => {
+    const scam = entry('Facções e organizações', 'italianos');
+    for (const term of ['Submariner', 'Bellandi', 'Tic-Tac', 'Mike']) expect(scam, term).toContain(term);
+    const anarchs = entry('Facções e organizações', 'Anarquistas');
+    for (const term of ['Camarilla', 'Bronx', 'Staten Island']) expect(anarchs, term).toContain(term);
+  });
+
+  it("keeps Gusman's secrets and what he cannot know off the printed sheet", () => {
+    const text = JSON.stringify(blocks);
+    const secrets = ['Ravnos', 'plaquinha', 'quarto'];
+    const unknownToHim = ['Heinrich', 'Elias', 'Nizar', 'Dragomir', 'Orozco', 'Polonia', 'Semana de Pesadelos'];
+    const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
+    for (const term of [...secrets, ...unknownToHim, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+});
+
 describe('SKILL_ATTRIBUTES', () => {
   it('pairs every skill with attributes of the groups the book uses', () => {
     expect(Object.keys(SKILL_ATTRIBUTES).sort()).toEqual([...SKILL_KEYS].sort());
