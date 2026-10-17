@@ -62,6 +62,7 @@ Ao provar uma gota de sangue, o usuário pode discernir certos traços básicos 
 >- **Duração**: Não possui (ler abaixo)
 >
 >- **Dice Pool**: Resolve + Blood Sorcery
+>- **Cola**: Prove uma gota de sangue e role Resolve + Blood Sorcery (Dif. 3). Com sucesso, revela a Resonance e a intensidade (se humano) e se é mortal, ghoul, vampiro ou outra criatura; no sangue de vampiro, mostra a Blood Potency relativa (a faixa de geração). Um crítico revela se já cometeu diablerie e a geração (±1).
 >
 >- **Sistema**:
 >  O usuário toca o sangue em sua língua e realiza um teste de [[Character#Resolve|Resolve]] + Feitiçaria de Sangue (seu nível em Blood Sorcery) - (Dificuldade 3).

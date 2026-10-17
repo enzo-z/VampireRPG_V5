@@ -81,6 +81,7 @@ A maestria em Celerity agora permite ao vampiro se mover e reagir com velocidade
 > - **Custo**: One Rouse Check
 > - **Dice Pool**: Não possui (bônus automático)
 > - **Duração**: Uma cena
+> - **Cola**: Um Rouse Check; dura a cena. Soma seu nível de Celerity a testes de Dexterity que não sejam de combate. Uma vez por turno, também ao se defender com Dexterity + Athletics.
 >
 > - **Sistema**:
 >   Adicione o rating de Celerity à pool do usuário em testes de Dexterity que não sejam de combate. Uma vez por turno, o usuário também pode fazer isso ao se defender com Dexterity + Athletics.
