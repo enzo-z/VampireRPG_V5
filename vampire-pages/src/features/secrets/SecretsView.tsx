@@ -3,7 +3,8 @@ import { useSecretsCatalog } from './useSecretsCatalog.ts';
 import type { SecretsLock } from './useSecretsLock.ts';
 import styles from './SecretsView.module.css';
 
-function PasswordForm({ lock }: { lock: SecretsLock }) {
+/** The narrator's password; it also opens the New York map. */
+export function PasswordForm({ lock }: { lock: SecretsLock }) {
   const [password, setPassword] = useState('');
   const [wrong, setWrong] = useState(false);
 
@@ -68,6 +69,15 @@ function DocumentList({ onOpen }: { onOpen: (slug: string) => void }) {
   );
 }
 
+export function PasswordNotConfigured() {
+  return (
+    <p className={styles.muted}>
+      Nenhuma senha definida. Crie o arquivo <code>vampire-pages/.env.local</code> com a linha <code>SECRETS_PASSWORD=sua senha</code> e reinicie o
+      app (<code>npm run dev</code>).
+    </p>
+  );
+}
+
 /** "Segredos": behind a front-end password, the documents each player gets about their character. */
 export function SecretsView({ lock, onOpen }: { lock: SecretsLock; onOpen: (slug: string) => void }) {
   return (
@@ -84,10 +94,7 @@ export function SecretsView({ lock, onOpen }: { lock: SecretsLock; onOpen: (slug
       </header>
       <p className={styles.lead}>O que cada personagem sabe, para imprimir e entregar só ao seu jogador.</p>
       {!lock.configured ? (
-        <p className={styles.muted}>
-          Nenhuma senha definida. Crie o arquivo <code>vampire-pages/.env.local</code> com a linha <code>SECRETS_PASSWORD=sua senha</code> e
-          reinicie o app (<code>npm run dev</code>).
-        </p>
+        <PasswordNotConfigured />
       ) : lock.unlocked ? (
         <DocumentList onOpen={onOpen} />
       ) : (

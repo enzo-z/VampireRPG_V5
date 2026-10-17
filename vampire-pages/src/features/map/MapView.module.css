@@ -628,6 +628,22 @@
   color: var(--color-text-subtle);
 }
 
+/* ---------- Password gate ---------- */
+
+.gate {
+  display: grid;
+  gap: var(--space-3);
+  max-inline-size: 40rem;
+  padding: var(--space-5);
+}
+
+.gateText {
+  padding: var(--space-5);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .borough {
     transition: none;

@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
 import type { Ficha } from '../domain/character.ts';
-import { BookIcon, ChevronLeftIcon, ChevronRightIcon, DieIcon, ListIcon, LockIcon, TableIcon } from '../ui/icons.tsx';
+import { BookIcon, ChevronLeftIcon, ChevronRightIcon, DieIcon, ListIcon, LockIcon, MapIcon, TableIcon } from '../ui/icons.tsx';
 import styles from './Sidebar.module.css';
 
-export type ShellView = 'mesa' | 'sheet' | 'secrets';
+export type ShellView = 'mesa' | 'sheet' | 'secrets' | 'map';
 
 interface SidebarProps {
   open: boolean;
@@ -19,6 +19,8 @@ interface SidebarProps {
   onCola: () => void;
   /** Opens "Segredos", the password-gated player documents. */
   onSecrets: () => void;
+  /** Opens the New York map, behind the same password. */
+  onMap: () => void;
 }
 
 /** "Nina Blue Calloway" → "NB"; a copy keeps its number: "Nina (1)" → "N1". */
@@ -64,8 +66,8 @@ function NavItem({ icon, label, current, disabled, note, onClick, open }: {
   );
 }
 
-/** Collapsible main menu: Fichas (Mesa and every ficha), Mesa de jogo, Narrador; Vault and Backlog (later). */
-export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha, onCola, onSecrets }: SidebarProps) {
+/** Collapsible main menu: Fichas (Mesa and every ficha), Mesa de jogo, Narrador (Segredos, Mapa de NY); Vault and Backlog (later). */
+export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha, onCola, onSecrets, onMap }: SidebarProps) {
   return (
     <nav
       id="main-menu"
@@ -125,6 +127,7 @@ export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa
 
       {open && <p className={styles.group}>Narrador</p>}
       <NavItem icon={<LockIcon />} label="Segredos" current={view === 'secrets'} onClick={onSecrets} open={open} />
+      <NavItem icon={<MapIcon />} label="Mapa de NY" current={view === 'map'} onClick={onMap} open={open} />
 
       <div className={styles.later}>
         <NavItem icon={<BookIcon />} label="Vault" note="em breve" disabled open={open} />

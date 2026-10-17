@@ -143,7 +143,15 @@ export const MenuIcon = () => (
   </Icon>
 );
 
-/** A ten-sided die, for the player's cheat sheet. */
+/** A folded map, for the New York map. */
+export const MapIcon = () => (
+  <Icon>
+    <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z" />
+    <path d="M8 2v16" />
+    <path d="M16 6v16" />
+  </Icon>
+);
+
 export const LockIcon = () => (
   <Icon>
     <rect x="5" y="11" width="14" height="10" rx="2" />
@@ -151,6 +159,7 @@ export const LockIcon = () => (
   </Icon>
 );
 
+/** A ten-sided die, for the player's cheat sheet. */
 export const DieIcon = () => (
   <Icon>
     <path d="M12 2l9 9.5-9 10.5-9-10.5z" />

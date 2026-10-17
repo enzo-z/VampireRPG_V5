@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ColaView } from '../features/cola/ColaView.tsx';
+import { MapPage } from '../features/map/MapPage.tsx';
 import { MesaView } from '../features/mesa/MesaView.tsx';
 import { PrintView } from '../features/print/PrintView.tsx';
 import { SecretDocView } from '../features/secrets/SecretDocView.tsx';
@@ -54,6 +55,10 @@ function AppContent() {
     setView({ name: 'secrets' });
     sidebar.closeIfNarrow();
   };
+  const openMap = () => {
+    setView({ name: 'map' });
+    sidebar.closeIfNarrow();
+  };
 
   if (view.name === 'cola') {
     const colaFicha = state.fichas.find((ficha) => ficha.id === view.fichaId);
@@ -88,9 +93,17 @@ function AppContent() {
 
   // A secret document opened while locked falls back to the password form.
   const shellView: ShellView =
-    view.name === 'secrets' || view.name === 'secret' ? 'secrets' : view.name === 'sheet' && active !== null ? 'sheet' : 'mesa';
+    view.name === 'secrets' || view.name === 'secret'
+      ? 'secrets'
+      : view.name === 'map'
+        ? 'map'
+        : view.name === 'sheet' && active !== null
+          ? 'sheet'
+          : 'mesa';
   const content =
-    shellView === 'secrets' ? (
+    shellView === 'map' ? (
+      <MapPage lock={secrets} />
+    ) : shellView === 'secrets' ? (
       <SecretsView lock={secrets} onOpen={(slug) => setView({ name: 'secret', slug })} />
     ) : state.fichas.length === 0 ? (
       <section className={styles.empty}>
@@ -125,6 +138,7 @@ function AppContent() {
         onMesa={openMesa}
         onCola={() => setView({ name: 'cola' })}
         onSecrets={openSecrets}
+        onMap={openMap}
         onFicha={openFicha}
       />
       {sidebar.narrow && sidebar.open && (
@@ -132,7 +146,7 @@ function AppContent() {
       )}
       <div className={styles.main}>
         <AppBar
-          title={shellView === 'sheet' ? 'Ficha' : shellView === 'secrets' ? 'Segredos' : 'Mesa'}
+          title={shellView === 'sheet' ? 'Ficha' : shellView === 'secrets' ? 'Segredos' : shellView === 'map' ? 'Mapa de NY' : 'Mesa'}
           readOnly={readOnly}
           onToggleReadOnly={() => setReadOnly((value) => !value)}
           onOpenMenu={sidebar.narrow ? sidebar.toggle : null}
