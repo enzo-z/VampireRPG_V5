@@ -125,6 +125,87 @@ describe("Gideon's lore note", () => {
   });
 });
 
+function herta(): Ficha {
+  const ficha = createFicha('herta', 'Herta Müller', 'Rebeca');
+  ficha.identity = { ...ficha.identity, clan: 'Ventrue', predatorType: 'Pursuer', generation: '13th' };
+  ficha.attributes.composure = 4;
+  ficha.attributes.charisma = 3;
+  ficha.skills.insight = 4;
+  ficha.skills.investigation = 3;
+  ficha.skills.persuasion = 3;
+  ficha.skills.politics = 3;
+  ficha.specs.insight = 'mentiras';
+  ficha.disciplines[0] = {
+    name: 'Fortitude',
+    value: 2,
+    powers: [
+      { name: 'Unswayable Mind', note: '' },
+      { name: 'Resilience', note: '' },
+    ],
+  };
+  ficha.disciplines[1] = { name: 'Presence', value: 1, powers: [{ name: 'Awe', note: '' }] };
+  ficha.disciplines[2] = { name: 'Auspex', value: 1, powers: [{ name: 'Heightened Senses', note: '' }] };
+  return ficha;
+}
+
+describe("Herta's page", () => {
+  const cola = buildPlayerCola(herta(), catalogs);
+  const lore = findPlayerCola(catalogs.playerColas, 'Herta Müller');
+  const blocks = lore?.blocks ?? [];
+
+  it('finds every power of the sheet and the lore note, with no warnings', () => {
+    expect(cola.warnings).toEqual([]);
+    const powers = cola.disciplines.flatMap((discipline) => discipline.powers);
+    expect(powers.map((power) => power.name)).toEqual(['Unswayable Mind', 'Resilience', 'Awe', 'Heightened Senses']);
+    for (const power of powers) expect(power.summaryHtml, power.name).not.toBeNull();
+  });
+
+  it('keeps the rules that matter in the summaries', () => {
+    const summary = (name: string) =>
+      cola.disciplines.flatMap((discipline) => discipline.powers).find((power) => power.name === name)?.summaryHtml ?? '';
+    expect(summary('Unswayable Mind')).toContain('Dominate');
+    expect(summary('Awe')).toContain('Composure + Intelligence');
+    expect(summary('Heightened Senses')).toContain('−3 dados');
+  });
+
+  it('lists the strong pools, best first', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
+      ['Insight', 8],
+      ['Persuasion', 7],
+      ['Investigation', 7],
+      ['Politics', 7],
+    ]);
+  });
+
+  it('builds the lore note without errors, with the blocks the page places by title', () => {
+    expect(playerColas.errors).toEqual([]);
+    expect(playerColas.warnings).toEqual([]);
+    const titles = blocks.map((block) => block.title);
+    const expected = ['A corte de Nova York', 'NPCs que você conhece', 'Jogadores (a coterie)', 'Facções e organizações', 'Nova York por distrito'];
+    for (const title of expected) expect(titles, title).toContain(title);
+    for (const block of blocks) expect(block.entries.length, block.title).toBeGreaterThan(0);
+  });
+
+  it("keeps Herta's secrets and what she cannot know off the printed sheet", () => {
+    const text = JSON.stringify(blocks);
+    const secrets = ['Walter', 'Ingrid', 'Göttingen', 'Stasi', 'reassentamento', 'Nizar', 'Dragomir', 'Segunda Inquisição'];
+    const unknownToHer = ['Ravnos', 'Jiménez', 'Caitiff', 'Nathan', 'Cordelia', 'Elias'];
+    const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
+    for (const term of [...secrets, ...unknownToHer, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+
+  it('only names the characters she has not met, with nothing else about them', () => {
+    const others = blocks
+      .find((block) => block.title === 'Jogadores (a coterie)')
+      ?.entries.find((entry) => entry.term.includes('outros personagens'));
+    const text = JSON.stringify(others);
+    for (const name of ['Gideon Nicols', 'Daniel Mercer', 'Nina Calloway', 'Gusman Gutierrez', 'Jesse Calloway']) {
+      expect(text, name).toContain(name);
+    }
+    expect(text).toContain('não sabe nada');
+  });
+});
+
 describe('isShortField', () => {
   it('accepts a one-line fact and rejects a field with a rules sub-paragraph', () => {
     expect(isShortField('Um <strong>Rouse Check</strong>.')).toBe(true);

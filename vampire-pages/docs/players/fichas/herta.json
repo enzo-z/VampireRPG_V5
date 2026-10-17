@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 3,
+  "fichas": [
+    {
+      "id": "herta",
+      "name": "Herta Müller",
+      "identity": {
+        "player": "Rebeca",
+        "chronicle": "NY By Night",
+        "clan": "Ventrue",
+        "predatorType": "Pursuer",
+        "ambition": "",
+        "sect": "Camarilla",
+        "generation": "13th",
+        "desire": ""
+      },
+      "attributes": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 3,
+        "manipulation": 3,
+        "composure": 4,
+        "intelligence": 3,
+        "wits": 2,
+        "resolve": 2
+      },
+      "skills": {
+        "athletics": 0,
+        "brawl": 0,
+        "craft": 0,
+        "drive": 0,
+        "firearms": 0,
+        "larceny": 0,
+        "melee": 0,
+        "stealth": 1,
+        "survival": 0,
+        "animalKen": 0,
+        "etiquette": 2,
+        "insight": 4,
+        "intimidation": 0,
+        "leadership": 0,
+        "performance": 0,
+        "persuasion": 3,
+        "streetwise": 1,
+        "subterfuge": 1,
+        "academics": 2,
+        "awareness": 2,
+        "finance": 0,
+        "investigation": 3,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 3,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "academics": "Direito Internacional",
+        "insight": "mentiras",
+        "investigation": "Profiling"
+      },
+      "disciplines": [
+        {
+          "name": "Fortitude",
+          "value": 2,
+          "powers": [
+            {
+              "name": "Unswayable Mind",
+              "note": ""
+            },
+            {
+              "name": "Resilience",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Presence",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Awe",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Auspex",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Heightened Senses",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 7,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 6,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 0,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 1,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "1 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "2",
+        "clanBane": "Rarefied Tastes: só bebe de quem, naquele momento, trai uma confiança com uma mentira que tem vítima. Beber de qualquer outra pessoa custa 2 (bane severity) de Willpower.",
+        "clanCompulsion": "Arrogance: Until somebody obeys an order from you (not forced by Dominate), you take a two-dice penalty on all rolls not related to leadership."
+      },
+      "advantages": [
+        {
+          "category": "merit",
+          "name": "Stunning",
+          "level": 4,
+          "note": ""
+        },
+        {
+          "category": "merit",
+          "name": "Linguistics",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "merit",
+          "name": "Mask",
+          "level": 2,
+          "note": ""
+        },
+        {
+          "category": "merit",
+          "name": "Bloodhound",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 1,
+          "note": ""
+        },
+        {
+          "category": "flaw",
+          "name": "Enemy",
+          "level": 2,
+          "note": ""
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Ninguém tem preço.\nPrefiro perder tudo a ceder.",
+        "touchstones": "Walter (avô, Göttingen) → Ninguém tem preço."
+      },
+      "profile": {
+        "sire": "Heinrich von Altenfeld",
+        "birthday": "",
+        "age": "31",
+        "embraced": "Outono de 2021, Berlim",
+        "apparentAge": "31",
+        "description": "",
+        "concept": "Ex-diplomata incorruptível, Abraçada pelo homem que não conseguiu dobrá-la.",
+        "photo": ""
+      },
+      "notes": "REVISAR: ficha convertida à mão do PDF da Rebeca. Stunning 4, Humanidade 6, Russo concedido e custo 2 da Bane seguem a nota do Narrador (o PDF tem Stunning 2, Humanidade vazia e Bane \"costs 0\"). Convicções e Touchstone vêm do texto de apresentação; o campo Embraced do PDF dizia \"31\" (erro).\nIdiomas: alemão, inglês, francês, russo."
+    }
+  ]
+}
