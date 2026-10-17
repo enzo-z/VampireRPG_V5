@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import { buildNyMap } from '../../vite/buildNyMap.ts';
+import { BOROUGH_SHAPES, EDGE_PLACES } from '../features/map/geometry.ts';
 
 // Contract between the map note ("Narrador/Nova York/Mapa de Nova York.md") and the app's map.
 const NOTE = fileURLToPath(new URL('../../../Narrador/Nova York/Mapa de Nova York.md', import.meta.url));
@@ -21,6 +22,11 @@ describe('Mapa de Nova York note', () => {
     const ids = build.data?.points.map((point) => point.id) ?? [];
     expect(ids).toEqual(expect.arrayContaining(['plaza', 'washheights', 'portrichmond', 'arthole', 'portmorris']));
     expect(ids).not.toContain('odessa');
+  });
+
+  it('has an outline for every borough and a place for every edge arrow', () => {
+    for (const borough of build.data?.boroughs ?? []) expect(BOROUGH_SHAPES[borough.id], borough.id).toBeDefined();
+    expect(Object.keys(EDGE_PLACES).sort()).toEqual((build.data?.edges.map((edge) => edge.id) ?? []).sort());
   });
 
   it('leaves out names outside Elenco de Nova York', () => {
