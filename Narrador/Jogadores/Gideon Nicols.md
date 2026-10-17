@@ -92,7 +92,7 @@ Produtor teatral nascido em Nova York no início do século XX, Abraçado em 194
 - Acompanha discretamente a carreira de Mary Winchester, hoje chefe de um veículo de jornalismo investigativo em Nova York (onde trabalha **Leila Yusuf**, irmã de Khalid), com contatos esporádicos.
 - Figura influente nos círculos artísticos e políticos da sociedade vampírica de Nova York.
 - Atua nos bastidores em defesa dos interesses do Clã Toreador.
-- Coterie: avaliou e recomendou Vincent em 1999 (sensação de diablerie que guarda para si); sabe quem Daniel é e do papel dele no desvio de tropas; sabe que Samira foi a ponte de Khalid à corte. Ver [[Auld Sanguine - Laços entre Jogadores]].
+- Coterie: avaliou Vincent em 1999, junto com a sire Cordelia Vane, e o recomendou (sensação de diablerie que guarda para si); sabe quem Daniel é e do papel dele no desvio de tropas; sabe que Samira foi a ponte de Khalid à corte. Ver [[Auld Sanguine - Laços entre Jogadores]].
 
 ## Relações
 

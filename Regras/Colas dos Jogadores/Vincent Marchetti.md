@@ -80,7 +80,7 @@ Reivindica a cidade inteira, com a corte completa. Respeita você como herói de
 Dono da cidade por quase 300 anos, com um arcebispo e uma linha de bispos. **Lasombra** mandavam; **Tzimisce** eram a ala mística (foi quando seu sire comprou o Plaza). Quase não usava carniçais e vivia de um pacto com os Giovanni. Na Terceira Guerra Civil (1957–58) esmagou os Brujah "Loyalists"; os sem-clã viraram os **Panders**.
 
 ### Batalha de Nova York (1999)
-Cerca de uma semana, com o seu plano: o dinheiro do Sabbat derrubado na bolsa, os Giovanni comprados, os carniçais presos, a lista dos havens. **Incêndios de dia** acabaram com um quinto da seita; depois, Orozco e o cerco do Bronx.
+Cinco dias, com o seu plano: o dinheiro do Sabbat derrubado na bolsa, os Giovanni comprados, os carniçais presos, a lista dos havens. **Incêndios de dia** acabaram com um quinto da seita; depois, Orozco e o cerco do Bronx.
 
 ### Aliados e inimigos de 1999
 **Ventrue, Tremere e Toreador**, com **Giovanni (Hecata)** e **Setites**, lhe devem favores. Os **sobreviventes do Sabbat** fugiram com o arcebispo, **juraram voltar** e odeiam você.

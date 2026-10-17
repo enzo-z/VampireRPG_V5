@@ -3,7 +3,7 @@
 > Referência sobre **Nova York no Vampire: The Masquerade** para a one-shot **Auld Sanguine** (8 jogadores, sábado 17/10/2026).
 > Pesquisa de **15/10/2026** nos livros de V5 transcritos (worktree do Pedro, só leitura), nas notas do Pedro e nas notas do Narrador. Complementa [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]], que vieram de wikis e dos jogos da Draw Distance. Aqui o foco é **o que os livros dizem**.
 > Etiquetas: **(edição anterior)** = dado de livros anteriores a V5, que chega aqui pelas notas do Narrador; **(jogos V5)** = dado dos jogos *Coteries/Shadows/Reckoning of New York*, também pelas notas do Narrador; **[SUG]** = sugestão minha para a campanha.
-> **Achado principal:** nenhum livro de V5 transcrito traz um capítulo sobre Nova York nem nomeia a corte atual. Panhard, Qadir, Arturo, Julia, Valerie e Callihan **não aparecem em nenhum livro**: vêm só dos jogos. Os livros dão peças soltas: **Calebros** (ex-Príncipe), **Addison Payne** (Primogen Ventrue), **Ivan Kutkha** (Primogen Caitiff), **Aisling Sturbridge** (Regente), **Donatello Giovanni** (Hecata), a história da cidade no século XX e o entorno de Nova Jersey.
+> **Achado principal:** nenhum livro de V5 transcrito traz um capítulo sobre Nova York nem nomeia a corte atual. Panhard, Qadir, Arturo, Julia, Valerie e Callihan **não aparecem em nenhum livro**: vêm só dos jogos. Os livros dão peças soltas: **Calebros** (ex-Príncipe), **Addison Payne** (Primogen Ventrue) e **Ivan Kutkha** (Primogen Caitiff), ambos ❌ **descartados pelo Narrador** (17/10/2026), **Aisling Sturbridge** (Regente), **Donatello Giovanni** (Hecata), a história da cidade no século XX e o entorno de Nova Jersey.
 
 ## Sumário
 - [[#Fontes consultadas|Fontes consultadas]]
@@ -72,7 +72,7 @@
 1. **Nova York é um domínio grande da Camarilla**, com cerca de 50 Kindred, corte completa e mais de um Sheriff. *Courts of the Damned* usa a cidade como exemplo desse porte.
 2. **A Camarilla tomou a cidade do Sabbat por volta de 2000.** O Sabbat já considerou NY seu domínio; Malenkov, o "Khan" Lasombra, chegou a deixar a Camarilla local "em pedaços" antes de perder a cidade.
 3. **Calebros (Nosferatu) foi Príncipe** e hoje é "ex-Príncipe", ainda ativo e defensor ferrenho das Tradições. Os livros **não nomeiam** o Príncipe atual; a crônica usa **Hellene Panhard** (jogos V5).
-4. **O conselho de Primogen é novo, grande e diverso:** inclui clãs independentes, um Brujah leal, um representante dos thin-bloods e até um **Caitiff, Ivan Kutkha**, ligado à máfia russa de Little Odessa. O Primogen Ventrue é **Addison Payne**.
+4. **O conselho de Primogen é novo, grande e diverso:** inclui clãs independentes, um Brujah leal (na campanha, **Katherine Weiss**) e um representante dos thin-bloods. Os livros também dão um Primogen Caitiff (**Ivan Kutkha**) e um Primogen Ventrue (**Addison Payne**), mas ❌ os dois foram **descartados pelo Narrador**: na campanha, o cargo Ventrue fica sem nome e não há Primogen Caitiff.
 5. **Os Tremere têm a Chantry of the Five Boroughs**, sob a Regente **Aisling Sturbridge**, uma ancilla ambiciosa que faz acordos com quem for preciso.
 6. **Os Hecata mandam muito a partir de NY:** **Donatello Giovanni** comanda o clã na Costa Leste a partir de clubes no Village, e a Camarilla de NY **deve a ele um favor maior** pela ajuda na guerra contra o Sabbat.
 7. **Wall Street é território de ghouls e de dinheiro antigo**; os Ventrue mandam "no nome" desde o começo do século XX, e os Nosferatu mandam embaixo da rua desde o primeiro esgoto.
@@ -88,7 +88,7 @@
 ### A Camarilla e a corte
 - **Porte:** domínio "grande" (a partir de ~50 Kindred). Isso implica Príncipe com Seneschal, Primogen, **mais de um Sheriff com Hounds**, Keeper of Elysium indispensável e, se partes da cidade forem de outras seitas, reféns diplomáticos (*Guest Hostages*). *Fonte: Courts of the Damned, p. 84*
 - **Príncipe:** nenhum livro nomeia. *Camarilla* traz **Calebros** como "formerly of New York City" e o próprio diz: "I was a Nosferatu Prince". Isso combina com a sucessão das notas do Narrador (Calebros interino, depois **Hellene Panhard**, Ventrue, desde ~2005, jogos V5). *Fonte: Camarilla.txt, linha 1949 · Anarch.txt, linha 2074*
-- **Primogen:** o conselho é "relativamente novo e maior que o da maioria das cidades", porque a comunidade Kindred é quase tão diversa quanto a mortal. Inclui os clãs centrais da Camarilla, **clãs independentes**, **um Brujah leal**, **um neonato de 13ª geração que representa os thin-bloods anônimos** e **Ivan Kutkha** (Caitiff). O Primogen Ventrue é **Addison Payne**, autor do "Guide to the Tower", com um childe neonato chamado **Leo**. *Fonte: Camarilla.txt, linhas 278, 1306, 1408*
+- **Primogen:** o conselho é "relativamente novo e maior que o da maioria das cidades", porque a comunidade Kindred é quase tão diversa quanto a mortal. Inclui os clãs centrais da Camarilla, **clãs independentes**, **um Brujah leal**, **um neonato de 13ª geração que representa os thin-bloods anônimos** e **Ivan Kutkha** (Caitiff). O Primogen Ventrue é **Addison Payne**, autor do "Guide to the Tower", com um childe neonato chamado **Leo**. ❌ **Payne, Leo e Kutkha estão descartados na campanha** (decisão do Narrador, 17/10/2026). *Fonte: Camarilla.txt, linhas 278, 1306, 1408*
 - **Sheriff:** *Trails of Ash and Bone* usa "o Sheriff militante de Nova York" como exemplo de cargo com caráter local. Combina com **Qadir al-Asmai** (jogos V5). *Fonte: Trails of Ash and Bone, p. 100*
 - **Tremere:** a **Chantry of the Five Boroughs** é dirigida por **Aisling Sturbridge**, que cresce justamente porque os anciões que a freariam sumiram (Beckoning, queda de Viena). Uma carta em *Camarilla* pede a alguém que **largue seu assento** nessa chantry para seguir uma "chantry itinerante", sinal de que nem todos os Tremere de NY estão alinhados. Tremere expulsos de Atlantic City **vieram para NY**. *Fonte: Courts of the Damned, pp. 58-59 · Camarilla.txt, linhas 1668-1676 · Trails of Ash and Bone, p. 48*
 - **Visitas:** NY recebe diplomacia de alto nível; *Camarilla* registra **Talley**, o Hound Lasombra, em visita diplomática à cidade, aconselhando neonatos. *Fonte: Camarilla.txt, linha 1154*
@@ -166,7 +166,7 @@
 
 ### Brooklyn
 - **Atlantic Avenue Tunnel:** túnel ferroviário de 1845, lacrado em 1861, com quase 800 m; "a principal toca Nosferatu". Quem entra para investigar não volta. *Fonte: In Memoriam, p. 76*
-- **Little Odessa** (Brighton Beach): comunidade russa; base de **Ivan Kutkha**, o Primogen Caitiff que acoberta brechas com a ajuda da máfia. *Fonte: Camarilla.txt, linha 1306*
+- **Little Odessa** (Brighton Beach): comunidade russa; nos livros, base de **Ivan Kutkha**, o Primogen Caitiff que acoberta brechas com a ajuda da máfia (❌ descartado na campanha). *Fonte: Camarilla.txt, linha 1306*
 - **Red Hook:** templo de Set de 1893. O livro escreve "Red Hook in the Harlem borough", o que é um **erro geográfico**: Red Hook fica no Brooklyn, e o Harlem é um bairro de Manhattan. *Fonte: Cult Of The Blood Gods.txt, linha 885*
 - O Core usa o Brooklyn como exemplo de região grande o bastante para **Influence**. *Fonte: nota do Pedro `Mecânicas/Advantages.md` · [[Advantages#Influence|Advantages > Influence]]*
 
@@ -200,10 +200,10 @@
 | Nome | Clã | Papel | Gancho | Fonte |
 |---|---|---|---|---|
 | **Calebros** | Nosferatu | Ex-Príncipe de NY | Organiza lutas de boxe entre Nosferatu para punir quem quebra as Tradições; "seja Anarch, não ligo, mas se espiar por cima da Máscara vai pro ringue". | Anarch.txt, l. 2068-2085 · Camarilla.txt, l. 1949 |
-| **Addison Payne** | Ventrue | Primogen Ventrue | Escreve um guia da seita que trata a Camarilla como religião: "acredite primeiro na seita, depois nos anciões". Tem um childe neonato, **Leo**. | Camarilla.txt, l. 278-290, 537, 1408 |
-| **Ivan Kutkha** | Caitiff ("unbound") | Primogen recente | Ancilla mal visto no começo, hoje indispensável pelos laços com a máfia russa de Little Odessa, que limpa brechas da Máscara. | Camarilla.txt, l. 1306 |
+| **Addison Payne** ❌ | Ventrue | Primogen Ventrue nos livros; **descartado na campanha** | Escreve um guia da seita que trata a Camarilla como religião: "acredite primeiro na seita, depois nos anciões". Tem um childe neonato, **Leo**. | Camarilla.txt, l. 278-290, 537, 1408 |
+| **Ivan Kutkha** ❌ | Caitiff ("unbound") | Primogen recente nos livros; **descartado na campanha** | Ancilla mal visto no começo, hoje indispensável pelos laços com a máfia russa de Little Odessa, que limpa brechas da Máscara. | Camarilla.txt, l. 1306 |
 | **Aisling Sturbridge** | Tremere, 10ª geração, Abraço 1911, BP 3, Humanidade 7 | Regente da Chantry of the Five Boroughs | Negociadora; quando é inimiga, ataca por fontes que parecem desconexas. Auspex 5 e Blood Sorcery 5. | Courts of the Damned, pp. 58-59 |
-| **Leo** | Ventrue | Neonato, childe de Payne | Escreve sobre os perigos de viajar entre domínios; contato natural para PCs neonatos. | Camarilla.txt, l. 1408 |
+| **Leo** ❌ | Ventrue | Neonato, childe de Payne; **descartado na campanha** | Escreve sobre os perigos de viajar entre domínios; contato natural para PCs neonatos. | Camarilla.txt, l. 1408 |
 | **Hellene Panhard**, **Qadir al-Asmai**, **Thomas Arturo**, **Valerie Duval**, **Julia Sowinski**, **Samira**, **Katherine Weiss** | vários | Príncipe, Sheriff, Herald, Scourge, Primogen | Corte da crônica; **não aparecem nos livros**. Weiss é o "Brujah leal" do conselho (decisão do Narrador). | (jogos V5) [[Camarilla em Nova York#A corte em 2021|notas do Narrador]] |
 
 ### Anarchs
@@ -242,7 +242,7 @@
 | **Clubes de Donatello** | Greenwich Village | Base Hecata; reuniões com coteries | Atual | Trails of Ash and Bone, p. 58 |
 | **Atlantic Avenue Tunnel** | Brooklyn | Principal toca Nosferatu | Anos 1930 em diante | In Memoriam, p. 76 |
 | **Templo de Red Hook** | Brooklyn | Templo-fundador do Ministry | Desde 1893 | Cult Of The Blood Gods.txt, l. 885 |
-| **Little Odessa** | Brooklyn | Domínio e rede mafiosa de Ivan Kutkha | Atual | Camarilla.txt, l. 1306 |
+| **Little Odessa** | Brooklyn | Nos livros, domínio e rede mafiosa de Ivan Kutkha (❌ descartado na campanha) | Atual | Camarilla.txt, l. 1306 |
 | **Wall Street / distrito financeiro** | Manhattan | Ghouls, finanças Ventrue | Sempre | In Memoriam, pp. 71-72 |
 | **Chrysler Building** | Manhattan | Refúgio de um Ventrue | 1930 | In Memoriam, p. 77 |
 | **Waldorf-Astoria (original)** | Manhattan | Elysium reformado pelo Keeper; demolido para o Empire State | Até 1929 | In Memoriam, p. 77 |
@@ -274,9 +274,8 @@
 - **A aventura não tem cidade.** *Auld Sanguine* se passa "na cidade", com uma corte da Camarilla, um barão Anarch local e um parque industrial. Ambientar em NY é escolha do Narrador e não contradiz nada. A coterie pronta do livro é uma **coterie Vehme** (Camarilla, encarregada de proteger a Máscara). *Fonte: Auld Sanguine.txt, linhas 42-48*
 - **Corte:** os livros não nomeiam Príncipe, Sheriff, Herald nem Scourge. As escolhas de [[Camarilla em Nova York]] (Panhard, Qadir, Arturo, Valerie) **não conflitam** com V5; vêm dos jogos e valem para a campanha.
 - **Lacunas que os livros preenchem:**
-	- **Primogen Ventrue = Addison Payne.** A nota do Narrador lista Payne como "Ventrue, papel não claro" e o cargo de Primogen Ventrue "sem nome". *Camarilla* resolve as duas coisas.
-	- **Primogen Caitiff = Ivan Kutkha**, que não está nas notas do Narrador.
-	- **Calebros existe em V5** (a nota diz "não sei se existe em V5") e está ativo como ex-Príncipe.
+	- ❌ **Primogen Ventrue = Addison Payne** e **Primogen Caitiff = Ivan Kutkha** nos livros: o Narrador **descartou os dois** (17/10/2026). Na campanha, o Primogen Ventrue fica sem nome e não há Primogen Caitiff.
+	- ✅ **Calebros existe em V5** e está ativo como ex-Príncipe (as notas do Narrador já foram corrigidas).
 	- **Aisling Sturbridge:** V5 dá Abraço em **1911**, 10ª geração, BP 3 (a nota diz "ano do Abraço não encontrado"). V5 **não nomeia** o sire (Lucien de Maupassant é dado de edição anterior) nem confirma o Barnard College.
 	- **"Brujah leal" no conselho:** é a **Katherine Weiss**, confirmada pelo Narrador (16/10/2026) como Primogen Brujah leal da Camarilla.
 - **Pequenas diferenças:**
@@ -286,16 +285,16 @@
 - **Edições anteriores:** Michaela, a falsa trégua de 1999 e a "Batalha de Nova York" com esse nome **não aparecem em V5**. V5 só confirma o quadro geral (NY foi Sabbat; a guerra acabou por volta de 2000; Polonia perdeu a cidade).
 
 ### Os personagens dos jogadores
-São 7 fichas para 8 jogadores (ver [[disciplinas-jogadores-v5]] e [[merits-flaws-jogadores-v5]]). O que o cânone de NY oferece a cada um, **[SUG]**:
+São 8 jogadores, todos com personagem definido (ver [[disciplinas-jogadores-v5]] e [[merits-flaws-jogadores-v5]]). O que o cânone de NY oferece a cada um, **[SUG]**:
 
-- **Nina "Blue" Calloway** (Toreador, Scene Queen da cena de jazz): o Harlem é a raiz do jazz de NY e tem fantasmas Kindred (Erzulie, Bella Moretti, Titus Jones). O **Mawla** dela ainda está "a definir": **Thomas Arturo** (Herald, Toreador) ou **Titus Jones** (Toreador, fã de talentos) servem.
+- **Nina "Blue" Calloway** (Toreador, Scene Queen da cena de jazz): o Harlem é a raiz do jazz de NY e tem fantasmas Kindred (Erzulie, Bella Moretti, Titus Jones). ✅ O **Mawla** dela é **Gideon Nicols** (decisão do Narrador, 16/10/2026), no lugar das sugestões antigas (Thomas Arturo, Titus Jones).
 - **Gideon Nicols** (Toreador, Abraçado em 1943, *Living in the Past*): viveu a NY da guerra e do pós-guerra; lembra do Waldorf, da Feira de 1939 e do tempo em que o Sabbat ainda disputava a cidade. **Status 2** pede uma posição na corte; é Mawla do Gusman.
 - **Vincent Marchetti** (Tzimisce, Blood Leech, *Sect War Veteran*, *Dark Secret: Diablerist*, *Adversary: Sabbat remanescente*, refúgio no Plaza, contato com **Valerie Duval**): é o personagem mais ligado ao cânone. A guerra de seitas de NY é a guerra dele. **Malenkov** ou um ex-pack de **Polonia** são bons Adversários. Um Tzimisce na corte desperta suspeita (o clã ficou com o Sabbat), e **Jaliah Imani** (Tzimisce que se encontrou em NY em 1998) pode ser uma conhecida dele. O segredo de diablerie é exatamente o tipo de coisa que a Scourge, contato dele, caçaria.
 - **Khalid Hassan Yusuf** (Banu Haqim, Mawla Nizar ibn Tahir, Blood Sorcery): a Primogen Banu Haqim é **Samira** (jogos V5). Uma carta Tremere em *Camarilla* reclama que os Banu Haqim "estão entrando para nos substituir": Sturbridge vai querer saber o que ele sabe de feitiçaria.
 - **Daniel Mercer** (Brujah, Alleycat, ligado a motoclubes: Iron Lanterns, Pavio Negro MC): os Brujah saíram da Camarilla em 2012, menos os **Hellenes**, os leais. Se Daniel é Camarilla, ele é suspeito por padrão; o "Brujah leal" do conselho, **Katherine Weiss**, é o patrono óbvio. Os motoclubes e as estradas de Nova Jersey são o território natural dele.
 - **Jesse Calloway** (Gangrel, Alleycat, *Folkloric Bane*: flor): os Gangrel deixaram a Camarilla; **Ranq**, o matador Gangrel de NY, é um contato ou ameaça possível. **Tamika** (jogos V5) é a Gangrel Anarch que caça agentes do governo.
 - **Gusman Gutierrez** (Ravnos, Bagger, **Status em Nova Jersey**, **Infamy entre "italianos"**, *Enemy* desconhecido): Nova Jersey tem os micro-domínios de Trails. A "Infamy entre italianos" pode ser com a **família Giovanni**, e o *Enemy* desconhecido pode ser um enviado de Donatello.
-- **O oitavo jogador:** ainda sem ficha. Um **Caitiff** (como a pronta Klara Larson) teria em **Ivan Kutkha** um patrono; o parentesco com **Robert Larson** fica guardado na reserva (gancho em [[Sangue Ralo#Ganchos em Nova York|Sangue Ralo > Ganchos em Nova York]]).
+- **O oitavo jogador:** ✅ é **Herta Müller** (Ventrue de Berlim, 13ª geração), hóspede da comitiva europeia no Plaza (ver [[Herta Müller]]). O gancho de Klara Larson com **Robert Larson** fica guardado na reserva (ver [[Sangue Ralo#Ganchos em Nova York|Sangue Ralo > Ganchos em Nova York]]).
 
 ### Ganchos para a noite de Ano-Novo
 - **[SUG] A bola de Times Square:** a aventura termina "quando a bola cai à meia-noite". Em NY, isso é literal: o centro fica lotado, e a polícia está toda em Midtown, o que justifica a resposta lenta (15 minutos) que a aventura dá ao alarme do parque industrial. *Base: Auld Sanguine.txt, linhas 40, 349, 387*
@@ -303,7 +302,6 @@ São 7 fichas para 8 jogadores (ver [[disciplinas-jogadores-v5]] e [[merits-flaw
 - **[SUG] Isabella e Bella:** a ghoul da aventura se chama Isabella, e *In Memoriam* tem a Nosferatu **Isabella "Bella" Moretti**, cujo destino é ser diablerizada pelo childe. Se o Narrador quiser, Isabella pode ser sobrinha-neta ou homônima "batizada" por alguém que lembra de Bella, uma ponte com Vincent (diablerista) ou com Nina (jazz).
 - **[SUG] A resposta da corte:** a aventura diz que a corte mata ghouls expostos e seus mestres. Em NY, quem chega é o Sheriff Qadir ou a Scourge Valerie Duval. Se Vincent chamar sua contato, o problema dele vira dívida.
 - **[SUG] O favor de Donatello:** se a coterie precisar de recursos rápidos (armas, carros, um esconderijo), os Giovanni têm tudo, mas cobram em família.
-- **[SUG] Ivan e Little Odessa:** para limpar uma brecha antes do amanhecer (vídeos dos caçadores, corpos), a máfia russa de Kutkha é a solução "sem perguntas" que o livro descreve.
 - **[SUG] Rumor de Sabbat:** já está em [[Sabbat#Nova York e o Auld Sanguine|Sabbat > Nova York e o Auld Sanguine]]. Com Vincent na mesa, o rumor pode ser verdadeiro e pessoal.
 - **[SUG] Calebros como juiz:** se Duke sobreviver e for entregue, Calebros pode querer o Anarch "no gelo" para o ringue, uma alternativa à execução que os PCs podem usar como moeda.
 

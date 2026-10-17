@@ -3,6 +3,7 @@
 > Perfis dos vampiros relevantes da Camarilla de Nova York, **nome por nome**. Complementa [[Camarilla em Nova York]].
 > Pesquisa de **11/10/2026**, em inglês (wikis, Wikipedia, resenhas, anúncios dos jogos). **Não li os livros nem os jogos.** Onde as fontes não trazem um dado, escrevi **"não encontrado"**: não inventei nada.
 > ✅ **Revisada em 16/10/2026** pela mesma regra de [[Camarilla em Nova York]]: perfis só de nomes **confirmados** pelo Narrador, mais os confirmados que já morreram (☠️). Os que o Narrador ainda vai decidir ficam marcados com ❔; Robert Larson está na reserva.
+> 📌 **Fonte de verdade dos NPCs (17/10/2026):** a lista oficial (nome, clã, facção, cargo, status) é [[Elenco de Nova York]]; aqui ficam os perfis detalhados. Em conflito, vale o Elenco.
 > Os **cargos** (Príncipe, Xerife, Primogen etc.) são links para [[Camarilla#Estrutura e Organização|Camarilla > Estrutura e Organização]], onde cada um está definido.
 > Confiança: **[A]** várias fontes concordam; **[M]** wiki de fãs; **[B]** inferência minha; **[CLÁSSICO]** vem do livro *New York by Night* (2001) ou de edições anteriores a V5, e pode não valer em V5; **[SUG]** sugestão minha para a campanha. Marcas: ✅ confirmado · ☠️ morto antes de 2021 · ❔ a confirmar.
 
@@ -112,7 +113,7 @@ Os [[Camarilla#Estrutura e Organização|Primogens]] são o conselho que represe
 > Confirmados pelo Narrador, mas ☠️ **mortos antes de 2021** (exceto Calebros, vivo).
 
 - **Michaela** ☠️ (Ventrue): [[Camarilla#Estrutura e Organização|Príncipe]] de Nova York (de 1980), mulher que enriqueceu em Wall Street a partir de 1929; **destruída por Polonia (Sabbat) em 1999** durante um falso parlamento. Autorizada a criar fledglings em massa para defender a cidade, o que gerou críticas. Sire de Panhard. **[CLÁSSICO]**
-- **Calebros** (Nosferatu): Príncipe interino depois de 1999 e abdicou por volta de 2005; reservado, ama a academia e a solidão; mantém a sua toca sob Manhattan; foi capturado por Nosferatu quando criança e Abraçado depois. **Não sei se existe em V5.** **[CLÁSSICO]**
+- **Calebros** (Nosferatu): Príncipe interino depois de 1999 e abdicou por volta de 2005; reservado, ama a academia e a solidão; mantém a sua toca sob Manhattan; foi capturado por Nosferatu quando criança e Abraçado depois. **[CLÁSSICO]** ✅ **Existe em V5:** o livro *Camarilla* o traz como "ex-Príncipe" de Nova York, ainda ativo e defensor ferrenho das Tradições (ver [[nova-york]]).
 - **Sophie Langley** ☠️ (Toreador): patrona da corte; protege o protagonista de *Coteries* e tem ambições de poder; é **executada por Arturo em 2019**. **[A]**
 
 ---
@@ -133,11 +134,12 @@ Nomes que o Narrador **não confirmou** (sem marca) ou **ainda vai decidir** (�
 | Nome | Clã | Notas | Conf. | Estado |
 |---|---|---|---|---|
 | **Gianni D'Angelo** | Nosferatu | Detetive decaído e bêbado | [M] | não confirmado |
-| **Addison Payne** | Ventrue | Aparece em *Shadows*; papel não claro | [M] | não confirmado |
 | **Hope** | (ex-Double Spiral) | Líder reformada do grupo | [M] | ❔ a confirmar |
 | **Cara Montgomery** | Malkaviano | Personalidade online | [M] | ❔ a confirmar |
 | **Juno** | Tremere | Feiticeira | [M] | ❔ a confirmar |
 | **Declan, Raoul** | Gangrel | Declan com lealdades divididas | [M] | ❔ a confirmar |
+
+❌ **Descartados** (decisão do Narrador, 17/10/2026; não entram na campanha): **Addison Payne** (Ventrue, Primogen Ventrue nos livros, sire de Leo) e **Ivan Kutkha** (Caitiff, Primogen Caitiff nos livros). Ver [[Camarilla em Nova York#Descartados|Descartados]].
 
 ---
 # Coteries dos actual plays

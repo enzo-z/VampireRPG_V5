@@ -108,7 +108,7 @@ Os sete 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, 
 
 ##### 🎭 (Luiz) Daniel Mercer, o nômade
 - **Brujah**, ligado ao clube de motociclistas **Iron Lanterns**. Esteve na guerra de 1999.
-- Foi o mais **fácil de rastrear**: foi Abraçado mais recentemente que os outros, e tem um **filho** com registros em hospital.
+- Foi o mais **fácil de rastrear** dos três que você pesquisou (Vincent, Gideon e Daniel): dos três, Daniel é o Abraçado mais recentemente (1993), então a vida mortal dele deixou mais rastro, e tem um **filho** com registros em hospital.
 - 🔒 **Você sabe**: o filho se chama **Nathan** e está doente (registros desde 2020; o sobrenome nos arquivos é **Ward**). **Daniel não sabe que você sabe.** Guarde, e decida o que fazer com isso.
 - **Daniel não sabe de Gusman** e fica de fora do segredo.
 

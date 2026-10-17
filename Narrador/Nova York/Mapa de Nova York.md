@@ -2,6 +2,7 @@
 
 > Descrição do **mapa interativo de Nova York** (Réveillon de 2021) e **fonte de verdade** para mudanças nele. O mapa fica em `vampire-pages/docs/notes/one-shot/mapa-nova-york.html` (abrir no navegador) e publicado em [claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G).
 > Montado em **16/10/2026** a partir de [[Camarilla em Nova York]], [[Personagens da Camarilla de NY]], [[Auld Sanguine - Roteiro da Sessão]], `vampire-pages/docs/notes/one-shot/nova-york.md`, [[Clãs]], [[Sabbat]], [[Semana de Pesadelos]], [[Sangue Ralo]], as notas dos jogadores e [[Auld Sanguine - Laços entre Jogadores]].
+> ⚠️ **O mapa precisa ser atualizado** (registrado em 17/10/2026). O Narrador vai liberar a atualização depois de resolver as pendências ou confirmar. Até lá, as seções abaixo descrevem o mapa **como ele está**, não como deveria estar. Ver [[#⚠️ Atualização pendente do mapa]]. Para nomes, cargos e status dos NPCs, a fonte de verdade é [[Elenco de Nova York]].
 > Etiquetas de fonte (as mesmas do mapa): **[jogos V5]** *Coteries/Shadows/Reckoning of New York*; **[livro V5]** livros de V5 transcritos; **[notas]** notas do Narrador; **[SUG]** sugestão para a campanha; **[ed. anterior]** livros anteriores a V5.
 
 ### Sumário
@@ -20,6 +21,7 @@
 - [[#Fora do mapa|Fora do mapa]]
 - [[#Clãs por distrito|Clãs por distrito]]
 - [[#Divergências e decisões em aberto|Divergências e decisões em aberto]]
+- [[#⚠️ Atualização pendente do mapa|⚠️ Atualização pendente do mapa]]
 
 ---
 # Como mudar o mapa
@@ -310,15 +312,30 @@ Aparecem no mapa como "Divergências e cuidados". Ao decidir uma, atualize a se�
 - [x] **Bronx ou Staten Island?** ✅ Decidido pelo Narrador (16/10/2026): os Anarquistas ficam **majoritariamente no Bronx** (Port Morris), com **presença significativa em Staten Island**, a base do pós-guerra (por isso o Pavio Negro). Registrado em [[Camarilla em Nova York]] e nos READMEs dos jogadores.
 - [ ] **Brooklyn e Queens sem dono.** As notas dizem que esses distritos "não são atribuídos a governante exclusivo". Hoje: Camarilla tracejada; quem age ali são a Chama, Kutkha, os Nosferatu e Julia Sowinski. Se algum ganhar um senhor (um Barão, um Primogen como regente), troque para `cam`.
 - [ ] **Locais aproximados.** Art Hole, o domínio de Julia, a Chantry, o Pavio Negro, o Harbor Ledger e os armazéns de 1999 não têm endereço nas fontes. Se fixar algum, troque a coordenada e tire o "aproximado".
-- [ ] **Michaela: 1998 ou 1999?** [[Vincent Marchetti]] diz que os templars de Polonia mataram Michaela em 1998; [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]] dizem 1999, durante um falso parlamento.
+- [x] **Michaela: 1998 ou 1999?** ✅ **1999**, num falso parlamento durante a Batalha (decisão do Narrador, 17/10/2026); a nota de [[Vincent Marchetti]] foi corrigida. O mapa já usava 1999.
 - [x] **Red Hook "no Harlem".** *Cult of the Blood Gods* escreve "Red Hook in the Harlem borough". É erro do livro: Red Hook fica no Brooklyn. (Só um aviso; nada a decidir.)
 - [x] **O mapa clássico é outro.** O *New York by Night* dos anos 1990 punha Anarchs no Brooklyn e Sabbat no Bronx e no Queens. Não serve para V5 nem para esta campanha e não foi usado. (Só um aviso.)
 - [ ] **Onde ficam Nina, Jesse e o 8º jogador?** Não têm lugar no mapa. Candidatos: Nina no Harlem (jazz); Jesse fora do centro (Gangrel saíram da Camarilla).
-- [ ] **Onde mora Gusman?** A ficha deixa em aberto entre Nova York (fora de Manhattan) e Nova Jersey. Hoje ele só aparece em Newark, pelo orfanato proposto.
+- [x] **Onde mora Gusman?** ✅ Em **Staten Island**, num apartamento em Port Richmond (decisão do Narrador, 16/10/2026, em [[Gusman Gutierrez]]). O mapa ainda o mostra só em Newark: ver [[#⚠️ Atualização pendente do mapa]].
 - [ ] ❔ **Nomes a confirmar (Narrador, 16/10/2026):** Juno (Tremere), Cara Montgomery (Malkaviano), Declan e Raoul (Gangrel) aparecem no mapa com a marca ❔ até a decisão; Hope (ex-Double Spiral) só está em [[Camarilla em Nova York#❔ A confirmar|❔ A confirmar]].
-- [ ] **Nomes ainda sem decisão:** Addison Payne, Leo, Ivan Kutkha, Donatello Giovanni, Ranq, Gianni D'Angelo, Elias Voss e os demais da matriz que não estão na corte confirmada de [[Camarilla em Nova York]] seguem como estavam.
+- [x] **Addison Payne, Leo e Ivan Kutkha:** ❌ descartados (decisão do Narrador, 17/10/2026). Saem do mapa na próxima atualização.
+- [ ] **Nomes ainda sem decisão:** Donatello Giovanni, Ranq, Gianni D'Angelo, Elias Voss e os demais da matriz que não estão na corte confirmada de [[Camarilla em Nova York]] seguem como estavam.
 - [x] **Reserva:** Robert Larson saiu do mapa e ficou guardado em [[Camarilla em Nova York#Reserva para o futuro|Reserva para o futuro]].
 - [x] **Mortos antes de 2021 (confirmados):** Callihan (mar/2020), Michaela (1999) e Sophie Langley (2019). Estão em [[Camarilla em Nova York#Confirmados já mortos (antes de 2021)|Confirmados já mortos]].
+
+---
+# ⚠️ Atualização pendente do mapa
+
+Registrado em **17/10/2026**. **Não aplicar** até o Narrador resolver as pendências acima ou confirmar. Quando for liberado, atualize primeiro as seções desta nota e depois o HTML (ver [[#Como mudar o mapa]]).
+
+Mudanças já decididas que o mapa ainda não mostra:
+- [ ] **Tirar Addison Payne, Leo e Ivan Kutkha** (descartados): corte da visão geral, Ventrue de Manhattan, Caitiff do Brooklyn, ponto de Little Odessa e matriz.
+- [ ] **Gusman em Staten Island** (Port Richmond; bar do Iggy, The Broken Minute). Newark fica só como o orfanato.
+- [ ] **Batalha de cinco dias** no texto de "Antes de 1999" (o Sabbat estava quebrado nas duas ou três primeiras noites).
+- [ ] **Panhard em 2021:** firme para a maioria; em queda só para os muito bem informados.
+- [ ] **PCs que faltam:** Herta (Plaza, comitiva europeia), Jesse, e Nina (mora em Washington Heights; Abraçada na Lenox Avenue; Mawla é Gideon).
+- [ ] **NPCs do [[Elenco de Nova York]]** que ainda não estão no mapa (Deacon Brandt, Torch Malloy, Iggy, Elias Voss, comitiva europeia), se fizer sentido mostrá-los.
+- [ ] **Nomes fora da regra de 16/10** que o mapa ainda mostra: Kaiser, Gianni D'Angelo, Agathon, Benoit Segal, Vincent Cerutti e os ❔ (Juno, Cara Montgomery, Declan, Raoul). Decidir caso a caso.
 
 ---
 *Fontes web usadas só para contraste:* [NYBN Overview](https://shipwrecklibrary.com/?p=2224) · [White Wolf Wiki: New York by Night](https://whitewolf.fandom.com/wiki/New_York_by_Night) · [Wikipedia: NY by Night](https://www.wikipedia.org/wiki/NY_by_Night). *Área e população:* Censo dos EUA de 2020.

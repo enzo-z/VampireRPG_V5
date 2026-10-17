@@ -437,8 +437,8 @@ Versões menores, se a primeira sessão cobrir só uma etapa: "Conseguir de Ivo 
 - [ ] Encaixe da missão com **Qadir al-Asmai** e quem é o agente original que transmite a ordem.
 - [x] Definir o personagem do Gangrel: [[Jesse Calloway]] (Rafael). Daniel o achou na estrada (história do jogador, 16/10/2026).
 - [x] Quando Daniel achou Jesse: a ordem chegou no fim de novembro de 2021 (tempo de rastreio da Camarilla); Daniel o achou no começo de dezembro (decisão do Narrador, 16/10/2026). Ver [[Jesse Calloway#Linha do Tempo]].
-- [ ] Datas: o texto de Daniel começa em **2021**, e a nota de [[Vincent Marchetti]] fala em 2022 (e a de [[Camarilla em Nova York]] usa 2021). Alinhar a linha do tempo da campanha.
-- [ ] Possível contradição de cronologia a conferir: a Segunda Guarda decorre na "segunda noite" da batalha, enquanto [[Vincent Marchetti]] descreve a Batalha de Nova York como cerca de uma semana. Garantir que as noites numeradas de Daniel sejam só o recorte pessoal dele.
+- [x] Datas: ✅ tudo em **2021**; a nota de [[Vincent Marchetti]] já foi corrigida (falava em 2022).
+- [x] Cronologia da Batalha: ✅ durou **cinco dias** (decisão do Narrador, 17/10/2026); o Sabbat estava quebrado nas duas ou três primeiras noites. As noites numeradas de Daniel são o recorte pessoal dele dentro desses cinco dias.
 - [ ] Definir se Daniel conhece [[Vincent Marchetti]] e [[Gideon Nicols]], e se a Batalha de 1999 os aproximou.
 - [ ] Relação de Daniel com a corte da Camarilla de NY em [[Personagens da Camarilla de NY]] e [[Camarilla em Nova York]].
-- [ ] Dentro de 1999, divergência entre fontes sobre a data e a posição da morte de Michaela na wiki; a história evita depender disso.
+- [x] Morte de Michaela: ✅ **1999**, destruída por Polonia num falso parlamento durante a Batalha de Nova York (decisão do Narrador, 17/10/2026). A história de Daniel continua sem depender disso.

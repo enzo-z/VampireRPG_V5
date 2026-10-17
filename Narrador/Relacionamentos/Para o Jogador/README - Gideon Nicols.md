@@ -101,7 +101,7 @@ Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém
 ### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat**, dono do **Hotel Plaza**. **Herói de guerra** da Camarilla pela Batalha de 1999.
 - Vocês se **conheceram e se ajudaram na Batalha de Nova York**: informação de refúgios de um lado, a lista do outro.
-- **Você avaliou Vincent em 1999 e o recomendou à Camarilla.** Isso cria uma **dívida relativa**: ele deve a você ter sido aceito, mas você também se beneficiou do que ele entregou.
+- **Você avaliou Vincent em 1999, junto com Cordelia, sua sire na época, e o recomendou à Camarilla.** Isso cria uma **dívida relativa**: ele deve a você ter sido aceito, mas você também se beneficiou do que ele entregou.
 - Vocês **se encontram regularmente**, e o Plaza é palco natural das suas festas.
 - **Gusman:** Vincent é o **terceiro do segredo**. Você e Khalid o chamaram por ser ex-Sabbat, e ele deu **cobertura** a Gusman nas primeiras semanas. Ele **não sabe o nome verdadeiro** de Gusman. Ver [[#🎭 Gusman Gutierrez, o seu protegido]].
 - 🔒 **Você não viu nada estranho em Vincent em 1999.** Com os anos, passou a ter uma **sensação**, sem certeza nenhuma, de que o segredo dele tem relação com **diablerie**. Você guarda isso para si. Vincent não sabe que você desconfia.

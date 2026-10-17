@@ -3,6 +3,7 @@
 > Cenário da **Camarilla em Nova York** em V5, reconstruído para **2021**. Nenhum jogo ou livro se passa nesse ano: os pontos de ancoragem são *Coteries of New York* (final de 2019) e *Shadows of New York* (março de 2020), com *Reckoning of New York* (dezembro de 2024) confirmando indiretamente a estrutura.
 > Pesquisa feita em **11/10/2026**, em inglês, sobre wikis, Wikipedia e TV Tropes. **Não li os livros de V5.** Para a Camarilla em geral (Tradições, estrutura), veja [[Camarilla]] (que traz o contexto do Rio de Janeiro de 2019).
 > ✅ **Regra desta nota (atualizada em 16/10/2026):** o corpo traz **só os nomes confirmados pelo Narrador** para 2021: a corte (Panhard, Qadir, Valerie, Arturo, Aisling, Julia, Samira, Katherine Weiss), **Calebros** e as informações dos **Anarquistas**. Os confirmados que **já morreram antes de 2021** (Callihan, Michaela, Sophie Langley) ficam em [[#Confirmados já mortos (antes de 2021)]]. Os demais ficam em [[#Nomes não confirmados]]; os que o Narrador ainda vai decidir levam a marca ❔ e ficam em [[#❔ A confirmar]].
+> 📌 **Fonte de verdade dos NPCs (17/10/2026):** nomes, clãs, facções, cargos e status dos vampiros de NY ficam em [[Elenco de Nova York]]. Em conflito, vale o Elenco; esta nota guarda o contexto da seita e as fontes.
 > Os **nomes dos cargos** (Príncipe, Xerife, Primogen etc.) são links para a definição em [[Camarilla#Estrutura e Organização|Camarilla > Estrutura e Organização]]. Passe o mouse sobre o link para ver a lista de cargos. *Guardião do Elysium* e *Regente* não estão naquela nota (ver [[#Cargos sem definição no vault]]).
 > Confiança: **[A]** várias fontes concordam; **[M]** wiki de fãs; **[B]** inferência minha; **[SUG]** sugestão para a campanha. Marcas: ✅ confirmado · ☠️ morto antes de 2021 · ❔ a confirmar.
 
@@ -68,7 +69,7 @@ Só entra aqui quem o Narrador confirmou além da corte: **Calebros**.
 | ------------ | --------- | ------------------------------------------------------------------------------------------------------ | ----- |
 | **Calebros** | Nosferatu | ✅ Príncipe interino depois da Batalha de Nova York; abdicou por volta de 2005. Qadir foi seu Xerife | [B]   |
 
-- Detalhes clássicos (**[CLÁSSICO]**, podem não valer em V5): reservado, ama a academia e a solidão, mantém a toca sob Manhattan; foi capturado por Nosferatu quando criança e Abraçado depois. **Não sei se existe em V5**, mas o Narrador o mantém.
+- Detalhes clássicos (**[CLÁSSICO]**, podem não valer em V5): reservado, ama a academia e a solidão, mantém a toca sob Manhattan; foi capturado por Nosferatu quando criança e Abraçado depois. ✅ **Existe em V5:** o livro *Camarilla* o chama de "ex-Príncipe" de Nova York, e *Anarch* o mostra punindo quem quebra as Tradições num ringue Nosferatu.
 - **Arturo** o respeita, apesar de ter poucos laços com Nosferatu. **[M]**
 
 Perfil completo em [[Personagens da Camarilla de NY]].
@@ -101,7 +102,7 @@ Sobre os Anarquistas em geral: [[Anarquistas]].
 
 Só entram eventos até 2021 e só com nomes confirmados. Eventos posteriores e nomes não confirmados estão em [[#Nomes não confirmados]].
 
-- **1999:** Batalha de Nova York. A Camarilla toma a cidade do Sabbat, **Michaela** é destruída por Polonia ☠️ e **Calebros** governa como Príncipe interino. ✅
+- **1999:** Batalha de Nova York, de **cinco dias**; o Sabbat está quebrado nas duas ou três primeiras noites. A Camarilla toma a cidade, **Michaela** é destruída por Polonia num falso parlamento ☠️ e **Calebros** governa como Príncipe interino. ✅
 - **~2005:** Panhard assume o principado depois de Calebros. **[M]**
 - **2018:** negociação da deserção de parte dos Lasombra para a Camarilla. **[M]**
 - **2019 (jun):** Julia Sowinski é Abraçada. **[A]**
@@ -122,7 +123,7 @@ Só entram eventos até 2021 e só com nomes confirmados. Eventos posteriores e 
 
 - A wiki mistura edições: biografias como a de **Aisling** vêm de livros **anteriores a V5**. Use esses detalhes (idade, sire, passado) com cuidado.
 - Uma página de "NY by Night" mostrando Panhard como **Senescal** sob um "Príncipe Baldassare" é de **outra campanha** e foi descartada.
-- Em 2024, a influência de Panhard está em queda; em 2021 ela ainda governa com firmeza.
+- ✅ **Panhard em 2021** (decisão do Narrador, 17/10/2026): para a maior parte da corte, ela governa com firmeza; só os muito bem informados, com visão do quadro maior, percebem que o poder dela já está em queda. Nas fontes, a queda fica explícita em 2024.
 
 ---
 # Cargos sem definição no vault
@@ -152,7 +153,13 @@ Se quiser, esses itens podem entrar na lista de "Estrutura e Organização" da n
 | Nome | Clã | Papel nas fontes | Conf. |
 | ---- | --- | ---------------- | ----- |
 | **Gianni D'Angelo** | Nosferatu | Detetive caído, bêbado | [M] |
-| **Addison Payne** | Ventrue | Aparece em *Shadows*; papel não claro | [M] |
+
+### Descartados
+
+> ❌ Decisão do Narrador (17/10/2026): **não entram na campanha**. Não usar na mesa.
+
+- **Addison Payne** (Ventrue): nos livros de V5, Primogen Ventrue de NY e sire do neonato **Leo**. O cargo de Primogen Ventrue segue **sem nome**. **[M]**
+- **Ivan Kutkha** (Caitiff): nos livros de V5, Primogen Caitiff ligado à máfia russa de Little Odessa. A corte de 2021 **não tem** Primogen Caitiff. **[M]**
 
 ### Figuras do passado
 

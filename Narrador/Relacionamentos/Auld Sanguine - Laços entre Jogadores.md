@@ -82,7 +82,7 @@ Lista de assimetrias, para o Narrador não vazar nada sem querer.
 
 ## Eixo comum: Nova York, 1999
 
-Três dos quatro estiveram na mesma guerra por lados diferentes. As "noites" de Daniel e Vincent são só o recorte pessoal de cada um.
+Três dos PCs estiveram na mesma guerra por lados diferentes. A Batalha durou **cinco dias**, e o Sabbat já estava quebrado nas duas ou três primeiras noites. As "noites" de Daniel e Vincent são só o recorte pessoal de cada um.
 
 | Noite | Vincent 📄 | Daniel 📄 | Gideon |
 |---|---|---|---|
@@ -122,7 +122,7 @@ Os seis pares possíveis. Cada um tem um lado positivo e um negativo, como pede 
 
 ### Gideon ↔ Vincent: a dívida e o silêncio
 - ✅ Eles se conheceram e se ajudaram na Batalha de Nova York.
-- ✅ **Gideon avaliou Vincent em 1999 e o recomendou** à Camarilla. Isso cria uma **dívida relativa**: Vincent deve a Gideon ter sido aceito, mas sabe que Gideon também se beneficiou do que ele entregou.
+- ✅ **Gideon avaliou Vincent em 1999, junto com Cordelia Vane, sua sire na época, e o recomendou** à Camarilla (decisão do Narrador, 17/10/2026). Isso cria uma **dívida relativa**: Vincent deve a Gideon ter sido aceito, mas sabe que Gideon também se beneficiou do que ele entregou.
 - ✅ **Gideon não viu nada de estranho em 1999.** Foi com os **anos** que percebeu algo no Vincent, e hoje tem uma **sensação**, sem certeza, de que isso tem relação com **diablerie**. Ele **guarda para si**. Vincent não sabe que Gideon desconfia. 🔒
 - ✅ O **Plaza** é cenário natural das festas de Gideon. Por isso Gideon conhece a Broadway por dentro e o Plaza por dentro, e Vincent conhece os dois lados.
 - ✅ Os dois **se encontram regularmente**.
@@ -234,7 +234,7 @@ Tudo aqui é proposta (💡). Nada contradiz as fontes que li; o V5 não traz um
 
 | Quem | Impacto |
 |---|---|
-| **Hellene Panhard** (Príncipe) | O poder dela está em queda. Ela aceitou o Plaza sem ver que ali havia um posto de Arconte; se descobrir, vai sentir o Justicar espionando-a. Um Justicar pode depô-la. |
+| **Hellene Panhard** (Príncipe) | O poder dela está em queda, mas só quem está muito bem informado dentro da corte e enxerga o quadro maior percebe isso; para a maioria, ela governa com firmeza. Ela aceitou o Plaza sem ver que ali havia um posto de Arconte; se descobrir, vai sentir o Justicar espionando-a. Um Justicar pode depô-la. |
 | **Qadir al-Asmai** (Xerife) | Ex-Arconte de Don Cerro; pode reconhecer o estilo de Nizar num caso do Plaza. Ele já pensa em partir, e a presença de um Arconte pode precipitar isso (ou fazê-lo ficar). ✅ Também é, com Arturo, uma das duas maiores autoridades Toreador da cidade e responde, em teoria, politicamente por Gideon. |
 | **Samira** (Primogen Banu Haqim) | Peça solta. Pode virar informante de Panhard ou ponte para Nizar. |
 | **Valerie Duval** (Scourge) | Qualquer incidente com thin-bloods no Plaza chama um Arconte, e ela não quer isso. |
@@ -519,12 +519,12 @@ flowchart LR
 - [x] Senhora de Gideon: **Cordelia Vane**, levada pela Segunda Inquisição em 2008 ✅ (a validar com o jogador).
 - [x] Jornalista de Gideon: **Mary Winchester** ✅. Confirmar a grafia ("Mary Win Winchester" na mensagem original).
 - [ ] **Geração de Khalid:** 12ª em vez de 13ª. Conferir se a ficha (Blood Potency 1, 15 XP, Humanidade 6) continua válida. A nota [[Gerações e Potência]] não traz o mínimo de Blood Potency por geração.
-- [ ] **Cronologia da Batalha**: Vincent descreve cerca de uma semana; Daniel numera noites 2 a 4. Tratar as noites de Daniel como o recorte pessoal dele.
+- [x] **Cronologia da Batalha** ✅: durou **cinco dias**; o Sabbat estava quebrado nas duas ou três primeiras noites, e é assim que Vincent a conta. As noites numeradas de Daniel são o recorte pessoal dele (decisão do Narrador, 17/10/2026).
 - [ ] **Polonia**: arcebispo "até 1998" no texto de Vincent, mas escapa em 1999. Conferir com o jogador.
 - [ ] **Orozco**: confirmar com Vincent se "bebeu do corpo" foi diablerie.
 - [ ] **Desvio de tropas:** a redação do Narrador está em [[#O desvio de tropas: o que cada um sabe]]. O README e a nota de Vincent ainda usam a versão curta ("envolvimento no desvio de tropas"); alinhar se aprovado.
 - [ ] **Terceira Tradição** (permissão para criar um childe): Nizar Abraçou em D.C. em 2010 com a autoridade do Justicar; decidir se o Príncipe de D.C. soube.
-- [ ] **Quinto jogador (Gangrel)** e os outros três da one-shot: entram quando os personagens estiverem definidos.
+- [x] **Quinto jogador (Gangrel)** e os outros três da one-shot ✅: os oito PCs estão definidos. O Gangrel é [[Jesse Calloway]]; Gusman, Nina e Herta têm seções próprias acima.
 
 ## Fontes
 
