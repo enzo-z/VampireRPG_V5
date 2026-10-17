@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import react from '@vitejs/plugin-react';
 import { loadEnv, searchForWorkspaceRoot } from 'vite';
 import { defineConfig } from 'vitest/config';
-import { hashPassword } from './src/features/secrets/password.ts';
+import { DEFAULT_SECRETS_PASSWORD, hashPassword, secretsPassword } from './src/features/secrets/password.ts';
 import { buildAdvantages } from './vite/buildAdvantages.ts';
 import { buildBlood } from './vite/buildBlood.ts';
 import { buildClans } from './vite/buildClans.ts';
@@ -43,13 +43,20 @@ const VAULT_WATCH_PATHS = [
     .map((name) => join(VAULT_SOURCES.root, name)),
 ];
 
-/** "Segredos" password: SECRETS_PASSWORD in .env.local (never committed); only its hash reaches the app. */
-function secretsPasswordHash(mode: string): string | null {
-  const password = (process.env['SECRETS_PASSWORD'] ?? loadEnv(mode, CONFIG_DIR, '')['SECRETS_PASSWORD'] ?? '').trim();
-  return password === '' ? null : hashPassword(password);
+/**
+ * "Segredos" password: SECRETS_PASSWORD from the environment (GitHub secret) or .env.local
+ * (never committed), else DEFAULT_SECRETS_PASSWORD. Only its hash reaches the app.
+ */
+function secretsPasswordHash(mode: string): string {
+  const configured = process.env['SECRETS_PASSWORD'] || loadEnv(mode, CONFIG_DIR, '')['SECRETS_PASSWORD'];
+  const password = secretsPassword(configured);
+  if (password === DEFAULT_SECRETS_PASSWORD) console.warn('SECRETS_PASSWORD não definida: Segredos e Mapa de NY usam a senha padrão.');
+  return hashPassword(password);
 }
 
 export default defineConfig(({ mode }) => ({
+  // Relative asset URLs: the same build works on GitHub Pages (/VampireRPG_V5/) and on any local server.
+  base: './',
   define: {
     __SECRETS_PASSWORD_HASH__: JSON.stringify(secretsPasswordHash(mode)),
   },

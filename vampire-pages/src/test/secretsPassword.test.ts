@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
-import { hashPassword } from '../features/secrets/password.ts';
+import { DEFAULT_SECRETS_PASSWORD, hashPassword, secretsPassword } from '../features/secrets/password.ts';
 import { sha256Hex } from '../features/secrets/sha256.ts';
 
 const nodeSha256 = (text: string) => createHash('sha256').update(text, 'utf8').digest('hex');
@@ -17,6 +17,14 @@ describe('sha256Hex', () => {
       expect(sha256Hex(text)).toBe(nodeSha256(text));
     },
   );
+});
+
+describe('secretsPassword', () => {
+  it('falls back to the default password when none is configured', () => {
+    expect(secretsPassword(undefined)).toBe(DEFAULT_SECRETS_PASSWORD);
+    expect(secretsPassword('   ')).toBe('123@mudar');
+    expect(secretsPassword(' Sangue ')).toBe('Sangue');
+  });
 });
 
 describe('hashPassword', () => {

@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { hashPassword } from './password.ts';
 
-const PASSWORD_HASH: string | null = __SECRETS_PASSWORD_HASH__;
+const PASSWORD_HASH: string = __SECRETS_PASSWORD_HASH__;
 /** Unlocked until the tab closes. */
 const STORAGE_KEY = 'vampire-pages:segredos';
 
@@ -23,8 +23,6 @@ function storeHash(hash: string | null): void {
 }
 
 export interface SecretsLock {
-  /** False when .env.local has no SECRETS_PASSWORD: the section stays closed. */
-  configured: boolean;
   unlocked: boolean;
   /** True when the password is right. */
   unlock: (password: string) => boolean;
@@ -32,10 +30,10 @@ export interface SecretsLock {
 }
 
 export function useSecretsLock(): SecretsLock {
-  const [unlocked, setUnlocked] = useState(() => PASSWORD_HASH !== null && storedHash() === PASSWORD_HASH);
+  const [unlocked, setUnlocked] = useState(() => storedHash() === PASSWORD_HASH);
 
   const unlock = useCallback((password: string) => {
-    const ok = PASSWORD_HASH !== null && hashPassword(password) === PASSWORD_HASH;
+    const ok = hashPassword(password) === PASSWORD_HASH;
     if (ok) storeHash(PASSWORD_HASH);
     setUnlocked(ok);
     return ok;
@@ -46,5 +44,5 @@ export function useSecretsLock(): SecretsLock {
     setUnlocked(false);
   }, []);
 
-  return { configured: PASSWORD_HASH !== null, unlocked, unlock, lock };
+  return { unlocked, unlock, lock };
 }

@@ -47,7 +47,7 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 
 ## Segredos (documentos por jogador)
 - Menu "Narrador › Segredos": o que cada personagem sabe, impresso para entregar só ao jogador. Fonte: `Narrador/Relacionamentos/Para o Jogador/README - Nome.md` com `publicar: true` (o Enzo libera um jogador por vez). Ficam de fora: linha de tags, "Sumário", "Mapa de relacionamentos" e qualquer bloco Mermaid. O build avisa se o texto citar "Auld Sanguine" (não pode sair no PDF).
-- Senha só de frontend (cortina, não segurança): `SECRETS_PASSWORD` em `vampire-pages/.env.local` (no `.gitignore`); o build guarda só o SHA-256 com sal (`src/features/secrets/password.ts`). Os documentos são um chunk separado, baixado só depois da senha; a liberação dura até fechar a aba.
+- Senha só de frontend (cortina, não segurança): `SECRETS_PASSWORD` em `vampire-pages/.env.local` (no `.gitignore`) ou, no Pages, no secret do repositório; sem ela vale a senha padrão `123@mudar` (`DEFAULT_SECRETS_PASSWORD`, decidido em 2026-10-17) e o build avisa. O build guarda só o SHA-256 com sal (`src/features/secrets/password.ts`). Os documentos são um chunk separado, baixado só depois da senha; a liberação dura até fechar a aba.
 - PDF em várias folhas A4 (sem zoom; texto ≈ 9,75 pt), rodapé "Nome · p. N de M" via `@page`, título da aba = nome do arquivo salvo.
 
 ## Mapa de NY (Narrador)
@@ -63,6 +63,10 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - Imagens e áudio (`![[arquivo]]`, procurados por nome em `Images/` e `Audio/`) entram como assets do Vite; o primeiro embed antes do texto é o banner. **Tabelas que eram imagem do livro foram transcritas em markdown nas notas** (zebra do livro via `--color-surface-tint`); só ilustrações continuam imagem. Página do livro sem conteúdo vira `> 📖 Mais informações … p. N`.
 - `virtual:vault` é um chunk separado, baixado ao abrir o Vault. URL no hash (`#/vault/<nota>/<seção>`): links entre notas, voltar do navegador e favoritos funcionam. Busca sem acento por seção (`vaultSearch.ts`).
 - Link para seção inexistente ou anexo não encontrado gera aviso; `src/test/vaultNotes.test.ts` roda contra as notas reais e exige zero avisos.
+
+## Publicação (GitHub Pages)
+- `.github/workflows/pages.yml` (na raiz do vault) roda `npm run check` e `npm run build` e publica `vampire-pages/dist` a cada push na `ficha-app` (ou à mão em Actions). `base: './'`: o mesmo build serve no Pages e em qualquer servidor local.
+- O repositório é público: tudo que vai no build (inclusive Segredos e Mapa de NY) fica legível para quem souber abrir o JS; a senha é só cortina.
 
 ## Vocabulário da UI (pt-BR)
 Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity, Clan Bane, Player (decidido em 2026-10-15).

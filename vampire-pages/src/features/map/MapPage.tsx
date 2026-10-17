@@ -1,4 +1,4 @@
-import { PasswordForm, PasswordNotConfigured } from '../secrets/SecretsView.tsx';
+import { PasswordForm } from '../secrets/SecretsView.tsx';
 import type { SecretsLock } from '../secrets/useSecretsLock.ts';
 import { MapView } from './MapView.tsx';
 import { useNyMap } from './useNyMap.ts';
@@ -19,14 +19,14 @@ function LoadedMap() {
 
 /** "Mapa de NY" behind the narrator's password: the map shows what only the narrator may see. */
 export function MapPage({ lock }: { lock: SecretsLock }) {
-  if (lock.configured && lock.unlocked) return <LoadedMap />;
+  if (lock.unlocked) return <LoadedMap />;
   return (
     <section className={styles.gate} aria-labelledby="ny-map-gate-title">
       <h2 id="ny-map-gate-title" className={styles.title}>
         Mapa de NY
       </h2>
       <p className={styles.lead}>Território das facções, clãs e lugares da crônica. Mostra segredos de mesa: a mesma senha dos Segredos.</p>
-      {lock.configured ? <PasswordForm lock={lock} /> : <PasswordNotConfigured />}
+      <PasswordForm lock={lock} />
     </section>
   );
 }

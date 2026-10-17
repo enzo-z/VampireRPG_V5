@@ -1,0 +1,57 @@
+# Publishes vampire-pages (the app inside this vault) to GitHub Pages.
+# The build reads the vault notes, so the whole repository is checked out.
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [ficha-app]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vampire-pages
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: vampire-pages/package-lock.json
+
+      - run: npm ci
+
+      - name: Testes e typecheck
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+        env:
+          # Repository secret; when missing, the app falls back to the default password.
+          SECRETS_PASSWORD: ${{ secrets.SECRETS_PASSWORD }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: vampire-pages/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
