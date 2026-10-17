@@ -183,3 +183,14 @@ export interface SecretDocument {
 export interface SecretsCatalog {
   documents: SecretDocument[];
 }
+
+/** The lore page of one player's cheat sheet (Regras/Colas dos Jogadores/<character>.md). */
+export interface PlayerColaNote {
+  /** Character name, from the file name. */
+  name: string;
+  cola: ColaCatalog;
+}
+
+export interface PlayerColaCatalog {
+  notes: PlayerColaNote[];
+}
