@@ -55,6 +55,7 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - Conteúdo lido no build de `Narrador/Nova York/Mapa de Nova York.md` (`publicar: true`) por `src/catalog/parseNyMap.ts` + `vite/buildNyMap.ts`, validado com zod. Nota fora do formato (facção, camada ou fonte desconhecida, coordenada inválida, `id` repetido, seção faltando) **quebra o build** com o nome da seção. O teste `src/test/nyMapNote.test.ts` roda contra a nota real.
 - Contornos, nomes das águas, posição das setas da borda e enquadramentos ficam em `src/features/map/geometry.ts`; funções puras (projeção, camadas, rótulos, escala) em `mapModel.ts`. Cores das facções são tokens `--color-faction-*` e `--color-map-*`.
 - Nomes de NPC no mapa seguem `Narrador/Nova York/Elenco de Nova York.md` (fonte de verdade dos NPCs de NY).
+- **Tema escuro só no mapa** (decidido em 2026-10-17): controle "Tema: Sistema · Claro · Escuro" (padrão Sistema, lembrado no `localStorage`). A seção do mapa recebe `data-map-theme="dark"` e `tokens.css` redefine ali os tokens semânticos com as primitivas `--palette-night-*`; menu e barra continuam claros. O resto do app segue só com o tema claro.
 
 ## Vocabulário da UI (pt-BR)
 Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity, Clan Bane, Player (decidido em 2026-10-15).

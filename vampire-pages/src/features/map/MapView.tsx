@@ -5,7 +5,9 @@ import { MapCanvas, MarkerSymbol } from './MapCanvas.tsx';
 import { MapDossier } from './MapDossier.tsx';
 import { MapLedger } from './MapLedger.tsx';
 import { DEFAULT_LAYERS, factionFor, layersForEra, type MapEra, type MapSelection } from './mapModel.ts';
+import type { MapThemePreference } from './mapTheme.ts';
 import { useAnimatedViewBox } from './useAnimatedViewBox.ts';
+import { useMapTheme } from './useMapTheme.ts';
 import styles from './MapView.module.css';
 
 const SWATCH_CLASS: Readonly<Record<NyFactionKey, string | undefined>> = {
@@ -47,6 +49,7 @@ export function MapView({ map }: { map: NyMapCatalog }) {
   const [selection, setSelection] = useState<MapSelection>(null);
   const viewBox = useAnimatedViewBox(VIEW_BOXES[zoom]);
   const legend = useMemo(() => legendFor(map, era), [map, era]);
+  const theme = useMapTheme();
 
   const changeEra = (next: MapEra) => {
     setEra(next);
@@ -62,7 +65,7 @@ export function MapView({ map }: { map: NyMapCatalog }) {
   };
 
   return (
-    <section className={styles.view} aria-labelledby="ny-map-title">
+    <section className={styles.view} aria-labelledby="ny-map-title" data-map-theme={theme.theme}>
       <header className={styles.header}>
         <p className={styles.eyebrow}>Narrador · Réveillon de 2021</p>
         <h2 id="ny-map-title" className={styles.title}>
@@ -89,6 +92,16 @@ export function MapView({ map }: { map: NyMapCatalog }) {
             options={[
               { value: 'city', label: 'Cidade' },
               { value: 'manhattan', label: 'Manhattan' },
+            ]}
+          />
+          <Segmented<MapThemePreference>
+            label="Tema"
+            value={theme.preference}
+            onChange={theme.setPreference}
+            options={[
+              { value: 'system', label: 'Sistema' },
+              { value: 'light', label: 'Claro' },
+              { value: 'dark', label: 'Escuro' },
             ]}
           />
           <fieldset className={styles.controlGroup}>

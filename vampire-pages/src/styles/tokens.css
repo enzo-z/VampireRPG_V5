@@ -31,6 +31,28 @@
   --palette-land: #f3eeec;          /* land outside the map's subject */
   --palette-coast: #8f8a8b;         /* coastlines and water labels */
 
+  /* Night: the New York map's dark theme only (features/map) */
+  --palette-night: #151112;          /* page ground */
+  --palette-night-tint: #241b1d;     /* table zebra */
+  --palette-night-ink: #efe7e5;      /* text, 15.2:1 on night */
+  --palette-night-ink-muted: #bdb3b1;
+  --palette-night-ink-subtle: #9a908f; /* 6.3:1 on night */
+  --palette-night-mist: #3d3637;     /* dotted boxes, decorative only */
+  --palette-night-crimson: #e8707e;  /* accent, 6.3:1 on night */
+  --palette-night-crimson-deep: #f19aa4;
+  --palette-night-crimson-fill: #7a2a35;
+  --palette-night-crimson-tint: #3a1b20;
+  --palette-night-ochre: #e0a24a;
+  --palette-night-ochre-fill: #7a5216;
+  --palette-night-ochre-tint: #3a2a14;
+  --palette-night-teal: #7fb3b1;
+  --palette-night-teal-tint: #1c2e2e;
+  --palette-night-stone: #3a3335;
+  --palette-night-soot: #0b0909;     /* Sabbat hatching */
+  --palette-night-water: #0f1618;
+  --palette-night-land: #221c1d;
+  --palette-night-coast: #6a6162;
+
   /* ---------- Semantic colors ---------- */
   --color-surface: var(--palette-paper);
   --color-surface-raised: var(--palette-paper);
@@ -133,6 +155,42 @@
   --layer-drawer: 30;
   --layer-dialog: 40;
   --layer-toast: 50;
+}
+
+/* Dark theme of the New York map only: the map view sets data-map-theme="dark"
+   on its own section; the rest of the app stays light. Same semantic names. */
+[data-map-theme='dark'] {
+  color-scheme: dark;
+  --color-surface: var(--palette-night);
+  --color-surface-raised: var(--palette-night);
+  --color-surface-tint: var(--palette-night-tint);
+  --color-text: var(--palette-night-ink);
+  --color-text-muted: var(--palette-night-ink-muted);
+  --color-text-subtle: var(--palette-night-ink-subtle);
+  --color-text-accent: var(--palette-night-crimson);
+  --color-text-on-accent: var(--palette-night);
+  --color-border: var(--palette-night-mist);
+  --color-border-strong: var(--palette-night-ink);
+  --color-rule: var(--palette-night-crimson);
+  --color-divider: var(--palette-night-ink);
+  --color-accent: var(--palette-night-crimson);
+  --color-accent-hover: var(--palette-night-crimson-deep);
+  --color-focus-ring: var(--palette-night-crimson);
+  --color-map-water: var(--palette-night-water);
+  --color-map-land: var(--palette-night-land);
+  --color-map-coast: var(--palette-night-coast);
+  --color-map-halo: var(--palette-night);
+  --color-faction-cam-line: var(--palette-night-crimson);
+  --color-faction-cam-fill: var(--palette-night-crimson-fill);
+  --color-faction-cam-tint: var(--palette-night-crimson-tint);
+  --color-faction-anarch-line: var(--palette-night-ochre);
+  --color-faction-anarch-fill: var(--palette-night-ochre-fill);
+  --color-faction-anarch-tint: var(--palette-night-ochre-tint);
+  --color-faction-indep-line: var(--palette-night-teal);
+  --color-faction-indep-tint: var(--palette-night-teal-tint);
+  --color-faction-sabbat-line: var(--palette-night-soot);
+  --color-faction-sabbat-fill: var(--palette-night-stone);
+  --color-faction-unknown-dot: var(--palette-night-coast);
 }
 
 /* Future dark theme: override the SAME semantic names here (and add

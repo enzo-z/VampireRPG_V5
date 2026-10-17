@@ -6,7 +6,11 @@
   container-type: inline-size;
   display: grid;
   gap: var(--space-6);
+  min-block-size: 100vh;
   padding: var(--space-5);
+  /* The section paints its own ground: in the dark theme it is the only dark part of the app. */
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 /* ---------- Header and controls ---------- */
@@ -443,7 +447,8 @@
 .toneCam { color: var(--color-faction-cam-line); }
 .toneAnarch { color: var(--color-faction-anarch-line); }
 .toneIndep { color: var(--color-faction-indep-line); }
-.toneSabbat { color: var(--color-faction-sabbat-line); }
+/* Text color, not the hatch line: in the dark theme the hatch is near black. */
+.toneSabbat { color: var(--color-text); }
 .toneUnknown { color: var(--color-text-subtle); }
 
 .facts {
