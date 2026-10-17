@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #narrador #nova-york #mapa #auld-sanguine
 
 > Descrição do **mapa interativo de Nova York** (Réveillon de 2021) e **fonte de verdade** para mudanças nele. O mapa fica em `vampire-pages/docs/notes/one-shot/mapa-nova-york.html` (abrir no navegador) e publicado em [claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G).
