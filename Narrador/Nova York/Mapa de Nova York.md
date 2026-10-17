@@ -2,7 +2,7 @@
 
 > Descrição do **mapa interativo de Nova York** (Réveillon de 2021) e **fonte de verdade** para mudanças nele. O mapa fica em `vampire-pages/docs/notes/one-shot/mapa-nova-york.html` (abrir no navegador) e publicado em [claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G).
 > Montado em **16/10/2026**; **revisado em 17/10/2026** para seguir o [[Elenco de Nova York]], que é a fonte de verdade dos NPCs. Outras fontes: [[Auld Sanguine - Roteiro da Sessão]], `vampire-pages/docs/notes/one-shot/nova-york.md`, [[Clãs]], [[Sabbat]], [[Semana de Pesadelos]], as notas dos jogadores, [[Auld Sanguine - Laços entre Jogadores]] e, arquivadas em `Old/`, [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]].
-> ⚠️ **Estado (17/10/2026):** esta nota já descreve o mapa **como deve ficar**. O HTML e o artifact ainda estão na versão de 16/10 até serem atualizados a partir dela.
+> ✅ **Estado (17/10/2026):** esta nota, o HTML do app e o artifact (versão 2) estão alinhados.
 > **Regra de nomes:** o mapa só mostra **indivíduos** confirmados no [[Elenco de Nova York]]. Quem está em "Fora da campanha" no Elenco (❔, não confirmados, sem decisão, reserva, descartados) não aparece. Fatos de grupo continuam (a família Giovanni, os "Wolves of Wall Street", o templo de Red Hook), assim como as figuras históricas dos livros na camada História.
 > Etiquetas de fonte (as mesmas do mapa): **[jogos V5]** *Coteries/Shadows/Reckoning of New York*; **[livro V5]** livros de V5 transcritos; **[notas]** notas do Narrador; **[SUG]** sugestão para a campanha; **[ed. anterior]** livros anteriores a V5.
 
