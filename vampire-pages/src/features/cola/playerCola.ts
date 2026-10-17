@@ -3,11 +3,11 @@ import { findPlayerCola } from '../../catalog/playerColas.ts';
 import type { CatalogEntry, ColaBlock, PlayerColaCatalog } from '../../catalog/types.ts';
 import type { Ficha } from '../../domain/character.ts';
 import {
-  ATTRIBUTE_KEYS,
   ATTRIBUTE_LABELS,
   SKILL_KEYS,
   SKILL_LABELS,
   type AttributeKey,
+  type SkillKey,
 } from '../../domain/traits.ts';
 
 /** Catalogs the player's page reads from; injected so the builder stays pure and testable. */
@@ -120,21 +120,59 @@ function buildDisciplines(ficha: Ficha, catalogs: PlayerColaCatalogs, warnings: 
     });
 }
 
-/** Strong skills with the pool of the sheet's best attribute: a starting point, the Narrator decides the pair. */
+/**
+ * Attributes the V5 book usually pairs with each skill, in order of preference.
+ * The pool uses the highest of them on the sheet (ties keep the first listed).
+ */
+export const SKILL_ATTRIBUTES: Readonly<Record<SkillKey, readonly [AttributeKey, ...AttributeKey[]]>> = {
+  athletics: ['strength', 'dexterity'],
+  brawl: ['strength', 'dexterity'],
+  craft: ['dexterity', 'intelligence'],
+  drive: ['dexterity', 'wits'],
+  firearms: ['dexterity'],
+  larceny: ['dexterity', 'wits'],
+  melee: ['strength', 'dexterity'],
+  stealth: ['dexterity', 'wits'],
+  survival: ['stamina', 'wits'],
+  animalKen: ['charisma', 'manipulation'],
+  etiquette: ['charisma', 'manipulation'],
+  insight: ['wits', 'resolve', 'intelligence'],
+  intimidation: ['strength', 'manipulation'],
+  leadership: ['charisma', 'manipulation'],
+  performance: ['charisma', 'manipulation'],
+  persuasion: ['charisma', 'manipulation'],
+  streetwise: ['charisma', 'manipulation', 'wits'],
+  subterfuge: ['manipulation', 'composure'],
+  academics: ['intelligence', 'resolve'],
+  awareness: ['wits', 'resolve'],
+  finance: ['intelligence', 'wits'],
+  investigation: ['intelligence', 'wits'],
+  medicine: ['intelligence', 'wits'],
+  occult: ['intelligence', 'resolve'],
+  politics: ['intelligence', 'charisma', 'manipulation'],
+  science: ['intelligence', 'resolve'],
+  technology: ['intelligence', 'wits'],
+};
+
+function bestAttributeFor(ficha: Ficha, skill: SkillKey): AttributeKey {
+  const [first, ...rest] = SKILL_ATTRIBUTES[skill];
+  return rest.reduce<AttributeKey>((top, key) => (ficha.attributes[key] > ficha.attributes[top] ? key : top), first);
+}
+
+/** Strong skills with the pool of their usual attribute: a starting point, the Narrator decides the pair. */
 function buildPools(ficha: Ficha): PlayerPool[] {
-  const best = ATTRIBUTE_KEYS.reduce<AttributeKey>(
-    (top, key) => (ficha.attributes[key] > ficha.attributes[top] ? key : top),
-    ATTRIBUTE_KEYS[0],
-  );
   return SKILL_KEYS.filter((key) => ficha.skills[key] >= STRONG_SKILL_DOTS)
     .sort((a, b) => ficha.skills[b] - ficha.skills[a])
-    .map((key) => ({
-      skill: SKILL_LABELS[key],
-      dots: ficha.skills[key],
-      specialty: ficha.specs[key] ?? '',
-      attribute: ATTRIBUTE_LABELS[best],
-      dice: ficha.attributes[best] + ficha.skills[key],
-    }));
+    .map((key) => {
+      const attribute = bestAttributeFor(ficha, key);
+      return {
+        skill: SKILL_LABELS[key],
+        dots: ficha.skills[key],
+        specialty: ficha.specs[key] ?? '',
+        attribute: ATTRIBUTE_LABELS[attribute],
+        dice: ficha.attributes[attribute] + ficha.skills[key],
+      };
+    });
 }
 
 export function buildPlayerCola(ficha: Ficha, catalogs: PlayerColaCatalogs): PlayerCola {

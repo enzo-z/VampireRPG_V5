@@ -6,7 +6,8 @@ import { indexCatalog } from '../../catalog/lookup.ts';
 import { findPlayerCola } from '../../catalog/playerColas.ts';
 import { createFicha } from '../../domain/defaults.ts';
 import type { Ficha } from '../../domain/character.ts';
-import { buildPlayerCola, isShortField, type PlayerColaCatalogs } from './playerCola.ts';
+import { ATTRIBUTE_GROUPS, SKILL_KEYS } from '../../domain/traits.ts';
+import { buildPlayerCola, isShortField, SKILL_ATTRIBUTES, type PlayerColaCatalogs } from './playerCola.ts';
 
 // Real vault notes, so a note edit that breaks the player's page fails here.
 const vault = (path: string) => fileURLToPath(new URL(`../../../../${path}`, import.meta.url));
@@ -130,6 +131,10 @@ function herta(): Ficha {
   ficha.identity = { ...ficha.identity, clan: 'Ventrue', predatorType: 'Pursuer', generation: '13th' };
   ficha.attributes.composure = 4;
   ficha.attributes.charisma = 3;
+  ficha.attributes.manipulation = 3;
+  ficha.attributes.intelligence = 3;
+  ficha.attributes.wits = 2;
+  ficha.attributes.resolve = 2;
   ficha.skills.insight = 4;
   ficha.skills.investigation = 3;
   ficha.skills.persuasion = 3;
@@ -170,10 +175,10 @@ describe("Herta's page", () => {
 
   it('lists the strong pools, best first', () => {
     expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
-      ['Insight', 8],
-      ['Persuasion', 7],
-      ['Investigation', 7],
-      ['Politics', 7],
+      ['Insight', 7],
+      ['Persuasion', 6],
+      ['Investigation', 6],
+      ['Politics', 6],
     ]);
   });
 
@@ -251,7 +256,7 @@ describe("Nina's page", () => {
   it('lists the strong pools with the best attribute', () => {
     expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
       ['Insight', 7],
-      ['Performance', 7],
+      ['Performance', 6],
       ['Awareness', 7],
     ]);
   });
@@ -286,6 +291,7 @@ describe("Nina's page", () => {
 function vincent(): Ficha {
   const ficha = createFicha('vincent', 'Vincent Marchetti', 'Pedro');
   ficha.identity = { ...ficha.identity, clan: 'Tzimisce', predatorType: 'Blood Leech', generation: '12th' };
+  ficha.attributes.strength = 3;
   ficha.attributes.manipulation = 4;
   ficha.skills.athletics = 3;
   ficha.skills.brawl = 3;
@@ -341,9 +347,17 @@ describe("Vincent's page", () => {
 
   it('lists the strong pools with the best attribute', () => {
     expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
-      ['Athletics', 7],
-      ['Brawl', 7],
+      ['Athletics', 6],
+      ['Brawl', 6],
       ['Persuasion', 7],
+    ]);
+  });
+
+  it('pairs each strong skill with an attribute that fits it', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.attribute])).toEqual([
+      ['Athletics', 'Strength'],
+      ['Brawl', 'Strength'],
+      ['Persuasion', 'Manipulation'],
     ]);
   });
 
@@ -380,6 +394,27 @@ describe("Vincent's page", () => {
     const gusmanAndOthers = ['Ravnos', 'Jiménez', 'Julian', 'Caitiff', 'Nizar', 'Nathan', 'Iggy', 'Mary Winchester'];
     const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
     for (const term of [...secrets, ...gusmanAndOthers, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+});
+
+describe('SKILL_ATTRIBUTES', () => {
+  it('pairs every skill with attributes of the groups the book uses', () => {
+    expect(Object.keys(SKILL_ATTRIBUTES).sort()).toEqual([...SKILL_KEYS].sort());
+    for (const key of SKILL_KEYS) expect(SKILL_ATTRIBUTES[key].length, key).toBeGreaterThan(0);
+    // The cases the first version got wrong: physical skills never took a Social or Mental attribute.
+    for (const key of ['athletics', 'brawl', 'melee', 'firearms'] as const) {
+      for (const attribute of SKILL_ATTRIBUTES[key]) expect(ATTRIBUTE_GROUPS.physical, `${key}/${attribute}`).toContain(attribute);
+    }
+  });
+
+  it('uses the highest of the usual attributes, keeping the first on ties', () => {
+    const ficha = createFicha('t', 'Teste', 'T');
+    ficha.skills.persuasion = 3;
+    ficha.attributes.charisma = 2;
+    ficha.attributes.manipulation = 2;
+    expect(buildPlayerCola(ficha, catalogs).pools[0]?.attribute).toBe('Charisma');
+    ficha.attributes.manipulation = 4;
+    expect(buildPlayerCola(ficha, catalogs).pools[0]).toMatchObject({ attribute: 'Manipulation', dice: 7 });
   });
 });
 
