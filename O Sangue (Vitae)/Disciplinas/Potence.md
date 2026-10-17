@@ -38,6 +38,7 @@ Com este poder, o usuário é capaz de causar danos horrendos a mortais, rasgand
 > - **Custo**: Free
 > - **Duração**: Passiva (pode estar sempre ativo).
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Passivo, sem rolagem. Seus ataques desarmados podem causar dano Agravado a mortais, se você quiser, e ignoram um nível de armadura por nível de Potence.
 >
 > - **Sistema**:
 >
@@ -74,6 +75,7 @@ Vampiros com Potência ganham uma força muito maior de seu Sangue do que aquele
 > - **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]].
 > - **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Um Rouse Check; dura a cena. Soma seu nível de Potence ao dano desarmado (depois de calcular o dano) e a feitos de Força.
 >
 > - **Sistema**:
 >   Quando ativada, adicione o valor do nível de Potência do usuário ao **dano desarmado** (após calcular o [[Dano#Tomando e Trackeando o Dano|dano a ser aplicado]], some o seu nível de Potência), bem como a feitos de Força.
