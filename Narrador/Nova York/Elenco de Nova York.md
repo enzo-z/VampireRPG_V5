@@ -1,7 +1,7 @@
 #narrador #nova-york #npc #sect #auld-sanguine
 
 > **Fonte única de verdade** (single source of truth) para os **vampiros de Nova York** em **dezembro de 2021**: quem é, de que clã, de que facção, que cargo ocupa, se está vivo e a que PC se liga. Criada em **17/10/2026**.
-> ✅ **Regra:** em conflito de **nome, clã, facção, cargo ou status**, vale **esta nota**. As outras notas trazem o resto: [[Camarilla em Nova York]] (contexto da seita e fontes), [[Personagens da Camarilla de NY]] (perfis), [[Auld Sanguine - Laços entre Jogadores]] (quem sabe o quê), as fichas em `Narrador/Jogadores/` e os READMEs em `Narrador/Relacionamentos/Para o Jogador/`.
+> ✅ **Regra:** em conflito de **nome, clã, facção, cargo ou status**, vale **esta nota**. As outras notas trazem o resto: em `Old/`, arquivadas só para consulta, [[Camarilla em Nova York]] (contexto da seita e fontes) e [[Personagens da Camarilla de NY]] (perfis longos); [[Auld Sanguine - Laços entre Jogadores]] (quem sabe o quê), as fichas em `Narrador/Jogadores/` e os READMEs em `Narrador/Relacionamentos/Para o Jogador/`.
 > Ao mudar um NPC, mude **aqui primeiro** e depois propague. O [[Mapa de Nova York]] está desatualizado e só será atualizado com a liberação do Narrador (ver [[#Pendências]]).
 > Marcas: ✅ confirmado · 🎭 personagem de jogador · ☠️ destruído · 👁️ desaparecido · ❔ a confirmar · 📦 reserva · ❌ descartado · 💡 proposta ainda não validada.
 

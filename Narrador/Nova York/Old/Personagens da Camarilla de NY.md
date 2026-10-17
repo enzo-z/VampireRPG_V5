@@ -3,7 +3,7 @@
 > Perfis dos vampiros relevantes da Camarilla de Nova York, **nome por nome**. Complementa [[Camarilla em Nova York]].
 > Pesquisa de **11/10/2026**, em inglês (wikis, Wikipedia, resenhas, anúncios dos jogos). **Não li os livros nem os jogos.** Onde as fontes não trazem um dado, escrevi **"não encontrado"**: não inventei nada.
 > ✅ **Revisada em 16/10/2026** pela mesma regra de [[Camarilla em Nova York]]: perfis só de nomes **confirmados** pelo Narrador, mais os confirmados que já morreram (☠️). Os que o Narrador ainda vai decidir ficam marcados com ❔; Robert Larson está na reserva.
-> 📌 **Fonte de verdade dos NPCs (17/10/2026):** a lista oficial (nome, clã, facção, cargo, status) é [[Elenco de Nova York]]; aqui ficam os perfis detalhados. Em conflito, vale o Elenco.
+> 🗄️ **Nota arquivada (17/10/2026).** Para saber quem é quem em NY (nome, clã, facção, cargo, status), use [[Elenco de Nova York]]: em conflito, vale o Elenco. Esta nota fica só como **consulta** dos perfis longos (personalidade, trajetória, relações) da corte, tirados das wikis. Não atualize os nomes daqui.
 > Os **cargos** (Príncipe, Xerife, Primogen etc.) são links para [[Camarilla#Estrutura e Organização|Camarilla > Estrutura e Organização]], onde cada um está definido.
 > Confiança: **[A]** várias fontes concordam; **[M]** wiki de fãs; **[B]** inferência minha; **[CLÁSSICO]** vem do livro *New York by Night* (2001) ou de edições anteriores a V5, e pode não valer em V5; **[SUG]** sugestão minha para a campanha. Marcas: ✅ confirmado · ☠️ morto antes de 2021 · ❔ a confirmar.
 
