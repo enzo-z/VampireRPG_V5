@@ -1,8 +1,9 @@
 #narrador #nova-york #mapa #auld-sanguine
 
 > Descrição do **mapa interativo de Nova York** (Réveillon de 2021) e **fonte de verdade** para mudanças nele. O mapa fica em `vampire-pages/docs/notes/one-shot/mapa-nova-york.html` (abrir no navegador) e publicado em [claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G).
-> Montado em **16/10/2026** a partir de [[Camarilla em Nova York]], [[Personagens da Camarilla de NY]], [[Auld Sanguine - Roteiro da Sessão]], `vampire-pages/docs/notes/one-shot/nova-york.md`, [[Clãs]], [[Sabbat]], [[Semana de Pesadelos]], [[Sangue Ralo]], as notas dos jogadores e [[Auld Sanguine - Laços entre Jogadores]].
-> ⚠️ **O mapa precisa ser atualizado** (registrado em 17/10/2026). O Narrador vai liberar a atualização depois de resolver as pendências ou confirmar. Até lá, as seções abaixo descrevem o mapa **como ele está**, não como deveria estar. Ver [[#⚠️ Atualização pendente do mapa]]. Para nomes, cargos e status dos NPCs, a fonte de verdade é [[Elenco de Nova York]].
+> Montado em **16/10/2026**; **revisado em 17/10/2026** para seguir o [[Elenco de Nova York]], que é a fonte de verdade dos NPCs. Outras fontes: [[Auld Sanguine - Roteiro da Sessão]], `vampire-pages/docs/notes/one-shot/nova-york.md`, [[Clãs]], [[Sabbat]], [[Semana de Pesadelos]], as notas dos jogadores, [[Auld Sanguine - Laços entre Jogadores]] e, arquivadas em `Old/`, [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]].
+> ⚠️ **Estado (17/10/2026):** esta nota já descreve o mapa **como deve ficar**. O HTML e o artifact ainda estão na versão de 16/10 até serem atualizados a partir dela.
+> **Regra de nomes:** o mapa só mostra **indivíduos** confirmados no [[Elenco de Nova York]]. Quem está em "Fora da campanha" no Elenco (❔, não confirmados, sem decisão, reserva, descartados) não aparece. Fatos de grupo continuam (a família Giovanni, os "Wolves of Wall Street", o templo de Red Hook), assim como as figuras históricas dos livros na camada História.
 > Etiquetas de fonte (as mesmas do mapa): **[jogos V5]** *Coteries/Shadows/Reckoning of New York*; **[livro V5]** livros de V5 transcritos; **[notas]** notas do Narrador; **[SUG]** sugestão para a campanha; **[ed. anterior]** livros anteriores a V5.
 
 ### Sumário
@@ -20,13 +21,13 @@
 - [[#Pontos do mapa|Pontos do mapa]]
 - [[#Fora do mapa|Fora do mapa]]
 - [[#Clãs por distrito|Clãs por distrito]]
-- [[#Divergências e decisões em aberto|Divergências e decisões em aberto]]
-- [[#⚠️ Atualização pendente do mapa|⚠️ Atualização pendente do mapa]]
+- [[#Divergências e cuidados|Divergências e cuidados]]
+- [[#Decisões em aberto|Decisões em aberto]]
 
 ---
 # Como mudar o mapa
 
-1. Edite **esta nota**: troque a facção de um distrito, acrescente um clã, mova ou crie um ponto, resolva uma divergência.
+1. Edite **esta nota**: troque a facção de um distrito, acrescente um clã, mova ou crie um ponto, resolva uma divergência. Se a mudança for de um NPC (nome, clã, cargo, status), mude primeiro o [[Elenco de Nova York]].
 2. Peça ao Claude: *"leia `Narrador/Nova York/Mapa de Nova York.md` e atualize o mapa para corresponder"*. Ele compara a nota com o HTML, edita os dados do mapa e republica o artifact no mesmo link.
 3. Em conflito, **vale esta nota**. O HTML só guarda além disso os **contornos** dos distritos (polígonos simplificados) e o estilo; mude esses só se pedir explicitamente.
 
@@ -40,7 +41,9 @@ Correspondência entre as seções e os dados do HTML:
 | [[#Pontos do mapa]] | `MARKERS` e `LAYERS` |
 | [[#Fora do mapa]] | `EDGES` |
 | [[#Clãs por distrito]] | `LEDGER` |
-| [[#Divergências e decisões em aberto]] | `NOTES` |
+| [[#Divergências e cuidados]] | `NOTES` |
+
+[[#Decisões em aberto]] não aparece no mapa: é a lista de trabalho do Narrador.
 
 **Regras dos pontos:** coordenadas em graus decimais, **longitude, latitude** (como `-73.9744, 40.7645`; dá para copiar do Google Maps invertendo a ordem). *Aproximado* = as fontes não dão endereço, e o mapa desenha um anel tracejado. *Rótulo à esquerda* serve para evitar sobreposição. Pontos de Manhattan só mostram o rótulo na vista "Manhattan".
 
@@ -60,7 +63,7 @@ Correspondência entre as seções e os dados do HTML:
 | História | círculo vazado | Eventos antigos (1830–2008) |
 
 - **Painel lateral:** clicar num distrito mostra facção, área e população (Censo 2020), resumo, clãs com fonte, o "antes de 1999" e os pontos do distrito. Clicar num ponto mostra o texto e a fonte.
-- **Abaixo do mapa:** a matriz de clãs por distrito e as divergências.
+- **Abaixo do mapa:** a matriz de clãs por distrito e as divergências e cuidados.
 - Escala em km (5 km na cidade, 2 km em Manhattan) e seta do norte. Projeção simples a partir de lat/lon; norte para cima.
 
 ---
@@ -81,7 +84,7 @@ Correspondência entre as seções e os dados do HTML:
 
 Texto do painel quando nada está selecionado.
 
-**2021, "A cidade de Panhard":** domínio grande, com cerca de 50 Kindred, corte completa e mais de um Xerife. Por fora, estável; por dentro, Callihan morreu em março de 2020, Torque disputa os Anarchs, e o Xerife e a Scourge pressionam a Príncipe por mais dureza. [livro V5] [jogos V5]
+**2021, "A cidade de Panhard":** domínio grande, com cerca de 50 Kindred, corte completa e mais de um Xerife. Para a maior parte da corte, a Príncipe governa com firmeza; só os muito bem informados percebem que o poder dela já está em queda. Callihan morreu em março de 2020, Torque disputa os Anarchs, e o Xerife e a Scourge pressionam a Príncipe por mais dureza. [livro V5] [jogos V5] [notas]
 
 **A corte** (lista do painel):
 
@@ -92,14 +95,12 @@ Texto do painel quando nada está selecionado.
 | Thomas Arturo | Herald · Toreador |
 | Valerie Duval | Scourge · Ventrue |
 | Aisling Sturbridge | Regente · Tremere |
-| Addison Payne | Primogen · Ventrue |
 | Julia Sowinski | Primogen · Lasombra |
 | Samira | Primogen · Banu Haqim |
 | Katherine Weiss | Primogen · Brujah (leal da Camarilla) |
-| Ivan Kutkha | Primogen · Caitiff |
 | Calebros | ex-Príncipe · Nosferatu |
 
-**Antes de 1999, "Uma ilha cercada":** por quase 300 anos Nova York foi domínio do Sabbat, com um arcebispo e uma linha de bispos; Lasombra mandavam e os Tzimisce eram a ala mística. Depois do crash de 1929 a Camarilla se firmou em Manhattan pelo dinheiro e ficou confinada à ilha por décadas. [notas] [livro V5] Em 1999 a Batalha de Nova York durou cerca de uma semana: incêndios à luz do dia, caça nas ruas e nos esgotos, o cerco do Bronx. Polonia escapou; a seita perdeu a cidade. Três PCs estavam lá: Vincent deu o plano, Gideon a espionagem, Daniel foi usado pela Segunda Guarda. [notas]
+**Antes de 1999, "Uma ilha cercada":** por quase 300 anos Nova York foi domínio do Sabbat, com um arcebispo e uma linha de bispos; Lasombra mandavam e os Tzimisce eram a ala mística. Depois do crash de 1929 a Camarilla se firmou em Manhattan pelo dinheiro e ficou confinada à ilha por décadas. [notas] [livro V5] Em 1999 a Batalha de Nova York durou cinco dias: incêndios à luz do dia, o Sabbat quebrado nas duas ou três primeiras noites, depois caça nas ruas e nos esgotos e o cerco do Bronx. Polonia escapou; a seita perdeu a cidade. Três PCs estavam lá: Vincent deu o plano, Gideon a espionagem, Daniel foi usado pela Segunda Guarda. [notas]
 
 ---
 # Distritos
@@ -111,12 +112,12 @@ Texto do painel quando nada está selecionado.
 
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
-| Ventrue | Hellene Panhard (Príncipe), Addison Payne (Primogen) e o childe Leo, Valerie Duval (Scourge). Wall Street e o distrito financeiro, cheios de ghouls. | jogos V5 · livro V5 |
-| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nicols na Broadway. O clã não tem Primogen em 2021. | jogos V5 · notas |
-| Tremere | Aisling Sturbridge, Regente da Chantry of the Five Boroughs; ❔ Juno (a confirmar). | livro V5 · jogos V5 |
-| Nosferatu | Donos do subsolo. Calebros, ex-Príncipe, ainda ativo; Gianni D'Angelo. | livro V5 · jogos V5 |
-| Malkavian | Elias Voss, "o Cartógrafo" (envelopes num teatro do West Village); um Malkaviano que diz viver "embaixo de Manhattan"; ❔ Cara Montgomery (a confirmar). | notas · livro V5 · jogos V5 |
-| Hecata | Donatello Giovanni recebe coteries nos seus clubes do Village. A corte lhe deve um favor maior pela guerra contra o Sabbat. | livro V5 |
+| Ventrue | Hellene Panhard (Príncipe) e Valerie Duval (Scourge). Herta Müller, de Berlim, hospedada no Plaza. Wall Street e o distrito financeiro, cheios de ghouls. | jogos V5 · livro V5 · notas |
+| Toreador | Qadir al-Asmai (Xerife), Thomas Arturo (Herald), Gideon Nicols na Broadway e Nina Calloway, que mora em Washington Heights. O clã não tem Primogen em 2021. | jogos V5 · notas |
+| Tremere | Aisling Sturbridge, Regente da Chantry of the Five Boroughs. | livro V5 · jogos V5 |
+| Nosferatu | Donos do subsolo. Calebros, ex-Príncipe, ainda ativo. | livro V5 · jogos V5 |
+| Malkavian | Elias Voss, "o Cartógrafo", deixa envelopes num teatro do West Village (paradeiro desconhecido); um Malkaviano que diz viver "embaixo de Manhattan". | notas · livro V5 |
+| Hecata | Clubes da família Giovanni no Village. A corte deve à família um favor maior pela guerra contra o Sabbat. | livro V5 · notas |
 | Tzimisce | Vincent Marchetti, dono do Hotel Plaza, herói de guerra de 1999. | notas |
 | Banu Haqim | Khalid Hassan Yusuf, residente do Plaza desde ~2011. Samira, a Primogen, é a ponte com o sire dele. | notas · jogos V5 |
 | Gangrel | Os "Wolves of Wall Street", Gangrel financistas que deixaram a Camarilla e bancavam os Anarchs. | livro V5 |
@@ -126,15 +127,14 @@ Texto do painel quando nada está selecionado.
 ## Brooklyn
 - **Facção:** 2021 `camSoft` (Camarilla sem senhor único) · antes de 1999 `sabbat`
 - **Área / população:** 179,7 km² · 2.736.074
-- **Resumo:** tolerado pela corte, sem governante exclusivo. Aqui estão os Brujah motociclistas da Chama, a principal toca Nosferatu, o templo mais antigo do Ministry no Ocidente e a máfia russa de um Primogen Caitiff.
+- **Resumo:** tolerado pela corte, sem governante exclusivo. Aqui estão os Brujah motociclistas da Chama, a principal toca Nosferatu, o templo mais antigo do Ministry no Ocidente e os interesses da família Giovanni no porto.
 
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
 | Brujah | A Chama do Brooklyn (Iron Lanterns MC), liderada por Deacon Brandt: presta serviços à corte sem fazer parte dela. Daniel Mercer é irmão nômade; Red Harlan preside o clube de dia. | notas |
 | Nosferatu | Atlantic Avenue Tunnel, túnel de 1845 lacrado em 1861: a principal toca do clã. Quem entra para investigar não volta. | livro V5 |
 | Ministry | Templo de Set de Red Hook, fundado em 1893. | livro V5 |
-| Caitiff | Ivan Kutkha, Primogen, em Little Odessa (Brighton Beach). A máfia russa limpa brechas da Máscara para ele. | livro V5 |
-| Hecata | Interesses Giovanni no porto de Red Hook. | notas |
+| Hecata | Interesses da família Giovanni no porto de Red Hook. | notas |
 
 - **Antes de 1999:** bairro do Sabbat. A Chama de Doc Keane era um bolsão Brujah discreto que vendia serviços à rede clandestina da Camarilla. Em 1999, Doc tentou tomar a orla com a "Segunda Guarda" e foi destruído em Red Hook pela força de Marian Price.
 
@@ -146,7 +146,7 @@ Texto do painel quando nada está selecionado.
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
 | Lasombra | Julia Sowinski, Primogen (Abraçada em jun/2019), com escritório e refúgio no Queens. | jogos V5 |
-| Todos os clãs | Art Hole, Elysium da Camarilla, de pé em 2021 (destruído em dez/2024, em *Reckoning*). | jogos V5 |
+| Todos os clãs | Art Hole, Elysium da Camarilla, de pé em 2021 (destruído em dez/2024, em *Reckoning*). Foi lá que Heinrich apresentou a comitiva europeia e Herta à Príncipe, em 29/12. | jogos V5 · notas |
 
 - **Observação do painel:** Nathan Ward, filho e Touchstone de Daniel, mora no Queens. Isso não dá a ninguém autoridade sobre o distrito.
 - **Antes de 1999:** bairro do Sabbat, como todo o anel em volta de Manhattan.
@@ -167,11 +167,13 @@ Texto do painel quando nada está selecionado.
 ## Staten Island
 - **Facção:** 2021 `anarchSoft` (Anarquistas do pós-guerra) · antes de 1999 `sabbat`
 - **Área / população:** 148,9 km² · 495.747
-- **Resumo:** base dos Anarchs de Callihan depois de 1999 e sede do Pavio Negro MC, os dissidentes da Chama do Brooklyn. Em 2021 é a segunda presença Anarch da cidade, significativa, mas atrás do Bronx. Pouco disputado: refúgio de quem quer distância da corte, ou de caçadores.
+- **Resumo:** base dos Anarchs de Callihan depois de 1999 e sede do Pavio Negro MC, os dissidentes da Chama do Brooklyn. Em 2021 é a segunda presença Anarch da cidade, significativa, mas atrás do Bronx. Pouco disputado: refúgio de quem quer distância da corte. É onde Gusman se esconde.
 
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
 | Brujah | Teresa "Torch" Malloy e o Pavio Negro (Black Wick MC), patch com o rocker DOC VIVE. Para eles, o Brooklyn são as "Coleiras". Daniel não entra na ilha. | notas |
+| Ravnos | Gusman Gutierrez, **em segredo**: mora num apartamento em Port Richmond e acredita ser Caitiff. A corte e os Anarquistas da ilha não sabem dele. | notas |
+| Malkavian | Ignatius "Iggy" Pell, dono do bar *The Broken Minute*, em Port Richmond. Não se mistura com a política da ilha. É o único Kindred de fora que sabe que Gusman existe. | notas |
 
 - **Antes de 1999:** Sabbat. Em 1776, o exército britânico acampou aqui e trouxe de volta Nostoket, Nosferatu de 6ª geração que considerava a cidade seu reino.
 
@@ -182,8 +184,8 @@ Texto do painel quando nada está selecionado.
 
 | Clã | Quem / o quê | Fonte |
 |---|---|---|
-| Ravnos | Gusman Gutierrez: Status em Nova Jersey (classe trabalhadora); o orfanato proposto para a infância dele fica em Newark. | notas |
-| Toreador · Hecata | Em Atlantic City (fora do mapa): Edith Blumenau, Barão Anarch e matriarca Bahari; antes, Ornella Giovanni a mando de Donatello. | livro V5 |
+| Ravnos | Gusman Gutierrez tem Status em Nova Jersey (classe trabalhadora) e cresceu num orfanato de Newark, mas mora em Staten Island. Evita o estado, onde estão os italianos que o procuram. | notas |
+| Toreador · Hecata | Em Atlantic City (fora do mapa): Edith Blumenau, Barão Anarch e matriarca Bahari; antes, Ornella Giovanni. | livro V5 |
 
 - **Antes de 1999:** o vault não diz quem mandava em Nova Jersey antes de 1999. Atlantic City foi terreno neutro (Elysium) até 1999.
 
@@ -196,29 +198,31 @@ Formato: **Nome** (`id`) · camadas · `lon, lat` · rótulo curto · extras · 
 
 ### Manhattan
 - **Hotel Plaza** (`plaza`) · Coterie · `-73.9744, 40.7645` · "Plaza" · notas
-  Domínio de Vincent Marchetti (Tzimisce): o hotel e as pessoas que o mantêm são a charge dele. Residência de Khalid desde ~2011, por designação da corte. Cenário das festas de Gideon. Em segredo, os olhos de Nizar ibn Tahir, Arconte de Don Cerro: Khalid escolheu o sistema de câmeras por indicação dele.
+  Domínio de Vincent Marchetti (Tzimisce): o hotel e as pessoas que o mantêm são a charge dele. Residência de Khalid desde ~2011, por designação da corte. Cenário das festas de Gideon. Desde 28/12, hospeda Herta Müller; o resto da comitiva europeia (Heinrich von Altenfeld e Teodoro Castellví) saiu em 30/12 para uma residência da Príncipe. Em segredo, os olhos de Nizar ibn Tahir, Arconte de Don Cerro: Khalid escolheu o sistema de câmeras por indicação dele.
 - **Wall Street** (`wall`) · Lugares de 2021 · `-74.0090, 40.7062` · "Wall Street" · livro V5
   Distrito financeiro cheio de ghouls e de dinheiro antigo; símbolo do poder Ventrue desde o crash de 1929. Os Gangrel financistas, os "Wolves of Wall Street", bancavam os Anarchs.
 - **Greenwich Village** (`village`) · Lugares de 2021 · `-74.0005, 40.7336` · "Village" · livro V5
-  Clubes de Donatello Giovanni, chefe Hecata da Costa Leste, onde ele recebe coteries. Bairro boêmio que acolhe Toreador excêntricos.
+  Clubes da família Giovanni (Hecata), onde a família recebe coteries. Bairro boêmio que acolhe Toreador excêntricos.
 - **Chantry of the Five Boroughs** (`chantry`) · Lugares de 2021 · `-73.9637, 40.8090` · "Chantry Tremere" · aproximado · livro V5, ed. anterior
   Sede Tremere sob a Regente Aisling Sturbridge (10ª geração, Abraço 1911). A localização no campus do Barnard College é de edição anterior; V5 não diz onde fica.
-- **Harlem** (`harlem`) · Lugares de 2021, História · `-73.9445, 40.8095` · "Harlem" · livro V5
-  Raiz do jazz de Nova York: Renascença do Harlem, cultura de ballroom, Brujah com o "numbers racket" nos anos 1930. Na época, território inimigo para a Camarilla. Hoje, a cena natural da Nina. Também é a alternativa ao Bed-Stuy para o prédio da festa de Isabella.
+- **Harlem** (`harlem`) · Lugares de 2021, História · `-73.9445, 40.8095` · "Harlem" · livro V5, notas
+  Raiz do jazz de Nova York: Renascença do Harlem, cultura de ballroom, Brujah com o "numbers racket" nos anos 1930. Na época, território inimigo para a Camarilla. Hoje, a cena da Nina: ela foi Abraçada na Lenox Avenue em nov/2020, perto do restaurante fechado de Augie Mendez. Também é a alternativa ao Bed-Stuy para o prédio da festa de Isabella.
+- **Washington Heights** (`washheights`) · Coterie · `-73.9385, 40.8417` · "Nina (Washington Heights)" · aproximado · notas
+  Onde Nina "Blue" Calloway (Toreador, Abraço irregular em 2020, *Suspect*) mora, perto da avó Altagracia Reyes. O Mawla dela é Gideon.
 - **Upper East Side** (`ues`) · Lugares de 2021 · `-73.9566, 40.7736` · "Upper East Side" · livro V5
   Terreno de caça dos ricos.
 - **The Harbor Ledger** (`ledger`) · Coterie · `-74.0060, 40.7128` · "Harbor Ledger" · aproximado · notas
   Redação investigativa sem fins lucrativos em Lower Manhattan; cobre habitação, polícia, contratos e o porto. Mary Winchester (chefe, ligada a Gideon) e Leila Yusuf (irmã e Touchstone de Khalid, que o crê morto desde 2010).
 - **Refúgio de Cordelia Vane** (`cordelia`) · Coterie, História · `-73.9754, 40.7870` · "Cordelia (2008)" · aproximado · notas
-  Sire de Gideon. Levada de madrugada em 2008 por uma operação federal disfarçada de prisão por fraude (Segunda Inquisição). O refúgio no Upper West Side foi achado vazio e lacrado.
+  Sire de Gideon, com quem avaliou Vincent em 1999. Levada de madrugada em 2008 por uma operação federal disfarçada de prisão por fraude (Segunda Inquisição). O refúgio no Upper West Side foi achado vazio e lacrado.
 - **Teatro do West Village** (`wally`) · Coterie · `-74.0072, 40.7318` · "Teatro (Wally Drake)" · aproximado, rótulo à esquerda · notas
   Walter "Wally" Drake, contrarregra, guarda os envelopes que Elias Voss deixa "para o Cartógrafo". Gideon pagou o telhado do teatro; Wally não abre os envelopes, mas sabe quando foram retirados.
 - **Times Square e Broadway** (`times`) · Auld Sanguine, Coterie · `-73.9855, 40.7580` · "Times Square" · rótulo à esquerda · SUG, notas
   A bola cai à meia-noite: o centro lota e a polícia fica toda em Midtown, o que explica os 15 minutos de resposta ao alarme do parque industrial. Os teatros da Broadway são a fachada de Gideon, que mapeou o Sabbat pelos bastidores. Odile Marchand vende programas anotados por Elias num antiquário aqui perto.
 - **Grand Central** (`grand`) · Batalha de 1999 · `-73.9772, 40.7527` · "Grand Central" · notas
-  Batalha de 1999: os Tremere receberam aqui o cabelo dos ternos de Orozco, desviado pela lavanderia do Plaza que atendia metade da cidade, ideia de Vincent.
+  Batalha de 1999: os Tremere receberam aqui o cabelo dos ternos de Orozco, desviado pela lavanderia do Plaza que atendia metade da cidade, ideia de Vincent. Orozco morreu num trem aqui.
 - **Little Italy** (`littleitaly`) · História · `-73.9975, 40.7190` · "Little Italy" · notas
-  Vincent Marchetti nasce aqui em 1908 e vive no bairro até 1930, antes de virar carniçal do Plaza.
+  Vincent Marchetti nasce aqui em 1908 e vive no bairro até 1930, antes de virar carniçal do Plaza. Os Giovanni eram os "padrinhos" do bairro e do porto.
 - **Rockland Palace** (`rockland`) · História · `-73.9385, 40.8290` · "Rockland Palace" · livro V5
   1919: Erzulie (Toreador) é Abraçada no baile da Hamilton Lodge, no Harlem. Depois acolheu Caitiff perseguidos; hoje está em Chicago.
 - **Empire State (antigo Waldorf)** (`waldorf`) · História · `-73.9857, 40.7484` · "Empire State" · rótulo à esquerda · livro V5
@@ -232,19 +236,17 @@ Formato: **Nome** (`id`) · camadas · `lon, lat` · rótulo curto · extras · 
 - **Atlantic Avenue Tunnel** (`atlantic`) · Lugares de 2021 · `-73.9935, 40.6905` · "Atlantic Ave. Tunnel" · rótulo à esquerda · livro V5
   Túnel ferroviário de 1845, lacrado em 1861, com quase 800 m: a principal toca Nosferatu de Nova York. Quem entra para investigar não volta.
 - **Red Hook: templo de Set** (`redhook`) · Lugares de 2021 · `-74.0095, 40.6775` · "Red Hook" · rótulo à esquerda · livro V5, notas
-  Templo do Ministry fundado em 1893, o mais antigo do hemisfério ocidental. Também é onde o Iron Lanterns MC nasceu, numa garagem, em 1962, e onde ficam os interesses Giovanni no porto. Candidato a local do galpão de *Auld Sanguine*.
+  Templo do Ministry fundado em 1893, o mais antigo do hemisfério ocidental. Também é onde o Iron Lanterns MC nasceu, numa garagem, em 1962, e onde ficam os interesses da família Giovanni no porto. Candidato a local do galpão de *Auld Sanguine*.
 - **Depósito da Segunda Guarda** (`redhook99`) · Batalha de 1999 · `-74.0150, 40.6700` · "Depósito (1999)" · aproximado, rótulo à esquerda · notas
   Noite 3: Daniel é capturado aqui com ordens falsas no bolso. Noite 4: a Camarilla cerca Red Hook com a força de Marian Price e destrói Doc Keane. Para isso tira tropas do cerco do Bronx, e Polonia escapa. O tanque da Maggie, a moto de Daniel, guarda um estilhaço daqui.
-- **Little Odessa** (`odessa`) · Lugares de 2021 · `-73.9614, 40.5790` · "Little Odessa" · livro V5
-  Brighton Beach, comunidade russa e ucraniana. Base de Ivan Kutkha, Primogen Caitiff, cujos laços com a máfia russa limpam brechas da Máscara "sem perguntas".
 - **Bed-Stuy: a festa de Isabella** (`bedstuy`) · Auld Sanguine · `-73.9418, 40.6872` · "Festa (Bed-Stuy)" · SUG
   O prédio da festa tem fachada de arenito: bairro de brownstones. Bed-Stuy ou o Harlem servem. Isabella fica no último apartamento do corredor.
 
 ### Queens
-- **Art Hole (Elysium)** (`arthole`) · Lugares de 2021 · `-73.9405, 40.7470` · "Art Hole" · aproximado · jogos V5
-  Elysium da Camarilla, de pé em 2021. Em dez/2024 (*Reckoning of New York*) o Hunter Offensive o destrói. O vault só diz "Queens"; o ponto é aproximado.
+- **Art Hole (Elysium)** (`arthole`) · Lugares de 2021 · `-73.9405, 40.7470` · "Art Hole" · aproximado · jogos V5, notas
+  Elysium da Camarilla, de pé em 2021. Em 29/12, Heinrich von Altenfeld apresentou aqui a comitiva europeia e Herta à Príncipe (5ª Tradição). Em dez/2024 (*Reckoning of New York*) o Hunter Offensive o destrói. O vault só diz "Queens"; o ponto é aproximado.
 - **Domínio de Julia Sowinski** (`julia`) · Lugares de 2021 · `-73.9120, 40.7620` · "Julia Sowinski" · aproximado · jogos V5
-  Primogen Lasombra, ex-jornalista da *New York Lodestar*. Tem escritório e refúgio no Queens. Ponto aproximado.
+  Primogen Lasombra, ex-jornalista da *New York Lodestar*. Tem escritório e refúgio no Queens. Teodoro Castellví veio de Barcelona para conhecê-la. Ponto aproximado.
 - **Flushing Meadows** (`flushing`) · História · `-73.8448, 40.7466` · "Feira de 1939" · livro V5
   Feira Mundial de 1939. Boato: a cápsula do tempo da Westinghouse guarda o crânio da matusalém Brujah Altamira.
 
@@ -255,18 +257,22 @@ Formato: **Nome** (`id`) · camadas · `lon, lat` · rótulo curto · extras · 
   Haven de emergência do arcebispo Polonia: complexo de armazéns abandonado que uma fachada Lasombra comprara anos antes. Vincent previu o recuo pela papelada que passou pelo Plaza. Cerco na noite 3; na noite 4 Polonia e um templar escapam pela rota que Vincent pedira para fechar. Local exato em aberto.
 
 ### Staten Island
+- **Port Richmond: Gusman e o Broken Minute** (`portrichmond`) · Coterie · `-74.1340, 40.6370` · "Port Richmond (Gusman)" · aproximado · notas
+  Gusman Gutierrez (Ravnos em segredo; acredita ser Caitiff) mora num apartamento em Port Richmond (💡 proposta: sobre uma lavanderia 24h) e vende relógios à noite pela Staten Island Railway. Perto dali, na Richmond Terrace, fica o *The Broken Minute*, bar de Iggy Pell (Malkaviano), decorado com relógios parados. O Pavio Negro é cliente ocasional; Gusman vai em dias de semana para evitá-los.
 - **Sede do Pavio Negro MC** (`pavio`) · Coterie · `-74.1300, 40.6050` · "Pavio Negro" · aproximado · notas
   Fundado no início de 2000 pelos dissidentes da Chama, liderados por Torch Malloy, Adversary de Daniel. Ligado aos Anarchs de Staten Island. Local exato em aberto.
 
 ### Nova Jersey
 - **Jersey City** (`jc`) · Lugares de 2021 · `-74.0560, 40.7250` · "Jersey City" · rótulo à esquerda · livro V5
   Micro-domínio incomum. Boato: a Segunda Inquisição ganha terreno aqui.
-- **Newark** (`newark`) · Lugares de 2021, Coterie · `-74.1724, 40.7357` · "Newark" · livro V5, notas, SUG
-  Micro-domínio incomum; boato de avanço da Segunda Inquisição. Proposta para a infância de Gusman: a Casa Santa Rita, orfanato católico de freiras de língua espanhola, fechado em 2016.
+- **Newark** (`newark`) · Lugares de 2021, Coterie · `-74.1724, 40.7357` · "Newark" · livro V5, notas
+  Micro-domínio incomum; boato de avanço da Segunda Inquisição. Aqui ficava a Casa Santa Rita, o orfanato de freiras de língua espanhola onde Gusman cresceu (fechado em 2016). Julius, Touchstone dele, mora em Newark.
 - **Paterson** (`paterson`) · Lugares de 2021 · `-74.1718, 40.9168` · "Paterson" · livro V5
   Micro-domínio incomum, sugerido pela Barão de Atlantic City como lugar para coteries se instalarem.
 - **Elizabeth** (`elizabeth`) · Lugares de 2021 · `-74.2107, 40.6640` · "Elizabeth" · rótulo à esquerda · livro V5
   Micro-domínio incomum.
+
+**Removidos na revisão de 17/10:** Little Odessa (`odessa`), que só existia por causa de Ivan Kutkha (descartado).
 
 ---
 # Fora do mapa
@@ -283,59 +289,54 @@ Setas na borda, só na vista "Cidade". Clicáveis.
 ---
 # Clãs por distrito
 
-Matriz abaixo do mapa. **●** = sede, domínio ou base do clã; **○** = figura conhecida mora ou age ali. "Cidade" = está em NY, bairro não informado.
+Matriz abaixo do mapa. **●** = sede, domínio ou base do clã; **○** = figura conhecida mora ou age ali. "Cidade" = está em NY, bairro não informado. Só entram nomes confirmados no [[Elenco de Nova York]].
 
 | Clã | Manhattan | Brooklyn | Queens | Bronx | Staten Is. | N. Jersey | Cidade |
 |---|---|---|---|---|---|---|---|
-| Ventrue | ● Panhard, Payne, Leo, Duval; Wall Street | | | | | | |
-| Toreador | ● Qadir, Arturo, Gideon | | | ○ Duke (sugestão) | | | |
-| Tremere | ● Sturbridge; Chantry of the Five Boroughs; ❔ Juno | | | | | | |
-| Nosferatu | ● Subsolo; Calebros | ● Atlantic Avenue Tunnel | | | | | |
-| Malkavian | ○ Elias Voss; ❔ Cara Montgomery | | | | | | |
-| Brujah | | ● Chama / Iron Lanterns, Deacon | | ● Torque, Mia Morgan | ● Pavio Negro, Torch | | ○ Katherine Weiss (Primogen, leal) |
-| Gangrel | ○ Wolves of Wall Street | | | ○ Tamika | | | ○ Ranq; ❔ Declan, Raoul; Jesse (PC) |
+| Ventrue | ● Panhard, Duval; Wall Street; ○ Herta (Plaza) | | | | | | ○ Marian Price; Heinrich (comitiva) |
+| Toreador | ● Qadir, Arturo, Gideon; ○ Nina (Washington Heights) | | | ○ Duke (sugestão) | | | |
+| Tremere | ● Sturbridge; Chantry of the Five Boroughs | | | | | | |
+| Nosferatu | ● Subsolo; Calebros | ● Atlantic Avenue Tunnel | | | | | ○ Ivo Rask |
+| Malkavian | ○ envelopes de Elias Voss (West Village) | | | | ○ Iggy (Broken Minute) | | ○ Elias Voss (paradeiro desconhecido), Lu Hargrove |
+| Brujah | | ● Chama / Iron Lanterns, Deacon | | ● Torque, Mia Morgan | ● Pavio Negro, Torch | | ○ Katherine Weiss (Primogen, leal); Daniel (nômade) |
+| Gangrel | ○ Wolves of Wall Street | | | ○ Tamika | | | ○ Jesse (recém-chegado) |
 | Banu Haqim | ○ Khalid (Plaza) | | | | | | ○ Samira, Primogen |
-| Lasombra | | | ● Julia Sowinski, Primogen | | | | |
+| Lasombra | | | ● Julia Sowinski, Primogen | | | | ○ Teodoro Castellví (comitiva) |
 | Tzimisce | ○ Vincent Marchetti (Plaza) | | | | | | |
-| Hecata | ● Donatello Giovanni, Village | ○ Porto de Red Hook | | | | | |
+| Hecata | ● Família Giovanni, clubes do Village | ○ Porto de Red Hook | | | | | |
 | Ministry | | ● Templo de Red Hook, 1893 | | | | | |
-| Ravnos | | | | | | ○ Gusman (Status) | |
-| Caitiff | | ● Ivan Kutkha, Little Odessa | | | | | |
-
-**Fora da matriz por falta de lugar:** Nina "Blue" Calloway (Toreador, cena do jazz; o Harlem é o encaixe natural, mas não está decidido) e o 8º jogador.
+| Ravnos | | | | | ○ Gusman (em segredo) | ○ Status de Gusman | |
 
 ---
-# Divergências e decisões em aberto
+# Divergências e cuidados
 
-Aparecem no mapa como "Divergências e cuidados". Ao decidir uma, atualize a seção correspondente acima e a apague (ou marque ✅) aqui.
+Aparecem no mapa como cartões, abaixo da matriz.
 
-- [x] **Bronx ou Staten Island?** ✅ Decidido pelo Narrador (16/10/2026): os Anarquistas ficam **majoritariamente no Bronx** (Port Morris), com **presença significativa em Staten Island**, a base do pós-guerra (por isso o Pavio Negro). Registrado em [[Camarilla em Nova York]] e nos READMEs dos jogadores.
-- [ ] **Brooklyn e Queens sem dono.** As notas dizem que esses distritos "não são atribuídos a governante exclusivo". Hoje: Camarilla tracejada; quem age ali são a Chama, Kutkha, os Nosferatu e Julia Sowinski. Se algum ganhar um senhor (um Barão, um Primogen como regente), troque para `cam`.
-- [ ] **Locais aproximados.** Art Hole, o domínio de Julia, a Chantry, o Pavio Negro, o Harbor Ledger e os armazéns de 1999 não têm endereço nas fontes. Se fixar algum, troque a coordenada e tire o "aproximado".
-- [x] **Michaela: 1998 ou 1999?** ✅ **1999**, num falso parlamento durante a Batalha (decisão do Narrador, 17/10/2026); a nota de [[Vincent Marchetti]] foi corrigida. O mapa já usava 1999.
-- [x] **Red Hook "no Harlem".** *Cult of the Blood Gods* escreve "Red Hook in the Harlem borough". É erro do livro: Red Hook fica no Brooklyn. (Só um aviso; nada a decidir.)
-- [x] **O mapa clássico é outro.** O *New York by Night* dos anos 1990 punha Anarchs no Brooklyn e Sabbat no Bronx e no Queens. Não serve para V5 nem para esta campanha e não foi usado. (Só um aviso.)
-- [ ] **Onde ficam Nina, Jesse e o 8º jogador?** Não têm lugar no mapa. Candidatos: Nina no Harlem (jazz); Jesse fora do centro (Gangrel saíram da Camarilla).
-- [x] **Onde mora Gusman?** ✅ Em **Staten Island**, num apartamento em Port Richmond (decisão do Narrador, 16/10/2026, em [[Gusman Gutierrez]]). O mapa ainda o mostra só em Newark: ver [[#⚠️ Atualização pendente do mapa]].
-- [ ] ❔ **Nomes a confirmar (Narrador, 16/10/2026):** Juno (Tremere), Cara Montgomery (Malkaviano), Declan e Raoul (Gangrel) aparecem no mapa com a marca ❔ até a decisão; Hope (ex-Double Spiral) só está em [[Camarilla em Nova York#❔ A confirmar|❔ A confirmar]].
-- [x] **Addison Payne, Leo e Ivan Kutkha:** ❌ descartados (decisão do Narrador, 17/10/2026). Saem do mapa na próxima atualização.
-- [ ] **Nomes ainda sem decisão:** Donatello Giovanni, Ranq, Gianni D'Angelo, Elias Voss e os demais da matriz que não estão na corte confirmada de [[Camarilla em Nova York]] seguem como estavam.
-- [x] **Reserva:** Robert Larson saiu do mapa e ficou guardado em [[Camarilla em Nova York#Reserva para o futuro|Reserva para o futuro]].
-- [x] **Mortos antes de 2021 (confirmados):** Callihan (mar/2020), Michaela (1999) e Sophie Langley (2019). Estão em [[Camarilla em Nova York#Confirmados já mortos (antes de 2021)|Confirmados já mortos]].
+- **Anarquistas no Bronx e em Staten Island.** Os Anarquistas ficam majoritariamente no Bronx (Port Morris), com presença significativa em Staten Island, a base do pós-guerra e sede do Pavio Negro. Decisão do Narrador (16/10/2026).
+- **Brooklyn e Queens sem dono.** As notas dizem que esses distritos "não são atribuídos a governante exclusivo". Ficam como Camarilla tracejada: a corte reivindica, mas quem age ali são a Chama, os Nosferatu, o Ministry, os Giovanni e Julia Sowinski.
+- **Locais aproximados.** Art Hole, o domínio de Julia, a Chantry, o Pavio Negro, o Harbor Ledger, Washington Heights, Port Richmond e os armazéns de 1999 não têm endereço exato nas fontes. O anel tracejado marca o ponto como escolha do mapa.
+- **Polonia: arcebispo até quando?** A ficha do Vincent diz "de 1761 até a queda da cidade", mas uma pendência antiga fala em "até 1998". Em aberto: o Narrador quer mais contexto.
+- **Red Hook "no Harlem".** *Cult of the Blood Gods* escreve "Red Hook in the Harlem borough". É erro do livro: Red Hook fica no Brooklyn, e o Harlem é um bairro de Manhattan.
+- **O mapa clássico é outro.** O *New York by Night* dos anos 1990 punha Anarchs no Brooklyn e Sabbat no Bronx e no Queens. Não serve para V5 nem para esta campanha, e não foi usado.
 
 ---
-# ⚠️ Atualização pendente do mapa
+# Decisões em aberto
 
-Registrado em **17/10/2026**. **Não aplicar** até o Narrador resolver as pendências acima ou confirmar. Quando for liberado, atualize primeiro as seções desta nota e depois o HTML (ver [[#Como mudar o mapa]]).
+Lista de trabalho do Narrador; não aparece no mapa. Ao decidir, atualize o [[Elenco de Nova York]] e as seções acima, e marque ✅ aqui.
 
-Mudanças já decididas que o mapa ainda não mostra:
-- [ ] **Tirar Addison Payne, Leo e Ivan Kutkha** (descartados): corte da visão geral, Ventrue de Manhattan, Caitiff do Brooklyn, ponto de Little Odessa e matriz.
-- [ ] **Gusman em Staten Island** (Port Richmond; bar do Iggy, The Broken Minute). Newark fica só como o orfanato.
-- [ ] **Batalha de cinco dias** no texto de "Antes de 1999" (o Sabbat estava quebrado nas duas ou três primeiras noites).
-- [ ] **Panhard em 2021:** firme para a maioria; em queda só para os muito bem informados.
-- [ ] **PCs que faltam:** Herta (Plaza, comitiva europeia), Jesse, e Nina (mora em Washington Heights; Abraçada na Lenox Avenue; Mawla é Gideon).
-- [ ] **NPCs do [[Elenco de Nova York]]** que ainda não estão no mapa (Deacon Brandt, Torch Malloy, Iggy, Elias Voss, comitiva europeia), se fizer sentido mostrá-los.
-- [ ] **Nomes fora da regra de 16/10** que o mapa ainda mostra: Kaiser, Gianni D'Angelo, Agathon, Benoit Segal, Vincent Cerutti e os ❔ (Juno, Cara Montgomery, Declan, Raoul). Decidir caso a caso.
+- [ ] **Polonia:** "arcebispo até 1998" ou "até a queda"? (Ver [[Vincent Marchetti]].)
+- [ ] **Iggy:** Anarch ou autarkis? Hoje a matriz o põe só como Malkaviano em Staten Island, sem facção.
+- [ ] **Locais exatos:** fixar Art Hole, o domínio de Julia, a Chantry, o Pavio Negro ou o Harbor Ledger, se quiser; aí troque a coordenada e tire o "aproximado".
+- [ ] **Brooklyn ou Queens com senhor?** Se algum ganhar um Barão ou um Primogen como regente, troque a facção para `cam`.
+- [ ] **Jesse no mapa?** Hoje ele só aparece na matriz ("Cidade"); ainda não foi apresentado à corte e não tem refúgio definido.
+- [ ] **Nomes fora da campanha** (❔, não confirmados, sem decisão, reserva): se algum for confirmado no [[Elenco de Nova York]], ele volta ao mapa.
+- [x] **Addison Payne, Leo e Ivan Kutkha:** ❌ descartados (17/10/2026); saíram desta nota.
+- [x] **Michaela:** destruída em **1999**, num falso parlamento durante a Batalha (17/10/2026).
+- [x] **Batalha de Nova York:** **cinco dias**; o Sabbat estava quebrado nas duas ou três primeiras noites (17/10/2026).
+- [x] **Panhard em 2021:** firme para a maioria; em queda só para os muito bem informados (17/10/2026).
+- [x] **Gusman:** mora em **Staten Island** (Port Richmond) (16/10/2026).
+- [x] **Nina e Herta no mapa:** Nina em Washington Heights e no Harlem; Herta no Plaza (17/10/2026).
+- [x] **Mortos antes de 2021:** Callihan (mar/2020), Michaela (1999) e Sophie Langley (2019). Ver [[Elenco de Nova York#Destruídos e desaparecidos antes de 2021|Destruídos e desaparecidos]].
 
 ---
 *Fontes web usadas só para contraste:* [NYBN Overview](https://shipwrecklibrary.com/?p=2224) · [White Wolf Wiki: New York by Night](https://whitewolf.fandom.com/wiki/New_York_by_Night) · [Wikipedia: NY by Night](https://www.wikipedia.org/wiki/NY_by_Night). *Área e população:* Censo dos EUA de 2020.
