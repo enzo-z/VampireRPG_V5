@@ -258,7 +258,7 @@ O arcebispo Polonia saiu vivo da cidade pela única porta que Vincent pediu para
 - [x] Ano: o texto original dizia 2022; agora está alinhado em 2021 (como [[Camarilla em Nova York]]).
 - [ ] Revisar trecho de "Convicções": o texto usa "dela" para Touchstone (parece resto de edição); corrigido para neutro.
 
-- [ ] Validar com o jogador o grau de conhecimento sobre Elias Voss (contato breve em 1999 incluído) e manter a regra: Vincent sabe menos que Gideon.
+- [x] Grau de conhecimento sobre Elias Voss (contato breve em 1999 incluído) validado pelo Narrador (17/10/2026). Mantém a regra: Vincent sabe menos que Gideon.
 
 - [x] **Gusman:** evento de 2018, segredo dos três e cobertura registrados (16/10/2026). ✅ **Vincent sabe que Gusman é Ravnos** (decisão do Narrador).
-- [ ] Validar com Pedro: o quarto do Plaza e se Vincent reconhece o estilo da marca.
+- [x] Marca de Gusman: Vincent reconhece o **estilo do Sabbat**, não o rito (decidido pelo Narrador, 17/10/2026). Entra na cola como possível sinal do Sabbat. ⚠️ O quarto do Plaza segue de fora da cola.

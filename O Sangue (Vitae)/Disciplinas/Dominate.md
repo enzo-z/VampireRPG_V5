@@ -75,6 +75,7 @@ No final, o Narrador determina o que a Disciplina pode realizar, mas deve garant
 >- **Custo**: Free
 >- **Duração**: Não mais que uma [[Regras Fundamentais#Scene|cena]]
 >- **Dice Pool**: Leia abaixo, possível (Charisma + Dominate) vs (Intelligence + Resolve) - [[Dificuldade, Contests e Conflitos#Contests|Contest Roll]]
+>- **Cola**: Sem custo. Uma ordem de uma frase curta, cumprida em um único turno; dura no máximo a cena. Mortal despreparado: sem rolagem. Vítima resistente ou vampiro: contest de Charisma + Dominate vs Intelligence + Resolve. Se a ordem for ambígua, o Narrador decide como ela é cumprida.
 >
 >- **Sistema**:
 >    O vampiro pode emitir à vítima uma ordem de ação única, com duração de uma frase curta, que deve ser obedecida à risca. A ordem deve ser possível de ser cumprida em um único turno. O Narrador decide como interpretar comandos ambíguos de forma inesperada ou desfavorável; alternativamente, o comando simplesmente confunde a vítima e falha.
@@ -92,6 +93,7 @@ No final, o Narrador determina o que a Disciplina pode realizar, mas deve garant
 >- **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]].
 >- **Duração**: Até que o comando seja cumprido ou a [[Regras Fundamentais#Scene|cena]] termine, o que ocorrer primeiro
 >- **Dice Pool**: Leia abaixo, possível (Manipulation + Dominate) vs (Intelligence + Resolve) - [[Dificuldade, Contests e Conflitos#Contests|Contest Roll]]
+>- **Cola**: Um Rouse Check; dura até o comando ser cumprido ou a cena acabar. Comandos complexos, desde que você segure o olhar da vítima e haja silêncio relativo; sem condicionais (“se você vir Henry…”), cumpridos na hora. Mortal despreparado: sem rolagem. Vítima resistente, vampiro ou ordem contra a natureza dela: contest de Manipulation + Dominate vs Intelligence + Resolve.
 >
 >- **Sistema**:
 >    - **Limitação da Circunstâncias**:
@@ -163,6 +165,7 @@ O vampiro pode reescrever grandes trechos das memórias da vítima, desde que co
 >- **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]].
 >- **Duração**: Indefinida
 >- **Dice Pool**: (Manipulation + Dominate) vs (Intelligence + Resolve) - [[Dificuldade, Contests e Conflitos#Contests|Contest Roll]]
+>- **Cola**: Um Rouse Check; duração indefinida. Segurando o olhar e a atenção total da vítima, você descreve as novas memórias e ela as aceita. Contest de Manipulation + Dominate vs Intelligence + Resolve: cada ponto de margem adiciona ou remove uma memória. Ficam vagas e podem ruir sob perguntas; um sucesso crítico cria uma memória perfeita. Não permite ler as memórias verdadeiras.
 >
 >- **Sistema**:
 >    - **Limitação**:

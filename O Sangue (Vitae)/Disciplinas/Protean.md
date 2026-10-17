@@ -40,6 +40,7 @@ Os praticantes do Protean utilizam a Disciplina por sua utilidade. O poder permi
 >- **Custo**: Free
 >- **Duração**: Quanto tempo você desejar.
 >- **Dice Pool**: Não possui
+>- **Cola**: Sem custo nem rolagem; dura o quanto você quiser. Ignora qualquer penalidade de visão por escuridão, até a sobrenatural. +2 dados em Intimidation contra mortais.
 >
 >- **Sistema**:
 >	Não é necessário rolar para ativar os Olhos da Besta. Enquanto estiver ativo, o usuário ignora qualquer penalidade de visão imposta pela escuridão, incluindo a sobrenatural.
@@ -78,6 +79,7 @@ O vampiro estende suas armas naturais a proporções monstruosas — geralmente 
 > - **Custo**: Um Rouse Check
 > - **Dice Pool**: Não requer teste para ativar; ataques usam o pool normal de Brawl
 > - **Duração**: Uma cena
+> - **Cola**: Um Rouse Check; dura a cena. Sem rolagem para ativar: ataca com o pool normal de Brawl. +2 de dano e dano Agravado contra mortais; o dano Superficial não é reduzido à metade (contra Kindred, por exemplo).
 >
 > - **Sistema**:
 >   Enquanto ativo, o vampiro recebe +2 de dano em ataques de Brawl e causa dano Agravado à Saúde de mortais.
