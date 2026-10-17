@@ -616,6 +616,108 @@ describe("Khalid's page", () => {
   });
 });
 
+function daniel(): Ficha {
+  const ficha = createFicha('daniel', 'Daniel Mercer', 'Luiz');
+  ficha.identity = { ...ficha.identity, clan: 'Brujah', predatorType: 'Alleycat', generation: '13th' };
+  ficha.attributes.strength = 4;
+  ficha.attributes.dexterity = 3;
+  ficha.attributes.stamina = 3;
+  ficha.attributes.intelligence = 2;
+  ficha.attributes.wits = 2;
+  ficha.attributes.resolve = 3;
+  ficha.skills.athletics = 3;
+  ficha.skills.brawl = 3;
+  ficha.skills.drive = 3;
+  ficha.skills.investigation = 3;
+  ficha.specs.drive = 'Motorcycles';
+  ficha.disciplines[0] = {
+    name: 'Potence',
+    value: 2,
+    powers: [
+      { name: 'Lethal Body', note: '' },
+      { name: 'Prowess', note: '' },
+    ],
+  };
+  ficha.disciplines[1] = {
+    name: 'Celerity',
+    value: 2,
+    powers: [
+      { name: 'Rapid Reflexes', note: '' },
+      { name: 'Fleetness', note: '' },
+    ],
+  };
+  ficha.disciplines[2] = { name: 'Presence', value: 1, powers: [{ name: 'Daunt', note: '' }] };
+  return ficha;
+}
+
+describe("Daniel's page", () => {
+  const cola = buildPlayerCola(daniel(), catalogs);
+  const lore = findPlayerCola(catalogs.playerColas, 'Daniel Mercer');
+  const blocks = lore?.blocks ?? [];
+  const summary = (name: string) =>
+    cola.disciplines.flatMap((discipline) => discipline.powers).find((power) => power.name === name)?.summaryHtml ?? '';
+  const entry = (title: string, term: string) =>
+    JSON.stringify(blocks.find((block) => block.title === title)?.entries.find((candidate) => candidate.term.includes(term)));
+
+  it('finds every power of the sheet and the lore note, with no warnings', () => {
+    expect(cola.warnings).toEqual([]);
+    const powers = cola.disciplines.flatMap((discipline) => discipline.powers);
+    expect(powers.map((power) => power.name)).toEqual(['Lethal Body', 'Prowess', 'Rapid Reflexes', 'Fleetness', 'Daunt']);
+    for (const power of powers) expect(power.summaryHtml, power.name).not.toBeNull();
+  });
+
+  it('keeps the rules that matter in the summaries', () => {
+    expect(summary('Lethal Body')).toContain('Agravado');
+    expect(summary('Prowess')).toContain('Rouse Check');
+    expect(summary('Daunt')).toContain('Intimidation');
+  });
+
+  it('pairs his strong skills with Strength or Dexterity, as the book does', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.attribute, pool.dice])).toEqual([
+      ['Athletics', 'Strength', 7],
+      ['Brawl', 'Strength', 7],
+      ['Drive', 'Dexterity', 6],
+      ['Investigation', 'Intelligence', 5],
+    ]);
+  });
+
+  it('builds the lore note without errors, with the blocks the page places by title', () => {
+    expect(playerColas.errors).toEqual([]);
+    expect(playerColas.warnings).toEqual([]);
+    const titles = blocks.map((block) => block.title);
+    const expected = ['A corte de Nova York', 'NPCs que você conhece', 'Jogadores (a coterie)', 'Facções e organizações', 'Nova York por distrito'];
+    for (const title of expected) expect(titles, title).toContain(title);
+    for (const block of blocks) expect(block.entries.length, block.title).toBeGreaterThan(0);
+  });
+
+  it('tells 1999, the club and the family he knows', () => {
+    const terms = (title: string) =>
+      blocks.find((block) => block.title === title)?.entries.map((e) => e.term).join(' | ') ?? '';
+    for (const name of ['Panhard', 'Qadir', 'Weiss', 'Calebros']) expect(terms('A corte de Nova York'), name).toContain(name);
+    for (const name of ['Doc Keane', 'Elias Voss', 'Marian Price', 'Silas Redd', 'família']) expect(terms('NPCs que você conhece'), name).toContain(name);
+    for (const name of ['Iron Lanterns', 'Pavio Negro', 'Segunda Guarda']) expect(terms('Facções e organizações'), name).toContain(name);
+    expect(entry('Facções e organizações', 'Segunda Guarda')).toContain('Sully');
+    const family = entry('NPCs que você conhece', 'família');
+    for (const term of ['Nathan Ward', 'Ruth Ward', 'Claire', 'Maggie']) expect(family, term).toContain(term);
+  });
+
+  it('shows the Gangrel of his mission and leaves his private decisions to the secrets PDF', () => {
+    const jesse = entry('Jogadores (a coterie)', 'Jesse');
+    for (const term of ['Youngstown', 'I-80', 'não lhe contou nada']) expect(jesse, term).toContain(term);
+    const family = entry('NPCs que você conhece', 'família');
+    expect(family).toContain('PDF de segredos');
+    const text = JSON.stringify(blocks);
+    for (const term of ['Abraço de Nathan', 'caminhonete', 'vigilância sobre']) expect(text, term).not.toContain(term);
+  });
+
+  it('keeps what Daniel cannot know and the one-shot out of the printed sheet', () => {
+    const text = JSON.stringify(blocks);
+    const unknownToHim = ['Ravnos', 'Julian', 'Caitiff', 'Dragomir', 'Orozco', 'Polonia', 'Nizar', 'Heinrich'];
+    const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
+    for (const term of [...unknownToHim, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+});
+
 describe('SKILL_ATTRIBUTES', () => {
   it('pairs every skill with attributes of the groups the book uses', () => {
     expect(Object.keys(SKILL_ATTRIBUTES).sort()).toEqual([...SKILL_KEYS].sort());
