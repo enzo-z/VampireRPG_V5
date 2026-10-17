@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, PredatorTypeCatalog, SecretsCatalog } from './types.ts';
+import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, NyMapCatalog, PredatorTypeCatalog, SecretsCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -108,3 +108,69 @@ export const secretsCatalogSchema = z.strictObject({
     }),
   ),
 }) satisfies z.ZodType<SecretsCatalog>;
+
+const nyFaction = z.enum(['cam', 'camSoft', 'anarch', 'anarchSoft', 'indep', 'sabbat', 'unk']);
+const nyLayer = z.enum(['now', 'pc', 'auld', 'b1999', 'hist']);
+const nySource = z.enum(['jogos', 'livro', 'notas', 'sug', 'ant']);
+const nyBorough = z.enum(['manhattan', 'brooklyn', 'queens', 'bronx', 'staten', 'nj']);
+const nyParagraph = z.strictObject({ html: z.string().min(1), sources: z.array(nySource) });
+const nyOverview = z.strictObject({ title: z.string().min(1), paragraphs: z.array(nyParagraph).min(1) });
+const nyMarks = z.array(z.strictObject({ kind: z.enum(['base', 'presence']), html: z.string().min(1) })).min(1);
+
+export const nyMapCatalogSchema = z.strictObject({
+  factions: z.array(z.strictObject({ key: nyFaction, name: z.string().min(1) })).min(1),
+  layers: z.array(z.strictObject({ id: nyLayer, name: z.string().min(1) })).min(1),
+  overview: nyOverview,
+  overviewBefore: nyOverview,
+  court: z.array(z.strictObject({ name: z.string().min(1), role: z.string().min(1) })).min(1),
+  boroughs: z
+    .array(
+      z.strictObject({
+        id: nyBorough,
+        name: z.string().min(1),
+        faction: nyFaction,
+        factionBefore: nyFaction,
+        status: z.string().min(1),
+        area: z.string().nullable(),
+        population: z.string().nullable(),
+        summaryHtml: z.string().min(1),
+        clans: z.array(z.strictObject({ clan: z.string().min(1), whoHtml: z.string().min(1), sources: z.array(nySource) })),
+        beforeHtml: z.string().min(1),
+        noteHtml: z.string().nullable(),
+      }),
+    )
+    .min(1),
+  points: z.array(
+    z.strictObject({
+      id: z.string().min(1),
+      name: z.string().min(1),
+      label: z.string().min(1),
+      layers: z.array(nyLayer).min(1),
+      borough: nyBorough.nullable(),
+      lon: z.number().min(-75).max(-73),
+      lat: z.number().min(40).max(41.5),
+      approximate: z.boolean(),
+      labelLeft: z.boolean(),
+      sources: z.array(nySource),
+      html: z.string(),
+    }),
+  ),
+  edges: z.array(
+    z.strictObject({ id: z.string().min(1), label: z.string().min(1), name: z.string().min(1), sources: z.array(nySource), html: z.string() }),
+  ),
+  ledger: z.array(
+    z.strictObject({
+      clan: z.string().min(1),
+      cells: z.strictObject({
+        manhattan: nyMarks.optional(),
+        brooklyn: nyMarks.optional(),
+        queens: nyMarks.optional(),
+        bronx: nyMarks.optional(),
+        staten: nyMarks.optional(),
+        nj: nyMarks.optional(),
+        city: nyMarks.optional(),
+      }),
+    }),
+  ),
+  cards: z.array(z.strictObject({ title: z.string().min(1), html: z.string().min(1) })),
+}) satisfies z.ZodType<NyMapCatalog>;

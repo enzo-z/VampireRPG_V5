@@ -184,6 +184,128 @@ export interface SecretsCatalog {
   documents: SecretDocument[];
 }
 
+// ---------- New York map (Narrador/Nova York/Mapa de Nova York.md) ----------
+
+/** Territory key, as written in the note ("Facções e legenda"). */
+export type NyFactionKey = 'cam' | 'camSoft' | 'anarch' | 'anarchSoft' | 'indep' | 'sabbat' | 'unk';
+
+/** Point layer: places of 2021, the coterie, the one-shot, the 1999 battle, history. */
+export type NyLayerId = 'now' | 'pc' | 'auld' | 'b1999' | 'hist';
+
+/** Source tag: V5 games, V5 books, narrator notes, suggestion, earlier edition. */
+export type NySourceKey = 'jogos' | 'livro' | 'notas' | 'sug' | 'ant';
+
+export type NyBoroughId = 'manhattan' | 'brooklyn' | 'queens' | 'bronx' | 'staten' | 'nj';
+
+/** Clan ledger column: a borough, or "Cidade" (in NY, borough unknown). */
+export type NyLedgerColumn = NyBoroughId | 'city';
+
+export interface NyFaction {
+  key: NyFactionKey;
+  name: string;
+}
+
+export interface NyLayer {
+  id: NyLayerId;
+  name: string;
+}
+
+/** A paragraph followed by the source tags that close it. */
+export interface NyTaggedParagraph {
+  html: string;
+  sources: NySourceKey[];
+}
+
+export interface NyClanRow {
+  clan: string;
+  whoHtml: string;
+  sources: NySourceKey[];
+}
+
+export interface NyBorough {
+  id: NyBoroughId;
+  name: string;
+  faction: NyFactionKey;
+  /** Faction "antes de 1999". */
+  factionBefore: NyFactionKey;
+  status: string;
+  /** "58,7" (km²), or null when the note shows none. */
+  area: string | null;
+  population: string | null;
+  summaryHtml: string;
+  clans: NyClanRow[];
+  beforeHtml: string;
+  /** "Observação do painel", if any. */
+  noteHtml: string | null;
+}
+
+export interface NyPoint {
+  id: string;
+  name: string;
+  /** Short label drawn next to the marker. */
+  label: string;
+  /** The first layer sets the marker's symbol. */
+  layers: NyLayerId[];
+  borough: NyBoroughId | null;
+  lon: number;
+  lat: number;
+  approximate: boolean;
+  labelLeft: boolean;
+  sources: NySourceKey[];
+  html: string;
+}
+
+/** An arrow on the map's edge pointing to a place outside it. */
+export interface NyEdge {
+  id: string;
+  /** Text drawn on the map, with its arrow ("↑ Catskills"). */
+  label: string;
+  /** The label without arrows ("Catskills"). */
+  name: string;
+  sources: NySourceKey[];
+  html: string;
+}
+
+export interface NyLedgerMark {
+  /** "●" base/domain of the clan, "○" a known figure lives or acts there. */
+  kind: 'base' | 'presence';
+  html: string;
+}
+
+export interface NyLedgerRow {
+  clan: string;
+  cells: Partial<Record<NyLedgerColumn, NyLedgerMark[]>>;
+}
+
+export interface NyCard {
+  title: string;
+  html: string;
+}
+
+export interface NyCourtEntry {
+  name: string;
+  role: string;
+}
+
+export interface NyOverview {
+  title: string;
+  paragraphs: NyTaggedParagraph[];
+}
+
+export interface NyMapCatalog {
+  factions: NyFaction[];
+  layers: NyLayer[];
+  /** Panel with nothing selected, in 2021 and before 1999. */
+  overview: NyOverview;
+  overviewBefore: NyOverview;
+  court: NyCourtEntry[];
+  boroughs: NyBorough[];
+  points: NyPoint[];
+  edges: NyEdge[];
+  ledger: NyLedgerRow[];
+  cards: NyCard[];
+}
+
 /** The lore page of one player's cheat sheet (Regras/Colas dos Jogadores/<character>.md). */
 export interface PlayerColaNote {
   /** Character name, from the file name. */

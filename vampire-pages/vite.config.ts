@@ -8,6 +8,7 @@ import { buildBlood } from './vite/buildBlood.ts';
 import { buildClans } from './vite/buildClans.ts';
 import { buildCola } from './vite/buildCola.ts';
 import { buildDisciplineModule } from './vite/buildCatalog.ts';
+import { buildNyMap } from './vite/buildNyMap.ts';
 import { buildPlayerColas } from './vite/buildPlayerColas.ts';
 import { buildPredatorTypes } from './vite/buildPredatorTypes.ts';
 import { buildSecrets } from './vite/buildSecrets.ts';
@@ -22,6 +23,7 @@ const CLANS_NOTE = fileURLToPath(new URL('../O Sangue (Vitae)/Clãs.md', import.
 const BLOOD_NOTE = fileURLToPath(new URL('../O Sangue (Vitae)/Gerações e Potência.md', import.meta.url));
 const PREDATOR_TYPES_NOTE = fileURLToPath(new URL('../Fome, a Caça e a Besta/Predator Type.md', import.meta.url));
 const PLAYER_NOTES_DIR = fileURLToPath(new URL('../Narrador/Relacionamentos/Para o Jogador', import.meta.url));
+const NY_MAP_NOTE = fileURLToPath(new URL('../Narrador/Nova York/Mapa de Nova York.md', import.meta.url));
 const CONFIG_DIR = fileURLToPath(new URL('.', import.meta.url));
 
 /** "Segredos" password: SECRETS_PASSWORD in .env.local (never committed); only its hash reaches the app. */
@@ -44,6 +46,7 @@ export default defineConfig(({ mode }) => ({
     vaultModulePlugin({ id: 'virtual:blood', watchPath: BLOOD_NOTE, build: () => buildBlood(BLOOD_NOTE) }),
     vaultModulePlugin({ id: 'virtual:predator-types', watchPath: PREDATOR_TYPES_NOTE, build: () => buildPredatorTypes(PREDATOR_TYPES_NOTE) }),
     vaultModulePlugin({ id: 'virtual:secrets', watchPath: PLAYER_NOTES_DIR, build: () => buildSecrets(PLAYER_NOTES_DIR) }),
+    vaultModulePlugin({ id: 'virtual:ny-map', watchPath: NY_MAP_NOTE, build: () => buildNyMap(NY_MAP_NOTE) }),
   ],
   test: {
     environment: 'node',
