@@ -63,7 +63,7 @@ Sua pupila: Toreador, saxofonista do Harlem, Abraço irregular de 2020. A corte 
 Seu protegido: você é o Mawla dele. Mora em Staten Island e evita outros Kindred.
 
 ### Jesse Calloway (Rafael) e Herta Müller (Rebeca)
-Você ainda não os conhece. **Jesse:** Gangrel. **Herta:** Ventrue neonata de Berlim, hospedada no Plaza com a comitiva europeia.
+Você ainda não os conhece. **Jesse:** você não sabe nada sobre ele. **Herta:** Ventrue neonata de Berlim, hospedada no Plaza com a comitiva europeia.
 
 ## Facções e organizações
 

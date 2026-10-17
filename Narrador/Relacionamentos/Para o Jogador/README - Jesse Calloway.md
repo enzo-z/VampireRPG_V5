@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #jesse #readme
 
 # Jesse Calloway: o que você sabe
@@ -69,5 +72,5 @@ Os 🎭 são **jogadores**. Você só conhece **Daniel**.
 
 ## O que os outros sabem de você
 
-- **Daniel** sabe que você é um Gangrel recém-Abraçado que ele achou na estrada. Mais nada: você não contou.
+- **Daniel** sabe que você é um Gangrel que ele achou perdido na estrada. Mais nada: você não contou.
 - **Ninguém mais** em Nova York sabe quem você é.
