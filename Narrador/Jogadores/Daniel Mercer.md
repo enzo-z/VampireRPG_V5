@@ -294,7 +294,7 @@ Harley-Davidson azul-escura, comprada em 1979, batizada por Claire em 1985 ("se 
 ## O retorno a Nova York
 - **Motivo declarado:** a ordem de levar o Gangrel recém-Abraçado à corte, vinda da rede operacional do **Xerife Qadir al-Asmai** por um agente original da crônica. Sua reputação e o patrocínio de Elias explicam a confiança; a missão não exige que Elias esteja presente.
 - **Mandato:** *"Localize-o. Traga-o a Nova York para apresentação e avaliação de ingresso. Com a cooperação dele, se puder. Sem ela, se precisar. Vivo."* ("Vivo" = evitar a Morte Final; é recuperação, não execução.)
-- O **Gangrel é personagem de outro jogador**: nome, origem e comportamento serão definidos por ele e pelo Narrador. Ser levado à cidade não o torna Camarilla (apresentação, patrocínio e aceitação fazem parte do ingresso), e a coerção do transporte não produz lealdade. Nenhum sucesso automático, submissão ou amizade forçada é atribuído ao personagem do outro jogador.
+- O **Gangrel é personagem de outro jogador**: ✅ é **[[Jesse Calloway]]** (Rafael). A ordem só chegou a Daniel no **fim de novembro de 2021**, o tempo que a Camarilla levou para rastrear o Gangrel (Abraçado em outubro de 2020). No começo de dezembro, Daniel o achou perdido na I-80, perto de Youngstown, e o trouxe a Nova York: cerca de 640 km, duas noites de estrada. **Jesse não contou nada sobre si a Daniel.** Ser levado à cidade não o torna Camarilla (apresentação, patrocínio e aceitação fazem parte do ingresso), e a coerção do transporte não produz lealdade. Nenhum sucesso automático, submissão ou amizade forçada é atribuído ao personagem do outro jogador.
 - Daniel foi escolhido porque conversa, segue alguém por noites e usa força quando a negociação falha. O recém-Abraçado é um espelho incômodo: mais uma vez um vampiro experiente chega para dizer a alguém assustado o que fazer para sobreviver, e Daniel conhece bem a voz que diz "confie em mim, eu sei o que é melhor para você". Era a voz de Doc.
 - **Nota de mesa:** a ordem é coercitiva na ficção, mas não define PvP. Jogadores e Narrador podem montar o encontro para permitir tensão, resistência e escolhas sem retirar o controle de nenhum personagem. Os motivos para ambos integrarem a coterie surgem em jogo.
 - **Motivo que não entra no relatório:** estar em Nova York, achar Elias, contar como a doença avançou e perguntar o que ele sabe sobre salvar Nathan. Não chega com promessa de cura ou autorização escondida: chega com perguntas, urgência e um histórico de serviços que talvez convertam em audiência.
@@ -327,7 +327,7 @@ Harley-Davidson azul-escura, comprada em 1979, batizada por Claire em 1985 ("se 
 | Silas Redd | Intermediário Lasombra original | Destino desconhecido desde 1999; possível portador de uma cópia do arquivo |
 | Hellene Panhard | Príncipe canônica | Autoridade do domínio; relação pessoal com Daniel criada para a mesa |
 | Qadir al-Asmai | Xerife canônico | Sua estrutura patrocina a missão, sujeita ao encaixe do Narrador |
-| O Gangrel | Futuro companheiro de coterie | Personagem de outro jogador; encontro e resultado abertos |
+| [[Jesse Calloway]] (Rafael) | O Gangrel da missão, companheiro de coterie | Daniel o achou perdido na estrada e o trouxe a Nova York. Jesse não lhe contou nada sobre si. |
 
 > 🧩 **Dica Para o Narrador**
 > Daniel e [[Vincent Marchetti]] vêm da mesma conquista de 1999, mas por lados opostos. Vincent deu à Camarilla o plano que derrubou o Sabbat; Daniel foi usado por um sire que tentou lucrar com a mesma guerra. Vale decidir se os dois se conhecem e o que cada um sabe do outro, e o mesmo vale para [[Gideon Nicols]], que também foi peça da Batalha de Nova York.
@@ -435,7 +435,8 @@ Versões menores, se a primeira sessão cobrir só uma etapa: "Conseguir de Ivo 
 - [ ] Nome clínico e prognóstico da doença de Nathan (ou deixar aberto).
 - [ ] Quem é o **presidente mortal do Pavio Negro**, o destino de Sully e o paradeiro de Ivo Rask, Silas Redd e Marian Price.
 - [ ] Encaixe da missão com **Qadir al-Asmai** e quem é o agente original que transmite a ordem.
-- [ ] Definir o personagem do Gangrel (jogador, clã, origem) e como o encontro é montado sem retirar a agência dele.
+- [x] Definir o personagem do Gangrel: [[Jesse Calloway]] (Rafael). Daniel o achou na estrada (história do jogador, 16/10/2026).
+- [x] Quando Daniel achou Jesse: a ordem chegou no fim de novembro de 2021 (tempo de rastreio da Camarilla); Daniel o achou no começo de dezembro (decisão do Narrador, 16/10/2026). Ver [[Jesse Calloway#Linha do Tempo]].
 - [ ] Datas: o texto de Daniel começa em **2021**, e a nota de [[Vincent Marchetti]] fala em 2022 (e a de [[Camarilla em Nova York]] usa 2021). Alinhar a linha do tempo da campanha.
 - [ ] Possível contradição de cronologia a conferir: a Segunda Guarda decorre na "segunda noite" da batalha, enquanto [[Vincent Marchetti]] descreve a Batalha de Nova York como cerca de uma semana. Garantir que as noites numeradas de Daniel sejam só o recorte pessoal dele.
 - [ ] Definir se Daniel conhece [[Vincent Marchetti]] e [[Gideon Nicols]], e se a Batalha de 1999 os aproximou.

@@ -245,7 +245,7 @@ Os três pontos se encaixam: a cena do jazz é o lugar onde Nina come, onde a be
 
 **Em aberto**
 - Daniel: sem vínculo, não se conhecem antes da noite.
-- ❓ O sobrenome **Calloway** com Jesse Calloway (Rafael).
+- ❓ O sobrenome **Calloway** com [[Jesse Calloway]] (Rafael).
 ## Ganchos para o Narrador
 
 > ⚠️ Sugestões minhas a partir do background; não fazem parte do texto original do jogador. Valide com ele antes de usar.
@@ -272,7 +272,7 @@ Os três pontos se encaixam: a cena do jazz é o lugar onde Nina come, onde a be
 - [ ] **Desejo** (o JSON não traz).
 - [ ] Touchstone da terceira Convicção (*"Nunca destruir a arte de outro artista"*), ou deixar sem.
 - [ ] **Nomes parecidos:** a avó de Nina é Altagracia **Reyes**, e **Reyes** é o aliado do FBI de [[Khalid Hassan Yusuf]]. Decidir se muda um dos dois, se fica assim ou se vira parentesco (💡 gancho de campanha).
-- [ ] **Sobrenome Calloway:** Nina divide o sobrenome com **Jesse Calloway** (Rafael). Parentesco ou coincidência?
+- [ ] **Sobrenome Calloway:** Nina divide o sobrenome com **[[Jesse Calloway]]** (Rafael). Parentesco ou coincidência?
 - [ ] Onde Nina fica no [[Mapa de Nova York]] (Harlem para a cena, Washington Heights para o refúgio).
 - [x] **Ligação com a coterie** (decisão do Narrador, 16/10/2026): Gideon (Mawla), Khalid (vínculo secundário, **já se conhecem do Plaza**), [[Vincent Marchetti]] (**já se conhecem do Plaza**), [[Daniel Mercer]] (não se conhecem) e Gusman (não se conhecem, sem proibição de encontro).
 - [x] **Nina sabe de [[Gusman Gutierrez]] antes da noite?** Não (adotado nos READMEs).

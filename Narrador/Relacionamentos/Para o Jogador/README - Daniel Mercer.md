@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #daniel #readme
 
 # Daniel "Danny" Mercer: o que você sabe
@@ -62,7 +65,7 @@ Pistas para achar Elias: uma oficina onde já o encontrou, um livreiro que receb
 |---|---|---|
 | 🕯️ **Nathan Ward** (👤 NPC mortal) | Seu filho, nascido em 1987 (34 anos). Mora em **Queens**. | Usa o sobrenome **Ward** desde a proteção de Elias. Em **2020** recebeu o diagnóstico de uma **doença neuromuscular degenerativa e fatal**. Acredita ter perdido o pai em 1999. Ligado à Convicção *"Nunca use a família de alguém como arma."* |
 | 🕯️ **Ruth Ward** (👤 NPC mortal) | Cunhada, irmã de Claire; 57 anos. Criou Nathan. | Sabe que você sobreviveu. É a sua ponte com a família: você recebe notícias por ela, não por informação paga. Ligada à Convicção *"Dê a quem você protege a chance de escolher."* |
-| 🕯️ **Maggie** | Harley-Davidson azul-escura, comprada em 1979. | Batizada por Claire em 1985, com a cicatriz de metal no tanque deixada em Red Hook. **Touchstone de exceção, sujeita à aprovação do Narrador**; se não for aprovada, a terceira Convicção (*"Ninguém da família fica para trás"*) passa a Red Harlan. |
+| 🕯️ **Maggie** | Harley-Davidson azul-escura, comprada em 1979. | Batizada por Claire em 1985, com a cicatriz de metal no tanque deixada em Red Hook. Ligada à Convicção *"Ninguém da família fica para trás."* |
 | 👤 **Maya Chen** | Companheira de Nathan. | Não sabe de nada. |
 | 👤 **Claire Ward Mercer** (morta em 1999) | Sua esposa. | Não é Touchstone. Lembrança e culpa. Você guarda o relógio dela e o desenho de Nathan (os três numa Maggie "do tamanho de uma casa"). |
 
@@ -94,11 +97,12 @@ Você carrega três mortes: **Claire**, **Doc** (que você não matou, mas entre
 
 ## A coterie: os outros jogadores
 
-Os 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
+Os sete 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém. **Nina, Gusman e Herta**, você ainda não conhece.
 
 ### 🎭 (Rafael) Jesse, o Gangrel
-- Recém-Abraçado. Você foi enviado para levá-lo à corte; ser levado à cidade **não o torna Camarilla**, e a coerção do transporte não produz lealdade.
-- O personagem é de outro jogador: A ordem é coercitiva na ficção, mas não define PvP.
+- Abraçado há pouco mais de um ano. Você foi enviado para levá-lo à corte; ser levado à cidade **não o torna Camarilla**, e a coerção do transporte não produz lealdade.
+- A ordem é trazê-lo **idealmente vivo** e **sem alarde**, se possível.
+- A ordem só chegou a você no **fim de novembro**: a Camarilla levou mais de um ano para rastreá-lo. No começo de dezembro você o achou **perdido na I-80, perto de Youngstown**, e o trouxe para Nova York: uns 640 km, duas noites de estrada. Além do nome, **ele não lhe contou nada sobre si**: de onde vem, quem era antes do Abraço ou o que fez.
 - Ele é um espelho incômodo: um vampiro experiente chegando para dizer a alguém assustado o que fazer. Você conhece bem a voz que diz *"confie em mim, eu sei o que é melhor para você"*. Era a de Doc.
 
 ### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
@@ -111,6 +115,15 @@ Os 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é m
 
 ### 🎭 (Klaus) Khalid Hassan Yusuf, o consultor de segurança
 - **Banu Haqim**, mora no **Plaza** e trabalha como consultor de segurança do hotel. Vocês têm poucas ligações diretas além da coterie: ele não é próximo de você.
+
+### 🎭 (Marcelle) Nina Calloway
+- **Você não a conhece** e nunca ouviu o nome dela.
+
+### 🎭 (Oliveira) Gusman Gutierrez
+- **Você não o conhece** e nunca ouviu o nome dele.
+
+### 🎭 (Rebeca) Herta Müller
+- **Você não a conhece** e nunca ouviu o nome dela.
 
 ---
 
@@ -223,3 +236,4 @@ flowchart TB
 - Na corte, o seu nome é ligado a um **julgamento de 1999**: você serviu à operação sem conhecer o objetivo político e foi liberado sob supervisão. **A desconfiança de alguns permanece.**
 - Você acredita que ninguém da coterie sabe de **Nathan**, de **Ruth** ou da sua busca por **Elias**.
 - A coterie (Gideon, Vincent e Khalid) sabe que você é Brujah, nômade do Iron Lanterns e veterano de 1999.
+- **Nina**, **Gusman** e **Herta** não conhecem você.
