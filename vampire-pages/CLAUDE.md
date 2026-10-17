@@ -50,6 +50,12 @@ Vite + React + TypeScript (strict). Testes: Vitest. Validação de dados: zod. S
 - Senha só de frontend (cortina, não segurança): `SECRETS_PASSWORD` em `vampire-pages/.env.local` (no `.gitignore`); o build guarda só o SHA-256 com sal (`src/features/secrets/password.ts`). Os documentos são um chunk separado, baixado só depois da senha; a liberação dura até fechar a aba.
 - PDF em várias folhas A4 (sem zoom; texto ≈ 9,75 pt), rodapé "Nome · p. N de M" via `@page`, título da aba = nome do arquivo salvo.
 
+## Mapa de NY (Narrador)
+- Menu "Narrador › Mapa de NY", atrás da **mesma senha** dos Segredos (mostra segredos de mesa); `virtual:ny-map` é um chunk separado, baixado só depois da senha.
+- Conteúdo lido no build de `Narrador/Nova York/Mapa de Nova York.md` (`publicar: true`) por `src/catalog/parseNyMap.ts` + `vite/buildNyMap.ts`, validado com zod. Nota fora do formato (facção, camada ou fonte desconhecida, coordenada inválida, `id` repetido, seção faltando) **quebra o build** com o nome da seção. O teste `src/test/nyMapNote.test.ts` roda contra a nota real.
+- Contornos, nomes das águas, posição das setas da borda e enquadramentos ficam em `src/features/map/geometry.ts`; funções puras (projeção, camadas, rótulos, escala) em `mapModel.ts`. Cores das facções são tokens `--color-faction-*` e `--color-map-*`.
+- Nomes de NPC no mapa seguem `Narrador/Nova York/Elenco de Nova York.md` (fonte de verdade dos NPCs de NY).
+
 ## Vocabulário da UI (pt-BR)
 Clã, Nome, Facção, Ambição, Desejo, Crônica, Geração, Fome, Humanidade, Saúde, Willpower, Ocultismo, Compulsão de Clã. Mantém em inglês: Animal Handling, Predator Type, Blood Potency, Blood Surge, Mend Amount, Rouse Re-Roll, Bane Severity, Clan Bane, Player (decidido em 2026-10-15).
 

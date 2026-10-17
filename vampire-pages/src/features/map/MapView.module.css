@@ -120,13 +120,33 @@
 
 .segmented button:focus-visible,
 .layerToggle:focus-within,
-.borough:focus-visible,
-.marker:focus-visible,
-.edge:focus-visible,
 .linkButton:focus-visible,
 .pointLink:focus-visible {
   outline: var(--border-width-focus) solid var(--color-focus-ring);
   outline-offset: 2px;
+}
+
+/* SVG items show focus on their own shape, not as a bounding-box rectangle. */
+.borough:focus,
+.marker:focus,
+.edge:focus {
+  outline: none;
+}
+
+.borough:focus-visible path {
+  stroke: var(--color-focus-ring);
+  stroke-width: 3;
+}
+
+.marker:focus-visible .markerHit {
+  stroke: var(--color-focus-ring);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.edge:focus-visible text {
+  fill: var(--color-text-accent);
+  text-decoration: underline;
 }
 
 /* ---------- Layout ---------- */

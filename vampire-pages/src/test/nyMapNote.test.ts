@@ -29,6 +29,14 @@ describe('Mapa de Nova York note', () => {
     expect(Object.keys(EDGE_PLACES).sort()).toEqual((build.data?.edges.map((edge) => edge.id) ?? []).sort());
   });
 
+  it('shows panel texts as sentences, starting with a capital letter', () => {
+    const texts = [
+      ...(build.data?.overview.paragraphs.map((paragraph) => paragraph.html) ?? []),
+      ...(build.data?.boroughs.flatMap((borough) => [borough.summaryHtml, borough.beforeHtml]) ?? []),
+    ];
+    for (const html of texts) expect(html.replace(/<[^>]+>/g, '').trimStart()[0], html).toMatch(/\p{Lu}/u);
+  });
+
   it('leaves out names outside Elenco de Nova York', () => {
     const text = JSON.stringify(build.data);
     for (const name of ['Addison Payne', 'Kutkha', 'Robert Larson', 'Kaiser', 'Donatello']) expect(text, name).not.toContain(name);

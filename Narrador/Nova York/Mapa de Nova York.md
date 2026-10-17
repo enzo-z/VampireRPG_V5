@@ -3,9 +3,9 @@ publicar: true
 ---
 #narrador #nova-york #mapa #auld-sanguine
 
-> Descrição do **mapa interativo de Nova York** (Réveillon de 2021) e **fonte de verdade** para mudanças nele. O mapa fica em `vampire-pages/docs/notes/one-shot/mapa-nova-york.html` (abrir no navegador) e publicado em [claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G).
+> Conteúdo do **mapa interativo de Nova York** (Réveillon de 2021). O app **lê esta nota** e desenha o mapa em **Narrador › Mapa de NY**, atrás da senha dos Segredos. O artifact antigo ([claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G](https://claude.ai/artifact/DtCnJH6cWK1bUnwWmQsV6G)) ficou como foto de 17/10/2026 e não é mais atualizado.
 > Montado em **16/10/2026**; **revisado em 17/10/2026** para seguir o [[Elenco de Nova York]], que é a fonte de verdade dos NPCs. Outras fontes: [[Auld Sanguine - Roteiro da Sessão]], `vampire-pages/docs/notes/one-shot/nova-york.md`, [[Clãs]], [[Sabbat]], [[Semana de Pesadelos]], as notas dos jogadores, [[Auld Sanguine - Laços entre Jogadores]] e, arquivadas em `Old/`, [[Camarilla em Nova York]] e [[Personagens da Camarilla de NY]].
-> ✅ **Estado (17/10/2026):** esta nota, o HTML do app e o artifact (versão 2) estão alinhados.
+> ✅ **Estado (17/10/2026):** o mapa do app sai direto desta nota; não há outra cópia para manter igual.
 > **Regra de nomes:** o mapa só mostra **indivíduos** confirmados no [[Elenco de Nova York]]. Quem está em "Fora da campanha" no Elenco (❔, não confirmados, sem decisão, reserva, descartados) não aparece. Fatos de grupo continuam (a família Giovanni, os "Wolves of Wall Street", o templo de Red Hook), assim como as figuras históricas dos livros na camada História.
 > Etiquetas de fonte (as mesmas do mapa): **[jogos V5]** *Coteries/Shadows/Reckoning of New York*; **[livro V5]** livros de V5 transcritos; **[notas]** notas do Narrador; **[SUG]** sugestão para a campanha; **[ed. anterior]** livros anteriores a V5.
 
@@ -31,22 +31,24 @@ publicar: true
 # Como mudar o mapa
 
 1. Edite **esta nota**: troque a facção de um distrito, acrescente um clã, mova ou crie um ponto, resolva uma divergência. Se a mudança for de um NPC (nome, clã, cargo, status), mude primeiro o [[Elenco de Nova York]].
-2. Peça ao Claude: *"leia `Narrador/Nova York/Mapa de Nova York.md` e atualize o mapa para corresponder"*. Ele compara a nota com o HTML, edita os dados do mapa e republica o artifact no mesmo link.
-3. Em conflito, **vale esta nota**. O HTML só guarda além disso os **contornos** dos distritos (polígonos simplificados) e o estilo; mude esses só se pedir explicitamente.
+2. Pronto: com `npm run dev` rodando, o app recarrega sozinho ao salvar a nota; senão, a mudança aparece no próximo `npm run dev` ou build.
+3. Se algo estiver fora do formato (facção, camada ou fonte desconhecida, coordenada inválida, `id` repetido, seção faltando), o app **não sobe** e diz qual seção corrigir.
+4. A nota guarda o conteúdo. Os **contornos** dos distritos, os nomes das águas e a posição das setas da borda ficam no código (`vampire-pages/src/features/map/geometry.ts`); um ponto novo **fora do mapa** precisa de uma posição lá.
 
-Correspondência entre as seções e os dados do HTML:
+O que o app lê de cada seção:
 
-| Seção desta nota | Dado no HTML |
+| Seção desta nota | No app |
 |---|---|
-| [[#Facções e legenda]] | `FACTIONS` e as cores `--f-*` |
-| [[#Visão geral da cidade]] | painel sem seleção e `COURT` |
-| [[#Distritos]] | `BOROS` |
-| [[#Pontos do mapa]] | `MARKERS` e `LAYERS` |
-| [[#Fora do mapa]] | `EDGES` |
-| [[#Clãs por distrito]] | `LEDGER` |
-| [[#Divergências e cuidados]] | `NOTES` |
+| [[#O que o mapa mostra]] | a tabela de camadas (nomes) |
+| [[#Facções e legenda]] | a tabela de facções (chave e nome da legenda) |
+| [[#Visão geral da cidade]] | os parágrafos **2021, "Título":** e **Antes de 1999, "Título":** e a tabela da corte |
+| [[#Distritos]] | cada `## Distrito`: Facção, Área / população, Resumo, tabela de clãs, Antes de 1999, Observação do painel |
+| [[#Pontos do mapa]] | cada ponto, agrupado por `### Distrito` |
+| [[#Fora do mapa]] | as setas da borda |
+| [[#Clãs por distrito]] | a matriz (● base, ○ presença) |
+| [[#Divergências e cuidados]] | os cartões abaixo da matriz |
 
-[[#Decisões em aberto]] não aparece no mapa: é a lista de trabalho do Narrador.
+As outras seções ficam só no Obsidian. [[#Decisões em aberto]] é a lista de trabalho do Narrador.
 
 **Regras dos pontos:** coordenadas em graus decimais, **longitude, latitude** (como `-73.9744, 40.7645`; dá para copiar do Google Maps invertendo a ordem). *Aproximado* = as fontes não dão endereço, e o mapa desenha um anel tracejado. *Rótulo à esquerda* serve para evitar sobreposição. Pontos de Manhattan só mostram o rótulo na vista "Manhattan".
 
