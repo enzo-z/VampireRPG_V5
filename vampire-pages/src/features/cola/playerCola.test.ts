@@ -283,6 +283,106 @@ describe("Nina's page", () => {
   });
 });
 
+function vincent(): Ficha {
+  const ficha = createFicha('vincent', 'Vincent Marchetti', 'Pedro');
+  ficha.identity = { ...ficha.identity, clan: 'Tzimisce', predatorType: 'Blood Leech', generation: '12th' };
+  ficha.attributes.manipulation = 4;
+  ficha.skills.athletics = 3;
+  ficha.skills.brawl = 3;
+  ficha.skills.persuasion = 3;
+  ficha.specs.brawl = 'Kindred';
+  ficha.disciplines[0] = {
+    name: 'Dominate',
+    value: 3,
+    powers: [
+      { name: 'Compel', note: '' },
+      { name: 'Mesmerize', note: '' },
+      { name: 'The Forgetful Mind', note: '' },
+    ],
+  };
+  ficha.disciplines[1] = {
+    name: 'Protean',
+    value: 2,
+    powers: [
+      { name: 'Eyes of the Beast', note: '' },
+      { name: 'Feral Weapons', note: '' },
+    ],
+  };
+  return ficha;
+}
+
+describe("Vincent's page", () => {
+  const cola = buildPlayerCola(vincent(), catalogs);
+  const lore = findPlayerCola(catalogs.playerColas, 'Vincent Marchetti');
+  const blocks = lore?.blocks ?? [];
+  const summary = (name: string) =>
+    cola.disciplines.flatMap((discipline) => discipline.powers).find((power) => power.name === name)?.summaryHtml ?? '';
+
+  it('finds every power of the sheet and the lore note, with no warnings', () => {
+    expect(cola.warnings).toEqual([]);
+    const powers = cola.disciplines.flatMap((discipline) => discipline.powers);
+    expect(powers.map((power) => power.name)).toEqual([
+      'Compel',
+      'Mesmerize',
+      'The Forgetful Mind',
+      'Eyes of the Beast',
+      'Feral Weapons',
+    ]);
+    for (const power of powers) expect(power.summaryHtml, power.name).not.toBeNull();
+  });
+
+  it('keeps the rules that matter in the summaries', () => {
+    expect(summary('Compel')).toContain('Intelligence + Resolve');
+    expect(summary('Mesmerize')).toContain('Rouse Check');
+    expect(summary('The Forgetful Mind')).toContain('margem');
+    expect(summary('Eyes of the Beast')).toContain('+2 dados em Intimidation');
+    expect(summary('Feral Weapons')).toContain('Agravado');
+  });
+
+  it('lists the strong pools with the best attribute', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.dice])).toEqual([
+      ['Athletics', 7],
+      ['Brawl', 7],
+      ['Persuasion', 7],
+    ]);
+  });
+
+  it('builds the lore note without errors, with the blocks the page places by title', () => {
+    expect(playerColas.errors).toEqual([]);
+    expect(playerColas.warnings).toEqual([]);
+    const titles = blocks.map((block) => block.title);
+    const expected = ['A corte de Nova York', 'NPCs que você conhece', 'Jogadores (a coterie)', 'Facções e organizações', 'Nova York por distrito'];
+    for (const title of expected) expect(titles, title).toContain(title);
+    for (const block of blocks) expect(block.entries.length, block.title).toBeGreaterThan(0);
+  });
+
+  it('names the court and the 1999 history he knows from the inside', () => {
+    const terms = (title: string) =>
+      blocks.find((block) => block.title === title)?.entries.map((entry) => entry.term).join(' | ') ?? '';
+    for (const name of ['Panhard', 'Qadir', 'Arturo', 'Duval', 'Samira', 'Sturbridge']) expect(terms('A corte de Nova York'), name).toContain(name);
+    for (const name of ['Polonia', 'Orozco', 'Dragomir']) expect(terms('NPCs que você conhece'), name).toContain(name);
+    for (const name of ['Sabbat', 'Batalha de Nova York', 'Anarquistas']) expect(terms('Facções e organizações'), name).toContain(name);
+  });
+
+  it("shows Gusman's mark only as a possible Sabbat sign", () => {
+    const gusman = blocks
+      .find((block) => block.title === 'Jogadores (a coterie)')
+      ?.entries.find((entry) => entry.term.includes('Gusman'));
+    const text = JSON.stringify(gusman);
+    expect(text).toContain('marca');
+    expect(text).toContain('Sabbat');
+    expect(text).toContain('não o rito');
+  });
+
+  it("keeps Vincent's secrets and what he cannot know off the printed sheet", () => {
+    const text = JSON.stringify(blocks);
+    const secrets = ['decapit', 'bebeu', 'Carmine', 'Silas', 'Redd', 'quarto', 'Terceira Tradição', 'Diablerist', 'diablerie'];
+    const gusmanAndOthers = ['Ravnos', 'Jiménez', 'Julian', 'Caitiff', 'Nizar', 'Nathan', 'Iggy', 'Mary Winchester'];
+    const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
+    for (const term of [...secrets, ...gusmanAndOthers, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+});
+
 describe('isShortField', () => {
   it('accepts a one-line fact and rejects a field with a rules sub-paragraph', () => {
     expect(isShortField('Um <strong>Rouse Check</strong>.')).toBe(true);
