@@ -6,13 +6,14 @@ import styles from './SheetHeader.module.css';
 
 interface SheetHeaderProps {
   onPrint: (id: string) => void;
+  onCola: (id: string) => void;
   /** After deleting this ficha (the app goes back to the Mesa). */
   onDeleted: () => void;
   /** Opens a ficha (the copy after duplicating, the ficha back after undoing a delete). */
   onOpenFicha: (id: string) => void;
 }
 
-export function SheetHeader({ onPrint, onDeleted, onOpenFicha }: SheetHeaderProps) {
+export function SheetHeader({ onPrint, onCola, onDeleted, onOpenFicha }: SheetHeaderProps) {
   const { ficha, readOnly, edit } = useSheet();
 
   return (
@@ -39,6 +40,7 @@ export function SheetHeader({ onPrint, onDeleted, onOpenFicha }: SheetHeaderProp
             ficha={ficha}
             readOnly={readOnly}
             onPrint={onPrint}
+            onCola={onCola}
             onDuplicated={onOpenFicha}
             onDeleted={onDeleted}
             onRestored={onOpenFicha}

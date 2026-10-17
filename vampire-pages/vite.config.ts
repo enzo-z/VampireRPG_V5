@@ -6,6 +6,7 @@ import { buildBlood } from './vite/buildBlood.ts';
 import { buildClans } from './vite/buildClans.ts';
 import { buildCola } from './vite/buildCola.ts';
 import { buildDisciplineModule } from './vite/buildCatalog.ts';
+import { buildPlayerColas } from './vite/buildPlayerColas.ts';
 import { buildPredatorTypes } from './vite/buildPredatorTypes.ts';
 import { vaultModulePlugin } from './vite/vaultModulePlugin.ts';
 
@@ -13,6 +14,7 @@ import { vaultModulePlugin } from './vite/vaultModulePlugin.ts';
 const DISCIPLINE_NOTES_DIR = fileURLToPath(new URL('../O Sangue (Vitae)/Disciplinas', import.meta.url));
 const ADVANTAGES_NOTE = fileURLToPath(new URL('../Advantages.md', import.meta.url));
 const COLA_NOTE = fileURLToPath(new URL('../Regras/Cola do Jogador.md', import.meta.url));
+const PLAYER_COLAS_DIR = fileURLToPath(new URL('../Regras/Colas dos Jogadores', import.meta.url));
 const CLANS_NOTE = fileURLToPath(new URL('../O Sangue (Vitae)/Clãs.md', import.meta.url));
 const BLOOD_NOTE = fileURLToPath(new URL('../O Sangue (Vitae)/Gerações e Potência.md', import.meta.url));
 const PREDATOR_TYPES_NOTE = fileURLToPath(new URL('../Fome, a Caça e a Besta/Predator Type.md', import.meta.url));
@@ -23,6 +25,7 @@ export default defineConfig({
     vaultModulePlugin({ id: 'virtual:disciplines', watchPath: DISCIPLINE_NOTES_DIR, build: () => buildDisciplineModule(DISCIPLINE_NOTES_DIR) }),
     vaultModulePlugin({ id: 'virtual:advantages', watchPath: ADVANTAGES_NOTE, build: () => buildAdvantages(ADVANTAGES_NOTE) }),
     vaultModulePlugin({ id: 'virtual:cola', watchPath: COLA_NOTE, build: () => buildCola(COLA_NOTE) }),
+    vaultModulePlugin({ id: 'virtual:player-colas', watchPath: PLAYER_COLAS_DIR, build: () => buildPlayerColas(PLAYER_COLAS_DIR) }),
     vaultModulePlugin({ id: 'virtual:clans', watchPath: CLANS_NOTE, build: () => buildClans(CLANS_NOTE) }),
     vaultModulePlugin({ id: 'virtual:blood', watchPath: BLOOD_NOTE, build: () => buildBlood(BLOOD_NOTE) }),
     vaultModulePlugin({ id: 'virtual:predator-types', watchPath: PREDATOR_TYPES_NOTE, build: () => buildPredatorTypes(PREDATOR_TYPES_NOTE) }),

@@ -11,6 +11,8 @@ interface FichaActionsProps {
   /** Duplicate and delete are edits: hidden in read-only mode. */
   readOnly: boolean;
   onPrint: (id: string) => void;
+  /** Opens the player's cheat sheet, page 2 (this character). */
+  onCola: (id: string) => void;
   onDuplicated: (copyId: string) => void;
   onDeleted: () => void;
   /** After "Desfazer" put the ficha back. */
@@ -19,7 +21,7 @@ interface FichaActionsProps {
 }
 
 /** "⋯" menu of one ficha, the same on the sheet and on its Mesa card. */
-export function FichaActions({ ficha, readOnly, onPrint, onDuplicated, onDeleted, onRestored, align = 'start' }: FichaActionsProps) {
+export function FichaActions({ ficha, readOnly, onPrint, onCola, onDuplicated, onDeleted, onRestored, align = 'start' }: FichaActionsProps) {
   const { state, dispatch } = useSheets();
   const { notify } = useToast();
 
@@ -52,6 +54,7 @@ export function FichaActions({ ficha, readOnly, onPrint, onDuplicated, onDeleted
   const items: MenuItem[] = [
     { label: 'Exportar JSON', onSelect: exportJson },
     { label: 'Exportar PDF (impressão)', onSelect: () => onPrint(ficha.id) },
+    { label: 'Cola do jogador (página 2)', onSelect: () => onCola(ficha.id) },
     ...(readOnly
       ? []
       : [

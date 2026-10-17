@@ -9,10 +9,11 @@ interface MesaViewProps {
   readOnly: boolean;
   onOpenFicha: (id: string) => void;
   onPrint: (id: string) => void;
+  onCola: (id: string) => void;
 }
 
 /** Every ficha at a glance, with live trackers. */
-export function MesaView({ readOnly, onOpenFicha, onPrint }: MesaViewProps) {
+export function MesaView({ readOnly, onOpenFicha, onPrint, onCola }: MesaViewProps) {
   const { state, dispatch } = useSheets();
   const [tracker, setTracker] = useState<{ id: string; track: DamageTrackKey } | null>(null);
   const edit: ((action: SheetsAction) => void) | null = readOnly ? null : dispatch;
@@ -33,6 +34,7 @@ export function MesaView({ readOnly, onOpenFicha, onPrint }: MesaViewProps) {
             onOpen={() => onOpenFicha(ficha.id)}
             onOpenTracker={(track) => setTracker({ id: ficha.id, track })}
             onPrint={onPrint}
+            onCola={onCola}
           />
         ))}
       </div>

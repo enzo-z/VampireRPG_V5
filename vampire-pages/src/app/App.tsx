@@ -11,7 +11,7 @@ import { Sidebar, type ShellView } from './Sidebar.tsx';
 import { useSidebar } from './useSidebar.ts';
 import styles from './App.module.css';
 
-type View = { name: ShellView } | { name: 'print'; autoPrint: boolean } | { name: 'cola' };
+type View = { name: ShellView } | { name: 'print'; autoPrint: boolean } | { name: 'cola'; fichaId?: string };
 
 function AppContent() {
   const { state, dispatch, storageNotice, dismissStorageNotice } = useSheets();
@@ -37,15 +37,17 @@ function AppContent() {
     dispatch({ type: 'ficha/activated', id });
     setView({ name: 'print', autoPrint: true });
   };
+  const colaFicha = (id: string) => setView({ name: 'cola', fichaId: id });
   const openMesa = () => {
     setView({ name: 'mesa' });
     sidebar.closeIfNarrow();
   };
 
   if (view.name === 'cola') {
+    const colaFicha = state.fichas.find((ficha) => ficha.id === view.fichaId);
     return (
       <main>
-        <ColaView onBack={openMesa} />
+        <ColaView key={colaFicha?.id ?? 'page-1'} ficha={colaFicha} onBack={openMesa} />
       </main>
     );
   }
@@ -79,11 +81,12 @@ function AppContent() {
         page={page}
         onPageChange={setPage}
         onPrint={printFicha}
+        onCola={colaFicha}
         onDeleted={openMesa}
         onOpenFicha={openFicha}
       />
     ) : (
-      <MesaView readOnly={readOnly} onOpenFicha={openFicha} onPrint={printFicha} />
+      <MesaView readOnly={readOnly} onOpenFicha={openFicha} onPrint={printFicha} onCola={colaFicha} />
     );
 
   return (

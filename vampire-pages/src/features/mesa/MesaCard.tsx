@@ -20,10 +20,11 @@ interface MesaCardProps {
   /** Opens the full Saúde / Willpower tracker (maximum and damage). */
   onOpenTracker: (track: DamageTrackKey) => void;
   onPrint: (id: string) => void;
+  onCola: (id: string) => void;
 }
 
 /** One character at the table: identity line and live trackers. */
-export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker, onPrint }: MesaCardProps) {
+export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker, onPrint, onCola }: MesaCardProps) {
   const { trackers } = ficha;
   const sub = [ficha.identity.clan, ficha.identity.player].map((part) => part.trim()).filter(Boolean).join(' · ');
   const hunger = Array.from({ length: HUNGER_MAX }, (_, index): BoxState => (index < trackers.hunger ? 2 : 0));
@@ -66,6 +67,7 @@ export function MesaCard({ ficha, active, edit, onOpen, onOpenTracker, onPrint }
           ficha={ficha}
           readOnly={edit === null}
           onPrint={onPrint}
+          onCola={onCola}
           onDuplicated={() => undefined}
           onDeleted={() => undefined}
           onRestored={() => undefined}

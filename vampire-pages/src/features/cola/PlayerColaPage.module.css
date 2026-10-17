@@ -1,0 +1,190 @@
+/* Player's cheat sheet, page 2 (one character). Reuses the page 1 frame, header and
+   prose through `composes`; only what is specific to powers and lists lives here. */
+
+.page {
+  composes: page from './ColaPage.module.css';
+}
+
+.content {
+  composes: content from './ColaPage.module.css';
+}
+
+.header {
+  composes: header from './ColaPage.module.css';
+}
+
+.title {
+  composes: title from './ColaPage.module.css';
+}
+
+.runningHead {
+  composes: runningHead from './ColaPage.module.css';
+}
+
+.columns {
+  composes: columns from './ColaPage.module.css';
+  /* Powers are wordier than the clan, predator and advantage boxes. */
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+.column {
+  composes: column from './ColaPage.module.css';
+}
+
+.block {
+  composes: block from './ColaPage.module.css';
+}
+
+.blockTitle {
+  composes: blockTitle from './ColaPage.module.css';
+}
+
+.prose {
+  composes: prose from './ColaPage.module.css';
+}
+
+/* Full-width strip under the two columns (Nova York por distrito). */
+.band {
+  flex: none;
+}
+
+/* Lore terms: "Term: text" runs, in columns (1 inside a page column, 3 in the band). */
+.entries {
+  margin: 0;
+  columns: var(--entries-columns, 1);
+  column-gap: var(--space-5);
+}
+
+.entry {
+  break-inside: avoid;
+  margin-block-end: var(--space-1);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+/* Terms of a column block are itemized with a crimson diamond, hanging in the margin. */
+.entries[data-separated] .entry {
+  position: relative;
+  padding-inline-start: var(--space-4);
+}
+
+.entries[data-separated] .entry::before {
+  content: '◆';
+  position: absolute;
+  inset-inline-start: 0;
+  font-size: calc(var(--font-size-2xs) * var(--print-small-scale));
+  line-height: calc(var(--font-size-xs) * var(--print-text-scale) * 1.35);
+  color: var(--color-text-accent);
+}
+
+.entry dt {
+  display: inline;
+  font-weight: var(--font-weight-bold);
+}
+
+.entry dt::after {
+  content: ': ';
+}
+
+.entry dd {
+  display: inline;
+  margin: 0;
+}
+
+.entry dd :global(p) {
+  display: inline;
+  margin: 0;
+}
+
+.goals {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-5);
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+}
+
+.text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+.list {
+  margin: 0;
+  padding-inline-start: var(--space-4);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+.list li {
+  margin-block-end: 2px;
+}
+
+.power {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  break-inside: avoid;
+}
+
+/* Power names are crimson and bold, so the powers of one discipline stand apart. */
+.powerName {
+  margin: 0;
+  padding-block-start: var(--space-1);
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-bold);
+  font-size: calc(var(--font-size-md) * var(--print-type-scale));
+  line-height: var(--line-height-tight);
+  color: var(--color-text-accent);
+}
+
+.power:first-child .powerName {
+  padding-block-start: 0;
+}
+
+.powerLevel {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  color: var(--color-text-accent);
+}
+
+/* Custo · Duração · Dice Pool on one wrapping line, straight from the note. */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-3);
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-xs) * var(--print-text-scale));
+  line-height: var(--line-height-snug);
+}
+
+.fact {
+  display: inline;
+}
+
+.fact dt {
+  display: inline;
+  font-weight: var(--font-weight-bold);
+}
+
+.fact dt::after {
+  content: ': ';
+}
+
+.fact dd {
+  display: inline;
+  margin: 0;
+}
+
+.fact dd :global(p) {
+  display: inline;
+  margin: 0;
+}
