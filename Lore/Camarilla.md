@@ -1,3 +1,9 @@
+---
+publicar: true
+vault: Lore
+ordem: 30
+ocultos: ["Contexto Narrativo das Tradições", "Contextualização: Camarilla no Rio de Janeiro (2019)"]
+---
 #concept #sect #lore
 
 ![[Pasted image 20241122185900.png]]
