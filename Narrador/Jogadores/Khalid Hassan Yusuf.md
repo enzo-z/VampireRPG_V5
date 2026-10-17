@@ -110,6 +110,47 @@ Filho de um professor e repórter assassinado pelo regime que ele ousou criticar
 
 ---
 
+## A rede de vigília e como os merits funcionam
+
+> ✅ = confirmado pelo Narrador (17/10/2026). Os contatos e as ligações abaixo foram **inventados a pedido do Narrador e confirmados por ele**; não precisam de validação com o jogador. Regras em [[Advantages]] (as páginas citadas são do Core, como o vault as traz).
+
+**Como a vigília roda.** Khalid trabalha de dentro para fora: a **Mask** abre portas sem levantar suspeita, os **Contacts** trazem informação, **Reyes** (Allies) carimba o que precisa de autoridade federal, o **Bloodhound** confirma no cheiro o que o papel não diz, e **Nizar** (Mawla) pergunta, de longe, quem passou pelo hotel. Nada disso dá força bruta: é informação, cobertura e prazo.
+
+| Merit da ficha | Como funciona (vault) | Em Khalid |
+|---|---|---|
+| **Mask ••** | Passa pela verificação de antecedentes da **polícia nacional (FBI ou equivalente)**; se havia registro de inteligência em vida, ele fica **classificado**. | ✅ Nome de rua: **Idris Malek**, consultor de segurança privada, com credencial e porte vinculados. O histórico de Khalid na Homeland Security aparece como **sigiloso**, e é por isso que Reyes acredita no "programa sigiloso". |
+| **Known Corpse •** (Defeito) | Quem sabe que ele morreu reage com choque; **consultas a bancos de dados sobre a identidade real** também voltam "morto". | ✅ Regra prática: Khalid **nunca consulta nada com o nome verdadeiro**. Quem o conhece de antes (colegas, mãe, irmã) o dá por morto. |
+| **Contacts •••** | Cada Contact é **humano** e dá **informação** na sua área; **um ponto** alcança algo **barato ou comum**. Para ajuda maior, a regra manda usar **Allies, Mawla ou Influence**. Contacts querem trocar favores. | ✅ **Três Contacts de um ponto cada**, como o Narrador confirmou (o primeiro é do Pursuer). Ver os três abaixo. |
+| **Allies ••** | Mortal **Average** (●●), **Reliability ●●**: aparece em **1 a 10 horas**. Costuma ajudar **uma vez por história**, não sabe que vampiros existem e **cobra favor em troca**. | ✅ **Reyes**, FBI, ver abaixo. |
+| **Resources •** | **Portfolio Proletariat**: vive de salário em salário; a fonte da renda precisa ser detalhada e **pode secar**. | ✅ A consultoria paga pelo Plaza (Vincent) e o que sobrou do dinheiro vivo retirado antes da morte forjada. Paga o celular descartável e os kits, não mais que isso. |
+| **Mawla •** | Palavra útil e empurrões ocasionais; **não luta suas batalhas nem cobra favores valiosos**. Se agir por interesse próprio, o personagem **perde pontos**. | ✅ **Nizar**: liga de tempos em tempos e pergunta quem passa pelo Plaza. ✅ Foi quem indicou a fornecedora do sistema de câmeras (Meridian, abaixo). |
+| **Status •** (*Known*) | Neonate devidamente apresentado e bem recebido; o Narrador soma o Status em primeiros encontros e eventos da corte. | ✅ Apresentado por **Samira** em 2010 ou 2011; "Membro confiável" porque cuida da segurança do hotel de Vincent. |
+| **Bloodhound •** | **Resolve + Awareness, Dif. 3**, para sentir pelo cheiro a **Resonance** do sangue de um humano (sobe com perfume e distância, desce no contato próximo). | ✅ Usa em entrevistas e cenas de crime. A Resonance **não prova culpa**: Khalid a lê como pista, e é o que lhe dá o primeiro "esse aqui fez algo" antes da *Prey Exclusion* e da Compulsion de Judgment. |
+| **Linguistics •** | Uma língua extra fluente. | ✅ Árabe: documentos e ligações com a família do passado. ✅ É a língua das ligações com Nizar. |
+
+### Os três Contacts (✅ confirmados)
+
+| Contact | Quem é | O que dá | O que quer |
+|---|---|---|---|
+| **Tobias Grell** (ponto do Pursuer) | Analista da **Homeland Security** (Office of Intelligence & Analysis), em Washington. Conheceu Khalid numa força-tarefa conjunta em 2009; **ainda atende o celular** de uma linha pessoal. Para ele, Khalid é **Idris Malek**, um consultor que saiu da contratada. | Antecedentes, listas de observação e registros de viagem: consulta, não ação. | Trocar informação: avisa se algo "estranho" se repete e quer saber o mesmo. |
+| **Det. Frank Delgado** | Detetive do **NYPD**, esquadrão de detetives de **Midtown North (18º Distrito)**, a área do Plaza. | Relatórios de ocorrência, mandados, quem foi preso e por quê, e **avisa quando a polícia chega ao hotel**. ✅ Em março de 2018, o alerta de um policial do metrô sobre um "morto que se levantou" na 50th Street chegou por ele. | Vídeo do hotel quando um caso passa pelo Plaza; discrição. |
+| **Tom Wieczorek** | Técnico de CFTV da **Meridian Systems**, empresa que instala e mantém câmeras em hotéis e prédios de Manhattan, **inclusive o Plaza**. | Acesso remoto às contas de clientes da Meridian e uma ponte com os operadores do metrô. ✅ Foi quem **puxou a gravação da 50th Street** (a figura encapuzada). | Dinheiro vivo e silêncio. |
+
+- ✅ **A Meridian é a "fornecedora indicada por Nizar".** Ela abre uma porta de volta para Nizar nas câmeras do Plaza (ver [[#Herta Müller: a hóspede da comitiva]], "Os olhos de Nizar"). Tom não sabe disso.
+- ✅ **Leila.** Delgado cita de vez em quando matérias do *The Harbor Ledger*. É por onde Khalid acompanha a irmã sem aparecer.
+- ✅ **Reyes** (Allies ••): agente do **FBI** no escritório de campo de Nova York (26 Federal Plaza), ex-parceiro da força-tarefa. **Sabe que Khalid está vivo.** ✅ Acredita no "programa sigiloso" porque a Mask 2 sela o histórico. Khalid o usa para o que exige **carimbo federal** (acesso, autorização, cobertura num caso). ✅ Já usou o favor de 2018 e deve outro: é o gancho "Reyes cobra um favor".
+- **Inventário:** celular descartável com os números dos três Contacts e de Reyes; kit de coleta de amostras (frascos, luvas); pistola compacta com porte vinculado a Idris Malek.
+
+### O arquivo de Gusman (✅ confirmado)
+O arquivo que Khalid montou, em **pasta de papel** que ele nunca digitalizou e **cópia criptografada** num pen drive no cofre do escritório de segurança do Plaza, contém:
+- a **gravação** da 50th Street (figura encapuzada, meio sorriso, corte da câmera);
+- a ficha do **orfanato Casa Santa Rita** (Newark, fechada em 2016) e a anotação **"N.N."** no arquivo da diocese, com a data de entrada;
+- o **nome verdadeiro** (**Julian Jiménez**), que passou a Gideon, sem entender o peso dele;
+- **Julius**: endereço e emprego (eletricista, Newark); **Mike**: processo e prisão (2016), saída em **2020** e endereço atual. **Khalid nunca os procurou.**
+- ⚠️ É o que entrega o nome e os amigos de Gusman se cair em mãos erradas.
+
+---
+
 ## Relações
 
 | Pessoa / Grupo | Natureza | Estado atual |
@@ -267,13 +308,13 @@ O JSON não traz Ambição nem Desejo. Está em [[#Pendências]]. Duas leituras 
 - [x] Como Khalid foi aceito pela Camarilla: pelo Arconte Nizar (Don Cerro), apresentado por Samira, residente do Plaza desde cerca de 2011. **Aprovar com o jogador.**
 - [ ] **Geração 12ª** (era 13ª): conferir se Blood Potency 1, 15 XP e Humanidade 6 continuam válidos. A nota [[Gerações e Potência]] não traz o mínimo de Blood Potency por geração.
 - [ ] Como Reyes soube que ele estava vivo e quanto sabe do que Khalid se tornou.
-- [ ] Nomes do agente da Homeland Security, do detetive do NYPD e do técnico de câmeras.
+- [x] Nomes do agente da Homeland Security (**Tobias Grell**), do detetive do NYPD (**Frank Delgado**) e do técnico de câmeras (**Tom Wieczorek**): inventados a pedido do Narrador e **confirmados por ele** (17/10/2026); sem validação com o jogador. Ver [[#A rede de vigília e como os merits funcionam]].
 - [ ] Papel de Khalid no one-shot do Réveillon de 2021 e relação com a corte da Camarilla de NY em [[Personagens da Camarilla de NY]].
 - [x] Datas: tudo alinhado em 2021 pelo Narrador; a nota de [[Vincent Marchetti]] foi corrigida.
 - [x] Nomes parecidos: o aliado de Khalid passa a ser chamado só de **Reyes** em toda a nota.
 - [ ] Conferir a ficha: Auspex 1 não é Disciplina de clã do Banu Haqim; confirmar se vem do Predator Type e como foi pago.
 
 - [x] **Gusman:** evento de 2018, gravação, investigação da origem e nome verdadeiro registrados (16/10/2026).
-- [ ] Validar com Klaus: contatos que ele usa na vigília, o arquivo sobre Mike e Julius e se ele sabe que Gideon usa o nome.
+- [x] O **arquivo sobre Mike e Julius** está confirmado (17/10/2026) e os contatos da vigília foram definidos e confirmados pelo Narrador (✅). Em aberto só: se Khalid sabe que Gideon usa o nome (adotado: **não**).
 - [x] **Nina Calloway:** vínculo secundário registrado e **aprovado pelo Narrador** (16/10/2026); o principal é com Gideon. README atualizado.
 - [ ] Ganchos de campanha com Nina (Nizar, *Harbor Ledger*, Reyes): ainda não decididos.
