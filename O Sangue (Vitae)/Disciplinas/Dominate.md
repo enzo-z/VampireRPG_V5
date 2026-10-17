@@ -62,6 +62,7 @@ No final, o Narrador determina o que a Disciplina pode realizar, mas deve garant
 >- **Custo**: Free
 >- **Duração**: Indefinida
 >- **Dice Pool**: Leia abaixo, possível (Charisma + Dominate) vs (Wits + Resolve) - [[Dificuldade, Contests e Conflitos#Contests|Contest Roll]]
+>- **Cola**: Sem custo. Diga “Esqueça!”: o alvo esquece o momento atual e os últimos minutos (o bastante para encobrir uma alimentação ou um encontro casual). Mortal despreparado: sem rolagem. Vítima resistente ou vampiro: contest de Charisma + Dominate vs Wits + Resolve.
 >
 >- **Sistema**:
 >  Ao pronunciar a frase “*Esqueça!*”, o usuário pode fazer com que a vítima Dominada esqueça o momento atual e os últimos minutos, o suficiente para encobrir uma alimentação superficial ou um encontro casual. Nenhuma nova memória é formada, e, se pressionada, a vítima percebe que tem alguns minutos faltando em sua lembrança.

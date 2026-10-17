@@ -87,6 +87,7 @@ O vampiro experimenta lampejos de percepção. Essas premonições podem se mani
 >   (O poder potencialmente SEMPRE está ativo, por isso o Narrador pode interagir sozinho com essa Disciplina)
 >
 >- **Dice Pool**: (Resolve + Auspex), ler abaixo
+>- **Cola**: Passivo: o Narrador dispara lampejos quando quiser (sugerido: um por cena), sem rolagem. Você pode forçar um com um Rouse Check e Resolve + Auspex; os sucessos dão o nível de percepção sobre o assunto.
 >
 >- **Sistema**:
 >	- **Narrador Gatilha a Premonição:**

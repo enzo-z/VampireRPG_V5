@@ -88,5 +88,5 @@ Em **outubro de 2020**, de madrugada, num posto na **I-80**, levou uma pancada e
 - [x] **Geração:** 13ª (decisão do Narrador, 16/10/2026). A ficha original diz 14ª.
 - [x] **Quando Daniel o achou:** a ordem só chegou a Daniel no **fim de novembro de 2021**, o tempo que a Camarilla levou para rastrear o Gangrel. As "semanas" da história do jogador são as primeiras semanas de fome; depois disso Jesse rodou sozinho por mais de um ano (decisão do Narrador, 16/10/2026).
 - [ ] **Jesse sabe da ordem?** Se Daniel contou que foi mandado buscá-lo.
-- [ ] **Sobrenome Calloway**, o mesmo de [[Nina Calloway]]: parentesco ou coincidência?
+- [x] **Sobrenome Calloway**, o mesmo de [[Nina Calloway]]: **coincidência** (decisão do Narrador, 16/10/2026). Sem parentesco.
 - [ ] Flor do **Folkloric Bane** e demais Vantagens (pendentes na ficha).
