@@ -184,6 +184,45 @@ export interface SecretsCatalog {
   documents: SecretDocument[];
 }
 
+// ---------- Vault (notes with publicar: true and vault: <group>) ----------
+
+export interface VaultHeading {
+  /** Unique within the note; also the anchor in the URL. */
+  id: string;
+  title: string;
+  /** Markdown depth in the note: 1 for "#", 2 for "##"… */
+  depth: number;
+}
+
+/** Plain text under one top-level heading, for search. */
+export interface VaultSearchSection {
+  /** Null for the text before the first heading. */
+  headingId: string | null;
+  title: string;
+  text: string;
+}
+
+export interface VaultNote {
+  /** URL-safe id, from the note's file name. */
+  slug: string;
+  title: string;
+  /** Index group ("Regras", "Lore"…), from the frontmatter key `vault`. */
+  group: string;
+  /** Position in the Vault, from the frontmatter key `ordem`. */
+  order: number;
+  /** Index into the module's `assets`, or null. */
+  banner: number | null;
+  /** Images and audio carry data-vault-asset="N" instead of a src. */
+  html: string;
+  headings: VaultHeading[];
+  sections: VaultSearchSection[];
+}
+
+export interface VaultCatalog {
+  /** Sorted by order, then title. */
+  notes: VaultNote[];
+}
+
 // ---------- New York map (Narrador/Nova York/Mapa de Nova York.md) ----------
 
 /** Territory key, as written in the note ("Facções e legenda"). */

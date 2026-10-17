@@ -114,6 +114,7 @@
   --font-serif: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
   --font-display: "Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
   --font-sans: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace; /* tracker examples in notes */
 
   --font-size-2xs: 0.6875rem; /* 11px running heads, tracked caps */
   --font-size-xs: 0.8125rem;  /* 13px sans table cells, captions */

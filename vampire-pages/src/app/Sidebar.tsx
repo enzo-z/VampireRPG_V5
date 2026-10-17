@@ -3,7 +3,7 @@ import type { Ficha } from '../domain/character.ts';
 import { BookIcon, ChevronLeftIcon, ChevronRightIcon, DieIcon, ListIcon, LockIcon, MapIcon, TableIcon } from '../ui/icons.tsx';
 import styles from './Sidebar.module.css';
 
-export type ShellView = 'mesa' | 'sheet' | 'secrets' | 'map';
+export type ShellView = 'mesa' | 'sheet' | 'secrets' | 'map' | 'vault';
 
 interface SidebarProps {
   open: boolean;
@@ -21,6 +21,8 @@ interface SidebarProps {
   onSecrets: () => void;
   /** Opens the New York map, behind the same password. */
   onMap: () => void;
+  /** Opens the Vault: published rules and lore notes. */
+  onVault: () => void;
 }
 
 /** "Nina Blue Calloway" → "NB"; a copy keeps its number: "Nina (1)" → "N1". */
@@ -66,8 +68,8 @@ function NavItem({ icon, label, current, disabled, note, onClick, open }: {
   );
 }
 
-/** Collapsible main menu: Fichas (Mesa and every ficha), Mesa de jogo, Narrador (Segredos, Mapa de NY); Vault and Backlog (later). */
-export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha, onCola, onSecrets, onMap }: SidebarProps) {
+/** Collapsible main menu: Fichas (Mesa and every ficha), Mesa de jogo (Cola, Vault), Narrador (Segredos, Mapa de NY); Backlog (later). */
+export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa, onFicha, onCola, onSecrets, onMap, onVault }: SidebarProps) {
   return (
     <nav
       id="main-menu"
@@ -124,13 +126,13 @@ export function Sidebar({ open, narrow, onToggle, fichas, view, activeId, onMesa
 
       {open && <p className={styles.group}>Mesa de jogo</p>}
       <NavItem icon={<DieIcon />} label="Cola do jogador" onClick={onCola} open={open} />
+      <NavItem icon={<BookIcon />} label="Vault" current={view === 'vault'} onClick={onVault} open={open} />
 
       {open && <p className={styles.group}>Narrador</p>}
       <NavItem icon={<LockIcon />} label="Segredos" current={view === 'secrets'} onClick={onSecrets} open={open} />
       <NavItem icon={<MapIcon />} label="Mapa de NY" current={view === 'map'} onClick={onMap} open={open} />
 
       <div className={styles.later}>
-        <NavItem icon={<BookIcon />} label="Vault" note="em breve" disabled open={open} />
         <NavItem icon={<ListIcon />} label="Backlog" note="em breve" disabled open={open} />
       </div>
     </nav>

@@ -1,0 +1,373 @@
+/* A Vault note, styled after the core book (docs/design-spec.md §4 "Livro"):
+   display title, crimson section headings, square bullets and zebra tables.
+   The note body is HTML built from markdown, so it is styled by element. */
+
+.article {
+  max-inline-size: 66rem;
+}
+
+.banner {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 46rem;
+  aspect-ratio: 5 / 2;
+  margin-block-end: var(--space-5);
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.header {
+  max-inline-size: 46rem;
+  margin-block-end: var(--space-5);
+  padding-block-end: var(--space-2);
+  border-block-end: var(--border-width-thick) solid var(--color-rule);
+}
+
+.kicker {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 46rem);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.main {
+  min-inline-size: 0;
+}
+
+/* ---------- Table of contents ---------- */
+
+.tocDetails {
+  margin-block-end: var(--space-5);
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width-hairline) solid var(--color-border);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+}
+
+.tocSummary {
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+  cursor: pointer;
+}
+
+.tocAside {
+  display: none;
+  position: sticky;
+  inset-block-start: var(--space-4);
+  max-block-size: calc(100dvh - var(--space-6));
+  overflow-y: auto;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+}
+
+.tocTitle {
+  margin-block-end: var(--space-2);
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.tocList {
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tocList a {
+  display: block;
+  padding-block: var(--space-1);
+  color: var(--color-text);
+  line-height: var(--line-height-snug);
+  text-decoration: none;
+}
+
+.tocList a:hover {
+  color: var(--color-text-accent);
+  text-decoration: underline;
+}
+
+.tocOuter {
+  font-weight: var(--font-weight-semibold);
+}
+
+.tocOuter + .tocOuter {
+  margin-block-start: var(--space-1);
+}
+
+.tocInner {
+  padding-inline-start: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+/* Room for 42rem of text, a 2rem gap and the 12rem table of contents. */
+@container (min-width: 56rem) {
+  .layout {
+    grid-template-columns: minmax(0, 42rem) 12rem;
+    gap: var(--space-6);
+  }
+
+  .tocAside {
+    display: block;
+  }
+
+  .tocDetails {
+    display: none;
+  }
+
+  /* Banner, title rule and pager span the text and the table of contents. */
+  .banner,
+  .header,
+  .pager {
+    max-inline-size: 56rem;
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* ---------- Note body ---------- */
+
+.body {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+}
+
+.body p,
+.body ul,
+.body ol,
+.body blockquote,
+.body [data-table-scroll] {
+  margin-block: 0 var(--space-3);
+}
+
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6 {
+  scroll-margin-block-start: var(--space-4);
+  line-height: var(--line-height-snug);
+}
+
+.body h2 {
+  margin-block: var(--space-7) var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-accent);
+}
+
+.body > h2:first-child {
+  margin-block-start: 0;
+}
+
+.body h3 {
+  margin-block: var(--space-5) var(--space-2);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.body h4 {
+  margin-block: var(--space-5) var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-accent);
+}
+
+.body h5,
+.body h6 {
+  margin-block: var(--space-4) var(--space-1);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  font-style: italic;
+}
+
+.body strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.body a {
+  color: var(--color-text-accent);
+  text-decoration: underline;
+  text-decoration-thickness: var(--border-width-hairline);
+  text-underline-offset: 0.15em;
+}
+
+.body a:hover {
+  color: var(--color-accent-hover);
+}
+
+.body ul,
+.body ol {
+  padding-inline-start: var(--space-5);
+}
+
+.body ul {
+  list-style: square;
+}
+
+.body li + li,
+.body li > ul,
+.body li > ol {
+  margin-block-start: var(--space-1);
+}
+
+.body li > p,
+.body li > ul,
+.body li > ol {
+  margin-block-end: 0;
+}
+
+.body hr {
+  margin-block: var(--space-5);
+  border: 0;
+  border-block-start: var(--border-width-hairline) solid var(--color-border);
+}
+
+.body blockquote {
+  margin-inline: 0;
+  padding: var(--space-2) var(--space-4);
+  border-inline-start: var(--border-width-thick) solid var(--color-rule);
+}
+
+.body blockquote > :last-child {
+  margin-block-end: 0;
+}
+
+/* "> 📖 Livro básico, p. N": a reference, quieter than the rule notes. */
+.body blockquote[data-kind='book'] {
+  border-inline-start-color: var(--color-border-accent);
+  background: var(--color-surface-tint);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.body mark {
+  padding-inline: 0.1em;
+  background: var(--color-accent-subtle);
+  color: inherit;
+}
+
+.body code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.body img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  margin-block: var(--space-3);
+}
+
+.body audio {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 28rem;
+  margin-block: var(--space-3);
+}
+
+/* Tables, as in the book: light header, crimson-tinted zebra, thin ink rules, no vertical rules. */
+.body [data-table-scroll] {
+  overflow-x: auto;
+}
+
+.body table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-snug);
+  font-variant-numeric: tabular-nums;
+}
+
+.body th {
+  padding: var(--space-2) var(--space-3);
+  vertical-align: top;
+  text-align: start;
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-smallcaps);
+  text-transform: uppercase;
+  background: var(--color-surface);
+}
+
+.body td {
+  padding: var(--space-2) var(--space-3);
+  vertical-align: top;
+  border-block-start: var(--border-width-hairline) solid var(--color-divider);
+}
+
+.body tbody tr:nth-child(odd) {
+  background: var(--color-surface-tint);
+}
+
+.body tbody tr:last-child td {
+  border-block-end: var(--border-width-hairline) solid var(--color-divider);
+}
+
+/* ---------- Previous / next ---------- */
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-3);
+  max-inline-size: 46rem;
+  margin-block-start: var(--space-7);
+  padding-block-start: var(--space-3);
+  border-block-start: var(--border-width-hairline) solid var(--color-border);
+}
+
+.pagerLink {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+
+.pagerLink:hover {
+  color: var(--color-text-accent);
+}
+
+.pagerNext {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+.pagerLabel {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2xs);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}

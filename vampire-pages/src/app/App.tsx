@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ColaView } from '../features/cola/ColaView.tsx';
 import { MapPage } from '../features/map/MapPage.tsx';
 import { MesaView } from '../features/mesa/MesaView.tsx';
@@ -8,6 +8,9 @@ import { SecretsView } from '../features/secrets/SecretsView.tsx';
 import { useSecretsLock } from '../features/secrets/useSecretsLock.ts';
 import type { SheetPageName } from '../features/sheet/PageTabs.tsx';
 import { SheetPage } from '../features/sheet/SheetPage.tsx';
+import { useVaultRoute } from '../features/vault/useVaultRoute.ts';
+import { isVaultHash, parseVaultHash, VAULT_HASH, vaultHash } from '../features/vault/vaultRoute.ts';
+import { VaultView } from '../features/vault/VaultView.tsx';
 import { SheetsProvider, useSheets } from '../store/SheetsProvider.tsx';
 import { ToastProvider, useToast } from '../ui/Toast.tsx';
 import { AppBar } from './AppBar.tsx';
@@ -21,13 +24,25 @@ type View =
   | { name: 'cola'; fichaId?: string }
   | { name: 'secret'; slug: string };
 
+const SHELL_TITLES: Readonly<Record<ShellView, string>> = {
+  mesa: 'Mesa',
+  sheet: 'Ficha',
+  secrets: 'Segredos',
+  map: 'Mapa de NY',
+  vault: 'Vault',
+};
+
 function AppContent() {
   const { state, dispatch, storageNotice, dismissStorageNotice } = useSheets();
   const { notify } = useToast();
   const sidebar = useSidebar();
   const secrets = useSecretsLock();
   const [readOnly, setReadOnly] = useState(false);
-  const [view, setView] = useState<View>({ name: 'mesa' });
+  // The Vault keeps its place in the URL hash (links between notes, back button, bookmarks).
+  const [view, setView] = useState<View>(() => (isVaultHash(window.location.hash) ? { name: 'vault' } : { name: 'mesa' }));
+  const vaultRoute = useVaultRoute();
+  const vaultKey = vaultRoute === null ? null : vaultHash(vaultRoute.slug, vaultRoute.headingId);
+  const lastVaultHash = useRef(VAULT_HASH);
   const [page, setPage] = useState<SheetPageName>('mechanics');
   const active = state.fichas.find((ficha) => ficha.id === state.activeId) ?? null;
 
@@ -59,6 +74,29 @@ function AppContent() {
     setView({ name: 'map' });
     sidebar.closeIfNarrow();
   };
+  /** Back to the last note read; from inside the Vault, to its home. */
+  const openVault = () => {
+    const target = view.name === 'vault' ? VAULT_HASH : lastVaultHash.current;
+    if (window.location.hash !== target) window.location.hash = target;
+    setView({ name: 'vault' });
+    sidebar.closeIfNarrow();
+  };
+
+  // A Vault URL reached by link or by the back button opens the Vault.
+  useEffect(() => {
+    if (vaultKey === null) return;
+    lastVaultHash.current = vaultKey;
+    setView({ name: 'vault' });
+  }, [vaultKey]);
+
+  // Leaving the Vault drops its hash, so a reload opens where you are.
+  useEffect(() => {
+    if (view.name !== 'vault' && isVaultHash(window.location.hash)) {
+      window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+      // replaceState fires no hashchange; tell useVaultRoute, or the back button could not reopen this note.
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
+    }
+  }, [view.name]);
 
   if (view.name === 'cola') {
     const colaFicha = state.fichas.find((ficha) => ficha.id === view.fichaId);
@@ -97,12 +135,16 @@ function AppContent() {
       ? 'secrets'
       : view.name === 'map'
         ? 'map'
-        : view.name === 'sheet' && active !== null
+        : view.name === 'vault'
+          ? 'vault'
+          : view.name === 'sheet' && active !== null
           ? 'sheet'
           : 'mesa';
   const content =
     shellView === 'map' ? (
       <MapPage lock={secrets} />
+    ) : shellView === 'vault' ? (
+      <VaultView route={vaultRoute ?? parseVaultHash(window.location.hash) ?? { slug: null, headingId: null }} />
     ) : shellView === 'secrets' ? (
       <SecretsView lock={secrets} onOpen={(slug) => setView({ name: 'secret', slug })} />
     ) : state.fichas.length === 0 ? (
@@ -139,6 +181,7 @@ function AppContent() {
         onCola={() => setView({ name: 'cola' })}
         onSecrets={openSecrets}
         onMap={openMap}
+        onVault={openVault}
         onFicha={openFicha}
       />
       {sidebar.narrow && sidebar.open && (
@@ -146,7 +189,7 @@ function AppContent() {
       )}
       <div className={styles.main}>
         <AppBar
-          title={shellView === 'sheet' ? 'Ficha' : shellView === 'secrets' ? 'Segredos' : shellView === 'map' ? 'Mapa de NY' : 'Mesa'}
+          title={SHELL_TITLES[shellView]}
           readOnly={readOnly}
           onToggleReadOnly={() => setReadOnly((value) => !value)}
           onOpenMenu={sidebar.narrow ? sidebar.toggle : null}

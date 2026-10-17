@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, NyMapCatalog, PredatorTypeCatalog, SecretsCatalog } from './types.ts';
+import type { AdvantageCatalog, BloodCatalog, ClanCatalog, ColaCatalog, DisciplineCatalog, NyMapCatalog, PredatorTypeCatalog, SecretsCatalog, VaultCatalog } from './types.ts';
 
 const field = z.strictObject({ label: z.string().min(1), html: z.string() });
 
@@ -108,6 +108,21 @@ export const secretsCatalogSchema = z.strictObject({
     }),
   ),
 }) satisfies z.ZodType<SecretsCatalog>;
+
+export const vaultCatalogSchema = z.strictObject({
+  notes: z.array(
+    z.strictObject({
+      slug: z.string().regex(/^[a-z0-9-]+$/),
+      title: z.string().min(1),
+      group: z.string().min(1),
+      order: z.number(),
+      banner: z.int().min(0).nullable(),
+      html: z.string().min(1),
+      headings: z.array(z.strictObject({ id: z.string().min(1), title: z.string(), depth: z.int().min(1).max(6) })),
+      sections: z.array(z.strictObject({ headingId: z.string().nullable(), title: z.string(), text: z.string() })),
+    }),
+  ),
+}) satisfies z.ZodType<VaultCatalog>;
 
 const nyFaction = z.enum(['cam', 'camSoft', 'anarch', 'anarchSoft', 'indep', 'sabbat', 'unk']);
 const nyLayer = z.enum(['now', 'pc', 'auld', 'b1999', 'hist']);
