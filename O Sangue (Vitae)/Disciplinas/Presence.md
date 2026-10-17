@@ -77,6 +77,7 @@ Eficaz tanto como isca quanto como defesa, vampiros com Presence desfrutam de um
 >- **Custo**: Free
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]] ou até encerrado intencionalmente.
 >- **Dice Pool**: Possivel teste da vítima caso te ataque (leia abaixo)
+>- **Cola**: Sem custo; dura a cena ou até você encerrar. Soma Presence a qualquer teste de Intimidation. Quem quiser atacar você precisa passar em Resolve + Composure (Dif. 2). Não combina com Awe.
 >
 >- **Sistema**:
 >	Em vez de atrair as pessoas, o vampiro usa Presença para repelir. Com este poder, o usuário parece ameaçador e exala uma aura de intimidação poderosa o suficiente para fazer com que a maioria dos mortais evite sua atenção e até mesmo outros vampiros pensem duas vezes antes de agir contra ele.

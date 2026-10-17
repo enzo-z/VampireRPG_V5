@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 3,
+  "fichas": [
+    {
+      "id": "daniel",
+      "name": "Daniel Mercer",
+      "identity": {
+        "player": "Luiz",
+        "chronicle": "NY By Night",
+        "clan": "Brujah",
+        "predatorType": "Alleycat",
+        "ambition": "Impedir que Nathan morra da doença sem tirar dele o direito de escolher",
+        "sect": "Camarilla",
+        "generation": "13th",
+        "desire": "Encontrar Elias Voss em Nova York e conversar com ele sobre uma saída para Nathan"
+      },
+      "attributes": {
+        "strength": 4,
+        "dexterity": 3,
+        "stamina": 3,
+        "charisma": 2,
+        "manipulation": 1,
+        "composure": 2,
+        "intelligence": 2,
+        "wits": 2,
+        "resolve": 3
+      },
+      "skills": {
+        "athletics": 3,
+        "brawl": 3,
+        "craft": 2,
+        "drive": 3,
+        "firearms": 1,
+        "larceny": 0,
+        "melee": 1,
+        "stealth": 1,
+        "survival": 1,
+        "animalKen": 0,
+        "etiquette": 0,
+        "insight": 1,
+        "intimidation": 2,
+        "leadership": 0,
+        "performance": 0,
+        "persuasion": 1,
+        "streetwise": 2,
+        "subterfuge": 0,
+        "academics": 0,
+        "awareness": 2,
+        "finance": 0,
+        "investigation": 3,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 1,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "brawl": "Grappling",
+        "craft": "Motorcycles",
+        "drive": "Motorcycles"
+      },
+      "disciplines": [
+        {
+          "name": "Potence",
+          "value": 2,
+          "powers": [
+            {
+              "name": "Lethal Body",
+              "note": ""
+            },
+            {
+              "name": "Prowess",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Celerity",
+          "value": 2,
+          "powers": [
+            {
+              "name": "Rapid Reflexes",
+              "note": ""
+            },
+            {
+              "name": "Fleetness",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Presence",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Daunt",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 6,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 1,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 1,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "1 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "1",
+        "clanBane": "Violent Temper: subtraia dados iguais à Bane Severity (1) de testes para resistir a Frenesi de Fúria (nunca abaixo de um dado).",
+        "clanCompulsion": "Rebellion: até desafiar ordens ou expectativas, percebidas ou reais, sofre −2 dados em todas as rolagens. Termina quando muda a opinião de alguém (à força, se necessário) ou faz o oposto do esperado."
+      },
+      "advantages": [
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 3,
+          "note": "Criminosos da estrada: desmanches, receptadores, paradas de caminhão (Alleycat)"
+        },
+        {
+          "category": "background",
+          "name": "Allies",
+          "level": 2,
+          "note": "Red Harlan e o Ferro do Iron Lanterns, Brooklyn"
+        },
+        {
+          "category": "background",
+          "name": "Mawla",
+          "level": 2,
+          "note": "Elias Voss, Malkaviano, \"o Cartógrafo\" - paradeiro desconhecido"
+        },
+        {
+          "category": "background",
+          "name": "Mask",
+          "level": 1,
+          "note": "Identidades montadas por Elias; para os prospects, \"o filho do Danny original\""
+        },
+        {
+          "category": "background",
+          "name": "Status",
+          "level": 1,
+          "note": "Camarilla: operativo de recuperação, reabilitado depois de 1999"
+        },
+        {
+          "category": "background",
+          "name": "Resources",
+          "level": 1,
+          "note": "Bicos de mecânico em oficinas de irmãos"
+        },
+        {
+          "category": "flaw",
+          "name": "Adversary",
+          "level": 2,
+          "note": "Teresa \"Torch\" Malloy e o Pavio Negro MC, Staten Island"
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Nunca use a família de alguém como arma.\nDê a quem você protege a chance de escolher.\nNinguém da família fica para trás.",
+        "touchstones": "Nathan Ward — Filho, 34 anos, humano · Queens\nRuth Ward — Cunhada, 57 anos, humana\nSamuel \"Red\" Harlan — Irmão de estrada, 66 anos, humano · presidente do Ferro"
+      },
+      "profile": {
+        "sire": "Donovan \"Doc\" Keane (destruído em 1999)",
+        "birthday": "14 de março de 1958",
+        "age": "63",
+        "embraced": "1993 · Brooklyn, Nova York",
+        "apparentAge": "35",
+        "description": "",
+        "concept": "Motociclista Brujah, pai ausente, veterano de 1999, recuperador de pessoas",
+        "photo": ""
+      },
+      "notes": "REVISAR: ficha importada do JSON do app do Pedro (jogador, crônica, desejo e campos de sangue completados à mão, seguindo o Gideon). A foto foi retirada deste arquivo de teste (era um JPEG de ~290 KB); o original em fichas-originais continua com ela. Maggie como Touchstone é exceção da casa ainda pendente: na ficha o Touchstone da terceira Convicção é Red.\n— Importado do app do Pedro —\nApelidos: \"Danny\" · \"Mercer\" · \"Danny Nomad\"\nIdiomas: English\nXP: total 15, gasto 14\nBackground: Mecânico do Brooklyn, irmão do Iron Lanterns MC desde 1976. Em 1993, com um câncer terminal e um filho de seis anos, foi Abraçado por Donovan \"Doc\" Keane, fundador do clube e Lanterneiro da Chama, a camada secreta de vampiros e carniçais escondida dentro do motoclube. Durante seis anos fez o trabalho noturno da Chama para a rede clandestina da Camarilla numa Nova York do Sabbat.\n\nEm 1999, Doc usou o clube num golpe anarquista disfarçado de reserva da Camarilla (a Segunda Guarda) e entregou ao Sabbat as fichas das famílias da Chama. Claire, esposa de Daniel, foi morta. Daniel foi preso conduzindo armas para o golpe, salvo da execução pelo Malkaviano Elias Voss e depôs contra o próprio sire. Doc foi destruído e o clube se partiu: o Brooklyn ficou com a Camarilla, Staten Island virou o Pavio Negro, liderado por Torch Malloy, irmã de sangue de Daniel.\n\nDesde 2000 é Nomad do clube: roda a Costa Leste em Maggie, a Harley que Claire batizou, recuperando pessoas para a Camarilla e protegendo à distância o filho Nathan, que cresceu como Nathan Ward e acredita que o pai morreu em 1999. Em 2021, Nathan está morrendo de uma doença degenerativa. Daniel volta a Nova York com a ordem de trazer um Gangrel recém-Abraçado \"vivo\" e com um motivo que não entrega no relatório: encontrar Elias e perguntar se há saída para Nathan, inclusive pedir à Príncipe o Abraço do filho.\nNotas: DESEJO (início da crônica): encontrar Elias Voss em Nova York e conversar com ele sobre uma saída para Nathan, inclusive sobre pedir autorização para o Abraço. Versões menores: \"Conseguir de Ivo Rask uma pista recente de Elias\" ou \"Descobrir com Red o que o Pavio Negro quer comigo\".\n\nBRUJAH: Bane Violent Temper (Bane Severity 1 em BP 1): subtraia 1 dado de testes para resistir a frenesi de fúria. Compulsão: Rebellion.\n\nCRIAÇÃO (Core, pp. 136-151): neonato, 13ª geração, BP 1, Humanity 7 - 1 (Alleycat) = 6. Disciplinas: Potence 2 + Celerity 1, +1 Celerity do Alleycat. Advantages 7 pontos; Contacts 3 vêm do Alleycat. Flaws 2 pontos.\nXP de neonato (15): Presence 1 / Daunt (5) + Investigation 2 -> 3 (9) = 14. Sobra 1 XP.\n\nPARA O NARRADOR DECIDIR: (1) a coterie é de neonatos (+15 XP) ou o Gangrel recém-Abraçado puxa todos para fledglings, sem XP; (2) Maggie como Touchstone da 3ª Convicção é exceção da casa (Core, p. 173, pede um humano vivo) - na ficha está Red; (3) Suspect (Camarilla) é um Flaw que combina com a história e pode ser acrescentado; (4) sem Haven: dorme em oficinas de irmãos (\"Quem dorme tem vigia\").\n\nREGRAS DA CHAMA: 1. O Ferro não sabe. 2. Irmão não é presa. 3. Quem dorme tem vigia. 4. Problema da Chama se resolve na Chama.\nLema do clube: \"Ninguém volta para casa no escuro.\""
+    }
+  ]
+}
