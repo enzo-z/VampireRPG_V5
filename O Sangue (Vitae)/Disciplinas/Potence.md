@@ -54,6 +54,7 @@ Possuindo uma força profana que vai além de braços e punhos, o usuário é ca
 > - **Custo**: Free
 > - **Duração**: Passiva.
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Passivo, sem rolagem. Salta 3 × Potence metros na vertical e 5 × Potence na horizontal, sem precisar de impulso.
 >
 > - **Sistema**:
 >

@@ -43,6 +43,7 @@ Os sentidos do vampiro se aguçam a um grau sobrenatural, dando-lhes a capacidad
 >   Manter o poder ativo por períodos prolongados sem descanso (mais de uma cena), especialmente em ambientes com estímulos intensos, pode exigir **gastar Willpower**, a critério do Narrador.
 >
 >- **Dice Pool**: (Wits + Resolve)
+>- **Cola**: Soma Auspex às rolagens de percepção e enxerga no escuro total. Sensação extrema (explosão, flash, cheiro forte): rola Wits + Resolve, Dif. 3 ou mais; se falhar, −3 dados em percepção até o fim da cena. Manter ativo por mais de uma cena pode custar Willpower.
 >
 > - **Sistema**:
 >   O usuário adiciona sua pontuação em Auspícios a todas as rolagens de percepção.
@@ -60,6 +61,7 @@ Os sentidos do vampiro tornam-se sintonizados a dimensões além do mundano, per
 >   (O poder SEMPRE está ativo, por isso o Narrador pode interagir sozinho com essa Disciplina)
 >
 >- **Dice Pool**: (Wits + Auspex) ou (Resolve + Auspex)
+>- **Cola**: Passivo: o Narrador rola Wits + Auspex em segredo para você notar o sobrenatural escondido. Contra quem se esconde é contest (ex.: vs Wits + Obfuscate). Se você procura ativamente, rola Resolve + Auspex.
 >
 >- **Sistema**:
 >	- Sempre que algo sobrenatural estiver escondido à vista, o Narrador faz um teste oculto de (Wits + Auspex) contra uma Dificuldade que escolher.
@@ -196,6 +198,7 @@ Ao alcançar com sua mente, o vampiro pode acessar os sentidos de outro mortal o
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 >- **Dice Pool**: (Resolve + Auspex)
 >  Potencialmente contest de (Wits + Resolve) vs (Wits + Resolve) - Ler System
+>- **Cola**: Custa um Rouse Check; dura a cena. Rola Resolve + Auspex, Dif. 3 (sobe com distração, distância e pouco sangue seu no alvo). Em estranho exige linha de visão. Se o alvo notar, contest Wits + Resolve; expulso, só tenta de novo na noite seguinte.
 >
 >- **Sistema**:
 >	1. **Defina a Dificuldade e Jogue o Teste:**

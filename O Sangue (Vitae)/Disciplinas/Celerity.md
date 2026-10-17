@@ -55,6 +55,7 @@ Enquanto alguns vampiros a utilizam para cortar e esfaquear inimigos sem medo de
  >- **Custo**: Free
 > - **Duração**: Passiva
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Passivo, sem rolagem. Sem penalidade na defesa por falta de cover contra armas de fogo; uma Minor Action de até 2 dados por turno de graça; chance de reação em ataque-surpresa.
 >
 > - **Sistema**:
 >   Embora seus corpos ainda não possam desafiar as leis da natureza, vampiros com este poder percebem eventos instantaneamente e podem reagir com uma rapidez sobre-humana. Eles conseguem observar projéteis a ponto de tentar desviar de flechas e até balas, mesmo sem cobertura disponível.
