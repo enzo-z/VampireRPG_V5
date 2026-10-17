@@ -55,6 +55,7 @@ Eficaz tanto como isca quanto como defesa, vampiros com Presence desfrutam de um
 >- **Custo**: Free
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]] ou até encerrado intencionalmente.
 >- **Dice Pool**: Possivel [[Dificuldade, Contests e Conflitos#Contests|contest]] de (Manipulation + Presence) vs (Composure + Intelligence)
+>- **Cola**: Sem custo; dura a cena ou até você encerrar. Soma Presence a Persuasion, Performance e outros testes de Carisma. Se alguém resistir, contest de Manipulation + Presence vs Composure + Intelligence. Não combina com Daunt.
 >
 >- **Sistema**:
 >

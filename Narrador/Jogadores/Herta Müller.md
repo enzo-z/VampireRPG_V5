@@ -123,16 +123,16 @@ Neta de um engenheiro de Erfurt denunciado à Stasi por um colega que ganhou um 
 
 ### A comitiva: quem veio e quando
 
-> ✅ Hospedagem no Plaza, saída para a residência da Príncipe e Vincent encarregado de Herta: decisões do Narrador. 💡 Membros, nomes e datas exatas: propostas minhas.
+> ✅ Hospedagem no Plaza, saída para a residência da Príncipe e Vincent encarregado de Herta: decisões do Narrador. ✅ Membros e nomes (Teodoro e Lorenz) confirmados em 16/10/2026. 💡 Datas exatas: propostas minhas.
 
 **Quem veio** (pequena de propósito: comitiva grande põe a Máscara em risco):
 
 | Quem | O que é | Quem sabe o quê |
 |---|---|---|
 | **Heinrich von Altenfeld** | Ventrue, chefe da comitiva; fala pela corte de Berlim | Sabe o motivo real |
-| 💡 **Teodoro Castellví** | Lasombra de Barcelona, da deserção de 2018. Rosto do motivo público: vem conhecer Julia Sowinski | Sabe o motivo real; Lasombra que negocia o futuro de outros deslocados |
+| ✅ **Teodoro Castellví** | Lasombra de Barcelona, da deserção de 2018. Rosto do motivo público: vem conhecer Julia Sowinski | Sabe o motivo real; Lasombra que negocia o futuro de outros deslocados |
 | **Herta Müller** | Progênie de Heinrich; acompanha | Só o motivo público e a pista |
-| 💡 **Lorenz Kehl** | Carniçal de Heinrich: secretário e motorista | Sabe o que Heinrich manda saber |
+| ✅ **Lorenz Kehl** | Carniçal de Heinrich: secretário e motorista | Sabe o que Heinrich manda saber |
 
 **Cronologia** (31/12/2021 foi uma sexta-feira):
 
@@ -319,7 +319,7 @@ Texto da jogadora e regras do clã ([[Clãs#Maldição dos Ventrue]], [[Clãs#Ve
 - [ ] Validar com a jogadora o que Herta descobriu sobre Heinrich.
 - [x] **README da jogadora:** [[README - Herta Müller]], sem os segredos de Narrador (motivo real, culpa de Heinrich, motivo do Laço).
 - [x] **Plaza:** Herta hospedada lá; a comitiva sai em 30/12 para uma residência da Príncipe; Vincent encarregado dela; ligação leve com Khalid.
-- [ ] Validar os nomes e papéis propostos: **Teodoro Castellví** (Lasombra) e **Lorenz Kehl** (carniçal).
+- [x] **Nomes e papéis confirmados pelo Narrador (16/10/2026):** **Teodoro Castellví** (Lasombra) e **Lorenz Kehl** (carniçal).
 - [ ] Qual residência de Panhard hospeda a comitiva (não precisa aparecer no one-shot).
 - [ ] Convicções, Touchstone e Ambição preenchidos a partir do texto: validar.
 - [ ] Geração de Heinrich (12ª, se Herta é 13ª).

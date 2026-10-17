@@ -38,6 +38,7 @@ Dotado de uma resistência sobrenatural, o usuário pode fortalecer sua determin
 > - **Custo**: Free
 > - **Duração**: Passiva (sempre ativa)
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Passivo, sem rolagem. Soma seu nível de Fortitude à trilha de Saúde.
 >
 > - **Sistema**:
 >   O usuário adiciona seu nível de Fortitude à seu [[Character#Health|tracker de Saúde]].
@@ -50,6 +51,7 @@ O usuário ganha uma habilidade mística para resistir a qualquer tentativa de i
 > - **Custo**: Free
 > - **Duração**: Passiva (sempre ativa)
 > - **Dice Pool**: Não possui (ler abaixo)
+> - **Cola**: Passivo. Soma Fortitude em dados a qualquer teste para resistir a coerção, intimidação, sedução ou outra influência sobre a mente, inclusive Dominate e Presence.
 >
 > - **Sistema**:
 >   O usuário adiciona seus pontos em Fortitude como dados extras em qualquer teste feito para resistir a coerção, intimidação, sedução ou qualquer outra tentativa de influenciar sua mente contra sua vontade. Esse poder também funciona contra habilidades sobrenaturais como [[Dominate]] e [[Presence]].
