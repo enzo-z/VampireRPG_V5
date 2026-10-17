@@ -1,9 +1,16 @@
-import type { NyFactionKey, NyLayerId, NyPoint } from '../../catalog/types.ts';
+import type { NyBoroughId, NyFactionKey, NyLayerId, NyPoint } from '../../catalog/types.ts';
 import { MANHATTAN_LABEL_BOX, MAP_HEIGHT, NORTH, WEST, X_SCALE, Y_SCALE, type LonLat, type MapZoom, type ViewBox } from './geometry.ts';
 
 // Pure helpers behind the New York map: projection, which points show, labels, scale.
 
 export type MapEra = '2021' | 'before';
+
+/** What the side panel shows; null is the city overview. */
+export type MapSelection = { kind: 'borough'; id: NyBoroughId } | { kind: 'point'; id: string } | { kind: 'edge'; id: string } | null;
+
+export function isSelected(selection: MapSelection, kind: 'borough' | 'point' | 'edge', id: string): boolean {
+  return selection !== null && selection.kind === kind && selection.id === id;
+}
 
 /** [lon, lat] → [x, y] in SVG units. */
 export function project([lon, lat]: LonLat): [number, number] {

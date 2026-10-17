@@ -18,6 +18,19 @@
   --palette-crimson-deep: #5c0610; /* derived, hover/pressed, 14.1:1 on paper */
   --palette-ink-veil: rgb(35 31 32 / 0.45); /* ink at 45%, behind drawers and dialogs */
 
+  /* New York map: territory and geography (features/map) */
+  --palette-crimson-fill: #d9a2a8;  /* crimson at low strength: Camarilla territory */
+  --palette-crimson-tint: #f4e3e4;  /* hatch ground for contested Camarilla territory */
+  --palette-ochre: #8f5408;         /* Anarchs, 5.9:1 on paper */
+  --palette-ochre-fill: #e5bd7c;
+  --palette-ochre-tint: #f8ecd8;
+  --palette-teal: #3e6463;          /* New Jersey micro-domains, 6.4:1 on paper */
+  --palette-teal-tint: #e0eaea;
+  --palette-stone: #6b6466;         /* Sabbat territory, under ink hatching */
+  --palette-water: #eef0f1;
+  --palette-land: #f3eeec;          /* land outside the map's subject */
+  --palette-coast: #8f8a8b;         /* coastlines and water labels */
+
   /* ---------- Semantic colors ---------- */
   --color-surface: var(--palette-paper);
   --color-surface-raised: var(--palette-paper);
@@ -46,6 +59,23 @@
   --color-trait-empty: var(--palette-paper);
   --color-trait-filled: var(--palette-ink);
   --color-trait-marked: var(--palette-crimson); /* hunger, damage */
+
+  /* New York map: one stroke ("line"), fill and hatch ground ("tint") per faction */
+  --color-map-water: var(--palette-water);
+  --color-map-land: var(--palette-land);
+  --color-map-coast: var(--palette-coast);
+  --color-map-halo: var(--palette-paper);      /* outline behind labels, for contrast */
+  --color-faction-cam-line: var(--palette-crimson);
+  --color-faction-cam-fill: var(--palette-crimson-fill);
+  --color-faction-cam-tint: var(--palette-crimson-tint);
+  --color-faction-anarch-line: var(--palette-ochre);
+  --color-faction-anarch-fill: var(--palette-ochre-fill);
+  --color-faction-anarch-tint: var(--palette-ochre-tint);
+  --color-faction-indep-line: var(--palette-teal);
+  --color-faction-indep-tint: var(--palette-teal-tint);
+  --color-faction-sabbat-line: var(--palette-ink);
+  --color-faction-sabbat-fill: var(--palette-stone);
+  --color-faction-unknown-dot: var(--palette-coast);
 
   /* ---------- Space: 4px base ---------- */
   --space-0: 0;
