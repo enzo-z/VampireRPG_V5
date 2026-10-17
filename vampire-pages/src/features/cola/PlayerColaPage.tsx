@@ -41,7 +41,7 @@ function Power({ power }: { power: PlayerPower }) {
         {power.level !== null && <span className={styles.powerLevel}> · nível {power.level}</span>}
       </h3>
       {power.fields.length > 0 && (
-        <dl className={styles.facts}>
+        <dl className={`${styles.facts} ${styles.prose}`}>
           {power.fields.map((field) => (
             <div key={field.label} className={styles.fact}>
               <dt>{field.label}</dt>
