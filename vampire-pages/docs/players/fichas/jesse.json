@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 3,
+  "fichas": [
+    {
+      "id": "jesse",
+      "name": "Jesse Calloway",
+      "identity": {
+        "player": "Rafael",
+        "chronicle": "NY By Night",
+        "clan": "Gangrel",
+        "predatorType": "Alleycat",
+        "ambition": "Não me tornar um monstro",
+        "sect": "Independente",
+        "generation": "13th",
+        "desire": "Ter certeza de que quem punir é mesmo culpado"
+      },
+      "attributes": {
+        "strength": 4,
+        "dexterity": 2,
+        "stamina": 3,
+        "charisma": 2,
+        "manipulation": 1,
+        "composure": 2,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 3
+      },
+      "skills": {
+        "athletics": 3,
+        "brawl": 3,
+        "craft": 0,
+        "drive": 2,
+        "firearms": 0,
+        "larceny": 1,
+        "melee": 0,
+        "stealth": 2,
+        "survival": 0,
+        "animalKen": 0,
+        "etiquette": 0,
+        "insight": 3,
+        "intimidation": 1,
+        "leadership": 0,
+        "performance": 0,
+        "persuasion": 0,
+        "streetwise": 2,
+        "subterfuge": 0,
+        "academics": 0,
+        "awareness": 4,
+        "finance": 0,
+        "investigation": 1,
+        "medicine": 0,
+        "occult": 0,
+        "politics": 0,
+        "science": 0,
+        "technology": 0
+      },
+      "specs": {
+        "athletics": "Dodging",
+        "brawl": "Grappling",
+        "insight": "Detecting Lies"
+      },
+      "disciplines": [
+        {
+          "name": "Protean",
+          "value": 2,
+          "powers": [
+            {
+              "name": "Eyes of the Beast",
+              "note": ""
+            },
+            {
+              "name": "Feral Weapons",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Fortitude",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Resilience",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "Celerity",
+          "value": 1,
+          "powers": [
+            {
+              "name": "Rapid Reflexes",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        },
+        {
+          "name": "",
+          "value": 0,
+          "powers": []
+        }
+      ],
+      "trackers": {
+        "health": {
+          "max": 6,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "willpower": {
+          "max": 5,
+          "boxes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "hunger": 0,
+        "humanity": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "blood": {
+        "potency": 1,
+        "resonance": "",
+        "surge": "+2 dados",
+        "mendAmount": "1 Superficial",
+        "rouseReRoll": "Nível 1",
+        "baneSeverity": "1",
+        "clanBane": "Animal Traits: em frenesi, ganha traços animais (quantidade igual à Bane Severity, 1), cada um −1 em um Atributo, por mais uma noite. Ao Surfar a Onda, escolhe só um.",
+        "clanCompulsion": "Animal Impulses: por uma cena, −3 dados em todas as rolagens de Manipulation e Intelligence, e só fala frases de uma palavra."
+      },
+      "advantages": [
+        {
+          "category": "background",
+          "name": "Contacts",
+          "level": 3,
+          "note": "Criminosos e gente de estrada (bônus do Alleycat)"
+        },
+        {
+          "category": "background",
+          "name": "Resources",
+          "level": 2,
+          "note": "Ex-peão de gangue, dinheiro curto"
+        },
+        {
+          "category": "flaw",
+          "name": "Prey Exclusion",
+          "level": 1,
+          "note": "Não se alimenta de crianças"
+        },
+        {
+          "category": "flaw",
+          "name": "Folkloric Bane",
+          "level": 1,
+          "note": "Flor do local onde foi enterrado (a definir com o mestre)"
+        }
+      ],
+      "beliefs": {
+        "chronicleTenets": "",
+        "convictions": "Os culpados precisam ser punidos",
+        "touchstones": "Dani Calloway — Irmã mais nova, 19 anos, em Youngstown\nPete \"Big Pete\" Kenway — Mecânico do Rusty Saints MC"
+      },
+      "profile": {
+        "sire": "Desconhecido (nunca viu o rosto)",
+        "birthday": "1991, Youngstown, Ohio",
+        "age": "30",
+        "embraced": "Outubro de 2020, num posto na I-80, de madrugada. Acordou enterrado na beira da estrada.",
+        "apparentAge": "29",
+        "description": "Ombros largos, cabelo curto louro-escuro, barba por fazer. Jaqueta de trabalho desbotada com o contorno de um patch arrancado nas costas e um fio de cobre no pulso esquerdo.",
+        "concept": "\"Wire\": ex-peão do Rusty Saints MC, Abraçado sem saber por quê",
+        "photo": ""
+      },
+      "notes": "REVISAR: ficha importada do JSON do app do Pedro (jogador, crônica, desejo e campos de sangue completados à mão, seguindo o Gideon). Geração 13ª por decisão do Narrador (o JSON diz 14ª). A Flor do Folkloric Bane segue em aberto.\n— Importado do app do Pedro —\nApelidos: Wire\nIdiomas: English\nXP: total 0, gasto 0\nBackground: Jesse Calloway nasceu em Youngstown, Ohio, em 1991. Depois que a mãe morreu num hospital que ele não conseguiu pagar, entrou para o Rusty Saints MC, um clube de motoqueiros, para quitar a dívida e sustentar a irmã mais nova, Dani. Roubava carga e transportava mercadoria ilegal; o apelido Wire vem de ligar carros sem chave. Em 2019, uma entrega do clube foi estourada pela polícia e o presidente, Dutch, apontou Ray Brennan, um caminhoneiro de 60 anos que o clube subornava, como delator. Dutch mandou Jesse dar um recado, e ele espancou Ray numa parada de caminhão. Ray sobreviveu com fratura no crânio, perda total da audição no ouvido direito e tremor permanente na mão direita; perdeu a licença de caminhoneiro e vive de pensão por invalidez. Semanas depois, Jesse descobriu que o delator era o próprio Dutch, que entregou a carga para reduzir a própria pena. Big Pete sabia e ficou calado por medo. Jesse também ficou: a irmã dependia dele e o clube sabia onde ela morava. Em 2020 saiu do clube e passou a fazer transporte por conta própria. Em outubro daquele ano, numa noite na I-80, foi Abraçado por um sire que nunca viu e acordou enterrado na beira da estrada. Passou semanas se alimentando de animais e de quem cruzava seu caminho, até que um Brujah motoqueiro o encontrou perdido e o levou junto até Nova York. Jesse não sabe nada de política vampírica; para ele, vampiro é gente que bebe sangue.\nNotas: Aparência: ex-motoqueiro de 29 anos, ombros largos, cabelo curto louro-escuro, barba por fazer. Jaqueta de trabalho desbotada com o contorno de um patch de clube arrancado nas costas e um fio de cobre no pulso esquerdo. Fala pouco, fica de costas para a parede e observa as mãos de todo mundo. Desejo de curto prazo: ter certeza de que quem punir é mesmo culpado. Pendente com o mestre: flor do Folkloric Bane e demais Advantages.Tenants\nNão mataras, a menos que seja por legítima defesaNão machucarás os inocentesNão arruinará vidas"
+    }
+  ]
+}
