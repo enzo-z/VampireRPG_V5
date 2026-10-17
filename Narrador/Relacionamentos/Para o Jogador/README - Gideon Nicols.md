@@ -96,9 +96,9 @@ Você não sabe onde ele está, mas sabe **quem procurar primeiro**. São contat
 ---
 ## A coterie: os outros jogadores
 
-Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. (Gusman é o que **você** trouxe para dentro em segredo; Nina é a que você assumiu à vista da corte.)
+Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. (Gusman é o que **você** trouxe para dentro em segredo; Nina é a que você assumiu à vista da corte.)
 
-### 🎭 Vincent Marchetti, o dono do Plaza
+### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat**, dono do **Hotel Plaza**. **Herói de guerra** da Camarilla pela Batalha de 1999.
 - Vocês se **conheceram e se ajudaram na Batalha de Nova York**: informação de refúgios de um lado, a lista do outro.
 - **Você avaliou Vincent em 1999 e o recomendou à Camarilla.** Isso cria uma **dívida relativa**: ele deve a você ter sido aceito, mas você também se beneficiou do que ele entregou.
@@ -106,7 +106,7 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - **Gusman:** Vincent é o **terceiro do segredo**. Você e Khalid o chamaram por ser ex-Sabbat, e ele deu **cobertura** a Gusman nas primeiras semanas. Ele **não sabe o nome verdadeiro** de Gusman. Ver [[#🎭 Gusman Gutierrez, o seu protegido]].
 - 🔒 **Você não viu nada estranho em Vincent em 1999.** Com os anos, passou a ter uma **sensação**, sem certeza nenhuma, de que o segredo dele tem relação com **diablerie**. Você guarda isso para si. Vincent não sabe que você desconfia.
 
-### 🎭 Daniel Mercer, o nômade
+### 🎭 (Luiz) Daniel Mercer, o nômade
 - **Brujah**, ligado ao motoclube **Iron Lanterns**, esteve na guerra de 1999.
 - Você **sabe quem Daniel é na Camarilla**: o homem que testemunhou contra o próprio sire e foi salvo no julgamento por **Elias Voss**.
 - **O que você sabe do desvio de tropas** (fatos que circulam entre quem importa):
@@ -118,7 +118,7 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - Essa é uma informação que vale mais calada do que dita. Você não conhece os detalhes pessoais de Daniel nem o que Doc fez com a família dele.
 - **Daniel não sabe de Gusman** e fica de fora do segredo.
 
-### 🎭 Khalid Hassan Yusuf, o consultor de segurança
+### 🎭 (Klaus) Khalid Hassan Yusuf, o consultor de segurança
 - **Banu Haqim**, mora no **Plaza** há cerca de dez anos e trabalha como **consultor de segurança do hotel**.
 - Você sabe que a **Primogen dos Banu Haqim, Samira**, foi a **ponte** que o levou à corte. Você tem **certeza de que ela não é a sire dele**.
 - Khalid nunca disse quem é o sire. Você **suspeita de alguém do alto escalão**, mas não sabe o quanto.
@@ -126,7 +126,7 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - **Gusman:** foi Khalid quem vigiou o domínio para você e quem achou, junto com você, o rapaz do metrô. Depois, **foi Khalid quem descobriu o nome verdadeiro dele**. Ver [[#🎭 Gusman Gutierrez, o seu protegido]].
 - **Nina:** Khalid é o melhor investigador que você conhece. Se a história da sua pupila exigir procurar alguém, é a ele que você recorreria. Ver [[#🎭 Nina "Blue" Calloway, a sua pupila]].
 
-### 🎭 Nina "Blue" Calloway, a sua pupila
+### 🎭 (Marcelle) Nina "Blue" Calloway, a sua pupila
 - **Toreador**, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**, no porão de um restaurante fechado na **Lenox Avenue**, onde toca com o pianista **Eddie Park** em sessões clandestinas mantidas por **Augie Mendez**.
 - **Abraço irregular.** O sire dela, um Toreador "elegante e silencioso" que a assistiu todas as noites antes de agir, a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. Ninguém lhe disse o nome dele nem o que aconteceu com ele. A corte a **tolera e vigia** (ela é *Suspect*).
 - **Você é o Mawla dela**, desde antes da noite do Réveillon. O que pesou na sua decisão:
@@ -140,7 +140,7 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - ⚠️ **O risco.** Quem vigia Nina vigia você, e portanto chega perto de Gusman. Nina lê plateias e percebe coisas (**Auspex 2**, **Insight 3**). Ela e Gusman **ainda não se conhecem**, e **nada os impede de se encontrar**. O que ela faz com o que notar é dela.
 - **Eddie Park e Altagracia Reyes**, os Touchstones dela, não sabem o que Nina se tornou. Você afastou Mary para protegê-la, e Nina mantém os dois por perto. Você pode aconselhá-la a se afastar também, ou a não repetir o seu erro.
 
-### 🎭 Gusman Gutierrez, o seu protegido
+### 🎭 (Oliveira) Gusman Gutierrez, o seu protegido
 - **Ravnos** de 13ª geração, Abraçado em 2018, **sem sire conhecido**. **Você é o responsável por ele.** Ele mora em **Staten Island**. 🔒 **Ele não sabe que é Ravnos.**
 - **Como vocês o acharam:** você procurava um **Ravnos sobrevivente da Semana de Pesadelos** que teria entrado no domínio, para entender o que aconteceu e juntar **informação e capital político** para a Camarilla. Khalid vigiava quem entrava e saía. Em **março de 2018** acharam um rapaz **recém-Abraçado**, acordando numa **estação do metrô** da 50th Street, **com uma marca escrita no peito** (sânscrito misturado com a marca de Caim, com ar de Sabbat). Um policial do metrô chegou a ver o corpo "morto".
 - **A gravação:** Khalid achou uma **figura encapuzada** que escreve a marca, **vira para a câmera sem mostrar o rosto**, dá um **meio sorriso**, e a **câmera corta**. Ninguém decifrou a marca nem sabe quem é a figura.
@@ -152,6 +152,9 @@ Os cinco 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ningué
 - **Daniel não sabe** que Gusman existe.
 - **Nina** vai conhecer Gusman na noite do Réveillon, a menos que você decida o contrário. Ver [[#🎭 Nina "Blue" Calloway, a sua pupila]].
 - ⚠️ **O risco é seu.** Esconder um Abraço fere a **Terceira Tradição (Progeny)**. Se o **Xerife Qadir** ou o **Príncipe Panhard** descobrirem, **você é o responsável**. E se **Gusman** descobrir que você lhe escondeu o clã, é a confiança dele que quebra.
+
+### 🎭 (Rafael) Jesse
+- **Você não sabe nada sobre ele.**
 
 ---
 ## A corte e outros NPCs Kindred

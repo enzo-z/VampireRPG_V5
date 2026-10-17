@@ -96,20 +96,20 @@ Você carrega três mortes: **Claire**, **Doc** (que você não matou, mas entre
 
 Os 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
-### 🎭 O Gangrel (Jesse)
+### 🎭 (Rafael) Jesse, o Gangrel
 - Recém-Abraçado. Você foi enviado para levá-lo à corte; ser levado à cidade **não o torna Camarilla**, e a coerção do transporte não produz lealdade.
 - O personagem é de outro jogador: A ordem é coercitiva na ficção, mas não define PvP.
 - Ele é um espelho incômodo: um vampiro experiente chegando para dizer a alguém assustado o que fazer. Você conhece bem a voz que diz *"confie em mim, eu sei o que é melhor para você"*. Era a de Doc.
 
-### 🎭 Vincent Marchetti, o dono do Plaza
+### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat**, dono do **Hotel Plaza** e **herói de guerra** da Camarilla pela Batalha de 1999.
 - Vincent está do **lado oposto** da mesma conquista: deu à Camarilla o plano que derrubou o Sabbat, enquanto você foi usado por um sire que tentou lucrar com a mesma guerra.
 
-### 🎭 Gideon Nicols, o produtor
+### 🎭 (Polck) Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**, sem cargo mas com muito poder em favores e informação. Participou da Batalha de 1999 nos bastidores.
 - Você o vê como **o caminho para Elias Voss**: ele conhece o Cartógrafo há décadas e circula entre pessoas que falam com ele. Se alguém sabe por onde começar a procurar, é Gideon. Ele não faz favores de graça, e você terá de decidir quanto contar para pedir esse.
 
-### 🎭 Khalid Hassan Yusuf, o consultor de segurança
+### 🎭 (Klaus) Khalid Hassan Yusuf, o consultor de segurança
 - **Banu Haqim**, mora no **Plaza** e trabalha como consultor de segurança do hotel. Vocês têm poucas ligações diretas além da coterie: ele não é próximo de você.
 
 ---

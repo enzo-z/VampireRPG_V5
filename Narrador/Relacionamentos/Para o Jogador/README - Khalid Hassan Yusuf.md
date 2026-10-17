@@ -89,16 +89,16 @@ Todos 👤 **NPCs mortais**, conduzidos pelo Narrador.
 
 ## A coterie: os outros jogadores
 
-Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Nina é a pupila de Gideon, e você a conhece pessoalmente das visitas dela ao Plaza. Herta é uma hóspede recém-chegada, que você só viu de passagem. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
+Os sete 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, Gideon e Daniel. Gusman é diferente: foi você quem o achou, com Gideon. Nina é a pupila de Gideon, e você a conhece pessoalmente das visitas dela ao Plaza. Herta é uma hóspede recém-chegada, que você só viu de passagem. Jesse, você não conhece. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém.
 
-##### 🎭 Vincent Marchetti, o dono do Plaza
+##### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **ex-Sabbat** (nascido na seita), hoje na Camarilla de Nova York.
 - Dono do **Hotel Plaza**, onde você mora. A Camarilla o encarregou de ajudá-lo. Vocês convivem há cerca de dez anos.
 - **Herói de guerra** da Camarilla pela Batalha de Nova York de 1999.
 - Você conhece a segurança do hotel por dentro; ele conhece o hotel inteiro.
 - **Gusman:** você e Gideon o chamaram por ser ex-Sabbat. Ele viu a marca e deu **cobertura** a Gusman nas primeiras semanas. Ele **não sabe o nome verdadeiro** de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-##### 🎭 Gideon Nicols, o produtor
+##### 🎭 (Polck) Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**.
 - Sem cargo oficial na corte, mas com muito poder em **favores e informação**. Tem reconhecimento entre anciões pelo trabalho de bastidores na Batalha de 1999.
 - Dá festas no Plaza. Ele e Vincent **se encontram regularmente**.
@@ -106,13 +106,13 @@ Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, 
 - **Gusman:** Gideon é o **responsável** por ele e foi quem decidiu que o rapaz ficaria escondido. Foi para ele que você entregou o nome verdadeiro de Gusman. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 - **Nina:** Gideon é o **Mawla** dela, à vista da corte, e a leva ao Plaza vez ou outra. Ver [[#🎭 Nina "Blue" Calloway, a pupila de Gideon]].
 
-##### 🎭 Daniel Mercer, o nômade
+##### 🎭 (Luiz) Daniel Mercer, o nômade
 - **Brujah**, ligado ao clube de motociclistas **Iron Lanterns**. Esteve na guerra de 1999.
 - Foi o mais **fácil de rastrear**: foi Abraçado mais recentemente que os outros, e tem um **filho** com registros em hospital.
 - 🔒 **Você sabe**: o filho se chama **Nathan** e está doente (registros desde 2020; o sobrenome nos arquivos é **Ward**). **Daniel não sabe que você sabe.** Guarde, e decida o que fazer com isso.
 - **Daniel não sabe de Gusman** e fica de fora do segredo.
 
-##### 🎭 Nina "Blue" Calloway, a pupila de Gideon
+##### 🎭 (Marcelle) Nina "Blue" Calloway, a pupila de Gideon
 - **Toreador** neonata, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**. **Gideon é o Mawla** dela.
 - **Abraço irregular.** O sire dela a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. A corte a **tolera e vigia** (ela é *Suspect*). O destino do sire é desconhecido para ela.
 - Você **a conhece pessoalmente**: Gideon a leva ao Plaza vez ou outra, e você a vê lá. Sabe o que circula dela na corte.
@@ -121,7 +121,7 @@ Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, 
 - Ela **não tem perícia para investigar**; se um dia precisar, é a você que vai recorrer.
 - **Gusman:** ela ainda não o conhece. Os dois vão se cruzar, e você sabe o que ele esconde. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-##### 🎭 Gusman Gutierrez, o rapaz do metrô
+##### 🎭 (Oliveira) Gusman Gutierrez, o rapaz do metrô
 - **Ravnos** de 13ª geração, Abraçado em 2018, **sem sire conhecido**. Mora em **Staten Island**. **Gideon é o responsável** por ele. 🔒 **Ele não sabe que é Ravnos.**
 - **Como vocês o acharam:** Gideon procurava um **Ravnos sobrevivente da Semana de Pesadelos** e usava você para vigiar quem entrava e saía do domínio, com seus contatos na polícia e com técnicos de câmera. Em **março de 2018** acharam o rapaz **recém-Abraçado**, acordando numa **estação do metrô** da 50th Street, com uma **marca escrita no peito** (sânscrito misturado com a marca de Caim, com ar de Sabbat) que ninguém decifrou.
 - **A gravação é sua.** Você viu numa câmera uma **figura encapuzada** escrever a marca, **virar para a câmera sem mostrar o rosto**, dar um **meio sorriso**, e a **câmera cortar**. Você não sabe quem é.
@@ -132,12 +132,15 @@ Os seis 🎭 são **jogadores**. Ao longo dos anos você **pesquisou** Vincent, 
 - **Alimentação:** primeiro, bolsas desviadas por vocês. Depois, o enfermeiro **Marcus Bell**, que Gideon conheceu por uma artista dele, **Tessa Lang**. Hoje Gusman se vira sozinho.
 - ⚠️ **O risco:** esconder um Abraço fere a **Terceira Tradição (Progeny)**. O arquivo que você montou sobre Mike e Julius, se cair em mãos erradas, entrega o nome e os amigos.
 
-##### 🎭 Herta Müller, a hóspede da comitiva
+##### 🎭 (Rebeca) Herta Müller, a hóspede da comitiva
 - **Ventrue** neonata, recém-chegada da Alemanha com uma **comitiva da Camarilla europeia** (ver [[#A comitiva europeia]]). Está no Plaza desde **terça, 28/12**.
 - Como consultor de segurança, você **registrou a chegada**: três Kindred e um mortal que não sai do lado do chefe. Na quinta, **30/12**, as câmeras mostraram os outros três saindo com bagagem. **Ela ficou sozinha** no hotel.
 - Vocês **se cruzaram** algumas vezes no saguão e no elevador. Um aceno, uma ou duas frases, em inglês com sotaque alemão. Nenhum dos dois puxou conversa.
 - Você reparou que ela **observa as pessoas como quem lê um depoimento**: demora nos rostos e repara quando alguém hesita.
 - Sabe por Vincent que o sire dela a deixou **aos cuidados dele**.
+
+##### 🎭 (Rafael) Jesse
+- **Você não sabe nada sobre ele.**
 
 ---
 

@@ -80,9 +80,9 @@ Tudo aqui é o que **Vincent** sabe ou acredita. Pode haver coisas que ele ignor
 
 ## A coterie: os outros jogadores
 
-Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. Nina é a mais nova da cidade e a que você conhece menos. Herta acabou de chegar: você a conhece há três noites.
+Os sete 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém é melhor amigo de ninguém, mas todos têm história com todos. Nina é a mais nova da cidade e a que você conhece menos. Herta acabou de chegar: você a conhece há três noites. Jesse, você não conhece.
 
-### 🎭 Gideon Nicols, o produtor
+### 🎭 (Polck) Gideon Nicols, o produtor
 - **Toreador**, produtor da **Broadway**, sem cargo mas com muito poder em favores e informação.
 - Vocês se **conheceram e se ajudaram na Batalha de Nova York**: informação de refúgios de um lado, a sua lista do outro.
 - **Gideon o avaliou em 1999 juntamente de sua sire na época, e o recomendou à Camarilla como confiável.** Você lhe deve ter sido aceito (uma **dívida relativa**), mas ele também se beneficiou do que você entregou.
@@ -92,27 +92,27 @@ Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém
 - **Gusman:** Gideon é o **responsável** por ele e foi quem argumentou pelo segredo. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 - **Nina:** Gideon é o Mawla dela, à vista da corte. Ver [[#🎭 Nina "Blue" Calloway, a pupila de Gideon]].
 
-### 🎭 Daniel Mercer, o nômade
+### 🎭 (Luiz) Daniel Mercer, o nômade
 - **Brujah**, do motoclube **Iron Lanterns**. Esteve na guerra de 1999, mas em **lado oposto ao seu**: você deu o plano da Camarilla; ele foi usado por um sire que quis lucrar com a mesma guerra.
 - 🔒 **Você sabe quem foi Silas Redd.** Como porteiro, viu o Lasombra subir ao quinto andar do Plaza. **Daniel não sabe que você o conheceu.**
 - Você sabe que Daniel teve **envolvimento no desvio de tropas** em 1999. **Você não o culpa.**
 - Vocês dois querem **acabar com a guerra**: você, pegando Polonia; ele, protegendo o que Doc deixou para trás.
 - **Daniel não sabe de Gusman** e fica de fora do segredo.
 
-### 🎭 Khalid Hassan Yusuf, o seu hóspede
+### 🎭 (Klaus) Khalid Hassan Yusuf, o seu hóspede
 - **Banu Haqim**, residente permanente do Plaza e **consultor de segurança** do hotel. A Camarilla o encarregou de ajudá-lo; vocês convivem há cerca de dez anos.
 - Você não sabe quem é o sire dele; ninguém na coterie sabe.
 - **Khalid não sabe nada do que você fez com o corpo de Orozco.** Se descobrir, talvez reaja.
 - **Gusman:** foi Khalid quem filmou a gravação e quem investiga a origem do rapaz. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-### 🎭 Nina "Blue" Calloway, a pupila de Gideon
+### 🎭 (Marcelle) Nina "Blue" Calloway, a pupila de Gideon
 - **Toreador** neonata, 13ª geração, **saxofonista** da cena de jazz do Harlem. Abraçada em **novembro de 2020**. **Gideon é o Mawla** dela.
 - **Abraço irregular.** O sire dela a Abraçou **sem permissão do Príncipe** e foi **levado pela Camarilla** pouco depois. A corte a **tolera e vigia** (ela é *Suspect*). O que você sabe do caso circula na corte: nada além disso.
 - Você **a conhece pessoalmente**: Gideon a leva ao Plaza vez ou outra, e você a recebe lá como a pupila dele.
 - Como dono do Plaza, você sabe que **quem vigia Nina pode passar por aqui**, atrás de Gideon.
 - **Gusman:** ela ainda não o conhece. Ver [[#🎭 Gusman Gutierrez, o rapaz do metrô]].
 
-### 🎭 Gusman Gutierrez, o rapaz do metrô
+### 🎭 (Oliveira) Gusman Gutierrez, o rapaz do metrô
 - **Ravnos**, recém-Abraçado em 2018, **sem sire conhecido**, achado por **Gideon e Khalid** numa estação de metrô, com uma **marca escrita no peito**. **Gideon é o responsável** por ele. Ele mora em **Staten Island**. 🔒 **Ele não sabe que é Ravnos.**
 - **Como você entrou:** os dois o procuraram por ser **ex-Sabbat**. Você viu a marca (sânscrito misturado com a marca de Caim). **Reconheceu o estilo do Sabbat, mas não o rito**, e não soube lê-la. Viu também a gravação da **figura encapuzada** que a escreve, com o **meio sorriso**.
 - **A sua parte:** nas primeiras semanas você deu **cobertura**, **um quarto fora do registro do Plaza**, para que o rapaz não aparecesse nos livros.
@@ -121,13 +121,16 @@ Os seis 🎭 são **jogadores**. Os laços entre vocês são cinzentos: ninguém
 - **O que você não sabe:** o **nome verdadeiro** dele. Khalid investigou a origem dele, mas **nunca lhe contou o nome**.
 - ⚠️ **O risco:** esconder um Abraço fere a **Terceira Tradição (Progeny)**. Você é **herói de guerra** e o **Plaza** foi onde ele ficou escondido. Se o **Xerife Qadir** descobrir, você também responde.
 
-### 🎭 Herta Müller, a hóspede da comitiva
+### 🎭 (Rebeca) Herta Müller, a hóspede da comitiva
 - **Ventrue** neonata, 13ª geração, Abraçada em Berlim no **outono de 2021**. Ex-diplomata alemã; a fachada dela é a **Missão Permanente da Alemanha junto à ONU**.
 - **Progênie de Heinrich von Altenfeld**, que chefia a comitiva europeia (ver [[#A comitiva europeia]]).
 - Está no Plaza desde **terça, 28/12**. Na quinta, **30/12**, o resto da comitiva saiu para as festas de fim de ano numa residência da Príncipe. **Ela ficou.** Na noite de 31, completa três noites no hotel.
 - **Antes de sair, Heinrich a deixou aos seus cuidados**: pediu que você atendesse às necessidades dela e disse a ela para chamá-lo se precisasse de algo. É uma hóspede, e mais do que isso: alguém por quem você agora responde dentro do Plaza.
 - Você a conhece pouco: sabe que é educada, observa muito e fala pouco. Não sabe por que o sire não a levou junto.
 - Ela não conhece a coterie. Khalid só cruzou com ela no saguão.
+
+### 🎭 (Rafael) Jesse
+- **Você não sabe nada sobre ele.**
 
 ---
 

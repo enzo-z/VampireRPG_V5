@@ -104,30 +104,33 @@ Tudo aqui é o que **Nina** sabe ou acredita. Pode haver coisas que ela ignora, 
 
 ## A coterie: os outros jogadores
 
-Os seis 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e Vincent**, das visitas ao Plaza em que Gideon a leva de vez em quando. **Daniel, Gusman e Herta**, você ainda não conhece.
+Os sete 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e Vincent**, das visitas ao Plaza em que Gideon a leva de vez em quando. **Daniel, Gusman, Herta e Jesse**, você ainda não conhece.
 
-### 🎭 Gideon Nicols, o seu Mawla
+### 🎭 (Polck) Gideon Nicols, o seu Mawla
 - **Toreador**, **produtor da Broadway**. Mora e trabalha em Manhattan. **Sem cargo oficial** na corte, mas com muito poder em **favores e informação**.
 - É um dos Toreador mais antigos da cidade. A sire dele, **Cordelia Vane**, desapareceu em 2008, e quem acompanha a corte sabe disso.
 - **Mawla (•)** seu, assumido **antes** do Réveillon de 2020, há quase um ano. Você sabe que ele não faz nada de graça e **não perguntou o que ele ganha com isso**. Sabe que ele **assumiu a sua responsabilidade diante da corte**, o que lhe dá cobertura política.
 - Ele conhece a cena de arte e a Broadway por dentro, e **dá festas no Hotel Plaza**. **Ele já a levou lá vez ou outra.**
 
-### 🎭 Khalid Hassan Yusuf
+### 🎭 (Klaus) Khalid Hassan Yusuf
 - **Banu Haqim**, **segurança do Hotel Plaza**, onde mora. Membro reconhecido na corte.
 - **Você o conhece pessoalmente**, das visitas ao Plaza com Gideon.
 
-### 🎭 Vincent Marchetti
+### 🎭 (Pedro) Vincent Marchetti
 - **Tzimisce**, **dono do Hotel Plaza** e **herói de guerra** da Camarilla pela Batalha de Nova York de 1999.
 - **Você o conhece pessoalmente**, das visitas ao Plaza com Gideon.
 
-### 🎭 Daniel Mercer
+### 🎭 (Luiz) Daniel Mercer
 - **Você não o conhece.** Sabe, no máximo, que existe um Brujah ligado a motociclistas.
 
-### 🎭 Gusman Gutierrez
+### 🎭 (Oliveira) Gusman Gutierrez
 - **Você nunca ouviu falar dele.** Não há regra que o impeça de aparecer na sua noite.
 
-### 🎭 Herta Müller
+### 🎭 (Rebeca) Herta Müller
 - **Você nunca ouviu falar dela.**
+
+### 🎭 (Rafael) Jesse
+- **Você não sabe nada sobre ele.**
 
 ## Os segredos que você guarda
 
@@ -148,4 +151,4 @@ Os seis 🎭 abaixo são **jogadores**. Você **conhece pessoalmente Khalid e Vi
 - **Khalid** e **Vincent** conhecem você das visitas ao Plaza e sabem que você é a pupila de Gideon.
 - **Eddie Park** e **Altagracia** **não sabem** o que você se tornou.
 - **O público do porão** conhece a **Blue**, a saxofonista, e não sabe de mais nada.
-- **Daniel**, **Gusman** e **Herta** ainda não conhecem você.
+- **Daniel**, **Gusman**, **Herta** e **Jesse** ainda não conhecem você.

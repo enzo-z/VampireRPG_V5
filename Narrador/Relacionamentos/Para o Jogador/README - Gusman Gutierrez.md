@@ -109,32 +109,35 @@ Cresceram com você no orfanato. **Nenhum dos dois sabe que você é vampiro.** 
 
 ## A coterie: os outros jogadores
 
-Os três primeiros 🎭 abaixo são os **jogadores** que você conhece. **Daniel, Nina e Herta** também são jogadores, mas **você nunca ouviu falar deles**.
+Os três primeiros 🎭 abaixo são os **jogadores** que você conhece. **Daniel, Nina, Herta e Jesse** também são jogadores, mas **você nunca ouviu falar deles**.
 
-### 🎭 Gideon Nicols, o seu responsável
+### 🎭 (Polck) Gideon Nicols, o seu responsável
 - **Toreador**, **produtor da Broadway**. Mora e trabalha em Manhattan, com muito poder em **favores e informação**.
 - **Foi um dos dois que o acharam** e **ficou responsável por você**. Ensinou, alimentou nos primeiros meses e **mandou você se esconder da "corte"**, porque disse que seria perigoso se apresentar. Foi ele quem lhe **explicou que você é provavelmente um Caitiff**.
 - Foi ele quem lhe arranjou o **enfermeiro Marcus Bell**, por meio de **Tessa Lang**.
 - Ele **sabe seu nome verdadeiro** e você **cede** quando ele o diz. Você **não sabe** que ele procurava um Ravnos antes de achar você.
 - Você **confia nele**, mas essa dívida pesa.
 
-### 🎭 Khalid Hassan Yusuf, o investigador
+### 🎭 (Klaus) Khalid Hassan Yusuf, o investigador
 - **Banu Haqim**, **segurança do Hotel Plaza**, onde mora.
 - **Foi o outro dos dois que o acharam.** Cuidou das **câmeras** e dos **registros** para que o seu nome não aparecesse. Concordou com Gideon que você é **provavelmente Caitiff**.
 - Ele **investigou a sua origem**: o **orfanato**, **Mike e Julius**, o **seu nome verdadeiro**. Você **não sabe até onde ele foi** nem se chegou a procurar os seus amigos.
 
-### 🎭 Vincent Marchetti, o dono do Plaza
+### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - **Tzimisce**, **dono do Hotel Plaza**. Gideon disse que ele foi do **Sabbat** e é **herói de guerra** da Camarilla. Você não sabe bem o que isso quer dizer.
 - Nas primeiras semanas ele lhe deu **um quarto fora do registro do hotel**. Ele **viu a marca** e disse que o estilo lembra o Sabbat. Também concordou que você é **provavelmente Caitiff**. Ele **não sabe o seu nome verdadeiro**, até onde você sabe.
 
-### 🎭 Daniel Mercer
+### 🎭 (Luiz) Daniel Mercer
 - **Você não o conhece** e nunca ouviu o nome dele.
 
-### 🎭 Nina Calloway
+### 🎭 (Marcelle) Nina Calloway
 - **Você não a conhece** e nunca ouviu o nome dela.
 
-### 🎭 Herta Müller
+### 🎭 (Rebeca) Herta Müller
 - **Você não a conhece** e nunca ouviu o nome dela.
+
+### 🎭 (Rafael) Jesse
+- **Você não sabe nada sobre ele.**
 
 ---
 
@@ -236,7 +239,7 @@ flowchart TB
 - **Gideon** sabe quem você é por inteiro: o nome verdadeiro e a marca. Ele **não sabe** do golpe de 2017, nem de Iggy. 🔒 Ele **tem uma vaga ideia** do que o nome verdadeiro lhe permite e você sente isso. 🔒 Ele **sabe que você é Ravnos** e **escondeu isso de você**.
 - **Khalid** sabe do orfanato, de Mike e de Julius e do seu nome verdadeiro. **Não sabe** do golpe de 2017, nem de Iggy, nem do que o nome faz com você. 🔒 Ele também **sabe o clã** e **escondeu**.
 - **Vincent** sabe que você existe e viu a marca. **Não sabe** o seu nome verdadeiro, nem do golpe de 2017, nem de Iggy. 🔒 Ele também **sabe o clã** e **escondeu**.
-- **Daniel**, **Nina** e **Herta** não sabem que você existe.
+- **Daniel**, **Nina**, **Herta** e **Jesse** não sabem que você existe.
 - **A corte** não sabe que você é Ravnos (nem você). **Iggy** sabe que você existe e **não diz o que sabe**.
 - **Os italianos** conhecem o rosto de "Tic-Tac" e **não sabem** que ele é você, vampiro, ou que mora em Staten Island.
 - **Mike e Julius** sabem seu nome verdadeiro e **não sabem** que você é vampiro.

@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #herta #readme
 
 # Herta Müller: o que você sabe
@@ -89,13 +92,13 @@ Uma comitiva da Camarilla europeia, pequena de propósito: grupo grande chama at
 | **Ingrid** (👤 NPC mortal) | Sua mãe. Mora em **Göttingen**. | Também percebeu que você voltou diferente. Você odeia mentir para ela. |
 
 - Sua outra Convicção, *"Prefiro perder tudo a ceder"*, não tem Touchstone.
-- **Fuso horário:** quando der meia-noite em Nova York, já será manhã de 1º de janeiro em Göttingen.
+- **Fuso horário:** Göttingen está **seis horas à frente** de Nova York. Quando você acorda, ao anoitecer, a sua família já está indo dormir.
 
 ---
 
 ## O Plaza: Vincent e Khalid
 
-Os outros 🎭 são **jogadores**. Você chegou há três noites e **não conhece a coterie**. Dos outros jogadores, só cruzou com dois, os dois no Plaza.
+Os outros 🎭 são **jogadores**. Você chegou há poucas noites e **não conhece a coterie**. Dos outros jogadores, só cruzou com dois, os dois no Plaza.
 
 ##### 🎭 (Pedro) Vincent Marchetti, o dono do Plaza
 - Dono do **Hotel Plaza**. **Tzimisce** e **ex-Sabbat**: nasceu na seita e passou para a Camarilla. Em **1999** deu à Camarilla o plano que derrubou o Sabbat de Nova York, e por isso é chamado de **herói de guerra**. Foi o que Heinrich lhe contou.
@@ -107,6 +110,8 @@ Os outros 🎭 são **jogadores**. Você chegou há três noites e **não conhec
 - Mora no Plaza **de forma permanente**. Vincent mencionou, na chegada, que um residente **Banu Haqim** cuida da **segurança** do hotel.
 - Vocês **se cruzaram** algumas vezes no saguão e no elevador. Um aceno, uma ou duas frases. Ele não puxou conversa, e você também não.
 - Você reparou que ele olha para as saídas antes de olhar para as pessoas.
+
+**Os outros jogadores**, que você ainda não conhece: 🎭 (Polck) Gideon Nicols · 🎭 (Luiz) Daniel Mercer · 🎭 (Marcelle) Nina Calloway · 🎭 (Oliveira) Gusman Gutierrez · 🎭 (Rafael) Jesse.
 
 ---
 
