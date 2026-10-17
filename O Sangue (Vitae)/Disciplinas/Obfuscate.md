@@ -52,6 +52,7 @@ Os observadores veem o vampiro, mas suas mentes escolhem ignorá-lo. Testemunhas
 >- **Custo**: Free
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]].
 >- **Dice Pool**: Não possui (veja [[#Regras Gerais de Obfuscate]] para possíveis testes de detecção contra você)
+>- **Cola**: Sem custo; dura a cena. Parado, em silêncio e com alguma cobertura, você se mistura ao ambiente: só meios mecânicos ou sobrenaturais detectam você. Acaba se você se mover ou for detectado.
 >
 >- **Sistema**:
 >	Ao permanecer completamente imóvel, o usuário se mistura ao ambiente. Desde que tenha algum tipo de cobertura, não emita sons e não se mova, apenas meios mecânicos ou sobrenaturais podem detectá-lo.
@@ -90,6 +91,7 @@ Popular entre os Banu Haqim, este poder silencia completamente o usuário, anula
 >- **Custo**: Um [[Entendendo Dados e Ficha#Tutorial Rouse Check|Rouse Check]]
 >- **Duração**: Uma [[Regras Fundamentais#Scene|cena]] ou até ser detectado.
 >- **Dice Pool**: Não possui (veja [[#Regras Gerais de Obfuscate]] para possíveis testes de detecção contra você)
+>- **Cola**: Um Rouse Check; dura a cena ou até ser detectado. Você anda invisível, desde que sem odor forte nem som acima de um sussurro; só quem tem a atenção voltada para você pode testar para detectá-lo (Sense the Unseen também detecta). Não funciona enquanto alguém observa você ativamente.
 >
 >- **Sistema**:
 >	Com este poder, o vampiro pode se mover enquanto permanece oculto. O usuário torna-se funcionalmente invisível, conforme as limitações usuais de Ofuscação ([[#Regras Gerais de Obfuscate]]).
@@ -126,6 +128,7 @@ Alucinações breves (um sentido), como algo visto de relance ou voz fraca; não
 > - **Custo**: 1 Rouse Check
 > - **Dice Pool**: Manipulation + Obfuscate vs Composure + Wits
 > - **Duração**: Um turno
+> - **Cola**: Alucinação breve de um sentido (um vulto, uma voz fraca); não falsifica um documento. Despreparados em linha de visão sofrem −2 dados na próxima ação; quem falhar no contest perde a próxima ação ativa. Cada alvo só uma vez por conflito; não é gravado por câmeras.
 > - **Amálgama**: Presence 1
 > - **Observação**: a regra de uso em combate só existe no Player's Guide; o Companion não a tem.
 >
