@@ -498,6 +498,124 @@ describe("Gusman's page", () => {
   });
 });
 
+function khalid(): Ficha {
+  const ficha = createFicha('khalid', 'Khalid Hassan Yusuf', 'Klaus');
+  ficha.identity = { ...ficha.identity, clan: 'Banu Haqim', predatorType: 'Pursuer', generation: '12th' };
+  ficha.attributes.dexterity = 3;
+  ficha.attributes.intelligence = 3;
+  ficha.attributes.wits = 4;
+  ficha.attributes.resolve = 3;
+  ficha.skills.stealth = 3;
+  ficha.skills.awareness = 3;
+  ficha.skills.investigation = 3;
+  ficha.specs.investigation = 'Profiling';
+  ficha.disciplines[0] = {
+    name: 'Celerity',
+    value: 2,
+    powers: [
+      { name: 'Rapid Reflexes', note: '' },
+      { name: 'Fleetness', note: '' },
+    ],
+  };
+  ficha.disciplines[1] = {
+    name: 'Obfuscate',
+    value: 2,
+    powers: [
+      { name: 'Cloak of Shadows', note: '' },
+      { name: 'Unseen Passage', note: '' },
+    ],
+  };
+  ficha.disciplines[2] = { name: 'Auspex', value: 1, powers: [{ name: 'Heightened Senses', note: '' }] };
+  ficha.disciplines[3] = { name: 'Blood Sorcery', value: 1, powers: [{ name: 'A Taste for Blood', note: '' }] };
+  return ficha;
+}
+
+describe("Khalid's page", () => {
+  const cola = buildPlayerCola(khalid(), catalogs);
+  const lore = findPlayerCola(catalogs.playerColas, 'Khalid Hassan Yusuf');
+  const blocks = lore?.blocks ?? [];
+  const summary = (name: string) =>
+    cola.disciplines.flatMap((discipline) => discipline.powers).find((power) => power.name === name)?.summaryHtml ?? '';
+  const entry = (title: string, term: string) =>
+    JSON.stringify(blocks.find((block) => block.title === title)?.entries.find((candidate) => candidate.term.includes(term)));
+
+  it('finds every power of the sheet and the lore note, with no warnings', () => {
+    expect(cola.warnings).toEqual([]);
+    const powers = cola.disciplines.flatMap((discipline) => discipline.powers);
+    expect(powers.map((power) => power.name)).toEqual([
+      'Rapid Reflexes',
+      'Fleetness',
+      'Cloak of Shadows',
+      'Unseen Passage',
+      'Heightened Senses',
+      'A Taste for Blood',
+    ]);
+    for (const power of powers) expect(power.summaryHtml, power.name).not.toBeNull();
+  });
+
+  it('keeps the rules that matter in the summaries', () => {
+    expect(summary('Fleetness')).toContain('Dexterity');
+    expect(summary('A Taste for Blood')).toContain('Resolve + Blood Sorcery');
+    expect(summary('A Taste for Blood')).toContain('diablerie');
+  });
+
+  it('pairs his strong skills with Wits, his best fitting attribute', () => {
+    expect(cola.pools.map((pool) => [pool.skill, pool.attribute, pool.dice])).toEqual([
+      ['Stealth', 'Wits', 7],
+      ['Awareness', 'Wits', 7],
+      ['Investigation', 'Wits', 7],
+    ]);
+  });
+
+  it('builds the lore note without errors, with the blocks the page places by title', () => {
+    expect(playerColas.errors).toEqual([]);
+    expect(playerColas.warnings).toEqual([]);
+    const titles = blocks.map((block) => block.title);
+    const expected = ['A corte de Nova York', 'NPCs que você conhece', 'Jogadores (a coterie)', 'Facções e organizações', 'Nova York por distrito'];
+    for (const title of expected) expect(titles, title).toContain(title);
+    for (const block of blocks) expect(block.entries.length, block.title).toBeGreaterThan(0);
+  });
+
+  it('names the court and keeps his Blood Walk ritual', () => {
+    const court = blocks.find((block) => block.title === 'A corte de Nova York')?.entries.map((e) => e.term).join(' | ') ?? '';
+    for (const name of ['Panhard', 'Qadir', 'Arturo', 'Duval']) expect(court, name).toContain(name);
+    expect(entry('Facções e organizações', 'Primogen')).toContain('Samira');
+    expect(entry('Facções e organizações', 'Tremere')).toContain('Sturbridge');
+    expect(entry('Rituais de Blood Sorcery', 'Blood Walk')).toContain('Intelligence + Blood Sorcery');
+  });
+
+  it('tells everything he found out about Gusman, inclusive the clan and the true name', () => {
+    const gusman = entry('Jogadores (a coterie)', 'Gusman');
+    for (const term of ['Ravnos', 'Semana de Pesadelos', 'marca', 'gravação', 'N.N.', 'Casa Santa Rita', 'Julian Jiménez', 'Julius', 'Mike', 'Terceira Tradição']) {
+      expect(gusman, term).toContain(term);
+    }
+    expect(entry('Facções e organizações', 'Semana de Pesadelos')).toContain('1999');
+  });
+
+  it('keeps the family, the forged death, Reyes, Nathan and the surveillance network', () => {
+    const family = entry('NPCs que você conhece', 'família');
+    for (const term of ['morto desde 2010', 'Leila', 'Harbor Ledger', 'Amira', 'Dearborn']) expect(family, term).toContain(term);
+    expect(entry('NPCs que você conhece', 'Reyes')).toContain('FBI');
+    const network = entry('NPCs que você conhece', 'rede de vigília');
+    for (const term of ['Tobias Grell', 'Frank Delgado', 'Tom Wieczorek']) expect(network, term).toContain(term);
+    expect(entry('Jogadores (a coterie)', 'Daniel')).toContain('Nathan');
+  });
+
+  it('leaves the sire to the secrets PDF', () => {
+    const sire = entry('NPCs que você conhece', 'sire');
+    expect(sire).toContain('PDF de segredos');
+    const text = JSON.stringify(blocks);
+    for (const term of ['Nizar', 'Don Cerro', 'Justicar', 'Arconte de']) expect(text, term).not.toContain(term);
+  });
+
+  it("keeps what Khalid cannot know and the one-shot out of the printed sheet", () => {
+    const text = JSON.stringify(blocks);
+    const unknownToHim = ['Orozco', 'Polonia', 'Iggy', 'Unbirth', 'Tempting Fate'];
+    const spoilers = ['Auld Sanguine', 'Réveillon', '31/12'];
+    for (const term of [...unknownToHim, ...spoilers]) expect(text, term).not.toContain(term);
+  });
+});
+
 describe('SKILL_ATTRIBUTES', () => {
   it('pairs every skill with attributes of the groups the book uses', () => {
     expect(Object.keys(SKILL_ATTRIBUTES).sort()).toEqual([...SKILL_KEYS].sort());
