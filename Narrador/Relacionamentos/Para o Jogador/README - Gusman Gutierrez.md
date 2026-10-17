@@ -1,3 +1,6 @@
+---
+publicar: true
+---
 #jogador #auld-sanguine #gusman #readme
 
 # Gusman Gutierrez: o que você sabe
@@ -106,7 +109,7 @@ Cresceram com você no orfanato. **Nenhum dos dois sabe que você é vampiro.** 
 
 ## A coterie: os outros jogadores
 
-Os três 🎭 abaixo são **jogadores**. **Daniel Mercer** também é jogador, mas **você nunca ouviu falar dele**.
+Os três primeiros 🎭 abaixo são os **jogadores** que você conhece. **Daniel, Nina e Herta** também são jogadores, mas **você nunca ouviu falar deles**.
 
 ### 🎭 Gideon Nicols, o seu responsável
 - **Toreador**, **produtor da Broadway**. Mora e trabalha em Manhattan, com muito poder em **favores e informação**.
@@ -127,13 +130,19 @@ Os três 🎭 abaixo são **jogadores**. **Daniel Mercer** também é jogador, m
 ### 🎭 Daniel Mercer
 - **Você não o conhece** e nunca ouviu o nome dele.
 
+### 🎭 Nina Calloway
+- **Você não a conhece** e nunca ouviu o nome dela.
+
+### 🎭 Herta Müller
+- **Você não a conhece** e nunca ouviu o nome dela.
+
 ---
 
 ## Staten Island e os conhecidos da noite
 
 | Quem | Papel | O que você sabe |
 |---|---|---|
-| 🩸 **Iggy** (Ignatius Pell) | Dono e barman do ***The Broken Minute***, na **Richmond Terrace** (Port Richmond). | O bar é decorado com **relógios quebrados** parados em horas diferentes; foi por isso que você apareceu lá. Iggy compra relógios quebrados de você. Ele o chama de **"Relojoeiro"** e já disse coisas como *"seu relógio parou numa estação"*. Você **nunca o viu comer ou beber**, mas também nunca viu nada que **só um vampiro** faria. **Você não sabe se ele é Kindred.** Nunca perguntou, e ele nunca disse. |
+| **Iggy** (Ignatius Pell) | Dono e barman do ***The Broken Minute***, na **Richmond Terrace** (Port Richmond). | O bar é decorado com **relógios quebrados** parados em horas diferentes; foi por isso que você apareceu lá. Iggy compra relógios quebrados de você. Ele o chama de **"Relojoeiro"** e já disse coisas como *"seu relógio parou numa estação"*. Você **nunca o viu comer ou beber**, mas também nunca viu nada que **só um vampiro** faria. **Você não sabe se ele é Kindred.** Nunca perguntou, e ele nunca disse. |
 | 👤 **Marcus Bell** | **Enfermeiro** de um hospital da ilha. Seu Contato (••). | Vende a você **bolsas vencidas**. Você o conheceu por **Tessa Lang**. |
 | 👤 **Tessa Lang** | **Artista** de Gideon (atriz de coro). | Namora Marcus. **Não sabe** que você é vampiro. |
 | **Pavio Negro MC** | Motoclube que você **conhece de nome**. | Você esbarrou neles em **bares**, quando era mortal, em **contrabando miúdo**. **Não sabe** nada da história do clube. Ele **frequenta o *Broken Minute*** de vez em quando; você **vai em dias de semana** para evitá-los. |
@@ -227,7 +236,7 @@ flowchart TB
 - **Gideon** sabe quem você é por inteiro: o nome verdadeiro e a marca. Ele **não sabe** do golpe de 2017, nem de Iggy. 🔒 Ele **tem uma vaga ideia** do que o nome verdadeiro lhe permite e você sente isso. 🔒 Ele **sabe que você é Ravnos** e **escondeu isso de você**.
 - **Khalid** sabe do orfanato, de Mike e de Julius e do seu nome verdadeiro. **Não sabe** do golpe de 2017, nem de Iggy, nem do que o nome faz com você. 🔒 Ele também **sabe o clã** e **escondeu**.
 - **Vincent** sabe que você existe e viu a marca. **Não sabe** o seu nome verdadeiro, nem do golpe de 2017, nem de Iggy. 🔒 Ele também **sabe o clã** e **escondeu**.
-- **Daniel** não sabe que você existe.
+- **Daniel**, **Nina** e **Herta** não sabem que você existe.
 - **A corte** não sabe que você é Ravnos (nem você). **Iggy** sabe que você existe e **não diz o que sabe**.
 - **Os italianos** conhecem o rosto de "Tic-Tac" e **não sabem** que ele é você, vampiro, ou que mora em Staten Island.
 - **Mike e Julius** sabem seu nome verdadeiro e **não sabem** que você é vampiro.
